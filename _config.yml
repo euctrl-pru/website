@@ -1,0 +1,16 @@
+# Site settings
+title: PRU web site
+email: enrico.spinielli@eurocontrol.int
+description: > # this means to ignore newlines until "baseurl:"
+  !!!TEST!!! Public PRU web site !!!TEST!!!
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://euctrl-pru.github.io" # the base hostname & protocol for your site
+twitter_username: eurocontrol
+github_username:  euctrl-pru
+
+# Build settings
+markdown: kramdown
+
+
+# Global configs
+timezone: Europe/Brussels
