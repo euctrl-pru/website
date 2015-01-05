@@ -1,0 +1,3 @@
+[submodule "_site"]
+	path = _site
+	url = git@github:euctrl-pru/euctrl-pru.github.io.git
