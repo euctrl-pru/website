@@ -9,8 +9,22 @@ twitter_username: eurocontrol
 github_username:  euctrl-pru
 
 # Build settings
-markdown: kramdown
+gems: [ 'jekyll-pandoc-multiple-formats' ]
 
+markdown: pandoc
+pandoc:
+  skip: false
+  impose: false
+  output: tmp
+  flags: '--smart --mathjax
+          --csl=_styles/chicago-author-date.csl --bibliography=references.bib
+          -f markdown+fenced_code_attributes+citations+strikeout'
+  site_flags: '--toc'
+  outputs:
+    markdown:
 
 # Global configs
 timezone: Europe/Brussels
+
+# don't deploy these folders/files
+exclude: [Gemfile, Gemfile.lock, README.md, references.bib, tmp]
