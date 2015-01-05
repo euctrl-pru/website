@@ -4,7 +4,6 @@ email: enrico.spinielli@eurocontrol.int
 description: > # this means to ignore newlines until "url:"
   !!!TEST!!! Public PRU web site !!!TEST!!!
 url: "http://euctrl-pru.github.io" # the base hostname & protocol for your site
-permalink:   /:categories/:title/
 twitter_username: eurocontrol
 github_username:  euctrl-pru
 
