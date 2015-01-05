@@ -1,16 +1,19 @@
 # Site settings
 title: PRU web site
 email: enrico.spinielli@eurocontrol.int
-description: > # this means to ignore newlines until "baseurl:"
+description: > # this means to ignore newlines until "url:"
   !!!TEST!!! Public PRU web site !!!TEST!!!
-baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://euctrl-pru.github.io" # the base hostname & protocol for your site
+permalink:   /:categories/:title/
 twitter_username: eurocontrol
 github_username:  euctrl-pru
 
 # Build settings
 gems: [ 'jekyll-pandoc-multiple-formats' ]
 
+sass:
+  sass_dir: _sass
+  style: compressed
 markdown: pandoc
 pandoc:
   skip: false

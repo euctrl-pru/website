@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /contacts/
+permalink: /about/
 ---
 
 This is a test for the PRU (statically generated) site.
