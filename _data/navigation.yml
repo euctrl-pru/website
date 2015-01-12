@@ -1,0 +1,13 @@
+# Site navigation links
+- title: Dashboard
+  url: /dashboard/
+
+- title: Data
+  url: /data/
+
+- title: Posts
+  url: /posts/
+
+- title: About
+  url: /about/
+

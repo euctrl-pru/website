@@ -3,9 +3,12 @@ title: PRU web site
 email: enrico.spinielli@eurocontrol.int
 description: > # this means to ignore newlines until "url:"
   !!!TEST!!! Public PRU web site !!!TEST!!!
-url: "http://euctrl-pru.github.io" # the base hostname & protocol for your site
+# url: "http://euctrl-pru.github.io" # the base hostname & protocol for your site
+url: http://localhost:4000
 twitter_username: eurocontrol
 github_username:  euctrl-pru
+owner:
+  name: Eurocontrol/PRU
 
 # Build settings
 gems: [ 'jekyll-pandoc-multiple-formats' ]
@@ -13,6 +16,7 @@ gems: [ 'jekyll-pandoc-multiple-formats' ]
 sass:
   sass_dir: _sass
   style: compressed
+  sourcemap: true
 markdown: pandoc
 pandoc:
   skip: false
