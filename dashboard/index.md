@@ -64,9 +64,10 @@ permalink: /dashboard/
   font-size: 14px;
 }
 
-.axis .minor line {
+.zero.axis path {
+  stroke: red;
   stroke: #777;
-  stroke-dasharray: 2,2;
+  stroke-dasharray: 4,2;
 }
 
 .line {
@@ -78,18 +79,24 @@ permalink: /dashboard/
 </style>
 
 <div id="tooltip" class="hidden">
-	<p id="tip"></p>
 </div>
 
+## Traffic ##
+
+### IFR Flights (Jan - Sep) ###
 <div id="chart"></div>
 
+## Safety ##
 
+## Capacity ##
+
+--------------------------------------
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
 // define size and margings
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
     width = 700 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+    height = 400 - margin.top - margin.bottom;
 
 // x, y and z axes: type (ordinal/linear/...), ranges, ticks formatting
 var x = d3.scale.ordinal()
@@ -125,7 +132,7 @@ var svg = d3.select("#chart").append("svg")
 // pointers to <div>s
 var loading = d3.select("#loading");
 var tooltip = d3.select("#tooltip").classed("hidden", true);
-var tip = d3.select("#tip")
+var tip = tooltip.append("p");
 
 // register on mouseover event for tooltip management
 svg.on("mousemove", function() {
@@ -140,8 +147,6 @@ var line = d3.svg.line()
     .x(function(d) { return x(d.year) + x.rangeBand()/2; })
     .y(function(d) { return z(d.per_cent_change); });
 
-// the zero line
-// TODO
 
 // read the data and draw the chart
 d3.csv("data.csv", function(error, data) {
@@ -212,10 +217,6 @@ d3.csv("data.csv", function(error, data) {
       .style("text-anchor", "end")
       .text("year on year (%)");
 
-  // gz.selectAll("g.y.axis.right g.tick line")
-  //   .attr("x2", function(d) { return d.per_cent_change == 0; })
-  //   .classed("minor", true);
-
   svg.append("path")
       .datum(data)
       .attr("class", "line")
@@ -232,14 +233,21 @@ d3.csv("data.csv", function(error, data) {
       .on("mouseover", function(d,i) {
         d3.select(this).style({'stroke-opacity':1,'stroke':'#F00'});
         tooltip.classed("hidden", false);
-        tip.text("" + d.per_cent_change + "%");
+        tip.text("" + d.per_cent_change + "% year on year");
       })
       .on("mouseout", function(d) {
         this.style.stroke = "none";
         tooltip.classed("hidden", true);
       });
 
-// TODO: 0 line
+  // zero line
+    svg.append("g")
+      .attr("class", "zero axis")
+      .attr("transform", "translate(0," + z(0) + ")")
+      .call(xAxis.tickFormat("").innerTickSize(0))
+    .append("text")
+      .attr("x", width)
+      .attr("dy", "3em");
 
   // primitive legend: TODO make it better
   var legend = svg.append("g")
