@@ -1,9 +1,9 @@
 GIT
   remote: git://github.com/fauno/jekyll-pandoc-multiple-formats.git
-  revision: 4d8a24c31f4a18f8804c3789f43a3a3de1ab7eb5
+  revision: e19b2e7349e910d2f594e213fe58025e168dc58d
   branch: develop
   specs:
-    jekyll-pandoc-multiple-formats (0.0.6)
+    jekyll-pandoc-multiple-formats (0.0.7)
       jekyll
 
 GEM
@@ -44,11 +44,11 @@ GEM
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.3.0)
       sass (~> 3.2)
-    jekyll-watch (1.2.0)
+    jekyll-watch (1.2.1)
       listen (~> 2.7)
     kramdown (1.5.0)
-    liquid (2.6.1)
-    listen (2.8.4)
+    liquid (2.6.2)
+    listen (2.8.5)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
@@ -64,7 +64,7 @@ GEM
       ffi (>= 0.5.0)
     redcarpet (3.2.2)
     safe_yaml (1.0.4)
-    sass (3.4.9)
+    sass (3.4.10)
     timers (4.0.1)
       hitimes
     toml (0.1.2)

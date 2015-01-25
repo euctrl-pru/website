@@ -19,11 +19,12 @@ sass:
   sourcemap: true
 markdown: pandoc
 pandoc:
-  skip: false
+  skip: true
   impose: false
   output: tmp
   flags: '--smart --mathjax
-          --csl=_styles/chicago-author-date.csl --bibliography=references.bib
+          --csl=_styles/chicago-author-date.csl
+          --bibliography=references.bib
           -f markdown+fenced_code_attributes+citations+strikeout'
   site_flags: '--toc'
   outputs:

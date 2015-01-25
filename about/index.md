@@ -4,4 +4,6 @@ title: About
 permalink: /about/
 ---
 
-This is a test for the PRU (statically generated) site.
+The Performance Review Unit provide support to both PRC and PRB.
+
+Our work is based on sound statistical grounds and best practices and on specific theories and studies as listed in the [References](/references/) page.
