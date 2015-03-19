@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/fauno/jekyll-pandoc-multiple-formats.git
-  revision: e19b2e7349e910d2f594e213fe58025e168dc58d
+  remote: https://github.com/fauno/jekyll-pandoc-multiple-formats
+  revision: 2bde700f0f59fbb70aae9813db3d64d1abc69138
   branch: develop
   specs:
     jekyll-pandoc-multiple-formats (0.0.7)
@@ -17,7 +17,7 @@ GEM
     coffee-script (2.3.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.8.0)
+    coffee-script-source (1.9.0)
     colorator (0.1)
     execjs (2.2.2)
     fast-stemmer (1.0.2)
@@ -56,20 +56,20 @@ GEM
     parslet (1.5.0)
       blankslate (~> 2.0)
     posix-spawn (0.3.9)
-    pygments.rb (0.6.0)
+    pygments.rb (0.6.2)
       posix-spawn (~> 0.3.6)
-      yajl-ruby (~> 1.1.0)
+      yajl-ruby (~> 1.2.0)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     redcarpet (3.2.2)
     safe_yaml (1.0.4)
-    sass (3.4.10)
+    sass (3.4.11)
     timers (4.0.1)
       hitimes
     toml (0.1.2)
       parslet (~> 1.5.0)
-    yajl-ruby (1.1.0)
+    yajl-ruby (1.2.1)
 
 PLATFORMS
   ruby

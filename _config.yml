@@ -1,14 +1,25 @@
 # Site settings
-title: PRU web site
-email: enrico.spinielli@eurocontrol.int
+title: PRU
 description: > # this means to ignore newlines until "url:"
   !!!TEST!!! Public PRU web site !!!TEST!!!
 url: "http://euctrl-pru.github.io" # the base hostname & protocol for your site
 # url: http://localhost:4000
-twitter_username: eurocontrol
-github_username:  euctrl-pru
+canonical: http://euctrl-pru.github.io
+
+# Owner / Author information
 owner:
   name: Eurocontrol/PRU
+  location: Brussels, Belgium
+  twitter: eurocontrol
+  github:  euctrl-pru
+
+webmaster:
+  name: Enrico Spinielli
+  email: enrico.spinielli@eurocontrol.int
+
+tools:
+  standards: "HTML5, SCSS"
+  software: "Jekyll, pandoc, MathJax, d3.js, dc.js, crossfilter"
 
 # Build settings
 gems: [ 'jekyll-pandoc-multiple-formats' ]
@@ -34,4 +45,4 @@ pandoc:
 timezone: Europe/Brussels
 
 # don't deploy these folders/files
-exclude: [Gemfile, Gemfile.lock, README.md, references.bib, tmp]
+exclude: [Gemfile, Gemfile.lock, README.md, references.bib, tmp, dashboard/REAME.md, dashboard/Makefile]

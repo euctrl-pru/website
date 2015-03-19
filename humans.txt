@@ -1,0 +1,15 @@
+---
+---
+
+/* TEAM */
+Creator: {{ site.webmaster.name }}
+Contact: {{ site.webmaster.email }}
+Location: {{ site.owner.location }}
+
+/* THANKS */
+To the Internet and the Long Tail.
+
+/* SITE */
+Last Update: {{ site.time | date: '%F' }}
+Standards: {{ site.tools.standards }}
+Software: {{ site.tools.software }}

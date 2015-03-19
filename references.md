@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Referenced material and Sources
 permalink: /references/
 nocite: |

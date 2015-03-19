@@ -6,25 +6,24 @@
 <head>
 {% include _head.html %}
 </head>
-
-<body class="home">
-
 {% include _browser-upgrade.html %}
+<body>
+	{% include _navigation.html %}
 
-{% include _navigation.html %}
-  <div class="page-content">
-    <div class="wrapper">
-      {{ content }}
-    </div>
-  </div>
+	<div class="container-fluid">
+	  <div class="jumbotron">
+	    <div class="wrapper">
+	      {{ content }}
+	    </div>
+	  </div>
 
 
-<div class="footer-wrap">
-  <footer>
-    {% include _footer.html %}
-  </footer>
-</div><!-- /.footer-wrap -->
+	<div id="footer">
+		<div class="container-fluid">
+		    {% include _footer.html %}
+		</div>
+	</div>
 
+	</div>
 </body>
-
 </html>
