@@ -1,0 +1,291 @@
+---
+layout: data
+title: ACE Data
+excerpt: Performance Review Unit interactive dashboard on European Air Transport - ACE data.
+keywords: performance, air transport, flights, europe, cost efficiency
+---
+
+<script type="text/javascript">
+	$('select').select2();
+</script>
+
+<div class="container">
+	<div class="page-header">
+		<h1>ACE Data</h1>
+		<p class="lead">Select the filters that best suit your needs and then press the Download button to get the relevant CSV file.</p>
+	</div>
+
+	<section id="data-array" class="row">
+		<div >
+			<h2>ANSP Level</h2>
+
+			<div class="col-xs-3 col-md-3 col-sm-3"><span>Select the Year:</span>
+				<select id="ace-year" class="form-control" style="width: 50%"></select>
+			</div>
+			<div class="col-xs-4 col-md-3 col-sm-4"><span>Select the ANSP:</span>
+				<select id="ace-ansp" class="form-control" style="width: 50%"></select>
+			</div>
+		</div>
+		<div class="row col-xs-12 col-sm-12 col-lg-12 col-sm-12 col-md-12">
+	    <div>
+	        <div class="dc-data-count">
+	            <span class="filter-count"></span> selected out of <span class="total-count"></span> records | <a
+	                href="javascript:dc.filterAll(); dc.renderAll();">Reset All</a>
+	        </div>
+	    </div>
+			<style type="text/css">
+				.dc-data-count {
+			    float: right;
+			    margin-top: 15px;
+			    margin-right: 15px;
+			    margin-left: 25px;
+			}
+
+			.dc-data-count .filter-count, .total-count {
+			    color: #3182bd;
+			    font-weight: bold;
+			}
+
+			/* hide the sub-group summary*/
+				#ace-data-table tr.dc-table-group {display: none;}
+			table, th, td {
+				border-bottom: 1px solid grey;
+			}
+			th, td {
+			    padding: 3px;
+			}
+			/*align right for numeric columns*/
+			td:nth-of-type(4),
+			td:nth-of-type(5),
+			td:nth-of-type(6),
+			td:nth-of-type(7),
+			td:nth-of-type(8),
+			td:nth-of-type(9),
+			td:nth-of-type(10),
+			td:nth-of-type(11) {
+				text-align: right;
+			}
+		</style>
+	    <!-- <table class="table table-hover dc-data-table"></table> -->
+			<div class="col-xs-12 col-sm-12 col-lg-12 col-sm-12 col-md-12 dc-data-table table table-hover">
+		    <div id='ace-data-table'>
+		    </div>
+		</div>
+		</div>
+	</section>
+</div>
+
+<div class="row">
+    <div>
+        <div class="dc-data-count">
+        </div>
+    </div>
+    <table class="table table-hover dc-data-table">
+    </table>
+</div>
+
+<div class="clearfix"></div>
+
+
+<script type="text/javascript">
+	var dataFile    = 'ANSP-Traffic.csv';
+	var years; // the years in the dataset
+	var ansps; // the ansp names in the dataset
+	var data;
+
+	queue() 
+		.defer(d3.csv, dataFile) 
+		.await(function(error, ace) {
+	var dateFormat = d3.time.format("%m-%Y");
+
+	ace.forEach(function(d, i){
+		d.date = dateFormat.parse(d.MONTH+"-"+d.YEAR);
+		d.YEAR = +d.YEAR;
+		d.MONTH = +d.MONTH;
+		d.ID = +d.ID;
+		d.TTF_FLT = +d.TTF_FLT;
+		d.DURATION = +d.DURATION;
+		d.CFMU_DURATION = +d.CFMU_DURATION;
+		d.CFMU_DISTANCE = +d.CFMU_DISTANCE;
+		d.TDM_15_ERT_NA = +d.TDM_15_ERT_NA;
+		d.TDM_15 = +d.TDM_15;
+		d.TDF_15_ERT_NA = +d.TDF_15_ERT_NA;
+		d.TDF_15_ARP = +d.TDF_15_ARP;
+		d.TDF_15 = +d.TDF_15
+	});
+
+	var xf = crossfilter(ace);
+	var all = xf.groupAll();
+	var aceDate = xf.dimension(function(d){return d.date;});
+
+	var aceYear = xf.dimension(function(d){return d.YEAR;});
+	var aceYearGroup = aceYear.group(Math.floor);
+
+	var aceAnsp = xf.dimension(function(d){return d.NAME;});
+	var aceAnspGroup = aceAnsp.group();
+
+
+	// YEARS DROPDOWN
+    // add an "All Years" item to the year dropdown menu
+	d3.select("#ace-year")
+	    .append("option")
+	        .text("All Years")
+	        .attr("value", "-1");
+
+    // fill the year dropdown menu with the available years from the dataset
+	years = _.pluck(aceYearGroup.top(Infinity),"key");
+	years = years.map(function(d,i){return {id: i, 'text': d};});
+	$("#ace-year").select2({
+		data: years,
+		minimumResultsForSearch: Infinity
+	});
+
+	// call filterByYear when a new selection is made
+	$("#ace-year").on("change", function() {
+		filterByYear(this.value);
+	});
+
+
+
+	// ANSPs DROPDOWN
+    // add an "All ANSPs" item to the ansps dropdown menu
+	d3.select("#ace-ansp")
+	    .append("option")
+	        .text("All ANSPs")
+	        .attr("value", "-1");
+
+    // fill the ansps dropdown menu with the available ansp names from the dataset
+	ansps = _.pluck(aceAnspGroup.top(Infinity),"key");
+	ansps = ansps.map(function(d,i){return {id: i, 'text': d};});
+	// console.log(ansps);
+	$("#ace-ansp").select2({
+		data: ansps
+	});
+
+	// call filterByAnsp when a new selection is made
+	$("#ace-ansp").on("change", function() {
+		filterByAnsp(this.value);
+	});
+
+
+	// create a table to preview (a subset of) the filtered values
+	var format = d3.format('02d');
+	var dataTable = dc.dataTable('#ace-data-table')
+	    .dimension(aceDate)
+		.group(function (d) {
+	        var format = d3.format('02d');
+	            return d.date.getFullYear() + '/' + format((d.date.getMonth() + 1));
+	        })
+	    .size(10) // (optional) max number of records to be shown, :default = 25
+	    .columns([
+	        {
+	            label: 'yy/mm',
+	            format: function (d) {
+	                return d.date.getFullYear() + '/' + format((d.date.getMonth() + 1));
+	            }
+	        },
+	        {
+	            label: 'Type',
+	            format: function (d) {
+	                return d.UNIT_PRU_TYPE;
+	            }
+	        },
+	        {
+	            label: 'Unit Name',
+	            format: function (d) {
+	                return d.NAME;
+	            }
+	        },
+			'TTF_FLT',
+			'DURATION',
+	        {
+	            label: 'DISTANCE',
+	            format: function (d) {
+	                return d.CFMU_DISTANCE;
+	            }
+	        },
+			'TDM_15_ERT_NA',
+			'TDM_15',
+			'TDF_15_ERT_NA',
+			'TDF_15_ARP',
+			'TDF_15'
+	    ])
+	    .sortBy(function (d) {
+	        return d.date;
+	    })
+		.order(d3.ascending)
+		// .on('renderlet', function (table) {
+	 //        table.selectAll('.dc-table-group').classed('info', true);
+	 //    })
+	    ;
+
+
+	dc.dataCount('.dc-data-count')
+	    .dimension(xf)
+	    .group(all)
+	    // (optional) html, for setting different html for some records and all records.
+	    // .html replaces everything in the anchor with the html given using the following function.
+	    // %filter-count and %total-count are replaced with the values obtained.
+	    .html({
+	        some:'<strong>%filter-count</strong> selected out of <strong>%total-count</strong> records' +
+	        	' (only a max of <em>' + dataTable.size() + '</em> shown below.)',
+	        all:'All <strong>%total-count</strong> records selected'+
+	        	' (only a max of <em>' + dataTable.size() + '</em> shown below.)'
+	    });
+
+
+	dc.renderAll();
+
+	function filterByYear(val) {
+		// console.log("year="+$("#ace-year").val());
+		// console.log("ansp="+$("#ace-ansp").val());
+
+		aceYear.filterAll();
+		// aceAnsp.filterAll();
+		if (val == -1) {
+			// console.log("Selected year=" + val + " (i.e. All)");
+		}
+		else {
+			// console.log("Selected year=" + years[val].text);
+			aceYear.filter(function(d){
+				return d == +years[val].text});
+		}
+		// console.log(aceYear.top(Infinity));
+		dc.redrawAll();
+	}
+
+	function filterByAnsp(val) {
+		// console.log("year="+$("#ace-year").val());
+		// console.log("ansp="+$("#ace-ansp").val());
+		aceAnsp.filterAll();
+		if (val == -1) {
+			// console.log("Selected ANSP=" + val + " (i.e. All)");
+		}
+		else {
+			// console.log("Selected ANSP=" + ansps[val].text);
+			aceAnsp.filter(function(d){return d === ansps[val].text});
+		}
+		// console.log(aceAnsp.top(Infinity));
+		dc.redrawAll();
+	}
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
