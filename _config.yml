@@ -5,6 +5,7 @@ description: > # this means to ignore newlines until "url:"
 url: "http://euctrl-pru.github.io" # the base hostname & protocol for your site
 # url: http://localhost:4000
 canonical: http://euctrl-pru.github.io
+media: media
 
 # Owner / Author information
 owner:

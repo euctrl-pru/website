@@ -1,7 +1,4 @@
 # Site navigation links
-- title: Home
-  url: /#
-
 - title: Dashboard
   url: /dashboard/
 
@@ -10,7 +7,3 @@
 
 - title: Posts
   url: /posts/
-
-- title: About
-  url: /about/
-

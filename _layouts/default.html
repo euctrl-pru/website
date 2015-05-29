@@ -4,25 +4,25 @@
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
-{% include _head.html %}
-{% include _mathjax.html %}
+  {% include _head.html %}
+  {% include _mathjax.html %}
 </head>
 {% include _browser-upgrade.html %}
 <body>
-	{% include _navigation.html %}
+  {% include _navigation.html %}
+  <div class="container">
+  {% include _draft.html %}
+    <div class="wrapper">
+      {{ content }}
+    </div>
 
-	<div class="container-fluid">
-	    <div class="wrapper">
-	      {{ content }}
-	    </div>
 
+    <div id="footer">
+      <div class="container-fluid">
+        {% include _footer.html %}
+      </div>
+    </div>
 
-	<div id="footer">
-		<div class="container-fluid">
-		    {% include _footer.html %}
-		</div>
-	</div>
-
-	</div>
+  </div>
 </body>
 </html>

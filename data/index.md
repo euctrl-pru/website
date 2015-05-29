@@ -1,5 +1,5 @@
 ---
-layout: data
+layout: default
 title: Data Dowload
 permalink: /data/
 excerpt: Performance Review Unit Data Download.

@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'jekyll'
+gem 'html-proofer'
 
 group :plugins do
   gem 'jekyll-pandoc-multiple-formats', git: 'https://github.com/fauno/jekyll-pandoc-multiple-formats', branch: 'develop'
