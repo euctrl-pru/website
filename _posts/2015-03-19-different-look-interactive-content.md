@@ -2,7 +2,7 @@
 layout: post
 title:  "Different Look and Interactive Contents"
 date:   2015-03-19T16:51:03
-categories: static web jekyll
+categories: posts static web jekyll
 ---
 
 Finally things are getting together.
