@@ -1,6 +1,6 @@
 [submodule "_site"]
 	path = _site
-	url = git@github:euctrl-pru/euctrl-pru.github.io.git
+	url = https://github.com/euctrl-pru/euctrl-pru.github.io.git
 [submodule "dashboard"]
 	path = dashboard
 	url = https://github.com/euctrl-pru/dashboard.git
