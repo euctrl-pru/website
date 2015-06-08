@@ -1,0 +1,65 @@
+---
+layout: default
+---
+<style type="text/css">
+ span.go-to-top {
+  font-size: x-small;
+ } 
+</style>
+
+{% assign alphabeth = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z" | split: ' ' %}
+{% assign sectionletter = "" %}
+{% assign currentletter = "" %}
+{% assign isfirst = false %}
+
+  <h2>Index of Definitions</h2>
+  <div class="container">
+    <div class="row">
+
+      <!-- create a list of anchors to entries, i.e. A_, B_, C, D, E_, F_... where the ones without _ do not have entries
+           and as such do not point to a section in the page.
+           TODO: remove anchor when there are no entries.
+        -->
+      <div>
+        {% for item in alphabeth %}
+          <a href="#{{ item }}-section">{{ item }}</a>
+          {% if forloop.last %}
+          {% else %}
+            ,
+          {% endif %}
+        {% endfor %}  <!-- alphabeth -->
+      </div>
+    </div>  
+  </div>
+
+
+{% for pag in site.pages | sort: 'title' %}
+  {% if pag.resource == true %}
+    {% for pc in pag.categories %}
+      {% if pc == 'meta-definition' %}
+        {% assign currentletter = (pag.title | split: '' | first ) %}
+        {% if currentletter == sectionletter %}
+          {% if isfirst %}
+          {% else %}
+            , 
+          {% endif %} <!-- isfirst -->
+          <a href="{{ pag.url }}">{{ pag.title }}</a>
+        {% else %}
+          {% if sectionletter == "" %}
+          {% else %}
+            </div></div>
+          {% endif %} <!-- sectionletter -->
+          {% assign sectionletter = currentletter %}
+          <h3 id="{{ currentletter }}-section">{{ currentletter }}</h3>
+            <div class="container">
+            <div class="row">
+            <a href="{{ pag.url }}">{{ pag.title }}</a>
+        {% endif%} <!-- currentletter -->
+      {% endif %}   <!-- cat-match-p -->
+    {% endfor %}  <!-- page-category -->
+  {% endif %}   <!-- resource-p -->
+{% endfor %}  <!-- page -->
+
+
+
+

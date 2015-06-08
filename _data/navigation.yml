@@ -2,8 +2,11 @@
 - title: Dashboard
   url: /dashboard/#
 
+- title: Posts
+  url: /posts/#
+
 - title: Data
   url: /data/#
 
-- title: Posts
-  url: /posts/#
+- title: Meta
+  url: /metadata/#
