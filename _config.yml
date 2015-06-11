@@ -3,7 +3,6 @@ title: PRU
 description: > # this means to ignore newlines until "url:"
   !!!TEST!!! Public PRU web site !!!TEST!!!
 url: "https://euctrl-pru.github.io" # the base hostname & protocol for your site
-# url: http://localhost:4000
 canonical: https://euctrl-pru.github.io
 media: media
 category-list: [meta-definition] # 'meta-definition' is used for auto index metadata defs
