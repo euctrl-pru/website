@@ -136,9 +136,9 @@ keywords: performance, air transport, flights, europe, cost efficiency
          var dateFormat = d3.time.format("%m-%Y");
 
          ace.forEach(function(d, i) {
-            d.date = dateFormat.parse(d.MONTH_NUM + "-" + d.YEAR);
             d.YEAR = +d.YEAR;
             d.MONTH_NUM = +d.MONTH_NUM;
+            d.date = dateFormat.parse(d.MONTH_NUM + "-" + d.YEAR);
             d.FLT_1 = +d.FLT_1;
             d.DIST_KM_1 = +d.DIST_KM_1;
             d.DUR_MIN_1 = +d.DUR_MIN_1;
@@ -231,16 +231,14 @@ keywords: performance, air transport, flights, europe, cost efficiency
             .dimension(aceDate)
             .group(function (d) {
                var format = d3.format('02d');
-               // return d.date.getFullYear() + '/' + format((d.date.getMonth() + 1));
-               return d.YEAR + '/' + d.MONTH_NUM;
+               return d.date.getFullYear() + '/' + format((d.date.getMonth() + 1));
             })
             .size(12) // (optional) max number of records to be shown, :default = 25
             .columns([
                {
                   label: 'YYYY/MM',
                   format: function (d) {
-                   return d.YEAR + '/' + d.MONTH_NUM;
-                   // return d.date.getFullYear() + '/' + format((d.date.getMonth() + 1));
+                   return d.date.getFullYear() + '/' + format((d.date.getMonth() + 1));
                   }
                },
                {
