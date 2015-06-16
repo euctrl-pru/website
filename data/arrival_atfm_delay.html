@@ -195,6 +195,7 @@ keywords: performance, air transport, flights, europe, cost efficiency
 
          // fill the year dropdown menu with the available years from the dataset
          years = _.pluck(arrYearGroup.top(Infinity),"key");
+         years.sort();
          years = years.map(function(d,i){return {id: i, 'text': d};});
          $("#arr-year").select2({
             data: years,
@@ -216,6 +217,7 @@ keywords: performance, air transport, flights, europe, cost efficiency
 
          // fill the countries dropdown menu with the available country names from the dataset
          countries = _.pluck(arrCountryGroup.top(Infinity),"key");
+         countries.sort();
          countries = countries.map(function(d,i){return {id: i, 'text': d};});
          $("#arr-country").select2({
             data: countries
@@ -236,10 +238,10 @@ keywords: performance, air transport, flights, europe, cost efficiency
 
          // fill the year dropdown menu with the available years from the dataset
          airports = _.pluck(arrAirportGroup.top(Infinity),"key");
+         airports.sort();
          airports = airports.map(function(d,i){return {id: i, 'text': d};});
          $("#arr-apt").select2({
-            data: airports,
-            minimumResultsForSearch: Infinity
+            data: airports
          });
 
          // call filterByAirport when a new selection is made
