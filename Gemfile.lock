@@ -26,6 +26,7 @@ GEM
     execjs (2.5.2)
     fast-stemmer (1.0.2)
     ffi (1.9.8)
+    ffi (1.9.8-x64-mingw32)
     hitimes (1.2.2)
     html-proofer (2.2.0)
       addressable (~> 2.3)
@@ -68,6 +69,8 @@ GEM
     mini_portile (0.6.2)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+    nokogiri (1.6.6.2-x64-mingw32)
+      mini_portile (~> 0.6.0)
     parallel (1.6.0)
     parslet (1.5.0)
       blankslate (~> 2.0)
@@ -92,6 +95,7 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   html-proofer
@@ -99,4 +103,4 @@ DEPENDENCIES
   jekyll-pandoc-multiple-formats!
 
 BUNDLED WITH
-   1.10.2
+   1.10.3
