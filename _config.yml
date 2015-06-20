@@ -9,7 +9,7 @@ category-list: [meta-definition] # 'meta-definition' is used for auto index meta
 
 # Owner / Author information
 owner:
-  name: Eurocontrol/PRU
+  name: European Organisation for the Safety of Air Navigation (EUROCONTROL)
   location: Brussels, Belgium
   twitter: eurocontrol
   github:  euctrl-pru
