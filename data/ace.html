@@ -11,19 +11,28 @@ keywords: performance, air transport, flights, europe, cost efficiency
 </script>
 
 <div class="container">
-   <div class="page-header">
+   <div>
       <h1>ACE Data</h1>
-      <p class="lead">Select the filters that best suit your needs and then press the Download button to get the relevant CSV file.</p>
+      <p>Select the filters that best suit your needs and then press the Download button to get the relevant CSV file.</p>
    </div>
 
    <section id="data-array" class="row">
       <h2>ANSP Level</h2>
+        <style type="text/css">
+         #loading {
+          text-align: center;
+          height: 20px;
+          font-size: 30px;
+          font-style: italic;
+        }
+        </style>
       <div class="row">
          <div class="btn-toolbar" role="toolbar" aria-label="Example">
             <div class="btn-group" role="group" aria-label="Example"><select id="ace-year" class="form-control"></select></div>
             <div class="btn-group" role="group" aria-label="Example"><select id="ace-ansp" class="form-control"></select></div>
             <div class="btn-group" role="group" aria-label="Example"><button id="ace-ansp-download" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-save"></span> Download</button></div>
          </div>
+        <div id='loading'>Loading...</div>
       </div>
       <div class="row col-xs-12 col-sm-12 col-lg-12 col-sm-12 col-md-12">
          <div class="dc-data-count">
@@ -83,6 +92,7 @@ keywords: performance, air transport, flights, europe, cost efficiency
    var years; // the years in the dataset
    var ansps; // the ansp names in the dataset
    var data;
+   var loading = d3.selectAll("#loading");
 
    function filteredCSV(data) {
       var fields = [
@@ -224,6 +234,7 @@ keywords: performance, air transport, flights, europe, cost efficiency
             filterByAnsp(this.value);
          });
 
+        loading.classed("hidden", true);
 
          // create a table to preview (a subset of) the filtered values
          var format = d3.format('02d');

@@ -6,6 +6,9 @@ Creator: {{ site.webmaster.name }}
 Contact: {{ site.webmaster.email }}
 Location: {{ site.owner.location }}
 
+Contributor: Holger Hegendorfer
+Contact: holger.hegendorfer [at] eurocontrol.int
+
 /* THANKS */
 To the Internet and the Long Tail.
 

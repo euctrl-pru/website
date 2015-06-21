@@ -1,10 +1,4 @@
 # Site navigation links
-- title: Dashboard
-  url: /dashboard/#
-
-- title: Posts
-  url: /posts/#
-
 - title: Data
   url: /data/#
 

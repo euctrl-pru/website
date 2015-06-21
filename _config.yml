@@ -16,7 +16,7 @@ owner:
 
 webmaster:
   name: Enrico Spinielli
-  email: enrico.spinielli@eurocontrol.int
+  email: enrico.spinielli [at] eurocontrol.int
 
 tools:
   standards: "HTML5, SCSS"
@@ -46,4 +46,4 @@ pandoc:
 timezone: Europe/Brussels
 
 # don't deploy these folders/files
-exclude: [Gemfile, Gemfile.lock, README.md, references.bib, tmp, dashboard/REAME.md, dashboard/Makefile]
+exclude: [Gemfile, Gemfile.lock, README.md, references.bib, tmp, dashboard/REAME.md, dashboard/Makefile, posts, dashboard]

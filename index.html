@@ -2,30 +2,18 @@
 layout: default
 ---
 <br>
-<p>This the experimental home page of the <a href="https://www.eurocontrol.int/articles/performance-review-unit">Performance Review Unit</a> of <a href="https://www.eurocontrol.int/">Eurocontrol</a>.</p>
+<div class="container">
+  <div class="row">
+    <p> The Performance Review Unit (PRU) is the supporting Unit of the
+    <a href="https://www.eurocontrol.int/node/1737">Performance Review Commission</a> (PRC)
+    and the <a href="https://www.eurocontrol.int/node/1738">Performance Review Body</a> (PRB).</p>
 
-  <h2>Latest News</h2>
-  <div class="container">
-    <div class="row">
-      {% for post in site.posts limit:5 %}
-          {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-          {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+    <p>Organisationally, it is part of the EUROCONTROL Agency’s Pan-European Single Sky Directorate.</p>
 
-          {% if forloop.first %}
-          <h3 id="{{ this_year }}-ref">{{this_year}}</h3>
-            <div class="col-xs-8">
-          {% else %}
-            {% if this_year != next_year %}
-            </div>
-            <div class="col-xs-8">
-            <h3 id="{{ next_year }}-ref">{{next_year}}</h3>
-            {% endif %}
-          {% endif %}
+    <p>The PRU is responsible for monitoring and reviewing the performance of the European ANS System.<br>
+    Based on its analysis, the PRU supports the PRC and the PRB for performance improvements in the European ANS system.</p>
 
-          <h4>{{ post.date | date: "%d %b" }} <a href="{{ post.url }}">{{ post.title }}</a></h4>
-          {% if forloop.last %}
-          </div>
-          {% endif%}
-      {% endfor %}
-    </div>
+    <p>In performing its tasks, the PRU maintains an <em>independent</em> view and <em>transparent</em>
+    working arrangements with service providers, airspace user organisations and industry.</p>
   </div>
+</div>
