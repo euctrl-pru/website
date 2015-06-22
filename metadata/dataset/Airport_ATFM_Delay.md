@@ -6,7 +6,6 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 ---
 # {{ page.title }}
 
-
 ## Column naming and types
 
 | Column name  | Data source     | Label                                 | Column description                                                            | Example     |

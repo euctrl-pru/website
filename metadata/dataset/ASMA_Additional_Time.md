@@ -6,10 +6,6 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 ---
 # {{ page.title }}
 
-period: [2014/01, 2015/04]
-
-~1000 rows
-
 
 ## Column naming and types
 
@@ -29,7 +25,5 @@ period: [2014/01, 2015/04]
 
 ### Calculated Field(s)
 
-$$
-Avg. unimpeded ASMA time	= TIME_ASMA_UNIMP_2/FLT_ASMA_UNIMP_2
+<p>Avg. unimpeded ASMA time	= TIME_ASMA_UNIMP_2/FLT_ASMA_UNIMP_2</p>
 Avg. additional ASMA time	= TIME_ASMA_ADD_2/FLT_ASMA_UNIMP_2
-$$

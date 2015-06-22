@@ -22,7 +22,5 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 
 ### Calculated Field(s)
 
-$$
-Avg. unimpeded taxi-out time	= TIME_TXO_UNIMP_2 /FLT_TXO_UNIMP_2
+<p>Avg. unimpeded taxi-out time	= TIME_TXO_UNIMP_2 /FLT_TXO_UNIMP_2</p>
 Avg. additional taxi-out time	= TIME_TXO_ADD_2 /FLT_TXO_UNIMP_2
-$$

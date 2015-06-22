@@ -6,11 +6,6 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 ---
 # {{ page.title }}
 
-period: [2014/01, 2015/04]
-
-~51000 rows (daily values)
-
-
 ## Column naming and types
 
 | Column name        | Data source     | Label       | Column description                                                        | Example   |
