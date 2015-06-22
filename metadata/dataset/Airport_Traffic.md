@@ -10,7 +10,7 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 
 ## Column naming and types
 
-| Column name | Source           | Pivot Label                     | Description                      | Example    |
+| Column name | Data source      | Label                           | Column description               | Example    |
 |-------------|------------------|---------------------------------|----------------------------------|------------|
 | YEAR        | Network Manager  | YEAR                            | Reference year                   | 2014       |
 | MONTH_NUM   | Network Manager  | MONTH                           | Month (numeric)                  | 1          |
