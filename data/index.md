@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Data Dowload
+title: Data Download
 permalink: /data/
 excerpt: Performance Review Unit Data Download.
 keywords: performance, data, statistics, economics, air transport, flights, europe, cost efficiency
@@ -18,18 +18,17 @@ which makes no warranty, either implied or express, for the information containe
 neither does it assume any legal liability or responsibility for the accuracy, completeness or usefulness
 of this information.
 
-<p class="muted credit">
-<span style="float:left">&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}</span>
-</p>
-
 
 <br><br>
 For feedback or questions please contact us at: [Performance Review Unit](mailto:pru@eurocontrol.int)
+<br><br>
+
+<i class="fa fa-chain-broken"></i> = under construction.
 
 <style>
 table {
 width: 100%;
-margin-left: none;
+margin-left: 2em;
 }
 
 th:nth-child(2) {
@@ -54,34 +53,34 @@ width: 10em;
 
 | Data description                                                                                                                          | Available data      | Excel download                 | Tailored extracts               | Meta data                     |
 |-------------------------------------------------------------------------------------------------------------------------------------------|---------------------|--------------------------------|---------------------------------|-------------------------------|
-| En-route IFR flights<br><small>Daily IFR traffic by entity</small>                                                                        | Jan 2014 - May 2015 | [ERT-FLT (Excel)][ERT-FLTxlsx] | [ERT-FLT (extract)][ERT-FLTcsv] | [ERT-FLT (Meta)][ERT-FLTmeta] |
-| En-route ATFM delays<br><small>Daily IFR traffic and en-route ATFM delay by entity and delay cause</small>                                | Jan 2014 - May 2015 | [ERT-DLY (Excel)][ERT-DLYxlsx] | [ERT-DLY (extract)][ERT-DLYcsv] | [ERT-DLY (Meta)][ERT-DLYmeta] |
-| Horizontal en-route flight efficiency<br><small>Daily en-route flight efficiency data by entity (actual trajectory & flight plan)</small> | Jan 2014 - May 2015 | [HFE (Excel)][HFExlsx]         | [HFE (extract)][HFEcsv]         | [HFE (Meta)][HFEmeta]         |
+| En-route IFR flights<br><small>Daily IFR traffic by entity</small>                                                                        | Jan 2014 - May 2015 | [ERT-FLT (Excel)][ERT-FLTxlsx] | [ERT-FLT (extract)<i class="fa fa-chain-broken"></i>][ERT-FLTcsv] | [ERT-FLT (Meta)<i class="fa fa-chain-broken"></i>][ERT-FLTmeta] |
+| En-route ATFM delays<br><small>Daily IFR traffic and en-route ATFM delay by entity and delay cause</small>                                | Jan 2014 - May 2015 | [ERT-DLY (Excel)][ERT-DLYxlsx] | [ERT-DLY (extract)<i class="fa fa-chain-broken"></i>][ERT-DLYcsv] | [ERT-DLY (Meta)<i class="fa fa-chain-broken"></i>][ERT-DLYmeta] |
+| Horizontal en-route flight efficiency<br><small>Daily en-route flight efficiency data by entity (actual trajectory & flight plan)</small> | Jan 2014 - May 2015 | [HFE (Excel)][HFExlsx]         | [HFE (extract)<i class="fa fa-chain-broken"></i>][HFEcsv]         | [HFE (Meta)][HFEmeta]         |
 
 
 [ERT-FLTxlsx]: <https://docs.google.com/spreadsheets/d/1slEnGjXKCqOI-pbHz5N8ELwA-NmvYQxiTFMOfDt8Rjs/export?format=xlsx> "ERT-FLT (Excel)"
-[ERT-FLTcsv]: </404.html> "ERT-FLT (CSV)"
-[ERT-FLTmeta]: </404.html> "ERT-FLT (Meta)"
+[ERT-FLTcsv]: <{{site.url}}/404.html> "ERT-FLT (CSV)"
+[ERT-FLTmeta]: <{{site.url}}/404.html> "ERT-FLT (Meta)"
 
 [ERT-DLYxlsx]: <https://docs.google.com/spreadsheets/d/1slEnGjXKCqOI-pbHz5N8ELwA-NmvYQxiTFMOfDt8Rjs/export?format=xlsx> "DLY-FLT (Excel)"
-[ERT-DLYcsv]: </404.html> "DLY-FLT (CSV)"
-[ERT-DLYmeta]: </404.html> "DLY-FLT (Meta)"
+[ERT-DLYcsv]: <{{site.url}}/404.html> "DLY-FLT (CSV)"
+[ERT-DLYmeta]: <{{site.url}}/404.html> "DLY-FLT (Meta)"
 
 [HFExlsx]: <https://drive.google.com/uc?export=download&id=0B9A6maXsk_-cTDdUT0lEOGdaM1U> "HFE (Excel)"
-[HFEcsv]: </404.html> "HFE (CSV)"
-[HFEmeta]: </404.html> "HFE (Meta)"
+[HFEcsv]: <{{site.url}}/404.html> "HFE (CSV)"
+[HFEmeta]: <{{site.url}}/metadata/dataset/Horizontal_Flight_efficiency.html> "HFE (Meta)"
 
 
 ### Airport/terminal
 
-| Data description                                                                                                              | Available data       | Excel download  | Tailored extracts | Meta data      |
-|-------------------------------------------------------------------------------------------------------------------------------|----------------------|-----------------|-------------------|----------------|
-| Airport traffic<br><small>Daily IFR arrivals and departures by airport</small>                                                | Jan 2014 - May 2015  | [APT-FLT (Excel)][APT-FLTxlsx] | [APT-FLT (extract)][APT-FLTcsv] | [APT-FLT (Meta)][APT-FLTmeta] |
+| Data description                                                                                                              | Available data       | Excel download                 | Tailored extracts               | Meta data                     |
+|-------------------------------------------------------------------------------------------------------------------------------|----------------------|--------------------------------|---------------------------------|-------------------------------|
+| Airport traffic<br><small>Daily IFR arrivals and departures by airport</small>                                                | Jan 2014 - May 2015  | [APT-FLT (Excel)][APT-FLTxlsx] | [APT-FLT (extract)<i class="fa fa-chain-broken"></i>][APT-FLTcsv] | [APT-FLT (Meta)<i class="fa fa-chain-broken"></i>][APT-FLTmeta] |
 | Airport arrival ATFM delays<br><small>Daily IFR arrivals and airport arrival ATFM delay by airport and delay category</small> | Jan 2014 - May 2015  | [APT-DLY (Excel)][APT-DLYxlsx] | [APT-DLY (extract)][APT-DLYcsv] | [APT-DLY (Meta)][APT-DLYmeta] |
-| Arrival Sequencing and Metering (ASMA) additional time<br><small>Monthly ASMA additional and unimpeded time</small>           | Jan 2014 - Apr. 2015 | [ASMA (Excel)][ASMAxlsx]    | [ASMA (extract)][ASMAcsv]    | [ASMA (Meta)][ASMAmeta]    |
-| Taxi-out additional time<br><small>Monthly taxi out additional and unimpeded time</small>                                     | Jan 2014 - Apr 2015  | [TX-OUT (Excel)][TX-OUTxlsx]  | [TX-OUT (extract)][TX-OUTcsv]  | [TX-OUT (Meta)][TX-OUTmeta]  |
-| ATC pre-departure delays (ICAO code 89)<br><small>Daily ATC pre-departure delay (IATA code 89) by airport</small>             | Jan 2014 - May 2015  | [ATC-PRE (Excel)][ATC-PRExlsx] |                   | [ATC-PRE (Meta)][ATC-PREmeta] |
-| ATFM slot adherence<br><small>Daily ATFM slot adherence by airport</small>                                                    | Jan 2014 - May 2015  | [SLT-ADH (Excel)][SLT-ADHxlsx] |                   | [SLT-ADH (Meta)][SLT-ADHmeta] |
+| Arrival Sequencing and Metering (ASMA) additional time<br><small>Monthly ASMA additional and unimpeded time</small>           | Jan 2014 - Apr. 2015 | [ASMA (Excel)][ASMAxlsx]       | [ASMA (extract)<i class="fa fa-chain-broken"></i>][ASMAcsv]       | [ASMA (Meta)][ASMAmeta]       |
+| Taxi-out additional time<br><small>Monthly taxi out additional and unimpeded time</small>                                     | Jan 2014 - Apr 2015  | [TX-OUT (Excel)][TX-OUTxlsx]   | [TX-OUT (extract)<i class="fa fa-chain-broken"></i>][TX-OUTcsv]   | [TX-OUT (Meta)][TX-OUTmeta]   |
+| ATC pre-departure delays (ICAO code 89)<br><small>Daily ATC pre-departure delay (IATA code 89) by airport</small>             | Jan 2014 - May 2015  | [ATC-PRE (Excel)][ATC-PRExlsx] |                                 | [ATC-PRE (Meta)][ATC-PREmeta] |
+| ATFM slot adherence<br><small>Daily ATFM slot adherence by airport</small>                                                    | Jan 2014 - May 2015  | [SLT-ADH (Excel)][SLT-ADHxlsx] |                                 | [SLT-ADH (Meta)][SLT-ADHmeta] |
 
 
 [APT-FLTxlsx]: <https://docs.google.com/spreadsheets/d/13ussBrCF688P_7M3hARaiqdk262tJLUKG8HzJryY69g/export?format=xlsx> "APT-FLT (Excel)"
@@ -118,9 +117,9 @@ width: 10em;
 
 ## Other
 
-| Data description                                                             | Available data      | Excel download | Tailored extracts | Meta data   |
-|------------------------------------------------------------------------------|---------------------|----------------|-------------------|-------------|
-| Complexity<br><small>Monthly en route service units by charging area</small> | Jan 2014 - May 2015 | [CPLX (Excel)][CPLXxlsx]   | [CPLX (extract)][CPLXcsv]    | [CPLX (Meta)][CPLXmeta] |
+| Data description                                                             | Available data      | Excel download           | Tailored extracts         | Meta data              ß |
+|------------------------------------------------------------------------------|---------------------|--------------------------|---------------------------|-------------------------|
+| Complexity<br><small>Monthly en route service units by charging area</small> | Jan 2014 - May 2015 | [CPLX (Excel)][CPLXxlsx] | [CPLX (extract)<i class="fa fa-chain-broken"></i>][CPLXcsv] | [CPLX (Meta)][CPLXmeta] |
 
 [CPLXxlsx]: <https://docs.google.com/spreadsheets/d/1GBJWcW5rwlvP1wIUwPVwtT3zMjdvbrWcfn5CSvJhses/export?format=xlsx> "CPLX (Excel)"
 [CPLXcsv]: <{{site.url}}/404.html> "CPLX (CSV)"
