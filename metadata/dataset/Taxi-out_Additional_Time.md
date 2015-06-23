@@ -6,22 +6,23 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 ---
 # {{ page.title }}
 
-period: [2014/01, 2015/04]
-
-~2000 rows
-
 ## Column naming and types
 
-| Column name      | Example  | Pivot Label                   | Description                                                                   |
-|------------------|----------|-------------------------------|-------------------------------------------------------------------------------|
-| YEAR             | 2014     | YEAR                          | Reference year                                                                |
-| MONTH_NUM        | 1        | MONTH                         | Month (numeric)                                                               |
-| MONTH_MON        | JAN      |                               | Month (3-letter code)                                                         |
-| APT_COUNTRY      | Belgium  | APT_COUNTRY                   | Country in which the airport is located                                       |
-| APT_ICAO         | EBBR     | APT_ICAO                      | ICAO 4-letter airport designator                                              |
-| APT_NAME         | Brussels | APT_NAME                      | Airport name                                                                  |
-| FLT_TXO_UNIMP_2  | 7290     |                               | IFR flights with unimpeded reference time (source: Airport Operator)          |
-| TIME_TXO_UNIMP_2 | 60081    |                               | Total unimpeded reference taxi-out time in minutes (source: Airport Operator) |
-| TIME_TXO_ADD_2   | 15175    |                               | Total additional taxi-out time in minutes (source: Airport Operator)          |
-|                  |          | Avg. unimpeded taxi-out time  | =TIME_TXO_UNIMP_2 /FLT_TXO_UNIMP_2                                            |
-|                  |          | Avg. additional taxi-out time | =TIME_TXO_ADD_2 /FLT_TXO_UNIMP_2                                              |
+| Column name      | Data source     | Label       | Column description                                 | Example  |
+|------------------|-----------------|-------------|----------------------------------------------------|----------|
+| YEAR             | Network Manager | YEAR        | Reference year                                     | 2014     |
+| MONTH_NUM        | Network Manager | MONTH       | Month (numeric)                                    | 1        |
+| MONTH_MON        | Network Manager |             | Month (3-letter code)                              | JAN      |
+| APT_ICAO         | Network Manager | APT_ICAO    | ICAO 4-letter airport designator                   | EBBR     |
+| APT_NAME         | PRU             | APT_NAME    | Airport name                                       | Brussels |
+| STATE_NAME       | PRU             | APT_COUNTRY | Country in which the airport is located            | Belgium  |
+| FLT_TXO_UNIMP_2  | NM/airport      |             | IFR flights with unimpeded reference time          | 7290     |
+| TIME_TXO_UNIMP_2 | NM/airport      |             | Total unimpeded reference taxi-out time in minutes | 60081    |
+
+
+### Calculated Field(s)
+
+\begin{align*}
+\text{Avgerage unimpeded taxi-out time} & = \frac{TIME\_TXO\_UNIMP\_2}{FLT\_TXO\_UNIMP\_2} \\
+\text{Avgerage additional taxi-out time} & = \frac{TIME\_TXO\_ADD\_2}{FLT\_TXO\_UNIMP\_2}
+\end{align*}

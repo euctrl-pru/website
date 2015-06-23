@@ -75,17 +75,17 @@ width: 10em;
 
 | Data description                                                                                                              | Available data       | Excel download                 | Tailored extracts               | Meta data                     |
 |-------------------------------------------------------------------------------------------------------------------------------|----------------------|--------------------------------|---------------------------------|-------------------------------|
-| Airport traffic<br><small>Daily IFR arrivals and departures by airport</small>                                                | Jan 2014 - May 2015  | [APT-FLT (Excel)][APT-FLTxlsx] | [APT-FLT (extract)<i class="fa fa-chain-broken"></i>][APT-FLTcsv] | [APT-FLT (Meta)<i class="fa fa-chain-broken"></i>][APT-FLTmeta] |
+| Airport traffic<br><small>Daily IFR arrivals and departures by airport</small>                                                | Jan 2014 - May 2015  | [APT-FLT (Excel)][APT-FLTxlsx] | [APT-FLT (extract)<i class="fa fa-chain-broken"></i>][APT-FLTcsv] | [APT-FLT (Meta)][APT-FLTmeta] |
 | Airport arrival ATFM delays<br><small>Daily IFR arrivals and airport arrival ATFM delay by airport and delay category</small> | Jan 2014 - May 2015  | [APT-DLY (Excel)][APT-DLYxlsx] | [APT-DLY (extract)][APT-DLYcsv] | [APT-DLY (Meta)][APT-DLYmeta] |
 | Arrival Sequencing and Metering (ASMA) additional time<br><small>Monthly ASMA additional and unimpeded time</small>           | Jan 2014 - Apr. 2015 | [ASMA (Excel)][ASMAxlsx]       | [ASMA (extract)<i class="fa fa-chain-broken"></i>][ASMAcsv]       | [ASMA (Meta)][ASMAmeta]       |
 | Taxi-out additional time<br><small>Monthly taxi out additional and unimpeded time</small>                                     | Jan 2014 - Apr 2015  | [TX-OUT (Excel)][TX-OUTxlsx]   | [TX-OUT (extract)<i class="fa fa-chain-broken"></i>][TX-OUTcsv]   | [TX-OUT (Meta)][TX-OUTmeta]   |
 | ATC pre-departure delays (ICAO code 89)<br><small>Daily ATC pre-departure delay (IATA code 89) by airport</small>             | Jan 2014 - May 2015  | [ATC-PRE (Excel)][ATC-PRExlsx] |                                 | [ATC-PRE (Meta)][ATC-PREmeta] |
-| ATFM slot adherence<br><small>Daily ATFM slot adherence by airport</small>                                                    | Jan 2014 - May 2015  | [SLT-ADH (Excel)][SLT-ADHxlsx] |                                 | [SLT-ADH (Meta)][SLT-ADHmeta] |
+| ATFM slot adherence<br><small>Daily ATFM slot adherence by airport</small>                                                    | Jan 2014 - May 2015  | [SLT-ADH (Excel)][SLT-ADHxlsx] |                                 | [SLT-ADH (Meta)<i class="fa fa-chain-broken">][SLT-ADHmeta] |
 
 
 [APT-FLTxlsx]: <https://docs.google.com/spreadsheets/d/13ussBrCF688P_7M3hARaiqdk262tJLUKG8HzJryY69g/export?format=xlsx> "APT-FLT (Excel)"
 [APT-FLTcsv]: <{{site.url}}/404.html> "APT-FLT (CSV)"
-[APT-FLTmeta]: <{{site.url}}/404.html> "APT-FLT (Meta)"
+[APT-FLTmeta]: <{{site.url}}/metadata/dataset/Airport_Traffic.html>  "APT-FLT (Meta)"
 
 [APT-DLYxlsx]: <https://docs.google.com/spreadsheets/d/13ussBrCF688P_7M3hARaiqdk262tJLUKG8HzJryY69g/export?format=xlsx> "APT-DLY (Excel)"
 [APT-DLYcsv]: <arrival_atfm_delay.html> "APT-DLY (CSV)"
@@ -100,7 +100,7 @@ width: 10em;
 [TX-OUTmeta]: <{{site.url}}/dataset/Taxi-out_Additional_Time.html> "TX-OUT (Meta)"
 
 [ATC-PRExlsx]: <https://docs.google.com/spreadsheets/d/13ussBrCF688P_7M3hARaiqdk262tJLUKG8HzJryY69g/export?format=xlsx> "ATC-PRE (Excel)"
-[ATC-PREmeta]: <{{site.url}}/404.html> "ATC-PRE (Meta)"
+[ATC-PREmeta]: <{{site.url}}/metadata/dataset/ATC_pre_departure.html>  "ATC-PRE (Meta)"
 
 [SLT-ADHxlsx]: <https://docs.google.com/spreadsheets/d/13ussBrCF688P_7M3hARaiqdk262tJLUKG8HzJryY69g/export?format=xlsx> "SLT-ADH (Excel)"
 [SLT-ADHmeta]: <{{site.url}}/404.html> "SLT-ADH (Meta)"
@@ -117,9 +117,9 @@ width: 10em;
 
 ## Other
 
-| Data description                                                             | Available data      | Excel download           | Tailored extracts         | Meta data              ß |
-|------------------------------------------------------------------------------|---------------------|--------------------------|---------------------------|-------------------------|
-| Complexity<br><small>Monthly en route service units by charging area</small> | Jan 2014 - May 2015 | [CPLX (Excel)][CPLXxlsx] | [CPLX (extract)<i class="fa fa-chain-broken"></i>][CPLXcsv] | [CPLX (Meta)][CPLXmeta] |
+| Data description                                                             | Available data      | Excel download | Tailored extracts | Meta data   |
+|------------------------------------------------------------------------------|---------------------|----------------|-------------------|-------------|
+| Complexity<br><small>Complexity by ANSP and ATC unit</small> | Jan 2014 - May 2015 | [CPLX (Excel)][CPLXxlsx]   | [CPLX (extract)<i class="fa fa-chain-broken"></i>][CPLXcsv] | [CPLX (Meta)<i class="fa fa-chain-broken"></i>][CPLXmeta] |
 
 [CPLXxlsx]: <https://docs.google.com/spreadsheets/d/1GBJWcW5rwlvP1wIUwPVwtT3zMjdvbrWcfn5CSvJhses/export?format=xlsx> "CPLX (Excel)"
 [CPLXcsv]: <{{site.url}}/404.html> "CPLX (CSV)"
