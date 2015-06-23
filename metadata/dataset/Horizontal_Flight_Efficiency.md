@@ -26,9 +26,13 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 
 
 ### Calculated Field(s)
+The KPI for Horizontal Flight Efficiency is calculated as follows:
 
 $$
-KPI	=F_{km} / A_{km} -1
+{HFE}_j = ( \frac{\sum_{f,p} L_{fjp}}{\sum_{f,p} H_{fjp}} - 1 ) %
 $$
 
-where $F = DIST_FLOWN_KM_1$ and $A = DIST_ACHIEVED_KM_1$.
+where $L$ is the length of the trajectory and $H$ is the achieved distance;
+the index $f$ is the flight, $j$ is the airspace and $p$ is the portion considered.
+
+From the table above $L$ is $DIST\_FLOWN\_KM\_1$, while $H$ is $DIST\_ACHIEVED\_KM\_1$.

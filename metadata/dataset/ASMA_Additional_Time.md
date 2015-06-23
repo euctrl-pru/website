@@ -25,5 +25,7 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 
 ### Calculated Field(s)
 
-<p>Avg. unimpeded ASMA time	= TIME_ASMA_UNIMP_2/FLT_ASMA_UNIMP_2</p>
-Avg. additional ASMA time	= TIME_ASMA_ADD_2/FLT_ASMA_UNIMP_2
+\begin{align*}
+\text{Average unimpeded ASMA time} & = \frac{TIME\_ASMA\_UNIMP\_2}{FLT\_ASMA\_UNIMP\_2} \\
+\text{Avgerage additional ASMA time} & = \frac{TIME\_ASMA\_ADD\_2}{FLT\_ASMA\_UNIMP\_2}
+\end{align*}
