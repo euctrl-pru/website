@@ -1,8 +1,7 @@
 ---
 layout: default
-title: Contact Us
-excerpt: Performance Review Unit MetaData Definitions.
-keywords: metadata, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
+title: Contact us
+permalink: /contact_us/
 ---
 
-For feedback or questions please contact us at: [Performance Review Unit](mailto:NSA-PRU-Support@eurocontrol.int)
+For feedback or questions please contact us at: [Performance Review Unit](mailto:{{ site.owner.email }}) ({{ site.owner.email }}).

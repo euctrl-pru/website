@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Data Download
+title: Data
 permalink: /data/
 excerpt: Performance Review Unit Data Download.
 keywords: performance, data, statistics, economics, air transport, flights, europe, cost efficiency
@@ -20,7 +20,7 @@ of this information.
 
 
 <br><br>
-For feedback or questions please contact us at: [Performance Review Unit](mailto:pru@eurocontrol.int)
+For feedback or questions please contact us at: [Performance Review Unit](mailto:{{ site.owner.email }}) ({{ site.owner.email }}).
 <br><br>
 
 <span class="glyphicon glyphicon-exclamation-sign"></span> = under construction.
