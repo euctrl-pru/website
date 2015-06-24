@@ -28,12 +28,10 @@
           <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
         {% endfor %}
       </ul>
-      <!-- let's keep About out of navigation.yml to have it right-aligned -->
+      <!-- let's keep About & C0. out of navigation.yml to have it right-aligned -->
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/about/#">About</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="/contact_us/#">Contact us</a></li>
+        <li><a href="{{ "/contact_us/#" | prepend: site.baseurl }}">Contact us</a></li>
+        <li class=""><a href="{{ "/about/#" | prepend: site.baseurl }}">About</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -91,13 +89,14 @@
 
 <!-- TODO: this probably needs to be encapsulated... -->
 <script>
+(function() {
   var dotSide = 4,
   dotSep   = 1,
   logoXPadding = 2 * dotSide,
   logoYPadding = 2 * dotSide,
   width = 11 * dotSide + 2 * logoXPadding,
   height = 5 * dotSide + 2 * logoYPadding,
-  h = Math.floor(logoXPadding / 2) - 0.5 * dotSide;
+  h = Math.floor(logoXPadding / 2) - 0.5 * dotSide,
   v = Math.floor(height - logoYPadding / 2) - 0.5 * dotSide;
 
   // console.log("width=" + width);
@@ -135,7 +134,7 @@
     [23,  9, 2],
     [23, 11, 2]
   ],
-  n = nodes.length;
+  n = nodes.length,
   letters = ["p", "r", "u"];
 
   var svg = d3.select("#logo").append("svg")
@@ -165,7 +164,7 @@
       x: e.x,
       y: e.y,
       fixed: !0,
-      radius: 0    
+      radius: 0
     };
   }));
 
@@ -246,4 +245,5 @@
       return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
     };
   }
+})();
 </script>
