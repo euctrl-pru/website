@@ -34,9 +34,6 @@ It is the difference between the actual taxi-out time of a flight and a statisti
 ### Calculated Field(s)
 
 \begin{align*}
-\text{Average unimpeded taxi-out time} & = \frac{TIME\_TXO\_UNIMP\_2}{FLT\_TXO\_UNIMP\_2} 
-\end{align*}
-
-\begin{align*}
+\text{Average unimpeded taxi-out time} & = \frac{TIME\_TXO\_UNIMP\_2}{FLT\_TXO\_UNIMP\_2} \\
 \text{Average additional taxi-out time} & = \frac{TIME\_TXO\_ADD\_2}{FLT\_TXO\_UNIMP\_2}
 \end{align*}

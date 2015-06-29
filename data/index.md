@@ -114,10 +114,10 @@ width: 10em;
 
 | Data description                                                             | Available data      | Excel download | Tailored extracts | Meta data   |
 |------------------------------------------------------------------------------|---------------------|----------------|-------------------|-------------|
-| Complexity<br><small>Complexity by ANSP and ATC unit</small> | Jan 2014 - May 2015 | [CPLX (Excel)][CPLXxlsx]   | [CPLX (extract)<span class="glyphicon glyphicon-exclamation-sign"></span>][CPLXcsv] | [CPLX (Meta)<span class="glyphicon glyphicon-exclamation-sign"></span>][CPLXmeta] |
+| Complexity<br><small>Complexity by ANSP and ATC unit</small> | Jan 2014 - May 2015 | [CPLX (Excel)][CPLXxlsx]   | [CPLX (extract)<span class="glyphicon glyphicon-exclamation-sign"></span>][CPLXcsv] | [CPLX (Meta)][CPLXmeta] |
 
 [CPLXxlsx]: <https://docs.google.com/spreadsheets/d/1GBJWcW5rwlvP1wIUwPVwtT3zMjdvbrWcfn5CSvJhses/export?format=xlsx> "CPLX (Excel)"
 [CPLXcsv]: <{{site.url}}/404.html> "CPLX (CSV)"
-[CPLXmeta]: <{{site.url}}/404.html> "CPLX (Meta)"
+[CPLXmeta]: <{{site.url}}/metadata/dataset/Traffic_Complexity_Score.html> "CPLX (Meta)"
 
 <br>

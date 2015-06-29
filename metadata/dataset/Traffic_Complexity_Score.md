@@ -8,17 +8,17 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 
 ## Data description
 
-The PRU, in close collaboration with ANSPs, has defined a set of complexity indicators that can be applied in ANSP benchmarking. The complexity indicators are computed on a systematic basis for each day of the year. The complexity indicators are based on the concept of “interactions” arising when there are two aircraft in the same “place” at the same time. Hence, the **Complexity Score** is a measure of the potential number of interactions between aircraft defined as the total duration of all interactions (in minutes) per flight-hour controlled in a given volume of airspace. The **Complexity Score** is the product of two components: Traffic density and Structural index. 
+The PRU, in close collaboration with ANSPs, has defined a set of complexity indicators that can be applied in ANSP benchmarking. The complexity indicators are computed on a systematic basis for each day of the year. The complexity indicators are based on the concept of “interactions” arising when there are two aircraft in the same “place” at the same time. Hence, the **Complexity Score** is a measure of the potential number of interactions between aircraft defined as the total duration of all interactions (in minutes) per flight-hour controlled in a given volume of airspace. The **Complexity Score** is the product of two components: Traffic density and Structural index.
 
 The traffic density is expressed in **Adjusted density** which measures the (uneven) distribution of traffic throughout the airspace (i.e. taking into account the relative concentration). The measure relies on dividing the airspace volume into a discrete grid of 20 nautical mile cells. An interaction is defined as the simultaneous presence of two aircraft in a cell of 20x20 nautical miles and 3,000 feet in height.
 
 The structural index originates from horizontal, vertical, and speed interactions and is computed as the sum of the three indicators.
 
-<p>**Horizontal interactions index:** A measure of the complexity of the flow structure based on the potential interactions between aircraft on different headings. The indicator is defined as the ratio of the duration of horizontal interactions to the total duration of all interactions.</p>
+**Horizontal interactions index:** A measure of the complexity of the flow structure based on the potential interactions between aircraft on different headings. The indicator is defined as the ratio of the duration of horizontal interactions to the total duration of all interactions.
 
-<p>**Vertical interactions index:** A measure of the complexity arising from aircraft in vertical evolution based on the potential interactions between climbing, cruising and descending aircraft. The indicator is defined as the ratio of the duration of vertical interactions to the total duration of all interactions.</p>
+**Vertical interactions index:** A measure of the complexity arising from aircraft in vertical evolution based on the potential interactions between climbing, cruising and descending aircraft. The indicator is defined as the ratio of the duration of vertical interactions to the total duration of all interactions.
 
-<p>**Speed interactions indicator:** A measure of the complexity arising from the aircraft mix based on the potential interactions between aircraft of different speeds. The indicator is defined as the ratio of the duration of speed interactions to the total duration of all interactions.</p>
+**Speed interactions indicator:** A measure of the complexity arising from the aircraft mix based on the potential interactions between aircraft of different speeds. The indicator is defined as the ratio of the duration of speed interactions to the total duration of all interactions.
 
 More information on the methodologies used for the computation of the complexity score in this report is available from the report on “Complexity Metrics for ANSP Benchmarking Analysis” available on the PRC webpage.
 
@@ -44,10 +44,11 @@ More information on the methodologies used for the computation of the complexity
 
 ### Calculated Field(s)
 
-+ **Adj. Density** =ROUND((INTER_TIME /FLIGHT_TIME )*60,3)
-+ **Vertical Index** = ROUND(VERTICAL_INTER/INTER_TIME,3)
-+ **Horizontal Index** = ROUND(HORIZ_INTER /INTER_TIME,3)
-+ **Speed Index** = ROUND(SPEED_INTER/INTER_TIME,3)
-+ **Structural Index** ='Vertical Index' +'Horizontal Index' +'Speed Index'
-+ **Complexity Score** =ROUND(((VERTICAL_INTER +HORIZ_INTER +SPEED_INTER )/FLIGHT_TIME )*60,3)
-
+\begin{align*}
+\text{Adjacient Density}     & = round( \frac{INTER\_TIME}{FLIGHT\_TIME} 60, 3) \\
+\text{Vertical Index (VI)}   & = round( \frac{VERTICAL\_INTER}{INTER\_TIME}, 3) \\
+\text{Horizontal Index (HI)} & = round( \frac{HORIZ\_INTER}{INTER\_TIME}, 3) \\
+\text{Speed Index (SI)}      & = round(\frac{SPEED\_INTER}{INTER\_TIME}, 3) \\
+\text{Structural Index}      & = VI + HI + SI \\
+\text{Complexity Score}      & = round(\frac{VERTICAL\_INTER + HORIZ\_INTER + SPEED\_INTER}{FLIGHT\_TIME} 60, 3)
+\end{align*}
