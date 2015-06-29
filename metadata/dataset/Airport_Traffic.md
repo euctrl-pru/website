@@ -6,6 +6,8 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 ---
 # {{ page.title }}
 
+## Data description
+<p>The data provides the number of arrivals and departures from various data sources at the respective airports.</p>
 
 ## Column naming and types
 

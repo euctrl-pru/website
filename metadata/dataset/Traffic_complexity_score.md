@@ -1,0 +1,53 @@
+---
+layout: default
+title: Traffic complexity score
+excerpt: Performance Review Unit MetaData Definitions.
+keywords: metadata, dataset, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
+---
+# {{ page.title }}
+
+## Data description
+
+The PRU, in close collaboration with ANSPs, has defined a set of complexity indicators that can be applied in ANSP benchmarking. The complexity indicators are computed on a systematic basis for each day of the year. The complexity indicators are based on the concept of “interactions” arising when there are two aircraft in the same “place” at the same time. Hence, the **Complexity Score** is a measure of the potential number of interactions between aircraft defined as the total duration of all interactions (in minutes) per flight-hour controlled in a given volume of airspace. The **Complexity Score** is the product of two components: Traffic density and Structural index. 
+
+The traffic density is expressed in **Adjusted density** which measures the (uneven) distribution of traffic throughout the airspace (i.e. taking into account the relative concentration). The measure relies on dividing the airspace volume into a discrete grid of 20 nautical mile cells. An interaction is defined as the simultaneous presence of two aircraft in a cell of 20x20 nautical miles and 3,000 feet in height.
+
+The structural index originates from horizontal, vertical, and speed interactions and is computed as the sum of the three indicators.
+
+<p>**Horizontal interactions index:** A measure of the complexity of the flow structure based on the potential interactions between aircraft on different headings. The indicator is defined as the ratio of the duration of horizontal interactions to the total duration of all interactions.</p>
+
+<p>**Vertical interactions index:** A measure of the complexity arising from aircraft in vertical evolution based on the potential interactions between climbing, cruising and descending aircraft. The indicator is defined as the ratio of the duration of vertical interactions to the total duration of all interactions.</p>
+
+<p>**Speed interactions indicator:** A measure of the complexity arising from the aircraft mix based on the potential interactions between aircraft of different speeds. The indicator is defined as the ratio of the duration of speed interactions to the total duration of all interactions.</p>
+
+More information on the methodologies used for the computation of the complexity score in this report is available from the report on “Complexity Metrics for ANSP Benchmarking Analysis” available on the PRC webpage.
+
+## Column naming and types
+
+| Column name    | Data source    | Label          | Column description                                              | Example      |
+|----------------|----------------|----------------|-----------------------------------------------------------------|--------------|
+| YEAR           | Network Manger | YEAR           | Reference year                                                  | 2014         |
+| MONTH_NUM      | Network Manger | MONTH          | Month (numeric)                                                 | 1            |
+| MONTH_MON      | Network Manger | MONTH_MON      | Month (3-letter code)                                           | JAN          |
+| FLT_DATE       | Network Manger | DATE_FLT       | Date of flight                                                  | 05/01/2014   |
+| ANSP_NAME      | PRU            | ENTITY_NAME    | Entity name                                                     | Belgocontrol |
+| ATC_UNIT_NAME  | PRU            | ENTITY_TYPE    | Type of the entity to which the data relates (ANSP, FAB, WIDE)  | Brussels     |
+| ATC_UNIT_TYPE  | PRU            | TYPE_CALC      | The computation of the flight count can be based on FIR or ANSP | ACC          |
+| FLIGHT_TIME    | NM/PRU         | FLIGHT_TIME    | Flight hours                                                    | 1491         |
+| INTER_TIME     | NM/PRU         | INTER_TIME     | Hours of interactions                                           | 131          |
+| VERTICAL_INTER | NM/PRU         | VERTICAL_INTER | Hours of vertical interactions                                  | 51           |
+| HORIZ_INTER    | NM/PRU         | HORIZ_INTER    | Hours of horizontal interactions                                | 73           |
+| SPEED_INTER    | NM/PRU         | SPEED_INTER    | Hours of speed interactions                                     | 55           |
+| MIN_FL         | Network Manger | MIN_FL         | Minimum flight level                                            | 100          |
+| MAX_FL         | Network Manger | MAX_FL         | Maximum flight level                                            | 250          |
+
+
+### Calculated Field(s)
+
++ **Adj. Density** =ROUND((INTER_TIME /FLIGHT_TIME )*60,3)
++ **Vertical Index** = ROUND(VERTICAL_INTER/INTER_TIME,3)
++ **Horizontal Index** = ROUND(HORIZ_INTER /INTER_TIME,3)
++ **Speed Index** = ROUND(SPEED_INTER/INTER_TIME,3)
++ **Structural Index** ='Vertical Index' +'Horizontal Index' +'Speed Index'
++ **Complexity Score** =ROUND(((VERTICAL_INTER +HORIZ_INTER +SPEED_INTER )/FLIGHT_TIME )*60,3)
+

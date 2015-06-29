@@ -6,6 +6,14 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 ---
 # {{ page.title }}
 
+## Data description
+<p>The additional ASMA time is a proxy for the average arrival runway queuing time on the inbound traffic flow, during congestion periods at airports.</p>
+
+<p>It is the difference between the actual ASMA time of a flight and a statistically determined unimpeded ASMA time based on ASMA times in periods of low traffic demand.</p>
+
+<p>Uncertainty of approach conditions (e.g. pilot performance, landing clearance time, approach speed, wind conditions) makes traffic supply to runways a stochastic phenomenon. In order to ensure continuous traffic demand at runways and maximise runway usage, a minimum level of queuing is required. However, additional time in holding is detrimental to operations efficiency, fuel consumption and environment. Therefore, there exists a trade-off between approach efficiency and runway throughput.</p>
+
+<p>As an output of the ATMAP Group, additional ASMA time has been in use as a commonly agreed proxy for airport inefficiency in the approach phase since 2008 and is compliant with the PI definition in the Performance Regulation (691/2010).</p>
 
 ## Column naming and types
 
@@ -26,6 +34,9 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 ### Calculated Field(s)
 
 \begin{align*}
-\text{Average unimpeded ASMA time} & = \frac{TIME\_ASMA\_UNIMP\_2}{FLT\_ASMA\_UNIMP\_2} \\
-\text{Avgerage additional ASMA time} & = \frac{TIME\_ASMA\_ADD\_2}{FLT\_ASMA\_UNIMP\_2}
+\text{Average additional ASMA time} & = \frac{TIME\_ASMA\_ADD\_2}{FLT\_ASMA\_UNIMP\_2} 
+\end{align*}
+
+\begin{align*}
+\text{Average unimpeded ASMA time} & = \frac{TIME\_ASMA\_UNIMP\_2}{FLT\_ASMA\_UNIMP\_2} 
 \end{align*}

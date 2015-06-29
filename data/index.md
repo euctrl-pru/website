@@ -105,7 +105,7 @@ width: 10em;
 [SLT-ADHxlsx]: <https://docs.google.com/spreadsheets/d/13ussBrCF688P_7M3hARaiqdk262tJLUKG8HzJryY69g/export?format=xlsx> "SLT-ADH (Excel)"
 [SLT-ADHmeta]: <{{site.url}}/404.html> "SLT-ADH (Meta)"
 
-## Economics
+### ATM Cost-Effectiveness (ACE) operational data
 
 | Data description                                     | Available data      | Excel download          | Tailored extracts       | Meta data             |
 |------------------------------------------------------|---------------------|-------------------------|-------------------------|-----------------------|
@@ -115,7 +115,7 @@ width: 10em;
 [ACEcsv]: <ace.html> "ACE (CSV)"
 [ACEmeta]: <{{site.url}}/metadata/dataset/ACE_monthly.html> "ACE (Meta)"
 
-## Other
+### Traffic complexity scores
 
 | Data description                                                             | Available data      | Excel download | Tailored extracts | Meta data   |
 |------------------------------------------------------------------------------|---------------------|----------------|-------------------|-------------|
