@@ -7,12 +7,12 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 # {{ page.title }}
 
 ## Data description
-<p>The measure provides an indication of ATFM delays on the ground due to constraints en route.</p>
-<p>In accordance with Performance Regulation (691/2010), Single European Sky Area States are required to adopt performance targets contributing adequately to and be consistent with the EU wide targets. The capacity KPI for the first reference period is the en route ATFM delay per flight.</p>
+<p>The measure provides an indication of ATFM delays on the ground due to constraints en-route.</p>
 
 <p>In Europe, when traffic demand is anticipated to exceed the available capacity in en route centres or at airports, Air Traffic Control (ATC) units may request the local Flow Management Position (FMP) to instigate an Air Traffic Flow Management (ATFM) measure, or regulation. Aircraft expected to arrive during a period of congestion are given Air Traffic Flow Management delay at their departure airport, under the authority of the Network Manager, in order to regulate the flow of traffic into the constrained downstream en route sector or airport, thus ensuring safety. The resulting ATFM delays are calculated as the difference between the estimated take-off time calculated from the filed flight plan including updates and the calculated take-off time allocated by the central unit of ATFM. The reason for the regulation is indicated by the responsible Flow Management Position (FMP). The delay is attributed to the most constraining ATC unit.</p>
 
-<p>En.route ATFM delay has been in use as a commonly agreed proxy for en route capacity shortfalls since 1999. The calculation of ATFM delays is based on a well established and commonly accepted algorithm and is compliant with the KPI definition in the Performance Regulation (691/2010).</p>
+<p>The calculation of En-route ATFM delay is based on a well established and commonly accepted algorithm and has been in use as a commonly agreed proxy for en-route capacity shortfalls since 1999.
+</p>
 
 ## Column naming and types
 
