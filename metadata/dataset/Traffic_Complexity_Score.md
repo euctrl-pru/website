@@ -20,7 +20,7 @@ The structural index originates from horizontal, vertical, and speed interaction
 
 **Speed interactions indicator:** A measure of the complexity arising from the aircraft mix based on the potential interactions between aircraft of different speeds. The indicator is defined as the ratio of the duration of speed interactions to the total duration of all interactions.
 
-More information on the methodologies used for the computation of the complexity score in this report is available from the report on “Complexity Metrics for ANSP Benchmarking Analysis” available on the PRC webpage.
+More information on the methodologies used for the computation of the complexity score see [@complexitymetrics] in the References.
 
 ## Column naming and types
 
@@ -52,3 +52,5 @@ More information on the methodologies used for the computation of the complexity
 \text{Structural Index}      & = VI + HI + SI \\
 \text{Complexity Score}      & = round(\frac{VERTICAL\_INTER + HORIZ\_INTER + SPEED\_INTER}{FLIGHT\_TIME} 60, 3)
 \end{align*}
+
+# References
