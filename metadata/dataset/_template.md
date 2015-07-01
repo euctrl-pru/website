@@ -12,6 +12,7 @@ One line summary (ca. 50 chars)
 
 If necessary, a longer and more detailed description with references, diagrams, whatevwer.
 It usually covers more than just one line!
+Any citation see [@bibitem] will be properly mentioned in the References section (the last in the page.)
 
 A final paragraph on where this dataset is used.
 
@@ -45,3 +46,5 @@ These formulas describe what is provided by the pivot tables in the Excel spread
 \nabla \times E = -\frac{\partial B}{\partial t} \\
 \nabla \times B = \mu_0 \left( J + \varepsilon_0 \frac{\partial E}{\partial t} \right)
 \end{align*}
+
+# References
