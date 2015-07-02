@@ -13,6 +13,8 @@ This data is published by the Performance Review Unit in the interest of the exc
 It may be copied in whole or in part providing that the copyright notice and disclaimer are included.
 The information may not be modified without prior written permission from the Performance Review Unit.
 
+The data provided is used within the EU and Eurocontrol context.
+
 The information does not necessarily reflect the official views or policy of EUROCONTROL,
 which makes no warranty, either implied or express, for the information contained in this document,
 neither does it assume any legal liability or responsibility for the accuracy, completeness or usefulness
