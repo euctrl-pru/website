@@ -10,10 +10,10 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 The ATC pre-departure delay is a proxy for ATC induced delays at the departure
 stand to avoid queuing at the departure runway.
 
-The data is based on IATA delay code 89 which, besides delays caused by local ATC constraints,
-also includes delays due to late push-back approval and some other reasons which may introduce
-a certain level of bias. Work is in progress to allow for a better identification of the
-different causal factors.
+The data is based on [IATA delay code 89](/metadata/definition/IATA_code_89.html) [@iata:delaycodes] which, besides delays caused by
+local ATC constraints, also includes delays due to late push-back approval and some other
+reasons which may introduce a certain level of bias.
+Work is in progress to allow for a better identification of the different causal factors.
 
 ## Column naming and types
 
@@ -31,3 +31,5 @@ different causal factors.
 | DLY_ATC_PRE_2 | Airport Operator | ATC pre-departure delay (APT) | Minutes of delay reported as IATA Code 89                                  | 0            |
 | FLT_DEP_3     | CODA/ Airlines   | IFR departures - (AL)         | Number of IFR departures for which data was submitted by airlines          | 52           |
 | DLY_ATC_PRE_3 | CODA/ Airlines   | ATC pre-departure delay (AL)  | Minutes of delay reported as IATA Code 89                                  | 2            |
+
+# References
