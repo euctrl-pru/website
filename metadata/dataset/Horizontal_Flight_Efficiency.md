@@ -7,17 +7,23 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 # {{ page.title }}
 
 ## Data description
-<p>Horizontal en-route flight efficiency compares the length of actual or planned flight trajectories to the corresponding “achieved” distance. </p>
+Horizontal en-route flight efficiency compares the length of actual or planned flight trajectories
+to the corresponding “achieved” distance.
 
-<p>The achieved distance apportions the Great Circle Distance (GCD) between two points within the European airspace (reference area). If the origin/ destination airport is located outside of European airspace, the entry/exit point into the reference area is used for the calculation. </p>
+The achieved distance apportions the Great Circle Distance (GCD) between two points within
+the European airspace (reference area).
+If the origin/ destination airport is located outside of European airspace, the entry/exit point
+into the reference area is used for the calculation.
 
-<p>The planned trajectory is derived from the flight plans submitted by airspace users to the Network Manager. The actual flown trajectory is based on processed radar track data (Correlated Position Reports) submitted by ANSPs to the EUROCONTROL Enhanced Tactical Flow Management System (ETFMS).</p> 
+The planned trajectory is derived from the flight plans submitted by airspace users to the Network Manager.
+The actual flown trajectory is based on processed radar track data (Correlated Position Reports)
+submitted by ANSPs to the EUROCONTROL Enhanced Tactical Flow Management System (ETFMS).
 
 The methodology is fully consistent with the SES Performance Scheme.
 
 ## Column naming and types
 
-| Column name      | Data source     | Label       | Column description                                                                                 | Example        |
+| Column name      | Data source     | Label       |  Description                                                                                       | Example        |
 |------------------|-----------------|-------------|----------------------------------------------------------------------------------------------------|----------------|
 | YEAR             | Network Manager | YEAR        | Reference year                                                                                     | 2015           |
 | MONTH_NUM        | Network Manager |             | Month (numeric)                                                                                    | 1              |
@@ -33,7 +39,8 @@ The methodology is fully consistent with the SES Performance Scheme.
 
 
 ### Calculated Field(s)
-The indicator is calculated as the ratio of the two sums (length of trajectories and achieved distances), over all flights considered:</p>
+The indicator is calculated as the ratio of the two sums (length of trajectories and achieved distances),
+over all flights considered:
 
 $$
 {HFE}_j = ( \frac{\sum_{f,p} L_{fjp}}{\sum_{f,p} H_{fjp}} - 1 ) %

@@ -7,18 +7,22 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 # {{ page.title }}
 
 ## Data description
-<p>The ATC pre-departure delay is a proxy for ATC induced delays at the departure stand to avoid queuing at the departure runway.
+The ATC pre-departure delay is a proxy for ATC induced delays at the departure
+stand to avoid queuing at the departure runway.
 
-The data is based on IATA delay code 89 which, besides delays caused by local ATC constraints, also includes delays due to late push-back approval and some other reasons which may introduce a certain level of bias. Work is in progress to allow for a better identification of the different causal factors. </p>
+The data is based on IATA delay code 89 which, besides delays caused by local ATC constraints,
+also includes delays due to late push-back approval and some other reasons which may introduce
+a certain level of bias. Work is in progress to allow for a better identification of the
+different causal factors.
 
 ## Column naming and types
 
-| Column name   | Source           | Label                         | Description                                                                | Example      |
+| Column name   | Data Source      | Label                         | Description                                                                | Example      |
 |---------------|------------------|-------------------------------|----------------------------------------------------------------------------|--------------|
 | YEAR          | Network Manager  | YEAR                          | Reference year                                                             | 2014         |
 | MONTH_NUM     | Network Manager  | MONTH_NUM                     | Month (numeric)                                                            | 01           |
 | MONTH_MON     | Network Manager  | MONTH_MON                     | Month (3-letter code)                                                      | JAN          |
-| FLT_DATE      | Network Manager  | FLT_DATE                      | Date of flight                                                             | 01/01/2014   |
+| FLT_DATE      | Network Manager  | FLT_DATE                      | Date of flight                                                             | 01-Jan-2014  |
 | APT_ICAO      | Network Manager  | APT_ICAO                      | ICAO 4-letter airport designator                                           | EDDK         |
 | APT_NAME      | PRU              | APT_NAME                      | Airport name                                                               | Cologne-Bonn |
 | STATE_NAME    | PRU              | STATE_NAME                    | Name of the State in which the airport is located                          | Germany      |

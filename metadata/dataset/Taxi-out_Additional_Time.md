@@ -8,18 +8,28 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 
 ## Data description
 
-The additional taxi-out time is a proxy for the average departure runway queuing time on the outbound traffic flow during congestion periods at airports.
+The additional taxi-out time is a proxy for the average departure runway queuing time on the
+outbound traffic flow during congestion periods at airports.
 
-It is the difference between the actual taxi-out time of a flight and a statistically determined unimpeded taxi-out time based on taxi-out times in periods of low traffic demand.
+It is the difference between the actual taxi-out time of a flight and a statistically determined
+unimpeded taxi-out time based on taxi-out times in periods of low traffic demand.
 
-<p>Uncertainty of take-off clearance time and aircraft arriving time at runway holding stop bars makes traffic supply to runways a stochastic phenomenon. In order to ensure continuous traffic demand at runways and maximise runway usage, a minimum level of queuing is required. However, additional time is detrimental to taxi-out efficiency, fuel consumption and environment. Therefore, there exists a trade-off between taxi-out efficiency and runway throughput.</p>
+Uncertainty of take-off clearance time and aircraft arriving time at runway holding stop bars
+makes traffic supply to runways a stochastic phenomenon.
+In order to ensure continuous traffic demand at runways and maximise runway usage,
+a minimum level of queuing is required.
+However, additional time is detrimental to taxi-out efficiency, fuel consumption and environment.
+Therefore, there exists a trade-off between taxi-out efficiency and runway throughput.
 
-<p>When monitoring taxi-out performance at airports, it is important to note that the goal is not to reduce taxi time to the unimpeded reference time - as this could negatively impact on runway throughput - but rather to reduce additional taxi-out time and associated fuel burn to the necessary minimum.</p>
+When monitoring taxi-out performance at airports, it is important to note that the goal
+is not to reduce taxi time to the unimpeded reference time - as this could negatively impact
+on runway throughput - but rather to reduce additional taxi-out time and associated fuel burn
+to the necessary minimum.
 
 
 ## Column naming and types
 
-| Column name      | Data source     | Label                         | Column description                                 | Example  |
+| Column name      | Data source     | Label                         |  Description                                       | Example  |
 |------------------|-----------------|-------------------------------|----------------------------------------------------|----------|
 | YEAR             | Network Manager | YEAR                          | Reference year                                     | 2014     |
 | MONTH_NUM        | Network Manager | MONTH_NUM                     | Month (numeric)                                    | 1        |

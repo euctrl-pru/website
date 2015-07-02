@@ -7,17 +7,26 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 # {{ page.title }}
 
 ## Data description
-<p>The additional ASMA time is a proxy for the average arrival runway queuing time on the inbound traffic flow, during congestion periods at airports.</p>
+The additional ASMA time is a proxy for the average arrival runway queuing time on the inbound
+traffic flow, during congestion periods at airports.
 
-<p>It is the difference between the actual ASMA time of a flight and a statistically determined unimpeded ASMA time based on ASMA times in periods of low traffic demand.</p>
+It is the difference between the actual ASMA time of a flight and a statistically determined
+unimpeded ASMA time based on ASMA times in periods of low traffic demand.
 
-<p>Uncertainty of approach conditions (e.g. pilot performance, landing clearance time, approach speed, wind conditions) makes traffic supply to runways a stochastic phenomenon. In order to ensure continuous traffic demand at runways and maximise runway usage, a minimum level of queuing is required. However, additional time in holding is detrimental to operations efficiency, fuel consumption and environment. Therefore, there exists a trade-off between approach efficiency and runway throughput.</p>
+Uncertainty of approach conditions (e.g. pilot performance, landing clearance time, approach speed,
+wind conditions) makes traffic supply to runways a stochastic phenomenon.
+In order to ensure continuous traffic demand at runways and maximise runway usage, a minimum level
+of queuing is required.
+However, additional time in holding is detrimental to operations efficiency, fuel consumption and environment.
+Therefore, there exists a trade-off between approach efficiency and runway throughput.
 
-<p>As an output of the ATMAP Group, additional ASMA time has been in use as a commonly agreed proxy for airport inefficiency in the approach phase since 2008 and is compliant with the PI definition in the Performance Regulation (691/2010).</p>
+As an output of the ATMAP Group, additional ASMA time has been in use as a commonly agreed proxy
+for airport inefficiency in the approach phase since 2008 and is compliant with the PI definition
+in the Performance Regulation (691/2010).
 
 ## Column naming and types
 
-| Column name       | Data source     | Label       | Column description                                                  | Example  |
+| Column name       | Data source     | Label       |  Description                                                        | Example  |
 |-------------------|-----------------|-------------|---------------------------------------------------------------------|----------|
 | YEAR              | Network Manager | YEAR        | Reference year                                                      | 2014     |
 | MONTH_NUM         | Network Manager | MONTH       | Month (numeric)                                                     | 1        |

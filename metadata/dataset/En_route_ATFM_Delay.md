@@ -7,21 +7,32 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 # {{ page.title }}
 
 ## Data description
-<p>The measure provides an indication of ATFM delays on the ground due to constraints en-route.</p>
+The measure provides an indication of ATFM delays on the ground due to constraints en-route.
 
-<p>In Europe, when traffic demand is anticipated to exceed the available capacity in en route centres or at airports, Air Traffic Control (ATC) units may request the local Flow Management Position (FMP) to instigate an Air Traffic Flow Management (ATFM) measure, or regulation. Aircraft expected to arrive during a period of congestion are given Air Traffic Flow Management delay at their departure airport, under the authority of the Network Manager, in order to regulate the flow of traffic into the constrained downstream en route sector or airport, thus ensuring safety. The resulting ATFM delays are calculated as the difference between the estimated take-off time calculated from the filed flight plan including updates and the calculated take-off time allocated by the central unit of ATFM. The reason for the regulation is indicated by the responsible Flow Management Position (FMP). The delay is attributed to the most constraining ATC unit.</p>
+In Europe, when traffic demand is anticipated to exceed the available capacity in en route centres
+or at airports, Air Traffic Control (ATC) units may request the local Flow Management Position (FMP)
+to instigate an Air Traffic Flow Management (ATFM) measure, or regulation.
+Aircraft expected to arrive during a period of congestion are given Air Traffic Flow Management
+delay at their departure airport, under the authority of the Network Manager,
+in order to regulate the flow of traffic into the constrained downstream en route sector or airport,
+thus ensuring safety.
+The resulting ATFM delays are calculated as the difference between the estimated take-off time
+calculated from the filed flight plan including updates and the calculated take-off time allocated
+by the central unit of ATFM.
+The reason for the regulation is indicated by the responsible Flow Management Position (FMP).
+The delay is attributed to the most constraining ATC unit.
 
-<p>The calculation of En-route ATFM delay is based on a well established and commonly accepted algorithm and has been in use as a commonly agreed proxy for en-route capacity shortfalls since 1999.
-</p>
+The calculation of En-route ATFM delay is based on a well established and commonly accepted
+algorithm and has been in use as a commonly agreed proxy for en-route capacity shortfalls since 1999.
 
 ## Column naming and types
 
-| Column name  | Data source    | Label                           | Column description                                                             | Example    |
+| Column name  | Data source    | Label                           |  Description                                                                   | Example    |
 |--------------|----------------|---------------------------------|--------------------------------------------------------------------------------|------------|
 | YEAR         | Network Manger | YEAR                            | Reference year                                                                 | 2015       |
 | MONTH_NUM    | Network Manger | MONTH                           | Month (numeric)                                                                | 3          |
 | MONTH_MON    | Network Manger | MONTH_MON                       | Month (3-letter code)                                                          | MAR        |
-| FLT_DATE     | Network Manger | FLT_DATE                        | Date of flight                                                                 | 17/03/2015 |
+| FLT_DATE     | Network Manger | FLT_DATE                        | Date of flight                                                                 | 17-Mar-2015 |
 | ENTITY_NAME  | PRU            | ENTITY_NAME                     | Entity name                                                                    | FAB CE     |
 | ENTITY_TYPE  | PRU            | ENTITY_TYPE                     | Type of the entity to which the data relates (ANSP, FAB, WIDE)                 | FAB        |
 | CALC_TYPE    | PRU            | CALC_TYPE                       | The computation of the flight count can be based on FIR or ANSP                | ANSP       |
