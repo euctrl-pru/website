@@ -24,19 +24,19 @@ The methodology is fully consistent with the SES Performance Scheme.
 
 ## Column naming and types
 
-| Column name      | Data source     | Label       |  Description                                                                                       | Example        |
-|------------------|-----------------|-------------|----------------------------------------------------------------------------------------------------|----------------|
-| YEAR             | Network Manager | YEAR        | Reference year                                                                                     | 2015           |
-| MONTH_NUM        | Network Manager |             | Month (numeric)                                                                                    | 1              |
-| MONTH_MON        | Network Manager | MONTH_MON   | Month (3-letter code)                                                                              | JAN            |
-| ENTRY_DATE       | Network Manager |             | The entry date considered                                                                          | 31-Jan-15      |
-| ENTITY_NAME      | Network Manager | ENTITY_NAME | Name of the entity to with the data refers                                                         | UK-Ireland FAB |
-| ENTITY_TYPE      | Network Manager |             | Type of the entity                                                                                 | FAB            |
-| MODEL_TYPE       | Network Manager | MODEL_TYPE  | The type of trajectory used for the calculation (CPF=actual, FTFM=flight plan)                     | FTFM           |
-| DIST_FLOWN_KM    | Network Manager |             | Sum of flown distances in kilometre                                                                | 1208007        |
-| DIST_ACHIEVED_KM | Network Manager |             | Sum of achieved distances in kilometre                                                             | 1148839        |
-| T10_RUN_12M      | Network Manager | T10_RUN_12M | ‘B’ (‘W’) if the day is one of the ten best (worst) days for the entity in the previous ten months | B              |
-| T10_YYYY         | Network Manager | T10_YYYY    | ‘B’ (‘W’) if the day is one of the ten best (worst) days for the entity in the calendar year       | B              |
+| Column name      | Data source     | Label            | Column description                                                                                 | Example        |
+|------------------|-----------------|------------------|----------------------------------------------------------------------------------------------------|----------------|
+| YEAR             | Network Manager | YEAR             | Reference year                                                                                     | 2015           |
+| MONTH_NUM        | Network Manager | MONTH_NUM        | Month (numeric)                                                                                    | 1              |
+| MONTH_MON        | Network Manager | MONTH_MON        | Month (3-letter code)                                                                              | JAN            |
+| ENTRY_DATE       | Network Manager | ENTRY_DATE       | The entry date considered                                                                          | 31-Jan-2015    |
+| ENTITY_NAME      | Network Manager | ENTITY_NAME      | Name of the entity to with the data refers                                                         | UK-Ireland FAB |
+| ENTITY_TYPE      | Network Manager | ENTITY_TYPE      | Type of the entity                                                                                 | FAB (FIR)      |
+| MODEL_TYPE       | Network Manager | MODEL_TYPE       | The type of trajectory used for the calculation (CPF=actual, FTFM=flight plan)                     | FTFM           |
+| DIST_FLOWN_KM    | Network Manager | DIST_FLOWN_KM    | Sum of flown distances in kilometre                                                                | 1208007        |
+| DIST_ACHIEVED_KM | Network Manager | DIST_ACHIEVED_KM | Sum of achieved distances in kilometre                                                             | 1148839        |
+| T10_RUN_12M      | Network Manager | T10_RUN_12M      | ‘B’ (‘W’) if the day is one of the ten best (worst) days for the entity in the previous ten months | B              |
+| T10_YYYY         | Network Manager | T10_YYYY         | ‘B’ (‘W’) if the day is one of the ten best (worst) days for the entity in the calendar year       | B              |
 
 
 ### Calculated Field(s)

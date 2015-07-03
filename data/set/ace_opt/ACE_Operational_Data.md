@@ -15,13 +15,13 @@ the report which is published in May each year.
 
 ### Column naming and types
 
-| Column name      | Example  | Pivot Label                     | Description                                                                                 |
+| Column name      | Example  | Label                           | Description                                                                                 |
 |------------------|----------|---------------------------------|---------------------------------------------------------------------------------------------|
 | YEAR             | 2014     | YEAR                            | Reference year                                                                              |
 | MONTH_NUM        | 1        | MONTH                           | Month (numeric)                                                                             |
 | ANSP_NAME        | DSNA     | ANSP_NAME                       | Name of the Air Navigation Service Provider (ANSP)                                          |
 | FLT_1            | 189824   | IFR flights                     | Number of IFR flights (source:NM)                                                           |
-| DIST_KM_1        | 99055061 |                                 | Distance in kilometer (source:NM)                                                           |
+| DIST_KM_1        | 61 |                                 | Distance in kilometer (source:NM)                                                           |
 | DUR_MIN_1        | 8511400  |                                 | Duration in minutes (source:NM)                                                             |
 | FLT_DLY_1        | 4360     |                                 | IFR flights with ATFM delay (source:NM)                                                     |
 | FLT_DLY_15_1     | 2565     |                                 | IFR flights with ATFM delay >15 min. (source:NM)                                            |
@@ -59,7 +59,7 @@ the report which is published in May each year.
 
 ### Column naming and types
 
-| Column name     | Example            | Pivot Label                   | Description                                                      |
+| Column name     | Example            | Label                         | Description                                                      |
 |-----------------|--------------------|-------------------------------|------------------------------------------------------------------|
 | YEAR            | 2014               | YEAR                          | Reference year                                                   |
 | MONTH_NUM       | 1                  | MONTH                         | Month (numeric)                                                  |
@@ -77,7 +77,7 @@ the report which is published in May each year.
 
 ### Column naming and types
 
-| Column name      | Example        | Pivot Label                     | Description                                                                                 |
+| Column name      | Example        | Label                           | Description                                                                                 |
 |------------------|----------------|---------------------------------|---------------------------------------------------------------------------------------------|
 | YEAR             | 2014           | YEAR                            | Reference year                                                                              |
 | MONTH_NUM        | 1              | MONTH                           | Month (numeric)                                                                             |
