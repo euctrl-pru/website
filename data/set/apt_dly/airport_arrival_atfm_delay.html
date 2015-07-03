@@ -4,8 +4,8 @@ title: Arrival ATFM Delay
 excerpt: Performance Review Unit interactive dashboard on European Air Transport - Arrival ATFCM Delay data.
 keywords: performance, air transport, flights, europe, cost efficiency
 ---
-<script type="text/javascript" src="./json2csv.js"></script>
-<script type="text/javascript" src="./FileSaver.min.js"></script>
+<script type="text/javascript" src="{{site.url}}/data/js/json2csv.js"></script>
+<script type="text/javascript" src="{{site.url}}/data/js/FileSaver.min.js"></script>
 <script type="text/javascript">
    $('select').select2();
 </script>
@@ -99,7 +99,7 @@ keywords: performance, air transport, flights, europe, cost efficiency
 <div class="clearfix"></div>
 
 <script type="text/javascript">
-   var dataFile    = 'Airport ATFM Delay.json'; // HACK: It's CSV, but GitHub Pages only gzip's JSON at the moment.)
+   var dataFile    = 'apt_dly.json'; // HACK: It's CSV, but GitHub Pages only gzip's JSON at the moment.)
    var years; // the years in the dataset
    var countries; // the country names in the dataset
    var airports; // the (ICAO) airport IDs in the dataset

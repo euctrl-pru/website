@@ -4,8 +4,8 @@ title: ACE Data
 excerpt: Performance Review Unit interactive dashboard on European Air Transport - ACE data.
 keywords: performance, air transport, flights, europe, cost efficiency
 ---
-<script type="text/javascript" src="./json2csv.js"></script>
-<script type="text/javascript" src="./FileSaver.min.js"></script>
+<script type="text/javascript" src="{{site.url}}/data/js/json2csv.js"></script>
+<script type="text/javascript" src="{{site.url}}/data/js/FileSaver.min.js"></script>
 <script type="text/javascript">
    $('select').select2();
 </script>
@@ -88,7 +88,7 @@ keywords: performance, air transport, flights, europe, cost efficiency
 <div class="clearfix"></div>
 
 <script type="text/javascript">
-   var dataFile    = 'ACE - ANSP.csv';
+   var dataFile    = 'ace_ansp.csv';
    var years; // the years in the dataset
    var ansps; // the ansp names in the dataset
    var data;

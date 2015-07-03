@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Horizontal Flight Efficiency Dataset
+permalink: /metadata/dataset/Horizontal_Flight_Efficiency.html
 excerpt: Performance Review Unit MetaData Definitions.
 keywords: metadata, dataset, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
 ---

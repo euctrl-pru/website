@@ -1,3 +1,0 @@
-This directory contains pages explaining the datasets we make available.
-
-For example the column names in the CSV files, their type, the set of values ...

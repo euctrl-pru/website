@@ -57,11 +57,11 @@ width: 10em;
 
 [ERT-FLTxlsx]: <https://docs.google.com/spreadsheets/d/1slEnGjXKCqOI-pbHz5N8ELwA-NmvYQxiTFMOfDt8Rjs/export?format=xlsx> "ERT-FLT (Excel)"
 [ERT-FLTcsv]: <{{site.url}}/404.html> "ERT-FLT (CSV)"
-[ERT-FLTmeta]: <{{site.url}}/metadata/dataset/En_route_Traffic.html> "ERT-FLT (Meta)"
+[ERT-FLTmeta]: <{{site.url}}/metadata/dataset/En-Route_Traffic.html> "ERT-FLT (Meta)"
 
 [ERT-DLYxlsx]: <https://docs.google.com/spreadsheets/d/1slEnGjXKCqOI-pbHz5N8ELwA-NmvYQxiTFMOfDt8Rjs/export?format=xlsx> "DLY-FLT (Excel)"
 [ERT-DLYcsv]: <{{site.url}}/404.html> "DLY-FLT (CSV)"
-[ERT-DLYmeta]: <{{site.url}}/metadata/dataset/En_route_ATFM_Delay.html> "DLY-FLT (Meta)"
+[ERT-DLYmeta]: <{{site.url}}/metadata/dataset/En-Route_ATFM_Delay.html> "DLY-FLT (Meta)"
 
 [HFExlsx]: <https://drive.google.com/uc?export=download&id=0B9A6maXsk_-cTDdUT0lEOGdaM1U> "HFE (Excel)"
 [HFEcsv]: <{{site.url}}/404.html> "HFE (CSV)"
@@ -85,8 +85,8 @@ width: 10em;
 [APT-FLTmeta]: <{{site.url}}/metadata/dataset/Airport_Traffic.html>  "APT-FLT (Meta)"
 
 [APT-DLYxlsx]: <https://docs.google.com/spreadsheets/d/13ussBrCF688P_7M3hARaiqdk262tJLUKG8HzJryY69g/export?format=xlsx> "APT-DLY (Excel)"
-[APT-DLYcsv]: <arrival_atfm_delay.html> "APT-DLY (CSV)"
-[APT-DLYmeta]: <{{site.url}}/metadata/dataset/Airport_ATFM_Delay.html> "APT-DLY (Meta)"
+[APT-DLYcsv]: <set/apt_dly/airport_arrival_atfm_delay.html> "APT-DLY (CSV)"
+[APT-DLYmeta]: <{{site.url}}/metadata/dataset/Airport_Arrival_ATFM_Delay.html> "APT-DLY (Meta)"
 
 [ASMAxlsx]: <https://docs.google.com/spreadsheets/d/1rS6NlkUOd3gcZK5WtuWAK-XdO6XMLRHEqOlYEpp37eA/export?format=xlsx> "ASMA (Excel)"
 [ASMAcsv]: <{{site.url}}/404.html> "ASMA (CSV)"
@@ -94,10 +94,10 @@ width: 10em;
 
 [TX-OUTxlsx]: <https://docs.google.com/spreadsheets/d/1zXqUBH-XlL8Yb0MSQ9CYACK6E4HlBWGp-c70PVEUCkM/export?format=xlsx> "TX-OUT (Excel)"
 [TX-OUTcsv]: <{{site.url}}/404.html> "TX-OUT (CSV)"
-[TX-OUTmeta]: <{{site.url}}/metadata/dataset/Taxi-out_Additional_Time.html> "TX-OUT (Meta)"
+[TX-OUTmeta]: <{{site.url}}/metadata/dataset/Taxi-Out_Additional_Time.html> "TX-OUT (Meta)"
 
 [ATC-PRExlsx]: <https://docs.google.com/spreadsheets/d/13ussBrCF688P_7M3hARaiqdk262tJLUKG8HzJryY69g/export?format=xlsx> "ATC-PRE (Excel)"
-[ATC-PREmeta]: <{{site.url}}/metadata/dataset/ATC_Pre_Departure.html>  "ATC-PRE (Meta)"
+[ATC-PREmeta]: <{{site.url}}/metadata/dataset/ATC_Pre-Departure_Delay.html>  "ATC-PRE (Meta)"
 
 [SLT-ADHxlsx]: <https://docs.google.com/spreadsheets/d/13ussBrCF688P_7M3hARaiqdk262tJLUKG8HzJryY69g/export?format=xlsx> "SLT-ADH (Excel)"
 [SLT-ADHmeta]: <{{site.url}}/metadata/dataset/ATFM_Slot_Adherence.html> "SLT-ADH (Meta)"
@@ -109,7 +109,7 @@ width: 10em;
 | ACE operational data<br><small>Monthly ACE operational data</small> | Jan 2008 - Dec 2014 | [ACE (Excel)][ACExlsx]  | [ACE (extract)][ACEcsv] | [ACE (Meta)][ACEmeta] |
 
 [ACExlsx]: <https://docs.google.com/spreadsheets/d/1GBJWcW5rwlvP1wIUwPVwtT3zMjdvbrWcfn5CSvJhses/export?format=xlsx> "ACE (Excel)"
-[ACEcsv]: <ace.html> "ACE (CSV)"
+[ACEcsv]: <set/ace_opt/ace_operational_data.html> "ACE (CSV)"
 [ACEmeta]: <{{site.url}}/metadata/dataset/ACE_Operational_Data.html> "ACE (Meta)"
 
 ### Traffic complexity scores

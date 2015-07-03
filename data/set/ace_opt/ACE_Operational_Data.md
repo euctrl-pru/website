@@ -1,6 +1,7 @@
 ---
 layout: default
 title: ACE Operational Data Dataset
+permalink: /metadata/dataset/ACE_Operational_Data.html
 excerpt: Performance Review Unit MetaData Definitions.
 keywords: metadata, dataset, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
 ---

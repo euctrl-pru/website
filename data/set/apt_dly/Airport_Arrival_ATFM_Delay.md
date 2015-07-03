@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Airport Arrival ATFM Delay Dataset
+permalink: /metadata/dataset/Airport_Arrival_ATFM_Delay.html
 excerpt: Performance Review Unit MetaData Definitions.
 keywords: metadata, dataset, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
 ---
