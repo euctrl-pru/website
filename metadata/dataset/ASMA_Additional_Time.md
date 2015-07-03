@@ -13,6 +13,11 @@ traffic flow, during congestion periods at airports.
 It is the difference between the actual ASMA time of a flight and a statistically determined
 unimpeded ASMA time based on ASMA times in periods of low traffic demand.
 
+When monitoring ASMA performance at airports, it is important to note that the goal
+is not to reduce ASMA time to the unimpeded reference time - as this could negatively impact
+on runway throughput - but rather to reduce additional ASMA time and associated fuel burn
+to the necessary minimum.
+
 ## Column naming and types
 
 | Column name       | Data source     | Label       | Column description                                                  | Example  |
