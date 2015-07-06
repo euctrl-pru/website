@@ -4,6 +4,7 @@ description: > # this means to ignore newlines until "url:"
   !!!TEST!!! Public PRU web site !!!TEST!!!
 url: "https://euctrl-pru.github.io" # the base hostname & protocol for your site
 canonical: https://euctrl-pru.github.io
+dev: false
 media: media
 category-list: [meta-definition] # 'meta-definition' is used for auto index metadata defs
 
@@ -26,9 +27,18 @@ tools:
 # Build settings
 gems: [ 'jekyll-pandoc-multiple-formats' ]
 
+assets:
+  sources:
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+  css_compressor: sass
+  js_compressor:  uglifier
+  cache:          true
+
 sass:
   sass_dir: _sass
-  style: compressed
+  style: :compressed
   sourcemap: true
 markdown: pandoc
 pandoc:
@@ -47,4 +57,6 @@ pandoc:
 timezone: Europe/Brussels
 
 # don't deploy these folders/files
-exclude: [Gemfile, Gemfile.lock, README.md, references.bib, tmp, dashboard/REAME.md, dashboard/Makefile, posts, dashboard]
+exclude: [Gemfile, Gemfile.lock, README.md, references.bib, tmp, enerate_reference.sh,
+          dashboard/REAME.md, dashboard/Makefile, posts, dashboard,
+          node_modules, package.json, npm-debug.log, Gruntfile.js]

@@ -1,0 +1,31 @@
+.dc-data-count {
+  float: right;
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-left: 25px;
+}
+
+.dc-data-count .filter-count, .total-count {
+  color: #3182bd;
+  font-weight: bold;
+}
+
+/* hide the sub-group summary*/
+#ace-data-table tr.dc-table-group {display: none;}
+table, th, td {
+  border-bottom: 1px solid #CCCCCC; /* dim gray for reduced non-data ink */
+}
+th, td {
+  padding: 3px;
+}
+/*align right for numeric columns*/
+td:nth-of-type(4),
+td:nth-of-type(5),
+td:nth-of-type(6),
+td:nth-of-type(7),
+td:nth-of-type(8),
+td:nth-of-type(9),
+td:nth-of-type(10),
+td:nth-of-type(11) {
+  text-align: right;
+}

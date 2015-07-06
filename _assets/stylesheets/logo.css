@@ -1,0 +1,27 @@
+div.navbar-brand a img {
+  position: absolute;
+  top:  7px;
+  height: 36px;
+  max-height: 36px;
+}
+
+div#logo {
+  width: 60px;
+  height: 36px;
+  overflow: hidden;
+}
+/* colors from Eurocontrol logo */
+.logo-p { fill: #002556; }
+.logo-r { fill: #2e86c6; }
+.logo-u { fill: #002556; }
+
+#logo svg {
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  overflow: hidden;
+}
+
+#logo svg {
+  cursor: pointer; /* it will have a URL to point to... */
+}
