@@ -29,32 +29,30 @@ shortfalls since 2009.
 
 ## Column naming and types
 
-| Column name      | Data source     | Label                           | Reason Group         |  Description                                                                          | Example     |
-|------------------|-----------------|---------------------------------|----------------------|---------------------------------------------------------------------------------------|-------------|
-| YEAR             | Network Manager | YEAR                            |                      | Reference year                                                                        | 2015        |
-| MONTH_NUM        | Network Manager | MONTH                           |                      | Month (numeric)                                                                       | 2           |
-| MONTH_MON        | Network Manager |                                 |                      | Month (3-letter code)                                                                 | FEB         |
-| FLT_DATE         | Network Manager | FLT_DATE                        |                      | Date of the flight                                                                    | 11-Feb-2015 |
-| APT_ICAO         | Network Manager | APT_ICAO                        |                      | ICAO 4-letter airport designator                                                      | LSGG        |
-| APT_NAME         | PRU             | APT_NAME                        |                      | Airport name                                                                          | Geneva      |
-| STATE_NAME       | PRU             | STATE_NAME                      |                      |                                                                                       | Switzerland |
-| FLT_ARR_1        | Network Manager | IFR arrivals                    |                      | Number of IFR arrivals (source:NM)                                                    | 221         |
-| FLT_DEP_1        | Network Manager | IFR departures                  |                      | Number of IFR departures (source:NM)                                                  | 208         |
-| FLT_TOT_1        | Network Manager | IFR flights (arr + dep)         |                      | Number total IFR movements (source:NM)                                                | 429         |
-| DLY_APT_ARR_1    | Network Manager | Airport ATFM arrival delay      |                      | Minutes of airport arrival ATFM delay                                                 | 1312        |
-| DLY_APT_ARR_A_1  | Network Manager | A - Accident/Incident           | AD Disruptions       | Minutes of airport arrival ATFM delay with delay code A - Accident/Incident           | 0           |
-| DLY_APT_ARR_C_1  | Network Manager | C - ATC Capacity                | AD Capacity (ATC)    | Minutes of airport arrival ATFM delay with delay code C - ATC Capacity                | 0           |
-| DLY_APT_ARR_D_1  | Network Manager | D - De-icing                    | AD Weather           | Minutes of airport arrival ATFM delay with delay code D - De-icing                    | 0           |
-| DLY_APT_ARR_E_1  | Network Manager | E - Equipment (non-ATC)         | AD Disruptions       | Minutes of airport arrival ATFM delay with delay code E - Equipment (non-ATC)         | 0           |
-| DLY_APT_ARR_G_1  | Network Manager | G - Aerodrome Capacity          | AD Capacity          | Minutes of airport arrival ATFM delay with delay code G - Aerodrome Capacity          | 0           |
-| DLY_APT_ARR_I_1  | Network Manager | I - Industrial Action (ATC)     | AD Disruptions (ATC) | Minutes of airport arrival ATFM delay with delay code I - Industrial Action (ATC)     | 0           |
-| DLY_APT_ARR_M_1  | Network Manager | M - Airspace Management         | AD Capacity          | Minutes of airport arrival ATFM delay with delay code M - Airspace Management         | 0           |
-| DLY_APT_ARR_N_1  | Network Manager | N - Industrial Action (non-ATC) | AD Disruptions       | Minutes of airport arrival ATFM delay with delay code N - Industrial Action (non-ATC) | 0           |
-| DLY_APT_ARR_O_1  | Network Manager | O - Other                       | AD Disruptions       | Minutes of airport arrival ATFM delay with delay code O - Other                       | 0           |
-| DLY_APT_ARR_P_1  | Network Manager | P - Special Event               | AD Events            | Minutes of airport arrival ATFM delay with delay code P - Special Event               | 0           |
-| DLY_APT_ARR_R_1  | Network Manager | R - ATC Routeing                | AD Capacity          | Minutes of airport arrival ATFM delay with delay code R - ATC Routeing                | 0           |
-| DLY_APT_ARR_S_1  | Network Manager | S - ATC Staffing                | AD Staffing (ATC)    | Minutes of airport arrival ATFM delay with delay code S - ATC Staffing                | 1312        |
-| DLY_APT_ARR_T_1  | Network Manager | T - Equipment (ATC)             | AD Disruptions (ATC) | Minutes of airport arrival ATFM delay with delay code T - Equipment (ATC)             | 0           |
-| DLY_APT_ARR_V_1  | Network Manager | V - Environmental Issues        | AD Capacity          | Minutes of airport arrival ATFM delay with delay code V - Environmental Issues        | 0           |
-| DLY_APT_ARR_W_1  | Network Manager | W - Weather                     | AD Weather           | Minutes of airport arrival ATFM delay with delay code W - Weather                     | 0           |
-| DLY_APT_ARR_NA_1 | Network Manager | NA - Not specified              | AD Disruptions       | Minutes of airport arrival ATFM delay with delay code NA - Not specified              | 0           |
+| Column name      | Data source     | Label                                | Reason Group         | Column description                                                                    | Example     |
+|------------------|-----------------|--------------------------------------|----------------------|---------------------------------------------------------------------------------------|-------------|
+| YEAR             | Network Manager | YEAR                                 |                      | Reference year                                                                        | 2015        |
+| MONTH_NUM        | Network Manager | MONTH                                |                      | Month (numeric)                                                                       | 2           |
+| MONTH_MON        | Network Manager | MONTH_MON                            |                      | Month (3-letter code)                                                                 | FEB         |
+| FLT_DATE         | Network Manager | FLT_DATE                             |                      | Date of the flight                                                                    | 11-FEB-2015 |
+| APT_ICAO         | Network Manager | APT_ICAO                             |                      | ICAO 4-letter airport designator                                                      | LSGG        |
+| APT_NAME         | PRU             | APT_NAME                             |                      | Airport name                                                                          | Geneva      |
+| STATE_NAME       | PRU             | STATE_NAME                           |                      | Name of the country in which the airport is located                                   | Switzerland |
+| FLT_ARR_1        | Network Manager | IFR Arrivals                         |                      | Number of arrivals (based on activated flight plans submitted to NM)                  | 221         |
+| DLY_APT_ARR_1    | Network Manager | Airport ATFM arrival delay           |                      | Minutes of airport arrival ATFM delay                                                 | 1312        |
+| DLY_APT_ARR_A_1  | Network Manager | A - Accident/Incident - AD           | AD Disruptions       | Minutes of airport arrival ATFM delay with delay code A - Accident/Incident           | 0           |
+| DLY_APT_ARR_C_1  | Network Manager | C - ATC Capacity - AD                | AD Capacity (ATC)    | Minutes of airport arrival ATFM delay with delay code C - ATC Capacity                | 0           |
+| DLY_APT_ARR_D_1  | Network Manager | D - De-icing - AD                    | AD Weather           | Minutes of airport arrival ATFM delay with delay code D - De-icing                    | 0           |
+| DLY_APT_ARR_E_1  | Network Manager | E - Equipment (non-ATC) - AD         | AD Disruptions       | Minutes of airport arrival ATFM delay with delay code E - Equipment (non-ATC)         | 0           |
+| DLY_APT_ARR_G_1  | Network Manager | G - Aerodrome Capacity - AD          | AD Capacity          | Minutes of airport arrival ATFM delay with delay code G - Aerodrome Capacity          | 0           |
+| DLY_APT_ARR_I_1  | Network Manager | I - Industrial Action (ATC) - AD     | AD Disruptions (ATC) | Minutes of airport arrival ATFM delay with delay code I - Industrial Action (ATC)     | 0           |
+| DLY_APT_ARR_M_1  | Network Manager | M - Airspace Management - AD         | AD Capacity          | Minutes of airport arrival ATFM delay with delay code M - Airspace Management         | 0           |
+| DLY_APT_ARR_N_1  | Network Manager | N - Industrial Action (non-ATC) - AD | AD Disruptions       | Minutes of airport arrival ATFM delay with delay code N - Industrial Action (non-ATC) | 0           |
+| DLY_APT_ARR_O_1  | Network Manager | O - Other - AD                       | AD Disruptions       | Minutes of airport arrival ATFM delay with delay code O - Other                       | 0           |
+| DLY_APT_ARR_P_1  | Network Manager | P - Special Event - AD               | AD Events            | Minutes of airport arrival ATFM delay with delay code P - Special Event               | 0           |
+| DLY_APT_ARR_R_1  | Network Manager | R - ATC Routeing - AD                | AD Capacity          | Minutes of airport arrival ATFM delay with delay code R - ATC Routeing                | 0           |
+| DLY_APT_ARR_S_1  | Network Manager | S - ATC Staffing - AD                | AD Staffing (ATC)    | Minutes of airport arrival ATFM delay with delay code S - ATC Staffing                | 1312        |
+| DLY_APT_ARR_T_1  | Network Manager | T - Equipment (ATC) - AD             | AD Disruptions (ATC) | Minutes of airport arrival ATFM delay with delay code T - Equipment (ATC)             | 0           |
+| DLY_APT_ARR_V_1  | Network Manager | V - Environmental Issues - AD        | AD Capacity          | Minutes of airport arrival ATFM delay with delay code V - Environmental Issues        | 0           |
+| DLY_APT_ARR_W_1  | Network Manager | W - Weather - AD                     | AD Weather           | Minutes of airport arrival ATFM delay with delay code W - Weather                     | 0           |
+| DLY_APT_ARR_NA_1 | Network Manager | NA - Not specified - AD              | AD Disruptions       | Minutes of airport arrival ATFM delay with delay code NA - Not specified              | 0           |
