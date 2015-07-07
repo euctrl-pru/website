@@ -33,7 +33,7 @@ the more accurate the predicted traffic and associated down-stream ATFM measures
 | YEAR                | Network Manager | YEAR                                           | Reference year                                                                  | 2015                     |
 | MONTH_NUM           | Network Manager | MONTH_NUM                                      | Month (numeric)                                                                 | 5                        |
 | MONTH_MON           | Network Manager | MONTH_MON                                      | Month (3-letter code)                                                           | MAY                      |
-| DATE_FLT            | Network Manager | DATE_FLT                                       | Date of flight                                                                  | 5-Jan-2014               |
+| FLT_DATE            | Network Manager | FLT_DATE                                       | Date of flight                                                                  | 5-Jan-2014               |
 | APT_ICAO            | Network Manager | APT_ICAO                                       | ICAO 4-letter airport designator                                                | LFPG                     |
 | APT_NAME            | PRU             | APT_NAME                                       | Airport name                                                                    | Paris/ Charles de Gaulle |
 | STATE_NAME          | PRU             | STATE_NAME                                     | Name of the State in which the airport is located                               | France                   |
