@@ -28,17 +28,17 @@ the more accurate the predicted traffic and associated down-stream ATFM measures
 
 ## Column naming and types
 
-| Column name         | Data source     | Label                                          |  Description                                                                    | Example                  |
+| Column name         | Data source     | Label                                          | Column description                                                              | Example                  |
 |---------------------|-----------------|------------------------------------------------|---------------------------------------------------------------------------------|--------------------------|
 | YEAR                | Network Manager | YEAR                                           | Reference year                                                                  | 2015                     |
-| MONTH_NUM           | Network Manager | MONTH                                          | Month (numeric)                                                                 | 5                        |
-| MONTH_MON           | Network Manager |                                                | Month (3-letter code)                                                           | MAY                      |
-| DATE_FLT            | Network Manager | DATE_FLT                                       | Date of flight                                                                  | 31-May-2015              |
+| MONTH_NUM           | Network Manager | MONTH_NUM                                      | Month (numeric)                                                                 | 5                        |
+| MONTH_MON           | Network Manager | MONTH_MON                                      | Month (3-letter code)                                                           | MAY                      |
+| DATE_FLT            | Network Manager | DATE_FLT                                       | Date of flight                                                                  | 5-Jan-2014               |
 | APT_ICAO            | Network Manager | APT_ICAO                                       | ICAO 4-letter airport designator                                                | LFPG                     |
 | APT_NAME            | PRU             | APT_NAME                                       | Airport name                                                                    | Paris/ Charles de Gaulle |
 | STATE_NAME          | PRU             | STATE_NAME                                     | Name of the State in which the airport is located                               | France                   |
-| FLT_DEP_1           | Network Manager | IFR departures                                 | Number of IFR departures                                                        | 670                      |
+| FLT_DEP_1           | Network Manager | IFR departures                                 | Number of IFR departures (based on activated flight plans submitted to NM)      | 670                      |
 | FLT_DEP_REG_1       | Network Manager | Regulated departures                           | Activated Regulated Traffic                                                     | 155                      |
 | FLT_DEP_OUT_EARLY_1 | Network Manager | Regulated departures (early)                   | Regulated departures before the slot tolerance window (Early Take-Off Traffic)  | 7                        |
 | FLT_DEP_IN_1        | Network Manager | Regulated departures (within departure window) | Regulated departures within the slot tolerance window [-5 minutes, +10 minutes] | 140                      |
-| FLT_DEP_OUT_LATE_1  | Network Manager | Regulated departures (late)                    | Regulated departures after the slot tolerance window (Late Take-Off Traffic)    | 8                        |                               | 0          |
+| FLT_DEP_OUT_LATE_1  | Network Manager | Regulated departures (late)                    | Regulated departures after the slot tolerance window (Late Take-Off Traffic)    | 8                        |
