@@ -8,33 +8,31 @@
 
    function filteredCSV(data) {
     var fields = [
-    'YEAR',
-    'MONTH_NUM',
-    'MONTH_MON',
-    'DATE_REG',
-    'APT_COUNTRY',
-    'APT_ICAO',
-    'APT_NAME',
-    'FLT_ARR_1',
-    'FLT_DEP_1',
-    'FLT_TOT_1',
-    'DLY_APT_1',
-    'DLY_APT_A_1',
-    'DLY_APT_C_1',
-    'DLY_APT_D_1',
-    'DLY_APT_E_1',
-    'DLY_APT_G_1',
-    'DLY_APT_I_1',
-    'DLY_APT_M_1',
-    'DLY_APT_N_1',
-    'DLY_APT_O_1',
-    'DLY_APT_P_1',
-    'DLY_APT_R_1',
-    'DLY_APT_S_1',
-    'DLY_APT_T_1',
-    'DLY_APT_V_1',
-    'DLY_APT_W_1',
-    'DLY_APT_NA_1'
+      'YEAR',
+      'MONTH_NUM',
+      'MONTH_MON',
+      'FLT_DATE',
+      'APT_ICAO',
+      'APT_NAME',
+      'STATE_NAME',
+      'FLT_ARR_1',
+      'DLY_APT_ARR_1',
+      'DLY_APT_ARR_A_1',
+      'DLY_APT_ARR_C_1',
+      'DLY_APT_ARR_D_1',
+      'DLY_APT_ARR_E_1',
+      'DLY_APT_ARR_G_1',
+      'DLY_APT_ARR_I_1',
+      'DLY_APT_ARR_M_1',
+      'DLY_APT_ARR_N_1',
+      'DLY_APT_ARR_O_1',
+      'DLY_APT_ARR_P_1',
+      'DLY_APT_ARR_R_1',
+      'DLY_APT_ARR_S_1',
+      'DLY_APT_ARR_T_1',
+      'DLY_APT_ARR_V_1',
+      'DLY_APT_ARR_W_1',
+      'DLY_APT_ARR_NA_1'
     ];
 
     json2csv({ data: data, fields: fields }, function(err, csv) {
@@ -55,32 +53,30 @@
     d.YEAR = +d.YEAR;
     d.MONTH_NUM = +d.MONTH_NUM;
     d.date = dateFormat.parse(d.MONTH_NUM + "-" + d.YEAR);
-    d.DATE_REG = fullDateFormat.parse(d.DATE_REG);
     d.APT_NAME = d.APT_NAME ? d.APT_NAME.trim() : '';
     d.APT_NAME = d.APT_NAME.length ? d.APT_NAME : 'ZZZ';
     d.APT_ICAO = d.APT_ICAO ? d.APT_ICAO : 'ZZZZ';
-    d.APT_COUNTRY = d.APT_COUNTRY ? d.APT_COUNTRY.trim() : '';
-    d.APT_COUNTRY = d.APT_COUNTRY.length ? d.APT_COUNTRY : 'ZZZ';
+    d.STATE_NAME = d.COUNTRY_NAME;
+    d.STATE_NAME = d.STATE_NAME ? d.STATE_NAME.trim() : '';
+    d.STATE_NAME = d.STATE_NAME.length ? d.STATE_NAME : 'ZZZ';
     d.FLT_ARR_1 = d.FLT_ARR_1 ? +d.FLT_ARR_1 : 0;
-    d.FLT_DEP_1 = d.FLT_DEP_1 ? +d.FLT_DEP_1 : 0;
-    d.FLT_TOT_1 = d.FLT_TOT_1 ? +d.FLT_TOT_1 : 0;
-    d.DLY_APT_1 = d.DLY_APT_1 ? +d.DLY_APT_1 : 0;
-    d.DLY_APT_A_1 = d.DLY_APT_A_1 ? +d.DLY_APT_A_1 : 0;
-    d.DLY_APT_C_1 = d.DLY_APT_C_1 ? +d.DLY_APT_C_1 : 0;
-    d.DLY_APT_D_1 = d.DLY_APT_D_1 ? +d.DLY_APT_D_1 : 0;
-    d.DLY_APT_E_1 = d.DLY_APT_E_1 ? +d.DLY_APT_E_1 : 0;
-    d.DLY_APT_G_1 = d.DLY_APT_G_1 ? +d.DLY_APT_G_1 : 0;
-    d.DLY_APT_I_1 = d.DLY_APT_I_1 ? +d.DLY_APT_I_1 : 0;
-    d.DLY_APT_M_1 = d.DLY_APT_M_1 ? +d.DLY_APT_M_1 : 0;
-    d.DLY_APT_N_1 = d.DLY_APT_N_1 ? +d.DLY_APT_N_1 : 0;
-    d.DLY_APT_O_1 = d.DLY_APT_O_1 ? +d.DLY_APT_O_1 : 0;
-    d.DLY_APT_P_1 = d.DLY_APT_P_1 ? +d.DLY_APT_P_1 : 0;
-    d.DLY_APT_R_1 = d.DLY_APT_R_1 ? +d.DLY_APT_R_1 : 0;
-    d.DLY_APT_S_1 = d.DLY_APT_S_1 ? +d.DLY_APT_S_1 : 0;
-    d.DLY_APT_T_1 = d.DLY_APT_T_1 ? +d.DLY_APT_T_1 : 0;
-    d.DLY_APT_V_1 = d.DLY_APT_V_1 ? +d.DLY_APT_V_1 : 0;
-    d.DLY_APT_W_1 = d.DLY_APT_W_1 ? +d.DLY_APT_W_1 : 0;
-    d.DLY_APT_NA_1 = d.DLY_APT_NA_1 ? +d.DLY_APT_NA_1 : 0;
+    d.DLY_APT_ARR_1 = d.DLY_APT_ARR_1 ? +d.DLY_APT_ARR_1: 0;
+    d.DLY_APT_ARR_A_1 = d.DLY_APT_ARR_A_1 ? +d.DLY_APT_ARR_A_1 : 0;
+    d.DLY_APT_ARR_C_1 = d.DLY_APT_ARR_C_1 ? +d.DLY_APT_ARR_C_1 : 0;
+    d.DLY_APT_ARR_D_1 = d.DLY_APT_ARR_D_1 ? +d.DLY_APT_ARR_D_1 : 0;
+    d.DLY_APT_ARR_E_1 = d.DLY_APT_ARR_E_1 ? +d.DLY_APT_ARR_E_1 : 0;
+    d.DLY_APT_ARR_G_1 = d.DLY_APT_ARR_G_1 ? +d.DLY_APT_ARR_G_1 : 0;
+    d.DLY_APT_ARR_I_1 = d.DLY_APT_ARR_I_1 ? +d.DLY_APT_ARR_I_1 : 0;
+    d.DLY_APT_ARR_M_1 = d.DLY_APT_ARR_M_1 ? +d.DLY_APT_ARR_M_1 : 0;
+    d.DLY_APT_ARR_N_1 = d.DLY_APT_ARR_N_1 ? +d.DLY_APT_ARR_N_1 : 0;
+    d.DLY_APT_ARR_O_1 = d.DLY_APT_ARR_O_1 ? +d.DLY_APT_ARR_O_1 : 0;
+    d.DLY_APT_ARR_P_1 = d.DLY_APT_ARR_P_1 ? +d.DLY_APT_ARR_P_1 : 0;
+    d.DLY_APT_ARR_R_1 = d.DLY_APT_ARR_R_1 ? +d.DLY_APT_ARR_R_1 : 0;
+    d.DLY_APT_ARR_S_1 = d.DLY_APT_ARR_S_1 ? +d.DLY_APT_ARR_S_1 : 0;
+    d.DLY_APT_ARR_T_1 = d.DLY_APT_ARR_T_1 ? +d.DLY_APT_ARR_T_1 : 0;
+    d.DLY_APT_ARR_V_1 = d.DLY_APT_ARR_V_1 ? +d.DLY_APT_ARR_V_1 : 0;
+    d.DLY_APT_ARR_W_1 = d.DLY_APT_ARR_W_1 ? +d.DLY_APT_ARR_W_1 : 0;
+    d.DLY_APT_ARR_NA_1 = d.DLY_APT_ARR_NA_1 ? +d.DLY_APT_ARR_NA_1 : 0;
   });
 
 var xf = crossfilter(arr);
@@ -90,7 +86,7 @@ var arrDate = xf.dimension(function(d){return d.date;});
 var arrYear = xf.dimension(function(d){return d.YEAR;});
 var arrYearGroup = arrYear.group(Math.floor);
 
-var arrCountry = xf.dimension(function(d){return d.APT_COUNTRY;});
+var arrCountry = xf.dimension(function(d){return d.STATE_NAME;});
 var arrCountryGroup = arrCountry.group();
 
 var arrAirport = xf.dimension(function(d){return d.APT_ICAO;});
@@ -172,48 +168,41 @@ var arrAirportGroup = arrAirport.group();
            var format = d3.format('02d');
            return d.date.getFullYear() + '/' + format((d.date.getMonth() + 1));
          })
-            .size(12) // (optional) max number of records to be shown, :default = 25
-            .columns([
+         .size(12) // (optional) max number of records to be shown, :default = 25
+         .columns([
             {
               label: 'YYYY/MM',
               format: function (d) {
                return d.date.getFullYear() + '/' + format((d.date.getMonth() + 1));
              }
-           },
-           {
-            label: 'Country',
-            format: function (d) {
-             return d.APT_COUNTRY;
-           }
-         },
-         {
-          label: 'Regu date',
-          format: function(d) {
-            return d.DATE_REG.getFullYear() + '/' + format(d.DATE_REG.getUTCMonth() + 1) + '/' + format(d.DATE_REG.getUTCDate());
-          }
-        },
-        'APT_ICAO',
-        'APT_NAME',
-        'FLT_ARR_1',
-        'FLT_DEP_1',
-        'FLT_TOT_1',
-        'DLY_APT_1',
-        'DLY_APT_A_1',
-        'DLY_APT_C_1',
-        'DLY_APT_D_1',
-        'DLY_APT_E_1',
-        'DLY_APT_G_1',
-        'DLY_APT_I_1',
-        'DLY_APT_M_1',
-        'DLY_APT_N_1',
-        'DLY_APT_O_1',
-        'DLY_APT_P_1',
-        'DLY_APT_R_1',
-        'DLY_APT_S_1',
-        'DLY_APT_T_1',
-        'DLY_APT_V_1',
-        'DLY_APT_W_1',
-        'DLY_APT_NA_1'
+            },
+            {
+              label: 'Country',
+              format: function (d) {
+                return d.STATE_NAME;
+              }
+            },
+            'FLT_DATE',
+            'APT_ICAO',
+            'APT_NAME',
+            'FLT_ARR_1',
+            'DLY_APT_ARR_1',
+            'DLY_APT_ARR_A_1',
+            'DLY_APT_ARR_C_1',
+            'DLY_APT_ARR_D_1',
+            'DLY_APT_ARR_E_1',
+            'DLY_APT_ARR_G_1',
+            'DLY_APT_ARR_I_1',
+            'DLY_APT_ARR_M_1',
+            'DLY_APT_ARR_N_1',
+            'DLY_APT_ARR_O_1',
+            'DLY_APT_ARR_P_1',
+            'DLY_APT_ARR_R_1',
+            'DLY_APT_ARR_S_1',
+            'DLY_APT_ARR_T_1',
+            'DLY_APT_ARR_V_1',
+            'DLY_APT_ARR_W_1',
+            'DLY_APT_ARR_NA_1'
         ])
 .sortBy(function (d) {
  return d.date;

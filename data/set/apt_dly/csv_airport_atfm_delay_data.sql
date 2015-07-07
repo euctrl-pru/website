@@ -5,17 +5,41 @@ SET TRIMSPOOL ON;
 -- take name from argument 1
 spool '&1';
 
-with
+WITH APT_ONE_LIST AS
+    ( SELECT
+       'EBAW,EBBR,EBCI,EBLG,EBOS,EDDB,EDDC,EDDE,EDDF,EDDG,EDDH,EDDK,EDDL,EDDM,
+        EDDN,EDDP,EDDR,EDDS,EDDT,EDDV,EDDW,EETN,EETU,EFHK,EGBB,EGCC,EGGD,EGGW,
+        EGKK,EGLC,EGLL,EGNT,EGPD,EGPF,EGPH,EGSS,EHAM,EHBK,EHGG,EHRD,EIDW,EKCH,
+        ELLX,ENBR,ENGM,ENVA,ENZV,EPBY,EPGD,EPKK,EPKT,EPLB,EPLL,EPMO,EPPO,EPRA,
+        EPRZ,EPSC,EPWA,EPWR,EPZG,ESGG,ESSA,EVLA,EVRA,EVVA,EYKA,EYPA,EYSA,EYVI,
+        GCLP,GCTS,GCXO,LBBG,LBGO,LBPD,LBSF,LBWN,LCLK,LCPH,LDZA,LEAL,LEBB,LEBL,
+        LEIB,LEMD,LEMG,LEPA,LEVC,LEZL,LFAQ,LFBA,LFBD,LFBE,LFBH,LFBI,LFBL,LFBO,
+        LFBP,LFBT,LFBZ,LFCR,LFGJ,LFJL,LFJR,LFKB,LFKC,LFKF,LFKJ,LFLB,LFLC,LFLL,
+        LFLP,LFLS,LFLX,LFLY,LFMD,LFMH,LFMI,LFMK,LFML,LFMN,LFMP,LFMT,LFMU,LFMV,
+        LFOB,LFOH,LFOK,LFOT,LFPB,LFPG,LFPN,LFPO,LFQQ,LFRB,LFRD,LFRG,LFRH,LFRK,
+        LFRN,LFRO,LFRQ,LFRS,LFRZ,LFSB,LFSD,LFSL,LFST,LFTH,LFTW,LGAV,LHBP,LICC,
+        LIMC,LIME,LIML,LIPE,LIPZ,LIRF,LIRN,LJLJ,LJMB,LJPZ,LKKV,LKMT,LKPR,LKTB,
+        LMML,LOWG,LOWK,LOWL,LOWS,LOWW,LPAZ,LPFL,LPFR,LPHR,LPMA,LPPD,LPPR,LPPS,
+        LPPT,LRBS,LROP,LSGG,LSZH,LZIB,LTBA,LTAI,LTFJ,LTAC,UKBB,LTBJ,EGNX,LYBE,
+        LIRA,ESSB,LATI,UDYZ,LQSA,UGTB,LWSK,LUKK,LYPG,
 
-AIRPORT_SELECTION as
-(select airport_location_id as airport_code ,
- sum(tdm) as A_TDM_ARR
-  from PRU_REGULATION_DETAIL
-where airport_role = 'A' and to_char(flt_date,'YYYY') >=2014
-group by  airport_location_id
-order by 2),
+        EGAA,EICK,EINN,EPSY,LDDU,LDLO,LDOS,LDPL,LDRI,LDSB,LDSP,LDZD,LDZL,LFBU,
+        LFOP,LFRC,LFSR,LIBC,LIBD,LIBF,LIBG,LIBP,LIBR,LICA,LICD,LICG,LICJ,LICR,
+        LICT,LIEA,LIEE,LIEO,LIMA,LIMF,LIMG,LIMJ,LIMP,LIMZ,LIPB,LIPH,LIPK,LIPO,
+        LIPQ,LIPR,LIPU,LIPV,LIPX,LIPY,LIQN,LIRI,LIRP,LIRQ,LIRS,LIRU,LIRZ,LOWI,
+        LZKZ,LZPP,LZSL,LZTT,LZZI
+        '
+    ids FROM dual
+    ),
 
-ARRIVAL_DELAY as
+APT_SELECTION as (
+
+  SELECT regexp_substr(ids, '[A-Z]{4}', 1, LEVEL) apt_id
+  FROM APT_ONE_LIST
+  CONNECT BY instr(ids, ',', 1, LEVEL - 1) > 0
+),
+
+APT_ATFM_DLY as
 (
 
 select
@@ -38,21 +62,17 @@ select
 , sum(CASE WHEN reason ='V'THEN NVL (tdm, 0)END) DLY_APT_V
 , sum(CASE WHEN reason ='W'THEN NVL (tdm, 0)END) DLY_APT_W
 , sum(CASE WHEN reason NOT IN ('A','C','D','E','G','I','M','N','O','P','R','S','T','V','W') THEN NVL (tdm, 0)END) DLY_APT_NA
-, last_update
-, regulation_date
   from PRU_REGULATION_DETAIL
-  where airport_role = 'A'  and to_char(flt_date,'YYYY') >=2014 and
-  airport_location_id in (select airport_code from  AIRPORT_SELECTION)
-  group by flt_date, airport_location_id, last_update, regulation_date
+  where airport_role = 'A'
+  AND flt_date >= '01 JAN 2014'
+  AND airport_location_id IN (SELECT apt_id FROM APT_SELECTION) 
+  group by flt_date, airport_location_id
 
- )
+ ),
 
-, arrival_traffic as
+ARR_FLTS as
 (SELECT
- to_char(p.flt_date,'YYYY') as YEAR
-, EXTRACT (MONTH FROM flt_date) MONTH_NUM
-, to_char(flt_date,'MON') as MONTH_MON
-,p.flt_date
+ p.flt_date
 ,p.ID
 ,u.code
 ,u.NAME
@@ -60,20 +80,20 @@ select
 ,NVL (p.ttf_dep, 0) as ttf_dep
 
 FROM prudev.pru_fact_traffic_airspace p, pru_airport u
-    WHERE p.ID = u.ID AND p.TYPE = 'AIRPORT' and to_char(p.flt_date,'YYYY') >=2014 and
-    code in (select airport_code from  AIRPORT_SELECTION))
+    WHERE p.ID = u.ID AND p.TYPE = 'AIRPORT'
+    AND p.flt_date >= '01 JAN 2014'
+    AND code IN (SELECT apt_id FROM APT_SELECTION)
+    )
 
 select
- t.year
-,t.MONTH_NUM
-,t.MONTH_MON
-,t.flt_date as DATE_REG
-, ' XXXXX'  as APT_COUNTRY
+  to_char(t.flt_date,'YYYY') as YEAR
+, EXTRACT (MONTH FROM t.flt_date) MONTH_NUM
+, to_char(t.flt_date,'MON') as MONTH_MON
+,t.flt_date as FLT_DATE
 ,t.code as APT_ICAO
 ,t.name as APT_NAME
+,' XXXXX'  as COUNTRY_NAME
 ,NVL (t.ttf_arr, 0) as FLT_ARR_1
-,NVL (t.ttf_dep, 0) as FLT_DEP_1
-,NVL (t.ttf_arr, 0) + NVL (t.ttf_dep, 0) as FLT_TOT_1
 ,nvl(DLY_APT,0) as DLY_APT_1
 ,nvl(DLY_APT_A,0) as DLY_APT_A_1
 ,nvl(DLY_APT_C,0) as DLY_APT_C_1
@@ -91,11 +111,10 @@ select
 ,nvl(DLY_APT_V,0) as DLY_APT_V_1
 ,nvl(DLY_APT_W,0) as DLY_APT_W_1
 ,nvl(DLY_APT_NA,0) as DLY_APT_NA_1
-from arrival_traffic t left join arrival_delay d on (
- t.flt_date = d.flt_date and t.code = d.airport_code)
- where t.flt_date>='01-JAN-2014' and t.flt_date<'01-JUN-2015'
- -- and ROWNUM <= 150
- order by 1,2,3,4;
+from ARR_FLTS t left join APT_ATFM_DLY d on (t.flt_date = d.flt_date and t.code = d.airport_code)
+ where t.flt_date>='01-JAN-2014' and t.flt_date<'01-JUL-2015' 
+ order by 1,2,3,4
+
 
 spool off;
 quit
