@@ -48,22 +48,22 @@ see [@complexitymetrics] in the References.
 
 ## Column naming and types
 
-| Column name    | Data source    | Label          |  Description                                                    | Example      |
-|----------------|----------------|----------------|-----------------------------------------------------------------|--------------|
-| YEAR           | Network Manger | YEAR           | Reference year                                                  | 2014         |
-| MONTH_NUM      | Network Manger | MONTH          | Month (numeric)                                                 | 1            |
-| MONTH_MON      | Network Manger | MONTH_MON      | Month (3-letter code)                                           | JAN          |
-| FLT_DATE       | Network Manger | DATE_FLT       | Date of flight                                                  | 05-Jan-2014  |
-| ANSP_NAME      | PRU            | ENTITY_NAME    | Entity name                                                     | Belgocontrol |
-| ATC_UNIT_NAME  | PRU            | ENTITY_TYPE    | Type of the entity to which the data relates (ANSP, FAB, WIDE)  | Brussels     |
-| ATC_UNIT_TYPE  | PRU            | TYPE_CALC      | The computation of the flight count can be based on FIR or ANSP | ACC          |
-| FLIGHT_TIME    | NM/PRU         | FLIGHT_TIME    | Flight hours                                                    | 1491         |
-| INTER_TIME     | NM/PRU         | INTER_TIME     | Hours of interactions                                           | 131          |
-| VERTICAL_INTER | NM/PRU         | VERTICAL_INTER | Hours of vertical interactions                                  | 51           |
-| HORIZ_INTER    | NM/PRU         | HORIZ_INTER    | Hours of horizontal interactions                                | 73           |
-| SPEED_INTER    | NM/PRU         | SPEED_INTER    | Hours of speed interactions                                     | 55           |
-| MIN_FL         | Network Manger | MIN_FL         | Minimum flight level                                            | 100          |
-| MAX_FL         | Network Manger | MAX_FL         | Maximum flight level                                            | 250          |
+| Column name    | Data source     | Label          |  Description                                                    | Example      |
+|----------------|-----------------|----------------|-----------------------------------------------------------------|--------------|
+| YEAR           | Network Manager | YEAR           | Reference year                                                  | 2014         |
+| MONTH_NUM      | Network Manager | MONTH          | Month (numeric)                                                 | 1            |
+| MONTH_MON      | Network Manager | MONTH_MON      | Month (3-letter code)                                           | JAN          |
+| FLT_DATE       | Network Manager | DATE_FLT       | Date of flight                                                  | 05-Jan-2014  |
+| ANSP_NAME      | PRU             | ENTITY_NAME    | Entity name                                                     | Belgocontrol |
+| ATC_UNIT_NAME  | PRU             | ENTITY_TYPE    | Type of the entity to which the data relates (ANSP, FAB, WIDE)  | Brussels     |
+| ATC_UNIT_TYPE  | PRU             | TYPE_CALC      | The computation of the flight count can be based on FIR or ANSP | ACC          |
+| FLIGHT_TIME    | NM/PRU          | FLIGHT_TIME    | Flight hours                                                    | 1491         |
+| INTER_TIME     | NM/PRU          | INTER_TIME     | Hours of interactions                                           | 131          |
+| VERTICAL_INTER | NM/PRU          | VERTICAL_INTER | Hours of vertical interactions                                  | 51           |
+| HORIZ_INTER    | NM/PRU          | HORIZ_INTER    | Hours of horizontal interactions                                | 73           |
+| SPEED_INTER    | NM/PRU          | SPEED_INTER    | Hours of speed interactions                                     | 55           |
+| MIN_FL         | Network Manager | MIN_FL         | Minimum flight level                                            | 100          |
+| MAX_FL         | Network Manager | MAX_FL         | Maximum flight level                                            | 250          |
 
 
 ### Calculated Field(s)

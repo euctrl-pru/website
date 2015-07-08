@@ -1,6 +1,8 @@
 <p class="muted credit" style="text-align:center; margin-top:3em">
 	<small>
-		<span style="text-aligh:center">&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}.</span>
-		<span style="float:right">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS <i class="fa fa-rss"></i></a></span>
+		<span style="text-aligh:left">&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}.</span> &nbsp; &mdash; &nbsp;
+		<span style="text-aligh:right">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS <i class="fa fa-rss"></i></a></span>
 	</small>
+    <br>
+    <small style="text-aligh:right">{% render_time Page generated on: %}</small>
 </p>

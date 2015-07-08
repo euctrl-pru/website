@@ -1,7 +1,7 @@
 ---
 layout: default
-title: ACE Operational Data Dataset
-permalink: /metadata/dataset/ACE_Operational_Data.html
+title: ACE Monthly Operational Data Dataset
+permalink: /metadata/dataset/ACE_Monthly_Operational_Data.html
 excerpt: Performance Review Unit MetaData Definitions.
 keywords: metadata, dataset, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
 ---
@@ -21,7 +21,7 @@ the report which is published in May each year.
 | MONTH_NUM        | 1        | MONTH                           | Month (numeric)                                                                             |
 | ANSP_NAME        | DSNA     | ANSP_NAME                       | Name of the Air Navigation Service Provider (ANSP)                                          |
 | FLT_1            | 189824   | IFR flights                     | Number of IFR flights (source:NM)                                                           |
-| DIST_KM_1        | 61 |                                 | Distance in kilometer (source:NM)                                                           |
+| DIST_KM_1        | 61       |                                 | Distance in kilometer (source:NM)                                                           |
 | DUR_MIN_1        | 8511400  |                                 | Duration in minutes (source:NM)                                                             |
 | FLT_DLY_1        | 4360     |                                 | IFR flights with ATFM delay (source:NM)                                                     |
 | FLT_DLY_15_1     | 2565     |                                 | IFR flights with ATFM delay >15 min. (source:NM)                                            |
@@ -52,7 +52,6 @@ the report which is published in May each year.
 | DLY_ERT_W_1      | 82       | W - Weather                     | Minutes of en-route ATFM delay with delay code W - Weather (source: NM)                     |
 | DLY_ERT_NA_1     | 0        | NA - Not specified              | Minutes of en-route ATFM delay with delay code NA - Not specified (source: NM)              |
 
-: colums for ACE ANSP dataset
 
 
 ## Airport

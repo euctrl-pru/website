@@ -108,11 +108,11 @@ width: 10em;
 
 | Data description                                                    | Available data      | Excel download          | Tailored extracts       | Meta data             |
 |---------------------------------------------------------------------|---------------------|-------------------------|-------------------------|-----------------------|
-| ACE operational data<br><small>Monthly ACE operational data</small> | Jan 2008 - Dec 2014 | [ACE (Excel) <span class="glyphicon glyphicon-exclamation-sign"></span>][ACExlsx]  | [ACE (extract) <span class="glyphicon glyphicon-wrench"></span>][ACEcsv] | [ACE (Meta)][ACEmeta] |
+| ACE operational data<br><small>Monthly ACE operational data</small> | Jan 2014 - Jun 2015 | [ACE (Excel)][ACExlsx]  | [ACE (extract) <span class="glyphicon glyphicon-exclamation-sign"></span>][ACEcsv] | [ACE (Meta) <span class="glyphicon glyphicon-exclamation-sign"></span>][ACEmeta] |
 
-[ACExlsx]: <{{site.url}}/404.html> "ACE (Excel)"
-[ACEcsv]: <set/ace_opt/ace_operational_data.html> "ACE (CSV)"
-[ACEmeta]: <{{site.url}}/metadata/dataset/ACE_Operational_Data.html> "ACE (Meta)"
+[ACExlsx]: <{{site.url}}/metadata/dataset/ACE_Monthly_Operational_Data.xls> "ACE (Excel)"
+[ACEcsv]: <{{site.url}}/404.html> "ACE (CSV)"
+[ACEmeta]: <{{site.url}}/404.html> "ACE (Meta)"
 
 ### Traffic complexity scores
 
