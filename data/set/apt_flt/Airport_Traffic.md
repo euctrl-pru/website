@@ -12,7 +12,7 @@ The data provides the number of arrivals and departures from various data source
 
 ## Column naming and types
 
-| Column name   | Source           | Pivot Label                     | Description                                         | Example    |
+| Column name   | Data Source      | Label                           | Description                                         | Example    |
 |---------------|------------------|---------------------------------|-----------------------------------------------------|------------|
 | YEAR          | Network Manager  | YEAR                            | Reference year                                      | 2014       |
 | MONTH_NUM     | Network Manager  | MONTH                           | Month (numeric)                                     | 1          |
