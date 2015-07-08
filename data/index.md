@@ -72,15 +72,15 @@ width: 10em;
 
 | Data description                                                                                                              | Available data       | Excel download                 | Tailored extracts               | Meta data                     |
 |-------------------------------------------------------------------------------------------------------------------------------|----------------------|--------------------------------|---------------------------------|-------------------------------|
-| Airport traffic<br><small>Daily IFR arrivals and departures by airport</small>                                                | Jan 2014 - Jun 2015  | [APT-FLT (Excel)<span class="glyphicon glyphicon-exclamation-sign"></span>][APT-FLTxlsx] | [APT-FLT (extract)<span class="glyphicon glyphicon-exclamation-sign"></span>][APT-FLTcsv] | [APT-FLT (Meta)][APT-FLTmeta] |
-| Airport arrival ATFM delays<br><small>Daily IFR arrivals and airport arrival ATFM delay by airport and delay category</small> | Jan 2014 - May 2015  | [APT-DLY (Excel)][APT-DLYxlsx] | [APT-DLY (extract)][APT-DLYcsv] | [APT-DLY (Meta)][APT-DLYmeta] |
+| Airport traffic<br><small>Daily IFR arrivals and departures by airport</small>                                                | Jan 2014 - Jun 2015  | [APT-FLT (Excel)][APT-FLTxlsx] | [APT-FLT (extract)<span class="glyphicon glyphicon-exclamation-sign"></span>][APT-FLTcsv] | [APT-FLT (Meta)][APT-FLTmeta] |
+| Airport arrival ATFM delays<br><small>Daily IFR arrivals and airport arrival ATFM delay by airport and delay category</small> | Jan 2014 - Jun 2015  | [APT-DLY (Excel)][APT-DLYxlsx] | [APT-DLY (extract)][APT-DLYcsv] | [APT-DLY (Meta)][APT-DLYmeta] |
 | Arrival Sequencing and Metering (ASMA) additional time<br><small>Monthly ASMA additional and unimpeded time</small>           | Jan 2014 - Apr 2015  | [ASMA (Excel)][ASMAxlsx]       | [ASMA (extract)<span class="glyphicon glyphicon-exclamation-sign"></span>][ASMAcsv]       | [ASMA (Meta)][ASMAmeta]       |
 | Taxi-out additional time<br><small>Monthly taxi out additional and unimpeded time</small>                                     | Jan 2014 - Apr 2015  | [TX-OUT (Excel)][TX-OUTxlsx]   | [TX-OUT (extract)<span class="glyphicon glyphicon-exclamation-sign"></span>][TX-OUTcsv]   | [TX-OUT (Meta)][TX-OUTmeta]   |
-| ATC pre-departure delays (ICAO code 89)<br><small>Daily ATC pre-departure delay (IATA code 89) by airport</small>             | Jan 2014 - May 2015  | [ATC-PRE (Excel)<span class="glyphicon glyphicon-exclamation-sign"></span>][ATC-PRExlsx] |                                 | [ATC-PRE (Meta)][ATC-PREmeta] |
+| ATC pre-departure delays (ICAO code 89)<br><small>Daily ATC pre-departure delay (IATA code 89) by airport</small>             | Jan 2014 - May 2015  | [ATC-PRE (Excel)][ATC-PRExlsx] |                                 | [ATC-PRE (Meta)][ATC-PREmeta] |
 | ATFM slot adherence<br><small>Daily ATFM slot adherence by airport</small>                                                    | Jan 2014 - Jun 2015  | [SLT-ADH (Excel)][SLT-ADHxlsx] |                                 | [SLT-ADH (Meta)][SLT-ADHmeta] |
 
 
-[APT-FLTxlsx]: <{{site.url}}/404.html> "APT-FLT (Excel)"
+[APT-FLTxlsx]: <{{site.url}}/data/set/apt_dly/Airport_Traffic.xlsm> "APT-FLT (Excel)"
 [APT-FLTcsv]: <{{site.url}}/404.html> "APT-FLT (CSV)"
 [APT-FLTmeta]: <{{site.url}}/metadata/dataset/Airport_Traffic.html>  "APT-FLT (Meta)"
 
@@ -96,7 +96,7 @@ width: 10em;
 [TX-OUTcsv]: <{{site.url}}/404.html> "TX-OUT (CSV)"
 [TX-OUTmeta]: <{{site.url}}/metadata/dataset/Taxi-Out_Additional_Time.html> "TX-OUT (Meta)"
 
-[ATC-PRExlsx]: <{{site.url}}/404.html> "ATC-PRE (Excel)"
+[ATC-PRExlsx]: <{{site.url}}/metadata/dataset/ATC_Pre-Departure_Delay.xlsm> "ATC-PRE (Excel)"
 [ATC-PREmeta]: <{{site.url}}/metadata/dataset/ATC_Pre-Departure_Delay.html>  "ATC-PRE (Meta)"
 
 [SLT-ADHxlsx]: <{{site.url}}/data/set/slt_adh/ATFM_Slot_Adherence.xlsm> "SLT-ADH (Excel)"
