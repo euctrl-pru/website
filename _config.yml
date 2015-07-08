@@ -1,7 +1,7 @@
 # Site settings
 title: PRU
 description: > # this means to ignore newlines until "url:"
-  !!!TEST!!! Public PRU web site !!!TEST!!!
+  Performance monitoring data, analyses and visualizations for Eurocontrol's 41 Member States.
 url: "https://euctrl-pru.github.io" # the base hostname & protocol for your site
 canonical: https://euctrl-pru.github.io
 dev: false
