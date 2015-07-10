@@ -2,7 +2,7 @@
 layout: default
 title: Data
 permalink: /data/
-excerpt: Performance Review Unit Data Download.
+excerpt: Performance Review Unit Data Download (Excel and CSV).
 keywords: performance, data, statistics, economics, air transport, flights, europe, cost efficiency
 ---
 # ANS Performance Data repository
@@ -110,7 +110,7 @@ width: 10em;
 |---------------------------------------------------------------------|---------------------|-------------------------|-------------------------|-----------------------|
 | ACE operational data<br><small>Monthly ACE operational data</small> | Jan 2014 - Jun 2015 | [ACE (Excel)][ACExlsx]  | [ACE (extract) <span class="glyphicon glyphicon-exclamation-sign"></span>][ACEcsv] | [ACE (Meta) <span class="glyphicon glyphicon-exclamation-sign"></span>][ACEmeta] |
 
-[ACExlsx]: <{{site.url}}/metadata/dataset/ACE_Monthly_Operational_Data.xls> "ACE (Excel)"
+[ACExlsx]: <{{site.url}}/data/set/ace_opt/ACE_Monthly_Operational_Data.xls> "ACE (Excel)"
 [ACEcsv]: <{{site.url}}/404.html> "ACE (CSV)"
 [ACEmeta]: <{{site.url}}/404.html> "ACE (Meta)"
 
