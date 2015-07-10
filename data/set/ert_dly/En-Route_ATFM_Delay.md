@@ -26,6 +26,25 @@ The delay is attributed to the most constraining ATC unit.
 The calculation of En-route ATFM delay is based on a well established and commonly accepted
 algorithm and has been in use as a commonly agreed proxy for en-route capacity shortfalls since 1999.
 
+## FAB definitions
+
+The FAB level information is based on an aggregation of ANSPs (ENTITY_TYPE = FAB (AUA)).
+
+| FAB Name         | ANSP included                                                                               |
+|------------------|---------------------------------------------------------------------------------------------|
+| Baltic FAB       | Oro Navigacija, PANSA                                                                       |
+| BLUE MED FAB     | DCAC Cyprus, HCAA, ENAV, MATS                                                               |
+| DANUBE FAB       | BULATSA, ROMATSA                                                                            |
+| DK-SE FAB        | NAVIAIR, LFV                                                                                |
+| FABEC            | Belgocontrol, DSNA, DFS, ANA LUX, LVNL, Skyguide, MUAC                                      |
+| FAB CE           | Austro Control, BHANSA, Croatia Control, ANS CR, HungaroControl (EC), LPS, Slovenia Control |
+| FAB CE (SES RP1) | Austro Control, ANS CR, HungaroControl(EC), LPS, Slovenia Control                           |
+| FAB CE (SES RP2) | Austro Control, Croatia Control, ANS CR, HungaroControl(EC), LPS, Slovenia Control          |
+| NEFAB            | EANS, Finavia, LGS, Avinor                                                                  |
+| SW FAB           | NAV Portugal (Continental), ENAIRE                                                          |
+| UK-Ireland FAB   | IAA, NATS (Continental)                                                                     |
+
+
 ## Column naming and types
 
 | Column name  | Data source     | Label                           | Reason Group         | Column description                                                             | Example    |
