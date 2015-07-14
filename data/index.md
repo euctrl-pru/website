@@ -82,7 +82,7 @@ width: 10em;
 | ATFM slot adherence<br><small>Daily ATFM slot adherence by airport</small>                                                    | Jan 2014 - Jun 2015  | [SLT-ADH (Excel)][SLT-ADHxlsx] |                                 | [SLT-ADH (Meta)][SLT-ADHmeta] |
 
 
-[APT-FLTxlsx]: <{{site.url}}/data/set/apt_dly/Airport_Traffic.xlsm> "APT-FLT (Excel)"
+[APT-FLTxlsx]: <{{site.url}}/data/set/apt_flt/Airport_Traffic.xlsm> "APT-FLT (Excel)"
 [APT-FLTcsv]: <{{site.url}}/404.html> "APT-FLT (CSV)"
 [APT-FLTmeta]: <{{site.url}}/metadata/dataset/Airport_Traffic.html>  "APT-FLT (Meta)"
 
@@ -98,7 +98,7 @@ width: 10em;
 [TX-OUTcsv]: <{{site.url}}/404.html> "TX-OUT (CSV)"
 [TX-OUTmeta]: <{{site.url}}/metadata/dataset/Taxi-Out_Additional_Time.html> "TX-OUT (Meta)"
 
-[ATC-PRExlsx]: <{{site.url}}/metadata/dataset/ATC_Pre-Departure_Delay.xlsm> "ATC-PRE (Excel)"
+[ATC-PRExlsx]: <{{site.url}}/data/set/atc_pre/ATC_Pre-Departure_Delay.xlsm> "ATC-PRE (Excel)"
 [ATC-PREmeta]: <{{site.url}}/metadata/dataset/ATC_Pre-Departure_Delay.html>  "ATC-PRE (Meta)"
 
 [SLT-ADHxlsx]: <{{site.url}}/data/set/slt_adh/ATFM_Slot_Adherence.xlsm> "SLT-ADH (Excel)"
