@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  {% include _head.html %}
+  {% include _mathjax.html %}
+
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript"> // load the visualisation API
+    google.load('visualization', '1', { packages: ['corechart', 'controls'] });
+  </script>
+
+  <script type="text/javascript">
+    $('#side-nav').affix({
+      offset: {
+        top: $('#side-nav').offset().top,
+        bottom: $('#footer').outerHeight(true) + 40
+      }
+    });
+
+    $('body').scrollspy({ target: '#side-nav' })
+  </script>
+
+  <style type="text/css">
+    body {
+      position: relative;
+    }
+
+    .affix {
+      top: 60px;
+    }
+
+    .affix,
+    .affix-bottom {
+      width: 213px;
+    }
+
+    .affix-top {
+      position: relative;
+    }
+
+    .affix-bottom {
+      position: absolute;
+    }
+
+    @media (min-width:1200px) {
+      .affix,
+      .affix-bottom {
+        width: 263px;
+      }
+    }
+
+
+    #side-nav a {
+      color: black;
+      font-style: italic;
+    }
+
+    #side-nav li a:hover,
+    #side-nav li a:focus {
+      background: #86c5da;
+    }
+
+    #side-nav .active {
+      font-weight: bold;
+      /*background: #72bcd4;*/
+    }
+
+    #side-nav .nav {
+      display: none;
+    }
+
+    #side-nav .active .nav {
+      display: block;
+    }
+
+    #side-nav .nav a {
+      font-weight: normal;
+      font-size: .85em;
+    }
+
+    #side-nav .nav span {
+      margin: 0 5px 0 2px;
+    }
+
+    #side-nav .nav .active a,
+    #side-nav .nav .active:hover a,
+    #side-nav .nav .active:focus a {
+      font-weight: bold;
+      padding-left: 30px;
+      border-left: 5px solid black;
+    }
+
+    #side-nav .nav .active span,
+    #side-nav .nav .active:hover span,
+    #side-nav .nav .active:focus span {
+      display: none;
+    }
+
+    @media (min-width: 768px) .back-to-top {
+      display: block;
+    }
+
+    .back-to-top {
+      padding: 4px 10px;
+      margin-top: 10px;
+      margin-left: 10px;
+      font-size: 9pt;
+      font-weight: 500;
+      color: #900;
+    }
+  </style>
+
+
+</head>
+{% include _browser-upgrade.html %}
+<body data-spy="scroll" data-target=".scrollspy">
+  {% include _navigation.html %}
+
+  <div class="container" id="top">
+    <div class="row">
+      <div class="col-md-9" role="main">
+        {{ content }}
+      </div>
+      <div class="col-md-3" role="complementary">
+        <!-- side-navigation menu -->
+        <div class="col-md-3 scrollspy">
+          <ul id="side-nav" class="nav hidden-xs hidden-sm" data-spy="affix">
+            <li>
+              <a href="#safety">Safety</a>
+            </li>
+            <li>
+              <a href="#capacity">Capacity</a>
+            </li>
+            <li>
+              <a href="#environment">Environment</a>
+            </li>
+            <li>
+              <a href="#costeff">Cost Efficiency</a>
+            </li>
+            <li>
+              <a class="back-to-top" href="#top">Back to top</a>
+            </li>
+          </ul>
+        </div>
+        <!-- end of side-navigation menu -->
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <div class="container-fluid">
+      {% include _footer.html %}
+    </div>
+  </div>
+</body>
+</html>
