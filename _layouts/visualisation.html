@@ -111,15 +111,19 @@
       font-weight: 500;
       color: #900;
     }
+
+    .back-to-top .a {
+      color: #900;
+    }
   </style>
 
 
 </head>
 {% include _browser-upgrade.html %}
-<body data-spy="scroll" data-target=".scrollspy">
+<body data-spy="scroll" data-target=".scrollspy" id="top">
   {% include _navigation.html %}
 
-  <div class="container" id="top">
+  <div class="container">
     <div class="row">
       <div class="col-md-9" role="main">
         {{ content }}
@@ -141,7 +145,7 @@
               <a href="#costeff">Cost Efficiency</a>
             </li>
             <li>
-              <a class="back-to-top" href="#top">Back to top</a>
+              <a class="back-to-top" href="#top">Back to top <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a>
             </li>
           </ul>
         </div>
