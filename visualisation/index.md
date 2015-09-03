@@ -5,52 +5,116 @@ permalink: /visualisation/
 excerpt: Performance Review Unit interactive dashboard on European Air Transport.
 keywords: performance, air transport, flights, europe, cost efficiency
 ---
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript"> // load the visualisation API
+google.load('visualization', '1', { packages: ['corechart', 'controls'] });
+</script>
+{% javascript crt_flts_YY %}
+{% javascript crt_flts_MM %}
+{% javascript tbl_flts_YY %}
+{% javascript crt_saf_smi_YY %}
+{% javascript crt_saf_upa_YY %}
+{% javascript crt_saf_ri_YY %}
+{% javascript crt_saf_aso_YY %}
+{% javascript crt_hfe_YY %}
+{% javascript crt_hfe_MM %}
+{% javascript tbl_hfe_YY %}
+{% javascript crt_cap_ert_YY %}
+{% javascript crt_cap_ert_MM %}
+{% javascript tbl_cap_ert_YY %}
+{% javascript crt_cap_apt_YY %}
+{% javascript crt_cap_apt_MM %}
+{% javascript tbl_cap_apt_YY %}
 
-# Visualizations
+# Pan-European ANS performance
+This data is published by the Performance Review Unit (PRU). Every effort has been made to ensure that the information and analysis contained on this website are as accurate and complete as possible. Despite these precautions, should you find any errors or inconsistencies we would be grateful if you could please bring them to the Performance Review Unit’s attention.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh suscipit diam fermentum efficitur ut ac orci. Nam scelerisque aliquam tortor, eget sagittis velit faucibus vel. Ut quis lobortis sem. Aliquam nibh augue, ornare non luctus nec, eleifend tincidunt neque. Mauris risus nibh, consectetur id sapien cursus, convallis pulvinar odio. Sed eget odio eu arcu ultricies eleifend. Ut tempor porttitor ante non iaculis. Sed mollis cursus neque viverra cursus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed sed urna id tortor porta dictum at at justo. Donec bibendum tellus sit amet nibh finibus tincidunt. Nam a pellentesque neque. Vivamus vitae suscipit sapien. Curabitur porttitor vehicula condimentum. Integer consequat dui luctus tortor tristique pellentesque. Donec porttitor neque nibh, id laoreet lorem finibus ac.
+<h2 id="traffic">Traffic</h2>
+<h3 id="flts">Controlled flights</h3>
+
+<div class="row">
+<div class="col-lg-5">
+**EUROCONTROL Area**
+<br>
+<div id="crt_flts_YY" style="width:400px; height:200px;"></div>
+<div id="crt_flts_MM" style="width:400px; height:250px;"></div>
+</div>
+<div class="col-lg-7 offset-10 text-justified">
+**Controlled flights by entity (year to date)**
+<div id="tbl_flts_YY"></div>
+</div>
+</div>
 
 <h2 id="safety">Safety</h2>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh suscipit diam fermentum efficitur ut ac orci. Nam scelerisque aliquam tortor, eget sagittis velit faucibus vel. Ut quis lobortis sem. Aliquam nibh augue, ornare non luctus nec, eleifend tincidunt neque. Mauris risus nibh, consectetur id sapien cursus, convallis pulvinar odio. Sed eget odio eu arcu ultricies eleifend. Ut tempor porttitor ante non iaculis. Sed mollis cursus neque viverra cursus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed sed urna id tortor porta dictum at at justo. Donec bibendum tellus sit amet nibh finibus tincidunt. Nam a pellentesque neque. Vivamus vitae suscipit sapien. Curabitur porttitor vehicula condimentum. Integer consequat dui luctus tortor tristique pellentesque. Donec porttitor neque nibh, id laoreet lorem finibus ac.
-
-Nam vitae enim ac turpis pellentesque vestibulum a eget ipsum. Donec feugiat quis odio sed congue. Morbi at lacinia sem. Donec pretium tellus eu ipsum placerat, eu volutpat sem bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam eu libero et nisl finibus posuere. Pellentesque vitae dolor ipsum. Sed augue nisl, sodales lacinia nisl id, hendrerit dictum ligula.
-
-Nulla eget sem quis neque posuere mollis. Donec posuere justo ut metus ultricies ultrices. Mauris felis nunc, ornare quis purus quis, tincidunt consequat augue. Curabitur placerat sagittis porta. Duis mattis nunc turpis, sed ullamcorper lectus feugiat et. Aenean ut lectus dignissim, aliquet sem ut, porta odio. Quisque faucibus dolor purus, ac placerat ex porta vitae. Fusce consectetur condimentum tortor et ultrices. Nulla augue nulla, eleifend vitae enim ut, luctus luctus metus. Mauris sapien ligula, pharetra quis commodo ut, tempus ac augue. Suspendisse porttitor ut nisi et tempus. Pellentesque suscipit ante sed vestibulum malesuada. Integer efficitur elementum arcu.
-
-Quisque vitae vulputate lorem. Morbi nec rhoncus nunc. Nulla sapien lectus, volutpat eget finibus sit amet, dictum vel massa. Nulla pharetra, felis quis pellentesque sollicitudin, leo velit feugiat justo, quis varius leo erat tristique ipsum. Mauris nec vulputate enim, sed cursus sapien. Etiam fermentum, risus eget rhoncus fringilla, nunc augue tincidunt ipsum, vel scelerisque quam arcu ut mi. Ut vehicula risus nec elit cursus interdum. Nullam laoreet at turpis ac interdum. Sed a viverra massa, sit amet fermentum urna. Etiam ullamcorper sit amet purus vel bibendum. Phasellus et pellentesque purus.
-
-Donec arcu turpis, interdum non odio ac, scelerisque mattis felis. Duis semper quam turpis. Mauris tortor massa, volutpat at fringilla sit amet, maximus ut est. Integer in justo sapien. Donec hendrerit mattis nisl id venenatis. Aenean ultricies est sit amet gravida lacinia. Proin vitae arcu vehicula, euismod odio ac, efficitur ligula.
+*This section is still under development. Please visit us again soon!*
 
 
 <h2 id='capacity'>Capacity</h2>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh suscipit diam fermentum efficitur ut ac orci. Nam scelerisque aliquam tortor, eget sagittis velit faucibus vel. Ut quis lobortis sem. Aliquam nibh augue, ornare non luctus nec, eleifend tincidunt neque. Mauris risus nibh, consectetur id sapien cursus, convallis pulvinar odio. Sed eget odio eu arcu ultricies eleifend. Ut tempor porttitor ante non iaculis. Sed mollis cursus neque viverra cursus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed sed urna id tortor porta dictum at at justo. Donec bibendum tellus sit amet nibh finibus tincidunt. Nam a pellentesque neque. Vivamus vitae suscipit sapien. Curabitur porttitor vehicula condimentum. Integer consequat dui luctus tortor tristique pellentesque. Donec porttitor neque nibh, id laoreet lorem finibus ac.
+<h3 id="ert_dly">En-route ATFM delays</h3>
+<div class="well">
+<p><i><small>
+Commentary en-route ATFM delay
+</small></i></p>
+</div>
 
-Nam vitae enim ac turpis pellentesque vestibulum a eget ipsum. Donec feugiat quis odio sed congue. Morbi at lacinia sem. Donec pretium tellus eu ipsum placerat, eu volutpat sem bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam eu libero et nisl finibus posuere. Pellentesque vitae dolor ipsum. Sed augue nisl, sodales lacinia nisl id, hendrerit dictum ligula.
+<div class="row">
+<div class="col-lg-5">
+**EUROCONTROL Area**
+<div id="crt_cap_ert_YY" style="width:400px; height:200px;"></div>
+<div id="crt_cap_ert_MM" style="width:400px; height:250px;"></div>
+</div>
+<div class="col-lg-7 offset-10">
+**En-route ATFM delays by entity (year to date)**
+<div id="tbl_cap_ert_YY"></div>
+</div>
+</div>
 
-Nulla eget sem quis neque posuere mollis. Donec posuere justo ut metus ultricies ultrices. Mauris felis nunc, ornare quis purus quis, tincidunt consequat augue. Curabitur placerat sagittis porta. Duis mattis nunc turpis, sed ullamcorper lectus feugiat et. Aenean ut lectus dignissim, aliquet sem ut, porta odio. Quisque faucibus dolor purus, ac placerat ex porta vitae. Fusce consectetur condimentum tortor et ultrices. Nulla augue nulla, eleifend vitae enim ut, luctus luctus metus. Mauris sapien ligula, pharetra quis commodo ut, tempus ac augue. Suspendisse porttitor ut nisi et tempus. Pellentesque suscipit ante sed vestibulum malesuada. Integer efficitur elementum arcu.
+<h3 id="apt_dly">Airport ATFM arrival delays</h3>
+<div class="well">
+<p><i><small>
+Commentary airport ATFM delay
+</small></i></p>
+</div>
 
-Quisque vitae vulputate lorem. Morbi nec rhoncus nunc. Nulla sapien lectus, volutpat eget finibus sit amet, dictum vel massa. Nulla pharetra, felis quis pellentesque sollicitudin, leo velit feugiat justo, quis varius leo erat tristique ipsum. Mauris nec vulputate enim, sed cursus sapien. Etiam fermentum, risus eget rhoncus fringilla, nunc augue tincidunt ipsum, vel scelerisque quam arcu ut mi. Ut vehicula risus nec elit cursus interdum. Nullam laoreet at turpis ac interdum. Sed a viverra massa, sit amet fermentum urna. Etiam ullamcorper sit amet purus vel bibendum. Phasellus et pellentesque purus.
-
-Donec arcu turpis, interdum non odio ac, scelerisque mattis felis. Duis semper quam turpis. Mauris tortor massa, volutpat at fringilla sit amet, maximus ut est. Integer in justo sapien. Donec hendrerit mattis nisl id venenatis. Aenean ultricies est sit amet gravida lacinia. Proin vitae arcu vehicula, euismod odio ac, efficitur ligula.
+<div class="row">
+<div class="col-lg-5">
+**EUROCONTROL Area**
+<div id="crt_cap_apt_YY" style="width:400px; height:200px;"></div>
+<div id="crt_cap_apt_MM" style="width:400px; height:250px;"></div>
+</div>
+<div class="col-lg-7 offset-10">
+**Airport ATFM arrival delays by airport (year to date)**
+<div id="tbl_cap_apt_YY"></div>
+</div>
+</div>
 
 <h2 id="environment">Environment</h2>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh suscipit diam fermentum efficitur ut ac orci. Nam scelerisque aliquam tortor, eget sagittis velit faucibus vel. Ut quis lobortis sem. Aliquam nibh augue, ornare non luctus nec, eleifend tincidunt neque. Mauris risus nibh, consectetur id sapien cursus, convallis pulvinar odio. Sed eget odio eu arcu ultricies eleifend. Ut tempor porttitor ante non iaculis. Sed mollis cursus neque viverra cursus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed sed urna id tortor porta dictum at at justo. Donec bibendum tellus sit amet nibh finibus tincidunt. Nam a pellentesque neque. Vivamus vitae suscipit sapien. Curabitur porttitor vehicula condimentum. Integer consequat dui luctus tortor tristique pellentesque. Donec porttitor neque nibh, id laoreet lorem finibus ac.
+<h3 id="hfe">Horizontal en-route flight efficiency</h3>
+<div class="well">
+<b>Period: January-August 2015</b>
+<p><i><small>
+Horizontal en-route flight efficiency (HFE)
+</small></i></p>
+</div>
 
-Nam vitae enim ac turpis pellentesque vestibulum a eget ipsum. Donec feugiat quis odio sed congue. Morbi at lacinia sem. Donec pretium tellus eu ipsum placerat, eu volutpat sem bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam eu libero et nisl finibus posuere. Pellentesque vitae dolor ipsum. Sed augue nisl, sodales lacinia nisl id, hendrerit dictum ligula.
+<div class="row">
+<div class="col-lg-5">
+**EUROCONTROL Area**
+<div id="crt_hfe_YY" style="width:400px; height:200px;"></div>
+<div id="crt_hfe_MM" style="width:400px; height:250px;"></div>
+</div>
 
-Nulla eget sem quis neque posuere mollis. Donec posuere justo ut metus ultricies ultrices. Mauris felis nunc, ornare quis purus quis, tincidunt consequat augue. Curabitur placerat sagittis porta. Duis mattis nunc turpis, sed ullamcorper lectus feugiat et. Aenean ut lectus dignissim, aliquet sem ut, porta odio. Quisque faucibus dolor purus, ac placerat ex porta vitae. Fusce consectetur condimentum tortor et ultrices. Nulla augue nulla, eleifend vitae enim ut, luctus luctus metus. Mauris sapien ligula, pharetra quis commodo ut, tempus ac augue. Suspendisse porttitor ut nisi et tempus. Pellentesque suscipit ante sed vestibulum malesuada. Integer efficitur elementum arcu.
+<div class="col-lg-7 offset-10">
+**Horizontal en-route flight efficiency by entity (year to date)**
+<div id="tbl_hfe_YY"></div>
+</div>
+</div>
 
-Quisque vitae vulputate lorem. Morbi nec rhoncus nunc. Nulla sapien lectus, volutpat eget finibus sit amet, dictum vel massa. Nulla pharetra, felis quis pellentesque sollicitudin, leo velit feugiat justo, quis varius leo erat tristique ipsum. Mauris nec vulputate enim, sed cursus sapien. Etiam fermentum, risus eget rhoncus fringilla, nunc augue tincidunt ipsum, vel scelerisque quam arcu ut mi. Ut vehicula risus nec elit cursus interdum. Nullam laoreet at turpis ac interdum. Sed a viverra massa, sit amet fermentum urna. Etiam ullamcorper sit amet purus vel bibendum. Phasellus et pellentesque purus.
+<h3 id="asma">ASMA additional time</h3>
+*This section is still under development. Please visit us again soon!*
 
-Donec arcu turpis, interdum non odio ac, scelerisque mattis felis. Duis semper quam turpis. Mauris tortor massa, volutpat at fringilla sit amet, maximus ut est. Integer in justo sapien. Donec hendrerit mattis nisl id venenatis. Aenean ultricies est sit amet gravida lacinia. Proin vitae arcu vehicula, euismod odio ac, efficitur ligula.
+<h3 id="txo">Taxi-out additional time</h3>
+*This section is still under development. Please visit us again soon!*
 
 <h2 id="costeff">Cost Efficiency</h2>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh suscipit diam fermentum efficitur ut ac orci. Nam scelerisque aliquam tortor, eget sagittis velit faucibus vel. Ut quis lobortis sem. Aliquam nibh augue, ornare non luctus nec, eleifend tincidunt neque. Mauris risus nibh, consectetur id sapien cursus, convallis pulvinar odio. Sed eget odio eu arcu ultricies eleifend. Ut tempor porttitor ante non iaculis. Sed mollis cursus neque viverra cursus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed sed urna id tortor porta dictum at at justo. Donec bibendum tellus sit amet nibh finibus tincidunt. Nam a pellentesque neque. Vivamus vitae suscipit sapien. Curabitur porttitor vehicula condimentum. Integer consequat dui luctus tortor tristique pellentesque. Donec porttitor neque nibh, id laoreet lorem finibus ac.
-
-Nam vitae enim ac turpis pellentesque vestibulum a eget ipsum. Donec feugiat quis odio sed congue. Morbi at lacinia sem. Donec pretium tellus eu ipsum placerat, eu volutpat sem bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam eu libero et nisl finibus posuere. Pellentesque vitae dolor ipsum. Sed augue nisl, sodales lacinia nisl id, hendrerit dictum ligula.
-
-Nulla eget sem quis neque posuere mollis. Donec posuere justo ut metus ultricies ultrices. Mauris felis nunc, ornare quis purus quis, tincidunt consequat augue. Curabitur placerat sagittis porta. Duis mattis nunc turpis, sed ullamcorper lectus feugiat et. Aenean ut lectus dignissim, aliquet sem ut, porta odio. Quisque faucibus dolor purus, ac placerat ex porta vitae. Fusce consectetur condimentum tortor et ultrices. Nulla augue nulla, eleifend vitae enim ut, luctus luctus metus. Mauris sapien ligula, pharetra quis commodo ut, tempus ac augue. Suspendisse porttitor ut nisi et tempus. Pellentesque suscipit ante sed vestibulum malesuada. Integer efficitur elementum arcu.
-
-Quisque vitae vulputate lorem. Morbi nec rhoncus nunc. Nulla sapien lectus, volutpat eget finibus sit amet, dictum vel massa. Nulla pharetra, felis quis pellentesque sollicitudin, leo velit feugiat justo, quis varius leo erat tristique ipsum. Mauris nec vulputate enim, sed cursus sapien. Etiam fermentum, risus eget rhoncus fringilla, nunc augue tincidunt ipsum, vel scelerisque quam arcu ut mi. Ut vehicula risus nec elit cursus interdum. Nullam laoreet at turpis ac interdum. Sed a viverra massa, sit amet fermentum urna. Etiam ullamcorper sit amet purus vel bibendum. Phasellus et pellentesque purus.
-
-Donec arcu turpis, interdum non odio ac, scelerisque mattis felis. Duis semper quam turpis. Mauris tortor massa, volutpat at fringilla sit amet, maximus ut est. Integer in justo sapien. Donec hendrerit mattis nisl id venenatis. Aenean ultricies est sit amet gravida lacinia. Proin vitae arcu vehicula, euismod odio ac, efficitur ligula.
+*This section is still under development. Please visit us again soon!*

@@ -5,11 +5,11 @@ permalink: /data/
 excerpt: Performance Review Unit Data Download (Excel and CSV).
 keywords: performance, data, statistics, economics, air transport, flights, europe, cost efficiency
 ---
-# ANS Performance Data repository
+# Pan-European ANS Performance data repository
+<div class="well">
+<h2><small>Copyright notice and Disclaimer</small></h2>
 
-## Copyright notice and Disclaimer
-
-This data is published by the Performance Review Unit in the interest of the exchange of information.
+<p>This data is published by the Performance Review Unit in the interest of the exchange of information.
 It may be copied in whole or in part providing that the copyright notice and disclaimer are included.
 The information may not be modified without prior written permission from the Performance Review Unit.
 
@@ -18,12 +18,12 @@ The data provided is used within the EU and Eurocontrol context.
 The information does not necessarily reflect the official views or policy of EUROCONTROL,
 which makes no warranty, either implied or express, for the information contained in this document,
 neither does it assume any legal liability or responsibility for the accuracy, completeness or usefulness
-of this information.
+of this information.</p>
 
-
-<br><br>
+<br>
 For feedback or questions please contact us at: [Performance Review Unit](mailto:{{ site.owner.email }}) ({{ site.owner.email }}).
-<br><br>
+<br>
+</div>
 
 <span class="glyphicon glyphicon-exclamation-sign"></span> = under construction.<br>
 <span class="glyphicon glyphicon-wrench"></span> = experimental, [feedback](mailto:{{ site.owner.email }}) is more than welcome.
