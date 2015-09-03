@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Airport Traffic Dataset
-permalink: /metadata/dataset/Airport_Traffic.html
+permalink: /references/dataset/Airport_Traffic.html
 excerpt: Performance Review Unit MetaData Definitions.
 keywords: metadata, dataset, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
 ---

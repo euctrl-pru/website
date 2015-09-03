@@ -1,7 +1,7 @@
 ---
 layout: default
 title: ATFM Slot Adherence Dataset
-permalink: /metadata/dataset/ATFM_Slot_Adherence.html
+permalink: /references/dataset/ATFM_Slot_Adherence.html
 excerpt: Performance Review Unit MetaData Definitions.
 keywords: metadata, dataset, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
 ---
