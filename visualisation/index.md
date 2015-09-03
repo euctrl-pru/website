@@ -38,7 +38,7 @@ This data is published by the Performance Review Unit (PRU). Every effort has be
 <br>
 <div id="crt_flts_YY" style="width:400px; height:200px;"></div>
 <div id="crt_flts_MM" style="width:400px; height:250px;"></div>
-</div>  				
+</div>
 <div class="col-lg-7 offset-10 text-justified">
 **Controlled flights by entity (year to date)**
 <div id="tbl_flts_YY"></div>
@@ -46,48 +46,8 @@ This data is published by the Performance Review Unit (PRU). Every effort has be
 </div>
 
 <h2 id="safety">Safety</h2>
-This section provides a review of ATM-related incidents, reported through the EURCONTROL Annual Summary Template (AST) reporting mechanism. The results refer to ATM-related incidents in EUROCONTROL Member States. 
+*This section is still under development. Please visit us again soon!*
 
-<div class="row">
-<div class="col-lg-6 text-justified">
-<div id="crt_saf_smi_YY" style="width:450px; height:250px;"></div>
-<div class="well">
-<p><i><small>
-In 2013, the total number of reported Separation Minima Infringements (SMIs) increased by almost 17%, compared to the previous year. After a continuous increase between 2009 and 2012, risk bearing SMIs decreased again in 2013 to 12% of the total number of reported SMIs. Overall, there was a decrease in the total number of serious incidents for both risk bearing Severity categories in 2013.
-</small></i></p>
-</div>
-</div>  
-
-<div class="col-lg-6 block-center">
-<div id="crt_saf_upa_YY" style="width:450px; height:250px;"></div>
-<div class="well">
-<p><i><small>
-The total number of Unauthorised Penetrations of Airspace (UPAs) in 2013, also known as Airspace Infringements (AIs), reported in EUROCONTROL Member States decreased by 31%, compared to 2012. The share of risk bearing (Severity A and B) UPAs, within total reported UPAs, decreased further in 2013 to 1.1%. Both risk bearing categories of UPAs show a decrease in 2013 in terms of total numbers.
-</small></i></p>
-</div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-lg-6">
-<div id="crt_saf_ri_YY" style="width:450px; height:250px;"></div>
-<div class="well">
-<p><i><small>
-Total reported Runway Incursions (RI) reported in EUROCONTROL Member States increased by approximately 15% in 2013. In 2013, the risk-bearing RIs (Severity A and B) increased by 53% compared to 2012 which corresponds to 5% of the total number of reported RIs.
-</small></i></p>
-</div>
-</div>
-
-<div class="col-lg-6">
-<div id="crt_saf_aso_YY" style="width:450px; height:250px;"></div>
-<div class="well">
-<p><i><small>
-ATM specific occurrences encompass those situations where the ability to provide safe ATM services is affected. Therefore, this type of occurrence typically includes failures that would affect the ANS providers’ capability to deliver safe ATM services. 
-The total number of reported ATM specific occurrences in 2013 showed a 7% increase compared to 2012.
-</small></i></p>
-</div> 
-</div> 
-</div>
 
 <h2 id='capacity'>Capacity</h2>
 <h3 id="ert_dly">En-route ATFM delays</h3>
@@ -102,7 +62,7 @@ Commentary en-route ATFM delay
 **EUROCONTROL Area**
 <div id="crt_cap_ert_YY" style="width:400px; height:200px;"></div>
 <div id="crt_cap_ert_MM" style="width:400px; height:250px;"></div>
-</div>  				
+</div>
 <div class="col-lg-7 offset-10">
 **En-route ATFM delays by entity (year to date)**
 <div id="tbl_cap_ert_YY"></div>
@@ -121,17 +81,17 @@ Commentary airport ATFM delay
 **EUROCONTROL Area**
 <div id="crt_cap_apt_YY" style="width:400px; height:200px;"></div>
 <div id="crt_cap_apt_MM" style="width:400px; height:250px;"></div>
-</div>  				
+</div>
 <div class="col-lg-7 offset-10">
 **Airport ATFM arrival delays by airport (year to date)**
 <div id="tbl_cap_apt_YY"></div>
 </div>
 </div>
 
-<h2 id="environment">Environment</h2> 
-<h3 id="hfe">Horizontal en-route flight efficiency</h3>	
+<h2 id="environment">Environment</h2>
+<h3 id="hfe">Horizontal en-route flight efficiency</h3>
 <div class="well">
-<b>Period: January-August 2015</b>	
+<b>Period: January-August 2015</b>
 <p><i><small>
 Horizontal en-route flight efficiency (HFE)
 </small></i></p>
@@ -142,7 +102,7 @@ Horizontal en-route flight efficiency (HFE)
 **EUROCONTROL Area**
 <div id="crt_hfe_YY" style="width:400px; height:200px;"></div>
 <div id="crt_hfe_MM" style="width:400px; height:250px;"></div>
-</div>  				
+</div>
 
 <div class="col-lg-7 offset-10">
 **Horizontal en-route flight efficiency by entity (year to date)**
@@ -150,10 +110,10 @@ Horizontal en-route flight efficiency (HFE)
 </div>
 </div>
 
-<h3 id="asma">ASMA additional time</h3>			
+<h3 id="asma">ASMA additional time</h3>
 *This section is still under development. Please visit us again soon!*
 
-<h3 id="txo">Taxi-out additional time</h3>			
+<h3 id="txo">Taxi-out additional time</h3>
 *This section is still under development. Please visit us again soon!*
 
 <h2 id="costeff">Cost Efficiency</h2>
