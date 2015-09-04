@@ -7,7 +7,7 @@
          dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1gYIeqeWdcxd7mdXImchbppdI7QvZzp7ucfZdNJbBbyE/edit?usp=sharing&alt=json&sheet=APT_ATFM_YY&range=A1:I9',
          options: {
                   chartArea: {left: 50, top: 20, width:'55%',height:'65%'},
-                  title: 'Airport ATFM arr. delays (year to date)', titleTextStyle : {color: 'grey', fontSize: 12},
+                  title: 'Airport ATFM arr. delays (yearly)', titleTextStyle : {color: 'grey', fontSize: 12},
                   legend: {position:'right',textStyle:{color: 'grey', fontSize: 9}},
                   isStacked : 'true',
                   series: {

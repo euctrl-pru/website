@@ -60,9 +60,9 @@ width: 8em;
 
 | Data description                                                                                                                          | Period              | Excel                             | CSV  | Metadata                         |
 |-------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-----------------------------------|------|----------------------------------|
-| En-route IFR flights<br><small>Daily IFR traffic by entity</small>                                                                        | Jan 2014 - Jul 2015 | [{{ page.dwnld_i }}][ERT-FLTxlsx] |      | [{{ page.info_i }}][ERT-FLTmeta] |
-| En-route ATFM delays<br><small>Daily IFR traffic and en-route ATFM delay by entity and delay cause</small>                                | Jan 2014 - Jul 2015 | [{{ page.dwnld_i }}][ERT-DLYxlsx] |      | [{{ page.info_i }}][ERT-DLYmeta] |
-| Horizontal en-route flight efficiency<br><small>Daily en-route flight efficiency data by entity (actual trajectory & flight plan)</small> | Jan 2014 - Jul 2015 | [{{ page.dwnld_i }}][HFExlsx]     |      | [{{ page.info_i }}][HFEmeta]     |
+| En-route IFR flights<br><small>Daily IFR traffic by entity</small>                                                                        | Jan 2014 - Aug 2015 | [{{ page.dwnld_i }}][ERT-FLTxlsx] |      | [{{ page.info_i }}][ERT-FLTmeta] |
+| En-route ATFM delays<br><small>Daily IFR traffic and en-route ATFM delay by entity and delay cause</small>                                | Jan 2014 - Aug 2015 | [{{ page.dwnld_i }}][ERT-DLYxlsx] |      | [{{ page.info_i }}][ERT-DLYmeta] |
+| Horizontal en-route flight efficiency<br><small>Daily en-route flight efficiency data by entity (actual trajectory & flight plan)</small> | Jan 2014 - Aug 2015 | [{{ page.dwnld_i }}][HFExlsx]     |      | [{{ page.info_i }}][HFEmeta]     |
 
 
 [ERT-FLTxlsx]: <{{site.url}}/data/set/ert_flt/En-Route_Traffic.xlsm> "ERT-FLT (Excel)"
@@ -82,12 +82,12 @@ width: 8em;
 
 | Data description                                                                                                              | Period               | Excel                             | CSV                                               | Metadata                         |
 |-------------------------------------------------------------------------------------------------------------------------------|----------------------|-----------------------------------|---------------------------------------------------|----------------------------------|
-| Airport traffic<br><small>Daily IFR arrivals and departures by airport</small>                                                | Jan 2014 - Jul 2015  | [{{ page.dwnld_i }}][APT-FLTxlsx] |                                                   | [{{ page.info_i }}][APT-FLTmeta] |
-| Airport arrival ATFM delays<br><small>Daily IFR arrivals and airport arrival ATFM delay by airport and delay category</small> | Jan 2014 - Jul 2015  | [{{ page.dwnld_i }}][APT-DLYxlsx] | [{{ page.fltr_i }} {{ page.ndwk_i }}][APT-DLYcsv] | [{{ page.info_i }}][APT-DLYmeta] |
+| Airport traffic<br><small>Daily IFR arrivals and departures by airport</small>                                                | Jan 2014 - Aug 2015  | [{{ page.dwnld_i }}][APT-FLTxlsx] |                                                   | [{{ page.info_i }}][APT-FLTmeta] |
+| Airport arrival ATFM delays<br><small>Daily IFR arrivals and airport arrival ATFM delay by airport and delay category</small> | Jan 2014 - Aug 2015  | [{{ page.dwnld_i }}][APT-DLYxlsx] | [{{ page.fltr_i }} {{ page.ndwk_i }}][APT-DLYcsv] | [{{ page.info_i }}][APT-DLYmeta] |
 | Arrival Sequencing and Metering (ASMA) additional time<br><small>Monthly ASMA additional and unimpeded time</small>           | Jan 2014 - Jun 2015  | [{{ page.dwnld_i }}][ASMAxlsx]    |                                                   | [{{ page.info_i }}][ASMAmeta]    |
 | Taxi-out additional time<br><small>Monthly taxi out additional and unimpeded time</small>                                     | Jan 2014 - Jun 2015  | [{{ page.dwnld_i }}][TX-OUTxlsx]  |                                                   | [{{ page.info_i }}][TX-OUTmeta]  |
-| ATC pre-departure delays (IATA code 89)<br><small>Daily ATC pre-departure delay (IATA code 89) by airport</small>             | Jan 2014 - Jun 2015  | [{{ page.dwnld_i }}][ATC-PRExlsx] |                                                   | [{{ page.info_i }}][ATC-PREmeta] |
-| ATFM slot adherence<br><small>Daily ATFM slot adherence by airport</small>                                                    | Jan 2014 - Jul 2015  | [{{ page.dwnld_i }}][SLT-ADHxlsx] |                                                   | [{{ page.info_i }}][SLT-ADHmeta] |
+| ATC pre-departure delays (IATA code 89)<br><small>Daily ATC pre-departure delay (IATA code 89) by airport</small>             | Jan 2014 - Jul 2015  | [{{ page.dwnld_i }}][ATC-PRExlsx] |                                                   | [{{ page.info_i }}][ATC-PREmeta] |
+| ATFM slot adherence<br><small>Daily ATFM slot adherence by airport</small>                                                    | Jan 2014 - Aug 2015  | [{{ page.dwnld_i }}][SLT-ADHxlsx] |                                                   | [{{ page.info_i }}][SLT-ADHmeta] |
 
 
 [APT-FLTxlsx]: <{{site.url}}/data/set/apt_flt/Airport_Traffic.xlsm> "APT-FLT (Excel)"
@@ -116,7 +116,7 @@ width: 8em;
 
 | Data description                                                    | Period              | Excel                          | CSV | Metadata |
 |---------------------------------------------------------------------|---------------------|--------------------------------|-----|----------|
-| ACE operational data<br><small>Monthly ACE operational data</small> | Jan 2014 - Jul 2015 | [{{ page.dwnld_i }}][ACExlsx]  |     | [{{ page.info_i }} {{ page.ndwk_i }}][ACEmeta]         |
+| ACE operational data<br><small>Monthly ACE operational data</small> | Jan 2014 - Aug 2015 | [{{ page.dwnld_i }}][ACExlsx]  |     | [{{ page.info_i }} {{ page.ndwk_i }}][ACEmeta]         |
 
 [ACExlsx]: <{{site.url}}/data/set/ace_opt/ACE_Monthly_Operational_Data.xls> "ACE (Excel)"
 [ACEcsv]: <{{site.url}}/404.html> "ACE (CSV)"
@@ -126,7 +126,7 @@ width: 8em;
 
 | Data description                                             | Period              | Excel                          | CSV | Metadata                      |
 |--------------------------------------------------------------|---------------------|--------------------------------|-----|-------------------------------|
-| Complexity<br><small>Complexity by ANSP and ATC unit</small> | Jan 2014 - May 2015 | [{{ page.dwnld_i }}][CPLXxlsx] |     | [{{ page.info_i }}][CPLXmeta] |
+| Complexity<br><small>Complexity by ANSP and ATC unit</small> | Jan 2014 - Aug 2015 | to be available soon           |     | [{{ page.info_i }}][CPLXmeta] |
 
 [CPLXxlsx]: <{{site.url}}/404.html> "CPLX (Excel)"
 [CPLXcsv]: <{{site.url}}/404.html> "CPLX (CSV)"

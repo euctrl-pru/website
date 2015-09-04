@@ -30,7 +30,6 @@ google.load('visualization', '1', { packages: ['corechart', 'controls'] });
 This data is published by the Performance Review Unit (PRU). Every effort has been made to ensure that the information and analysis contained on this website are as accurate and complete as possible. Despite these precautions, should you find any errors or inconsistencies we would be grateful if you could please bring them to the Performance Review Unit’s attention.
 
 <h2 id="traffic">Traffic</h2>
-<h3 id="flts">Controlled flights</h3>
 
 <div class="row">
 <div class="col-lg-5">
@@ -40,7 +39,7 @@ This data is published by the Performance Review Unit (PRU). Every effort has be
 <div id="crt_flts_MM" style="width:400px; height:250px;"></div>
 </div>
 <div class="col-lg-7 offset-10 text-justified">
-**Controlled flights by entity (year to date)**
+**Flights by entity (Jan.-Aug. 2015)**
 <div id="tbl_flts_YY"></div>
 </div>
 </div>
@@ -64,7 +63,7 @@ Commentary en-route ATFM delay
 <div id="crt_cap_ert_MM" style="width:400px; height:250px;"></div>
 </div>
 <div class="col-lg-7 offset-10">
-**En-route ATFM delays by entity (year to date)**
+**En-route ATFM delays by entity (Jan.-Aug. 2015)**
 <div id="tbl_cap_ert_YY"></div>
 </div>
 </div>
@@ -83,17 +82,17 @@ Commentary airport ATFM delay
 <div id="crt_cap_apt_MM" style="width:400px; height:250px;"></div>
 </div>
 <div class="col-lg-7 offset-10">
-**Airport ATFM arrival delays by airport (year to date)**
+**Airport ATFM arrival delays by airport (Jan.-Aug. 2015)**
 <div id="tbl_cap_apt_YY"></div>
 </div>
 </div>
 
 <h2 id="environment">Environment</h2>
-<h3 id="hfe">Horizontal en-route flight efficiency</h3>
+<h3 id="hfe">Horizontal en-route flight efficiency (HFE)</h3>
 <div class="well">
 <b>Period: January-August 2015</b>
 <p><i><small>
-Horizontal en-route flight efficiency (HFE)
+Horizontal en-route flight efficiency
 </small></i></p>
 </div>
 
@@ -105,7 +104,7 @@ Horizontal en-route flight efficiency (HFE)
 </div>
 
 <div class="col-lg-7 offset-10">
-**Horizontal en-route flight efficiency by entity (year to date)**
+**Horizontal en-route flight efficiency by entity (Jan.-Aug. 2015)**
 <div id="tbl_hfe_YY"></div>
 </div>
 </div>

@@ -7,7 +7,7 @@
          dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1g_EclskD6qP8b_aYYhW3xrng616ZysYW5WVtGD9pOXk/edit?usp=sharing&alt=json&sheet=ERT_ATFM_YY&range=A1:I9',
          options: {
                   chartArea: {left: 50, top: 20, width:'55%',height:'65%'},
-                  title: 'En-route ATFM delays (year to date)', titleTextStyle : {color: 'grey', fontSize: 12},
+                  title: 'En-route ATFM delays (yearly)', titleTextStyle : {color: 'grey', fontSize: 12},
                   legend: {position:'right', textStyle:{color: 'grey', fontSize: 9}},
                   isStacked : 'true',
                   series: {

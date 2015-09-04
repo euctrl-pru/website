@@ -7,7 +7,7 @@
       dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Ap6_pXhVLZcgfUcdbqsUBvZaI_AdVsT35XLY1oPKyJ4/edit?usp=sharing&sheet=IFR_YY&range=A1:D9&headers=1&hl=en_GB',
       options: {  
             chartArea: {left: 50, top: 20, width:'70%',height:'65%'},
-            title: 'Avg. daily controlled flights (year to date)', titleTextStyle : {color: 'grey', fontSize: 12},
+            title: 'Avg. daily flights (yearly)', titleTextStyle : {color: 'grey', fontSize: 12},
             legend: 'none',       
             series: {
                      0: {type: 'bars', color:'#B9CDE5', targetAxisIndex: 0},
