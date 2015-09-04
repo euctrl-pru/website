@@ -1,7 +1,7 @@
 ---
 layout: visualisation
-title: Visualisation
-permalink: /visualisation/
+title: Graphs
+permalink: /graphs/
 excerpt: Performance Review Unit interactive dashboard on European Air Transport.
 keywords: performance, air transport, flights, europe, cost efficiency
 ---

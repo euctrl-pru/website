@@ -1,7 +1,7 @@
 ---
 layout: default
 title: En-Route IFR Flights Dataset
-permalink: /metadata/dataset/En-Route_Traffic.html
+permalink: /references/dataset/En-Route_Traffic.html
 excerpt: Performance Review Unit MetaData Definitions.
 keywords: metadata, dataset, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
 ---

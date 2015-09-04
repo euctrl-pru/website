@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Metadata
-permalink: /metadata/
+title: References
+permalink: /references/
 excerpt: Performance Review Unit MetaData Definitions.
 keywords: metadata, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
 ---
@@ -22,7 +22,8 @@ keywords: metadata, performance, data, statistics, economics, air transport, fli
 	- [Horizontal en-route flight efficiency](dataset/Horizontal_Flight_Efficiency.html)
 	- [Taxi-out additional time](dataset/Taxi-Out_Additional_Time.html)
 * [Methodology <span class="glyphicon glyphicon-exclamation-sign"></span>][method]
-* [Index of Definitions]({{ "index_of_definitions.html" | prepend: site.baseurl }})
+* [Index of Definitions](index_of_definitions.html)
 * [Index of ANSPs](ANSP/)
+* [Bibliography](bibliography.html)
 
 [method]: <methodology/#> "Methodology"
