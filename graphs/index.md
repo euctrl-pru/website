@@ -50,11 +50,6 @@ This data is published by the Performance Review Unit (PRU). Every effort has be
 
 <h2 id='capacity'>Capacity</h2>
 <h3 id="ert_dly">En-route ATFM delays</h3>
-<div class="well">
-<p><i><small>
-Commentary en-route ATFM delay
-</small></i></p>
-</div>
 
 <div class="row">
 <div class="col-lg-5">
@@ -69,11 +64,6 @@ Commentary en-route ATFM delay
 </div>
 
 <h3 id="apt_dly">Airport ATFM arrival delays</h3>
-<div class="well">
-<p><i><small>
-Commentary airport ATFM delay
-</small></i></p>
-</div>
 
 <div class="row">
 <div class="col-lg-5">
@@ -89,12 +79,6 @@ Commentary airport ATFM delay
 
 <h2 id="environment">Environment</h2>
 <h3 id="hfe">Horizontal en-route flight efficiency (HFE)</h3>
-<div class="well">
-<b>Period: January-August 2015</b>
-<p><i><small>
-Horizontal en-route flight efficiency
-</small></i></p>
-</div>
 
 <div class="row">
 <div class="col-lg-5">
