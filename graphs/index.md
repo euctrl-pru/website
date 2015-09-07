@@ -12,10 +12,6 @@ google.load('visualization', '1', { packages: ['corechart', 'controls'] });
 {% javascript crt_flts_YY %}
 {% javascript crt_flts_MM %}
 {% javascript tbl_flts_YY %}
-{% javascript crt_saf_smi_YY %}
-{% javascript crt_saf_upa_YY %}
-{% javascript crt_saf_ri_YY %}
-{% javascript crt_saf_aso_YY %}
 {% javascript crt_hfe_YY %}
 {% javascript crt_hfe_MM %}
 {% javascript tbl_hfe_YY %}
