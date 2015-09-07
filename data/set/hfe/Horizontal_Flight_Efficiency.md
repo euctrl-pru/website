@@ -57,7 +57,7 @@ The FAB level information is based on an aggregation of Flight Information Regio
 | DIST_ACHIEVED_KM | Network Manager | DIST_ACHIEVED_KM | Sum of achieved distances in kilometre                                                            | 8255220   |
 | T10_RUN_12M      | Network Manager | T10_RUN_12M      | ‘B’ (‘W’) if the day is one of the ten best (worst) days for the entity in the previous 12 months | B         |
 | END_DATE         | Network Manager | END_DATE         | End date of the running 12 month  (T10_RUN_12M)                                                   | 42216     |
-| T10_YYYY         | Network Manager | T10_YYYY         | ‘B’ (‘W’) if the day is one of the ten best (worst) days for the entity in the calendar year      | B         |
+| T10_YYYY         | Network Manager | T10_YYYY         | ‘B’ (‘W’) if the day is one of the best (worst) days for the entity in the calendar year (the number of days increases proportionally to reach 10 at the end of the year) | B         |
 
 
 ### Calculated Field(s)
