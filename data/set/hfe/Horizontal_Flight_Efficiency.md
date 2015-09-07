@@ -71,4 +71,4 @@ $$
 where $L$ is the length of the trajectory and $H$ is the achieved distance;
 the index $f$ is the flight, $j$ is the airspace and $p$ is the portion considered.
 
-From the table above $L$ is $DIST\_FLOWN\_KM\_1$, while $H$ is $DIST\_ACHIEVED\_KM\_1$.
+From the table above $L$ is $DIST\_FLOWN\_KM$, while $H$ is $DIST\_ACHIEVED\_KM$.

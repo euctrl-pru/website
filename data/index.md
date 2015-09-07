@@ -116,7 +116,7 @@ width: 8em;
 
 | Data description                                                    | Period              | Excel                          | CSV | Metadata |
 |---------------------------------------------------------------------|---------------------|--------------------------------|-----|----------|
-| ACE operational data<br><small>Monthly ACE operational data</small> | Jan 2014 - Aug 2015 | [{{ page.dwnld_i }}][ACExlsx]  |     | [{{ page.info_i }} {{ page.ndwk_i }}][ACEmeta]         |
+| ACE operational data<br><small>Monthly ACE operational data</small> | Jan 2014 - Aug 2015 | [{{ page.dwnld_i }}][ACExlsx]  |     |          |
 
 [ACExlsx]: <{{site.url}}/data/set/ace_opt/ACE_Monthly_Operational_Data.xls> "ACE (Excel)"
 [ACEcsv]: <{{site.url}}/404.html> "ACE (CSV)"
