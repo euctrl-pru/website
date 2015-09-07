@@ -8,31 +8,31 @@
 
    function filteredCSV(data) {
     var fields = [
-      'YEAR',
-      'MONTH_NUM',
-      'MONTH_MON',
-      'FLT_DATE',
-      'APT_ICAO',
-      'APT_NAME',
-      'STATE_NAME',
-      'FLT_ARR_1',
-      'DLY_APT_ARR_1',
-      'DLY_APT_ARR_A_1',
-      'DLY_APT_ARR_C_1',
-      'DLY_APT_ARR_D_1',
-      'DLY_APT_ARR_E_1',
-      'DLY_APT_ARR_G_1',
-      'DLY_APT_ARR_I_1',
-      'DLY_APT_ARR_M_1',
-      'DLY_APT_ARR_N_1',
-      'DLY_APT_ARR_O_1',
-      'DLY_APT_ARR_P_1',
-      'DLY_APT_ARR_R_1',
-      'DLY_APT_ARR_S_1',
-      'DLY_APT_ARR_T_1',
-      'DLY_APT_ARR_V_1',
-      'DLY_APT_ARR_W_1',
-      'DLY_APT_ARR_NA_1'
+    'YEAR',
+    'MONTH_NUM',
+    'MONTH_MON',
+    'FLT_DATE',
+    'APT_ICAO',
+    'APT_NAME',
+    'STATE_NAME',
+    'FLT_ARR_1',
+    'DLY_APT_ARR_1',
+    'DLY_APT_ARR_A_1',
+    'DLY_APT_ARR_C_1',
+    'DLY_APT_ARR_D_1',
+    'DLY_APT_ARR_E_1',
+    'DLY_APT_ARR_G_1',
+    'DLY_APT_ARR_I_1',
+    'DLY_APT_ARR_M_1',
+    'DLY_APT_ARR_N_1',
+    'DLY_APT_ARR_O_1',
+    'DLY_APT_ARR_P_1',
+    'DLY_APT_ARR_R_1',
+    'DLY_APT_ARR_S_1',
+    'DLY_APT_ARR_T_1',
+    'DLY_APT_ARR_V_1',
+    'DLY_APT_ARR_W_1',
+    'DLY_APT_ARR_NA_1'
     ];
 
     json2csv({ data: data, fields: fields }, function(err, csv) {
@@ -115,27 +115,6 @@ var arrAirportGroup = arrAirport.group();
         });
 
 
-         // Countries DROPDOWN
-         // add an "All Countries" item to the ansps dropdown menu
-         d3.select("#arr-country")
-         .append("option")
-         .text("All Countries")
-         .attr("value", "-1");
-
-         // fill the countries dropdown menu with the available country names from the dataset
-         countries = _.pluck(arrCountryGroup.top(Infinity),"key");
-         countries.sort();
-         countries = countries.map(function(d,i){return {id: i, 'text': d};});
-         $("#arr-country").select2({
-          data: countries
-        });
-
-         // call filterByCountry when a new selection is made
-         $("#arr-country").on("change", function() {
-          filterByCountry(this.value);
-        });
-
-
          // AIRPORTS DROPDOWN
          // add an "All Airports" item to the airports dropdown menu
          d3.select("#arr-apt")
@@ -170,48 +149,42 @@ var arrAirportGroup = arrAirport.group();
          })
          .size(12) // (optional) max number of records to be shown, :default = 25
          .columns([
-            {
-              label: 'YYYY/MM',
-              format: function (d) {
-               return d.date.getFullYear() + '/' + format((d.date.getMonth() + 1));
-             }
-            },
-            {
-              label: 'Country',
-              format: function (d) {
-                return d.STATE_NAME;
-              }
-            },
-            'FLT_DATE',
-            'APT_ICAO',
-            'APT_NAME',
-            'FLT_ARR_1',
-            'DLY_APT_ARR_1',
-            'DLY_APT_ARR_A_1',
-            'DLY_APT_ARR_C_1',
-            'DLY_APT_ARR_D_1',
-            'DLY_APT_ARR_E_1',
-            'DLY_APT_ARR_G_1',
-            'DLY_APT_ARR_I_1',
-            'DLY_APT_ARR_M_1',
-            'DLY_APT_ARR_N_1',
-            'DLY_APT_ARR_O_1',
-            'DLY_APT_ARR_P_1',
-            'DLY_APT_ARR_R_1',
-            'DLY_APT_ARR_S_1',
-            'DLY_APT_ARR_T_1',
-            'DLY_APT_ARR_V_1',
-            'DLY_APT_ARR_W_1',
-            'DLY_APT_ARR_NA_1'
-        ])
-.sortBy(function (d) {
- return d.date;
-})
-.order(d3.ascending);
+         {
+          label: 'YYYY/MM',
+          format: function (d) {
+           return d.date.getFullYear() + '/' + format((d.date.getMonth() + 1));
+         }
+       },
+       'FLT_DATE',
+       'APT_ICAO',
+       'APT_NAME',
+       'FLT_ARR_1',
+       'DLY_APT_ARR_1',
+       'DLY_APT_ARR_A_1',
+       'DLY_APT_ARR_C_1',
+       'DLY_APT_ARR_D_1',
+       'DLY_APT_ARR_E_1',
+       'DLY_APT_ARR_G_1',
+       'DLY_APT_ARR_I_1',
+       'DLY_APT_ARR_M_1',
+       'DLY_APT_ARR_N_1',
+       'DLY_APT_ARR_O_1',
+       'DLY_APT_ARR_P_1',
+       'DLY_APT_ARR_R_1',
+       'DLY_APT_ARR_S_1',
+       'DLY_APT_ARR_T_1',
+       'DLY_APT_ARR_V_1',
+       'DLY_APT_ARR_W_1',
+       'DLY_APT_ARR_NA_1'
+       ])
+         .sortBy(function (d) {
+           return d.date;
+         })
+         .order(d3.ascending);
 
-dc.dataCount('.dc-data-count')
-.dimension(xf)
-.group(all)
+         dc.dataCount('.dc-data-count')
+         .dimension(xf)
+         .group(all)
             // (optional) html, for setting different html for some records and all records.
             // .html replaces everything in the anchor with the html given using the following function.
             // %filter-count and %total-count are replaced with the values obtained.
@@ -243,24 +216,14 @@ dc.dataCount('.dc-data-count')
          dc.redrawAll();
        }
 
-       function filterByCountry(val) {
-        arrCountry.filterAll();
+       function filterByAirport(val) {
+        arrAirport.filterAll();
         if (val == -1) {
         }
         else {
-         arrCountry.filter(function(d) {return d === countries[val].text});
+         arrAirport.filter(function(d) {return d === airports[val].text});
        }
        dc.redrawAll();
      }
-
-     function filterByAirport(val) {
-      arrAirport.filterAll();
-      if (val == -1) {
-      }
-      else {
-       arrAirport.filter(function(d) {return d === airports[val].text});
-     }
-     dc.redrawAll();
-   }
- });
+   });
 })();

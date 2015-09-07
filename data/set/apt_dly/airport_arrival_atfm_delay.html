@@ -29,7 +29,6 @@ keywords: performance, air transport, flights, europe, cost efficiency
       <div class="row">
          <div class="btn-toolbar" role="toolbar" aria-label="Example">
             <div class="btn-group" role="group" aria-label="Example"><select id="arr-year" class="form-control"></select></div>
-            <div class="btn-group" role="group" aria-label="Example"><select id="arr-country" class="form-control"></select></div>
             <div class="btn-group" role="group" aria-label="Example"><select id="arr-apt" class="form-control"></select></div>
             <div class="btn-group" role="group" aria-label="Example"><button id="arr-download" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-save"></span> Download</button></div>
             <div id='loading'>Loading...</div>
@@ -62,7 +61,6 @@ keywords: performance, air transport, flights, europe, cost efficiency
           padding: 3px;
        }
        /*align right for numeric columns*/
-       td:nth-of-type(4),
        td:nth-of-type(5),
        td:nth-of-type(6),
        td:nth-of-type(7),
@@ -109,3 +107,6 @@ keywords: performance, air transport, flights, europe, cost efficiency
 <div class="clearfix"></div>
 
 
+{% javascript vendor/json2csv %}
+{% javascript vendor/FileSaver.min.js %}
+{% javascript airport_arrival_atfm_delay_download %}
