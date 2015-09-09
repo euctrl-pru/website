@@ -7,6 +7,7 @@
   {% include _head.html %}
   {% include _mathjax.html %}
 
+
   <script type="text/javascript" src="https://www.google.com/jsapi"></script>
   <script type="text/javascript"> // load the visualisation API
     google.load('visualization', '1', { packages: ['corechart', 'controls'] });
@@ -15,7 +16,7 @@
   <script type="text/javascript">
     $('#side-nav').affix({
       offset: {
-        top: $('#side-nav').offset().top,
+        top: $('#side-nav').offset(),
         bottom: $('#footer').outerHeight(true) + 40
       }
     });
@@ -123,23 +124,35 @@
 <body data-spy="scroll" data-target=".scrollspy" id="top">
   {% include _navigation.html %}
 
-  <div class="container">
+ <div class="container">
     <div class="row">
-      <div class="col-md-9" role="main">
+      <div class="col-md-10" role="main">
         {{ content }}
       </div>
-      <div class="col-md-3" role="complementary">
+      <div class="col-md-2" role="complementary">
         <!-- side-navigation menu -->
-        <div class="col-md-3 scrollspy">
+        <div class="col-md-2 scrollspy">
           <ul id="side-nav" class="nav hidden-xs hidden-sm" data-spy="affix">
+            <li>
+              <a href="#traffic">Traffic</a>
+            </li>
             <li>
               <a href="#safety">Safety</a>
             </li>
             <li>
               <a href="#capacity">Capacity</a>
+              <ul>
+                <li><a href="#ert_dly">En-route ATFM delay</a></li>
+                <li><a href="#apt_dly">Airport ATFM arrival delay</a></li>
+              </ul>
             </li>
             <li>
               <a href="#environment">Environment</a>
+              <ul>
+                <li><a href="#hfe">Horizontal en-route flight efficiency</a></li>
+                <li><a href="#asma">ASMA additional time</a></li>
+                <li><a href="#txo">Taxi-out additional time</a></li>
+              </ul>
             </li>
             <li>
               <a href="#costeff">Cost Efficiency</a>

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: ATC Pre-Departure Delay (IATA code 89) Dataset
-permalink: /metadata/dataset/ATC_Pre-Departure_Delay.html
+permalink: /references/dataset/ATC_Pre-Departure_Delay.html
 excerpt: Performance Review Unit MetaData Definitions.
 keywords: metadata, dataset, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
 ---

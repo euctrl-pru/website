@@ -1,9 +1,9 @@
 # Site navigation links
-- title: Visualisation
-  url: /visualisation/#
+- title: News
+  url: /posts/#
 
 - title: Data
   url: /data/#
 
-- title: Meta
-  url: /metadata/#
+- title: References
+  url: /references/#

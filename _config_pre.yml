@@ -1,0 +1,4 @@
+# from http://stackoverflow.com/a/27400343/963575
+url: "http://essp1240.sky.corp.eurocontrol.int:9999"
+baseurl: ""
+dev: true
