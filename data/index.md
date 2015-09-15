@@ -4,10 +4,45 @@ title: Data
 permalink: /data/
 excerpt: Performance Review Unit Data Download (Excel and CSV).
 keywords: performance, data, statistics, economics, air transport, flights, europe, cost efficiency
+dates:
+  ert_flt:
+    beg: Jan 2014
+    end: Aug 2015
+  ert_dly:
+    beg: Jan 2014
+    end: Aug 2015
+  hfe:
+    beg: Jan 2014
+    end: Aug 2015
+  apt_flt:
+    beg: Jan 2014
+    end: Aug 2015
+  apt_dly:
+    beg: Jan 2014
+    end: Aug 2015
+  asma:
+    beg: Jan 2014
+    end: Jul 2015
+  tx_out:
+    beg: Jan 2014
+    end: Jul 2015
+  atc_pre:
+    beg: Jan 2014
+    end: Jul 2015
+  slt_adh:
+    beg: Jan 2014
+    end: Aug 2015
+  ace_opt:
+    beg: Jan 2014
+    end: Aug 2015
+  cplx:
+    beg:
+    end:
 dwnld_i: <span class="glyphicon glyphicon-download-alt"></span>
 info_i: <span class="glyphicon glyphicon-info-sign"></span>
 ndwk_i: <span class="glyphicon glyphicon-wrench"></span>
 fltr_i: <span class="glyphicon glyphicon-filter"></span>
+attn_i: <span class="glyphicon glyphicon-exclamation-sign"></span>
 ---
 # Pan-European ANS Performance data repository
 <div class="well">
@@ -33,7 +68,7 @@ For feedback or questions please contact us at: [Performance Review Unit](mailto
 
 </div>
 
-<span class="glyphicon glyphicon-exclamation-sign"></span> = under construction.<br>
+{{ page.attn_i }} = under construction, coming soon.<br>
 {{ page.ndwk_i }} = experimental, [feedback](mailto:{{ site.owner.email }}) is more than welcome.
 
 
@@ -58,11 +93,11 @@ width: 8em;
 
 ### En-route
 
-| Data description                                                                                                                          | Period              | Excel                             | CSV  | Metadata                         |
-|-------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-----------------------------------|------|----------------------------------|
-| En-route IFR flights<br><small>Daily IFR traffic by entity</small>                                                                        | Jan 2014 - Aug 2015 | [{{ page.dwnld_i }}][ERT-FLTxlsx] |      | [{{ page.info_i }}][ERT-FLTmeta] |
-| En-route ATFM delays<br><small>Daily IFR traffic and en-route ATFM delay by entity and delay cause</small>                                | Jan 2014 - Aug 2015 | [{{ page.dwnld_i }}][ERT-DLYxlsx] |      | [{{ page.info_i }}][ERT-DLYmeta] |
-| Horizontal en-route flight efficiency<br><small>Daily en-route flight efficiency data by entity (actual trajectory & flight plan)</small> | Jan 2014 - Aug 2015 | [{{ page.dwnld_i }}][HFExlsx]     |      | [{{ page.info_i }}][HFEmeta]     |
+| Data description                                                                                                                          | Period                                                      | Excel                             | CSV  | Metadata                         |
+|-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|-----------------------------------|------|----------------------------------|
+| En-route IFR flights<br><small>Daily IFR traffic by entity</small>                                                                        | {{ page.dates.ert_flt.beg }} - {{ page.dates.ert_flt.end }} | [{{ page.dwnld_i }}][ERT-FLTxlsx] |      | [{{ page.info_i }}][ERT-FLTmeta] |
+| En-route ATFM delays<br><small>Daily IFR traffic and en-route ATFM delay by entity and delay cause</small>                                | {{ page.dates.ert_dly.beg }} - {{ page.dates.ert_dly.end }} | [{{ page.dwnld_i }}][ERT-DLYxlsx] |      | [{{ page.info_i }}][ERT-DLYmeta] |
+| Horizontal en-route flight efficiency<br><small>Daily en-route flight efficiency data by entity (actual trajectory & flight plan)</small> | {{ page.dates.hfe.beg }} - {{ page.dates.hfe.end }}         | [{{ page.dwnld_i }}][HFExlsx]     |      | [{{ page.info_i }}][HFEmeta]     |
 
 
 [ERT-FLTxlsx]: <{{site.url}}/data/set/ert_flt/En-Route_Traffic.xlsm> "ERT-FLT (Excel)"
@@ -80,14 +115,14 @@ width: 8em;
 
 ### Airport/terminal
 
-| Data description                                                                                                              | Period               | Excel                             | CSV                                               | Metadata                         |
-|-------------------------------------------------------------------------------------------------------------------------------|----------------------|-----------------------------------|---------------------------------------------------|----------------------------------|
-| Airport traffic<br><small>Daily IFR arrivals and departures by airport</small>                                                | Jan 2014 - Aug 2015  | [{{ page.dwnld_i }}][APT-FLTxlsx] |                                                   | [{{ page.info_i }}][APT-FLTmeta] |
-| Airport arrival ATFM delays<br><small>Daily IFR arrivals and airport arrival ATFM delay by airport and delay category</small> | Jan 2014 - Aug 2015  | [{{ page.dwnld_i }}][APT-DLYxlsx] | [{{ page.fltr_i }} {{ page.ndwk_i }}][APT-DLYcsv] | [{{ page.info_i }}][APT-DLYmeta] |
-| Arrival Sequencing and Metering (ASMA) additional time<br><small>Monthly ASMA additional and unimpeded time</small>           | Jan 2014 - Jul 2015  | [{{ page.dwnld_i }}][ASMAxlsx]    |                                                   | [{{ page.info_i }}][ASMAmeta]    |
-| Taxi-out additional time<br><small>Monthly taxi out additional and unimpeded time</small>                                     | Jan 2014 - Jul 2015  | [{{ page.dwnld_i }}][TX-OUTxlsx]  |                                                   | [{{ page.info_i }}][TX-OUTmeta]  |
-| ATC pre-departure delays (IATA code 89)<br><small>Daily ATC pre-departure delay (IATA code 89) by airport</small>             | Jan 2014 - Jul 2015  | [{{ page.dwnld_i }}][ATC-PRExlsx] |                                                   | [{{ page.info_i }}][ATC-PREmeta] |
-| ATFM slot adherence<br><small>Daily ATFM slot adherence by airport</small>                                                    | Jan 2014 - Aug 2015  | [{{ page.dwnld_i }}][SLT-ADHxlsx] |                                                   | [{{ page.info_i }}][SLT-ADHmeta] |
+| Data description                                                                                                              | Period                                                       | Excel                             | CSV                                               | Metadata                         |
+|-------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|-----------------------------------|---------------------------------------------------|----------------------------------|
+| Airport traffic<br><small>Daily IFR arrivals and departures by airport</small>                                                | {{ page.dates.apt_flt.beg }} - {{ page.dates.apt_flt.end }}  | [{{ page.dwnld_i }}][APT-FLTxlsx] |                                                   | [{{ page.info_i }}][APT-FLTmeta] |
+| Airport arrival ATFM delays<br><small>Daily IFR arrivals and airport arrival ATFM delay by airport and delay category</small> | {{ page.dates.apt_dly.beg }} - {{ page.dates.apt_dly.end }}  | [{{ page.dwnld_i }}][APT-DLYxlsx] | [{{ page.fltr_i }} {{ page.ndwk_i }}][APT-DLYcsv] | [{{ page.info_i }}][APT-DLYmeta] |
+| Arrival Sequencing and Metering (ASMA) additional time<br><small>Monthly ASMA additional and unimpeded time</small>           | {{ page.dates.asma.beg }} - {{ page.dates.asma.end }}        | [{{ page.dwnld_i }}][ASMAxlsx]    |                                                   | [{{ page.info_i }}][ASMAmeta]    |
+| Taxi-out additional time<br><small>Monthly taxi out additional and unimpeded time</small>                                     | {{ page.dates.tx_out.beg }} - {{ page.dates.tx_out.end }}    | [{{ page.dwnld_i }}][TX-OUTxlsx]  |                                                   | [{{ page.info_i }}][TX-OUTmeta]  |
+| ATC pre-departure delays (IATA code 89)<br><small>Daily ATC pre-departure delay (IATA code 89) by airport</small>             | {{ page.dates.atc_pre.beg }} - {{ page.dates.atc_pre.end }}  | [{{ page.dwnld_i }}][ATC-PRExlsx] |                                                   | [{{ page.info_i }}][ATC-PREmeta] |
+| ATFM slot adherence<br><small>Daily ATFM slot adherence by airport</small>                                                    | {{ page.dates.slt_adh.beg }} - {{ page.dates.slt_adh.end }}  | [{{ page.dwnld_i }}][SLT-ADHxlsx] |                                                   | [{{ page.info_i }}][SLT-ADHmeta] |
 
 
 [APT-FLTxlsx]: <{{site.url}}/data/set/apt_flt/Airport_Traffic.xlsm> "APT-FLT (Excel)"
@@ -114,9 +149,9 @@ width: 8em;
 
 ### ATM Cost-Effectiveness (ACE) operational data
 
-| Data description                                                    | Period              | Excel                          | CSV | Metadata |
-|---------------------------------------------------------------------|---------------------|--------------------------------|-----|----------|
-| ACE operational data<br><small>Monthly ACE operational data</small> | Jan 2014 - Aug 2015 | [{{ page.dwnld_i }}][ACExlsx]  |     |          |
+| Data description                                                    | Period                                                      | Excel                          | CSV | Metadata |
+|---------------------------------------------------------------------|-------------------------------------------------------------|--------------------------------|-----|----------|
+| ACE operational data<br><small>Monthly ACE operational data</small> | {{ page.dates.ace_opt.beg }} - {{ page.dates.ace_opt.end }} | [{{ page.dwnld_i }}][ACExlsx]  |     |          |
 
 [ACExlsx]: <{{site.url}}/data/set/ace_opt/ACE_Monthly_Operational_Data.xls> "ACE (Excel)"
 [ACEcsv]: <{{site.url}}/404.html> "ACE (CSV)"
@@ -124,9 +159,9 @@ width: 8em;
 
 ### Traffic complexity scores
 
-| Data description                                             | Period              | Excel                          | CSV | Metadata                      |
-|--------------------------------------------------------------|---------------------|--------------------------------|-----|-------------------------------|
-| Complexity<br><small>Complexity by ANSP and ATC unit</small> | Jan 2014 - Aug 2015 | to be available soon           |     | [{{ page.info_i }}][CPLXmeta] |
+| Data description                                             | Period                                                | Excel                          | CSV | Metadata                      |
+|--------------------------------------------------------------|-------------------------------------------------------|--------------------------------|-----|-------------------------------|
+| Complexity<br><small>Complexity by ANSP and ATC unit</small> | {{ page.dates.cplx.beg }} - {{ page.dates.cplx.end }} | {{ page.attn_i }}              |     | [{{ page.info_i }}][CPLXmeta] |
 
 [CPLXxlsx]: <{{site.url}}/404.html> "CPLX (Excel)"
 [CPLXcsv]: <{{site.url}}/404.html> "CPLX (CSV)"
