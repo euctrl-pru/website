@@ -5,36 +5,14 @@ SET TRIMSPOOL ON;
 -- take name from argument 1
 spool '&1';
 
-WITH APT_ONE_LIST AS
-    ( SELECT
-       'EBAW,EBBR,EBCI,EBLG,EBOS,EDDB,EDDC,EDDE,EDDF,EDDG,EDDH,EDDK,EDDL,EDDM,EDDN,EDDP,EDDR,EDDS,
-        EDDT,EDDV,EDDW,EETN,EETU,EFHK,EGBB,EGCC,EGGW,EGHI,EGKB,EGKK,EGLC,EGLF,EGLL,EGNX,EGPD,EGPF,
-        EGPH,EGSS,EHAM,EHBK,EHGG,EHRD,EICK,EIDW,EINN,EKCH,ELLX,ENBR,ENGM,ENHD,ENVA,ENZV,EPBY,EPGD,
-        EPKK,EPKT,EPLB,EPLL,EPMO,EPPO,EPRA,EPRZ,EPSC,EPSY,EPWA,EPWR,EPZG,ESSA,ESSB,EVLA,EVRA,EVVA,
-        EYKA,EYPA,EYSA,EYVI,GCLP,GCRR,GCXO,LATI,LBSF,LCLK,LCPH,LDZA,LDZL,LEBL,LEIB,LEMD,LEMG,LEPA,
-        LFAQ,LFBA,LFBD,LFBE,LFBH,LFBI,LFBL,LFBO,LFBP,LFBT,LFBZ,LFCR,LFGJ,LFJL,LFJR,LFKB,LFKC,LFKF,LFKJ,
-        LFLB,LFLC,LFLI,LFLL,LFLP,LFLS,LFLX,LFLY,LFMD,LFMH,LFMI,LFMK,LFML,LFMN,LFMP,LFMT,LFMU,LFMV,LFOB,
-        LFOH,LFOK,LFOT,LFPB,LFPG,LFPN,LFPO,LFQQ,LFRB,LFRD,LFRG,LFRH,LFRK,LFRM,LFRN,LFRO,LFRQ,LFRS,
-        LFRZ,LFSB,LFSL,LFST,LFTH,LFTW,LGAV,LGIR,LGKF,LGKO,LGKR,LGMK,LGPZ,LGRP,LGSA,LGSK,LGSR,LGTS,
-        LGZA,LHBP,LICC,LIMC,LIML,LIPZ,LIRA,LIRF,LIRP,LJLJ,LJMB,LJPZ,LKKV,LKMT,LKPR,LKTB,LMML,LOWG,LOWI,
-        LOWK,LOWL,LOWS,LOWW,LPFR,LPPR,LPPT,LQSA,LRBS,LROP,LSGG,LSGS,LSZH,LTAC,LTAI,LTBA,LTBJ,LTFJ,
-        LUKK,LWSK,LYBE,LYPG,LZIB,UDYZ,UGTB,UKBB'
-    ids FROM dual
-    ),
+WITH 
 
-APT_SELECTION as (
-
-  SELECT regexp_substr(ids, '[A-Z]{4}', 1, LEVEL) apt_id
-  FROM APT_ONE_LIST
-  CONNECT BY instr(ids, ',', 1, LEVEL - 1) > 0
-),
-
-APT_ATFM_DLY as
+APT_ATFM_DLY as 
 (
 
-select
-  flt_date
-, airport_location_id as airport_code
+select 
+  flt_date 
+, airport_location_id as airport_code 
 , sum(NVL (tdm, 0)) as DLY_APT
 , sum(CASE WHEN reason ='A'THEN NVL (tdm, 0) END) DLY_APT_A
 , sum(CASE WHEN reason ='C'THEN NVL (tdm, 0)END) DLY_APT_C
@@ -53,39 +31,39 @@ select
 , sum(CASE WHEN reason ='W'THEN NVL (tdm, 0)END) DLY_APT_W
 , sum(CASE WHEN reason NOT IN ('A','C','D','E','G','I','M','N','O','P','R','S','T','V','W') THEN NVL (tdm, 0)END) DLY_APT_NA
   from PRU_REGULATION_DETAIL
-  where airport_role = 'A'
+  where airport_role = 'A'  
   AND flt_date >= '01 JAN 2014'
-  AND airport_location_id IN (SELECT apt_id FROM APT_SELECTION)
+  AND airport_location_id IN (SELECT apt_icao FROM PRUDEV.DSH_REL_AIRPORT_COUNTRY) 
   group by flt_date, airport_location_id
 
  ),
-
-ARR_FLTS as
+ 
+ARR_FLTS as  
 (
 SELECT 
- p.flt_date
-,p.ID
-,u.code
-,R.PRU_APT_NAME as NAME
+ p.flt_date   
+,p.ID 
+,u.code 
+,R.PRU_APT_NAME as APT_NAME
 ,R.PRU_STATE_NAME as STATE_NAME
-,NVL (p.ttf_arr, 0) as ttf_arr
-,NVL (p.ttf_dep, 0) as ttf_dep
+,NVL (p.ttf_arr, 0) as ttf_arr 
+,NVL (p.ttf_dep, 0) as ttf_dep 
 
 FROM prudev.pru_fact_traffic_airspace p, pru_airport u, dsh_rel_airport_country r
-    WHERE p.ID = u.ID AND p.TYPE = 'AIRPORT'
+    WHERE p.ID = u.ID AND p.TYPE = 'AIRPORT' 
     AND p.flt_date >= '01 JAN 2014'
     AND R.APT_ICAO = U.CODE
-    AND u.code IN (SELECT apt_id FROM APT_SELECTION)
+    AND u.code IN (SELECT apt_icao FROM PRUDEV.DSH_REL_AIRPORT_COUNTRY)
     )
 
 select
-  to_char(t.flt_date,'YYYY') as YEAR
-, EXTRACT (MONTH FROM t.flt_date) MONTH_NUM
+  to_char(t.flt_date,'YYYY') as YEAR 
+, EXTRACT (MONTH FROM t.flt_date) MONTH_NUM 
 , to_char(t.flt_date,'MON') as MONTH_MON
 ,t.flt_date as FLT_DATE
 ,t.code as APT_ICAO
-,t.name as APT_NAME
-,STATE_NAME
+,APT_NAME
+,STATE_NAME  
 ,NVL (t.ttf_arr, 0) as FLT_ARR_1
 ,nvl(DLY_APT,0) as DLY_APT_1
 ,nvl(DLY_APT_A,0) as DLY_APT_ARR_A_1
@@ -105,9 +83,8 @@ select
 ,nvl(DLY_APT_W,0) as DLY_APT_ARR_W_1
 ,nvl(DLY_APT_NA,0) as DLY_APT_ARR_NA_1
 from ARR_FLTS t left join APT_ATFM_DLY d on (t.flt_date = d.flt_date and t.code = d.airport_code)
- where t.flt_date>='01-JAN-2014' and t.flt_date<'01-SEP-2015'
+ where t.flt_date>='01-JAN-2014' and t.flt_date<'01-SEP-2015' 
  order by 1,2,3,4,5;
-
 
 spool off;
 quit
