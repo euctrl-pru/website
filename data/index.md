@@ -38,12 +38,16 @@ dates:
   cplx:
     beg:
     end:
-dwnld_i: <span class="glyphicon glyphicon-download-alt"></span>
-info_i: <span class="glyphicon glyphicon-info-sign"></span>
-ndwk_i: <span class="glyphicon glyphicon-wrench"></span>
-fltr_i: <span class="glyphicon glyphicon-filter"></span>
-attn_i: <span class="glyphicon glyphicon-exclamation-sign"></span>
+dwnld_i: <i class="fa pru fa-download"></i>
+info_i: <i class="fa pru fa-info-circle"></i>
+ndwk_i: <i class="fa pru fa-flask"></i>
+fltr_i: <i class="fa pru fa-filter"></i>
+attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 ---
+<style>
+  i.fa.pru {color: #337ab7;}
+</style>
+
 # Pan-European ANS Performance data repository
 <div class="well">
 <h2><small>Copyright notice and Disclaimer</small></h2>
@@ -63,7 +67,7 @@ of this information.</p>
 For feedback or questions please contact us at: [Performance Review Unit](mailto:{{ site.owner.email }}) ({{ site.owner.email }}).
 
 <div class="container text-center">
-<a href="mailto:pru@eurocontrol.int?subject=Subscribe: PRU information point&amp;body=Please%20add%20me%20to%20the%20mailing%20list%20to%20get%20informed%20about%20information%20updates." class="btn btn-primary btn-sm">Subscribe to get informed about updates</a>
+<a href="mailto:pru@eurocontrol.int?subject=Subscribe: PRU information point&amp;body=Please%20add%20me%20to%20the%20mailing%20list%20to%20get%20informed%20about%20information%20updates." class="btn btn-primary btn-sm">Subscribe to get informed about updates <i class="fa fa-envelope"></i></a>
 </div>
 
 </div>
