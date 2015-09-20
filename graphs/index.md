@@ -1,5 +1,5 @@
 ---
-layout: visualisation
+layout: default
 title: Graphs
 permalink: /graphs/
 excerpt: Performance Review Unit interactive dashboard on European Air Transport.
