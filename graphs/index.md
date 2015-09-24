@@ -21,12 +21,15 @@ google.load('visualization', '1', { packages: ['corechart', 'controls'] });
 {% javascript crt_cap_apt_YY %}
 {% javascript crt_cap_apt_MM %}
 {% javascript tbl_cap_apt_YY %}
+{% javascript crt_ertSU_YY %}
+{% javascript crt_ertSU_MM %}
+{% javascript tbl_ertSU_YY %}
 
 # Pan-European ANS performance
 This data is published by the Performance Review Unit (PRU). Every effort has been made to ensure that the information and analysis contained on this website are as accurate and complete as possible. Despite these precautions, should you find any errors or inconsistencies we would be grateful if you could please bring them to the Performance Review Unit’s attention.
 
 <h2 id="traffic">Traffic</h2>
-
+<h3 id="ert_dly">Flights</h3>
 <div class="row">
 <div class="col-lg-5">
 **EUROCONTROL Area**
@@ -37,6 +40,20 @@ This data is published by the Performance Review Unit (PRU). Every effort has be
 <div class="col-lg-7 offset-10 text-justified">
 **Flights by entity (Jan.-Aug. 2015)**
 <div id="tbl_flts_YY"></div>
+</div>
+</div>
+
+<h3 id="ert_dly">En-route service units (SU)</h3>
+<div class="row">
+<div class="col-lg-5">
+**CRCO Area**
+<br>
+<div id="crt_ertSU_YY" style="width:400px; height:200px;"></div>
+<div id="crt_ertSU_MM" style="width:400px; height:250px;"></div>
+</div>
+<div class="col-lg-7 offset-10 text-justified">
+**En-route SU by charging zone (Jan.-Aug. 2015)**
+<div id="tbl_ertSU_YY"></div>
 </div>
 </div>
 
