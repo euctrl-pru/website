@@ -1,10 +1,10 @@
 (function() {
    function dv(){
 // TRAFFIC - En route service units - MM - CHART
-   var crt_flts_MM = new google.visualization.ChartWrapper({
+   var crt_ertSU_MM = new google.visualization.ChartWrapper({
       chartType: 'ComboChart',
-      containerId: 'crt_flts_MM',
-      dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1txmPuoLLfCuuQdWSQfBZmQWPEHD__MVu-Y5xsvWCO3Y/edit?usp=sharing&sheet=ERT_FLTS_MM&range=A1:F25&headers=1&tq=where%20A%3D1',
+      containerId: 'crt_ertSU_MM',
+      dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1txmPuoLLfCuuQdWSQfBZmQWPEHD__MVu-Y5xsvWCO3Y/edit?usp=sharing&sheet=ERT_SU_MM&range=A1:F25&headers=1&tq=where%20A%3D1',
       options: {   
             title: 'Avg. daily service units (monthly)', titleTextStyle : {color: 'grey', fontSize: 12},
             chartArea: {left: 50, top: 50, width:'70%',height:'55%'},
@@ -21,7 +21,7 @@
             hAxis: {title: 'Source: CRCO', titleTextStyle: {color: 'grey', fontSize: 10}, type:'string', slantedTextAngle: 90, textStyle: {fontSize: 11}}
             },
       view: {columns: [1,3,4,5]}
-   }); crt_flts_MM.draw();
+   }); crt_ertSU_MM.draw();
    }
    google.setOnLoadCallback(dv)
 })();
