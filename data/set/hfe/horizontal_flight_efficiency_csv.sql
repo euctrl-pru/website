@@ -1,3 +1,11 @@
+set sqlformat csv;
+set term off;
+set feedback off;
+SET TRIMSPOOL ON;
+-- take name from argument 1
+spool '&1';
+
+
 with inp1 as (select cast('31-may-2015' as date) enddate, 10 bw_days from dual)
 
 , inp2 as (select
@@ -51,4 +59,7 @@ SELECT
   FROM inp2,
        PRUTEST.HFE_DAILY od
        join PRUTEST.DSH_BRIDGE_NAMES using(mes_area)
-   ORDER by 4,5
+   ORDER by 4,5;
+
+spool off;
+quit
