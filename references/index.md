@@ -9,6 +9,8 @@ keywords: metadata, performance, data, statistics, economics, air transport, fli
 
 <span class="glyphicon glyphicon-exclamation-sign"></span> = under construction.
 
+* Definitions:
+	* [Index of Definitions](index_of_definitions.html)
 * Datasets:
 	- ACE operational data <span class="glyphicon glyphicon-exclamation-sign"></span>
 	- [Airport arrival ATFM delay](dataset/Airport_Arrival_ATFM_Delay.html)
@@ -22,8 +24,8 @@ keywords: metadata, performance, data, statistics, economics, air transport, fli
 	- [Horizontal en-route flight efficiency](dataset/Horizontal_Flight_Efficiency.html)
 	- [Taxi-out additional time](dataset/Taxi-Out_Additional_Time.html)
 * Methodology <span class="glyphicon glyphicon-exclamation-sign"></span>
-* [Index of Definitions](index_of_definitions.html)
-* [Index of ANSPs](ANSP/)
+* Entities:
+	* [Index of ANSPs](ANSP/)
 * [Bibliography](bibliography.html)
 
 [method]: <methodology/#> "Methodology"
