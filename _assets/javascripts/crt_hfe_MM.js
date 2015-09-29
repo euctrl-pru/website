@@ -19,27 +19,27 @@
                         type: 'lines',
                         color: '#5D7CBA',
                         lineWidth: 1,
-                        pointSize: 3
+                        pointSize: 4
                      },
                      1: {
                         type: 'lines',
                         color: '#C0504D',
                         lineWidth: 1,
-                        pointSize: 3,
+                        pointSize: 4,
                         pointShape: 'diamond'
                      },
                      2: {
                         type: 'lines',
                         color: '#5D7CBA',
                         lineWidth: 2,
-                        pointSize: 3,
+                        pointSize: 4,
                         lineDashStyle: [6, 3]
                      },
                      3: {
                         type: 'lines',
                         color:'#C0504D',
                         lineWidth: 2,
-                        pointSize: 3,
+                        pointSize: 4,
                         lineDashStyle: [6, 3],
                         pointShape:'diamond'
                      }
@@ -56,7 +56,7 @@
                   title: 'Source: PRU Analysis',
                   titleTextStyle: { color: 'grey', fontSize: 10 },
                   type: 'string',
-                  slantedTextAngle: 90,
+                  slantedTextAngle: 40,
                   textStyle: { fontSize: 11 }
                }
             },

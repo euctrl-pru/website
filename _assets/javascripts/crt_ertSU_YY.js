@@ -33,7 +33,8 @@
                      titleTextStyle : { color: 'grey', fontSize: 11 },
                      minValue: 20000,
                      viewWindow: { min: 20000 },
-                     format: 'short'
+                     format: 'short',
+                     gridlines: {color: 'transparent'}
                   },
                   1: {
                      title:'year on year (%)',

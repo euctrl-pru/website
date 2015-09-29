@@ -1,11 +1,11 @@
 (function() {
    function dv(){
 // CAPACITY - Airport arrival ATFM delay - MM - CHART
-   var crt_cap_apt_MM = new google.visualization.ChartWrapper({ 
+   var crt_cap_apt_MM = new google.visualization.ChartWrapper({
        chartType: 'ComboChart',
          containerId: 'crt_cap_apt_MM',
          dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1gYIeqeWdcxd7mdXImchbppdI7QvZzp7ucfZdNJbBbyE/edit?usp=sharing&alt=json&sheet=APT_ATFM_MM&range=A1:M25&tq=where%20A%3D1',
-         options: {      
+         options: {
               chartArea: {left: 50, top: 20, width:'55%',height:'60%'},
                   title: 'Airport ATFM arr. delays (monthly)', titleTextStyle : {color: 'grey',fontSize: 12},
                   legend: {position:'right',textStyle:{color: 'grey', fontSize: 9}},
@@ -26,8 +26,8 @@
                },
          view: {columns: [1,4,5,6,8,9,10,7,11,12] }
       });
-      crt_cap_apt_MM.draw(); 
-   
+      crt_cap_apt_MM.draw();
+
    }
    google.setOnLoadCallback(dv)
 })();

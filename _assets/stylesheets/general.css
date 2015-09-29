@@ -1,2 +1,10 @@
 /* as per http://getbootstrap.com/components/#navbar-fixed-top */
 body { padding-top: 60px; }
+
+/* from http://stackoverflow.com/a/28824157 */
+:target:before {
+  content:"";
+  display:block;
+  height:60px; /* fixed header height*/
+  margin:-60px 0 0; /* negative fixed header height */
+}

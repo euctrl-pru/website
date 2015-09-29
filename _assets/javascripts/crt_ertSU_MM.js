@@ -40,11 +40,12 @@
                },
                vAxes:{
                   0: {
-                     title:'Avg. daily service units',
+                     title: 'Avg. daily service units',
                      titleTextStyle: { fontSize: 11, color: 'grey' },
                      minValue: 20000,
                      viewWindow: { min: 20000 },
-                     format: 'short'
+                     format: 'short',
+                     gridlines: { color: 'transparent' }
                   },
                   1: {
                      title: 'cum. change vs prev. year (%)',

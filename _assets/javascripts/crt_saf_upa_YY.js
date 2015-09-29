@@ -20,7 +20,7 @@
                0:{ title:'count', titleTextStyle : {color: 'grey', fontSize: 11}, textStyle:{color: 'grey'}},
                1:{ title:'total nr. of reported UPAs', titleTextStyle : {color: '#5D7CBA', fontSize: 11}, textStyle:{color:'#5D7CBA'}}
                   },
-            hAxis: {title:'Source: SRC Intermediate Report 2015', titleTextStyle : {color: 'grey', fontSize: 11}, type:'string', slantedTextAngle: 90, textStyle: {fontSize: 11}}      
+            hAxis: {title:'Source: SRC Intermediate Report 2015', titleTextStyle : {color: 'grey', fontSize: 11}, type:'string', slantedTextAngle: 40, textStyle: {fontSize: 11}}
                   },
          view: {columns: [0,1,2,4,5]}
       });

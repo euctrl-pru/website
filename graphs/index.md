@@ -78,9 +78,6 @@ This data is published by the Performance Review Unit (PRU). Every effort has be
 </div>
 </div>
 
-<h2 id="safety">Safety</h2>
-*This section is still under development. Please visit us again soon!*
-
 
 <h2 id='capacity'>Capacity</h2>
 <h3 id="ert_dly">En-route ATFM delays</h3>
