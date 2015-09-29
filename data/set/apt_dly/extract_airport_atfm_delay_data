@@ -6,8 +6,8 @@
 #-- Copyright (C) 2015 Eurocontrol/PRU
 
 
-##- Usage: create [OPTION]
-##- Extract Airport Arrival ATFM Delay data to csv file, airport_atfm_delay.csv.
+##- Usage: extract_airport_atfm_delay_data
+##- Extract Airport Arrival ATFM Delay data to csv file, 'airport_atfm_delay.csv'.
 ##-
 ##- Assumptions:
 ##-   DBUSR                   environment variable for the relevant schema username.
@@ -78,7 +78,7 @@ if (( $# != 0 )); then
 fi
 
 
-sql -S $DBUSR/$DBPWD@$DBNAME @csv_airport_atfm_delay_data.sql $OUTPUT_FILENAME
+sql -S $DBUSR/$DBPWD@$DBNAME @airport_atfm_delay_csv.sql $OUTPUT_FILENAME
 
 # remove blank lines in place
 sed -i -E 's/^ +//; s/ +$//; /^$/d' $OUTPUT_FILENAME

@@ -5,14 +5,14 @@ SET TRIMSPOOL ON;
 -- take name from argument 1
 spool '&1';
 
-WITH 
+WITH
 
-APT_ATFM_DLY as 
+APT_ATFM_DLY as
 (
 
-select 
-  flt_date 
-, airport_location_id as airport_code 
+select
+  flt_date
+, airport_location_id as airport_code
 , sum(NVL (tdm, 0)) as DLY_APT
 , sum(CASE WHEN reason ='A'THEN NVL (tdm, 0) END) DLY_APT_A
 , sum(CASE WHEN reason ='C'THEN NVL (tdm, 0)END) DLY_APT_C
@@ -31,39 +31,39 @@ select
 , sum(CASE WHEN reason ='W'THEN NVL (tdm, 0)END) DLY_APT_W
 , sum(CASE WHEN reason NOT IN ('A','C','D','E','G','I','M','N','O','P','R','S','T','V','W') THEN NVL (tdm, 0)END) DLY_APT_NA
   from PRU_REGULATION_DETAIL
-  where airport_role = 'A'  
+  where airport_role = 'A'
   AND flt_date >= '01 JAN 2014'
-  AND airport_location_id IN (SELECT apt_icao FROM PRUDEV.DSH_REL_AIRPORT_COUNTRY) 
+  AND airport_location_id IN (SELECT apt_icao FROM PRUDEV.DSH_REL_AIRPORT_COUNTRY)
   group by flt_date, airport_location_id
 
  ),
- 
-ARR_FLTS as  
+
+ARR_FLTS as
 (
-SELECT 
- p.flt_date   
-,p.ID 
-,u.code 
+SELECT
+ p.flt_date
+,p.ID
+,u.code
 ,R.PRU_APT_NAME as APT_NAME
 ,R.PRU_STATE_NAME as STATE_NAME
-,NVL (p.ttf_arr, 0) as ttf_arr 
-,NVL (p.ttf_dep, 0) as ttf_dep 
+,NVL (p.ttf_arr, 0) as ttf_arr
+,NVL (p.ttf_dep, 0) as ttf_dep
 
 FROM prudev.pru_fact_traffic_airspace p, pru_airport u, dsh_rel_airport_country r
-    WHERE p.ID = u.ID AND p.TYPE = 'AIRPORT' 
+    WHERE p.ID = u.ID AND p.TYPE = 'AIRPORT'
     AND p.flt_date >= '01 JAN 2014'
     AND R.APT_ICAO = U.CODE
     AND u.code IN (SELECT apt_icao FROM PRUDEV.DSH_REL_AIRPORT_COUNTRY)
     )
 
 select
-  to_char(t.flt_date,'YYYY') as YEAR 
-, EXTRACT (MONTH FROM t.flt_date) MONTH_NUM 
+  to_char(t.flt_date,'YYYY') as YEAR
+, EXTRACT (MONTH FROM t.flt_date) MONTH_NUM
 , to_char(t.flt_date,'MON') as MONTH_MON
 ,t.flt_date as FLT_DATE
 ,t.code as APT_ICAO
 ,APT_NAME
-,STATE_NAME  
+,STATE_NAME
 ,NVL (t.ttf_arr, 0) as FLT_ARR_1
 ,nvl(DLY_APT,0) as DLY_APT_1
 ,nvl(DLY_APT_A,0) as DLY_APT_ARR_A_1
@@ -83,7 +83,7 @@ select
 ,nvl(DLY_APT_W,0) as DLY_APT_ARR_W_1
 ,nvl(DLY_APT_NA,0) as DLY_APT_ARR_NA_1
 from ARR_FLTS t left join APT_ATFM_DLY d on (t.flt_date = d.flt_date and t.code = d.airport_code)
- where t.flt_date>='01-JAN-2014' and t.flt_date<'01-SEP-2015' 
+ where t.flt_date>='01-JAN-2014' and t.flt_date<'01-SEP-2015'
  order by 1,2,3,4,5;
 
 spool off;
