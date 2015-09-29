@@ -9,6 +9,11 @@ keywords: performance, air transport, flights, europe, cost efficiency
 <script type="text/javascript"> // load the visualisation API
 google.load('visualization', '1', { packages: ['corechart', 'controls'] });
 </script>
+
+{% javascript crt_saf_aso_YY %}
+{% javascript crt_saf_ri_YY %}
+{% javascript crt_saf_smi_YY %}
+{% javascript crt_saf_upa_YY %}
 {% javascript crt_flts_YY %}
 {% javascript crt_flts_MM %}
 {% javascript tbl_flts_YY %}
@@ -27,6 +32,22 @@ google.load('visualization', '1', { packages: ['corechart', 'controls'] });
 
 # Pan-European ANS performance
 This data is published by the Performance Review Unit (PRU). Every effort has been made to ensure that the information and analysis contained on this website are as accurate and complete as possible. Despite these precautions, should you find any errors or inconsistencies we would be grateful if you could please bring them to the Performance Review Unit’s attention.
+
+<h2 id="safety">Safety</h2>
+<div class="row">
+<div class="col-lg-6">
+**EUROCONTROL Area**
+<div id="crt_saf_smi_YY" style="width:400px; height:250px;"></div>
+<br>
+<div id="crt_saf_ri_YY" style="width:400px; height:250px;"></div>
+</div>
+<div class="col-lg-6 offset-10 text-justified">
+**EUROCONTROL Area**
+<div id="crt_saf_upa_YY" style="width:400px; height:250px;"></div>
+<br>
+<div id="crt_saf_aso_YY" style="width:400px; height:250px;"></div>
+</div>
+</div>
 
 <h2 id="traffic">Traffic</h2>
 <h3 id="ert_dly">Flights</h3>
