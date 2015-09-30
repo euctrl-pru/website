@@ -8,7 +8,7 @@
             dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1txmPuoLLfCuuQdWSQfBZmQWPEHD__MVu-Y5xsvWCO3Y/edit?usp=sharing&sheet=ERT_SU_YY&range=A1:D9&headers=1&hl=en_GB',
             options: {
                chartArea: { left: 50, top: 20, width: '70%', height: '65%' },
-               title: 'Avg. daily service units (yearly)',
+               title: 'Average Daily Service Units (yearly)',
                titleTextStyle: { color: 'grey', fontSize: 12 },
                legend: 'none',
                series: {
@@ -29,7 +29,7 @@
                },
                vAxes:{
                   0: {
-                     title:'Avg. daily service units',
+                     title:'Average Daily Service Units',
                      titleTextStyle : { color: 'grey', fontSize: 11 },
                      minValue: 20000,
                      viewWindow: { min: 20000 },
@@ -44,10 +44,13 @@
                },
                hAxis: {
                   title: 'Source: CRCO',
-                  titleTextStyle: { color: 'grey', fontSize: 10 }
+                  titleTextStyle: { color: 'grey', fontSize: 10 },
+                  slantedText: true,
+                  showTextEvery: 1,
+                  slantedTextAngle: 40
                }
             },
-            view: { columns: [0, 2, 3]}
+            view: { columns: [0, 2, 3] }
          }
       );
       crt_ertSU_YY.draw();

@@ -8,7 +8,7 @@
             dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1KgOIBF93axvXD6ENQYvEsWHqnA8eW_RvGV4EQlGava4/edit?usp=sharing&sheet=HFE_MM&range=A1:H25&tq=where%20A%3D1',
             options: {
                chartArea: { left: 50, top: 20, width: '55%', height: '60%' },
-                  title: 'Horiz. en-route flight eff. (monthly)',
+                  title: 'Horizontal En-route Flight Efficiency (monthly)',
                   titleTextStyle: { color: 'grey', fontSize: 11 },
                   legend: {
                      position: 'right',
@@ -45,7 +45,7 @@
                      }
                   },
                vAxis: {
-                  title: 'inefficiency (%)',
+                  title: 'Inefficiency (%)',
                   titleTextStyle: { color: 'grey', fontSize: 10 },
                   minValue: 0.0,
                   maxValue: 0.06,
