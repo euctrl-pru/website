@@ -1,0 +1,102 @@
+---
+layout: default
+title: Horizontal Flight Efficiency
+excerpt: Performance Review Unit interactive dashboard on European Air Transport - Arrival ATFCM Delay data.
+keywords: performance, air transport, flights, europe, cost efficiency
+---
+<script type="text/javascript">
+   $('select').select2();
+</script>
+
+<div class="container">
+   <div>
+      <h1>{{ page.title }}</h1>
+      <p>Select the filters that best suit your needs and then press the Download button to get the relevant CSV file.</p>
+   </div>
+
+   <section id="data-array" class="row">
+      <style type="text/css">
+       #loading {
+        text-align: center;
+        /*position: absolute;*/
+        /*padding-left: 100px;*/
+        /*padding-top: 10px;*/
+        height: 20px;
+        font-size: 30px;
+        font-style: italic;
+      }
+      </style>
+      <div class="row">
+         <div class="btn-toolbar" role="toolbar" aria-label="Example">
+            <div class="btn-group" role="group" aria-label="Example"><select id="hfe-year" class="form-control"></select></div>
+            <div class="btn-group" role="group" aria-label="Example"><select id="hfe-entity" class="form-control"></select></div>
+            <div class="btn-group" role="group" aria-label="Example"><select id="hfe-model" class="form-control"></select></div>
+            <div class="btn-group" role="group" aria-label="Example"><button id="hfe-download" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-save"></span> Download</button></div>
+            <div id='loading'>Loading...</div>
+         </div>
+      </div>
+      <div class="row col-xs-12 col-sm-12 col-lg-12 col-sm-12 col-md-12">
+         <div class="dc-data-count">
+            <span class="filter-count">
+         </div>
+      </div>
+      <style type="text/css">
+       .dc-data-count {
+          float: right;
+          margin-top: 15px;
+          margin-right: 15px;
+          margin-left: 25px;
+       }
+
+       .dc-data-count .filter-count, .total-count {
+          color: #3182bd;
+          font-weight: bold;
+       }
+
+       /* hide the sub-group summary*/
+       #hfe-data-table tr.dc-table-group {display: none;}
+       table, th, td {
+          border-bottom: 1px solid #CCCCCC; /* dim gray for reduced non-data ink */
+       }
+       th, td {
+          padding: 3px;
+       }
+       /*align right for numeric columns*/
+       td:nth-of-type(4),
+       td:nth-of-type(5),
+       td:nth-of-type(6),
+       td:nth-of-type(7),
+       td:nth-of-type(8),
+       td:nth-of-type(9),
+       td:nth-of-type(10),
+       td:nth-of-type(11) {
+          text-align: right;
+       }
+       #loading {
+        text-align: center;
+        position: absolute;
+        padding-left: 200px;
+        padding-top: 100px;
+        height: 20px;
+        font-size: 30px;
+      }
+      </style>
+      <div class="col-xs-12 col-sm-12 col-lg-12 col-sm-12 col-md-12 dc-data-table table table-hover">
+         <div id='hfe-data-table'></div>
+      </div>
+   </section>
+</div>
+
+<div class="row">
+   <div>
+      <div class="dc-data-count"></div>
+   </div>
+   <table class="table table-hover dc-data-table"></table>
+</div>
+
+<div class="clearfix"></div>
+
+
+{% javascript vendor/json2csv %}
+{% javascript vendor/FileSaver.min.js %}
+{% javascript horizontal_flight_efficiency_download %}
