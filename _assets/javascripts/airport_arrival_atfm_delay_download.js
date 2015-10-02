@@ -52,8 +52,8 @@
          arr.forEach(function(d, i) {
             d.YEAR = +d.YEAR;
             d.MONTH_NUM = +d.MONTH_NUM;
-            d.FLT_DATE = fullDateFormat.parse(d.FLT_DATE);
-            d.date = dateFormat.parse(d.MONTH_NUM + "-" + d.YEAR);
+            // d.FLT_DATE stays a string as read from file
+            d.date = fullDateFormat.parse(d.FLT_DATE);
             d.APT_NAME = d.APT_NAME ? d.APT_NAME.trim() : '';
             d.APT_NAME = d.APT_NAME.length ? d.APT_NAME : 'ZZZ';
             d.APT_ICAO = d.APT_ICAO ? d.APT_ICAO : 'ZZZZ';
@@ -180,12 +180,7 @@
                   return d.STATE_NAME;
                }
             },
-            {
-               label: 'FLT_DATE',
-               format: function (d) {
-                  return fullDateFormat(d.FLT_DATE);
-               }
-            },
+            "FLT_DATE",
             "APT_ICAO",
             "APT_NAME",
             "FLT_ARR_1",
@@ -208,7 +203,7 @@
             "DLY_APT_ARR_NA_1"
             ])
             .sortBy(function (d) {
-               return d.FLT_DATE;
+               return d.date;
             })
             .order(d3.ascending);
 

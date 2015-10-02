@@ -38,8 +38,8 @@
          hfe.forEach(function(d, i) {
             d.YEAR = +d.YEAR;
             d.MONTH_NUM = +d.MONTH_NUM;
-            d.ENTRY_DATE = fullDateFormat.parse(d.ENTRY_DATE);
-            d.date = dateFormat.parse(d.MONTH_NUM + "-" + d.YEAR);
+            // ENTRY_DATE stays like read, for CSV save not having to format it.
+            d.date = fullDateFormat.parse(d.ENTRY_DATE);
             d.ENTITY_NAME = d.ENTITY_NAME ? d.ENTITY_NAME.trim() : '';
             d.ENTITY_NAME = d.ENTITY_NAME.length ? d.ENTITY_NAME : 'ZZZ';
             d.ENTITY_TYPE = d.ENTITY_TYPE ? d.ENTITY_TYPE.trim() : '';
@@ -146,7 +146,7 @@
                {
                   label: 'Date',
                   format: function (d) {
-                     return fullDateFormat(d.ENTRY_DATE);
+                     return d.ENTRY_DATE;
                   }
                },
                {
@@ -163,7 +163,7 @@
                "T10_YYYY"
             ])
             .sortBy(function (d) {
-               return d.ENTRY_DATE;
+               return d.date;
             })
             .order(d3.ascending);
 
