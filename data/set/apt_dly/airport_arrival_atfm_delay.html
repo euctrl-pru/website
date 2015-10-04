@@ -15,25 +15,15 @@ keywords: performance, air transport, flights, europe, cost efficiency
    </div>
 
    <section id="data-array" class="row">
-      <style type="text/css">
-       #loading {
-        text-align: center;
-        /*position: absolute;*/
-        /*padding-left: 100px;*/
-        /*padding-top: 10px;*/
-        height: 20px;
-        font-size: 30px;
-        font-style: italic;
-      }
-      </style>
       <div class="row">
-         <div class="btn-toolbar" role="toolbar" aria-label="Example">
+        <div id="errorfield" style=""></div>
+        <div class="btn-toolbar" role="toolbar" aria-label="Example">
             <div class="btn-group" role="group" aria-label="Example"><select id="arr-year" class="form-control"></select></div>
             <div class="btn-group" role="group" aria-label="Example"><select id="arr-country" class="form-control"></select></div>
             <div class="btn-group" role="group" aria-label="Example"><select id="arr-apt" class="form-control"></select></div>
             <div class="btn-group" role="group" aria-label="Example"><button id="arr-download" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-save"></span> Download</button></div>
-            <div id='loading'>Loading...</div>
-         </div>
+        <div id='loading'>Loading...</div>
+      </div>
       </div>
       <div class="row col-xs-12 col-sm-12 col-lg-12 col-sm-12 col-md-12">
          <div class="dc-data-count">
@@ -84,14 +74,6 @@ keywords: performance, air transport, flights, europe, cost efficiency
        td:nth-of-type(23) {
           text-align: right;
        }
-       #loading {
-        text-align: center;
-        position: absolute;
-        padding-left: 200px;
-        padding-top: 100px;
-        height: 20px;
-        font-size: 30px;
-      }
       </style>
       <div class="col-xs-12 col-sm-12 col-lg-12 col-sm-12 col-md-12 dc-data-table table table-hover">
          <div id='arr-data-table'></div>
@@ -111,4 +93,5 @@ keywords: performance, air transport, flights, europe, cost efficiency
 
 {% javascript vendor/json2csv %}
 {% javascript vendor/FileSaver.min.js %}
+{% javascript filterBy %}
 {% javascript airport_arrival_atfm_delay_download %}
