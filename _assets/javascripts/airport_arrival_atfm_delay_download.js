@@ -1,11 +1,11 @@
 /*jslint browser: true */
-/*globals json2csv, d3, Blob, saveAs, queue, crossfilter, dc, buildFilter */
+/*globals json2csv, d3, Blob, saveAs, queue, crossfilter, dc, buildFilter, Spinner */
 (function () {
     "use strict";
     var dataFile    = 'apt_dly.json', // HACK: It's CSV, but GitHub Pages only gzip's JSON at the moment.)
-        // years, // the years in the dataset
-        loading = d3.select("#loading"),
-        errfield = d3.select("#errorfield");
+        errfield = d3.select("#errorfield"),
+        target = document.getElementById('arr-data-table'),
+        spinner = new Spinner().spin(target);
 
     // define what and how filtered data is to be saved
     function filteredCSV(data) {
@@ -107,7 +107,7 @@
         buildFilter("#arr-country", "All Countries", arrCountry, arrCountryGroup);
         buildFilter("#arr-apt", "All Airports", arrAirport, arrAirportGroup);
 
-        loading.classed("hidden", true);
+        spinner.stop();
         errfield.classed("hidden", true);
 
 
@@ -187,7 +187,7 @@
     function ready(error, data) {
         if (error) {
             errfield.text("Error:" + error);
-            loading.classed("hidden", true);
+            spinner.stop();
         } else {
             errfield.classed("hidden", true);
             buildTable(conditionData(data));
