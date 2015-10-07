@@ -58,7 +58,8 @@ This data is published by the Performance Review Unit (PRU). Every effort has be
 <div id="tbl_ertSU_YY"></div>
 </div>
 </div>
-
+<p>For further details and drill down analysis, please refer to the <a href="http://www.eurocontrol.int/ServiceUnits/Dashboard/">Service Unit Dashboard</a>.
+</p>
 
 <h2 id='capacity'>Capacity</h2>
 <h3 id="ert_dly">En-route ATFM delays</h3>
