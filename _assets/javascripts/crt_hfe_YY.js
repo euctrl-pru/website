@@ -6,11 +6,11 @@
          containerId: 'crt_hfe_YY',
          dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1KgOIBF93axvXD6ENQYvEsWHqnA8eW_RvGV4EQlGava4/edit?usp=sharing&sheet=HFE_YY&range=A1:C9',
             options: {
-               chartArea: { left: 50, top: 30, width: '55%', height: '60%' },
+               chartArea: { left: 50, top: 30, width: '70%', height: '60%' },
                title: 'Horizontal En-route Flight Efficiency (yearly)',
                titleTextStyle: { color: 'grey', fontSize: 11 },
                legend: {
-                  position: 'right',
+                  position: 'top',
                   textStyle: { color: 'grey', fontSize: 10 }
                },
                series: {
