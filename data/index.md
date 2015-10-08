@@ -7,34 +7,34 @@ keywords: performance, data, statistics, economics, air transport, flights, euro
 dates:
   ert_flt:
     beg: Jan 2014
-    end: Aug 2015
+    end: Sep 2015
   ert_dly:
     beg: Jan 2014
-    end: Aug 2015
+    end: Sep 2015
   hfe:
     beg: Jan 2014
-    end: Aug 2015
+    end: Sep 2015
   apt_flt:
     beg: Jan 2014
-    end: Aug 2015
+    end: Sep 2015
   apt_dly:
     beg: Jan 2014
-    end: Aug 2015
+    end: Sep 2015
   asma:
     beg: Jan 2014
-    end: Jul 2015
+    end: Aug 2015
   tx_out:
     beg: Jan 2014
-    end: Jul 2015
+    end: Aug 2015
   atc_pre:
     beg: Jan 2014
-    end: Jul 2015
+    end: Aug 2015
   slt_adh:
     beg: Jan 2014
-    end: Aug 2015
+    end: Sep 2015
   ace_opt:
     beg: Jan 2014
-    end: Aug 2015
+    end: Sep 2015
   cplx:
     beg:
     end:
@@ -52,16 +52,15 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 <div class="well">
 <h2><small>Copyright notice and Disclaimer</small></h2>
 
-<p>This data is published by the Performance Review Unit in the interest of the exchange of information.
-It may be copied in whole or in part providing that the copyright notice and disclaimer are included.
-The information may not be modified without prior written permission from the Performance Review Unit.
+<p><small><span style="text-aligh:left">&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}.</span></small></p>
 
-The data provided is used within the EU and Eurocontrol context.
+<p>This data is published by the the <small style="font-variant: small-caps;">EUROCONTROL</small> Performance Review Unit in the interest of the exchange of information.
+It may be copied in whole or in part providing that this copyright notice and disclaimer are included.
+The information may not be modified without prior written permission from the <small style="font-variant: small-caps;">EUROCONTROL</small> Performance Review Unit.
 
-The information does not necessarily reflect the official views or policy of EUROCONTROL,
+The information does not necessarily reflect the official views or policy of <small style="font-variant: small-caps;">EUROCONTROL</small>,
 which makes no warranty, either implied or express, for the information contained in this document,
-neither does it assume any legal liability or responsibility for the accuracy, completeness or usefulness
-of this information.</p>
+including its accuracy, completeness or usefulness.</p>
 
 <br>
 For feedback or questions please contact us at: [Performance Review Unit](mailto:{{ site.owner.email }}) ({{ site.owner.email }}).
@@ -97,11 +96,11 @@ width: 8em;
 
 ### En-route
 
-| Data description                                                                                                                          | Period                                                      | Excel                             | CSV  | Metadata                         |
-|-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|-----------------------------------|------|----------------------------------|
-| En-route IFR flights<br><small>Daily IFR traffic by entity</small>                                                                        | {{ page.dates.ert_flt.beg }} - {{ page.dates.ert_flt.end }} | [{{ page.dwnld_i }}][ERT-FLTxlsx] |      | [{{ page.info_i }}][ERT-FLTmeta] |
-| En-route ATFM delays<br><small>Daily IFR traffic and en-route ATFM delay by entity and delay cause</small>                                | {{ page.dates.ert_dly.beg }} - {{ page.dates.ert_dly.end }} | [{{ page.dwnld_i }}][ERT-DLYxlsx] |      | [{{ page.info_i }}][ERT-DLYmeta] |
-| Horizontal en-route flight efficiency<br><small>Daily en-route flight efficiency data by entity (actual trajectory & flight plan)</small> | {{ page.dates.hfe.beg }} - {{ page.dates.hfe.end }}         | [{{ page.dwnld_i }}][HFExlsx]     |      | [{{ page.info_i }}][HFEmeta]     |
+| Data description                                                                                                                          | Period                                                      | Excel                             | CSV                                           | Metadata                         |
+|-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|-----------------------------------|-----------------------------------------------|----------------------------------|
+| En-route IFR flights<br><small>Daily IFR traffic by entity</small>                                                                        | {{ page.dates.ert_flt.beg }} - {{ page.dates.ert_flt.end }} | [{{ page.dwnld_i }}][ERT-FLTxlsx] |                                               | [{{ page.info_i }}][ERT-FLTmeta] |
+| En-route ATFM delays<br><small>Daily IFR traffic and en-route ATFM delay by entity and delay cause</small>                                | {{ page.dates.ert_dly.beg }} - {{ page.dates.ert_dly.end }} | [{{ page.dwnld_i }}][ERT-DLYxlsx] |                                               | [{{ page.info_i }}][ERT-DLYmeta] |
+| Horizontal en-route flight efficiency<br><small>Daily en-route flight efficiency data by entity (actual trajectory & flight plan)</small> | {{ page.dates.hfe.beg }} - {{ page.dates.hfe.end }}         | [{{ page.dwnld_i }}][HFExlsx]     | [{{ page.fltr_i }} {{ page.ndwk_i }}][HFEcsv] | [{{ page.info_i }}][HFEmeta]     |
 
 
 [ERT-FLTxlsx]: <{{site.url}}/data/set/ert_flt/En-Route_Traffic.xlsm> "ERT-FLT (Excel)"
@@ -113,7 +112,7 @@ width: 8em;
 [ERT-DLYmeta]: <{{site.url}}/references/dataset/En-Route_ATFM_Delay.html> "ERT-DLY (Meta)"
 
 [HFExlsx]: <{{site.url}}/data/set/hfe/Horizontal_Flight_Efficiency.xlsm> "HFE (Excel)"
-[HFEcsv]: <{{site.url}}/404.html> "HFE (CSV)"
+[HFEcsv]: <{{site.url}}/data/set/hfe/horizontal_flight_efficiency.html> "HFE (CSV)"
 [HFEmeta]: <{{site.url}}/references/dataset/Horizontal_Flight_Efficiency.html> "HFE (Meta)"
 
 
@@ -134,7 +133,7 @@ width: 8em;
 [APT-FLTmeta]: <{{site.url}}/references/dataset/Airport_Traffic.html>  "APT-FLT (Meta)"
 
 [APT-DLYxlsx]: <{{site.url}}/data/set/apt_dly/Airport_Arrival_ATFM_Delay.xlsm> "APT-DLY (Excel)"
-[APT-DLYcsv]: <set/apt_dly/airport_arrival_atfm_delay.html> "APT-DLY (CSV)"
+[APT-DLYcsv]: <{{site.url}}/data/set/apt_dly/airport_arrival_atfm_delay.html> "APT-DLY (CSV)"
 [APT-DLYmeta]: <{{site.url}}/references/dataset/Airport_Arrival_ATFM_Delay.html> "APT-DLY (Meta)"
 
 [ASMAxlsx]: <{{site.url}}/data/set/asma/ASMA_Additional_Time.xlsm> "ASMA (Excel)"

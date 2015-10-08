@@ -44,46 +44,46 @@ The FAB level information is based on an aggregation of ANSPs (ENTITY_TYPE = FAB
 | SW FAB           | [NAV Portugal (Continental)][porto], [ENAIRE][enaire]                                                                                                       |
 | UK-Ireland FAB   | [IAA][iaa], [NATS (Continental)][nats]                                                                                                                      |
 
-[oronav]: </metadata/ANSP/Oro_Navigacija.html> "Oro Navigacija"
-[pansa]: </metadata/ANSP/PANSA.html> "PANSA"
+[oronav]: </references/ANSP/Oro_Navigacija.html> "Oro Navigacija"
+[pansa]: </references/ANSP/PANSA.html> "PANSA"
 
-[cyprus]: </metadata/ANSP/DCAC_Cyprus.html> "DCAC Cyprus"
-[hcaa]: </metadata/ANSP/HCAA.html> "HCAA"
-[enav]: </metadata/ANSP/ENAV.html> "ENAV"
-[mats]: </metadata/ANSP/MATS.html> "MATS"
+[cyprus]: </references/ANSP/DCAC_Cyprus.html> "DCAC Cyprus"
+[hcaa]: </references/ANSP/HCAA.html> "HCAA"
+[enav]: </references/ANSP/ENAV.html> "ENAV"
+[mats]: </references/ANSP/MATS.html> "MATS"
 
-[bulatsa]: </metadata/ANSP/BULATSA.html> "BULATSA"
-[romatsa]: </metadata/ANSP/ROMATSA.html> "ROMATSA"
+[bulatsa]: </references/ANSP/BULATSA.html> "BULATSA"
+[romatsa]: </references/ANSP/ROMATSA.html> "ROMATSA"
 
-[naviair]: </metadata/ANSP/NAVIAIR.html> "NAVIAIR"
-[lfv]: </metadata/ANSP/LFV.html> "LFV"
+[naviair]: </references/ANSP/NAVIAIR.html> "NAVIAIR"
+[lfv]: </references/ANSP/LFV.html> "LFV"
 
-[belgoc]: </metadata/ANSP/Belgocontrol.html> "Belgocontrol"
-[dsna]: </metadata/ANSP/DSNA.html> "DSNA"
-[dfs]: </metadata/ANSP/DFS.html> "DFS"
-[lux]: </metadata/ANSP/ANA_LUX.html> "ANA LUX"
-[lvnl]: </metadata/ANSP/LVNL.html> "LVNL"
-[sky]: </metadata/ANSP/Skyguide.html> "Skyguide"
-[muac]: </metadata/ANSP/MUAC.html> "MUAC"
+[belgoc]: </references/ANSP/Belgocontrol.html> "Belgocontrol"
+[dsna]: </references/ANSP/DSNA.html> "DSNA"
+[dfs]: </references/ANSP/DFS.html> "DFS"
+[lux]: </references/ANSP/ANA_LUX.html> "ANA LUX"
+[lvnl]: </references/ANSP/LVNL.html> "LVNL"
+[sky]: </references/ANSP/Skyguide.html> "Skyguide"
+[muac]: </references/ANSP/MUAC.html> "MUAC"
 
-[austro]: </metadata/ANSP/Austro_Control.html> "Austro Control"
-[bhansa]: </metadata/ANSP/BHANSA.html> "BHANSA"
-[croatia]: </metadata/ANSP/Croatia_Control.html> "Croatia Control"
-[anscr]: </metadata/ANSP/ANS_CR.html> "ANS CR"
-[hunga]: </metadata/ANSP/HungaroControl.html> "HungaroControl (EC)"
-[lps]: </metadata/ANSP/LPS.html> "LPS"
-[slov]: </metadata/ANSP/Slovenia_Control.html> "Slovenia Control"
+[austro]: </references/ANSP/Austro_Control.html> "Austro Control"
+[bhansa]: </references/ANSP/BHANSA.html> "BHANSA"
+[croatia]: </references/ANSP/Croatia_Control.html> "Croatia Control"
+[anscr]: </references/ANSP/ANS_CR.html> "ANS CR"
+[hunga]: </references/ANSP/HungaroControl.html> "HungaroControl (EC)"
+[lps]: </references/ANSP/LPS.html> "LPS"
+[slov]: </references/ANSP/Slovenia_Control.html> "Slovenia Control"
 
-[eans]: </metadata/ANSP/EANS.html> "EANS"
-[fin]: </metadata/ANSP/Finavia.html> "Finavia"
-[lgs]: </metadata/ANSP/LGS.html> "LGS"
-[avinor]: </metadata/ANSP/Avinor.html> "Avinor"
+[eans]: </references/ANSP/EANS.html> "EANS"
+[fin]: </references/ANSP/Finavia.html> "Finavia"
+[lgs]: </references/ANSP/LGS.html> "LGS"
+[avinor]: </references/ANSP/Avinor.html> "Avinor"
 
-[porto]: </metadata/ANSP/NAV_Portugal.html> "NAV Portugal (Continental)"
-[enaire]: </metadata/ANSP/ENAIRE.html> "ENAIRE"
+[porto]: </references/ANSP/NAV_Portugal.html> "NAV Portugal (Continental)"
+[enaire]: </references/ANSP/ENAIRE.html> "ENAIRE"
 
-[iaa]: </metadata/ANSP/IAA.html> "IAA"
-[nats]: </metadata/ANSP/NATS.html> "NATS (Continental)"
+[iaa]: </references/ANSP/IAA.html> "IAA"
+[nats]: </references/ANSP/NATS.html> "NATS (Continental)"
 
 
 ## Column naming and types
