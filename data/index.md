@@ -52,17 +52,19 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 <div class="well">
 <h2><small>Copyright notice and Disclaimer</small></h2>
 
-<p><small><span style="text-aligh:left">&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}.</span></small></p>
+<small><span style="text-aligh:left">&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}.</span></small>
 
-<p>This data is published by the the <small style="font-variant: small-caps;">EUROCONTROL</small> Performance Review Unit in the interest of the exchange of information.
+This data is published by the the <small style="font-variant: small-caps;">EUROCONTROL</small> Performance Review Unit
+in the interest of the exchange of information.
 It may be copied in whole or in part providing that this copyright notice and disclaimer are included.
-The information may not be modified without prior written permission from the <small style="font-variant: small-caps;">EUROCONTROL</small> Performance Review Unit.
+The information may not be modified without prior written permission from the
+<small style="font-variant: small-caps;">EUROCONTROL</small> Performance Review Unit.
 
-The information does not necessarily reflect the official views or policy of <small style="font-variant: small-caps;">EUROCONTROL</small>,
+The information does not necessarily reflect the official views or policy of
+<small style="font-variant: small-caps;">EUROCONTROL</small>,
 which makes no warranty, either implied or express, for the information contained in this document,
-including its accuracy, completeness or usefulness.</p>
+including its accuracy, completeness or usefulness.
 
-<br>
 For feedback or questions please contact us at: [Performance Review Unit](mailto:{{ site.owner.email }}) ({{ site.owner.email }}).
 
 <div class="container text-center">
