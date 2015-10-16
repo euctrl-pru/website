@@ -68,7 +68,7 @@ including its accuracy, completeness or usefulness.
 For feedback or questions please contact us at: [Performance Review Unit](mailto:{{ site.owner.email }}) ({{ site.owner.email }}).
 
 <div class="container text-center">
-<a href="mailto:pru@eurocontrol.int?subject=Subscribe: PRU information point&amp;body=Please%20add%20me%20to%20the%20mailing%20list%20to%20get%20informed%20about%20information%20updates." class="btn btn-primary btn-sm">Subscribe to get informed about updates <i class="fa fa-envelope"></i></a>
+{% include _subscriber-button.html %}
 </div>
 
 </div>
