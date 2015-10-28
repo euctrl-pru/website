@@ -21,6 +21,6 @@
     "build": "jekyll build",
     "build:dev": "bundle exec jekyll build --config _config.yml,_config_dev.yml --draft",
     "serve:dev": "bundle exec jekyll serve --config _config.yml,_config_dev.yml --draft",
-    "publish": "site-deploy"
+    "ship": "site-deploy"
   }
 }

@@ -5,3 +5,4 @@ tmp
 .jekyll-assets-cache/
 .jekyll-metadata
 Gemfile.lock
+_site
