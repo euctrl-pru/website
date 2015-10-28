@@ -4,15 +4,15 @@
   "description": "The PRU website build process with npm",
   "private": true,
   "devDependencies": {
+    "date-time": "^1.0.0",
     "jslint": "latest",
     "shelljs": "latest",
-    "yargs": "latest",
-    "date-time": "^1.0.0"
+    "yargs": "^3.29.0"
   },
   "bin": {
-    "site-commit": "_bin/github-pages-commit.js",
-    "site-push":   "_bin/github-pages-push.js",
-    "site-deploy": "_bin/github-pages-deploy.js"
+    "site-commit": "_bin/ghp-commit",
+    "site-push": "_bin/ghp-push",
+    "site-deploy": "_bin/ghp-deploy"
   },
   "//": "see also http://blog.npmjs.org/post/118810260230/building-a-simple-command-line-tool-with-npm",
   "scripts": {

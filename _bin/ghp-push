@@ -1,0 +1,68 @@
+#! /usr/bin/env node
+
+/*jslint node: true */
+/*globals */
+
+var shell = require('shelljs'),
+    path = require('path'),
+    argv = require('yargs'),
+    dateTime = require('date-time'),
+    silentState,
+    BASENAME,
+    pages,
+    VERBOSE_LEVEL,
+    COMMAND;
+
+
+silentState = shell.config.silent; // save old silent state
+shell.config.silent = true;
+
+BASENAME = __filename.split(path.sep).pop();
+pages = path.join('..', 'euctrl-pru.github.io');
+
+function WARN() { VERBOSE_LEVEL >= 0 && console.log.apply(console, arguments); }
+function INFO() { VERBOSE_LEVEL >= 1 && console.log.apply(console, arguments); }
+function DEBUG() { VERBOSE_LEVEL >= 2 && console.log.apply(console, arguments); }
+
+WARN("Showing only important stuff");
+INFO("Showing semi-important stuff too");
+DEBUG("Extra chatty mode");
+
+argv = argv
+    .option('p', {
+        alias: 'pages-dir',
+        demand: false,
+        default: pages,
+        describe: 'generated website (repository) directory',
+        type: 'string'
+    })
+    .help('h')
+    .alias('h', 'help')
+    .version("0.1.0")
+    .alias('V', 'version')
+    .example(BASENAME + ' -p ../cucu', 'push to origin master the committed changes in repo at ../cucu')
+    .usage('Usage: ' + BASENAME + ' [options]\n\npush repository commited content to "origin master"')
+    .epilog('author: Enrico Spinielli. Copyright Eurocontrol/PRU 2015')
+    .count('verbose')
+    .alias('v', 'verbose')
+    .describe('v', 'verbosity levels, "v" (INFO), "vv" (DEBUG)')
+    .wrap(null)
+    .argv;
+
+VERBOSE_LEVEL = argv.verbose;
+
+DEBUG(argv);
+
+INFO('Current working directory: ' + process.cwd());
+
+shell.pushd(argv.p);
+INFO('Moved to directory (from -p option): ' + process.cwd());
+
+COMMAND = 'git push origin master';
+DEBUG('Command to be executed: ->' + COMMAND + '<-');
+shell.exec(COMMAND);
+
+shell.popd();
+INFO('Current working directory: ' + process.cwd());
+
+shell.config.silent = silentState; // restore old silent state
