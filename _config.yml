@@ -8,6 +8,10 @@ dev: false
 media: media
 category-list: [meta-definition] # 'meta-definition' is used for auto index metadata defs
 
+collections:
+  studies:
+    output: true
+
 # Owner / Author information
 owner:
   name: European Organisation for the Safety of Air Navigation (EUROCONTROL)
