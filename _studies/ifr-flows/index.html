@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Flights flows to/from Europe"
+title:  "Flights flows in/out of Europe"
 date:   2015-11-11T11:11:11
 tags: flows, ifr, flights, europe, eurocontrol
 excerpt: "IFR Movements flows from and to Europe (Eurocontrol member States plus Kosovo) 2007-2014"
@@ -17,7 +17,7 @@ excerpt: "IFR Movements flows from and to Europe (Eurocontrol member States plus
   <div id=dia-container class="container">
 
   	<header role="banner">
-  		<h1>The flows of Flights in/out of Europe</h1>
+  		<h1>{{ page.title }}</h1>
       <div class="lead-in">
         Explore IFR flights flows between <a href="http://www.eurocontrol.int/about/member-states">Eurocontrol Member States</a> and other regions/countries for the period 2007 - 2014.<br>Click on a region to discover flows country-by-country. Hover on a region, country or flow in order to get the number of movements.
       </div>
@@ -51,7 +51,8 @@ excerpt: "IFR Movements flows from and to Europe (Eurocontrol member States plus
               <br>
               Finally, in order to clean the visualization and reduce the number of very small flows we have decided to show only the countries with more than 5 flights/day flows.
             </p>
-            <p>Note that this</p>
+            <p>Note that in/out flows are not typically balanced. This is partially due to the filtering we performed,
+            the sampling temporal window used (1 calendar year) ...</p>
             <p>
               The grouping into regions is arbitrary. We have kept all Eurocontrol member States under the same group irrespective of their accession date.<br>
               The other regions are defined as follows:
