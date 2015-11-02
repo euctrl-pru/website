@@ -10,9 +10,9 @@ layout: default
 {% assign alphabeth = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z" | split: ' ' %}
 {% assign sectionletter = "" %}
 {% assign currentletter = "" %}
-{% assign isfirst = false %}
+{% assign isfirst = true %}
 
-  <h2>Index of ANSPs</h2>
+  <h2>Index of Definitions</h2>
   <div class="container">
     <div class="row">
 
@@ -32,26 +32,32 @@ layout: default
     </div>
   </div>
 
+{% assign pp = (site.pages | sort: 'title_lowercase' ) %}
+{% for item in alphabeth %}
+    {% assign isfirst = true %}
+  {% for pag in pp %}
+    {% if pag.resource == true and pag.entity == 'ansp' %}
+      {% assign pag_letter = (pag.title | split: '' | first | upcase ) %}
+      {% if pag_letter == item %}
+        {% if isfirst %}
+          <h3 id="{{ item }}-section">{{ item }}</h3>
+            <div class="container">
+            <div class="row">
+            <div>
+            <a href="{{ pag.url }}">{{ pag.title }}</a>
+          {% assign isfirst = false %}
+        {% else %}
+          , <a href="{{ pag.url }}">{{ pag.title }}</a>
+        {% endif %} <!-- isfirst -->
+      {% else %}
+      {% endif %} <!-- letter -->
+    {% endif%} <!-- resource and definition -->
+  {% endfor %}  <!-- pag -->
+  {% if isfirst %}
+  {% else %}
+    </div>
+    </div>
+    </div>
+  {% endif %}
+{% endfor %}  <!-- alphabeth -->
 
-{% for pag in site.pages | sort: 'title_lowercase' %}
-  {% if pag.resource == true and pag.entity == 'ansp' %}
-    {% assign currentletter = (pag.title | split: '' | first ) %}
-    {% if currentletter == sectionletter %}
-      {% if isfirst %}
-      {% else %}
-        , 
-      {% endif %} <!-- isfirst -->
-      <a href="{{ pag.url }}">{{ pag.title }}</a>
-    {% else %}
-      {% if sectionletter == "" %}
-      {% else %}
-        </div></div>
-      {% endif %} <!-- sectionletter -->
-      {% assign sectionletter = currentletter %}
-      <h3 id="{{ currentletter }}-section">{{ currentletter }}</h3>
-        <div class="container">
-        <div class="row">
-        <a href="{{ pag.url }}">{{ pag.title }}</a>
-    {% endif%} <!-- currentletter -->
-  {% endif %}   <!-- resource-p -->
-{% endfor %}  <!-- page -->

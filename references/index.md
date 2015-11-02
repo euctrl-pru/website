@@ -10,7 +10,7 @@ keywords: metadata, performance, data, statistics, economics, air transport, fli
 <span class="glyphicon glyphicon-exclamation-sign"></span> = under construction.
 
 * Definitions:
-	* [Index of Definitions](index_of_definitions.html)
+	* [Index of Definitions](definition/)
 * Datasets:
 	- ACE operational data <span class="glyphicon glyphicon-exclamation-sign"></span>
 	- [Airport arrival ATFM delay](dataset/Airport_Arrival_ATFM_Delay.html)
