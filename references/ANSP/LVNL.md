@@ -2,7 +2,7 @@
 layout: default
 title: LVNL
 resource: true
-categories: [ansp-definition]
+entity: ansp
 excerpt: Performance Review Unit MetaData Definitions.
 keywords: metadata, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
 ---

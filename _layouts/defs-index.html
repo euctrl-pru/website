@@ -4,13 +4,13 @@ layout: default
 <style type="text/css">
  span.go-to-top {
   font-size: x-small;
- } 
+ }
 </style>
 
 {% assign alphabeth = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z" | split: ' ' %}
 {% assign sectionletter = "" %}
 {% assign currentletter = "" %}
-{% assign isfirst = false %}
+{% assign isfirst = true %}
 
   <h2>Index of Definitions</h2>
   <div class="container">
@@ -29,37 +29,35 @@ layout: default
           {% endif %}
         {% endfor %}  <!-- alphabeth -->
       </div>
-    </div>  
+    </div>
   </div>
 
-
-{% for pag in site.pages | sort: 'title' %}
-  {% if pag.resource == true %}
-    {% for pc in pag.categories %}
-      {% if pc == 'meta-definition' %}
-        {% assign currentletter = (pag.title | split: '' | first ) %}
-        {% if currentletter == sectionletter %}
-          {% if isfirst %}
-          {% else %}
-            , 
-          {% endif %} <!-- isfirst -->
-          <a href="{{ pag.url }}">{{ pag.title }}</a>
-        {% else %}
-          {% if sectionletter == "" %}
-          {% else %}
-            </div></div>
-          {% endif %} <!-- sectionletter -->
-          {% assign sectionletter = currentletter %}
-          <h3 id="{{ currentletter }}-section">{{ currentletter }}</h3>
+{% assign pp = (site.pages | sort: 'title_lowercase' ) %}
+{% for item in alphabeth %}
+    {% assign isfirst = true %}
+  {% for pag in pp %}
+    {% if pag.resource == true and pag.entity == 'definition' %}
+      {% assign pag_letter = (pag.title | split: '' | first | upcase ) %}
+      {% if pag_letter == item %}
+        {% if isfirst %}
+          <h3 id="{{ item }}-section">{{ item }}</h3>
             <div class="container">
             <div class="row">
+            <div>
             <a href="{{ pag.url }}">{{ pag.title }}</a>
-        {% endif%} <!-- currentletter -->
-      {% endif %}   <!-- cat-match-p -->
-    {% endfor %}  <!-- page-category -->
-  {% endif %}   <!-- resource-p -->
-{% endfor %}  <!-- page -->
-
-
-
+          {% assign isfirst = false %}
+        {% else %}
+          , <a href="{{ pag.url }}">{{ pag.title }}</a>
+        {% endif %} <!-- isfirst -->
+      {% else %}
+      {% endif %} <!-- letter -->
+    {% endif%} <!-- resource and definition -->
+  {% endfor %}  <!-- pag -->
+  {% if isfirst %}
+  {% else %}
+    </div>
+    </div>
+    </div>
+  {% endif %}
+{% endfor %}  <!-- alphabeth -->
 

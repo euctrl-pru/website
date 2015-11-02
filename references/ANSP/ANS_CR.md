@@ -1,8 +1,9 @@
 ---
 layout: default
-title: ANS CR
+title: "ANS CR"
+title_lowercase: "ans cr"
 resource: true
-categories: [ansp-definition]
+entity: ansp
 excerpt: Performance Review Unit MetaData Definitions.
 keywords: metadata, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
 ---

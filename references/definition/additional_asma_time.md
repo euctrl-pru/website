@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Additional ASMA Time
+title: "Additional ASMA Time"
 resource: true
-categories: [meta-definition]
+entity: definition
 excerpt: Performance Review Unit MetaData Definitions.
 keywords: metadata, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
 ---
