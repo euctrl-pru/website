@@ -113,10 +113,21 @@ hr {
   margin: 15px auto;
   text-align: center;
   position: absolute;
-  top: 5px;
+  top: 3px;
   left: 0;
   right: 0;
 }
+
+#play-buttons {
+  margin: 15px auto;
+  text-align: center;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+}
+
+
 main {
   position: relative;
 }
@@ -326,7 +337,7 @@ a.button:hover {
 .help {
   position: fixed;
   top: 125px;
-  right: 0;
+  right: 0px;
   width: 30px;
   overflow-x: hidden;
   padding: 15px 0;
@@ -338,7 +349,7 @@ a.button:hover {
   left: 0;
   top: 0;
   bottom: 0;
-  background-image: url("../images/helptab.png");
+  background-image: url(<%= asset_path "helptab.png" %>);
   background-position: center left;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -364,7 +375,7 @@ a.button:hover {
   margin: 0 0 5px 0;
   font-size: 15px;
   font-weight: bold;
-  background-image: url("../images/i.png");
+  background-image: url(<%= asset_path "i.png" %>);
   background-repeat: no-repeat;
   background-position: left top;
   text-indent: 40px;

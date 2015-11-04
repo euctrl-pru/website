@@ -32,6 +32,10 @@ excerpt: "IFR Movements flows from and to Europe (Eurocontrol member States plus
   		<main role="main">
         <nav role=navigation>
           <div id="timeline"></div>
+          <div id="play-buttons">
+            <span><i class="fa fa-play fa-2x"></i></span> &nbsp; &nbsp;
+            <span><i class="fa fa-stop fa-2x"></i></span>
+          </div>
         </nav>
         <div id="diagram"></div>
   		</main>
@@ -239,6 +243,42 @@ excerpt: "IFR Movements flows from and to Europe (Eurocontrol member States plus
           now: now,
           element: '#timeline',
           incr: 1
+        });
+
+        var radios = d3.selectAll("#timeline form .year input"),
+        len = radios[0].length,
+        current = len - 1,
+        actions = [],
+        playInterval;
+
+
+        radios.each(function (d, i) {
+          actions[i] = {"button": this, "action": d3.select(this).on("click"), "d": d, "i": i};
+        })
+
+
+        console.log(JSON.stringify(actions));
+
+        var play = d3.select(".fa-play");
+        play.on("click", function () {
+          // change look
+          play.style("opacity", 0.4);
+          stop.style("opacity", 1.0);
+
+          // iterate thru all radio buttons and simulate a click event
+          playInterval = setInterval(function () {
+            actions[current].action.apply(actions[current].button, [actions[current].d, actions[current].i]);
+            current = (current + 1) % len;
+          }, 1500);
+        });
+
+
+        var stop = d3.select(".fa-stop")
+          .style("opacity", 0.4);
+        stop.on("click", function () {
+          stop.style("opacity", 0.4);
+          play.style("opacity", 1.0);
+          clearInterval(playInterval);
         });
 
         chart.draw(now);
