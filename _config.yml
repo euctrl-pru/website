@@ -6,7 +6,7 @@ url: "https://euctrl-pru.github.io" # the base hostname & protocol for your site
 canonical: https://euctrl-pru.github.io
 dev: false
 media: media
-category-list: [meta-definition] # 'meta-definition' is used for auto index metadata defs
+# category-list: [meta-definition] # 'meta-definition' is used for auto index metadata defs
 
 collections:
   studies:
