@@ -3,6 +3,6 @@
 		<span style="text-aligh:left">&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}.</span> &nbsp; &mdash; &nbsp;
 		<span style="text-aligh:right">Subscribe via
 		<!-- text encoded (in _subscriber-href-encoded.txt) to avoid spammer robots via http://clickable-email.ezkode.com/ -->
-		<a href="{% include _subscriber-href-encoded.txt %}">email <i class="fa fa-envelope"></i></a></span>
+		<a href="{% include _subscriber-href-encoded.txt %}">email <i class="fa fa-envelope"></i></a> or <a href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">RSS <i class="fa fa-rss"></i></a></span>
 	</small>
 </p>
