@@ -222,9 +222,11 @@ excerpt: "IFR Movements flows from and to Europe (Eurocontrol member States plus
         var now = 2014;
         var chart = Globalmigration.chart(data, {
           element: '#diagram',
+          width: 800,
+          height: 800,
           now: now,
           animationDuration: 500,
-          margin: 125,
+          margin: 100,
           arcPadding: 0.04,
           layout: {
             alpha: -85, // start angle for first region, zero is up North
