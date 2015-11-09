@@ -89,7 +89,7 @@ excerpt: "IFR Movements flows from and to Europe (Eurocontrol member States plus
             <p>Bear with us: we are working on cleaning the data, refining our choices for the visualization and publishing a paper with our findings.<br>
               Here is a list of things we want to tackle:
               color palette for colorblind readers (<a href="https://en.wikipedia.org/wiki/Color_blindness#Frequency_of_red-green_color_blindness_in_males_of_various_populations">5-10% of males for many populations</a> for red-green);
-              similar colors for countries in the same region (thanks to Dr Sander for the suggestion); year to year animation;
+              similar colors for countries in the same region (thanks to Dr Sander for the suggestion);
               intra-European flows.
             </p>
             <p class="note">We would really appreciate any feedbacks and/or comments to improve or appreciate ;-) our work.</p>
@@ -223,7 +223,7 @@ excerpt: "IFR Movements flows from and to Europe (Eurocontrol member States plus
         var chart = Globalmigration.chart(data, {
           element: '#diagram',
           width: 800,
-          height: 800,
+          height: 850,
           now: now,
           animationDuration: 500,
           margin: 100,
@@ -283,6 +283,7 @@ excerpt: "IFR Movements flows from and to Europe (Eurocontrol member States plus
           playInterval = setInterval(function () {
             current = (current + 1) % len;
             actions[current].action.apply(actions[current].button, [actions[current].d, actions[current].i]);
+            // TODO: revive tooltip? How?!!!
           }, 1500); // 1.5 seconds
         });
 
