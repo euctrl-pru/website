@@ -3,6 +3,7 @@ cat <<EOF
 layout: page
 title: Referenced material and Sources
 permalink: /references/
+link-citations: true
 nocite: |
   $(cat references.bib |  grep -e '^@\(.*\),$' | sed -e 's/^@.*{/@/' -e 's/,$//'| sort | tr '\n' ','|sed -e 's/,$//')
 ---

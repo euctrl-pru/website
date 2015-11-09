@@ -50,7 +50,6 @@ pandoc:
   impose: false
   output: tmp
   flags: '--smart --mathjax
-          --csl=_styles/chicago-author-date.csl
           --bibliography=references.bib
           -f markdown+fenced_code_attributes+citations+strikeout'
   site_flags: '--toc'
