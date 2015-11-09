@@ -1,6 +1,6 @@
 {
   "name": "pru-website-build",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "The PRU website build process with npm",
   "private": true,
   "devDependencies": {
@@ -16,12 +16,13 @@
   },
   "//": "see also http://blog.npmjs.org/post/118810260230/building-a-simple-command-line-tool-with-npm",
   "scripts": {
-    "start": "npm run serve:dev",
+    "start": "npm run -s serve:dev",
     "style": "jscs _assets/javascripts/**[^min].js",
     "lint": "jshint _assets/javascripts/**/**[^min].js",
-    "build": "jekyll build",
+    "build:pub": "bundle exec jekyll build",
     "build:dev": "bundle exec jekyll build --config _config.yml,_config_dev.yml --draft",
     "serve:dev": "bundle exec jekyll serve --config _config.yml,_config_dev.yml --draft",
+    "build": "npm run -s lint && npm run -s build:dev",
     "ship": "site-deploy"
   }
 }
