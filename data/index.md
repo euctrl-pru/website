@@ -7,37 +7,37 @@ keywords: performance, data, statistics, economics, air transport, flights, euro
 dates:
   ert_flt:
     beg: Jan 2014
-    end: Sep 2015
+    end: Oct 2015
   ert_dly:
     beg: Jan 2014
-    end: Sep 2015
+    end: Oct 2015
   hfe:
     beg: Jan 2014
-    end: Sep 2015
+    end: Oct 2015
   apt_flt:
     beg: Jan 2014
-    end: Sep 2015
+    end: Oct 2015
   apt_dly:
     beg: Jan 2014
-    end: Sep 2015
+    end: Oct 2015
   asma:
     beg: Jan 2014
-    end: Aug 2015
+    end: Sep 2015
   tx_out:
     beg: Jan 2014
-    end: Aug 2015
+    end: Sep 2015
   atc_pre:
     beg: Jan 2014
-    end: Aug 2015
+    end: Sep 2015
   slt_adh:
     beg: Jan 2014
-    end: Sep 2015
+    end: Oct 2015
   ace_opt:
     beg: Jan 2014
-    end: Sep 2015
+    end: Oct 2015
   cplx:
-    beg:
-    end:
+    beg: Jan 2014
+    end: Oct 2015
 dwnld_i: <i class="fa pru fa-download"></i>
 info_i: <i class="fa pru fa-info-circle"></i>
 ndwk_i: <i class="fa pru fa-flask"></i>
@@ -168,7 +168,7 @@ width: 8em;
 |--------------------------------------------------------------|-------------------------------------------------------|--------------------------------|-----|-------------------------------|
 | Complexity<br><small>Complexity by ANSP and ATC unit</small> | {{ page.dates.cplx.beg }} - {{ page.dates.cplx.end }} | {{ page.attn_i }}              |     | [{{ page.info_i }}][CPLXmeta] |
 
-[CPLXxlsx]: <{{site.url}}/404.html> "CPLX (Excel)"
+[CPLXxlsx]: <{{site.url}}/data/set/clpx/Traffic_Complexity_Scores.xlsm> "CPLX (Excel)"
 [CPLXcsv]: <{{site.url}}/404.html> "CPLX (CSV)"
 [CPLXmeta]: <{{site.url}}/references/dataset/Traffic_Complexity_Score.html> "CPLX (Meta)"
 
