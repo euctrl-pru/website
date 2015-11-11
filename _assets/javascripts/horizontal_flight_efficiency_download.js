@@ -18,6 +18,7 @@
             "ENTITY_TYPE",
             "TYPE_MODEL",
             "DIST_FLOWN_KM",
+            "DIST_DIRECT_KM",
             "DIST_ACHIEVED_KM",
             "T10_RUN_12M",
             "T10_YYYY"
@@ -45,6 +46,7 @@
             d.ENTITY_TYPE = d.ENTITY_TYPE ? d.ENTITY_TYPE.trim() : '';
             d.ENTITY_TYPE = d.ENTITY_TYPE.length ? d.ENTITY_TYPE : 'ZZZ';
             d.DIST_FLOWN_KM = d.DIST_FLOWN_KM ? +d.DIST_FLOWN_KM : 0;
+            d.DIST_DIRECT_KM = d.DIST_DIRECT_KM ? +d.DIST_DIRECT_KM : 0;
             d.DIST_ACHIEVED_KM = d.DIST_ACHIEVED_KM ? +d.DIST_ACHIEVED_KM : 0;
         });
         return hfe;
@@ -105,6 +107,7 @@
                 "ENTITY_TYPE",
                 "TYPE_MODEL",
                 "DIST_FLOWN_KM",
+                "DIST_DIRECT_KM",
                 "DIST_ACHIEVED_KM",
                 "T10_RUN_12M",
                 "T10_YYYY"
