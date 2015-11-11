@@ -54,7 +54,7 @@ This data is published by the Performance Review Unit (PRU). Every effort has be
 <div id="crt_ertSU_MM" style="width:400px; height:250px;"></div>
 </div>
 <div class="col-lg-7 offset-10 text-justified">
-<h5>En-route SU by charging zone (Jan.-Aug. 2015)</h5>
+<h5>En-route SU by charging zone (Jan.-Sep. 2015)</h5>
 <div id="tbl_ertSU_YY"></div>
 </div>
 </div>
