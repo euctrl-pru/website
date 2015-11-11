@@ -48,33 +48,36 @@ see [@complexitymetrics] in the References.
 
 ## Column naming and types
 
-| Column name    | Data source     | Label          |  Description                                                    | Example      |
-|----------------|-----------------|----------------|-----------------------------------------------------------------|--------------|
-| YEAR           | Network Manager | YEAR           | Reference year                                                  | 2014         |
-| MONTH_NUM      | Network Manager | MONTH          | Month (numeric)                                                 | 1            |
-| MONTH_MON      | Network Manager | MONTH_MON      | Month (3-letter code)                                           | JAN          |
-| FLT_DATE       | Network Manager | DATE_FLT       | Date of flight                                                  | 05-Jan-2014  |
-| ANSP_NAME      | PRU             | ENTITY_NAME    | Entity name                                                     | Belgocontrol |
-| ATC_UNIT_NAME  | PRU             | ENTITY_TYPE    | Type of the entity to which the data relates (ANSP, FAB, WIDE)  | Brussels     |
-| ATC_UNIT_TYPE  | PRU             | TYPE_CALC      | The computation of the flight count can be based on FIR or ANSP | ACC          |
-| FLIGHT_TIME    | NM/PRU          | FLIGHT_TIME    | Flight hours                                                    | 1491         |
-| INTER_TIME     | NM/PRU          | INTER_TIME     | Hours of interactions                                           | 131          |
-| VERTICAL_INTER | NM/PRU          | VERTICAL_INTER | Hours of vertical interactions                                  | 51           |
-| HORIZ_INTER    | NM/PRU          | HORIZ_INTER    | Hours of horizontal interactions                                | 73           |
-| SPEED_INTER    | NM/PRU          | SPEED_INTER    | Hours of speed interactions                                     | 55           |
-| MIN_FL         | Network Manager | MIN_FL         | Minimum flight level                                            | 100          |
-| MAX_FL         | Network Manager | MAX_FL         | Maximum flight level                                            | 250          |
+| Column name        | Data source     | Label              |  Description                                                    | Example          |
+|--------------------|-----------------|--------------------|-----------------------------------------------------------------|------------------|
+| YEAR               | Network Manager | YEAR               | Reference year                                                  | 2014             |
+| MONTH_NUM          | Network Manager | MONTH              | Month (numeric)                                                 | 1                |
+| MONTH_MON          | Network Manager | MONTH_MON          | Month (3-letter code)                                           | JAN              |
+| FLT_DATE           | Network Manager | DATE_FLT           | Date of flight                                                  | 12-01-2014       |
+| ENTITY_NAME        | PRU             | ENTITY_NAME        | Entity name                                                     | Slovenia Control |
+| ENTITY_TYPE        | PRU             | ENTITY_TYPE        | Type of the entity to which the data relates (ANSP, FAB, AREA)  | ANSP (AUA)       |
+| CPLX_FLIGHT_HRS    | NM/PRU          | CPLX_FLIGHT_HRS    | Complexity flight hours                                         | 89.4             |
+| CPLX_INTER_HRS     | NM/PRU          | CPLX_INTER_HRS     | Complexity hours of interactions                                | 9.4              |
+| VERTICAL_INTER_HRS | NM/PRU          | VERTICAL_INTER_HRS | Hours of vertical interactions                                  | 1.0              |
+| HORIZ_INTER_HRS    | NM/PRU          | HORIZ_INTER_HRS    | Hours of horizontal interactions                                | 5.8              |
+| SPEED_INTER_HRS    | NM/PRU          | SPEED_INTER_HRS    | Hours of speed interactions                                     | 1.5              |
 
 
 ### Calculated Field(s)
 
 \begin{align*}
-\text{Adjacient Density}     & = round( \frac{INTER\_TIME}{FLIGHT\_TIME} 60, 3) \\
-\text{Vertical Index (VI)}   & = round( \frac{VERTICAL\_INTER}{INTER\_TIME}, 3) \\
-\text{Horizontal Index (HI)} & = round( \frac{HORIZ\_INTER}{INTER\_TIME}, 3) \\
-\text{Speed Index (SI)}      & = round(\frac{SPEED\_INTER}{INTER\_TIME}, 3) \\
-\text{Structural Index}      & = VI + HI + SI \\
-\text{Complexity Score}      & = round(\frac{VERTICAL\_INTER + HORIZ\_INTER + SPEED\_INTER}{FLIGHT\_TIME} 60, 3)
+
+
+\text{Adjacent Density}        & = \frac{CPLX\_INTER\_HRS}{CPLX\_FLIGHT\_HRS} 60 \\
+\text{Vertical interactions}   & = \frac{VERTICAL\_INTER\_HRS}{CPLX\_FLIGHT\_HRS} 60 \\
+\text{Horizontal interactions} & = \frac{HORIZ\_INTER\_HRS}{CPLX\_FLIGHT\_HRS} 60 \\
+\text{Speed interactions}      & = \frac{SPEED\_INTER\_HRS}{CPLX\_FLIGHT\_HRS} 60 \\
+\text{Vertical Score}          & = \frac{VERTICAL\_INTER\_HRS}{CPLX\_INTER\_HRS} \\
+\text{Horizontal Score}        & = \frac{HORIZ\_INTER\_HRS}{CPLX\_INTER\_HRS} \\
+\text{Speed Score}             & = \frac{SPEED\_INTER\_HRS}{CPLX\_INTER\_HRS} \\
+\text{Structural Index}        & = \frac{VERTICAL\_INTER\_HRS + HORIZ\_INTER\_HRS + SPEED\_INTER\_HRS}{CPLX\_INTER\_HRS} \\
+\text{Complexity Score}        & = \frac{VERTICAL\_INTER\_HRS + HORIZ\_INTER\_HRS + SPEED\_INTER\_HRS}{CPLX\_FLIGHT\_HRS} 60
+
 \end{align*}
 
 # References
