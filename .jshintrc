@@ -1,0 +1,25 @@
+{
+    "bitwise": false,
+    "browser": false,
+    "couch": false,
+    "debug": false,
+    "devel": false,
+    "evil": false,
+    "forin": false,
+    "indent": 4,
+    "maxerr": 50,
+    "maxlen": false,
+    "newcap": false,
+    "node": false,
+    "nomen": false,
+    "passfail": false,
+    "plusplus": false,
+    "predef": [
+        "angular",
+        "$"
+    ],
+    "regexp": false,
+    "rhino": false,
+    "sub": false,
+    "white": false
+}

@@ -7,37 +7,37 @@ keywords: performance, data, statistics, economics, air transport, flights, euro
 dates:
   ert_flt:
     beg: Jan 2014
-    end: Sep 2015
+    end: Oct 2015
   ert_dly:
     beg: Jan 2014
-    end: Sep 2015
+    end: Oct 2015
   hfe:
     beg: Jan 2014
-    end: Sep 2015
+    end: Oct 2015
   apt_flt:
     beg: Jan 2014
-    end: Sep 2015
+    end: Oct 2015
   apt_dly:
     beg: Jan 2014
-    end: Sep 2015
+    end: Oct 2015
   asma:
     beg: Jan 2014
-    end: Aug 2015
+    end: Sep 2015
   tx_out:
     beg: Jan 2014
-    end: Aug 2015
+    end: Sep 2015
   atc_pre:
     beg: Jan 2014
-    end: Aug 2015
+    end: Sep 2015
   slt_adh:
     beg: Jan 2014
-    end: Sep 2015
+    end: Oct 2015
   ace_opt:
     beg: Jan 2014
-    end: Sep 2015
+    end: Oct 2015
   cplx:
-    beg:
-    end:
+    beg: Jan 2014
+    end: Oct 2015
 dwnld_i: <i class="fa pru fa-download"></i>
 info_i: <i class="fa pru fa-info-circle"></i>
 ndwk_i: <i class="fa pru fa-flask"></i>
@@ -52,21 +52,23 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 <div class="well">
 <h2><small>Copyright notice and Disclaimer</small></h2>
 
-<p><small><span style="text-aligh:left">&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}.</span></small></p>
+<small><span style="text-aligh:left">&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}.</span></small>
 
-<p>This data is published by the the <small style="font-variant: small-caps;">EUROCONTROL</small> Performance Review Unit in the interest of the exchange of information.
+This data is published by the the <small style="font-variant: small-caps;">EUROCONTROL</small> Performance Review Unit
+in the interest of the exchange of information.
 It may be copied in whole or in part providing that this copyright notice and disclaimer are included.
-The information may not be modified without prior written permission from the <small style="font-variant: small-caps;">EUROCONTROL</small> Performance Review Unit.
+The information may not be modified without prior written permission from the
+<small style="font-variant: small-caps;">EUROCONTROL</small> Performance Review Unit.
 
-The information does not necessarily reflect the official views or policy of <small style="font-variant: small-caps;">EUROCONTROL</small>,
+The information does not necessarily reflect the official views or policy of
+<small style="font-variant: small-caps;">EUROCONTROL</small>,
 which makes no warranty, either implied or express, for the information contained in this document,
-including its accuracy, completeness or usefulness.</p>
+including its accuracy, completeness or usefulness.
 
-<br>
 For feedback or questions please contact us at: [Performance Review Unit](mailto:{{ site.owner.email }}) ({{ site.owner.email }}).
 
 <div class="container text-center">
-<a href="mailto:pru@eurocontrol.int?subject=Subscribe: PRU information point&amp;body=Please%20add%20me%20to%20the%20mailing%20list%20to%20get%20informed%20about%20information%20updates." class="btn btn-primary btn-sm">Subscribe to get informed about updates <i class="fa fa-envelope"></i></a>
+{% include _subscriber-button.html %}
 </div>
 
 </div>
@@ -164,9 +166,9 @@ width: 8em;
 
 | Data description                                             | Period                                                | Excel                          | CSV | Metadata                      |
 |--------------------------------------------------------------|-------------------------------------------------------|--------------------------------|-----|-------------------------------|
-| Complexity<br><small>Complexity by ANSP and ATC unit</small> | {{ page.dates.cplx.beg }} - {{ page.dates.cplx.end }} | {{ page.attn_i }}              |     | [{{ page.info_i }}][CPLXmeta] |
+| Complexity<br><small>Complexity by ANSP and ATC unit</small> | {{ page.dates.cplx.beg }} - {{ page.dates.cplx.end }} | [{{ page.dwnld_i }}][CPLXxlsx] |     | [{{ page.info_i }}][CPLXmeta] |
 
-[CPLXxlsx]: <{{site.url}}/404.html> "CPLX (Excel)"
+[CPLXxlsx]: <{{site.url}}/data/set/clpx/Traffic_Complexity_Scores.xlsm> "CPLX (Excel)"
 [CPLXcsv]: <{{site.url}}/404.html> "CPLX (CSV)"
 [CPLXmeta]: <{{site.url}}/references/dataset/Traffic_Complexity_Score.html> "CPLX (Meta)"
 

@@ -30,7 +30,7 @@
      */
     var typeOf = function(obj) {
       return ({}).toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase();
-    }
+    };
 
     /**
      * Check passing params
@@ -46,7 +46,7 @@
       // if data is an Object, not in array [{}], then just create 1 item array.
       // So from now all data in array of object format.
       if (!Array.isArray(params.data)) {
-        var ar = new Array();
+        var ar = [];
         ar[0] = params.data;
         params.data = ar;
       }
@@ -127,7 +127,7 @@
         }
       });
       callback(str);
-    };
+    }
   }
 
   json2csv.version = "0.0.1";

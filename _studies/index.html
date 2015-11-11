@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+  <h2>Studies</h2>
+  <div class="container">
+    <div class="row">
+      {% for study in site.studies %}
+          {% capture this_year %}{{ study.date | date: "%Y" }}{% endcapture %}
+          {% capture next_year %}{{ study.previous.date | date: "%Y" }}{% endcapture %}
+
+          {% if forloop.first %}
+          <h3 id="{{ this_year }}-ref">{{this_year}}</h3>
+            <div class="col-xs-8">
+          {% else %}
+            {% if this_year != next_year %}
+            </div>
+            <div class="col-xs-8">
+            <h3 id="{{ next_year }}-ref">{{next_year}}</h3>
+            {% endif %}
+          {% endif %}
+
+          <h4>{{ study.date | date: "%d %b" }} <a href="{{ study.url }}" title="{{ study.title }}">{{ study.title }}</a></h4>
+          <p>{{ study.excerpt | strip_html | truncate: 160 }}</p>
+          {% if forloop.last %}
+          </div>
+          {% endif%}
+      {% endfor %}
+    </div>
+  </div>

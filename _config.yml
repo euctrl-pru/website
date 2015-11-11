@@ -6,7 +6,11 @@ url: "https://euctrl-pru.github.io" # the base hostname & protocol for your site
 canonical: https://euctrl-pru.github.io
 dev: false
 media: media
-category-list: [meta-definition] # 'meta-definition' is used for auto index metadata defs
+# category-list: [meta-definition] # 'meta-definition' is used for auto index metadata defs
+
+collections:
+  studies:
+    output: true
 
 # Owner / Author information
 owner:
@@ -46,7 +50,6 @@ pandoc:
   impose: false
   output: tmp
   flags: '--smart --mathjax
-          --csl=_styles/chicago-author-date.csl
           --bibliography=references.bib
           -f markdown+fenced_code_attributes+citations+strikeout'
   site_flags: '--toc'

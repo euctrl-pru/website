@@ -2,7 +2,7 @@
 layout: default
 title: AUA
 resource: true
-categories: [meta-definition]
+entity: definition
 excerpt: Performance Review Unit MetaData Definitions.
 keywords: metadata, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
 ---

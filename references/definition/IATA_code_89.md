@@ -1,8 +1,8 @@
 ---
 layout: default
-title: IATA code 89
+title: "IATA code 89"
 resource: true
-categories: [meta-definition]
+entity: definition
 excerpt: Performance Review Unit MetaData Definitions.
 keywords: metadata, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
 ---
