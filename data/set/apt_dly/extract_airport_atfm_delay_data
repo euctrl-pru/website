@@ -7,7 +7,7 @@
 
 
 ##- Usage: extract_airport_atfm_delay_data
-##- Extract Airport Arrival ATFM Delay data to csv file, 'airport_atfm_delay.csv'.
+##- Extract Airport Arrival ATFM Delay data to csv file, 'apt_dly.json' (this extension is a hack).
 ##-
 ##- Assumptions:
 ##-   DBUSR                   environment variable for the relevant schema username.
