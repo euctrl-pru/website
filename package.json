@@ -1,18 +1,12 @@
 {
-  "name": "pru-website-build",
+  "name": "@euctrl-pru/website",
   "version": "0.1.0",
-  "description": "The PRU website build process with npm",
+  "description": "The PRU website",
   "private": true,
   "devDependencies": {
-    "date-time": "^1.0.0",
-    "jslint": "latest",
-    "shelljs": "latest",
-    "yargs": "^3.29.0"
-  },
-  "bin": {
-    "site-commit": "_bin/ghp-commit",
-    "site-push": "_bin/ghp-push",
-    "site-deploy": "_bin/ghp-deploy"
+    "@euctrl-pru/website-build": "latest",
+    "jscs": "^2.5.1",
+    "jslint": "latest"
   },
   "//": "see also http://blog.npmjs.org/post/118810260230/building-a-simple-command-line-tool-with-npm",
   "scripts": {
@@ -23,6 +17,6 @@
     "build:dev": "bundle exec jekyll build --config _config.yml,_config_dev.yml --draft",
     "serve:dev": "bundle exec jekyll serve --config _config.yml,_config_dev.yml --draft",
     "build": "npm run -s lint && npm run -s build:dev",
-    "ship": "site-deploy"
+    "ship": "npm run -s build:pub && site-deploy"
   }
 }
