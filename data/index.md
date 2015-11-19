@@ -78,6 +78,9 @@ For feedback or questions please contact us at: [Performance Review Unit](mailto
 
 
 <style>
+td {
+  white-space: nowrap;
+}
 th:nth-child(2) {
 width: 11em;
 }
@@ -98,7 +101,7 @@ width: 8em;
 
 ### En-route
 
-| Data description                                                                                                                          | Period                                                      | Excel                             | CSV                                           | Metadata                         |
+|    Data description                                                                                                                       |     Period                                                  |    Excel                          |    CSV                                        |    Metadata                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|-----------------------------------|-----------------------------------------------|----------------------------------|
 | En-route IFR flights<br><small>Daily IFR traffic by entity</small>                                                                        | {{ page.dates.ert_flt.beg }} - {{ page.dates.ert_flt.end }} | [{{ page.dwnld_i }}][ERT-FLTxlsx] |                                               | [{{ page.info_i }}][ERT-FLTmeta] |
 | En-route ATFM delays<br><small>Daily IFR traffic and en-route ATFM delay by entity and delay cause</small>                                | {{ page.dates.ert_dly.beg }} - {{ page.dates.ert_dly.end }} | [{{ page.dwnld_i }}][ERT-DLYxlsx] |                                               | [{{ page.info_i }}][ERT-DLYmeta] |

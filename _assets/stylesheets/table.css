@@ -12,7 +12,7 @@ table, th, td {
 
 table
     {
-    width: 100%;
+    width: 100% !important;
     border-collapse: collapse;
     border-spacing: 0; /* IE 6 */
 
