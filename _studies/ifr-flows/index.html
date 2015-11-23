@@ -7,10 +7,9 @@ excerpt: "IFR Movements flows from and to Europe (Eurocontrol member States plus
 ---
 
 
-<link href="{% asset_path vendor/normalize.css %}" rel="stylesheet" media="all">
-<link href="{% asset_path vendor/styles.css %}" rel="stylesheet" media="all">
+<link href="{% asset_path vendor/normalize.css %}" rel="stylesheet" media="all" property="stylesheet">
+<link href="{% asset_path vendor/styles.css %}" rel="stylesheet" media="all" property="stylesheet">
 
-{% javascript vendor/d3.min.js %}
 {% javascript vendor/circular-flows.min.js %}
 
 
@@ -29,7 +28,7 @@ excerpt: "IFR Movements flows from and to Europe (Eurocontrol member States plus
   	</header>
 
   	<div class="wrap">
-  		<main role="main">
+  		<div class="main-timeline" role="main">
         <nav role=navigation>
           <div id="timeline"></div>
           <div id="play-buttons">
@@ -38,7 +37,7 @@ excerpt: "IFR Movements flows from and to Europe (Eurocontrol member States plus
           </div>
         </nav>
         <div id="diagram"></div>
-  		</main>
+  		</div>
   	</div>
 
 
@@ -75,8 +74,7 @@ excerpt: "IFR Movements flows from and to Europe (Eurocontrol member States plus
                 <dd>All countries in the continent but Egypt which is included in Middle East.</dd>
                 <dt>Asia</dt>
                 <dd>all the rest of the world.</dd>
-              </ul>
-            </p>
+              </dl>
           </div>
         </div>
 
@@ -97,8 +95,8 @@ excerpt: "IFR Movements flows from and to Europe (Eurocontrol member States plus
         </div>
 
         <div class="clear"></div>
-
       </div>
+
       <div class="column-wrap-3">
         <div class="column">
           <h3>Further information on circular plots</h3>
@@ -134,10 +132,10 @@ excerpt: "IFR Movements flows from and to Europe (Eurocontrol member States plus
           <p>Many thanks to all Eurocontrol collegues for the decades spent in setting up the institutional and operational links with so many countries in and out of Europe, for managing the flows and capacities (<a href="https://www.eurocontrol.int/network-manager">Network Manager</a>), controlling flights (<a href="https://www.eurocontrol.int/muac">MUAC</a>), and for all other pre- (i.e. <a href="https://www.eurocontrol.int/sesar-research">Research and SESAR</a>) and post-ops (i.e. <a href="https://www.eurocontrol.int/crco">CRCO</a>, <a href="https://www.eurocontrol.int/forecast-monitoring-analysis">STATFOR, CODA, ...</a>) activities so necessary to help European aviation aiming at performing better and better.</p>
           <p>
             Thanks to
-            <a href="http://www.wittgensteincentre.org"><img src="{% asset_path wittgenstein.png %}"></a>
-            , <a href="http://www.oeaw.ac.at/vid/"><img src="{% asset_path vid.png %}"></a>
+            <a href="http://www.wittgensteincentre.org"><img src="{% asset_path wittgenstein.png %}" alt="Wittgenstein Centre"></a>
+            , <a href="http://www.oeaw.ac.at/vid/"><img src="{% asset_path vid.png %}" alt="Vienna Institute of Demography"></a>
             for having made their work publicly available (even in <a href="http://github.com/null2/globalmigration">source code</a>! Which allowed us to propose little contributions.)
-          <p>Circular plot library coded by <a href="http://null2.net"><img src="{% asset_path null2.png %}"></a>
+          <p>Circular plot library coded by <a href="http://null2.net"><img src="{% asset_path null2.png %}" alt="Null2"></a>
           and inspired by Martin Krzywinski's <a href="http://circos.ca/">Circos</a> and Mike Bostock’s <a href="http://d3js.org/">D3.js library</a>.</p>
 
           <h3>Special thanks</h3>
