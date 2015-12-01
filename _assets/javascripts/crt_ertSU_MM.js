@@ -57,6 +57,7 @@
                   title: 'Source: CRCO',
                   titleTextStyle: { color: 'grey', fontSize: 10 },
                   type: 'string',
+                  slantedText: true,
                   slantedTextAngle: 40,
                   textStyle: { fontSize: 11 }
                }
