@@ -28,62 +28,21 @@ algorithm and has been in use as a commonly agreed proxy for en-route capacity s
 
 ## FAB definitions
 
-The FAB level information is based on an aggregation of ANSPs (ENTITY_TYPE = FAB (AUA)).
+The FAB level information is based on an aggregation of Flight Information Regions (FIRs) (ENTITY_TYPE = FAB (FIR)).
 
-| FAB Name         | ANSP included                                                                                                                                               |
-|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Baltic FAB       | [Oro Navigacija][oronav], [PANSA][pansa]                                                                                                                    |
-| BLUE MED FAB     | [DCAC Cyprus][cyprus], [HCAA][hcaa], [ENAV][enav], [MATS][mats]                                                                                             |
-| DANUBE FAB       | [BULATSA][bulatsa], [ROMATSA][romatsa]                                                                                                                      |
-| DK-SE FAB        | [NAVIAIR][naviair], [LFV][lfv]                                                                                                                              |
-| FABEC            | [Belgocontrol][belgoc], [DSNA][dsna], [DFS][dfs], [ANA LUX][lux], [LVNL][lvnl], [Skyguide][sky], [MUAC][muac]                                               |
-| FAB CE           | [Austro Control][austro], [BHANSA][bhansa], [Croatia Control][croatia], [ANS CR][anscr], [HungaroControl (EC)][hunga], [LPS][lps], [Slovenia Control][slov] |
-| FAB CE (SES RP1) | [Austro Control][austro], [ANS CR][anscr], [HungaroControl (EC)][hunga], [LPS][lps], [Slovenia Control][slov]                                               |
-| FAB CE (SES RP2) | [Austro Control][austro], [Croatia Control][croatia], [ANS CR][anscr], [HungaroControl (EC)][hunga], [LPS][lps], [Slovenia Control][slov]                   |
-| NEFAB            | [EANS][eans], [Finavia][fin], [LGS][lgs], [Avinor][avinor]                                                                                                  |
-| SW FAB           | [NAV Portugal (Continental)][porto], [ENAIRE][enaire]                                                                                                       |
-| UK-Ireland FAB   | [IAA][iaa], [NATS (Continental)][nats]                                                                                                                      |
-
-[oronav]: </references/ANSP/Oro_Navigacija.html> "Oro Navigacija"
-[pansa]: </references/ANSP/PANSA.html> "PANSA"
-
-[cyprus]: </references/ANSP/DCAC_Cyprus.html> "DCAC Cyprus"
-[hcaa]: </references/ANSP/HCAA.html> "HCAA"
-[enav]: </references/ANSP/ENAV.html> "ENAV"
-[mats]: </references/ANSP/MATS.html> "MATS"
-
-[bulatsa]: </references/ANSP/BULATSA.html> "BULATSA"
-[romatsa]: </references/ANSP/ROMATSA.html> "ROMATSA"
-
-[naviair]: </references/ANSP/NAVIAIR.html> "NAVIAIR"
-[lfv]: </references/ANSP/LFV.html> "LFV"
-
-[belgoc]: </references/ANSP/Belgocontrol.html> "Belgocontrol"
-[dsna]: </references/ANSP/DSNA.html> "DSNA"
-[dfs]: </references/ANSP/DFS.html> "DFS"
-[lux]: </references/ANSP/ANA_LUX.html> "ANA LUX"
-[lvnl]: </references/ANSP/LVNL.html> "LVNL"
-[sky]: </references/ANSP/Skyguide.html> "Skyguide"
-[muac]: </references/ANSP/MUAC.html> "MUAC"
-
-[austro]: </references/ANSP/Austro_Control.html> "Austro Control"
-[bhansa]: </references/ANSP/BHANSA.html> "BHANSA"
-[croatia]: </references/ANSP/Croatia_Control.html> "Croatia Control"
-[anscr]: </references/ANSP/ANS_CR.html> "ANS CR"
-[hunga]: </references/ANSP/HungaroControl.html> "HungaroControl (EC)"
-[lps]: </references/ANSP/LPS.html> "LPS"
-[slov]: </references/ANSP/Slovenia_Control.html> "Slovenia Control"
-
-[eans]: </references/ANSP/EANS.html> "EANS"
-[fin]: </references/ANSP/Finavia.html> "Finavia"
-[lgs]: </references/ANSP/LGS.html> "LGS"
-[avinor]: </references/ANSP/Avinor.html> "Avinor"
-
-[porto]: </references/ANSP/NAV_Portugal.html> "NAV Portugal (Continental)"
-[enaire]: </references/ANSP/ENAIRE.html> "ENAIRE"
-
-[iaa]: </references/ANSP/IAA.html> "IAA"
-[nats]: </references/ANSP/NATS.html> "NATS (Continental)"
+| FAB Name         | FIRs included                                                                                                                                  |
+|------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
+| Baltic FAB       | EPWWFIR, EYVLFIR, EYVLUIR                                                                                                                      |
+| BLUE MED FAB     | LCCCFIR, LCCCUIR, LGGGFIR, LGGGUIR, LIBBFIR, LIBBUIR, LIMMFIR, LIMMUIR, LIRRFIR, LIRRUIR, LMMMFIR, LMMMUIR                                     |
+| DANUBE FAB       | LBSRFIR, LRBBFIR                                                                                                                               |
+| DK-SE FAB        | EKDKFIR, ESAAFIR                                                                                                                               |
+| FABEC            | EBBUFIR, EBURUIR, EDGGFIR, EDMMFIR, EDUUUIR, EDVVUIR, EDWWFIR, EHAAFIR, LFBBFIR, LFEEFIR, LFFFFIR, LFFFUIR, LFMMFIR, LFRRFIR, LSASFIR, LSASUIR |
+| FAB CE           | LDZOFIR, LHCCFIR, LJLAFIR, LKAAFIR, LOVVFIR, LQSBFIR, LQSBUIR, LZBBFIR                                                                         |
+| FAB CE (SES RP1) | LHCCFIR, LJLAFIR, LKAAFIR, LOVVFIR, LZBBFIR                                                                                                    |
+| FAB CE (SES RP2) | LDZOFIR, LHCCFIR, LJLAFIR, LKAAFIR, LOVVFIR, LZBBFIR                                                                                           |
+| NEFAB            | EETTFIR, EFINFIR, EFINUIR, ENOBFIR, ENORFIR, EVRRFIR                                                                                           |
+| SW FAB           | GCCCFIR, GCCCUIR, LECBFIR, LECBUIR, LECMFIR, LECMUIR, LPPCFIR                                                                                  |
+| UK-Ireland FAB   | EGPXFIR, EGPXUIR, EGTTFIR, EGTTUIR, EISNFIR, EISNUIR                                                                                           |
 
 
 ## Column naming and types

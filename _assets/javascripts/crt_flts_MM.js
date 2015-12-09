@@ -7,9 +7,10 @@
             containerId: 'crt_flts_MM',
             dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Ap6_pXhVLZcgfUcdbqsUBvZaI_AdVsT35XLY1oPKyJ4/edit?usp=sharing&sheet=ERT_FLTS_MM&range=A1:F25&headers=1&tq=where%20A%3D1',
             options: {
+               width: 500, height: 300,
                title: 'Average Daily Flights (monthly)',
                titleTextStyle : { color: 'grey', fontSize: 12 },
-               chartArea: { left: 50, top: 50, width: '70%', height: '55%' },
+               chartArea: { left: 70, top: 20 },
                legend: {
                   position: 'top',
                   maxLines: 2,
@@ -58,6 +59,7 @@
                   title: 'Source: PRU Analysis; NM',
                   titleTextStyle: { color: 'grey', fontSize: 10 },
                   type: 'string',
+                  slantedText: true,
                   slantedTextAngle: 40,
                   textStyle: { fontSize: 11 }
                }

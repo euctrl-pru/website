@@ -7,7 +7,8 @@
             containerId: 'crt_flts_YY',
             dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Ap6_pXhVLZcgfUcdbqsUBvZaI_AdVsT35XLY1oPKyJ4/edit?usp=sharing&sheet=IFR_YY&range=A1:D9&headers=1&hl=en_GB',
             options: {
-               chartArea: { left: 50, top: 20, width: '70%', height: '65%' },
+               width: 500, height: 300,
+               chartArea: { left: 75, top: 20 },
                title: 'Average Daily Flights (yearly)',
                titleTextStyle: { color: 'grey', fontSize: 12 },
                legend: {
