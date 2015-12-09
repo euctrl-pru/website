@@ -1,15 +1,15 @@
 # Site navigation links
 - title: News
-  url: /posts/index.html
+  url: /posts/
 
 - title: Graphs
-  url: /graphs/index.html
+  url: /graphs/
 
 - title: Data
-  url: /data/index.html
+  url: /data/
 
 - title: Studies
-  url: /studies/index.html
+  url: /studies/
 
 - title: References
-  url: /references/index.html
+  url: /references/

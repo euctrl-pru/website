@@ -60,6 +60,6 @@ pandoc:
 timezone: Europe/Brussels
 
 # don't deploy these folders/files
-exclude: [Gemfile, Gemfile.lock, README.md, references.bib, tmp, generate_reference.sh,
+exclude: [Gemfile, Gemfile.lock, README.md, references.bib, tmp, generate_bibliography.sh,
           dashboard/REAME.md, dashboard/Makefile, dashboard, deploy.sh,
           node_modules, package.json, npm-debug.log]
