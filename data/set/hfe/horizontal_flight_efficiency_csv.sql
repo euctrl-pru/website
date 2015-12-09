@@ -6,7 +6,7 @@ SET TRIMSPOOL ON;
 spool '&1';
 
 
-with inp1 as (select cast('31-oct-2015' as date) enddate, 10 bw_days from dual)
+with inp1 as (select cast('30-nov-2015' as date) enddate, 10 bw_days from dual)
 
 , inp2 as (select
 extract(year from enddate+1) incomplete_year
