@@ -6,8 +6,9 @@
             chartType: 'ComboChart',
             containerId: 'crt_cap_apt_YY',
             dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1gYIeqeWdcxd7mdXImchbppdI7QvZzp7ucfZdNJbBbyE/edit?usp=sharing&alt=json&sheet=APT_ATFM_YY&range=A1:I9',
-            options: {
-               chartArea: { left: 50, top: 20, width: '55%', height: '65%' },
+           options: {
+               width: 500, height: 300,
+               chartArea: { left: 70, top: 20 },
                title: 'Airport Arrival ATFM Delays (yearly)',
                titleTextStyle : { color: 'grey', fontSize: 12 },
                legend: {
