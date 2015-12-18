@@ -10,7 +10,6 @@
       d[3] = +d[3];
       return d;
     });
-    console.log(csvArray);
 
     data = new google.visualization.arrayToDataTable(csvArray);
   });
