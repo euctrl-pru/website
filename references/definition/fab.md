@@ -6,6 +6,21 @@ entity: definition
 excerpt: Performance Review Unit MetaData Definitions.
 keywords: metadata, performance, data, statistics, air transport, flights, europe, delay, safety
 ---
+<style>
+td {
+  white-space: nowrap;
+}
+th:nth-child(2) {
+width: 11em;
+}
+
+th:nth-child(3) {
+width: 15em;
+}
+</style>
+
+
+
 # {{ page.title }}
 
 <a href="http://www.eurocontrol.int/dossiers/fabs" target="_blank">Functional Airspace Blocks</a>
@@ -16,12 +31,14 @@ The twofold objective of the legislative packagers is to optimise air traffic fl
 
 SES II lays down a definite commitment date for the Member States to improve performance by implementing FABs, i.e. 4 December 2012. Nine FAB initiatives have been taken; two of these have already been implemented, namely the UK-Ireland and Denmark-Sweden FABs:
 
-NEFAB (North European FAB): Estonia, Finland, Latvia, Norway.
-Denmark-Sweden: Denmark, Sweden
-BALTIC FAB Poland, Lithuania
-FABEC (FAB Europe Central): France, Germany, Belgium, Netherlands, Luxembourg, and Switzerland
-FABCE (FAB Central Europe): Czech Republic, Slovak Republic, Austria, Hungary, Croatia, Slovenia, Bosnia and Herzegovina
-DANUBE Bulgaria, Romania
-BLUE MED Italy, Malta, Greece, Cyprus, (and Egypt, Tunisia, Albania, Jordan as observers)
-UK- IRELAND FAB United Kingdom, Ireland
-SW FAB (South West FAB) Portugal, Spain
+| Short name | Name | Countries |
+|------------|------|-----------|
+| NEFAB | North European FAB | Estonia, Finland, Latvia, Norway |
+| Denmark-Sweden | Denmark-Sweden | Denmark, Sweden |
+| BALTIC FAB | BALTIC FAB | Poland, Lithuania |
+| FABEC | FAB Europe Central | France, Germany, Belgium, Netherlands, Luxembourg, and Switzerland |
+| FABCE | FAB Central Europe | Czech Republic, Slovak Republic, Austria, Hungary, Croatia, Slovenia, Bosnia and Herzegovina |
+| DANUBE | DANUBE | Bulgaria, Romania |
+| BLUE MED | BLUE MED | Italy, Malta, Greece, Cyprus, (and Egypt, Tunisia, Albania, Jordan as observers) |
+| UK-IRELAND FAB | UK-IRELAND FAB | United Kingdom, Ireland |
+| SW FAB | South West FAB| Portugal, Spain |
