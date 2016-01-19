@@ -6,3 +6,4 @@ tmp
 .jekyll-metadata
 Gemfile.lock
 _site
+npm-debug.log
