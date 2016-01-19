@@ -6,7 +6,7 @@ SET TRIMSPOOL ON;
 spool '&1';
 
 
-with inp1 as (select cast('30-nov-2015' as date) enddate, 10 bw_days from dual)
+with inp1 as (select cast('31-dec-2015' as date) enddate, 10 bw_days from dual)
 
 , inp2 as (select
 extract(year from enddate+1) incomplete_year
@@ -61,8 +61,8 @@ SELECT
   FROM inp2,
        PRUTEST.HFE_DAILY od
        join PRUTEST.DSH_BRIDGE_NAMES using(mes_area)
---where entity_name = 'FABEC'
-   ORDER by 4,5
+  where entry_date <= end_running
+  ORDER by 4,5
 )
 
 select * from output;
