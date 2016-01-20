@@ -13,6 +13,6 @@ ANS Provider - Albania.
 
 See the relevant [leaflet][leaf] from [ACE2013].
 
-[leaf]: <Albcontrol_Albania_ACE_2013_Benchmarking_Report.pdf> "ACE 2013 Benchmarking Report Factsheet: {{ page.title }}"
+[leaf]: <Albcontrol_Albania_ACE_2013_Benchmarking.pdf> "ACE 2013 Benchmarking Report Factsheet: {{ page.title }}"
 
 [ACE2013]: <https://www.eurocontrol.int/sites/default/files/publication/files/ace-2013-benchmarking-report-final.pdf> "ACE 2013 Benchmarking Report"
