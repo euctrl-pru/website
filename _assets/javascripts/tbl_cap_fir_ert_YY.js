@@ -30,7 +30,7 @@
       containerId: 'tbl_cap_fir_ert_YY',
       dataTable: data,
       options: {
-        //allowHtml: true,
+        // allowHtml: true,
         width: 550,
         height: 240,
       },
