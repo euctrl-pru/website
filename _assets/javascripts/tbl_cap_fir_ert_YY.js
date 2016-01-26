@@ -1,14 +1,23 @@
 (function() {
   var data;
+  var twodecimals = d3.format(".2n");
   d3.text("/data/set/ert_flt/En-Route_Traffic_FAB_FIR.csv", function(text) {
     var csvArray = d3.csv.parseRows(text, function (d, i) {
       if (i === 0) {
-        return d;
+        return ["FAB","Flights","Delay [min.]", "Avg. per Flight"];
       }
-      d[1] = +d[1];
-      d[2] = +d[2];
-      d[3] = +d[3];
-      return d;
+      // d[0] = +d[0]; // YYYY
+      d[2] = +d[2]; // # of flights
+      d[3] = +d[3]; // total minutes of delay
+      var avg = d[2] == 0 ? 0 : d[3] / d[2];
+
+      return [
+        // d[0],
+        d[1],
+        d[2],
+        d[3],
+        twodecimals(avg)
+      ];
     });
 
     data = new google.visualization.arrayToDataTable(csvArray);
