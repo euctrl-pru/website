@@ -37,10 +37,14 @@ to the necessary minimum.
 
 ### Calculated Field(s)
 
+$$
 \begin{align*}
 \text{Average additional ASMA time} & = \frac{TIME\_ASMA\_ADD\_2}{FLT\_ASMA\_UNIMP\_2} 
 \end{align*}
+$$
 
+$$
 \begin{align*}
 \text{Average unimpeded ASMA time} & = \frac{TIME\_ASMA\_UNIMP\_2}{FLT\_ASMA\_UNIMP\_2} 
 \end{align*}
+$$

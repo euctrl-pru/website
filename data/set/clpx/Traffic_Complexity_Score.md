@@ -65,8 +65,8 @@ see {% cite complexitymetrics %} in the References.
 
 ### Calculated Field(s)
 
+$$
 \begin{align*}
-
 
 \text{Adjacent Density}        & = \frac{CPLX\_INTER}{CPLX\_FLIGHT\_HRS} 60 \\
 \text{Vertical interactions}   & = \frac{VERTICAL\_INTER\_HRS}{CPLX\_FLIGHT\_HRS} 60 \\
@@ -79,6 +79,7 @@ see {% cite complexitymetrics %} in the References.
 \text{Complexity Score}        & = \frac{VERTICAL\_INTER\_HRS + HORIZ\_INTER\_HRS + SPEED\_INTER\_HRS}{CPLX\_FLIGHT\_HRS} 60
 
 \end{align*}
+$$
 
 ## References
 
