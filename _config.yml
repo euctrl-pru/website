@@ -29,7 +29,10 @@ tools:
   software: "Jekyll, pandoc, MathJax, d3.js, dc.js, crossfilter"
 
 # Build settings
-gems: [ 'jekyll-pandoc-multiple-formats' ]
+gems: [
+'jekyll-pandoc-multiple-formats',
+'jekyll/scholar'
+]
 
 assets:
   sources:
@@ -44,17 +47,40 @@ sass:
   sass_dir: _sass
   style: :compressed
   sourcemap: true
-markdown: pandoc
+#markdown: kramdown
 pandoc:
   skip: true
   impose: false
   output: tmp
   flags: '--smart --mathjax
-          --bibliography=references.bib
-          -f markdown+fenced_code_attributes+citations+strikeout'
+          -f markdown+fenced_code_attributes+strikeout'
   site_flags: '--toc'
   outputs:
     markdown:
+
+
+scholar:
+  locale: en
+
+  source: references
+  bibliography: references.bib
+  bibliography_template: bib
+
+  replace_strings: true
+  join_strings:    true
+
+  use_raw_bibtex_entry: false
+  bibtex_filters:
+  - latex
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  sort_by: year,month
+  order: descending
+
+  query: "@*"
 
 # Global configs
 timezone: Europe/Brussels

@@ -44,7 +44,7 @@ The indicator is defined as the ratio of the duration of speed interactions to t
 total duration of all interactions.
 
 More information on the methodologies used for the computation of the complexity score
-see [@complexitymetrics] in the References.
+see {% cite complexitymetrics %} in the References.
 
 ## Column naming and types
 
@@ -80,4 +80,6 @@ see [@complexitymetrics] in the References.
 
 \end{align*}
 
-# References
+## References
+
+{% bibliography --cited %}
