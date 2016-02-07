@@ -30,7 +30,6 @@ tools:
 
 # Build settings
 gems: [
-'jekyll-pandoc-multiple-formats',
 'jekyll/scholar'
 ]
 
@@ -47,17 +46,7 @@ sass:
   sass_dir: _sass
   style: :compressed
   sourcemap: true
-#markdown: kramdown
-pandoc:
-  skip: true
-  impose: false
-  output: tmp
-  flags: '--smart --mathjax
-          -f markdown+fenced_code_attributes+strikeout'
-  site_flags: '--toc'
-  outputs:
-    markdown:
-
+markdown: kramdown
 
 scholar:
   locale: en
