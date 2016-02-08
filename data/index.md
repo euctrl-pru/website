@@ -47,9 +47,12 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 <style>
   i.fa.pru {color: #337ab7;}
 </style>
+{::options parse_block_html="true" /}
 
 # Pan-European ANS Performance data repository
+
 <div class="well">
+
 <h2><small>Copyright notice and Disclaimer</small></h2>
 
 <small><span style="text-aligh:left">&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}.</span></small>

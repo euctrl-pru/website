@@ -38,6 +38,7 @@ assets:
     - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
+    - _assets/json
   css_compressor: sass
   js_compressor:  uglifier
   cache:          true
@@ -47,6 +48,10 @@ sass:
   style: :compressed
   sourcemap: true
 markdown: kramdown
+
+kramdown:
+  input: GFM
+  hard_wrap: false
 
 scholar:
   locale: en

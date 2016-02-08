@@ -68,7 +68,7 @@ $$
 {HFE}_j = ( \frac{\sum_{f,p} L_{fjp}}{\sum_{f,p} H_{fjp}} - 1 ) %
 $$
 
-where $L$ is the length of the trajectory and $H$ is the achieved distance;
-the index $f$ is the flight, $j$ is the airspace and $p$ is the portion considered.
+where $$L$$ is the length of the trajectory and $$H$$ is the achieved distance;
+the index $$f$$ is the flight, $$j$$ is the airspace and $$p$$ is the portion considered.
 
-From the table above $L$ is $DIST\_FLOWN\_KM$, while $H$ is $DIST\_ACHIEVED\_KM$.
+From the table above $$L$$ is $$DIST\_FLOWN\_KM$$, while $$H$$ is $$DIST\_ACHIEVED\_KM$$.
