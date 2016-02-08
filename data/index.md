@@ -73,10 +73,6 @@ For feedback or questions please contact us at: [Performance Review Unit](mailto
 
 </div>
 
-{{ page.attn_i }} = under construction, coming soon.<br>
-{{ page.ndwk_i }} = experimental, [feedback](mailto:{{ site.owner.email }}) is more than welcome.
-
-
 <style>
 td {
   white-space: nowrap;
@@ -176,3 +172,11 @@ width: 8em;
 [CPLXmeta]: <{{site.url}}/references/dataset/Traffic_Complexity_Score.html> "CPLX (Meta)"
 
 <br>
+
+{{ page.dwnld_i }} = dataset download.<br>
+{{ page.info_i }} = info on dataset.<br>
+{{ page.fltr_i }} = filter for dataset and download.<br>
+{{ page.ndwk_i }} = experimental, [feedback](mailto:{{ site.owner.email }}) is more than welcome.<br>
+{{ page.attn_i }} = not (yet?) available.<br>
+
+
