@@ -5,6 +5,23 @@ permalink: /references/dataset/Horizontal_Flight_Efficiency.html
 excerpt: Performance Review Unit MetaData Definitions.
 keywords: metadata, dataset, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
 ---
+<style>
+td {
+  white-space: normal;
+}
+th:nth-child(1) {
+width: 11em;
+}
+
+.metatable th:nth-child(2) {
+width: 11em;
+}
+.metatable th:nth-child(5) {
+width: 7em;
+}
+
+</style>
+
 # {{ page.title }}
 
 ## Data description
@@ -43,6 +60,7 @@ The FAB level information is based on an aggregation of Flight Information Regio
 
 ## Column naming and types
 
+{:.metatable}
 | Column name      | Data source     | Label            | Column description                                                                                | Example   |
 |------------------|-----------------|------------------|---------------------------------------------------------------------------------------------------|-----------|
 | YEAR             | Network Manager | YEAR             | Reference year                                                                                    | 2014      |
