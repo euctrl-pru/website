@@ -42,7 +42,7 @@ SES II lays down a definite commitment date for the Member States to improve per
 
 <br>
 <br>
-The map below shows all Eurocontrol Member States FIRs and the nine FABs relevant for SES RP2.
+The map below shows all Eurocontrol Member States FIRs and the nine FABs relevant for **SES RP2**.
 
 Click to zoom in/out. Hoover with the mouse to get further information.
 

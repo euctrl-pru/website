@@ -34,7 +34,7 @@
                   titleTextStyle: { color: 'grey', fontSize: 10 },
                   minValue: 0.0,
                   maxValue: 0.06,
-                  viewWindow: { max: 0.06 },
+                  viewWindow: { min: 0.02, max: 0.05 },
                   format: '0.0%'
                },
                hAxis: {
