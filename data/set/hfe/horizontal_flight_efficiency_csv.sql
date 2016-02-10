@@ -66,7 +66,7 @@ SELECT
 )
 
 select * from output;
-
+where year >=2014;
 
 spool off;
 quit
