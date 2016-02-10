@@ -65,8 +65,8 @@ SELECT
   ORDER by 4,5
 )
 
-select * from output;
-where year >=2014;
+select * from output
+where year >= 2014;
 
 spool off;
 quit
