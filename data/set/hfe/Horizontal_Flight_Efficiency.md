@@ -90,3 +90,48 @@ where $$L$$ is the length of the trajectory and $$H$$ is the achieved distance;
 the index $$f$$ is the flight, $$j$$ is the airspace and $$p$$ is the portion considered.
 
 From the table above $$L$$ is $$DIST\_FLOWN\_KM$$, while $$H$$ is $$DIST\_ACHIEVED\_KM$$.
+
+
+<br>
+<br>
+The map below shows all Eurocontrol Member States FIRs and the nine FABs relevant for **SES RP2**.
+
+Click to zoom in/out. Hoover with the mouse to get further information.
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.20/topojson.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+
+{% stylesheet fabs %}
+{% javascript fabs %}
+
+<div id="tooltip" class="hidden">
+    <p id="info"></p>
+</div>
+<div id="chart"></div>
+
+<script type="text/javascript">
+(function () {
+
+  // general design from
+  // http://www.jeromecukier.net/blog/2013/11/20/getting-beyond-hello-world-with-d3/
+  var params = {
+    refresh: false, // REMOVE, i.e. `false`, for production
+  	width: 800,
+  	height:580,
+  	scale: 530,
+    rotateLat:-53,
+    rotateLon: 0,
+    topo: "{% asset_path euctrl-firs.json %}",
+  	world: "{% asset_path world-50m.json %}"
+  };
+
+  var query = window.location.search.substring(1);
+  var vars = query.split("&");
+  vars.forEach(function(v) {
+      var p = v.split("=");
+      params[p[0]] = p[1];
+  })
+
+  vis.init(params);
+}());
+</script>

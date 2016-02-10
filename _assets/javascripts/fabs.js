@@ -314,8 +314,7 @@ var vis;
                 .on("mouseover", function (d) {
                     d3.select(this).style("fill", "red");
                     tooltip.classed("hidden", false);
-                    infotext.html("<h4>" + d.name + "</h4>" + "<p><b>FIRs</b><br>" +
-                                  d.firs.join("<br>") + "</p>");
+                    infotext.html("<p>" + d.name + "</p>"); // TODO: include additional info
                 })
                 .on("mouseleave", function () {
                     d3.select(this).style("fill", "blue");
