@@ -1,6 +1,8 @@
 ---
 layout: default
 title: "FMP - Flow Management Position"
+redirect_to:
+  - http://www.eurocontrol.int/lexicon/lexicon/en/index.php/Flow_Management_Position
 resource: true
 entity: definition
 excerpt: Performance Review Unit MetaData Definitions.

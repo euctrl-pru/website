@@ -37,7 +37,7 @@ The planned trajectory is derived from the flight plans submitted by airspace us
 The actual flown trajectory is based on processed radar track data (Correlated Position Reports)
 submitted by ANSPs to the EUROCONTROL Enhanced Tactical Flow Management System (ETFMS).
 
-The methodology is fully consistent with the SES Performance Scheme.
+The methodology is fully consistent with the SES Performance Scheme {% cite pru:hfe %}.
 
 ## FAB definitions
 
@@ -135,3 +135,8 @@ Click to zoom in/out. Hoover with the mouse to get further information.
   vis.init(params);
 }());
 </script>
+
+
+## References
+
+{% bibliography --cited_in_order %}

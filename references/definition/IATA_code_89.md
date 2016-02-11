@@ -8,4 +8,14 @@ keywords: metadata, performance, data, statistics, economics, air transport, fli
 ---
 # {{ page.title }}
 
-IATA CODE 89 (AM) RESTRICTIONS AT AIRPORT OF DEPARTURE WITH OR WITHOUT ATFM RESTRICTIONS, including Air Traffic Services, start-up and pushback, airport and/or runway closed due to obstruction or weather, industrial action, staff shortage, political unrest, noise abatement, night curfew, special flights.
+Code 89 (alpha AM) is one of IATA's delay codes {% cite wiki:iatadelaycodes iata:delaycodes %}.
+It is specified as follows:
+
+| Code | Alpha | Short description | Further info |
+|------|-------|-------------------|--------------|
+| 89   | AM    | Restrictions at airport of departure with or without ATFM restrictions | including Air Traffic Services, start-up and pushback, airport and/or runway closed due to obstruction or weather, industrial action, staff shortage, political unrest, noise abatement, night curfew, special flights. |
+
+
+## References
+
+{% bibliography --cited_in_order %}

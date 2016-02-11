@@ -29,9 +29,9 @@ tools:
   software: "Jekyll, pandoc, MathJax, d3.js, dc.js, crossfilter"
 
 # Build settings
-gems: [
-'jekyll/scholar'
-]
+gems:
+  - 'jekyll/scholar'
+  - jekyll-redirect-from
 
 assets:
   sources:
@@ -56,6 +56,7 @@ kramdown:
 scholar:
   locale: en
 
+  repository: references/library/
   source: references
   bibliography: references.bib
   bibliography_template: bib
@@ -67,10 +68,6 @@ scholar:
   bibtex_filters:
   - latex
 
-  details_dir:    bibliography
-  details_layout: bibtex.html
-  details_link:   Details
-
   sort_by: year,month
   order: descending
 
@@ -80,6 +77,19 @@ scholar:
 timezone: Europe/Brussels
 
 # don't deploy these folders/files
-exclude: [Gemfile, Gemfile.lock, README.md, references.bib, tmp, generate_bibliography.sh,
-          dashboard/REAME.md, dashboard/Makefile, dashboard, deploy.sh,
-          node_modules, package.json, npm-debug.log]
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - references.bib
+  - legislation.bib
+  - dataviz.bib
+  - tmp
+  - dashboard/REAME.md
+  - dashboard/Makefile
+  - dashboard
+  - deploy.sh
+  - node_modules
+  - package.json
+  - npm-debug.log
+
