@@ -8,4 +8,15 @@ keywords: metadata, performance, data, statistics, weather, air transport, fligh
 ---
 # {{ page.title }}
 
+In the context of ATFM (**A**ir **T**raffic **F**low **M**anagement) a *measure* refers to
+
+> the actions taken to perform air traffic flow management and capacity management
+
+{% cite eu:255/2010 --file legislation %}
+
+
+## References
+
+{% bibliography --cited --file legislation %}
+
 see [Regulation](/references/definition/regulation.html)
