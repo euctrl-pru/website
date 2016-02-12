@@ -27,6 +27,18 @@
           {% endif %}
           <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
         {% endfor %}
+          <li class="dropdown">
+              <a href="/dropdown/#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">References <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                  <li><a href="/references/dataset/">Datasets</a></li>
+                  <li><a href="/references/definition/">Definitions</a></li>
+                  <li><a href="/references/ANSP/">ANSP's</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="/references/methodology/">Methodology</a></li>
+                   <li><a href="/references/bibliography.html">Bibliography</a></li>
+              </ul>
+          </li>
       </ul>
       <!-- let's keep About & C0. out of navigation.yml to have it right-aligned -->
       <ul class="nav navbar-nav navbar-right">
