@@ -15,13 +15,13 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 In the spirit of fostering collaboration, transparency and reproducibility, we here describe
 why and how we calculate the various metrics in our website.
 
-The following is a draft list of what we want to start with:
+The following is a draft list of the topics we want to document:
 
-* Description of the [Unimpeded ASMA Time metric](/references/methodology/unimpeded_asma_time.html).
+* [Unimpeded ASMA Time metric](/references/methodology/unimpeded_asma_time.html).
 
-* Description of Horizontal Flaigh Efficiency metrics. {{ page.attn_i }}
+* Horizontal Flight Efficiency metrics. {{ page.attn_i }}
 
-* Description of the Dimensions used in the collection and processing of data. {{ page.attn_i }}
+* Data Dimensions used in the processing of data. {{ page.attn_i }}
 
 <br><br>
 {{ page.attn_i }} = not (yet?) available.<br>
