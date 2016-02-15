@@ -4,7 +4,7 @@
       var crt_cap_apt_MM = new google.visualization.ChartWrapper({
          chartType: 'ComboChart',
          containerId: 'crt_cap_apt_MM',
-         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1gYIeqeWdcxd7mdXImchbppdI7QvZzp7ucfZdNJbBbyE/edit?usp=sharing&alt=json&sheet=APT_ATFM_MM&range=A1:M25&tq=where%20A%3D1',
+         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1gYIeqeWdcxd7mdXImchbppdI7QvZzp7ucfZdNJbBbyE/edit?usp=sharing&alt=json&sheet=APT_ATFM_MM&range=A1:M26&tq=where%20A%3D1',
          options: {
             width: 500, height: 300,
             chartArea: { left: 65, top: 20 },

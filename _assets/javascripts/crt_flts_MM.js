@@ -5,7 +5,7 @@
          {
             chartType: 'ComboChart',
             containerId: 'crt_flts_MM',
-            dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Ap6_pXhVLZcgfUcdbqsUBvZaI_AdVsT35XLY1oPKyJ4/edit?usp=sharing&sheet=ERT_FLTS_MM&range=A1:F25&headers=1&tq=where%20A%3D1',
+            dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Ap6_pXhVLZcgfUcdbqsUBvZaI_AdVsT35XLY1oPKyJ4/edit?usp=sharing&sheet=ERT_FLTS_MM&range=A1:F26&headers=1&tq=where%20A%3D1',
             options: {
                width: 500, height: 300,
                title: 'Average Daily Flights (monthly)',
