@@ -168,7 +168,7 @@ width: 8em;
 
 | Data description                                             | Period                                                | Excel                          | CSV | Metadata                      |
 |--------------------------------------------------------------|-------------------------------------------------------|--------------------------------|-----|-------------------------------|
-| Complexity<br><small>Complexity by ANSP and ATC unit</small> | {{ page.dates.cplx.beg }} - {{ page.dates.cplx.end }} | [{{ page.dwnld_i }}][CPLXxlsx] |     | [{{ page.info_i }}][CPLXmeta] |
+| Complexity<br><small>Complexity by ANSP</small> | {{ page.dates.cplx.beg }} - {{ page.dates.cplx.end }} | [{{ page.dwnld_i }}][CPLXxlsx] |     | [{{ page.info_i }}][CPLXmeta] |
 
 [CPLXxlsx]: <{{site.url}}/data/set/clpx/Traffic_Complexity_Scores.xlsm> "CPLX (Excel)"
 [CPLXcsv]: <{{site.url}}/404.html> "CPLX (CSV)"
