@@ -19,6 +19,8 @@ The following is a draft list of the topics we want to document:
 
 * [Unimpeded ASMA Time metric](/references/methodology/unimpeded_asma_time.html).
 
+* [Unimpeded Taxi-out Time metric](/references/methodology/unimpeded_taxi-out_time.html).
+
 * Horizontal Flight Efficiency metrics. {{ page.attn_i }}
 
 * Data Dimensions used in the processing of data. {{ page.attn_i }}
