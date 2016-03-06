@@ -54,23 +54,19 @@ kramdown:
   hard_wrap: false
 
 scholar:
+  style: chicago-author-date
   locale: en
-
   repository: references/library/
   source: references
   bibliography: references.bib
   bibliography_template: bib
-
   replace_strings: true
   join_strings:    true
-
   use_raw_bibtex_entry: false
   bibtex_filters:
   - latex
-
   sort_by: year,month
   order: descending
-
   query: "@*"
 
 # Global configs

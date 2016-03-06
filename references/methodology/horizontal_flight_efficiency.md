@@ -29,8 +29,10 @@ independent model of the Horizontal Flight Efficiency Indicators – KEP and KEA
 
 The indicator is used as part of the performance monitoring and reporting under:
 
-* SES: IR691/2010 and IR390/2013; and
+* SES: IR691/2010 {% cite eu:691/2010 --file legislation %} and IR390/2013
+  {% cite eu:390/2013 --file legislation %}; and
 * EUROCONTROL: performance review reporting.
+
 
 
 
@@ -114,7 +116,7 @@ These key performance indicators are also defined in the Implementing Regulation
 
 * Used in
   * SES (IR691/2010 & IR390/2013): Annual Performance Report.
-  * SES eDashboard
+  * SES eDashboard {% cite prb:dashboardRP1 %} {% cite prb:dashboardRP2 %}
   * EUROCONTROL: Performance Review Report
 
 
@@ -569,4 +571,9 @@ Table 4: General location of origin, destination and en-route end-points
    
    When calculating the annual indicator the values for the ten best days and
    the ten worst days are excluded from the computation.
+
+
+# References
+
+{% bibliography --cited_in_order %}
 
