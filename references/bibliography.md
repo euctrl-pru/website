@@ -11,7 +11,7 @@ title: Referenced material and Publications
 
 ## Performance and Aviation
 
-{% bibliography %}
+{% bibliography --file aviation %}
 
 ## Statistics, Data Visualization et al.
 

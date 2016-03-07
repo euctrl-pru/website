@@ -1,0 +1,27 @@
+---
+layout: graph
+title: Safety
+excerpt: Performance Review Unit interactive dashboard on European Air Transport.
+keywords: performance, air transport, flights, europe, cost efficiency
+---
+
+<div class="row">
+    <div class="col-lg-6">
+        <h5>EUROCONTROL Area</h5>
+        <div id="crt_saf_smi_YY" style="width:400px; height:250px;"></div>
+        <br>
+        <div id="crt_saf_ri_YY" style="width:400px; height:250px;"></div>
+    </div>
+    <div class="col-lg-6 offset-10 text-justified">
+        <h5>EUROCONTROL Area</h5>
+        <div id="crt_saf_upa_YY" style="width:400px; height:250px;"></div>
+        <br>
+        <div id="crt_saf_aso_YY" style="width:400px; height:250px;"></div>
+    </div>
+</div>
+
+
+{% javascript crt_saf_aso_YY %}
+{% javascript crt_saf_ri_YY %}
+{% javascript crt_saf_smi_YY %}
+{% javascript crt_saf_upa_YY %}

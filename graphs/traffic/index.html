@@ -1,0 +1,45 @@
+---
+layout: graph
+title: Traffic
+excerpt: Traffic data visualization.
+keywords: visualization, graphs, dataviz, performance, air transport, flights, europe
+---
+
+<h3 id="ert_flt">Flights</h3>
+<div class="row">
+    <div class="col-lg-6">
+        <h5>EUROCONTROL Area</h5>
+        <br>
+        <div id="crt_flts_YY"></div>
+        <div id="crt_flts_MM"></div>
+    </div>
+    <div class="col-lg-6 offset-10 text-justified">
+        <h5>Flights by entity (Jan. 2016)</h5>
+        <div id="tbl_flts_YY"></div>
+    </div>
+</div>
+
+<h3 id="ert_sun">En-route service units (SU)</h3>
+<div class="row">
+    <div class="col-lg-6">
+        <h5>CRCO Area</h5>
+        <br>
+        <div id="crt_ertSU_YY"></div>
+        <div id="crt_ertSU_MM"></div>
+    </div>
+    <div class="col-lg-6 offset-10 text-justified">
+        <h5>En-route SU by charging zone (Jan.-Jan. 2016)</h5>
+        <div id="tbl_ertSU_YY"></div>
+    </div>
+</div>
+<p>For further details and drill down analysis, please refer to the <a
+href="http://www.eurocontrol.int/ServiceUnits/Dashboard/">Service Unit
+Dashboard</a>.</p>
+
+
+{% javascript crt_flts_YY %}
+{% javascript crt_flts_MM %}
+{% javascript tbl_flts_YY %}
+{% javascript crt_ertSU_YY %}
+{% javascript crt_ertSU_MM %}
+{% javascript tbl_ertSU_YY %}

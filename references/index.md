@@ -7,25 +7,10 @@ keywords: metadata, performance, data, statistics, economics, air transport, fli
 ---
 # {{ page.title }}
 
-<span class="glyphicon glyphicon-exclamation-sign"></span> = under construction.
+* [Datasets](/references/dataset/)
+* [Definitions](/references/definition/)
+* [ANSP's](/references/ANSP/)
+* [Methodology](/references/methodology/)
+* [Bibliography](/references/bibliography.html)
 
-* Definitions:
-	* [Index of Definitions](definition/)
-* Datasets:
-	- ACE operational data <span class="glyphicon glyphicon-exclamation-sign"></span>
-	- [Airport arrival ATFM delay](dataset/Airport_Arrival_ATFM_Delay.html)
-	- [Airport traffic (arrivals and departures)](dataset/Airport_Traffic.html)
-	- [Arrival Sequencing and Metering (ASMA) additional time](dataset/ASMA_Additional_Time.html)
-	- [ATC pre-departure delay (IATA 89)](dataset/ATC_Pre-Departure_Delay.html)
-	- [ATFM slot adherence](dataset/ATFM_Slot_Adherence.html)
-	- [En-route ATFM delay](dataset/En-Route_ATFM_Delay.html)
-	- [En-route IFR flights](dataset/En-Route_Traffic.html)
-	- [Traffic complexity score](dataset/Traffic_Complexity_Score.html)
-	- [Horizontal en-route flight efficiency](dataset/Horizontal_Flight_Efficiency.html)
-	- [Taxi-out additional time](dataset/Taxi-Out_Additional_Time.html)
-* Methodology <span class="glyphicon glyphicon-exclamation-sign"></span>
-* Entities:
-	* [Index of ANSPs](ANSP/)
-* [Bibliography](bibliography.html)
 
-[method]: <methodology/#> "Methodology"

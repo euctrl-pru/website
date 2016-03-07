@@ -12,6 +12,20 @@ body { padding-top: 60px; }
     box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
 }
 
+
+/****************** dropdown on hover and click on main menu **********************/
+/* from http://stackoverflow.com/a/12653488/963575 */
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+}
+/* for small devices */
+@media (min-width: 979px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+}
+/*********************************************************************************/
+
 /* from http://stackoverflow.com/a/28824157 */
 :target:before {
   content:"";

@@ -2,8 +2,8 @@
 title: PRU
 description: > # this means to ignore newlines until "url:"
   Performance monitoring data, analyses and visualizations for Eurocontrol's 41 Member States.
-url: "https://euctrl-pru.github.io" # the base hostname & protocol for your site
-canonical: https://euctrl-pru.github.io
+url: "https://ansperformance.eu" # the base hostname & protocol for your site
+canonical: https://ansperformance.eu
 dev: false
 media: media
 # category-list: [meta-definition] # 'meta-definition' is used for auto index metadata defs
@@ -54,23 +54,19 @@ kramdown:
   hard_wrap: false
 
 scholar:
+  style: chicago-author-date
   locale: en
-
   repository: references/library/
   source: references
   bibliography: references.bib
   bibliography_template: bib
-
   replace_strings: true
   join_strings:    true
-
   use_raw_bibtex_entry: false
   bibtex_filters:
   - latex
-
   sort_by: year,month
   order: descending
-
   query: "@*"
 
 # Global configs

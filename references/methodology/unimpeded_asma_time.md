@@ -11,11 +11,19 @@ keywords: asma, airport, metrics, metadata, performance, data, statistics, econo
 ## Introduction
 
 The actual time spent by a flight between its last entry in the
-[ASMA](/references/definition/asma.html) (Entry-time at 40 NM upstream) and the
-actual landing time (ALDT) is denoted *ASMA transit time*.
+[ASMA](/references/definition/asma.html) (Entry-time at 40 NM upstream -
+$$A_{LET}$$) and the actual landing time
+([$$A_{ALDT}$$](/references/definition/aldt.html)) is denoted
+*[ASMA transit time](/references/definition/asma_transit_time.html)*
+($$A_{TT}$$).
 
-The *unimpeded ASMA time* is the ASMA transit time in non congested conditions
-at arrival airports. The unimpeded ASMA time is used in the calculation of the
+$$
+A_{TT} = A_{LET} - A_{ALDT}
+$$
+
+The *[unimpeded ASMA time](/references/definition/unimpeded_asma_time.html)* is the
+ASMA transit time in non congested conditions at arrival airports.
+The unimpeded ASMA time is used in the calculation of the
 [Arrival sequencing and metering area (ASMA) additional time](/references/definition/additional_asma_time.html).
 
 This technical note describes the methodology used in order to calculate the
@@ -93,7 +101,7 @@ The following input data are required in order to calculate the actual ASMA tran
 
 | Acronym | Description | Source |
 |---------|-------------|--------|
-| ASMA entry-point	| Date-time + bearing from airport reference point (long. & lat.) | Actual trajectory from [http://atmlexicon.eurocontrol.int/lexicon/en/index.php/CPR Correlated Position Report(CPR)] provided by NM |
+| ASMA entry-point	| Date-time + bearing from airport reference point (long. & lat.) | Actual trajectory from [Correlated Position Report (CPR)](http://atmlexicon.eurocontrol.int/lexicon/en/index.php/CPR) provided by NM |
 | Aircraft type	| Aircraft ICAO designator | Network Manager |
 | ALDT 	| ‘Actual landing time’ (ALDT) means the actual date and time when the aircraft has landed (touch down). | Airport  data |
 | Arrival runway designator | ICAO designator of the runway used for landing (e.g. 10L). | Airport  data |
@@ -164,7 +172,7 @@ Unimpeded ASMA times are calculated in five steps:
 
 1. Identification of the unimpeded flights
    For each triplet (arrival runway, aircraft class, ASMA sector):
-   * Selection of flights with a congestion index <= 0.5 * Saturation level
+   * Selection of flights with a $${congestion\ index} <= 0.5 * {saturation\ level}$$
 
 1. Computation of the unimpeded time
    For each triplet (arrival runway, aircraft class, ASMA sector):
@@ -200,14 +208,14 @@ The following checks are performed to test the validity of the results:
 
 {% image check1.jpg alt="Distribution of residual errors" %}
 
-* *Evolution of the additional ASMA time with the congestion level*
+* Evolution of the additional ASMA time with the congestion level*
   In order to be able to consolidate in a single graph for a given airport with
   different triplet (arrival runway, aircraft class, ASMA sector) and different
   saturation levels, the data has to be normalised.
 
-  For this reason a congestion index is defined as 
+  For this reason a $$congestion index$$ is defined as 
 
-  $$ Congestion index  = 100 * Congestion level / saturation level $$
+  $$ {congestion\ index}  = 100 * \frac{congestion\ level}{saturation\ level} $$
 
   A value of 100 of the congestion index corresponds to a saturation level
   independent of arrival runway and ASMA Sector.
