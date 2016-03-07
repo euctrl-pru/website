@@ -8,7 +8,7 @@ keywords: metadata, performance, data, statistics, economics, air transport, fli
 ---
 # {{ page.title }}
 
-Code 89 (alpha AM) is one of IATA's delay codes {% cite wiki:iatadelaycodes iata:delaycodes %}.
+Code 89 (alpha AM) is one of IATA's delay codes {% cite wiki:iatadelaycodes iata:delaycodes --file aviation %}.
 It is specified as follows:
 
 | Code | Alpha | Short description | Further info |
@@ -18,4 +18,4 @@ It is specified as follows:
 
 ## References
 
-{% bibliography --cited_in_order %}
+{% bibliography --file aviation --cited_in_order %}

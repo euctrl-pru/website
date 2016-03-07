@@ -44,7 +44,7 @@ The indicator is defined as the ratio of the duration of speed interactions to t
 total duration of all interactions.
 
 More information on the methodologies used for the computation of the complexity score
-see {% cite complexitymetrics %} in the References.
+see {% cite complexitymetrics --file aviation %} in the References.
 
 ## Column naming and types
 
@@ -83,4 +83,4 @@ $$
 
 ## References
 
-{% bibliography --cited %}
+{% bibliography --cited_in_order --file aviation %}

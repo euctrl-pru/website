@@ -1,6 +1,4 @@
 ---
 ---
-{{ entry.author }}. <i>{% if entry.url %}<a href='{{ entry.url }}'>{{ entry.title }}</a>{% else %}{{ entry.title }}{% endif %}</i>.
-{% if entry.booktitle %}In {{ entry.booktitle }}. {% else %}{% if entry.journal %}In {{ entry.journal }} {% if entry.volume %}volume {{entry.volume}}{% endif %}. {% endif %}{% endif %} {% if entry.pages %}pages {{ entry.pages }},{% endif %}{% if entry.publisher %} {{ entry.publisher }},{% endif %} {{ entry.year }}.
-
+{{ reference }}{% if links.pdf %} <a href='{{ links.pdf }}'>PDF</a>.{% endif %}
 {% if entry.abstract %}<p><small>Abstract: {{ entry.abstract }}</small></p>{% endif %}

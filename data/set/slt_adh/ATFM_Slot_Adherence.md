@@ -9,21 +9,26 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 
 ## Data description
 
-ATFM departure slots are allocated centrally by the European Network Manager upon the request of the local
-Flow Management Position (FMP), when an imbalance between demand and capacity is foreseen at airports and/or
-en-route. The purpose of such regulation is to hold aircraft on the ground.
+[ATFM departure slots](/references/definition/departure_slot.html) are allocated
+centrally by the European Network Manager upon the request of the local Flow
+Management Position ([FMP](/references/definition/fmp.html)), when an imbalance
+between demand and capacity is foreseen at airports and/or en-route. The purpose
+of such regulation is to hold aircraft on the ground.
 
-An ATFM slot tolerance window is available to ATC to sequence departures.
+An [ATFM slot tolerance window](/references/definition/slot_tolerance_window.html)
+is available to ATC to sequence departures.
 The standard slot tolerance window is [-5 minutes, +10 minutes].
-ATC at the departure airport has a joint responsibility with aircraft operators to ensure that flights departure
-within the allocated ATFM slot tolerance window in order to optimise traffic flow. ATFM departure slot adherence,
-simply named ATFM slot adherence hereafter, measures the share of take-offs inside the slot tolerance window of
-[-5 minutes, +10 minutes].
+ATC at the departure airport has a joint responsibility with aircraft operators
+to ensure that flights departure within the allocated ATFM slot tolerance window
+in order to optimise traffic flow. ATFM departure slot adherence,
+simply named ATFM slot adherence hereafter, measures the share of take-offs
+inside the slot tolerance window of [-5 minutes, +10 minutes].
 
-ATFM slot adherence monitoring is a pre-requisite to fine tune traffic predictions at the departure,
-en-route airspace and at the destination airports.
-The higher the number of regulated departing aircraft inside the assigned ATFM standard window,
-the more accurate the predicted traffic and associated down-stream ATFM measures.
+ATFM slot adherence monitoring is a pre-requisite to fine tune traffic
+predictions at the departure, en-route airspace and at the destination airports.
+The higher the number of regulated departing aircraft inside the assigned ATFM
+standard window, the more accurate the predicted traffic and associated
+down-stream ATFM measures. 
 
 
 ## Column naming and types

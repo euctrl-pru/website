@@ -56,14 +56,13 @@ kramdown:
 scholar:
   style: chicago-author-date
   locale: en
-  repository: references/library/
   source: references
-  bibliography: references.bib
+  repository: references/library
   bibliography_template: bib
   replace_strings: true
   join_strings:    true
-  use_raw_bibtex_entry: false
   bibtex_filters:
+  - href
   - latex
   sort_by: year,month
   order: descending

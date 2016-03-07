@@ -8,16 +8,19 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 # {{ page.title }}
 
 ## Data description
-The additional ASMA time is a proxy for the average arrival runway queuing time on the inbound
-traffic flow, during congestion periods at airports.
+The [additional ASMA time](/references/definition/additional_asma_time/html) is
+a proxy for the average arrival runway queuing time on the inbound traffic flow,
+during congestion periods at airports.
 
-It is the difference between the actual ASMA time of a flight and a statistically determined
-unimpeded ASMA time based on ASMA times in periods of low traffic demand.
+It is the difference between the actual [ASMA](/references/definition/asma.html)
+time of a flight and a statistically determined
+[unimpeded ASMA time](/references/definition/unimpeded_asma_time.html) based on
+ASMA times in periods of low traffic demand.
 
-When monitoring ASMA performance at airports, it is important to note that the goal
-is not to reduce ASMA time to the unimpeded reference time - as this could negatively impact
-on runway throughput - but rather to reduce additional ASMA time and associated fuel burn
-to the necessary minimum.
+When monitoring ASMA performance at airports, it is important to note that the
+goal is not to reduce ASMA time to the unimpeded reference time - as this could
+negatively impact on runway throughput - but rather to reduce additional ASMA
+time and associated fuel burn to the necessary minimum.
 
 ## Column naming and types
 

@@ -9,23 +9,31 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 
 ## Data description
 
-The measure provides an indication of ATFM delays on the ground due to constraints at airports.
+The *Airport Arrival ATFM Delay* provides an indication of
+[ATFM delays](/references/definition/atfm_delay.html) on the ground due to
+constraints at airports.
 
-In Europe, when traffic demand is anticipated to exceed the available capacity in en route centres
-or at airports, Air Traffic Control (ATC) units may request the local Flow Management Position (FMP)
-to instigate an Air Traffic Flow Management (ATFM) measure, or regulation.
-Aircraft expected to arrive during a period of congestion are given Air Traffic Flow Management delay
-at their departure airport, under the authority of the Network Manager, in order to regulate the flow
-of traffic into the constrained downstream en route sector or airport, thus ensuring safety.
-The resulting ATFM delays are calculated as the difference between the estimated take-off time
-calculated from the filed flight plan including updates and the calculated take-off time
-allocated by the central unit of ATFM.
-The reason for the regulation is indicated by the responsible Flow Management Position (FMP).
+In Europe, when traffic demand is anticipated to exceed the available capacity
+in en route centres or at airports, Air Traffic Control
+([ATC](/references/definition/atc.html)) units may request
+the local Flow Management Position ([FMP](/references/defnition/fmp.html)) to
+instigate an Air Traffic Flow Management
+([ATFM](/references/definition/atfm.html)) measure, or
+[regulation](/references/definition/regulation.html).
+Aircraft expected to arrive during a period of congestion are given ATFM delay
+at their departure airport, under the authority of the
+Network Manager, in order to regulate the flow of traffic into the constrained
+downstream en route sector or airport, thus ensuring safety.
+
+The resulting ATFM delays are calculated as the difference between the estimated
+take-off time calculated from the filed flight plan including updates and the
+calculated take-off time allocated by the central unit of ATFM.
+The reason for the regulation is indicated by the responsible FMP.
 The delay is attributed to the most constraining ATC unit.
 
-The calculation of Airport arrival ATFM delay is based on a well established and commonly
-accepted algorithm and has been in use as a commonly agreed proxy for airport capacity
-shortfalls since 2009.
+The calculation of Airport arrival ATFM delay is based on a well established and
+commonly accepted algorithm and has been in use as a commonly agreed proxy for
+airport capacity shortfalls since 2009.
 
 ## Column naming and types
 

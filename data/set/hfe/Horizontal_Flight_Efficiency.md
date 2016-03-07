@@ -28,20 +28,27 @@ width: 7em;
 Horizontal en-route flight efficiency compares the length of actual or planned flight trajectories
 to the corresponding “achieved” distance.
 
-The achieved distance apportions the Great Circle Distance (GCD) between two points within
-the European airspace (reference area).
-If the origin/ destination airport is located outside of European airspace, the entry/exit point
-into the reference area is used for the calculation.
+The achieved distance apportions the
+[Great Circle Distance](https://en.wikipedia.org/wiki/Great-circle_distance)
+between two points within the European airspace (reference area).
+If the origin/destination airport is located outside of European airspace, the
+entry/exit point into the reference area is used for the calculation.
 
-The planned trajectory is derived from the flight plans submitted by airspace users to the Network Manager.
-The actual flown trajectory is based on processed radar track data (Correlated Position Reports)
-submitted by ANSPs to the EUROCONTROL Enhanced Tactical Flow Management System (ETFMS).
+The planned trajectory is derived from the flight plans submitted by airspace
+users to the Network Manager.
+The actual flown trajectory is based on processed radar track data (a.k.a. correlated
+position reports or [CPR](/references/definition/cpr.html)) submitted by ANSPs
+to the EUROCONTROL Enhanced Tactical Flow 
+Management System ([ETFMS](/references/definition/etfms.html)).
 
-The methodology is fully consistent with the SES Performance Scheme {% cite pru:hfe %}.
+The methodology is fully consistent with the SES Performance Scheme
+[ see {% cite pru:hfe --file aviation %}].
+
 
 ## FAB definitions
 
-The FAB level information is based on an aggregation of Flight Information Regions (FIRs) (ENTITY_TYPE = FAB (FIR)).
+The FAB level information is based on an aggregation of Flight Information
+Regions (FIRs) (ENTITY_TYPE = FAB (FIR)).
 
 | FAB Name         | FIRs included                                                                                                                                  |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -79,22 +86,25 @@ The FAB level information is based on an aggregation of Flight Information Regio
 
 
 ### Calculated Field(s)
-The indicator is calculated as the ratio of the two sums (length of trajectories and achieved distances),
-over all flights considered:
+The indicator is calculated as the ratio of the two sums (length of trajectories
+and achieved distances), over all flights considered:
 
 $$
 {HFE}_j = ( \frac{\sum_{f,p} L_{fjp}}{\sum_{f,p} H_{fjp}} - 1 ) %
 $$
 
 where $$L$$ is the length of the trajectory and $$H$$ is the achieved distance;
-the index $$f$$ is the flight, $$j$$ is the airspace and $$p$$ is the portion considered.
+the index $$f$$ is the flight, $$j$$ is the airspace and $$p$$ is the portion
+considered.
 
-From the table above $$L$$ is $$DIST\_FLOWN\_KM$$, while $$H$$ is $$DIST\_ACHIEVED\_KM$$.
+From the table above $$L$$ is $$DIST\_FLOWN\_KM$$, while $$H$$ is
+$$DIST\_ACHIEVED\_KM$$.
 
 
 <br>
 <br>
-The map below shows all Eurocontrol Member States FIRs and the nine FABs relevant for **SES RP2**.
+The map below shows all Eurocontrol Member States FIRs and the nine FABs
+relevant for **SES RP2**.
 
 Click to zoom in/out. Hoover with the mouse to get further information.
 
@@ -139,4 +149,4 @@ Click to zoom in/out. Hoover with the mouse to get further information.
 
 ## References
 
-{% bibliography --cited_in_order %}
+{% bibliography --file aviation --cited_in_order %}

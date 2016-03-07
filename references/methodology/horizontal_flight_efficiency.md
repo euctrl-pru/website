@@ -116,7 +116,7 @@ These key performance indicators are also defined in the Implementing Regulation
 
 * Used in
   * SES (IR691/2010 & IR390/2013): Annual Performance Report.
-  * SES eDashboard {% cite prb:dashboardRP1 %} {% cite prb:dashboardRP2 %}
+  * SES eDashboard [ RP1 {% cite prb:dashboardRP1 --file aviation %} and RP2 {% cite prb:dashboardRP2 --file aviation %}]
   * EUROCONTROL: Performance Review Report
 
 
@@ -575,5 +575,5 @@ Table 4: General location of origin, destination and en-route end-points
 
 # References
 
-{% bibliography --cited_in_order %}
+{% bibliography --cited_in_order --file aviation --file legislation %}
 

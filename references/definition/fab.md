@@ -22,11 +22,18 @@ width: 20em;
 
 # {{ page.title }}
 
-The <a href="http://www.eurocontrol.int/dossiers/fabs" target="_blank">FAB</a> concept was developed in the 1st legislative package of the Single European Sky (SES I) as one of the main means for reducing airspace fragmentation. The 2nd legislative package (SES II) tackled the creation of FABs in terms of service provision, in addition to the airspace organisation issues.
+The <a href="http://www.eurocontrol.int/dossiers/fabs" target="_blank">FAB</a>
+concept was developed in the 1st legislative package of the Single European Sky
+(SES I) as one of the main means for reducing airspace fragmentation. The 2nd
+legislative package (SES II) tackled the creation of FABs in terms of service
+provision, in addition to the airspace organisation issues. 
 
-The twofold objective of the legislative packagers is to optimise air traffic flows and increase the efficiency of air traffic services in Europe.
+The twofold objective of the legislative packagers is to optimise air traffic
+flows and increase the efficiency of air traffic services in Europe.
 
-SES II lays down a definite commitment date for the Member States to improve performance by implementing FABs, i.e. 4 December 2012. Nine FAB initiatives have been taken:
+SES II lays down a definite commitment date for the Member States to improve
+performance by implementing FABs, i.e. 4 December 2012. Nine FAB initiatives
+have been taken: 
 
 | Short name     | Name               | Countries                                                                                    |
 |----------------|--------------------|----------------------------------------------------------------------------------------------|

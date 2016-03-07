@@ -8,8 +8,11 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 # {{ page.title }}
 
 ## Data description
-The ATC pre-departure delay is a proxy for ATC induced delays at the departure
-stand to avoid queuing at the departure runway.
+
+The
+[ATC pre-departure delay](/references/definition/atc_pre-departure_delay.html)
+is a proxy for ATC induced delays at the departure stand to avoid queuing at the
+departure runway.
 
 The data is based on [IATA delay code 89](/references/definition/IATA_code_89.html)
 [see {% cite iata:delaycodes --file aviation %}] which, besides delays caused by
