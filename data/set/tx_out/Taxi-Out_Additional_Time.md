@@ -9,16 +9,19 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 
 ## Data description
 
-The additional taxi-out time is a proxy for the average departure runway queuing time on the
-outbound traffic flow during congestion periods at airports.
+The [additional taxi-out time](/references/definition/additional_taxi-out_time.html)
+is a proxy for the average departure runway
+queuing time on the outbound traffic flow during congestion periods at airports.
 
-It is the difference between the actual taxi-out time of a flight and a statistically determined
-unimpeded taxi-out time based on taxi-out times in periods of low traffic demand.
+It is the difference between the actual taxi-out time of a flight and a
+statistically determined
+[unimpeded taxi-out time](/references/definition/unimpeded_taxi-out_time.html)
+based on taxi-out times in periods of low traffic demand.
 
-When monitoring taxi-out performance at airports, it is important to note that the goal
-is not to reduce taxi time to the unimpeded reference time - as this could negatively impact
-on runway throughput - but rather to reduce additional taxi-out time and associated fuel burn
-to the necessary minimum.
+When monitoring taxi-out performance at airports, it is important to note that
+the goal is not to reduce taxi time to the unimpeded reference time - as this
+could negatively impact on runway throughput - but rather to reduce additional
+taxi-out time and associated fuel burn to the necessary minimum.
 
 ## Column naming and types
 
