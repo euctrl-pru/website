@@ -76,7 +76,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - references.bib
+  - aviation.bib
   - legislation.bib
   - dataviz.bib
   - tmp
