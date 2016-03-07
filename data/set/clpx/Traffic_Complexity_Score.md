@@ -3,8 +3,10 @@ layout: default
 title: Traffic Complexity Score Dataset
 permalink: /references/dataset/Traffic_Complexity_Score.html
 excerpt: Performance Review Unit MetaData Definitions.
-keywords: metadata, dataset, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
+keywords: "metadata, dataset, performance, data, statistics, economics, air transport, flights, europe, cost efficiency"
+published: true
 ---
+
 # {{ page.title }}
 
 ## Data description
@@ -32,16 +34,19 @@ as the sum of the three indicators.
 the potential interactions between aircraft on different headings.
 The indicator is defined as the ratio of the duration of horizontal interactions to the total
 duration of all interactions.
+{% image cplx_horizontal.png alt="Distribution of residual errors" %}
 
 **Vertical interactions index:** A measure of the complexity arising from aircraft in vertical
 evolution based on the potential interactions between climbing, cruising and descending aircraft.
 The indicator is defined as the ratio of the duration of vertical interactions to the total
 duration of all interactions.
+{% image cplx_vertical.png alt="Distribution of residual errors" %}
 
 **Speed interactions indicator:** A measure of the complexity arising from the aircraft mix
 based on the potential interactions between aircraft of different speeds.
 The indicator is defined as the ratio of the duration of speed interactions to the
 total duration of all interactions.
+{% image cplx_speed.png alt="Distribution of residual errors" %}
 
 More information on the methodologies used for the computation of the complexity score
 see {% cite complexitymetrics --file aviation %} in the References.
