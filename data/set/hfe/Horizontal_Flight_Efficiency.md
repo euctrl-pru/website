@@ -42,7 +42,7 @@ to the EUROCONTROL Enhanced Tactical Flow
 Management System ([ETFMS](/references/definition/etfms.html)).
 
 The methodology is fully consistent with the SES Performance Scheme
-[ see {% cite pru:hfe --file aviation %}].
+[ see {% cite pru-hfe --file aviation %}].
 
 
 ## FAB definitions
