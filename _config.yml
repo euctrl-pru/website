@@ -2,8 +2,8 @@
 title: PRU
 description: > # this means to ignore newlines until "url:"
   Performance monitoring data, analyses and visualizations for Eurocontrol's 41 Member States.
-url: "https://ansperformance.eu" # the base hostname & protocol for your site
-canonical: https://ansperformance.eu
+url: "http://ansperformance.eu" # the base hostname & protocol for your site; NO https if served by github pages!!!
+canonical: http://ansperformance.eu  # NO https if served by github pages!!!
 dev: false
 media: media
 # category-list: [meta-definition] # 'meta-definition' is used for auto index metadata defs
