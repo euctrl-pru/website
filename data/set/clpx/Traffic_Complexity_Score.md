@@ -3,7 +3,7 @@ layout: default
 title: Traffic Complexity Score Dataset
 permalink: /references/dataset/Traffic_Complexity_Score.html
 excerpt: Performance Review Unit MetaData Definitions.
-keywords: "metadata, dataset, performance, data, statistics, economics, air transport, flights, europe, cost efficiency"
+keywords: metadata, dataset, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
 published: true
 ---
 
