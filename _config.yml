@@ -80,6 +80,7 @@ exclude:
   - legislation.bib
   - dataviz.bib
   - tmp
+  - auto
   - dashboard/REAME.md
   - dashboard/Makefile
   - dashboard
