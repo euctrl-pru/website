@@ -83,7 +83,7 @@ select
 ,nvl(DLY_APT_W,0) as DLY_APT_ARR_W_1
 ,nvl(DLY_APT_NA,0) as DLY_APT_ARR_NA_1
 from ARR_FLTS t left join APT_ATFM_DLY d on (t.flt_date = d.flt_date and t.code = d.airport_code)
- where t.flt_date>='01-JAN-2014' and t.flt_date<'01-FEB-2016'
+ where t.flt_date>='01-JAN-2014' and t.flt_date<'01-MAR-2016'
  order by 1,2,3,4,5;
 
 spool off;
