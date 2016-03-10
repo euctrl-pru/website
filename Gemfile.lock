@@ -36,7 +36,7 @@ GEM
     fast-stemmer (1.0.2)
     fastimage (1.9.0)
       addressable (~> 2.3.5)
-    ffi (1.9.10-x64-mingw32)
+    ffi (1.9.10)
     hike (1.2.3)
     html-proofer (2.6.4)
       activesupport (~> 4.2)
@@ -102,6 +102,8 @@ GEM
     multi_json (1.11.2)
     multipart-post (2.0.0)
     namae (0.10.1)
+    nokogiri (1.6.7.2)
+      mini_portile2 (~> 2.0.0.rc2)
     nokogiri (1.6.7.2-x64-mingw32)
       mini_portile2 (~> 2.0.0.rc2)
     octokit (4.3.0)
@@ -149,6 +151,7 @@ GEM
     yell (2.0.5)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
