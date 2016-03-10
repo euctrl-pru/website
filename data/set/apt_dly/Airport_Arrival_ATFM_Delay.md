@@ -16,7 +16,7 @@ constraints at airports.
 In Europe, when traffic demand is anticipated to exceed the available capacity
 in en route centres or at airports, Air Traffic Control
 ([ATC](/references/definition/atc.html)) units may request
-the local Flow Management Position ([FMP](/references/defnition/fmp.html)) to
+the local Flow Management Position ([FMP](/references/definition/fmp.html)) to
 instigate an Air Traffic Flow Management
 ([ATFM](/references/definition/atfm.html)) measure, or
 [regulation](/references/definition/regulation.html).
