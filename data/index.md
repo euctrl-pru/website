@@ -14,6 +14,9 @@ dates:
   hfe:
     beg: Jan 2014
     end: Feb 2016
+  hfe_kpi:
+    beg: Dec 2014
+    end: Feb 2016
   apt_flt:
     beg: Jan 2014
     end: Feb 2016
@@ -103,9 +106,9 @@ width: 8em;
 |    Data description                                                                                                                       |     Period                                                  |    Excel                          |    CSV                                        |    Metadata                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|-----------------------------------|-----------------------------------------------|----------------------------------|
 | En-route IFR flights<br><small>Daily IFR traffic by entity</small>                                                                        | {{ page.dates.ert_flt.beg }} - {{ page.dates.ert_flt.end }} | [{{ page.dwnld_i }}][ERT-FLTxlsx] |                                               | [{{ page.info_i }}][ERT-FLTmeta] |
-| En-route ATFM delays<br><small>Daily IFR traffic and en-route ATFM delay by entity and delay cause</small>                                | {{ page.dates.ert_dly.beg }} - {{ page.dates.ert_dly.end }} | [{{ page.dwnld_i }}][ERT-DLYxlsx] |                                               | [{{ page.info_i }}][ERT-DLYmeta] |
-| Horizontal en-route flight efficiency<br><small>Daily en-route flight efficiency data by entity (actual trajectory & flight plan)</small> | {{ page.dates.hfe.beg }} - {{ page.dates.hfe.end }}         | [{{ page.dwnld_i }}][HFExlsx]     | [{{ page.fltr_i }} {{ page.ndwk_i }}][HFEcsv] | [{{ page.info_i }}][HFEmeta]     |
-
+| En-route [ATFM delays](/references/definition/atfm_delay.html)<br><small>Daily IFR traffic and en-route ATFM delay by entity and delay cause</small>                                | {{ page.dates.ert_dly.beg }} - {{ page.dates.ert_dly.end }} | [{{ page.dwnld_i }}][ERT-DLYxlsx] |                                               | [{{ page.info_i }}][ERT-DLYmeta] |
+| [Horizontal en-route flight efficiency](/references/methodology/horizontal_flight_efficiency.html)<br><small>Daily en-route flight efficiency data by entity (actual trajectory & flight plan)</small> | {{ page.dates.hfe.beg }} - {{ page.dates.hfe.end }}         | [{{ page.dwnld_i }}][HFExlsx]     | [{{ page.fltr_i }} {{ page.ndwk_i }}][HFEcsv] | [{{ page.info_i }}][HFEmeta]     |
+| [Horizontal en-route flight efficiency](/references/methodology/horizontal_flight_efficiency.html) ([KEP](/references/definition/kep.html)/[KEA](/references/definition/kea.html))<br><small>Monthly KEP and KEA by entity</small>                                | {{ page.dates.hfe_kpi.beg }} - {{ page.dates.hfe_kpi.end }} | [{{ page.dwnld_i }}][HFE-KPIxlsx] |                                               | [{{ page.info_i }}][HFE-KPImeta] |
 
 [ERT-FLTxlsx]: <{{site.url}}/data/set/ert_flt/En-Route_Traffic.xlsm> "ERT-FLT (Excel)"
 [ERT-FLTcsv]: <{{site.url}}/404.html> "ERT-FLT (CSV)"
@@ -119,16 +122,19 @@ width: 8em;
 [HFEcsv]: <{{site.url}}/data/set/hfe/horizontal_flight_efficiency.html> "HFE (CSV)"
 [HFEmeta]: <{{site.url}}/references/dataset/Horizontal_Flight_Efficiency.html> "HFE (Meta)"
 
+[HFE-KPIxlsx]: <{{site.url}}/data/set/hfe_kpi/Horizontal_Flight_Efficiency_KPI.xlsm> "HFE-KPI (Excel)"
+[HFE-KPIcsv]: <{{site.url}}/404.html> "HFE-KPI (CSV)"
+[HFE-KPImeta]: <{{site.url}}/references/dataset/Horizontal_Flight_Efficiency_KPI.html> "HFE-KPI (Meta)"
 
 ### Airport/terminal
 
 | Data description                                                                                                              | Period                                                       | Excel                             | CSV                                               | Metadata                         |
 |-------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|-----------------------------------|---------------------------------------------------|----------------------------------|
 | Airport traffic<br><small>Daily IFR arrivals and departures by airport</small>                                                | {{ page.dates.apt_flt.beg }} - {{ page.dates.apt_flt.end }}  | [{{ page.dwnld_i }}][APT-FLTxlsx] |                                                   | [{{ page.info_i }}][APT-FLTmeta] |
-| Airport arrival ATFM delays<br><small>Daily IFR arrivals and airport arrival ATFM delay by airport and delay category</small> | {{ page.dates.apt_dly.beg }} - {{ page.dates.apt_dly.end }}  | [{{ page.dwnld_i }}][APT-DLYxlsx] | [{{ page.fltr_i }} {{ page.ndwk_i }}][APT-DLYcsv] | [{{ page.info_i }}][APT-DLYmeta] |
-| Arrival Sequencing and Metering (ASMA) additional time<br><small>Monthly ASMA additional and unimpeded time</small>           | {{ page.dates.asma.beg }} - {{ page.dates.asma.end }}        | [{{ page.dwnld_i }}][ASMAxlsx]    |                                                   | [{{ page.info_i }}][ASMAmeta]    |
-| Taxi-out additional time<br><small>Monthly taxi out additional and unimpeded time</small>                                     | {{ page.dates.tx_out.beg }} - {{ page.dates.tx_out.end }}    | [{{ page.dwnld_i }}][TX-OUTxlsx]  |                                                   | [{{ page.info_i }}][TX-OUTmeta]  |
-| ATC pre-departure delays (IATA code 89)<br><small>Daily ATC pre-departure delay (IATA code 89) by airport</small>             | {{ page.dates.atc_pre.beg }} - {{ page.dates.atc_pre.end }}  | [{{ page.dwnld_i }}][ATC-PRExlsx] |                                                   | [{{ page.info_i }}][ATC-PREmeta] |
+| Airport arrival [ATFM delays](/references/definition/atfm_delay.html)<br><small>Daily IFR arrivals and airport arrival ATFM delay by airport and delay category</small> | {{ page.dates.apt_dly.beg }} - {{ page.dates.apt_dly.end }}  | [{{ page.dwnld_i }}][APT-DLYxlsx] | [{{ page.fltr_i }} {{ page.ndwk_i }}][APT-DLYcsv] | [{{ page.info_i }}][APT-DLYmeta] |
+| [Arrival Sequencing and Metering (ASMA) additional time](/references/definition/additional_asma_time.html)<br><small>Monthly ASMA additional and unimpeded time</small>           | {{ page.dates.asma.beg }} - {{ page.dates.asma.end }}        | [{{ page.dwnld_i }}][ASMAxlsx]    |                                                   | [{{ page.info_i }}][ASMAmeta]    |
+| [Taxi-out additional time](/references/definition/additional_taxi-out_time.html)<br><small>Monthly taxi out additional and unimpeded time</small>                                     | {{ page.dates.tx_out.beg }} - {{ page.dates.tx_out.end }}    | [{{ page.dwnld_i }}][TX-OUTxlsx]  |                                                   | [{{ page.info_i }}][TX-OUTmeta]  |
+| [ATC pre-departure delays](/references/definition/atc_pre-departure_delay.html)<br><small>Daily ATC pre-departure delay by airport</small>             | {{ page.dates.atc_pre.beg }} - {{ page.dates.atc_pre.end }}  | [{{ page.dwnld_i }}][ATC-PRExlsx] |                                                   | [{{ page.info_i }}][ATC-PREmeta] |
 | ATFM slot adherence<br><small>Daily ATFM slot adherence by airport</small>                                                    | {{ page.dates.slt_adh.beg }} - {{ page.dates.slt_adh.end }}  | [{{ page.dwnld_i }}][SLT-ADHxlsx] |                                                   | [{{ page.info_i }}][SLT-ADHmeta] |
 
 

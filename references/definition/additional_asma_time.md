@@ -43,4 +43,4 @@ $$c$$ at that airport with their probability of occurrence.
 
 ## See also
 
-[The Unimpede ASMA Time - Technical Note](/references/methodology/unimpeded_asma_time.html)
+[Additional ASMA time methodology](/references/methodology/unimpeded_asma_time.html)

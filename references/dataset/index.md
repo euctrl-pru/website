@@ -22,6 +22,7 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 - [En-route IFR flights](En-Route_Traffic.html)
 - [Traffic complexity score](Traffic_Complexity_Score.html)
 - [Horizontal en-route flight efficiency](Horizontal_Flight_Efficiency.html)
+- [Horizontal en-route flight efficiency (KEP/KEA)](Horizontal_Flight_Efficiency_KPI.html)
 - [Taxi-out additional time](Taxi-Out_Additional_Time.html)
 
 

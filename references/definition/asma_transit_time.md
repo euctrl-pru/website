@@ -11,3 +11,7 @@ The actual time spent by a flight between its last entry in the ASMA cylinder (E
 
 ## Unit of Measurement
 Minute.
+
+## See also
+
+[Additional ASMA time methodology](/references/methodology/unimpeded_asma_time.html)
