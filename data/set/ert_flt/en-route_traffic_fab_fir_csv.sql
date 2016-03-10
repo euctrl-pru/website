@@ -30,7 +30,7 @@ SUM(TDM_ERT_NA) as DLY_ERT_NA_1
 from PRUDEV.V_PRU_FAC_TDC_DD
 where UNIT_PRU_TYPE = 'FAB_FIR' and
 unit_name NOT in ('BLUE MED FAB (+Albania)', 'FAB CE (SES RP1)', 'FAB CE')
-and ENTRY_DATE >= '1-JAN-2015' and ENTRY_DATE <'01-FEB-2016'
+and ENTRY_DATE >= '1-JAN-2015' and ENTRY_DATE <'01-MAR-2016'
 group by to_char(ENTRY_DATE,'YYYY'), unit_name;
 
 
