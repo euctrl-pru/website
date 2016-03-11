@@ -41,9 +41,78 @@ position reports or [CPR](/references/definition/cpr.html)) submitted by ANSPs
 to the EUROCONTROL Enhanced Tactical Flow 
 Management System ([ETFMS](/references/definition/etfms.html)).
 
-The methodology is fully consistent with the SES Performance Scheme
-[ see {% cite pru-hfe --file aviation %}].
+**[KEP](/references/definition/kep.html)** and
+**[KEA](/references/definition/kea.html)** are performance indicators measuring
+horizontal en-route flight inefficiency in flight plans (KEP) and in actual
+flown trajectories (KEA) over a period of 12 months.
+**Please note that the values are NOT monthly averages but the average over the entire 12 months period preceding the given END-DATE.**
 
+The **KEP** indicator is the horizontal flight efficiency calculated using the *last filed flight plans* to describe the
+trajectories, while **KEA** uses the *actual trajectories* generated via *radar data*.
+In order to smooth out the influence of unusual events, the ten best days
+and the ten worst days (for each measured area) are excluded from the computation.
+
+## Methodology
+
+[Horizontal en-route flight efficiency methodology](/references/methodology/horizontal_flight_efficiency.html)
+is fully consistent with the Single European Sky (SES) Performance Scheme
+[see {% cite pru-hfe --file aviation %}].
+
+
+## Column naming and types
+
+## META 
+
+{:.metatable}
+| Column name      | Data source     | Label            | Column description                                                                                | Example   |
+|------------------|-----------------|------------------|---------------------------------------------------------------------------------------------------|-----------|
+| YEAR             | Network Manager | YEAR             | Reference year                                                                                    | 2014      |
+| MONTH_NUM        | Network Manager | MONTH_NUM        | Month (numeric)                                                                                   | 9         |
+| MONTH_MON        | Network Manager | MONTH_MON        | Month (3-letter code)                                                                             | SEP       |
+| ENTRY_DATE       | Network Manager | ENTRY_DATE       | The entry date considered                                                                         | 06-Sep-14 |
+| ENTITY_NAME      | Network Manager | ENTITY_NAME      | Name of the entity to with the data refers                                                        | FABEC     |
+| ENTITY_TYPE      | Network Manager | ENTITY_TYPE      | Type of the entity                                                                                | FAB (FIR) |
+| MODEL_TYPE       | Network Manager | MODEL_TYPE       | The type of trajectory used for the calculation (CPF=actual, FTFM=flight plan)                    | FTFM      |
+| DIST_FLOWN_KM    | Network Manager | DIST_FLOWN_KM    | Sum of flown distances in kilometre                                                               | 8699586   |
+| DIST_DIRECT_KM   | Network Manager | DIST_DIRECT_KM   | Sum of direct flown distances in kilometre                                                        | 8405033   |
+| DIST_ACHIEVED_KM | Network Manager | DIST_ACHIEVED_KM | Sum of achieved distances in kilometre                                                            | 8255220   |
+| T10_RUN_12M      | Network Manager | T10_RUN_12M      | ‘B’ (‘W’) if the day is one of the ten best (worst) days for the entity in the previous 12 months | B         |
+| END_DATE         | Network Manager | END_DATE         | End date of the running 12 month  (T10_RUN_12M)                                                   | 42216     |
+| T10_YYYY         | Network Manager | T10_YYYY         | ‘B’ (‘W’) if the day is one of the best (worst) days for the entity in the calendar year (the number of days increases proportionally to reach 10 at the end of the year) | B         |
+
+
+## META KPI
+
+{:.metatable}
+| Column name    | Data source     | Label          | Column description                                                                                              | Example                                                                                                      |
+|----------------|-----------------|----------------|-----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| ENTITY_NAME    | Network Manager | ENTITY_NAME    | Name of the entity to with the data refers                                                                      | BLUE MED FAB                                                                                                 |
+| ENTITY_TYPE    | Network Manager | ENTITY_TYPE    | Type of the entity                                                                                              | FAB (FIR)                                                                                                    |
+| END_DATE       | Network Manager | END_DATE       | End date of the running 12 month                                                                                | 29-Feb-2016                                                                                                  |
+| INDICATOR_TYPE | Network Manager | INDICATOR_TYPE | The type of indicator                                                                                           | KEP                                                                                                          |
+| HFE_ALL        | Network Manager | HFE_ALL        | En-route flight efficiency for all days of the 12 month preceding the END_DATE in percent                       | 5.19                                                                                                         |
+| HFE_KPI        | Network Manager | HFE_KPI        | Key performance indicator (without 10 worst and 10 best days of the 12 month preceding the END_DATE) in percent | 5.19                                                                                                         |
+| EXCLUDED_LOW   | Network Manager | EXCLUDED_LOW   | Dates of the 10 worst days of the 12 month preceding the END_DATE                                               | 08-MAR-15, 15-MAR-15, 26-APR-15, 31-OCT-15, 01-NOV-15, 07-NOV-15, 14-NOV-15, 15-NOV-15, 25-DEC-15, 26-DEC-15 |
+| HFE_BEST_10    | Network Manager | HFE_BEST_10    | En-route flight efficiency for the 10 best days of the 12 month preceding the END_DATE in percent               | 4.50                                                                                                         |
+| EXCLUDED_HIGH  | Network Manager | EXCLUDED_HIGH  | Dates of the 10 best days of the 12 month preceding the END_DATE                                                | 27-MAR-15, 30-MAR-15, 01-APR-15, 08-APR-15, 09-APR-15, 23-SEP-15, 23-NOV-15, 25-NOV-15, 27-NOV-15, 26-JAN-16 |
+| HFE_WORST_10   | Network Manager | HFE_WORST_10   | En-route flight efficiency for the 10 worst days of the 12 month preceding the END_DATE in percent              | 6.07                                                                                                         |
+
+
+
+### Calculated Field(s)
+The indicator is calculated as the ratio of the two sums (length of trajectories
+and achieved distances), over all flights considered:
+
+$$
+{HFE}_j = ( \frac{\sum_{f,p} L_{fjp}}{\sum_{f,p} H_{fjp}} - 1 ) %
+$$
+
+where $$L$$ is the length of the trajectory and $$H$$ is the achieved distance;
+the index $$f$$ is the flight, $$j$$ is the airspace and $$p$$ is the portion
+considered.
+
+From the table above $$L$$ is $$DIST\_FLOWN\_KM$$, while $$H$$ is
+$$DIST\_ACHIEVED\_KM$$.
 
 ## FAB definitions
 
@@ -64,44 +133,6 @@ Regions (FIRs) (ENTITY_TYPE = FAB (FIR)).
 | SW FAB           | GCCCFIR, GCCCUIR, LECBFIR, LECBUIR, LECMFIR, LECMUIR, LPPCFIR                                                                                  |
 | UK-Ireland FAB   | EGPXFIR, EGPXUIR, EGTTFIR, EGTTUIR, EISNFIR, EISNUIR                                                                                           |
 
-
-## Column naming and types
-
-{:.metatable}
-| Column name      | Data source     | Label            | Column description                                                                                | Example   |
-|------------------|-----------------|------------------|---------------------------------------------------------------------------------------------------|-----------|
-| YEAR             | Network Manager | YEAR             | Reference year                                                                                    | 2014      |
-| MONTH_NUM        | Network Manager | MONTH_NUM        | Month (numeric)                                                                                   | 9         |
-| MONTH_MON        | Network Manager | MONTH_MON        | Month (3-letter code)                                                                             | SEP       |
-| ENTRY_DATE       | Network Manager | ENTRY_DATE       | The entry date considered                                                                         | 06-Sep-14 |
-| ENTITY_NAME      | Network Manager | ENTITY_NAME      | Name of the entity to with the data refers                                                        | FABEC     |
-| ENTITY_TYPE      | Network Manager | ENTITY_TYPE      | Type of the entity                                                                                | FAB (FIR) |
-| MODEL_TYPE       | Network Manager | MODEL_TYPE       | The type of trajectory used for the calculation (CPF=actual, FTFM=flight plan)                    | FTFM      |
-| DIST_FLOWN_KM    | Network Manager | DIST_FLOWN_KM    | Sum of flown distances in kilometre                                                               | 8699586   |
-| DIST_DIRECT_KM   | Network Manager | DIST_DIRECT_KM   | Sum of direct flown distances in kilometre                                                        | 8405033   |
-| DIST_ACHIEVED_KM | Network Manager | DIST_ACHIEVED_KM | Sum of achieved distances in kilometre                                                            | 8255220   |
-| T10_RUN_12M      | Network Manager | T10_RUN_12M      | ‘B’ (‘W’) if the day is one of the ten best (worst) days for the entity in the previous 12 months | B         |
-| END_DATE         | Network Manager | END_DATE         | End date of the running 12 month  (T10_RUN_12M)                                                   | 42216     |
-| T10_YYYY         | Network Manager | T10_YYYY         | ‘B’ (‘W’) if the day is one of the best (worst) days for the entity in the calendar year (the number of days increases proportionally to reach 10 at the end of the year) | B         |
-
-
-### Calculated Field(s)
-The indicator is calculated as the ratio of the two sums (length of trajectories
-and achieved distances), over all flights considered:
-
-$$
-{HFE}_j = ( \frac{\sum_{f,p} L_{fjp}}{\sum_{f,p} H_{fjp}} - 1 ) %
-$$
-
-where $$L$$ is the length of the trajectory and $$H$$ is the achieved distance;
-the index $$f$$ is the flight, $$j$$ is the airspace and $$p$$ is the portion
-considered.
-
-From the table above $$L$$ is $$DIST\_FLOWN\_KM$$, while $$H$$ is
-$$DIST\_ACHIEVED\_KM$$.
-
-
-<br>
 <br>
 The map below shows all Eurocontrol Member States FIRs and the nine FABs
 relevant for **SES RP2**.
