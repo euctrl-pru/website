@@ -61,6 +61,7 @@ is fully consistent with the Single European Sky (SES) Performance Scheme
 
 ## Column naming and types
 
+### HFE data
 
 {:.metatable}
 | Column name      | Data source     | Label            | Column description                                                                                | Example   |
@@ -76,8 +77,7 @@ is fully consistent with the Single European Sky (SES) Performance Scheme
 | DIST_DIRECT_KM   | Network Manager | DIST_DIRECT_KM   | Sum of direct flown distances in kilometre                                                        | 8405033   |
 | DIST_ACHIEVED_KM | Network Manager | DIST_ACHIEVED_KM | Sum of achieved distances in kilometre                                                            | 8255220   |
 
-<br>
-Data KPI
+### KEP/KEA KPI data
 
 | Column name    | Data source     | Label          | Column description                                                                                              | Example                                                                                                      |
 |----------------|-----------------|----------------|-----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
