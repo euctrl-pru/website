@@ -8,3 +8,4 @@ Gemfile.lock
 _site
 npm-debug.log
 .tern-port
+auto/
