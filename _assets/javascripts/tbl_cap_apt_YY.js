@@ -4,7 +4,7 @@
       var tbl_cap_apt_YY = new google.visualization.ChartWrapper({
          chartType: 'Table',
          containerId: 'tbl_cap_apt_YY',
-         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1gYIeqeWdcxd7mdXImchbppdI7QvZzp7ucfZdNJbBbyE/edit?usp=sharing&alt=json&sheet=APT_ATFM_STATE&range=A1:E216&headers=1',
+         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1gYIeqeWdcxd7mdXImchbppdI7QvZzp7ucfZdNJbBbyE/edit?usp=sharing&alt=json&sheet=APT_ATFM_STATE&range=A1:E226&headers=1',
          options: {
             //allowHtml: true,
             width: 550,
