@@ -61,7 +61,6 @@ is fully consistent with the Single European Sky (SES) Performance Scheme
 
 ## Column naming and types
 
-## META 
 
 {:.metatable}
 | Column name      | Data source     | Label            | Column description                                                                                | Example   |
@@ -76,14 +75,10 @@ is fully consistent with the Single European Sky (SES) Performance Scheme
 | DIST_FLOWN_KM    | Network Manager | DIST_FLOWN_KM    | Sum of flown distances in kilometre                                                               | 8699586   |
 | DIST_DIRECT_KM   | Network Manager | DIST_DIRECT_KM   | Sum of direct flown distances in kilometre                                                        | 8405033   |
 | DIST_ACHIEVED_KM | Network Manager | DIST_ACHIEVED_KM | Sum of achieved distances in kilometre                                                            | 8255220   |
-| T10_RUN_12M      | Network Manager | T10_RUN_12M      | ‘B’ (‘W’) if the day is one of the ten best (worst) days for the entity in the previous 12 months | B         |
-| END_DATE         | Network Manager | END_DATE         | End date of the running 12 month  (T10_RUN_12M)                                                   | 42216     |
-| T10_YYYY         | Network Manager | T10_YYYY         | ‘B’ (‘W’) if the day is one of the best (worst) days for the entity in the calendar year (the number of days increases proportionally to reach 10 at the end of the year) | B         |
 
+<br>
+Data KPI
 
-## META KPI
-
-{:.metatable}
 | Column name    | Data source     | Label          | Column description                                                                                              | Example                                                                                                      |
 |----------------|-----------------|----------------|-----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | ENTITY_NAME    | Network Manager | ENTITY_NAME    | Name of the entity to with the data refers                                                                      | BLUE MED FAB                                                                                                 |
