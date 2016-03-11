@@ -24,10 +24,15 @@ width: 7em;
 
 # {{ page.title }}
 
-## Data description
-**[KEP](/references/definition/kep.html)** and **[KEP](/references/definition/kep.html)** are performance indicators measuring horizontal en-route flight inefficiency in flight plans (KEP) and in actual flown trajectories (KEA) over a period of 12 months. 
 
-***Please note that the values are NOT monthly averages but the average over the entire 12 months period preceding the given END-DATE*** 
+## Data description
+
+**[KEP](/references/definition/kep.html)** and
+**[KEA](/references/definition/kea.html)** are performance indicators measuring
+horizontal en-route flight inefficiency in flight plans (KEP) and in actual
+flown trajectories (KEA) over a period of 12 months.
+
+**Please note that the values are NOT monthly averages but the average over the entire 12 months period preceding the given END-DATE**
 
 The **KEP** indicator is the horizontal flight efficiency calculated using the *last filed flight plans* to describe the
 trajectories, while **KEA** uses the *actual trajectories* generated via *radar data*.
@@ -43,17 +48,12 @@ In order to smooth out the influence of unusual events, the ten best days
 and the ten worst days (for each measured area) are excluded from the computation.
 
 
+
 ## Methodology
-Horizontal en-route flight efficiency compares the length of actual or planned flight trajectories
-to the corresponding “achieved” distance.
 
-The achieved distance apportions the
-[Great Circle Distance](https://en.wikipedia.org/wiki/Great-circle_distance)
-between two points within the European airspace (reference area).
-If the origin/destination airport is located outside of European airspace, the
-entry/exit point into the reference area is used for the calculation.
-
-[Horizontal en-route flight efficiency methodology](/references/methodology/horizontal_flight_efficiency.html) is fully consistent with the Single European Sky (SES) Performance Scheme [see {% cite pru-hfe --file aviation %}].
+[Horizontal en-route flight efficiency methodology](/references/methodology/horizontal_flight_efficiency.html)
+is fully consistent with the Single European Sky (SES) Performance Scheme
+[see {% cite pru-hfe --file aviation %}].
 
 
 
