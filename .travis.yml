@@ -13,7 +13,7 @@ script: ./script/cibuild
 branches:
   only:
   - master
-  - /201.-release/ # test every branch which starts with "pages-"
+  - /201(.*)-release/ # test every branch which starts with "pages-"
 
 env:
   global:
