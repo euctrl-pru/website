@@ -76,7 +76,6 @@ namespace :site do
       if ENV["TRAVIS_BRANCH"] == "master"
 
         if #{ENV['TRAVIS_TAG']}.to_s == ''
-        then
           puts "Not a tag, not deploying"
           exit 0
         else
