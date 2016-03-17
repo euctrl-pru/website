@@ -4,7 +4,7 @@ description: > # this means to ignore newlines until "url:"
   Performance monitoring data, analyses and visualizations for Eurocontrol's 41 Member States.
 url: "http://ansperformance.eu" # the base hostname & protocol for your site; NO https if served by github pages!!!
 canonical: http://ansperformance.eu  # NO https if served by github pages!!!
-baseurl: "/" # see https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/
+baseurl: "" # see https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/
 dev: false
 media: media
 
@@ -73,15 +73,22 @@ timezone: Europe/Brussels
 
 # don't deploy these folders/files
 exclude:
+  - README.md
   - Gemfile
   - Gemfile.lock
-  - "*.bib"
-  - "*.md"
+  - Rakefile
+  - "*.sql"
+  - data/set/apt_dly/extract_airport_atfm_delay_data
+  - data/set/clpx/extract_traffic_complexity_score_data
+  - data/set/ert_flt/extract_en-route_traffic_fab_fir_data
+  - data/set/hfe/extract_horizontal_flight_efficiency_data
+  - references/aviation.bib
+  - references/legislation.bib
+  - references/dataviz.bib
   - tmp
   - auto
   - dashboard/Makefile
   - dashboard
-  - deploy.sh
   - node_modules
   - package.json
   - npm-debug.log

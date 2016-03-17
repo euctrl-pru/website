@@ -1,30 +1,5 @@
 require 'rake'
-require 'date'
-require 'yaml'
-require 'html/proofer'
-
-CONFIG = YAML.load(File.read('_config.yml'))
-
-
-task default: %w[build]
-
-def check_destination
-  # if the relevant directory (cloned from source repo) exists locally
-  unless Dir.exist? CONFIG["destination"]
-    sh "git clone https://#{ENV['GIT_NAME']}:#{ENV['GH_TOKEN']}@github.com/#{CONFIG["github_user"]}/#{CONFIG["destination_repo"]}.git #{CONFIG["destination"]}"
-  end
-end
-
-
-
-desc 'Build for production'
-task :build => :clean do
-  jekyll('build')
-end
-
-
-
-
+require 'html-proofer'
 
 
 
@@ -70,9 +45,10 @@ namespace :site do
 
   desc "Check links"
   task :test => :build do
-    HTML::Proofer.new("./_site", {
-                        :url_ignore => ['http://localhost:4000']
-                      }).run
+    HTMLProofer.check_directory("./_site", {
+                                  :check_favicon => true,
+                                  :url_ignore => ['http://localhost:4000']
+                                }).run
   end
 
 
@@ -90,31 +66,39 @@ namespace :site do
       exit
     end
 
-    # Configure git if this is run in Travis CI
+    # Configure git if this is run in Travis CI, see https://github.com/openingscience/book/blob/master/Rakefile
     if ENV["TRAVIS"]
-      sh "git config --global user.name 'travis@travis-ci.org'"
-      sh "git config --global user.email 'Travis'"
+      sh "git config --global user.name '#{ENV['GIT_NAME']}'"
+      sh "git config --global user.email '#{ENV['GIT_EMAIL']}'"
       sh "git config --global push.default simple"
 
       # deploy only if on master branch
       if ENV["TRAVIS_BRANCH"] == "master"
-        puts "Cloning euctrl-pru.github.io..."
-        sh "git clone https://#{ENV['GIT_NAME']}:#{ENV['GH_TOKEN']}@github.com/euctrl-pru/euctrl-pru.github.io.git > /dev/null"
 
-        # Generate the site...it goes in _site
-        jekyll('build')
+        if [ "$TRAVIS_TAG" = "" ]
+        then
+          puts "Not a tag, not deploying"
+          exit 0
+        else
+          puts "Building and deploying tag '#{ENV['TRAVIS_TAG']}'"
+          puts "Cloning euctrl-pru.github.io..."
+          sh "git clone https://#{ENV['GIT_NAME']}:#{ENV['GH_TOKEN']}@github.com/euctrl-pru/euctrl-pru.github.io.git > /dev/null"
 
-        # Commit and push to github
-        sha = `git log`.match(/[a-z0-9]{40}/)[0]
-        Dir.chdir('euctrl-pru.github.io') do
+          # Generate the site...it goes in _site
+          jekyll('build')
 
-          sh "git rm -rf * > /dev/null"
-          sh "cp -r  ../_site/* ."
-          sh "git add --all ."
-          sh "git status"
-          sh "git commit -m 'Updating to euctrl-pru/euctrl-pru.github.io@#{sha}.'"
-          sh "git push origin master"
-          puts "Updated destination repo pushed to GitHub Pages"
+          # Commit and push to github
+          sha = `git log`.match(/[a-z0-9]{40}/)[0]
+          Dir.chdir('euctrl-pru.github.io') do
+            sh "git rm -rf * > /dev/null"
+            sh "cp -r  ../_site/* ."
+            sh "git add --all ."
+            sh "git status"
+            sh "git commit -m 'Updating to euctrl-pru/euctrl-pru.github.io@#{sha}, tagged '#{ENV['TRAVIS_TAG']}'.'"
+            # Make sure to make the output quiet, or else the API token will leak!
+            sh "git push --force --quiet origin master"
+            puts "Updated destination repo pushed to GitHub Pages"
+          end
         end
       end
     end
