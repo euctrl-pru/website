@@ -1,22 +1,16 @@
 language: ruby
 rvm:
 - 2.2.0
-
-before_script:
- - chmod +x ./scripts/cibuild # or do this locally and commit
-
-# Assume bundler is being used, therefore
-# the `install` step will run `bundle install` by default.
-script: ./scripts/cibuild
-
-# branch whitelist, only for GitHub Pages
+script: bundle exec rake site:build
 branches:
   only:
   - master
-  - /201(.*)-release/ # test every branch which starts with "pages-"
-
+  - "/201(.*)-release/"
 env:
   global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
-
-sudo: false # route your build to the container-based infrastructure for a faster build
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - secure: EfxwTtJkmeXyvu80iucMGf4WlTlqqnKh26BbhFgAgEatj6O5LBpHoiSOcMaxqUGLQolwEDGfAJO6WplBdPpCETP97Fsw9gy4OBcNuG2wA8a4Q68BRmF5Aic3WuuDs2tIGLbOCTMCCV13lSmvoEzqNFTrtV58BpDpLKCI0qZZrtDd7qOere7nxcMcPhWphX7/7jrFXCcaNU0wzLvfuJPMSJivfqDwqQaq8GqmKl3cbToEHP74J6132pLrepjdr9yBrtLIST0py1n9pz9rqb0cu8TO25upoaTMkPPnamA1Ed1YRaN3yPb4dgY1fi0WHrMSE+qkICw+vQlFGt2hXayuVj3Dsf6xmBVZTK/Q3r15eU/+d4hB/J+JcYM2zHUG6JlT33AhuYoxw2cxx5M0AqUl8/btbYfMGmn+PjJqjZaufBluOAdcwxmM+QEwR/pUVWMLVsIu8LPwDjt+OkgONZsve83YJcL23yrpxh7sU+cNwEuzvuTs9UKARtrm4XenDR6Usc0Pobjp5hGXi2nxeVr335Tn+ogtx+7uNwZwK9z4TrVpmJ+rAqsReYMlcOQUJTYaGU30Gp0gP9YQBq5C8bdP+uIZkcj5VNQoPzqq6UpNEGWXap+TZjnCqUuyIFdnW0NBdRIhfBfnLwwq0Hx/0ElEZ91kakpQ29gEzxeD+Bv5/CI=
+  - secure: TaEeEErz8+khXy7joPwpwbJriFNwZsT9vKMxpJcs1TanH3BTM1l6mrBBJNr7iBhCrH/yuFDkpgVXL2+5ekz1hYWkkb+EDKrpEi9wnOoiH+7VUv65Q0JV4EbRLHoYAezmJCo347ZkGwVtSGuHJUgkZmk8BU2sXp14gmuDzjtteXNO3xpVXNaQW+yABhfjJhp6NaMiF/PywNlUdSafrbTVnjbW+gbRZcBnAN3lN3xdLFz6+PFtIsfpa5aLDyV0GTQoB1vToyaZC6k0ENFN6k4pgCH3c6R/rF1hAU+BZtBI/h7bRCmgEB7PPcjS9Rn8U/9HmLBJ6pAmkqH6QZxeouE95cDPCoiuIfjpO8I/cnS0tpiBeA48oEWpMUwdxhos1Pdp/2Z8LK/tj5Fece0jfqfQLFMIlHJpaQI1FV3FfA4shv81DSzShiygzm7FvCNnR1gRj08WxKO8VPGllX601cd4qbcTaerkqPt5Qx/ukkdRWpPBTJguaereq9YZOOWi3ZLCi1WYCOK9NLeps1nGrmqlTuwfrGMF/3eX5ZsdMUfN/hB3MnCenZl/4t/CL0zp9O1V5qERH3h1RnM0ysWFoRUeGsXYCsNMEBqrMrbm/paxDIVVJgszjWZuCrKuPX/zklMTe5hc0Obkl0ubiPKhDd6fldDGsWxx4CfJuezD4v0Dc24=
+  - secure: bji65jhjWNr9ntLu5VaZuz0qWWvaLXcKl2I7i7hIL2EaP8WpFIU0+X9423O7mjlIxSFNO24qFmpird+OlAiHO1ZAYJW+HEPWOfJ0eyPR/QDlA+4pN4nM6rl4Wtg1QXb6RytGLBPqsNkWxOB8LXNCvm4rdhmEy/Jma6CR8tGJ65NbtNpPIVY6cB8F0Ir831xbiPRiegHXjbZd7UEXRLhYVySmcsKZZC/FEBAa8r3F0sj4n0H42pmHk3dBLtovvCH7arEGzWG3MPc6RD/x3yO/fIBjpmAQiFTTRP12uIi+YaJvIHeiuczreepVCgbxtZr8+Szu2eS92RHXS0yQo+6v7WcDmOGun/tsabbDGcfykTpkOjFFgOuE2FRvPqUx1CBG4TUVPGm+h2XrfT3jPSbyBk6Lwzlhl2i1UWW81skSF0v5yaTBRzn77sFQkRFOt8zfXLCm6WGaB4sMfDU/UKuSxjo7B0Nz9QZwgnd6t21Fm4x14fDO+TDPhs2nAN74mG5KYDyp89Jg/AwuqkIZvMy2qeODuyyON2aoKtNnvxnBSfsjEN6FC18vEPac9a2ar/xIVoeOcZ8YTqK85oLCqv5NlUgx2ew9UvyQh6YwMlrNkoE3SmLxu56XCoIoKBO9Ywy5aqNdZ3I0Pw9FWpMNN6v8wFGkwykyA5x/2cQIUUenCDU=
+sudo: false
+after_success: bundle exec rake site:deploy

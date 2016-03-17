@@ -75,13 +75,10 @@ timezone: Europe/Brussels
 exclude:
   - Gemfile
   - Gemfile.lock
-  - README.md
-  - aviation.bib
-  - legislation.bib
-  - dataviz.bib
+  - "*.bib"
+  - "*.md"
   - tmp
   - auto
-  - dashboard/REAME.md
   - dashboard/Makefile
   - dashboard
   - deploy.sh
@@ -90,3 +87,4 @@ exclude:
   - npm-debug.log
   - scripts
   - vendor
+  - .travis.yml
