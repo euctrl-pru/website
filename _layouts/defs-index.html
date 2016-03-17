@@ -7,10 +7,24 @@ layout: default
  }
 </style>
 
-{% assign alphabeth = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z" | split: ' ' %}
 {% assign sectionletter = "" %}
 {% assign currentletter = "" %}
 {% assign isfirst = true %}
+
+<!-- build the list of alphabeth letters from the relevant pages -->
+{% assign alphabeth = "" | split: ' ' %}
+{% assign pages = (site.pages | sort: 'title_lowercase' ) %}
+{% assign current_letter = '' %}
+{% for page in pages %}
+{% if page.resource == true and page.entity == 'definition' %}
+{% assign page_letter = (page.title | split: '' | first | upcase ) %}
+{% if page_letter != current_letter %}
+{{ my_alphabeth | push: page_letter }}
+{% assign current_letter = page_letter %}
+{% endif %} <!-- if/page_letter -->
+{% endif %} <!-- if/definition -->
+{% endfor %}  <!-- for/pages -->
+
 
   <h2>Index of Definitions</h2>
   <div class="container">

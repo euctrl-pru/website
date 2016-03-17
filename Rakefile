@@ -1,43 +1,21 @@
 require 'html/proofer'
 
-task :test do
-  sh "bundle exec jekyll build --config _config.yml,_config_dev.yml"
-  sh "rm -rf ./_site/posts"
-  HTML::Proofer.new("./_site", {
-                      :allow_hash_href => true,
-                      :empty_alt_ignore => true,
-                      :href_ignore => ["#",
-                                       "/#",
-                                       "/about/#",
-                                       /^(https?\:\/\/)?(www\.)?youtube\.com\/.+$/
-                                      ],
-                      :parallel => {:in_processes => 4},
-                      :only_4xx => true,
-                      :check_html => true,
-                      :typhoeus => { 
-                        :timeout => 3 }
-                    }).run
-end
-require 'html/proofer'
+task default: %w[build]
 
-task :test do
-  sh "bundle exec jekyll build --config _config.yml,_config_dev.yml"
-  sh "rm -rf ./_site/posts"
+
+desc 'Build for production'
+task :build => :clean do
+  jekyll('build')
+end
+
+
+task :test => :build do
   HTML::Proofer.new("./_site", {
-                      :allow_hash_href => true,
-                      :empty_alt_ignore => true,
-                      :href_ignore => ["#",
-                                       "/#",
-                                       "/about/#",
-                                       /^(https?\:\/\/)?(www\.)?youtube\.com\/.+$/
-                                      ],
-                      :parallel => {:in_processes => 4},
-                      :only_4xx => true,
-                      :check_html => true,
-                      :typhoeus => {
-                        :timeout => 3 }
+                      :url_ignore => ['http://localhost:4000']
                     }).run
 end
+
+
 
 desc 'Check links for site already running on localhost:4000'
 task :check_links do
@@ -76,8 +54,17 @@ task :check_links do
   end
 end
 
+desc 'Clean up generated site'
+task :clean do
+  cleanup
+end
+
 # remove generated site
 def cleanup
-  sh 'rm -rf _site'
-  compass('clean')
+  sh 'rm -Rf _site'
+end
+
+# launch jekyll
+def jekyll(directives = '')
+  sh 'bundle exec jekyll ' + directives
 end

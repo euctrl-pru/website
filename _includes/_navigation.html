@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
       </button>
       <div class="navbar-brand">
-        <a href="{{ "/#" | prepend: site.baseurl }}">
+        <a href="{{ site.baseurl }}">
           {% image ec-logo-brand.png alt="PRU" %}
           <div id="logo"></div>
         </a>
@@ -19,9 +19,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-          <li class=""><a href="{{ "/posts/#" | prepend: site.baseurl }}">News</a></li>
+          <li class=""><a href="{{ "/posts/" | prepend: site.baseurl }}">News</a></li>
           <li class="dropdown">
-              <a href="/graphs/#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
+              <a href="/graphs/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
                  aria-haspopup="true" aria-expanded="false">Graphs</a>
               <ul class="dropdown-menu">
                   <li><a href="/graphs/safety/">Safety</a></li>
@@ -31,10 +31,10 @@
                   <li><a href="/graphs/cost-efficiency/">Cost Efficiency</a></li>
               </ul>
           </li>
-          <li class=""><a href="{{ "/data/#" | prepend: site.baseurl }}">Data</a></li>
-          <li class=""><a href="{{ "/studies/#" | prepend: site.baseurl }}">Studies</a></li>
+          <li class=""><a href="{{ "/data/" | prepend: site.baseurl }}">Data</a></li>
+          <li class=""><a href="{{ "/studies/" | prepend: site.baseurl }}">Studies</a></li>
           <li class="dropdown">
-              <a href="/references/#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
+              <a href="/references/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
                  aria-haspopup="true" aria-expanded="false">References</a>
               <ul class="dropdown-menu">
                   <li><a href="/references/dataset/">Datasets</a></li>
@@ -67,7 +67,7 @@
             </div>
           </form>
         </li>
-        <li class=""><a href="{{ "/about/#" | prepend: site.baseurl }}">About</a></li>
+        <li class=""><a href="{{ "/about/" | prepend: site.baseurl }}">About</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
