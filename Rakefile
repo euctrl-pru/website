@@ -75,7 +75,7 @@ namespace :site do
       # deploy only if on master branch
       if ENV["TRAVIS_BRANCH"] == "master"
 
-        if [ "$TRAVIS_TAG" = "" ]
+        if #{ENV['TRAVIS_TAG']}.to_s == ''
         then
           puts "Not a tag, not deploying"
           exit 0
