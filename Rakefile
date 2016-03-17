@@ -60,23 +60,24 @@ namespace :site do
 
   desc "Generate the site and push changes to remote origin"
   task :deploy do
-    # Detect pull request
-    if ENV['TRAVIS_PULL_REQUEST'].to_s.to_i > 0
-      puts 'Pull request detected. Not proceeding with deploy.'
-      exit
-    end
 
     # Configure git if this is run in Travis CI, see https://github.com/openingscience/book/blob/master/Rakefile
     if ENV["TRAVIS"]
+      # Detect pull request
+      if ENV['TRAVIS_PULL_REQUEST'].to_s.to_i > 0
+        puts 'Pull request detected. Not proceeding with deploy.'
+        exit
+      end
+
+      puts "setting user configs ..."
       sh "git config --global user.name '#{ENV['GIT_NAME']}'"
       sh "git config --global user.email '#{ENV['GIT_EMAIL']}'"
       sh "git config --global push.default simple"
 
       # deploy only if on master branch
       if ENV["TRAVIS_BRANCH"] == "master"
-
         if #{ENV['TRAVIS_TAG']}.to_s == ''
-          puts "Not a tag, not deploying"
+          puts "Not a tag, hence not deploying"
           exit 0
         else
           puts "Building and deploying tag '#{ENV['TRAVIS_TAG']}'"
@@ -99,6 +100,8 @@ namespace :site do
             puts "Updated destination repo pushed to GitHub Pages"
           end
         end
+      else
+        puts "Not in 'master', hence no deployment"
       end
     end
   end
