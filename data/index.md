@@ -105,9 +105,9 @@ width: 8em;
 
 |    Data description                                                                                                                       |     Period                                                  |    Excel                          |    CSV                                        |    Metadata                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|-----------------------------------|-----------------------------------------------|----------------------------------|
-| En-route IFR flights<br><small>Daily IFR traffic by entity</small>                                                                        | {{ page.dates.ert_flt.beg }} - {{ page.dates.ert_flt.end }} | [{{ page.dwnld_i }}][ERT-FLTxlsx] |                                               | [{{ page.info_i }}][ERT-FLTmeta] |
-| En-route ATFM delays<br><small>Daily IFR traffic and en-route [ATFM delay](/references/definition/atfm_delay.html) by entity and delay cause</small>                                | {{ page.dates.ert_dly.beg }} - {{ page.dates.ert_dly.end }} | [{{ page.dwnld_i }}][ERT-DLYxlsx] |                                               | [{{ page.info_i }}][ERT-DLYmeta] |
-| Horizontal en-route flight efficiency<br><small>Daily [en-route flight efficiency](/references/methodology/horizontal_flight_efficiency_pi.html) data by entity (actual trajectory & flight plan)</small> | {{ page.dates.hfe.beg }} - {{ page.dates.hfe.end }}         | [{{ page.dwnld_i }}][HFExlsx]     | [{{ page.fltr_i }} {{ page.ndwk_i }}][HFEcsv] | [{{ page.info_i }}][HFEmeta]     |
+| En-route IFR flights<br><small>Daily IFR traffic by entity</small>                                                                        | {{ page.dates.ert_flt.beg }} - {{ page.dates.ert_flt.end }} | [xls {{ page.dwnld_i }}][ERT-FLTxlsx] |                                               | [meta {{ page.info_i }}][ERT-FLTmeta] |
+| En-route ATFM delays<br><small>Daily IFR traffic and en-route [ATFM delay](/references/definition/atfm_delay.html) by entity and delay cause</small>                                | {{ page.dates.ert_dly.beg }} - {{ page.dates.ert_dly.end }} | [xls {{ page.dwnld_i }}][ERT-DLYxlsx] |                                               | [meta {{ page.info_i }}][ERT-DLYmeta] |
+| Horizontal en-route flight efficiency<br><small>Daily [en-route flight efficiency](/references/methodology/horizontal_flight_efficiency.html) data by entity (actual trajectory & flight plan)</small> | {{ page.dates.hfe.beg }} - {{ page.dates.hfe.end }}         | [xls {{ page.dwnld_i }}][HFExlsx]     | [csv {{ page.fltr_i }} {{ page.ndwk_i }}][HFEcsv] | [meta {{ page.info_i }}][HFEmeta]     |
 
 [ERT-FLTxlsx]: <{{site.url}}/data/set/ert_flt/En-Route_Traffic.xlsm> "ERT-FLT (Excel)"
 [ERT-FLTcsv]: <{{site.url}}/404.html> "ERT-FLT (CSV)"
@@ -125,12 +125,12 @@ width: 8em;
 
 | Data description                                                                                                              | Period                                                       | Excel                             | CSV                                               | Metadata                         |
 |-------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|-----------------------------------|---------------------------------------------------|----------------------------------|
-| Airport traffic<br><small>Daily IFR arrivals and departures by airport</small>                                                | {{ page.dates.apt_flt.beg }} - {{ page.dates.apt_flt.end }}  | [{{ page.dwnld_i }}][APT-FLTxlsx] |                                                   | [{{ page.info_i }}][APT-FLTmeta] |
-| Airport arrival ATFM delays<br><small>Daily IFR arrivals and airport arrival [ATFM delay](/references/definition/atfm_delay.html) by airport and delay category</small> | {{ page.dates.apt_dly.beg }} - {{ page.dates.apt_dly.end }}  | [{{ page.dwnld_i }}][APT-DLYxlsx] | [{{ page.fltr_i }} {{ page.ndwk_i }}][APT-DLYcsv] | [{{ page.info_i }}][APT-DLYmeta] |
-| Arrival Sequencing and Metering (ASMA) additional time<br><small>Monthly ASMA [additional](/references/definition/additional_asma_time.html) and [unimpeded](/references/definition/unimpeded_asma_time.html) time</small>           | {{ page.dates.asma.beg }} - {{ page.dates.asma.end }}        | [{{ page.dwnld_i }}][ASMAxlsx]    |                                                   | [{{ page.info_i }}][ASMAmeta]    |
-| Taxi-out additional time<br><small>Monthly taxi out [additional](/references/definition/additional_taxi-out_time.html) and [unimpeded](/references/definition/unimpeded_taxi-out_time.html) time</small>                                     | {{ page.dates.tx_out.beg }} - {{ page.dates.tx_out.end }}    | [{{ page.dwnld_i }}][TX-OUTxlsx]  |                                                   | [{{ page.info_i }}][TX-OUTmeta]  |
-| ATC pre-departure delays<br><small>Daily [ATC pre-departure delay](/references/definition/atc_pre-departure_delay.html) by airport</small>             | {{ page.dates.atc_pre.beg }} - {{ page.dates.atc_pre.end }}  | [{{ page.dwnld_i }}][ATC-PRExlsx] |                                                   | [{{ page.info_i }}][ATC-PREmeta] |
-| ATFM slot adherence<br><small>Daily ATFM slot adherence by airport</small>                                                    | {{ page.dates.slt_adh.beg }} - {{ page.dates.slt_adh.end }}  | [{{ page.dwnld_i }}][SLT-ADHxlsx] |                                                   | [{{ page.info_i }}][SLT-ADHmeta] |
+| Airport traffic<br><small>Daily IFR arrivals and departures by airport</small>                                                | {{ page.dates.apt_flt.beg }} - {{ page.dates.apt_flt.end }}  | [xls {{ page.dwnld_i }}][APT-FLTxlsx] |                                                   | [meta {{ page.info_i }}][APT-FLTmeta] |
+| Airport arrival ATFM delays<br><small>Daily IFR arrivals and airport arrival [ATFM delay](/references/definition/atfm_delay.html) by airport and delay category</small> | {{ page.dates.apt_dly.beg }} - {{ page.dates.apt_dly.end }}  | [xls {{ page.dwnld_i }}][APT-DLYxlsx] | [csv {{ page.fltr_i }} {{ page.ndwk_i }}][APT-DLYcsv] | [meta {{ page.info_i }}][APT-DLYmeta] |
+| Arrival Sequencing and Metering (ASMA) additional time<br><small>Monthly ASMA [additional](/references/definition/additional_asma_time.html) and [unimpeded](/references/definition/unimpeded_asma_time.html) time</small>           | {{ page.dates.asma.beg }} - {{ page.dates.asma.end }}        | [xls {{ page.dwnld_i }}][ASMAxlsx]    |                                                   | [meta {{ page.info_i }}][ASMAmeta]    |
+| Taxi-out additional time<br><small>Monthly taxi out [additional](/references/definition/additional_taxi-out_time.html) and [unimpeded](/references/definition/unimpeded_taxi-out_time.html) time</small>                                     | {{ page.dates.tx_out.beg }} - {{ page.dates.tx_out.end }}    | [xls {{ page.dwnld_i }}][TX-OUTxlsx]  |                                                   | [meta {{ page.info_i }}][TX-OUTmeta]  |
+| ATC pre-departure delays<br><small>Daily [ATC pre-departure delay](/references/definition/atc_pre-departure_delay.html) by airport</small>             | {{ page.dates.atc_pre.beg }} - {{ page.dates.atc_pre.end }}  | [xls {{ page.dwnld_i }}][ATC-PRExlsx] |                                                   | [meta {{ page.info_i }}][ATC-PREmeta] |
+| ATFM slot adherence<br><small>Daily ATFM slot adherence by airport</small>                                                    | {{ page.dates.slt_adh.beg }} - {{ page.dates.slt_adh.end }}  | [xls {{ page.dwnld_i }}][SLT-ADHxlsx] |                                                   | [meta {{ page.info_i }}][SLT-ADHmeta] |
 
 
 [APT-FLTxlsx]: <{{site.url}}/data/set/apt_flt/Airport_Traffic.xlsm> "APT-FLT (Excel)"
@@ -159,7 +159,7 @@ width: 8em;
 
 | Data description                                                    | Period                                                      | Excel                          | CSV | Metadata |
 |---------------------------------------------------------------------|-------------------------------------------------------------|--------------------------------|-----|----------|
-| ACE operational data<br><small>Monthly ACE operational data</small> | {{ page.dates.ace_opt.beg }} - {{ page.dates.ace_opt.end }} | [{{ page.dwnld_i }}][ACExlsx]  |     |          |
+| ACE operational data<br><small>Monthly ACE operational data</small> | {{ page.dates.ace_opt.beg }} - {{ page.dates.ace_opt.end }} | [xls {{ page.dwnld_i }}][ACExlsx]  |     |          |
 
 [ACExlsx]: <{{site.url}}/data/set/ace_opt/ACE_Monthly_Operational_Data.xls> "ACE (Excel)"
 [ACEcsv]: <{{site.url}}/404.html> "ACE (CSV)"
@@ -169,7 +169,7 @@ width: 8em;
 
 | Data description                                             | Period                                                | Excel                          | CSV | Metadata                      |
 |--------------------------------------------------------------|-------------------------------------------------------|--------------------------------|-----|-------------------------------|
-| Complexity<br><small>Complexity by ANSP</small> | {{ page.dates.cplx.beg }} - {{ page.dates.cplx.end }} | [{{ page.dwnld_i }}][CPLXxlsx] |     | [{{ page.info_i }}][CPLXmeta] |
+| Complexity<br><small>Complexity by ANSP</small> | {{ page.dates.cplx.beg }} - {{ page.dates.cplx.end }} | [xls {{ page.dwnld_i }}][CPLXxlsx] |     | [meta {{ page.info_i }}][CPLXmeta] |
 
 [CPLXxlsx]: <{{site.url}}/data/set/clpx/Traffic_Complexity_Scores.xlsm> "CPLX (Excel)"
 [CPLXcsv]: <{{site.url}}/404.html> "CPLX (CSV)"
@@ -182,5 +182,3 @@ width: 8em;
 {{ page.fltr_i }} = filter for dataset and download.<br>
 {{ page.ndwk_i }} = experimental, [feedback](mailto:{{ site.owner.email }}) is more than welcome.<br>
 {{ page.attn_i }} = not (yet?) available.<br>
-
-
