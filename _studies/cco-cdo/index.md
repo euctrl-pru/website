@@ -32,7 +32,7 @@ Hence, several studies and the reference material related to this topic
 {% cite CCDvsCDA --file aviation %},
 {% cite vertical-flight-efficiency-tn --file aviation %},
 {% cite turkish-atm-efficiency --file aviation %},
-{% cite icao:8168 --file aviation %} suggest that the benefit pool regarding
+{% cite airbus-fuel-economy --file aviation %} suggest that the benefit pool regarding
 fuel efficiency is larger for descents than for climbs.
 
 Continuous climb operations (CCO) and continuous descent operations (CDO) are
