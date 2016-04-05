@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
       </button>
       <div class="navbar-brand">
-        <a href="{{ site.baseurl }}">
+          <a href="{{ site.baseurl  | prepend: site.url }}">
           {% image ec-logo-brand.png alt="PRU" %}
           <div id="logo"></div>
         </a>
