@@ -3,7 +3,7 @@ layout: default
 title:  "Vertical Flight Efficiency During Climb and Descent"
 date:   2016-04-05T10:09:13
 tags: vertical, efficiency, cco, cdo, climb, descend, ifr, flights, europe, eurocontrol
-excerpt: "IFR Movements flows within Europe (Eurocontrol member States plus Kosovo) 2007-2014"
+excerpt: "Vertical flight efficiency during the climb and descent phases of flights"
 ---
 
 # {{ page.title }}
@@ -30,7 +30,7 @@ available and flown by the pilot.
 
 Hence, several studies and the reference material related to this topic
 {% cite CCDvsCDA --file aviation %},
-{% cite pru:flight-efficiency --file aviation %},
+{% cite vertical-flight-efficiency-tn --file aviation %},
 {% cite turkish-atm-efficiency --file aviation %},
 {% cite icao:8168 --file aviation %} suggest that the benefit pool regarding
 fuel efficiency is larger for descents than for climbs.
@@ -103,7 +103,7 @@ The following assumptions were made for the analysis:
   with a high degree of confidence.
 
 * The climb phase is considered to start at 3000 feet AGL since the Noise
-  Abatement Departure procedures (NADP) defined by ICAO end at this altitude
+  Abatement Departure Procedures (NADP) defined by ICAO end at this altitude
   {% cite icao:8168 --file aviation %}. 
 
 * The descent phase is considered to end at 1800 feet AGL because the
@@ -152,6 +152,11 @@ improvements.
 ![Lateral trajectories during descent]({% asset_path cco-cdo-4.png [resize:500x500] %})
 
 *Figure 4: Lateral trajectories during descent.*
+
+
+**Note**
+This study is available as a PRU Leaflet, see 
+{% cite cco-cdo-leaflet --file aviation %} in the References section below.
 
 
 ## References
