@@ -1,26 +1,29 @@
 (function () {
 
     var tags = [
-        {"key": "Transparency", "value": 16},
+        {"key": "Transparency", "value": 36}, // from https://t.co/HDWuIi1Y4z
         {"key": "ANS", "value": 15},
+        {"key": "Truth", "value": 18},
+        {"key": "Facts", "value": 25},
+        {"key": "Objectivity", "value": 25},  // from https://t.co/HDWuIi1Y4z
         {"key": "Correct", "value": 15},
         {"key": "Up-to-date", "value": 25},
         {"key": "Consistency", "value": 22},
-        {"key": "Performance", "value": 21},
-        {"key": "Independence", "value": 28},
+        {"key": "Performance", "value": 16},
+        {"key": "Independence", "value": 36},
         {"key": "Standards", "value": 18},
         {"key": "Metrics", "value": 23},
         {"key": "Open", "value": 25},
         {"key": "ATM", "value": 18},
-        {"key": "Europe", "value": 16}
+        {"key": "Europe", "value": 26}
     ].map(function(d) { return {"key": d.key.toLowerCase(), "value": d.value}; });
 
     var fill = d3.scale.category20b();
 
     // var w = window.innerWidth,
     //     h = window.innerHeight;
-    var w = 600,
-        h = 400;
+    var w = 350,
+        h = 250;
 
     var max,
         fontSize;
