@@ -19,9 +19,7 @@
             "TYPE_MODEL",
             "DIST_FLOWN_KM",
             "DIST_DIRECT_KM",
-            "DIST_ACHIEVED_KM",
-            "T10_RUN_12M",
-            "T10_YYYY"
+            "DIST_ACHIEVED_KM"
         ];
 
         json2csv({ data: data, fields: fields }, function (err, csv) {
@@ -108,9 +106,7 @@
                 "TYPE_MODEL",
                 "DIST_FLOWN_KM",
                 "DIST_DIRECT_KM",
-                "DIST_ACHIEVED_KM",
-                "T10_RUN_12M",
-                "T10_YYYY"
+                "DIST_ACHIEVED_KM"
             ])
             .sortBy(function (d) {
                 return d.date;
