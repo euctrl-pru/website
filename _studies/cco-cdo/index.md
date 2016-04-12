@@ -149,7 +149,7 @@ constraints in handover procedures between neighbouring ANSPs, airspace
 restrictions or operational procedures which signals scope for future
 improvements.
 
-![Lateral trajectories during descent]({% asset_path cco-cdo-4.png [resize:500x500] %})
+![Lateral trajectories during descent]({% asset_path cco-cdo-4.jpg [resize:500x500] %})
 
 *Figure 4: Lateral trajectories during descent.*
 
