@@ -39,8 +39,9 @@ dates:
     beg: Jan 2014
     end: Feb 2016
   cplx:
-    beg: Jan 2014
-    end: Feb 2016
+    beg: &cplxbeg Jan 2014
+    end: &cplxend Feb 2016
+
 dwnld_i: <i class="fa pru fa-download"></i>
 info_i: <i class="fa pru fa-info-circle"></i>
 ndwk_i: <i class="fa pru fa-flask"></i>
@@ -92,7 +93,7 @@ width: 5em;
 }
 
 th:nth-child(4) {
-width: 4em;
+width: 5em;
 }
 
 th:nth-child(5) {
@@ -123,12 +124,12 @@ width: 8em;
 
 ### Airport/terminal
 
-| Data description                                                                                                              | Period                                                       | Excel                             | CSV                                               | Metadata                         |
-|-------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|-----------------------------------|---------------------------------------------------|----------------------------------|
-| Airport traffic<br><small>Daily IFR arrivals and departures by airport</small>                                                | {{ page.dates.apt_flt.beg }} - {{ page.dates.apt_flt.end }}  | [xls {{ page.dwnld_i }}][APT-FLTxlsx] |                                                   | [meta {{ page.info_i }}][APT-FLTmeta] |
+| Data description                                                                                                                                                        | Period                                                       | Excel                                   | CSV                                               | Metadata                         |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|-----------------------------------------|---------------------------------------------------|----------------------------------|
+| Airport traffic<br><small>Daily IFR arrivals and departures by airport</small>                                                                                          | {{ page.dates.apt_flt.beg }} - {{ page.dates.apt_flt.end }}  | [xls {{ page.dwnld_i }}][APT-FLTxlsx]   |                                                   | [meta {{ page.info_i }}][APT-FLTmeta] |
 | Airport arrival ATFM delays<br><small>Daily IFR arrivals and airport arrival [ATFM delay](/references/definition/atfm_delay.html) by airport and delay category</small> | {{ page.dates.apt_dly.beg }} - {{ page.dates.apt_dly.end }}  | [xls {{ page.dwnld_i }}][APT-DLYxlsx] | [csv {{ page.fltr_i }} {{ page.ndwk_i }}][APT-DLYcsv] | [meta {{ page.info_i }}][APT-DLYmeta] |
-| Arrival Sequencing and Metering (ASMA) additional time<br><small>Monthly ASMA [additional](/references/definition/additional_asma_time.html) and [unimpeded](/references/definition/unimpeded_asma_time.html) time</small>           | {{ page.dates.asma.beg }} - {{ page.dates.asma.end }}        | [xls {{ page.dwnld_i }}][ASMAxlsx]    |                                                   | [meta {{ page.info_i }}][ASMAmeta]    |
-| Taxi-out additional time<br><small>Monthly taxi out [additional](/references/definition/additional_taxi-out_time.html) and [unimpeded](/references/definition/unimpeded_taxi-out_time.html) time</small>                                     | {{ page.dates.tx_out.beg }} - {{ page.dates.tx_out.end }}    | [xls {{ page.dwnld_i }}][TX-OUTxlsx]  |                                                   | [meta {{ page.info_i }}][TX-OUTmeta]  |
+| Arrival Sequencing and Metering (ASMA) additional time<br><small>Monthly ASMA [additional](/references/definition/additional_asma_time.html) and [unimpeded](/references/definition/unimpeded_asma_time.html) time</small>             | {{ page.dates.asma.beg }} - {{ page.dates.asma.end }}        | [xls {{ page.dwnld_i }}][ASMAxlsx]    |                                                   | [meta {{ page.info_i }}][ASMAmeta]    |
+| Taxi-out additional time<br><small>Monthly taxi out [additional](/references/definition/additional_taxi-out_time.html) and [unimpeded](/references/definition/unimpeded_taxi-out_time.html) time</small>  | {{ page.dates.tx_out.beg }} - {{ page.dates.tx_out.end }}    | [xls {{ page.dwnld_i }}][TX-OUTxlsx]  |                                                   | [meta {{ page.info_i }}][TX-OUTmeta]  |
 | ATC pre-departure delays<br><small>Daily [ATC pre-departure delay](/references/definition/atc_pre-departure_delay.html) by airport</small>             | {{ page.dates.atc_pre.beg }} - {{ page.dates.atc_pre.end }}  | [xls {{ page.dwnld_i }}][ATC-PRExlsx] |                                                   | [meta {{ page.info_i }}][ATC-PREmeta] |
 | ATFM slot adherence<br><small>Daily ATFM slot adherence by airport</small>                                                    | {{ page.dates.slt_adh.beg }} - {{ page.dates.slt_adh.end }}  | [xls {{ page.dwnld_i }}][SLT-ADHxlsx] |                                                   | [meta {{ page.info_i }}][SLT-ADHmeta] |
 
@@ -157,9 +158,9 @@ width: 8em;
 
 ### ATM Cost-Effectiveness (ACE) operational data
 
-| Data description                                                    | Period                                                      | Excel                          | CSV | Metadata |
-|---------------------------------------------------------------------|-------------------------------------------------------------|--------------------------------|-----|----------|
-| ACE operational data<br><small>Monthly ACE operational data</small> | {{ page.dates.ace_opt.beg }} - {{ page.dates.ace_opt.end }} | [xls {{ page.dwnld_i }}][ACExlsx]  |     |          |
+| Data description                                                     | Period                                                       | Excel                              | CSV | Metadata |
+|----------------------------------------------------------------------|--------------------------------------------------------------|------------------------------------|-----|----------|
+| ACE operational data<br><small>Monthly ACE operational data</small>  | {{ page.dates.ace_opt.beg }} - {{ page.dates.ace_opt.end }}  | [xls {{ page.dwnld_i }}][ACExlsx]  |     |          |
 
 [ACExlsx]: <{{site.url}}/data/set/ace_opt/ACE_Monthly_Operational_Data.xls> "ACE (Excel)"
 [ACEcsv]: <{{site.url}}/404.html> "ACE (CSV)"
@@ -167,9 +168,9 @@ width: 8em;
 
 ### Traffic complexity scores
 
-| Data description                                             | Period                                                | Excel                          | CSV | Metadata                      |
-|--------------------------------------------------------------|-------------------------------------------------------|--------------------------------|-----|-------------------------------|
-| Complexity<br><small>Complexity by ANSP</small> | {{ page.dates.cplx.beg }} - {{ page.dates.cplx.end }} | [xls {{ page.dwnld_i }}][CPLXxlsx] |     | [meta {{ page.info_i }}][CPLXmeta] |
+| Data description                                             | Period                                                 | Excel                              | CSV | Metadata                           |
+|--------------------------------------------------------------|--------------------------------------------------------|------------------------------------|-----|------------------------------------|
+| Complexity<br><small>Complexity by ANSP</small>              | {{ page.dates.cplx.beg }} - {{ page.dates.cplx.end }}  | [xls {{ page.dwnld_i }}][CPLXxlsx] |    | [meta {{ page.info_i }}][CPLXmeta] |
 
 [CPLXxlsx]: <{{site.url}}/data/set/clpx/Traffic_Complexity_Scores.xlsm> "CPLX (Excel)"
 [CPLXcsv]: <{{site.url}}/404.html> "CPLX (CSV)"
