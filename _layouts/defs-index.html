@@ -19,7 +19,7 @@ layout: default
 {% if page.resource == true and page.entity == 'definition' %}
 {% assign page_letter = (page.title | split: '' | first | upcase ) %}
 {% if page_letter != current_letter %}
-{{ my_alphabeth | push: page_letter }}
+{% assign alphabeth = alphabeth | push: page_letter %}
 {% assign current_letter = page_letter %}
 {% endif %} <!-- if/page_letter -->
 {% endif %} <!-- if/definition -->

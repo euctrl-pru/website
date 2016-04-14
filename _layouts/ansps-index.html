@@ -16,15 +16,14 @@ layout: default
 {% assign pages = (site.pages | sort: 'title_lowercase' ) %}
 {% assign current_letter = '' %}
 {% for page in pages %}
-{% if page.resource == true and page.entity == 'definition' %}
+{% if page.resource == true and page.entity == 'ansp' %}
 {% assign page_letter = (page.title | split: '' | first | upcase ) %}
 {% if page_letter != current_letter %}
-{{ my_alphabeth | push: page_letter }}
+{% assign alphabeth = alphabeth | push: page_letter %}
 {% assign current_letter = page_letter %}
 {% endif %} <!-- if/page_letter -->
 {% endif %} <!-- if/definition -->
 {% endfor %}  <!-- for/pages -->
-
 
   <h2>Index of ANSP's</h2>
   <div class="container">
