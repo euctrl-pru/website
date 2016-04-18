@@ -28,7 +28,7 @@
 ##- Caveat: be sure to use gnu-getopt and not OSX builtin or Git Bash missing one ;-)
 
 SCRIPT=$(basename ${BASH_SOURCE[0]})
-OUTPUT_FILENAME=cplx.csv  # this is a trick
+OUTPUT_FILENAME=cplx.csv
 
 help=$(grep "^##-" "${SCRIPT}" | cut -c 4-)
 version=$(grep "^#--"  "${SCRIPT}" | cut -c 4-)

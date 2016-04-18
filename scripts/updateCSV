@@ -96,8 +96,8 @@ fi
     DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_airport_atfm_delay_data;
 )
 
-(
-    cd ${SCRIPT_DIR}/../data/set/clpx;
-    DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_traffic_complexity_score_data;
-)
+#(
+#    cd ${SCRIPT_DIR}/../data/set/clpx;
+#    DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_traffic_complexity_score_data;
+#)
 
