@@ -13,6 +13,8 @@ APT_ATFM_DLY as
 select
   flt_date
 , airport_location_id as airport_code
+, sum(NVL (tdf, 0)) as FLT_DLY
+, sum(NVL (tdf_15, 0)) as FLT_DLY_15 
 , sum(NVL (tdm, 0)) as DLY_APT
 , sum(CASE WHEN reason ='A'THEN NVL (tdm, 0) END) DLY_APT_A
 , sum(CASE WHEN reason ='C'THEN NVL (tdm, 0)END) DLY_APT_C
@@ -82,8 +84,10 @@ select
 ,nvl(DLY_APT_V,0) as DLY_APT_ARR_V_1
 ,nvl(DLY_APT_W,0) as DLY_APT_ARR_W_1
 ,nvl(DLY_APT_NA,0) as DLY_APT_ARR_NA_1
+,NVL (FLT_DLY, 0) as FLT_ARR_1_DLY
+,NVL (FLT_DLY_15, 0) as FLT_ARR_1_DLY_15
 from ARR_FLTS t left join APT_ATFM_DLY d on (t.flt_date = d.flt_date and t.code = d.airport_code)
- where t.flt_date>='01-JAN-2014' and t.flt_date<'01-MAR-2016'
+ where t.flt_date>='01-JAN-2014' and t.flt_date<'01-APR-2016'
  order by 1,2,3,4,5;
 
 spool off;
