@@ -81,23 +81,23 @@ fi
 
 (
     cd ${SCRIPT_DIR}/../data/set/hfe;
-    DBUSR=$HFEDBUSR DBPWD=$HFEDBPWD ./extract_horizontal_flight_efficiency_data --help;
+    DBUSR=$HFEDBUSR DBPWD=$HFEDBPWD ./extract_horizontal_flight_efficiency_data;
 )
 
 
 # no specia, i.e. HFE, usr/pwd from now on ;-)
 (
     cd ${SCRIPT_DIR}/../data/set/ert_flt;
-    DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_en-route_traffic_fab_fir_data --help;
+    DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_en-route_traffic_fab_fir_data;
 )
 
 (
     cd ${SCRIPT_DIR}/../data/set/apt_dly;
-    DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_airport_atfm_delay_data --help;
+    DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_airport_atfm_delay_data;
 )
 
 (
     cd ${SCRIPT_DIR}/../data/set/clpx;
-    DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_traffic_complexity_score_data --help;
+    DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_traffic_complexity_score_data;
 )
 
