@@ -172,7 +172,7 @@ width: 8em;
 |--------------------------------------------------------------|--------------------------------------------------------|------------------------------------|-----|------------------------------------|
 | Complexity<br><small>Complexity by ANSP</small>              | {{ page.dates.cplx.beg }} - {{ page.dates.cplx.end }}  | [xls {{ page.dwnld_i }}][CPLXxlsx] |    | [meta {{ page.info_i }}][CPLXmeta] |
 
-[CPLXxlsx]: <{{site.url}}/data/set/clpx/Traffic_Complexity_Scores.xlsm> "CPLX (Excel)"
+[CPLXxlsx]: <{{site.url}}/data/set/cplx/Traffic_Complexity_Scores.xlsm> "CPLX (Excel)"
 [CPLXcsv]: <{{site.url}}/404.html> "CPLX (CSV)"
 [CPLXmeta]: <{{site.url}}/references/dataset/Traffic_Complexity_Score.html> "CPLX (Meta)"
 
