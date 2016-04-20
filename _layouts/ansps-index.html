@@ -16,23 +16,19 @@ layout: default
 {% assign pages = (site.pages | sort: 'title_lowercase' ) %}
 {% assign current_letter = '' %}
 {% for page in pages %}
-{% if page.resource == true and page.entity == 'ansp' %}
-{% assign page_letter = (page.title | split: '' | first | upcase ) %}
-{% if page_letter != current_letter %}
-{% assign alphabeth = alphabeth | push: page_letter %}
-{% assign current_letter = page_letter %}
-{% endif %} <!-- if/page_letter -->
-{% endif %} <!-- if/definition -->
-{% endfor %}  <!-- for/pages -->
+   {% if page.resource == true and page.entity == 'ansp' %}
+   {% assign page_letter = (page.title | split: '' | first | upcase ) %}
+      {% if page_letter != current_letter %}
+         {% assign alphabeth = alphabeth | push: page_letter %}
+         {% assign current_letter = page_letter %}
+      {% endif %}
+   {% endif %}
+{% endfor %}
 
   <h2>Index of ANSP's</h2>
   <div class="container">
     <div class="row">
 
-      <!-- create a list of anchors to entries, i.e. A_, B_, C, D, E_, F_... where the ones without _ do not have entries
-           and as such do not point to a section in the page.
-           TODO: remove anchor when there are no entries.
-        -->
       <div>
         {% for item in alphabeth %}
           <a href="#{{ item }}-section">{{ item }}</a>
@@ -40,37 +36,35 @@ layout: default
           {% else %}
             ,
           {% endif %}
-        {% endfor %}  <!-- alphabeth -->
+        {% endfor %}
       </div>
     </div>
   </div>
 
 {% assign pp = (site.pages | sort: 'title_lowercase' ) %}
 {% for item in alphabeth %}
-    {% assign isfirst = true %}
-  {% for pag in pp %}
-    {% if pag.resource == true and pag.entity == 'ansp' %}
-      {% assign pag_letter = (pag.title | split: '' | first | upcase ) %}
-      {% if pag_letter == item %}
-        {% if isfirst %}
-          <h3 id="{{ item }}-section">{{ item }}</h3>
-            <div class="container">
-            <div class="row">
-            <div>
-            <a href="{{ pag.url }}">{{ pag.title }}</a>
-          {% assign isfirst = false %}
-        {% else %}
-          , <a href="{{ pag.url }}">{{ pag.title }}</a>
-        {% endif %} <!-- isfirst -->
-      {% else %}
-      {% endif %} <!-- letter -->
-    {% endif%} <!-- resource and definition -->
-  {% endfor %}  <!-- pag -->
-  {% if isfirst %}
-  {% else %}
+   {% assign isfirst = true %}
+   {% for pag in pp %}
+      {% if pag.resource == true and pag.entity == 'ansp' %}
+         {% assign pag_letter = (pag.title | split: '' | first | upcase ) %}
+         {% if pag_letter == item %}
+            {% if isfirst %}
+               <h3 id="{{ item }}-section">{{ item }}</h3>
+                  <div class="container">
+                     <div class="row">
+                        <div>
+                           <a href="{{ pag.url }}">{{ pag.title }}</a>
+               {% assign isfirst = false %}
+            {% else %}
+                           , <a href="{{ pag.url }}">{{ pag.title }}</a>
+            {% endif %}
+         {% endif %}
+      {% endif%}
+   {% endfor %}
+   {% unless isfirst %}
     </div>
     </div>
     </div>
-  {% endif %}
-{% endfor %}  <!-- alphabeth -->
+   {% endunless %}
+{% endfor %}
 
