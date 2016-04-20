@@ -158,13 +158,14 @@ width: 8em;
 
 ### ATM Cost-Effectiveness (ACE) operational data
 
-| Data description                                                     | Period                                                       | Excel                              | CSV | Metadata |
-|----------------------------------------------------------------------|--------------------------------------------------------------|------------------------------------|-----|----------|
-| ACE operational data<br><small>Monthly ACE operational data</small>  | {{ page.dates.ace_opt.beg }} - {{ page.dates.ace_opt.end }}  | [xls {{ page.dwnld_i }}][ACExlsx]  |     |          |
+| Data description                                                     | Period                                                       | Excel                              | CSV |  Metadata                         |
+|----------------------------------------------------------------------|--------------------------------------------------------------|------------------------------------|-----|-----------------------------------|
+| ACE operational data<br><small>Monthly ACE operational data</small>  | {{ page.dates.ace_opt.beg }} - {{ page.dates.ace_opt.end }}  | [xls {{ page.dwnld_i }}][ACExlsx]  |     | [specs {{ page.info_i }}][ACEurl] |
 
 [ACExlsx]: <{{site.url}}/data/set/ace_opt/ACE_Monthly_Operational_Data.xls> "ACE (Excel)"
 [ACEcsv]: <{{site.url}}/404.html> "ACE (CSV)"
 [ACEmeta]: <{{site.url}}/references/dataset/ACE_Monthly_Operational_Data.html> "ACE (Meta)"
+[ACEurl]: <http://www.eurocontrol.int/documents/economic-information-disclosure-specification> "ACE specs"
 
 ### Traffic complexity scores
 
