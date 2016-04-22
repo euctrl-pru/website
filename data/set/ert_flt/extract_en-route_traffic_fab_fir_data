@@ -24,6 +24,8 @@
 ##-
 ##- Examples:
 ##- $ extract_en-route_traffic_fab_fir_data
+##-
+##- Caveat: be sure to use gnu-getopt and not OSX builtin or Git Bash missing one ;-)
 
 SCRIPT=$(basename ${BASH_SOURCE[0]})
 OUTPUT_FILENAME='En-Route_Traffic_FAB_FIR.csv'

@@ -16,8 +16,8 @@ table
     border-collapse: collapse;
     border-spacing: 0; /* IE 6 */
 
-    border-bottom: 2pt solid #000;
-    border-top: 2pt solid #000; /* The caption on top will not have a bottom-border */
+    border-bottom: 2pt solid #CCC;
+    border-top: 2pt solid #CCC; /* The caption on top will not have a bottom-border */
 
     /* Center */
     margin-left: 2em;

@@ -42,7 +42,7 @@ airport capacity shortfalls since 2009.
 | YEAR             | Network Manager | YEAR                                 |                      | Reference year                                                                        | 2015        |
 | MONTH_NUM        | Network Manager | MONTH                                |                      | Month (numeric)                                                                       | 2           |
 | MONTH_MON        | Network Manager | MONTH_MON                            |                      | Month (3-letter code)                                                                 | FEB         |
-| FLT_DATE         | Network Manager | FLT_DATE                             |                      | Date of the flight                                                                    | 11-FEB-2015 |
+| FLT_DATE         | Network Manager | FLT_DATE                             |                      | Date of the flight                                                                    | 11/02/2015  |
 | APT_ICAO         | Network Manager | APT_ICAO                             |                      | ICAO 4-letter airport designator                                                      | LSGG        |
 | APT_NAME         | PRU             | APT_NAME                             |                      | Airport name                                                                          | Geneva      |
 | STATE_NAME       | PRU             | STATE_NAME                           |                      | Name of the country in which the airport is located                                   | Switzerland |
@@ -64,3 +64,6 @@ airport capacity shortfalls since 2009.
 | DLY_APT_ARR_V_1  | Network Manager | V - Environmental Issues - AD        | AD Capacity          | Minutes of airport arrival ATFM delay with delay code V - Environmental Issues        | 0           |
 | DLY_APT_ARR_W_1  | Network Manager | W - Weather - AD                     | AD Weather           | Minutes of airport arrival ATFM delay with delay code W - Weather                     | 0           |
 | DLY_APT_ARR_NA_1 | Network Manager | NA - Not specified - AD              | AD Disruptions       | Minutes of airport arrival ATFM delay with delay code NA - Not specified              | 0           |
+| FLT_ARR_1_DLY    | Network Manager | FLT_ARR_1_DLY                        |                      | Number of airport ATFM arrival delayed arrivals                                       | 0           |
+| FLT_ARR_1_DLY_15 | Network Manager | FLT_ARR_1_DLY_15                     |                      | Number of airport ATFM arrival delayed arrivals (>15 min.)                            | 0           |
+ 

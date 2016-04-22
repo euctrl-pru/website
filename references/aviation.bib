@@ -6,6 +6,8 @@
 @string{ec = "{European Commission}"}
 @string{ep = "{European Parliament}"}
 @string{ecou = "{European Council}"}
+@string{ectrl = "{EUROCONTROL}"}
+@string{prc = "{Performance Review Commission}"}
 @string{pru = "{Performance Review Unit}"}
 @string{prb = "{Performance Review Body}"}
 @string{atmap = "{ATMAP MET Working Group}"}
@@ -81,7 +83,7 @@
 @techreport{delaycost,
   Author =       {{Transport Studies Group}},
   Title =        {Evaluating the true cost to airlines of one minute of airborne
-                  or ground delay][delaycost},
+                  or ground delay},
   Address =      {London, UK},
   Institution =  {University of Westminster},
   Keywords =     {airline, cost, delay},
@@ -183,8 +185,19 @@
   Keywords =     {aircraft, noise},
   Number =       {Doc 9829 AN/451},
   Publisher =    {ICAO},
-  Url =          {\href{http://www.bazl.admin.ch/dokumentation/grundlagen/02643/02644/index.html?lang=fr#sprungmarke1_64}{URL}},
-  Year =         2008
+  Url =          {\href{https://goo.gl/AyKrTR}{PDF}},
+  Year =         2011
+}
+
+@book{icao:8168,
+  Author =       {ICAO},
+  Title =        {Doc 8168. Aircraft Operations},
+  Edition =      {fifth},
+  Keywords =     {aircraft, flight},
+  Number =       {Doc 8168 OPS/611},
+  Publisher =    {ICAO},
+  Url =          {\href{http://goo.gl/nPtPgD}{PDF}},
+  Year =         2006
 }
 
 @book{icao:9854,
@@ -216,7 +229,7 @@
   Keywords =     {aircraft operations},
   Number =       {Doc 8168 OPS/611},
   Publisher =    {ICAO},
-  Url =          {\href{http://www.bazl.admin.ch/dokumentation/grundlagen/02643/02644/index.html?lang=fr#sprungmarke1_3}{URL}},
+  Url =          {\href{https://goo.gl/UV4Jo6}{PDF}},
   Volume =       1,
   Month =        {November},
   Year =         2006
@@ -228,7 +241,7 @@
   Keywords =     {air traffic management},
   Number =       {Doc 4444 ATM/501},
   Publisher =    {ICAO},
-  Url =          {\href{http://www.bazl.admin.ch/dokumentation/grundlagen/02643/02644/index.html?lang=fr#sprungmarke1_1}{URL}},
+  Url =          {\href{https://goo.gl/nl16Jc}{PDF}},
   Month =        {November},
   Year =         2007
 }
@@ -245,13 +258,14 @@
   Year =         2009
 }
 
-@TechReport{pru-hfe,
+@TechReport{pru-hfe-pi,
   author =       {Guglielmo Guastalla},
   title =        {Performance Indicator – Horizontal Flight Efficiency},
   institution =  {Eurocontrol/PRU},
   year =         {2014},
   url =          {\href{http://ansperformance.eu/references/methodology/horizontal_flight_efficiency.html}{URL}},
   month =        {May},
+  number =       {01-00},
   abstract =     {Description of the horizontal flight efficiency indicator and
                   its two versions used in the Performance Scheme Regulation –
                   KEP and KEA}
@@ -271,4 +285,120 @@
   year = 2016,
   url = {\href{http://www.eurocontrol.int/prudata/dashboard/rp2_2015.html}{URL}},
   note = {Accessed: 2016-03-06}
+}
+
+
+@TechReport{pru-adasma-pi,
+  author =       {Laura Cappelleras},
+  title =        {Additional ASMA Time Performance Indicator document},
+  institution =  {Eurocontrol/PRU},
+  year =         {2015},
+  url =          {\href{http://ansperformance.eu/references/methodology/unimpeded_asma_time.html}{URL}},
+  month =        {Feb},
+  number =       {00-06},
+  abstract =     {Description of the conceptual, informational, and implementation independent
+                  model of the additional ASMA time performance indicator}
+}
+
+
+@TechReport{pru-tx-out-pi,
+  author =       {Laura Cappelleras},
+  title =        {Additional ASMA Time Performance Indicator documentAdditional
+                  Taxi-Out Time Performance Indicator document},
+  institution =  {Eurocontrol/PRU},
+  year =         {2015},
+  url =          {\href{http://ansperformance.eu/references/methodology/unimpeded_asma_time.html}{URL}},
+  month =        {Feb},
+  number =       {00-04},
+  abstract =     {Description of the conceptual, informational, and implementation independent
+                  model of the additional taxi-out time performance indicator}
+}
+
+@TechReport{atmap-2009,
+  author =       pru,
+  title =        {ATM Airport Performance (ATMAP) Framework},
+  institution =  prc,
+  year =         {2009},
+  number =       {1},
+  month =        {Dec},
+  abstract =     {Description of the performance framework and the data
+                  requirements for the assessment of the performance of aircraft
+                  movement operations at major airports (in the movement area)
+                  and nearby airspace (maximum range 100 Nm radius from the
+                  airport).}
+}
+
+@Misc{cco-cdo-leaflet,
+  author =       {Peeters, Sam},
+  title =        {Vertical flight efficiency during climb and descent},
+  institution =  pru,
+  howpublished = {Leaflet},
+  month =        {Apr},
+  year =         {2016}
+}
+
+@Misc{turkish-atm-efficiency,
+  title={The Measurements of Turkish Airspace ATM Efficiency Based on Actual Flight Data},
+  author={Canarslanlar, A.O. and Usanmaz O. and Turgut E.T. and Cavcar M. and Dogeroglu T. and Yay O.D. and Armutlu K.},
+  url = {\href{http://www.sesarinnovationdays.eu/sites/default/files/SID%202014%20poster%20Measuring%20Turkish%20Airspace%20Efficiency.pdf}{PDF}},
+  month = {Nov},
+  year = {2014},
+  howpublished = {Poster}
+}
+
+@Book{airbus-fuel-economy,
+  author =       {Airbus},
+  title =        {Getting to Grips with Fuel Economy},
+  publisher =    {Airbus},
+  year =         {2004},
+  number =       {4},
+  series =       {Getting Grips with},
+  url =          {\href{http://goo.gl/OoDNYC}{URL}},
+  month =        {Oct}
+}
+
+
+@Book{airbus-aircraft-performance,
+  author =       {Airbus},
+  title =        {Getting to Grips with Aircraft Performance},
+  publisher =    {Airbus},
+  year =         {2002},
+  series =       {Getting Grips with},
+  url =          {\href{http://goo.gl/cY5oeF}{URL}},
+  month =        {Jan}
+}
+
+@Misc{CCDvsCDA,
+  author =       {Larsson, Peter},
+  title =        {CCD versus CDA},
+  year =         {2011},
+  month =        {May},
+  day =          {4},
+  institution =  {Scandinavian Airlines System}
+}
+
+@Misc{vertical-flight-efficiency-tn,
+  author =       prc,
+  title =        {Vertical flight efficiency},
+  year =         {2008}
+}
+
+@Manual{pru:ace_spec,
+  title =        {EUROCONTROL Specification for Economic Information Disclosure},
+  editor =       {Giovanni Nero},
+  organization = ectrl,
+  edition =      {3.0},
+  month =        {Dec},
+  year =         {2012},
+  url =          {\href{http://www.eurocontrol.int/documents/economic-information-disclosure-specification}{URL}}
+}
+
+@techreport{passengerdelaycost,
+  Author =       {{University of Westminster}},
+  Title =        {The cost of passenger delay to airlines in Europe},
+  Address =      {London, UK},
+  Keywords =     {airline, cost, delay},
+  edition =      {2},
+  Month =        {Dec},
+  Year =         {2015}
 }

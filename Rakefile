@@ -1,83 +1,108 @@
-require 'html/proofer'
+require 'rake'
+require 'html-proofer'
 
-task :test do
-  sh "bundle exec jekyll build --config _config.yml,_config_dev.yml"
-  sh "rm -rf ./_site/posts"
-  HTML::Proofer.new("./_site", {
-                      :allow_hash_href => true,
-                      :empty_alt_ignore => true,
-                      :href_ignore => ["#",
-                                       "/#",
-                                       "/about/#",
-                                       /^(https?\:\/\/)?(www\.)?youtube\.com\/.+$/
-                                      ],
-                      :parallel => {:in_processes => 4},
-                      :only_4xx => true,
-                      :check_html => true,
-                      :typhoeus => { 
-                        :timeout => 3 }
-                    }).run
-end
-require 'html/proofer'
 
-task :test do
-  sh "bundle exec jekyll build --config _config.yml,_config_dev.yml"
-  sh "rm -rf ./_site/posts"
-  HTML::Proofer.new("./_site", {
-                      :allow_hash_href => true,
-                      :empty_alt_ignore => true,
-                      :href_ignore => ["#",
-                                       "/#",
-                                       "/about/#",
-                                       /^(https?\:\/\/)?(www\.)?youtube\.com\/.+$/
-                                      ],
-                      :parallel => {:in_processes => 4},
-                      :only_4xx => true,
-                      :check_html => true,
-                      :typhoeus => {
-                        :timeout => 3 }
-                    }).run
-end
-
-desc 'Check links for site already running on localhost:4000'
-task :check_links do
-  begin
-    require 'anemone'
-
-    root = 'http://localhost:4000/'
-    puts "Checking links with anemone ... "
-    # check-links --no-warnings http://localhost:4000
-    Anemone.crawl(root, :discard_page_bodies => true) do |anemone|
-      anemone.after_crawl do |pagestore|
-        broken_links = Hash.new { |h, k| h[k] = [] }
-        pagestore.each_value do |page|
-          if page.code != 200
-            referrers = pagestore.pages_linking_to(page.url)
-            referrers.each do |referrer|
-              broken_links[referrer] << page
-            end
-          else
-            puts "OK #{page.url}"
-          end
-        end
-        puts "\n\nLinks with issues: "
-        broken_links.each do |referrer, pages|
-          puts "#{referrer.url} contains the following broken links:"
-          pages.each do |page|
-            puts "  HTTP #{page.code} #{page.url}"
-          end
-        end
-      end
-    end
-    puts "... done!"
-
-  rescue LoadError
-    abort 'Install anemone gem: gem install anemone'
-  end
-end
 
 # remove generated site
 def cleanup
-  sh 'rm -rf _site'
-  compass('clean')
+  sh 'rm -Rf _site'
+end
+
+# launch jekyll
+def jekyll(directives = '')
+  sh 'bundle exec jekyll ' + directives
+end
+
+
+
+
+
+#############################################################################
+#
+# Site tasks
+#
+#############################################################################
+
+namespace :site do
+
+  desc "Generate the site"
+  task :build => :clean do
+    jekyll('build')
+  end
+
+
+  desc "Generate the site and serve locally"
+  task :serve do
+    jekyll('serve')
+  end
+
+
+  desc "Generate the site, serve locally and watch for changes"
+  task :watch do
+    jekyll('serve --watch')
+  end
+
+
+  desc "Check links"
+  task :test => :build do
+    HTMLProofer.check_directory("./_site", {
+                                  :check_favicon => true,
+                                  :url_ignore => ['http://localhost:4000']
+                                }).run
+  end
+
+
+  desc 'Clean up generated site'
+  task :clean do
+    cleanup
+  end
+
+
+  desc "Generate the site and push changes to remote origin"
+  task :deploy do
+
+    # Configure git if this is run in Travis CI, see https://github.com/openingscience/book/blob/master/Rakefile
+    if ENV["TRAVIS"]
+      # Detect pull request
+      if ENV['TRAVIS_PULL_REQUEST'].to_s.to_i > 0
+        puts 'Pull request detected. Not proceeding with deploy.'
+        exit
+      end
+
+      puts "setting user configs ..."
+      sh "git config --global user.name '#{ENV['GIT_NAME']}'"
+      sh "git config --global user.email '#{ENV['GIT_EMAIL']}'"
+      sh "git config --global push.default simple"
+
+      # deploy only if on master branch
+      if ENV["TRAVIS_BRANCH"] == "master"
+        if #{ENV['TRAVIS_TAG']}.to_s == ''
+          puts "Not a tag, hence not deploying"
+          exit 0
+        else
+          puts "Building and deploying tag '#{ENV['TRAVIS_TAG']}'"
+          puts "Cloning euctrl-pru.github.io..."
+          sh "git clone https://#{ENV['GIT_NAME']}:#{ENV['GH_TOKEN']}@github.com/euctrl-pru/euctrl-pru.github.io.git > /dev/null"
+
+          # Generate the site...it goes in _site
+          jekyll('build')
+
+          # Commit and push to github
+          sha = `git log`.match(/[a-z0-9]{40}/)[0]
+          Dir.chdir('euctrl-pru.github.io') do
+            sh "git rm -rf * > /dev/null"
+            sh "cp -r  ../_site/* ."
+            sh "git add --all ."
+            sh "git status"
+            sh "git commit -m 'Updating to euctrl-pru/euctrl-pru.github.io@#{sha}, tagged '#{ENV['TRAVIS_TAG']}'.'"
+            # Make sure to make the output quiet, or else the API token will leak!
+            sh "git push --force --quiet origin master"
+            puts "Updated destination repo pushed to GitHub Pages"
+          end
+        end
+      else
+        puts "Not in 'master', hence no deployment"
+      end
+    end
+  end
 end

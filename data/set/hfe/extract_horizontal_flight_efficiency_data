@@ -23,7 +23,9 @@
 ##-   -V, --version           Output version information and exit.
 ##-
 ##- Examples:
-##- $ extract_airport_atfm_delay_data
+##- $ extract_horizontal_flight_efficiency_data
+##-
+##- Caveat: be sure to use gnu-getopt and not OSX builtin or Git Bash missing one ;-)
 
 SCRIPT=$(basename ${BASH_SOURCE[0]})
 OUTPUT_FILENAME=hfe.json # this is a trick

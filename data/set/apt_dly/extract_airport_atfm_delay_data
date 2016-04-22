@@ -24,6 +24,8 @@
 ##-
 ##- Examples:
 ##- $ extract_airport_atfm_delay_data
+##-
+##- Caveat: be sure to use gnu-getopt and not OSX builtin or Git Bash missing one ;-)
 
 SCRIPT=$(basename ${BASH_SOURCE[0]})
 OUTPUT_FILENAME=apt_dly.json  # this is a trick

@@ -11,13 +11,17 @@ keywords: capacity, dataviz, performance, air transport, flights, europe
         <h5>EUROCONTROL Area</h5>
         <div id="crt_cap_ert_YY"></div>
         <div id="crt_cap_ert_MM"></div>
+
+        <h5>En-route ATFM delays by Entity (Jan - Mar 2016)</h5>
+        <div id="tbl_cap_ert_YY"></div>
     </div>
     <div class="col-lg-6 offset-10">
-        <h5>En-route ATFM delays by <a href="{{site.url}}/references/definition/fab.html">FAB (FIR)</a> (Feb 2016)</h5>
+        <h5>En-route ATFM delays by <a href="{{site.url}}/references/definition/fab.html">FAB (FIR)</a> (Mar 2016)</h5>
         <div id="tbl_cap_fir_ert_YY"></div>
         <br>
-        <h5>En-route ATFM delays by Entity (Jan - Feb 2016)</h5>
-        <div id="tbl_cap_ert_YY"></div>
+        <div id="crt_cap_fir_ert_YY"></div>
+
+        <br>
     </div>
 </div>
 
@@ -30,7 +34,7 @@ keywords: capacity, dataviz, performance, air transport, flights, europe
         <div id="crt_cap_apt_MM"></div>
     </div>
     <div class="col-lg-6 offset-10">
-        <h5>Airport Arrival ATFM Delays by Airport (Jan - Feb 2016)</h5>
+        <h5>Airport Arrival ATFM Delays by Airport (Jan - Mar 2016)</h5>
         <div id="tbl_cap_apt_YY"></div>
     </div>
 </div>
@@ -43,3 +47,10 @@ keywords: capacity, dataviz, performance, air transport, flights, europe
 {% javascript crt_cap_apt_YY %}
 {% javascript crt_cap_apt_MM %}
 {% javascript tbl_cap_apt_YY %}
+
+<script>
+ var pymParent = new pym.Parent(
+   'crt_cap_fir_ert_YY',
+   '{{ "/graphics/en-route_atfm_delay_fab/index.html" | prepend: site.baseurl | prepend: site.url }}',
+   {});
+</script>

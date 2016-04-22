@@ -19,6 +19,8 @@
             "STATE_NAME",
             "FLT_ARR_1",
             "DLY_APT_1",
+            "FLT_ARR_1_DLY",
+            "FLT_ARR_1_DLY_15",
             "DLY_APT_ARR_A_1",
             "DLY_APT_ARR_C_1",
             "DLY_APT_ARR_D_1",
@@ -78,6 +80,8 @@
             d.DLY_APT_ARR_V_1 = d.DLY_APT_ARR_V_1 ? +d.DLY_APT_ARR_V_1 : 0;
             d.DLY_APT_ARR_W_1 = d.DLY_APT_ARR_W_1 ? +d.DLY_APT_ARR_W_1 : 0;
             d.DLY_APT_ARR_NA_1 = d.DLY_APT_ARR_NA_1 ? +d.DLY_APT_ARR_NA_1 : 0;
+            d.FLT_ARR_1_DLY = d.FLT_ARR_1_DLY ? +d.FLT_ARR_1_DLY : 0;
+            d.FLT_ARR_1_DLY_15 = d.FLT_ARR_1_DLY_15 ? +d.FLT_ARR_1_DLY_15 : 0;
         });
 
         return arr;
@@ -135,6 +139,8 @@
                 "APT_ICAO",
                 "APT_NAME",
                 "FLT_ARR_1",
+                "FLT_ARR_1_DLY",
+                "FLT_ARR_1_DLY_15",
                 "DLY_APT_1",
                 "DLY_APT_ARR_A_1",
                 "DLY_APT_ARR_C_1",
