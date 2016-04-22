@@ -62,11 +62,11 @@ namespace :site do
   task :deploy do
 
     # Configure git if this is run in Travis CI, see https://github.com/openingscience/book/blob/master/Rakefile
-    if ENV["TRAVIS"]
+    if ENV['TRAVIS']
       # Detect pull request
       if ENV['TRAVIS_PULL_REQUEST'].to_s.to_i > 0
         puts 'Pull request detected. Not proceeding with deploy.'
-        exit
+        exit 0
       end
 
       puts "setting user configs ..."
@@ -74,14 +74,14 @@ namespace :site do
       sh "git config --global user.email '#{ENV['GIT_EMAIL']}'"
       sh "git config --global push.default simple"
 
-      # deploy only if on master branch
-      if ENV["TRAVIS_BRANCH"] == "master"
-        if #{ENV['TRAVIS_TAG']}.to_s == ''
-          puts "Not a tag, hence not deploying"
+      # deploy only if on master branch eventually
+      if ENV['TRAVIS_BRANCH'].to_s.scan(/^master$/).length > 0
+        if ENV['TRAVIS_TAG'].to_s.to_i > 0
+          puts "Not a tag, hence not deploying to github.com/#{ENV['TRAVIS_REPO_SLUG']}.github.io"
           exit 0
         else
           puts "Building and deploying tag '#{ENV['TRAVIS_TAG']}'"
-          puts "Cloning euctrl-pru.github.io..."
+          puts "Cloning #{ENV['TRAVIS_REPO_SLUG']}.github.io..."
           sh "git clone https://#{ENV['GIT_NAME']}:#{ENV['GH_TOKEN']}@github.com/euctrl-pru/euctrl-pru.github.io.git > /dev/null"
 
           # Generate the site...it goes in _site
@@ -94,7 +94,7 @@ namespace :site do
             sh "cp -r  ../_site/* ."
             sh "git add --all ."
             sh "git status"
-            sh "git commit -m 'Updating to euctrl-pru/euctrl-pru.github.io@#{sha}, tagged '#{ENV['TRAVIS_TAG']}'.'"
+            sh "git commit -m 'Updating to #{ENV['TRAVIS_REPO_SLUG']}.github.io@#{sha}, tagged '#{ENV['TRAVIS_TAG']}'.'"
             # Make sure to make the output quiet, or else the API token will leak!
             sh "git push --force --quiet origin master"
             puts "Updated destination repo pushed to GitHub Pages"
