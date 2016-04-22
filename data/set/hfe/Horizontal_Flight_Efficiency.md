@@ -24,6 +24,8 @@ width: 7em;
 
 # {{ page.title }}
 
+Please note that additional quality control measures detected a limited number of abnormal flight trajectories starting in December 2015 which were removed by applying an additional filter as of 01 December 2015. Due to this quality improvement, the period December 2015 - Februray 2016 might differ slightly from older data releases.  
+
 ## Data description
 Horizontal en-route flight efficiency compares the length of actual or planned flight trajectories
 to the corresponding “achieved” distance.
