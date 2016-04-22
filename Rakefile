@@ -101,7 +101,7 @@ namespace :site do
           end
         end
       else
-        puts "Not in 'master', hence no deployment"
+        puts "Not in (tagged) 'master', hence no deployment to github.com/#{ENV['TRAVIS_REPO_SLUG']}.github.io"
       end
     end
   end
