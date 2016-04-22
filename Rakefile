@@ -13,7 +13,12 @@ def jekyll(directives = '')
   sh 'bundle exec jekyll ' + directives
 end
 
-
+# tag
+def tag()
+  system("git remote add travis https://#{ENV['GH_TOKEN']}@github.com/#{ENV['TRAVIS_REPO_SLUG']}.github.io.git")
+  system('git tag $GIT_TAG -a -m "Published to production from TravisCI build $TRAVIS_BUILD_NUMBER"')
+  system("git push travis $GIT_TAG")
+end
 
 
 
@@ -82,7 +87,7 @@ namespace :site do
         else
           puts "Building and deploying tag '#{ENV['TRAVIS_TAG']}'"
           puts "Cloning #{ENV['TRAVIS_REPO_SLUG']}.github.io..."
-          sh "git clone https://#{ENV['GIT_NAME']}:#{ENV['GH_TOKEN']}@github.com/euctrl-pru/euctrl-pru.github.io.git > /dev/null"
+          sh "git clone https://#{ENV['GIT_NAME']}:#{ENV['GH_TOKEN']}@github.com/#{ENV['TRAVIS_REPO_SLUG']}.github.io.git > /dev/null"
 
           # Generate the site...it goes in _site
           jekyll('build')
@@ -95,9 +100,14 @@ namespace :site do
             sh "git add --all ."
             sh "git status"
             sh "git commit -m 'Updating to #{ENV['TRAVIS_REPO_SLUG']}.github.io@#{sha}, tagged '#{ENV['TRAVIS_TAG']}'.'"
+
             # Make sure to make the output quiet, or else the API token will leak!
             sh "git push --force --quiet origin master"
             puts "Updated destination repo pushed to GitHub Pages"
+
+            # tag to record when/where from built
+            tag()
+            puts "production tagged."
           end
         end
       else
