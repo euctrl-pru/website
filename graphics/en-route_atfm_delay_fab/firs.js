@@ -316,6 +316,11 @@ var d3, queue, vis, params, topojson;
         svg.append("g")
             .attr("class", "legendQuant")
             .attr("transform", "translate(20," + height/3 + ")");
+      svg.append("g")
+        .attr("transform", "translate(60," + (height/3 - 15) + ")")
+        .append("text")
+        .style("text-anchor", "middle")
+        .text("2015 situation");
 
         var legend = d3.legend.color()
                 .labelFormat(d3.format(".2f"))
