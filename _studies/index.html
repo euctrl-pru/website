@@ -5,6 +5,7 @@ layout: default
   <h2>Studies</h2>
   <div class="container">
     <div class="row">
+
       {% for study in site.studies %}
           {% capture this_year %}{{ study.date | date: "%Y" }}{% endcapture %}
           {% capture next_year %}{{ study.previous.date | date: "%Y" }}{% endcapture %}

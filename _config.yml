@@ -31,7 +31,10 @@ tools:
 # Build settings
 gems:
   - 'jekyll/scholar'
-  - jekyll-redirect-from
+  - bootstrap-sass
+  - uglifier
+  - jekyll-assets
+#  - jekyll-redirect-from
 
 assets:
   sources:
@@ -42,6 +45,7 @@ assets:
   css_compressor: sass
   js_compressor:  uglifier
   cache:          true
+  digest: false
 
 sass:
   sass_dir: _sass
