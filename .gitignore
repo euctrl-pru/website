@@ -2,9 +2,7 @@
 .sass-cache/
 *.css.map
 tmp
-.jekyll-assets-cache/
 .jekyll-metadata
-Gemfile.lock
 _site
 npm-debug.log
 .tern-port
