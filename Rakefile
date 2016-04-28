@@ -5,12 +5,12 @@ require 'html-proofer'
 
 # remove generated site
 def cleanup
-  sh 'rm -Rf _site'
+  sh 'echo $PWD; rm -Rf _site'
 end
 
 # launch jekyll
 def jekyll(directives = '')
-  sh 'bundle exec jekyll ' + directives
+  sh 'bundle exec jekyll ' + directives + ' --future'
 end
 
 # tag
@@ -32,19 +32,19 @@ namespace :site do
 
   desc "Generate the site"
   task :build => :clean do
-    jekyll('build --future')
+    jekyll('build')
   end
 
 
   desc "Generate the site and serve locally"
   task :serve do
-    jekyll('serve --future')
+    jekyll('serve')
   end
 
 
   desc "Generate the site, serve locally and watch for changes"
   task :watch do
-    jekyll('serve --watch --future')
+    jekyll('serve --watch')
   end
 
 
@@ -90,7 +90,7 @@ namespace :site do
           sh "git clone https://#{ENV['GIT_NAME']}:#{ENV['GH_TOKEN']}@github.com/#{ENV['TRAVIS_REPO_SLUG']}.github.io.git > /dev/null"
 
           # Generate the site...it goes in _site
-          jekyll('build --future')
+          jekyll('build')
 
           # Commit and push to github
           sha = `git log`.match(/[a-z0-9]{40}/)[0]

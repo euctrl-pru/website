@@ -13,9 +13,9 @@ gem 'bootstrap-sass'
 gem 'jekyll'
 group :jekyll_plugins do
   gem 'jekyll-assets', github: 'jekyll/jekyll-assets'
-#  gem 'jekyll-sitemap', github: 'jekyll/jekyll-sitemap'
-  gem 'jekyll-scholar'
-#  gem 'jekyll-redirect-from'
+  gem 'jekyll-sitemap', github: 'jekyll/jekyll-sitemap'
+  gem 'jekyll-scholar', github: 'inukshuk/jekyll-scholar'
+  gem 'jekyll-redirect-from'
 end
 
 
