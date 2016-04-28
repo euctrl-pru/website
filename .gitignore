@@ -9,3 +9,4 @@ _site
 npm-debug.log
 .tern-port
 auto/
+.asset-cache/

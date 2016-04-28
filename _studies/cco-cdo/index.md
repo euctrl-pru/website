@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Vertical Flight Efficiency During Climb and Descent"
-date:   2016-04-05T10:09:13 +0100
+date: 2016-04-05 10:09:13 +0100
 tags: vertical, efficiency, cco, cdo, climb, descend, ifr, flights, europe, eurocontrol
 excerpt: "Vertical flight efficiency during the climb and descent phases of flights"
 ---

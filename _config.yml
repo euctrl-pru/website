@@ -8,9 +8,14 @@ baseurl: "" # see https://byparker.com/blog/2014/clearing-up-confusion-around-ba
 
 media: media
 
+include:
+  - _pages
+
 collections:
   studies:
     output: true
+    permalink: /:collection/:path/
+    title: Studies
 
 # Owner / Author information
 owner:
