@@ -32,19 +32,19 @@ namespace :site do
 
   desc "Generate the site"
   task :build => :clean do
-    jekyll('build')
+    jekyll('build --future')
   end
 
 
   desc "Generate the site and serve locally"
   task :serve do
-    jekyll('serve')
+    jekyll('serve --future')
   end
 
 
   desc "Generate the site, serve locally and watch for changes"
   task :watch do
-    jekyll('serve --watch')
+    jekyll('serve --watch --future')
   end
 
 
@@ -90,7 +90,7 @@ namespace :site do
           sh "git clone https://#{ENV['GIT_NAME']}:#{ENV['GH_TOKEN']}@github.com/#{ENV['TRAVIS_REPO_SLUG']}.github.io.git > /dev/null"
 
           # Generate the site...it goes in _site
-          jekyll('build')
+          jekyll('build --future')
 
           # Commit and push to github
           sha = `git log`.match(/[a-z0-9]{40}/)[0]
