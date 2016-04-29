@@ -17,10 +17,11 @@ collections:
 
 # Owner / Author information
 owner:
-  name: Performance Review Unit / European Organisation for the Safety of Air Navigation (EUROCONTROL)
+  name: European Organisation for the Safety of Air Navigation (EUROCONTROL)
   location: Brussels, Belgium
   twitter: eurocontrol
   github:  euctrl-pru
+  googleanalytics: UA-62697169-2
   email: PRU-Support@eurocontrol.int
 
 webmaster:
@@ -81,11 +82,10 @@ scholar:
 compress_html:
   clippings: all
   comments: ["<!-- ", " -->"]
-  endings: all
   ignore:
-    envs: [local, development]
-  blanklines: false
-  profile: true
+    envs: development
+  blanklines: true
+  profile: false
   startings: [html, head, body]
 
 # Global configs

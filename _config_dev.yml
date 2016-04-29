@@ -5,3 +5,6 @@ dev: true
 assets:
   debug: true
   cache: false
+
+owner:
+  - googleanalytics: ""
