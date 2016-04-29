@@ -51,12 +51,14 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 	background-color: red;
 }
 
+/******************************************************************************/
+/* place background image in the <div class="main"> element                   */
+/* all you need to do is to define the background-image for the relevant      */
+/* page where you want to have a background, see the commented property below */
+/* Use _pages/home.md as an example                                           */
+/******************************************************************************/
 
-# place background image in the <div class="main"> element
-# all you need to do is to define the background-image for the relevant
-# page where you want to have a background, see the commented property below
-# Use _pages/home.md as an example 
-# from https://scotch.io/tutorials/how-to-change-a-css-background-images-opacity
+/* from https://scotch.io/tutorials/how-to-change-a-css-background-images-opacity */
 .main {
   position: relative;
   overflow: hidden;
