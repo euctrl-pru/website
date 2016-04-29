@@ -51,6 +51,8 @@ assets:
   css_compressor: sass
   js_compressor:  uglifier
   digest: false
+  autoprefixer:
+    browsers: ["last 2 versions","> 5%","IE 9"]
 
 sass:
   sass_dir: _sass
@@ -76,6 +78,17 @@ scholar:
   sort_by: year,month
   order: descending
   query: "@*"
+
+# HTML Compression
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local, development]
+  blanklines: false
+  profile: true
+  startings: [html, head, body]
 
 # Global configs
 timezone: Europe/Brussels
