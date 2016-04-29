@@ -101,7 +101,7 @@ The following input data are required in order to calculate the actual ASMA tran
 
 | Acronym | Description | Source |
 |---------|-------------|--------|
-| ASMA entry-point	| Date-time + bearing from airport reference point (long. & lat.) | Actual trajectory from [Correlated Position Report (CPR)](http://atmlexicon.eurocontrol.int/lexicon/en/index.php/CPR) provided by NM |
+| ASMA entry-point	| Date-time + bearing from airport reference point (long. & lat.) | Actual trajectory from [Correlated Position Report (CPR)](http://www.eurocontrol.int/lexicon/lexicon/en/index.php/CPR) provided by NM |
 | Aircraft type	| Aircraft ICAO designator | Network Manager |
 | ALDT 	| ‘Actual landing time’ (ALDT) means the actual date and time when the aircraft has landed (touch down). | Airport  data |
 | Arrival runway designator | ICAO designator of the runway used for landing (e.g. 10L). | Airport  data |
@@ -188,7 +188,7 @@ Unimpeded ASMA times are calculated in five steps:
 
 * Consistency analysis between the landing times received from airports and the
   landing times computed by
-  [ETFMS](http://atmlexicon.eurocontrol.int/lexicon/en/index.php/Enhanced_Tactical_Flow_Management_System)
+  [ETFMS](http://www.eurocontrol.int/lexicon/lexicon/en/index.php/Enhanced_Tactical_Flow_Management_System)
   system;
 * Completeness analysis of the *Correlated Positions reports for a Flight (CPF)* trajectory;
 * Existence of the aircraft type ICAO Code to be matched with *aircraft class*.
