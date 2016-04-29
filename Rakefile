@@ -5,12 +5,12 @@ require 'html-proofer'
 
 # remove generated site
 def cleanup
-  sh 'echo $PWD; rm -Rf _site'
+  sh 'rm -Rf _site'
 end
 
 # launch jekyll
 def jekyll(directives = '')
-  sh 'bundle exec jekyll ' + directives + ' --future'
+  sh 'bundle exec jekyll ' + directives
 end
 
 # tag
@@ -21,47 +21,54 @@ def tag()
 end
 
 
-
 #############################################################################
-#
-# Site tasks
-#
+# Development tasks
 #############################################################################
 
-namespace :site do
+# Usage: rake dev, rake dev:serve
+task :dev => ["dev:serve"]
+namespace :dev do
 
-  desc "Generate the site"
-  task :build => :clean do
-    jekyll('build')
-  end
-
-
-  desc "Generate the site and serve locally"
+  desc "Serve development Jekyll site locally"
   task :serve do
-    jekyll('serve')
+    puts "Starting up development Jekyll site server..."
+    jekyll('serve --future --config _config.yml,_config_dev.yml')
   end
 
-
-  desc "Generate the site, serve locally and watch for changes"
-  task :watch do
-    jekyll('serve --watch')
+  desc "Build development Jekyll site"
+  task :build => :clean do
+    puts "Building development Jekyll site..."
+    jekyll('build --future --config _config.yml,_config_dev.yml')
   end
 
-
-  desc "Check links"
-  task :test => :build do
+  desc "Check links: site needs to be running."
+  task :test do
     HTMLProofer.check_directory("./_site", {
                                   :check_favicon => true,
                                   :url_ignore => ['http://localhost:4000']
                                 }).run
   end
 
-
   desc 'Clean up generated site'
   task :clean do
     cleanup
   end
+end
 
+
+#############################################################################
+# Production tasks
+#############################################################################
+
+# Usage: rake prod, rake prod:build, prod:deploy
+task :prod => ["prod:build"]
+namespace :prod do
+
+  desc "Build production Jekyll site"
+  task :build => :clean do
+    puts "Building production Jekyll site..."
+    jekyll('build --future --no-watch')
+  end
 
   desc "Generate the site and push changes to remote origin"
   task :deploy do
@@ -90,7 +97,7 @@ namespace :site do
           sh "git clone https://#{ENV['GIT_NAME']}:#{ENV['GH_TOKEN']}@github.com/#{ENV['TRAVIS_REPO_SLUG']}.github.io.git > /dev/null"
 
           # Generate the site...it goes in _site
-          jekyll('build')
+          jekyll('build --future')
 
           # Commit and push to github
           sha = `git log`.match(/[a-z0-9]{40}/)[0]
@@ -114,5 +121,11 @@ namespace :site do
         puts "Not in (tagged) 'master', hence no deployment to github.com/#{ENV['TRAVIS_REPO_SLUG']}.github.io"
       end
     end
+  end
+
+
+  desc 'Clean up generated site'
+  task :clean do
+    cleanup
   end
 end

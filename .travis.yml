@@ -3,7 +3,7 @@ rvm:
 - 2.2.0
 before_script:
 - export GIT_TAG=build-$TRAVIS_BRANCH-$(date -u "+%Y-%m-%d-%H-%M-%S")-$TRAVIS_BUILD_NUMBER
-script: bundle exec rake site:build
+script: bundle exec rake prod:build
 branches:
   only:
   - master
@@ -16,4 +16,4 @@ env:
   - secure: TaEeEErz8+khXy7joPwpwbJriFNwZsT9vKMxpJcs1TanH3BTM1l6mrBBJNr7iBhCrH/yuFDkpgVXL2+5ekz1hYWkkb+EDKrpEi9wnOoiH+7VUv65Q0JV4EbRLHoYAezmJCo347ZkGwVtSGuHJUgkZmk8BU2sXp14gmuDzjtteXNO3xpVXNaQW+yABhfjJhp6NaMiF/PywNlUdSafrbTVnjbW+gbRZcBnAN3lN3xdLFz6+PFtIsfpa5aLDyV0GTQoB1vToyaZC6k0ENFN6k4pgCH3c6R/rF1hAU+BZtBI/h7bRCmgEB7PPcjS9Rn8U/9HmLBJ6pAmkqH6QZxeouE95cDPCoiuIfjpO8I/cnS0tpiBeA48oEWpMUwdxhos1Pdp/2Z8LK/tj5Fece0jfqfQLFMIlHJpaQI1FV3FfA4shv81DSzShiygzm7FvCNnR1gRj08WxKO8VPGllX601cd4qbcTaerkqPt5Qx/ukkdRWpPBTJguaereq9YZOOWi3ZLCi1WYCOK9NLeps1nGrmqlTuwfrGMF/3eX5ZsdMUfN/hB3MnCenZl/4t/CL0zp9O1V5qERH3h1RnM0ysWFoRUeGsXYCsNMEBqrMrbm/paxDIVVJgszjWZuCrKuPX/zklMTe5hc0Obkl0ubiPKhDd6fldDGsWxx4CfJuezD4v0Dc24=
   - secure: bji65jhjWNr9ntLu5VaZuz0qWWvaLXcKl2I7i7hIL2EaP8WpFIU0+X9423O7mjlIxSFNO24qFmpird+OlAiHO1ZAYJW+HEPWOfJ0eyPR/QDlA+4pN4nM6rl4Wtg1QXb6RytGLBPqsNkWxOB8LXNCvm4rdhmEy/Jma6CR8tGJ65NbtNpPIVY6cB8F0Ir831xbiPRiegHXjbZd7UEXRLhYVySmcsKZZC/FEBAa8r3F0sj4n0H42pmHk3dBLtovvCH7arEGzWG3MPc6RD/x3yO/fIBjpmAQiFTTRP12uIi+YaJvIHeiuczreepVCgbxtZr8+Szu2eS92RHXS0yQo+6v7WcDmOGun/tsabbDGcfykTpkOjFFgOuE2FRvPqUx1CBG4TUVPGm+h2XrfT3jPSbyBk6Lwzlhl2i1UWW81skSF0v5yaTBRzn77sFQkRFOt8zfXLCm6WGaB4sMfDU/UKuSxjo7B0Nz9QZwgnd6t21Fm4x14fDO+TDPhs2nAN74mG5KYDyp89Jg/AwuqkIZvMy2qeODuyyON2aoKtNnvxnBSfsjEN6FC18vEPac9a2ar/xIVoeOcZ8YTqK85oLCqv5NlUgx2ew9UvyQh6YwMlrNkoE3SmLxu56XCoIoKBO9Ywy5aqNdZ3I0Pw9FWpMNN6v8wFGkwykyA5x/2cQIUUenCDU=
 sudo: false
-after_success: bundle exec rake site:deploy
+after_success: bundle exec rake prod:deploy

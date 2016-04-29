@@ -7,7 +7,6 @@ canonical: "http://ansperformance.eu"  # NO https if served by github pages!!!
 baseurl: "" # see https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/
 
 media: media
-future: true
 
 include:
   - _pages
@@ -15,8 +14,6 @@ include:
 collections:
   studies:
     output: true
-    permalink: /:collection/:path/
-    title: Studies
 
 # Owner / Author information
 owner:
