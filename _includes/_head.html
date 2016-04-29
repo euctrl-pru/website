@@ -56,11 +56,8 @@
 {% stylesheet logo %}
 {% stylesheet general %}
 
-<!-- Icons -->
-<!-- 16x16 -->
-<link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl | prepend: site.url }}">
-<!-- 32x32 -->
-<link rel="shortcut icon" href="{{ "/favicon.png" | prepend: site.baseurl | prepend: site.url }}">
+<!-- from http://realfavicongenerator.net/ -->
+{% include _favicon.html %}
 
 <!-- Google Analytics -->
 <script type="text/javascript">
