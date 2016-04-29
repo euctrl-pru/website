@@ -67,7 +67,7 @@ namespace :prod do
   desc "Build production Jekyll site"
   task :build => :clean do
     puts "Building production Jekyll site..."
-    jekyll('build --future --no-watch')
+    jekyll('build --future --trace --verbose')
   end
 
   desc "Generate the site and push changes to remote origin"
