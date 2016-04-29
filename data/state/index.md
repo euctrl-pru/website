@@ -9,12 +9,13 @@ keywords: state, performance, data, statistics, economics, air transport, flight
 span.go-to-top {
 font-size: x-small;
 }
+.main:after {
+  background-image: url({{ 'Baustelle.svg' | asset_path }});
+}
 </style>
 
 
 # {{ page.title }}
-
- ![under construction]({% asset_path Baustelle.svg [resize:64x64] %})
 
 <a name="top"></a>
 <a href="top" class="back-to-top">Back to Top</a>
@@ -47,7 +48,7 @@ position: fixed;
 z-index: 999;
 right: 10px;
 bottom: 10px;
-background: #27AE61 url({% asset_path up-arrow.png [resize:24x24] %}) no-repeat center 43%;
+background: #27AE61 url({{ 'up-arrow.png' | asset_path }}) no-repeat center 43%;
 -webkit-border-radius: 20px;
 -moz-border-radius: 20px;
 border-radius: 20px;
