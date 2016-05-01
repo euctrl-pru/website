@@ -1,5 +1,6 @@
 ---
 layout: default
+needsMath: true
 title: Horizontal Flight Efficiency Dataset
 permalink: /references/dataset/Horizontal_Flight_Efficiency.html
 excerpt: Performance Review Unit MetaData Definitions.
