@@ -107,8 +107,6 @@ exclude:
   - references/dataviz.bib
   - tmp
   - auto
-  - dashboard/Makefile
-  - dashboard
   - node_modules
   - package.json
   - npm-debug.log
