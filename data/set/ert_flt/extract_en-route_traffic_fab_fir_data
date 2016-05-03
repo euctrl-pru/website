@@ -6,8 +6,10 @@
 #-- Copyright (C) 2015 Eurocontrol/PRU
 
 
-##- Usage: extract_en-route_traffic_fab_fir_data
-##- Extract Rn-route Traffic FAB FIR data to csv file, 'En-Route_Traffic_FAB_FIR.csv'.
+##- Usage: extract_en-route_traffic_fab_fir_data <WEF> <TIL>
+##- Extract Rn-route Traffic FAB FIR data to csv file, 'En-Route_Traffic_FAB_FIR.csv'
+##- from the period [WEF, TIL).
+##- NOTE: <TIL> is not included
 ##-
 ##- Assumptions:
 ##-   DBUSR                   environment variable for the relevant schema username.
@@ -23,7 +25,7 @@
 ##-   -V, --version           Output version information and exit.
 ##-
 ##- Examples:
-##- $ extract_en-route_traffic_fab_fir_data
+##- $ extract_en-route_traffic_fab_fir_data '01-JAN-2015' '31-MAR-2016'
 ##-
 ##- Caveat: be sure to use gnu-getopt and not OSX builtin or Git Bash missing one ;-)
 
@@ -43,15 +45,15 @@ opt_v() {
 
 
 # Execute getopt
-TEMP=$(getopt -o :hV --long "help,version" -n "$SCRIPT" -- "$@");
+TEMP=$(getopt -o :hV --long ",help,version" -n "$SCRIPT" -- "$@");
 eval set -- "$TEMP"
 
 while true; do
    case $1 in
    -h|--help)
-      opt_h
-      exit
-      ;;
+       opt_h
+       exit
+       ;;
    -V|--version)
       opt_v
       exit
@@ -72,15 +74,17 @@ while true; do
    esac
 done
 
-# there are NO mandatory arguments
-if (( $# != 0 )); then
+# there are 2 mandatory arguments
+if (( $# != 2 )); then
    echo "Error: illegal number of parameters"
    opt_h
    exit 1
+else
+    WEF=$1
+    TIL=$2
 fi
 
+sql -S $DBUSR/$DBPWD@$DBNAME @en-route_traffic_fab_fir_csv.sql $OUTPUT_FILENAME $WEF $TIL
 
-sql -S $DBUSR/$DBPWD@$DBNAME @en-route_traffic_fab_fir_csv.sql $OUTPUT_FILENAME
-
-# remove blank lines in place
-sed -i -E 's/^ +//; s/ +$//; /^$/d' $OUTPUT_FILENAME
+# # remove blank lines in place
+# sed -i -E 's/^ +//; s/ +$//; /^$/d' $OUTPUT_FILENAME
