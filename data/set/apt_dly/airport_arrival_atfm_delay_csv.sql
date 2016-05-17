@@ -87,7 +87,7 @@ select
 ,NVL (FLT_DLY, 0) as FLT_ARR_1_DLY
 ,NVL (FLT_DLY_15, 0) as FLT_ARR_1_DLY_15
 from ARR_FLTS t left join APT_ATFM_DLY d on (t.flt_date = d.flt_date and t.code = d.airport_code)
- where t.flt_date>='01-JAN-2014' and t.flt_date<'01-APR-2016'
+ where t.flt_date>='01-JAN-2014' and t.flt_date<'01-MAY-2016'
  order by 1,2,3,4,5;
 
 spool off;
