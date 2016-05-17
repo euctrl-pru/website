@@ -23,7 +23,13 @@ at their departure airport, under the authority of the
 Network Manager, in order to regulate the flow of traffic into the constrained
 downstream en route sector or airport, thus ensuring safety.
 
-The resulting ATFM delays are calculated as the difference between the estimated
+The calculation of En-route ATFM delay is based on a well established and
+commonly accepted algorithm and has been in use as a commonly agreed proxy for
+en-route capacity shortfalls since 1999.
+
+## ATFM delay computation
+
+The ATFM delays are calculated as the difference between the estimated
 take-off time calculated from the filed flight plan including updates and the
 calculated take-off time allocated by the central unit of ATFM.
 
@@ -32,11 +38,12 @@ Position (FMP).
 
 The delay is attributed to the most constraining ATC unit.
 
-The calculation of En-route ATFM delay is based on a well established and
-commonly accepted algorithm and has been in use as a commonly agreed proxy for
-en-route capacity shortfalls since 1999.
+*Please note that the delays caused by READY to Depart (REA) messages and ATFM slot 
+extensions were included in ATFM delays until NM release 20.0. 
+As of 4 April 2016, delays due to REA messages and slot extensions are not included 
+any longer which reduces the amount of computed ATFM delay.*  
 
-## Computation of traffic
+## Traffic computation
 
 The number of flights is based on Flight Information Region (FIR) boundaries 
 (which are not necessarily coincidental with the airspace controlled by the
