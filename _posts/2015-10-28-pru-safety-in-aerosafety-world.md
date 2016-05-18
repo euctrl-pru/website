@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "PRU safety performance analysis in AeroSafety World magazine"
-date:   2015-10-28 11:01:11
 categories:
 - news
 - safety

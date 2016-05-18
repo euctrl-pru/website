@@ -3,10 +3,13 @@ title: PRU
 description: > # this means to ignore newlines until "url:"
   Performance monitoring data, analyses and visualizations for Eurocontrol's 41 Member States.
 url: "http://ansperformance.eu" # the base hostname & protocol for your site; NO https if served by github pages!!!
-canonical: http://ansperformance.eu  # NO https if served by github pages!!!
+canonical: "http://ansperformance.eu"  # NO https if served by github pages!!!
 baseurl: "" # see https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/
-dev: false
+
 media: media
+
+include:
+  - _pages
 
 collections:
   studies:
@@ -18,6 +21,7 @@ owner:
   location: Brussels, Belgium
   twitter: eurocontrol
   github:  euctrl-pru
+  googleanalytics: UA-62697169-2
   email: PRU-Support@eurocontrol.int
 
 webmaster:
@@ -31,6 +35,10 @@ tools:
 # Build settings
 gems:
   - 'jekyll/scholar'
+  - bootstrap-sass
+  - uglifier
+  - jekyll-assets
+  - jekyll-sitemap
   - jekyll-redirect-from
 
 assets:
@@ -41,7 +49,8 @@ assets:
     - _assets/json
   css_compressor: sass
   js_compressor:  uglifier
-  cache:          true
+  autoprefixer:
+    browsers: ["last 2 versions","> 5%","IE 9"]
 
 sass:
   sass_dir: _sass
@@ -68,6 +77,16 @@ scholar:
   order: descending
   query: "@*"
 
+# HTML Compression
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  ignore:
+    envs: development
+  blanklines: true
+  profile: false
+  startings: [html, head, body]
+
 # Global configs
 timezone: Europe/Brussels
 
@@ -87,8 +106,6 @@ exclude:
   - references/dataviz.bib
   - tmp
   - auto
-  - dashboard/Makefile
-  - dashboard
   - node_modules
   - package.json
   - npm-debug.log

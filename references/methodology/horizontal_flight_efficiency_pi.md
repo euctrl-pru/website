@@ -165,7 +165,7 @@ the comparison between the length of a trajectory and the shortest distance
 between its endpoints.
 
 
-![HFE as comparison of flight length and Great Circle Distance]({% asset_path hfe-01.png [resize:400x400] %})
+{% img hfe-01.png magick:resize:400x400 alt:'HFE as comparison of flight length and Great Circle Distance' %}
 *HFE as comparison of flight length and Great Circle Distance*
 
 For an entire flight we want to calculate the additional distance flown between
@@ -181,7 +181,7 @@ In addition, there is a specific need which stems from the requirements of
 Reference Period 2 (RP2) **to measure local performance (FAB level) while at the
 same time keeping the network perspective.**
 
-![Local Performance Requirement]({% asset_path hfe-02.png [resize:700x700] %})
+{% img hfe-02.png magick:resize:700x700 alt:'Local Performance Requirement' %}
 *Local Performance Requirement*
 
 The desired outcome is illustrated in the table above. We are interested in all
@@ -216,7 +216,7 @@ difference between
 1. the great circle distance from the entry point N to the destination D and
 1. the great circle distance from the exit point X to the destination D.
 
-![The two Quantities Averaged in the Achieved Distance]({% asset_path hfe-03.png [resize:550x550] %})
+{% img hfe-03.png magick:resize:550x550 alt:'The two Quantities Averaged in the Achieved Distance' %}
 *The two Quantities Averaged in the Achieved Distance*
 
 In the Figure {@fig:avg-and-achieved-distance}, the distance from $N$ to
@@ -257,7 +257,7 @@ the same area. Such a measurement would not take into consideration the network
 perspective, as can be seen in the (extreme, for illustration purposes) example
 of the Figure {@fig:local-efficiency}.
 
-![A case of perfect local efficiency with no network contribution]({% asset_path hfe-04.png [resize:480x480] %})
+{% img hfe-04.png magick:resize:480x480 alt:'A case of perfect local efficiency with no network contribution]' %}
 *A case of perfect local efficiency with no network contribution*
 
 The red trajectory between the entry point N and the exit point X is perfectly
@@ -285,7 +285,8 @@ decomposition of the inefficiency into a local component (which we call
 extension) and a network contribution (which we call interface) as shown in
 the Figure {@fig:decomposition-inefficiency}. 
 
-![Decomposition of Inefficiency]({% asset_path hfe-05.png [resize:600x600] %})
+
+{% img hfe-05.png magick:resize:600x600 alt:'Decomposition of Inefficiency' %}
 *Decomposition of Inefficiency*
 
 In the example of the previous section, the extension is zero (the red line
@@ -303,7 +304,7 @@ distance.
 
 ## Independence of local performance from performance outside the local area
 
-![Independence of local performance from performance outside the local area]({% asset_path hfe-06.png [resize:700x700] %})
+{% img hfe-06.png magick:resize:700x700 alt:'Independence of local performance from performance outside the local area' %}
 *Independence of local performance from performance outside the local area*
 
 The value of the achieved distance to be considered for a local area depends

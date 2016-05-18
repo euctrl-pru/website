@@ -1,9 +1,21 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '~> 2.5.3'
-gem 'html-proofer'
-gem 'jekyll-assets', '~> 1.0.0'
-gem "uglifier"
-gem 'jekyll-scholar', '~> 4.5.0'
-gem 'jekyll-redirect-from', '~> 0.9.1'
+gem 'wdm', '~> 0.1.0' if Gem.win_platform?
+
 gem 'rake'
+gem 'uglifier'
+gem 'mini_magick'
+gem 'html-proofer'
+
+gem 'bootstrap-sass'
+
+# Jekyll
+gem 'jekyll'
+group :jekyll_plugins do
+  gem 'jekyll-assets', github: 'jekyll/jekyll-assets'
+  gem 'jekyll-sitemap', github: 'jekyll/jekyll-sitemap'
+  gem 'jekyll-scholar', github: 'inukshuk/jekyll-scholar'
+  gem 'jekyll-redirect-from'
+end
+
+

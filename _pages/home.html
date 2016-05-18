@@ -1,0 +1,39 @@
+---
+layout: default
+title: Home
+permalink: /
+excerpt: Performance monitoring data, analyses and visualizations for Eurocontrol's 41 Member States.
+keywords: metadata, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
+---
+<style>
+ .main:after {
+   background-image: url({{ 'wordcloud.svg' | asset_path }});
+ }
+</style>
+<br>
+<div class="container">
+  <div class="row">
+	<p>Welcome to the Performance Review Unit (PRU) web site!</p>
+
+	<p>The PRU is an <em>independent</em> unit established by EUROCONTROL.
+	It is responsible for monitoring and reviewing the performance of the European ATM System on behalf of its Member States.
+	The unit also supports the independent  <a href="https://www.eurocontrol.int/node/1737">Performance Review Commission</a> (PRC)
+	and makes recommendations to the PRC for performance improvements of the European ATM System on the basis of thorough analyses.</p>
+
+	<p>In order to stimulate and support an informed dialogue between all stakeholders there is a need for a
+	<u>consistent</u> and <u>transparent</u> approach to the release of validated performance information
+	in an open and standardised format.</p>
+
+	<p>Accordingly, this website aims at providing a wide spectrum of ATM performance related information
+	for the benefit of the entire European Air Transport network.
+	The PRU is keen to work closely with all interested stakeholders to further improve European ATM performance
+	so please do not hesitate to <a href="mailto:{{ site.owner.email }}">contact us</a> ({{ site.owner.email }})
+	if you have any questions or suggestions related to our work.</p>
+  </div>
+</div>
+<br>
+<br>
+<div class="container text-center">
+{% include _subscriber-button.html %}
+</div>
+

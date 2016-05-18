@@ -16,11 +16,11 @@ SELECT EXTRACT (YEAR FROM entry_date) YEAR
 ,        flown_km AS DIST_FLOWN_KM
 ,        round(direct_km, 2) AS DIST_DIRECT_KM
 ,        round(achieved_km, 2) AS DIST_ACHIEVED_KM
-FROM PRUTEST.HFE_DAILY JOIN PRUTEST.DSH_BRIDGE_NAMES USING (mes_area)
+FROM PRUTEST.HFE_PRU_DAILY JOIN PRUTEST.DSH_BRIDGE_NAMES USING (mes_area)
 WHERE entry_date BETWEEN (SELECT start_date FROM sd)
 AND (SELECT MAX (TRUNC (entry_date + 1, 'MON') - 1)
 end_day
-FROM sd, HFE_DAILY
+FROM sd, HFE_PRU_DAILY
 WHERE entry_date >= start_date)
 ORDER BY 4, 5;
 

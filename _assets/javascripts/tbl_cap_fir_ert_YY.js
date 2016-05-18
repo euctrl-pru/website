@@ -1,6 +1,8 @@
 (function() {
   var data;
   var twodecimals = d3.format(".2n");
+  var integerFormatter = new google.visualization.NumberFormat({fractionDigits: 0, groupingSymbol: '' });
+  var twodecimalFormatter = new google.visualization.NumberFormat({ fractionDigits: 2, groupingSymbol: '' });
   d3.text("/data/set/ert_flt/En-Route_Traffic_FAB_FIR.csv", function(text) {
     var csvArray = d3.csv.parseRows(text, function (d, i) {
       if (i === 0) {
@@ -21,6 +23,8 @@
     });
 
     data = new google.visualization.arrayToDataTable(csvArray);
+    integerFormatter.format(data, 0);
+    twodecimalFormatter.format(data, 4);
   });
 
   function dv() {

@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Vertical Flight Efficiency During Climb and Descent"
-date:   2016-04-05T10:09:13
+date: 2016-04-05 10:09:13 +0100
 tags: vertical, efficiency, cco, cdo, climb, descend, ifr, flights, europe, eurocontrol
 excerpt: "Vertical flight efficiency during the climb and descent phases of flights"
 ---
@@ -18,7 +18,7 @@ and descent phases of flights rather than during the cruising phase.
 
 During climb and descent, pilots are often faced with intermediate level-offs (Figure 1).
 
-![Typical vertical profile with intermediate level segments during climb and descent]({% asset_path cco-cdo-1.png [resize:500x500] %})
+{% img cco-cdo-1.png magick:resize:x250 alt:'Typical vertical profile with intermediate level segments during climb and descent' %}
 
 *Figure 1: Typical vertical profile with intermediate level segments during climb and descent*
 
@@ -39,8 +39,7 @@ Continuous climb operations (CCO) and continuous descent operations (CDO) are
 beneficial for the environment, in terms of fuel burn, the associated emissions
 and noise (Figure 2).
 
-![Smoother trajectory with continuous climb and descent]({% asset_path cco-cdo-2.png [resize:500x500] %})
-
+{% img cco-cdo-2.png magick:resize:x250 alt:'Smoother trajectory with continuous climb and descent' %}
 *Figure 2: Smoother trajectory with continuous climb and descent*
 
 The methodology presented here (see grey box) is very similar for the climb and
@@ -135,8 +134,7 @@ are some vertical glitches present in the data but these will rather result in
 an underestimation of the amount of level flight.
 
 
-![Vertical trajectories during descent]({% asset_path cco-cdo-3.png [resize:500x500] %})
-
+{% img cco-cdo-3.png magick:resize:x250 alt:'Vertical trajectories during descent' %}
 *Figure 3: Vertical trajectories during descent.*
 
 It’s also interesting to evaluate the positions of level segments. Level
@@ -149,8 +147,7 @@ constraints in handover procedures between neighbouring ANSPs, airspace
 restrictions or operational procedures which signals scope for future
 improvements.
 
-![Lateral trajectories during descent]({% asset_path cco-cdo-4.jpg [resize:500x500] %})
-
+{% img cco-cdo-4.jpg magick:resize:x250 alt:'Lateral trajectories during descent' %}
 *Figure 4: Lateral trajectories during descent.*
 
 

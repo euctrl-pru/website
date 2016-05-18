@@ -7,40 +7,40 @@ keywords: performance, data, statistics, economics, air transport, flights, euro
 dates:
   ert_flt:
     beg: Jan 2014
-    end: Mar 2016
+    end: Apr 2016
   ert_dly:
     beg: Jan 2014
-    end: Mar 2016
+    end: Apr 2016
   hfe:
     beg: Jan 2014
-    end: Mar 2016
+    end: Apr 2016
   hfe_kpi:
     beg: Dec 2014
-    end: Mar 2016
+    end: Apr 2016
   apt_flt:
     beg: Jan 2014
-    end: Mar 2016
+    end: Apr 2016
   apt_dly:
     beg: Jan 2014
-    end: Mar 2016
+    end: Apr 2016
   asma:
     beg: Jan 2014
-    end: Feb 2016
+    end: Mar 2016
   tx_out:
     beg: Jan 2014
-    end: Feb 2016
+    end: Mar 2016
   atc_pre:
     beg: Jan 2014
-    end: Feb 2016
+    end: Mar 2016
   slt_adh:
     beg: Jan 2014
-    end: Mar 2016
+    end: Apr 2016
   ace_opt:
     beg: Jan 2014
-    end: Mar 2016
+    end: Apr 2016
   cplx:
     beg: &cplxbeg Jan 2014
-    end: &cplxend Mar 2016
+    end: &cplxend Apr 2016
 
 dwnld_i: <i class="fa pru fa-download"></i>
 info_i: <i class="fa pru fa-info-circle"></i>
@@ -106,17 +106,15 @@ width: 8em;
 
 |    Data description                                                                                                                       |     Period                                                  |    Excel                          |    CSV                                        |    Metadata                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|-----------------------------------|-----------------------------------------------|----------------------------------|
-| En-route IFR flights<br><small>Daily IFR traffic by entity</small>                                                                        | {{ page.dates.ert_flt.beg }} - {{ page.dates.ert_flt.end }} | [xls {{ page.dwnld_i }}][ERT-FLTxlsx] |                                               | [meta {{ page.info_i }}][ERT-FLTmeta] |
-| En-route ATFM delays<br><small>Daily IFR traffic and en-route [ATFM delay](/references/definition/atfm_delay.html) by entity and delay cause</small>                                | {{ page.dates.ert_dly.beg }} - {{ page.dates.ert_dly.end }} | [xls {{ page.dwnld_i }}][ERT-DLYxlsx] |                                               | [meta {{ page.info_i }}][ERT-DLYmeta] |
-| Horizontal en-route flight efficiency<br><small>Daily [en-route flight efficiency](/references/methodology/horizontal_flight_efficiency.html) data by entity (actual trajectory & flight plan)</small> | {{ page.dates.hfe.beg }} - {{ page.dates.hfe.end }}         | [xls {{ page.dwnld_i }}][HFExlsx]     | [csv {{ page.fltr_i }} {{ page.ndwk_i }}][HFEcsv] | [meta {{ page.info_i }}][HFEmeta]     |
+| En-route IFR flights and ATFM delays [(AUA)](/references/definition/aua.html)<br><small>Daily IFR traffic and en-route [ATFM delay](/references/definition/atfm_delay.html) by entity and delay cause (AUA based)</small>                                | {{ page.dates.ert_dly.beg }} - {{ page.dates.ert_dly.end }} | [xls {{ page.dwnld_i }}][ERT-DLY-AUAxlsx] |                                               | [meta {{ page.info_i }}][ERT-DLY-AUA-meta] |
+| En-route IFR flights and ATFM delays [(FIR)](/references/definition/fir.html)<br><small>Daily IFR traffic and en-route [ATFM delay](/references/definition/atfm_delay.html) by entity and delay cause (FIR based)</small>                                | {{ page.dates.ert_dly.beg }} - {{ page.dates.ert_dly.end }} | [xls {{ page.dwnld_i }}][ERT-DLY-FIRxlsx] |                                               | [meta {{ page.info_i }}][ERT-DLY-FIR-meta] |
+| Horizontal en-route flight efficiency<br><small>Daily [en-route flight efficiency](/references/methodology/horizontal_flight_efficiency_pi.html) data by entity (actual trajectory & flight plan)</small> | {{ page.dates.hfe.beg }} - {{ page.dates.hfe.end }}         | [xls {{ page.dwnld_i }}][HFExlsx]     | [csv {{ page.fltr_i }} {{ page.ndwk_i }}][HFEcsv] | [meta {{ page.info_i }}][HFEmeta]     |
 
-[ERT-FLTxlsx]: <{{site.url}}/data/set/ert_flt/En-Route_Traffic.xlsm> "ERT-FLT (Excel)"
-[ERT-FLTcsv]: <{{site.url}}/404.html> "ERT-FLT (CSV)"
-[ERT-FLTmeta]: <{{site.url}}/references/dataset/En-Route_Traffic.html> "ERT-FLT (Meta)"
-
-[ERT-DLYxlsx]: <{{site.url}}/data/set/ert_dly/En-Route_ATFM_Delay.xlsm> "ERT-DLY (Excel)"
+[ERT-DLY-AUAxlsx]: <{{site.url}}/data/set/ert_dly/En-Route_ATFM_Delay_AUA.xlsm> "ERT-DLY (Excel)"
+[ERT-DLY-FIRxlsx]: <{{site.url}}/data/set/ert_dly/En-Route_ATFM_Delay_FIR.xlsm> "ERT-DLY (Excel)"
 [ERT-DLYcsv]: <{{site.url}}/404.html> "ERT-DLY (CSV)"
-[ERT-DLYmeta]: <{{site.url}}/references/dataset/En-Route_ATFM_Delay.html> "ERT-DLY (Meta)"
+[ERT-DLY-AUA-meta]: <{{site.url}}/references/dataset/En-Route_ATFM_Delay_AUA.html> "ERT-DLY (Meta)"
+[ERT-DLY-FIR-meta]: <{{site.url}}/references/dataset/En-Route_ATFM_Delay_FIR.html> "ERT-DLY (Meta)"
 
 [HFExlsx]: <{{site.url}}/data/set/hfe/Horizontal_Flight_Efficiency.xlsm> "HFE (Excel)"
 [HFEcsv]: <{{site.url}}/data/set/hfe/horizontal_flight_efficiency.html> "HFE (CSV)"
