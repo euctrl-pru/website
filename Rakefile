@@ -94,7 +94,7 @@ namespace :prod do
         else
           puts "Building and deploying tag '#{ENV['TRAVIS_TAG']}'"
           puts "Cloning #{ENV['TRAVIS_REPO_SLUG']}.github.io..."
-          sh "git clone https://#{ENV['GIT_NAME']}:#{ENV['GH_TOKEN']}@github.com/#{ENV['TRAVIS_REPO_SLUG']}.github.io.git > /dev/null"
+          sh "git clone https://#{ENV['GIT_NAME']}:#{ENV['GH_TOKEN']}@github.com/euctrl-pru/euctrl-pru.github.io.git > /dev/null"
 
           # Generate the site...it goes in _site
           jekyll('build --future')
