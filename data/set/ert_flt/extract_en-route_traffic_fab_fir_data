@@ -86,5 +86,5 @@ fi
 
 sql -S $DBUSR/$DBPWD@$DBNAME @en-route_traffic_fab_fir_csv.sql $OUTPUT_FILENAME $WEF $TIL
 
-# # remove blank lines in place
-# sed -i -E 's/^ +//; s/ +$//; /^$/d' $OUTPUT_FILENAME
+# remove blank lines in place
+sed -i -E 's/^ +//; s/ +$//; /^$/d' $OUTPUT_FILENAME

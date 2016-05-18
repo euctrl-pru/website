@@ -246,7 +246,7 @@ var d3, queue, vis, params, topojson;
             }
             else {
                 //console.log(d);
-                if (d.YEAR === "2015") {
+                if (d.YEAR === "2016") {
                     fabs[obj_idx].rate = d.FLT_ERT_1 == 0 ? 0 : d.DLY_ERT_1 / d.FLT_ERT_1;
                     fabs[obj_idx].year = +d.YEAR;
                     rateById[fabs[obj_idx].id] = fabs[obj_idx].rate;
@@ -320,7 +320,8 @@ var d3, queue, vis, params, topojson;
         .attr("transform", "translate(60," + (height/3 - 15) + ")")
         .append("text")
         .style("text-anchor", "middle")
-        .text("2015 situation");
+        .style("font-weight","bold")
+        .text("2016 situation");
 
         var legend = d3.legend.color()
                 .labelFormat(d3.format(".2f"))
