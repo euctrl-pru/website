@@ -24,8 +24,6 @@
 
     data = new google.visualization.arrayToDataTable(csvArray);
     integerFormatter.format(data, 0);
-    integerFormatter.format(data, 2);
-    integerFormatter.format(data, 3);
     twodecimalFormatter.format(data, 4);
   });
 
