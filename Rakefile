@@ -85,13 +85,14 @@ namespace :prod do
 
       # deploy only if on master branch eventually
       if ENV['TRAVIS_BRANCH'].to_s.scan(/^master$/).length > 0
-
         puts 'Handling "master" branch'
-        if ENV['TRAVIS_TAG'].to_s.to_i == 0
+
+        committag = `git tag -l --contains HEAD`
+        if committag.to_s.to_i == 0
           puts "No tag! Hence not deploying to github.com/#{CONFIG['dest_user']}/#{CONFIG['dest_repo']}.github.io"
           exit 0
         else
-          puts "Building and deploying with tag '#{ENV['TRAVIS_TAG']}'"
+          puts "Building and deploying with tag '#{committag}'"
           # Generate the site...it goes in _site
           puts 'Generating site...'
           jekyll('build --future')
@@ -102,7 +103,7 @@ namespace :prod do
 
           # Commit and push to github
           # - match the commit SHA
-          sha = `git log`.match(/[a-z0-9]{40}/)[0]
+          sha = `git rev-parse HEAD`
           puts 'Now moving to #{CONFIG["dest_repo"]...'
           Dir.chdir("#{CONFIG['dest_repo']}") do
 
@@ -117,7 +118,7 @@ namespace :prod do
             sh "git status"
 
             puts 'Committing all...'
-            sh "git commit -m 'Updating to #{ENV['TRAVIS_REPO_SLUG']}.github.io@#{sha}, tagged '#{ENV['TRAVIS_TAG']}'.'"
+            sh "git commit -m 'Updating to #{ENV['TRAVIS_REPO_SLUG']}.github.io@#{sha}, tagged '#{committag}'.'"
 
             # Make sure to make the output quiet, or else the API token will leak!
             puts '(Indirectly) Pushing to the Internet...'
