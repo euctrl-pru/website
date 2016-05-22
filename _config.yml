@@ -6,6 +6,11 @@ url: "http://ansperformance.eu" # the base hostname & protocol for your site; NO
 canonical: "http://ansperformance.eu"  # NO https if served by github pages!!!
 baseurl: "" # see https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/
 
+# Settings for deploy rake task
+dest_user: euctrl-pru
+dest_repo: euctrl-pru.github.io
+
+
 media: media
 
 include:
