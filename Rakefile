@@ -88,6 +88,7 @@ namespace :prod do
         puts 'Handling "master" branch'
 
         committag = `git tag -l --contains HEAD`
+        puts "here is the tag I found: #{committag}"
         if committag.to_s.to_i == 0
           puts "No tag! Hence not deploying to github.com/#{CONFIG['dest_user']}/#{CONFIG['dest_repo']}.github.io"
           exit 0
