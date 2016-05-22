@@ -127,7 +127,7 @@ namespace :prod do
           end
         end
       else
-        puts "Not in 'master' branch, hence no deployment to github.com/#{ENV['TRAVIS_REPO_SLUG']}.github.io"
+        puts "Not in 'master' branch, hence no deployment to #{CONFIG['dest_user']}/#{CONFIG['dest_repo']}"
       end
     end
   end
