@@ -88,7 +88,7 @@ namespace :prod do
         puts 'Handling "master" branch'
 
         # get the tag for HEAD
-        committag = `git describe --exact-match $(git rev-parse HEAD)`
+        committag = `git describe --exact-match $(git rev-parse HEAD)`.delete("\n")
         puts "here is the tag I found: -->#{committag}<--"
         if committag.length == 0
           puts "No tag! Hence not deploying to github.com/#{CONFIG['dest_user']}/#{CONFIG['dest_repo']}.github.io"
@@ -120,7 +120,7 @@ namespace :prod do
             sh "git status"
 
             puts 'Committing all...'
-            sh "git commit -m 'Updating to #{ENV['TRAVIS_REPO_SLUG']}.github.io@#{sha}, tagged '#{committag}'.'"
+            sh "git commit -m 'Updating to #{ENV['TRAVIS_REPO_SLUG']}.github.io@#{sha}, tagged #{committag}."
 
             # Make sure to make the output quiet, or else the API token will leak!
             puts '(Indirectly) Pushing to the Internet...'
