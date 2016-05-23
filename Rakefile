@@ -87,9 +87,10 @@ namespace :prod do
       if ENV['TRAVIS_BRANCH'].to_s.scan(/^master$/).length > 0
         puts 'Handling "master" branch'
 
-        committag = `git tag -l --contains HEAD`
-        puts "here is the tag I found: #{committag}"
-        if committag.to_s.to_i == 0
+        # get the tag for HEAD
+        committag = `git describe --exact-match $(git rev-parse HEAD)`
+        puts "here is the tag I found: -->#{committag}<--"
+        if committag.length == 0
           puts "No tag! Hence not deploying to github.com/#{CONFIG['dest_user']}/#{CONFIG['dest_repo']}.github.io"
           exit 0
         else
