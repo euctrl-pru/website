@@ -7,7 +7,6 @@ This site is automatically built and deployed by TravisCI:
 
 * branches named like `2016xy-release*` are automatically built
 * `master` branch is automatically built and if tagged it is also deployed.
-* need to investigate how to tag master for Travis
 
 See `.travis.yml` and `Rakefile`
 
