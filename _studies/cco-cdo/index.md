@@ -151,9 +151,15 @@ improvements.
 *Figure 4: Lateral trajectories during descent.*
 
 
-**Note**
+
+### Note
+
 This study is available as a PRU Leaflet, see 
 {% cite cco-cdo-leaflet --file aviation %} in the References section below.
+
+A paper has been submitted to the 2016 ICNS Conference, see
+{% cite icns-vfe --file aviation  %} in the References section below.
+
 
 
 ## References
