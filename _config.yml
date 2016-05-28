@@ -45,6 +45,7 @@ gems:
   - jekyll-assets
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-seo-tag
 
 assets:
   sources:
