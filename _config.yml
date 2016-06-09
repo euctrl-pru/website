@@ -57,6 +57,7 @@ assets:
   js_compressor:  uglifier
   autoprefixer:
     browsers: ["last 2 versions","> 5%","IE 9"]
+  digest: true
 
 sass:
   sass_dir: _sass
