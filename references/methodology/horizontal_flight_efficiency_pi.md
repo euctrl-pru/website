@@ -4,6 +4,7 @@ title: Performance Indicator -- Horizontal Flight Efficiency
 subtitle: Level 1 and 2 documentation of the Horizontal Flight Efficiency key performance indicators
 excerpt: Performance Review Unit Metadata Definitions.
 keywords: hfe, horizontal flight efficiency, metrics, metadata, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
+needsMath: true
 ---
 <style>
 img + em {

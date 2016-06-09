@@ -3,6 +3,7 @@ layout: default
 title: Unimpeded Taxi-out Time - Technical Note
 excerpt: Performance Review Unit MetaData Definitions.
 keywords: asma, airport, metrics, metadata, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
+needsMath: true
 ---
 
 # {{ page.title }}
@@ -34,7 +35,7 @@ a function of the congestion level. In this picture, the range between the first
 quartile (bottom bar of each rectangle), third quartile (top bar) and the median
 (medium line) is depicted for each level of congestion.
 
-{% image saturationlevel.jpg alt="Congestion level vs. saturation level" %}
+{% img saturationlevel.jpg alt:"Congestion level vs. saturation level" title:"Congestion level vs. saturation level" %}
 
 As shown in this figure, as soon as a certain level of congestion is reached (at
 the inflection point of the curve), the actual taxi-out time increases linearly
@@ -186,11 +187,12 @@ The percentage of flights with valid data and for which it was possible
 to define an unimpeded reference time should be at least 90%.
 
 #### Distribution of residual errors
+
 [Additional taxi-out time](/references/definition/additional_taxi-out_time.html)
 for unimpeded flights should have a distribution centered around zero and with
 a standard deviation below 3 minutes.
 
-{% image check1.jpg alt="Distribution of residual errors" %}
+{% img check1.jpg alt:"Distribution of residual errors" title:"Distribution of residual errors" %}
 
 
 
@@ -209,7 +211,7 @@ $$
 By construction, a value of 100 always corresponds to saturation independent
 of the departure stand or runway used.
 
-{% image check3.jpg alt="Evolution of the additional time with the congestion level" %}
+{% img check3.jpg alt:"Evolution of the additional time with the congestion level" title:"Evolution of the additional time with the congestion level" %}
 
 
 The additional time as a function of the congestion index should:
@@ -229,7 +231,7 @@ consideration.
 In such a case, new unimpeded taxi-out times will be calculated in order
 to consider the impact of these changes. 
 
-{% image check2.jpg alt="Verification of monthly statistics" %}
+{% img check2.jpg alt:"Verification of monthly statistics" title:"Verification of monthly statistics" %}
 
 
 Every month the following checks are carried out for each of the airports:

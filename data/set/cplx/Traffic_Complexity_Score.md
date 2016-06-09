@@ -36,21 +36,21 @@ the potential interactions between aircraft on different headings.
 The indicator is defined as the ratio of the duration of horizontal interactions to the total
 duration of all interactions.
 
-{% image cplx_horizontal.png style="width: 150px" alt="Horizontal interactions" %}
+{% img cplx_horizontal.png alt:"Horizontal interactions" title:"Horizontal interactions" magick:resize:150x150 %}
 
 **Vertical interactions index:** A measure of the complexity arising from aircraft in vertical
 evolution based on the potential interactions between climbing, cruising and descending aircraft.
 The indicator is defined as the ratio of the duration of vertical interactions to the total
 duration of all interactions.
 
-{% image cplx_vertical.png style="width: 150px" alt="Vertical interactions" %}
+{% img cplx_vertical.png alt:"Vertical interactions" title:"Vertical interactions" magick:resize:150x150 %}
 
 **Speed interactions indicator:** A measure of the complexity arising from the aircraft mix
 based on the potential interactions between aircraft of different speeds.
 The indicator is defined as the ratio of the duration of speed interactions to the
 total duration of all interactions.
 
-{% image cplx_speed.png style="width: 150px" alt="Speed interactions" %}
+{% img cplx_speed.png alt:"Speed interactions" title:"Speed interactions" magick:resize:150x150 %}
 
 More information on the methodologies used for the computation of the complexity score
 see {% cite complexitymetrics --file aviation %} in the References.
