@@ -78,3 +78,38 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   background-position: center 60px; /* top menu offset */
   opacity: 0.2;
 }
+
+figure {
+  position: relative;
+  margin: 1.5em 0;
+  /* border-top: 1px dotted #0098d8; */
+  /* border-bottom: 1px dotted #0098d8; */
+  
+}
+
+figure img {
+  margin: .75em auto;
+}
+
+figure > img {
+  /* border: 1px solid #999; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figcaption {
+  clear: left;
+  margin: .75em 0;
+  text-align: center;
+  font-style: italic;
+  line-height: 1.5em;
+}
+
+.table-caption {
+  clear: left;
+  margin: .75em 0;
+  text-align: center;
+  font-style: italic;
+  line-height: 1.5em;
+}

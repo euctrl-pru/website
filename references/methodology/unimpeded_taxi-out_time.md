@@ -35,7 +35,9 @@ a function of the congestion level. In this picture, the range between the first
 quartile (bottom bar of each rectangle), third quartile (top bar) and the median
 (medium line) is depicted for each level of congestion.
 
+{% figure caption:"Congestion level vs. saturation level" title:"Congestion level vs. saturation level" class:"img-responsive center-block" %}
 {% img saturationlevel.jpg alt:"Congestion level vs. saturation level" title:"Congestion level vs. saturation level" %}
+{% endfigure %}
 
 As shown in this figure, as soon as a certain level of congestion is reached (at
 the inflection point of the curve), the actual taxi-out time increases linearly
@@ -192,7 +194,9 @@ to define an unimpeded reference time should be at least 90%.
 for unimpeded flights should have a distribution centered around zero and with
 a standard deviation below 3 minutes.
 
+{% figure caption:"Distribution of residual errors" class:"img-responsive center-block" %}
 {% img check1.jpg alt:"Distribution of residual errors" title:"Distribution of residual errors" %}
+{% endfigure %}
 
 
 
@@ -211,7 +215,9 @@ $$
 By construction, a value of 100 always corresponds to saturation independent
 of the departure stand or runway used.
 
-{% img check3.jpg alt:"Evolution of the additional time with the congestion level" title:"Evolution of the additional time with the congestion level" %}
+{% figure caption:"Evolution of the additional time with the congestion level" class:"img-responsive center-block" %}
+{% img check3.jpg alt:"Evolution of the additional time with the congestion level" title:"Evolution of the additional time with the congestion level" magick:resize:300x300 %}
+{% endfigure %}
 
 
 The additional time as a function of the congestion index should:
@@ -231,7 +237,9 @@ consideration.
 In such a case, new unimpeded taxi-out times will be calculated in order
 to consider the impact of these changes. 
 
-{% img check2.jpg alt:"Verification of monthly statistics" title:"Verification of monthly statistics" %}
+{% figure caption:"Verification of monthly statistics" class:"img-responsive center-block" %}
+{% img check2.jpg alt:"Verification of monthly statistics" title:"Verification of monthly statistics" magick:resize:300x300 %}
+{% endfigure %}
 
 
 Every month the following checks are carried out for each of the airports:

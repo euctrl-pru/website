@@ -6,16 +6,6 @@ excerpt: Performance Review Unit Metadata Definitions.
 keywords: hfe, horizontal flight efficiency, metrics, metadata, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
 needsMath: true
 ---
-<style>
-img + em {
-text-align: center;
-}
-
-img + em:before {
-content: ' ';
-display: block;
-}
-</style>
 
 # {{ page.title }}
 
@@ -156,6 +146,7 @@ These key performance indicators are also defined in the Implementing Regulation
 | SES   | Single European Sky |
 | TMA   | Terminal Manoeuvring Area |
 
+{:.table-caption}
 Table 2: Acronyms and terminology
 
 
@@ -166,8 +157,10 @@ the comparison between the length of a trajectory and the shortest distance
 between its endpoints.
 
 
+{% figure caption:"HFE as comparison of flight length and Great Circle Distance" class:"img-responsive center-block" %}
 {% img hfe-01.png magick:resize:400x400 alt:'HFE as comparison of flight length and Great Circle Distance' %}
-*HFE as comparison of flight length and Great Circle Distance*
+{% endfigure %}
+
 
 For an entire flight we want to calculate the additional distance flown between
 take-off and landing with respect to the most direct route between the two
@@ -182,8 +175,10 @@ In addition, there is a specific need which stems from the requirements of
 Reference Period 2 (RP2) **to measure local performance (FAB level) while at the
 same time keeping the network perspective.**
 
+{% figure caption:"Local Performance Requirement" class:"img-responsive center-block" %}
 {% img hfe-02.png magick:resize:700x700 alt:'Local Performance Requirement' %}
-*Local Performance Requirement*
+{% endfigure %}
+
 
 The desired outcome is illustrated in the table above. We are interested in all
 flights which traverse at least in part the Single European Sky (SES) area. A
@@ -217,8 +212,10 @@ difference between
 1. the great circle distance from the entry point N to the destination D and
 1. the great circle distance from the exit point X to the destination D.
 
+{% figure caption:"The two Quantities Averaged in the Achieved Distance" class:"img-responsive center-block" %}
 {% img hfe-03.png magick:resize:550x550 alt:'The two Quantities Averaged in the Achieved Distance' %}
-*The two Quantities Averaged in the Achieved Distance*
+{% endfigure %}
+
 
 In the Figure {@fig:avg-and-achieved-distance}, the distance from $N$ to
 $D$ is the radius of the circle centred at $D$ and going through the point of
@@ -258,8 +255,10 @@ the same area. Such a measurement would not take into consideration the network
 perspective, as can be seen in the (extreme, for illustration purposes) example
 of the Figure {@fig:local-efficiency}.
 
+{% figure caption:"A case of perfect local efficiency with no network contribution" class:"img-responsive center-block" %}
 {% img hfe-04.png magick:resize:480x480 alt:'A case of perfect local efficiency with no network contribution]' %}
-*A case of perfect local efficiency with no network contribution*
+{% endfigure %}
+
 
 The red trajectory between the entry point N and the exit point X is perfectly
 straight and would be considered perfectly efficient from the local point of
@@ -287,8 +286,10 @@ extension) and a network contribution (which we call interface) as shown in
 the Figure {@fig:decomposition-inefficiency}. 
 
 
+{% figure caption:"Decomposition of Inefficiency" class:"img-responsive center-block" %}
 {% img hfe-05.png magick:resize:600x600 alt:'Decomposition of Inefficiency' %}
-*Decomposition of Inefficiency*
+{% endfigure %}
+
 
 In the example of the previous section, the extension is zero (the red line
 corresponds to the direct between entry and exit) and the inefficiency is equal
@@ -305,8 +306,10 @@ distance.
 
 ## Independence of local performance from performance outside the local area
 
+{% figure caption:"Independence of local performance from performance outside the local area" class:"img-responsive center-block" %}
 {% img hfe-06.png magick:resize:700x700 alt:'Independence of local performance from performance outside the local area' %}
-*Independence of local performance from performance outside the local area*
+{% endfigure %}
+
 
 The value of the achieved distance to be considered for a local area depends
 only on the position of the entry and exit points with respect to the origin and
@@ -355,6 +358,7 @@ courses.
 | Interface | $I = G - H$ | $I_j$ | $\sum_{j} I_j \ne 0 (= I)$ |  No  |
 | Additional distance | $K = L -H (= L - G)$ | $K_j = L_j - H_j$ | $\sum_{j} K_j = K$ |  Yes  |
 
+{:.table-caption}
 Table 3: Summary of the different quantities used to compute HFE
 
 
@@ -440,6 +444,7 @@ airports with respect to the reference area):
 | Departing      | Airport |  40 NM          | Border        | Border      |
 | Overflying     | Border  |  Border         | Border                      |
 
+{:.table-caption}
 Table 4: General location of origin, destination and en-route end-points
 
 
