@@ -21,7 +21,7 @@
 ##-   -V, --version           Output version information and exit.
 ##-
 ##- Examples:
-##- $ extract_en-route_traffic_data '31-MAR-2016'
+##- $ extract_en-route_traffic_data '01-MAR-2016'
 ##-
 ##- Caveat: be sure to use gnu-getopt and not OSX builtin or Git Bash missing one ;-)
 
