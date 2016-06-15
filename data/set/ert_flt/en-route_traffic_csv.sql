@@ -6,13 +6,16 @@ SET TRIMSPOOL ON;
 -- take output file name from argument 1
 DEFINE OUTFILE = '&1'
 
-SPOOL '&OUTFILE';
+-- take period from argument 2 and 3
+DEFINE WEF = '&2'
+DEFINE TIL = '&3'
 
+SPOOL '&OUTFILE';
 
 
 WITH DATA as (
 SELECT * FROM PRUDEV.V_PRU_FAC_TDC_DD
-WHERE ENTRY_DATE >= '1-JAN-2014' and ENTRY_DATE <'1-JAN-2016'
+WHERE ENTRY_DATE >= '&WEF' and ENTRY_DATE <'&TIL'
 )
 
 

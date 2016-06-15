@@ -3,6 +3,7 @@ layout: default
 title: Unimpeded ASMA Time - Technical Note
 excerpt: Performance Review Unit MetaData Definitions.
 keywords: asma, airport, metrics, metadata, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
+needsMath: true
 ---
 
 # {{ page.title }}
@@ -43,7 +44,9 @@ function of the congestion level. In this picture, the range between the first
 quartile (bottom bar of each rectangle), third quartile (top bar) and the median
 (medium line) is depicted for each level of congestion.
 
-{% image saturationlevel.jpg alt="Congestion level vs. saturation level" %}
+{% figure caption:"Congestion level vs. saturation level" class:"img-responsive center-block" %}
+{% img saturationlevel.jpg alt:"Congestion level vs. saturation level" magick:resize:400x400 %}
+{% endfigure %}
 
 As shown in this figure, as soon as a certain level of congestion is reached (at
 the inflection point of the curve), the ASMA transit time increases linearly
@@ -134,7 +137,9 @@ from which the ASMA cylinder is entered. For this reasons the ASMA cylinder is
 divided into *ASMA sectors*. The ASMA sectors are defined further to statistical
 clustering analysis of traffic distribution, as illustrated here below.
 
-{% image asmasectors.jpg alt="Determination on the ASMA sectors" %}
+{% figure caption:"Determination on the ASMA sectors" class:"img-responsive center-block" %}
+{% img asmasectors.jpg alt:"Determination on the ASMA sectors" magick:resize:600x600 %}
+{% endfigure %}
 
 
 ### Unimpeded ASMA time calculation
@@ -206,7 +211,9 @@ The following checks are performed to test the validity of the results:
   *Additional ASMA times* for unimpeded flights should have a distribution
   centered around zero and with a standard deviation smaller than 3 minutes.
 
-{% image check1.jpg alt="Distribution of residual errors" %}
+{% figure caption:"Distribution of residual errors" class:"img-responsive center-block" %}
+{% img check1.jpg alt:"Distribution of residual errors" magick:resize:300x300 %}
+{% endfigure %}
 
 * Evolution of the additional ASMA time with the congestion level*
   In order to be able to consolidate in a single graph for a given airport with
@@ -220,7 +227,9 @@ The following checks are performed to test the validity of the results:
   A value of 100 of the congestion index corresponds to a saturation level
   independent of arrival runway and ASMA Sector.
 
-{% image check3.jpg alt="Evolution of the additional time with the congestion level" %}
+{% figure caption:"Evolution of the additional time with the congestion level" class:"img-responsive center-block" %}
+{% img check3.jpg alt:"Evolution of the additional time with the congestion level" magick:resize:300x300 %}
+{% endfigure %}
 
   As a function of the congestion index, the *additional ASMA times* should:
   * remain close to zero for low level of congestion (congestion index smaller than 100), and 
@@ -235,7 +244,9 @@ or a re-design of the TMA during the reference period under consideration. In
 such a case, new unimpeded ASMA times will be calculated in order to consider
 the impact of these changes.
 
-{% image check2.jpg alt="Verification of monthly statistics" %}
+{% figure caption:"Verification of monthly statistics" class:"img-responsive center-block" %}
+{% img check2.jpg alt:"Verification of monthly statistics" magick:resize:300x300 %}
+{% endfigure %}
 
 
 

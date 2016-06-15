@@ -16,6 +16,8 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap', github: 'jekyll/jekyll-sitemap'
   gem 'jekyll-scholar', github: 'inukshuk/jekyll-scholar'
   gem 'jekyll-redirect-from'
+  gem 'jekyll-seo-tag'
+  gem 'jekyll-figure'
 end
 
 

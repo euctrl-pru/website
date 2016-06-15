@@ -1,9 +1,16 @@
-set sqlformat csv;
-set term off;
-set feedback off;
+SET SQLFORMAT CSV;
+SET TERM OFF;
+SET VERIFY OFF;
+SET FEEDBACK OFF;
 SET TRIMSPOOL ON;
 -- take name from argument 1
-spool '&1';
+DEFINE OUTFILE = '&1'
+
+-- take period from argument 2 and 3
+DEFINE WEF = '&2'
+DEFINE TIL = '&3'
+
+spool '&OUTFILE';
 
 WITH
 
@@ -14,7 +21,7 @@ select
   flt_date
 , airport_location_id as airport_code
 , sum(NVL (tdf, 0)) as FLT_DLY
-, sum(NVL (tdf_15, 0)) as FLT_DLY_15 
+, sum(NVL (tdf_15, 0)) as FLT_DLY_15
 , sum(NVL (tdm, 0)) as DLY_APT
 , sum(CASE WHEN reason ='A'THEN NVL (tdm, 0) END) DLY_APT_A
 , sum(CASE WHEN reason ='C'THEN NVL (tdm, 0)END) DLY_APT_C
@@ -34,7 +41,7 @@ select
 , sum(CASE WHEN reason NOT IN ('A','C','D','E','G','I','M','N','O','P','R','S','T','V','W') THEN NVL (tdm, 0)END) DLY_APT_NA
   from PRU_REGULATION_DETAIL
   where airport_role = 'A'
-  AND flt_date >= '01 JAN 2014'
+  AND flt_date >= '&WEF'
   AND airport_location_id IN (SELECT apt_icao FROM PRUDEV.DSH_REL_AIRPORT_COUNTRY)
   group by flt_date, airport_location_id
 
@@ -53,7 +60,7 @@ SELECT
 
 FROM prudev.pru_fact_traffic_airspace p, pru_airport u, dsh_rel_airport_country r
     WHERE p.ID = u.ID AND p.TYPE = 'AIRPORT'
-    AND p.flt_date >= '01 JAN 2014'
+    AND p.flt_date >= '&WEF'
     AND R.APT_ICAO = U.CODE
     AND u.code IN (SELECT apt_icao FROM PRUDEV.DSH_REL_AIRPORT_COUNTRY)
     )
@@ -87,7 +94,7 @@ select
 ,NVL (FLT_DLY, 0) as FLT_ARR_1_DLY
 ,NVL (FLT_DLY_15, 0) as FLT_ARR_1_DLY_15
 from ARR_FLTS t left join APT_ATFM_DLY d on (t.flt_date = d.flt_date and t.code = d.airport_code)
- where t.flt_date>='01-JAN-2014' and t.flt_date<'01-MAY-2016'
+ where t.flt_date>='&WEF' and t.flt_date < '&TIL'
  order by 1,2,3,4,5;
 
 spool off;

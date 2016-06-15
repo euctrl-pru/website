@@ -83,3 +83,26 @@ Unit Airspace (AUA). A list for each ANSP will be provided in due course.
 | DLY_ERT_V_1  | Network Manager | V - Environmental Issues        | ER Capacity          | Minutes of en-route ATFM delay with delay code V - Environmental Issues        | 0          |
 | DLY_ERT_W_1  | Network Manager | W - Weather                     | ER Weather           | Minutes of en-route ATFM delay with delay code W - Weather                     | 0          |
 | DLY_ERT_NA_1 | Network Manager | NA - Not specified              | ER Disruptions       | Minutes of en-route ATFM delay with delay code NA - Not specified              | 0          |
+
+## ANSP Composition
+
+<table>
+<thead>
+<tr>
+<th>ANSP_NAME</th>
+<th>PRU_ATC_TYPE</th>
+<th>AUA_CODE</th>
+<th>AUA_NAME</th>
+</tr>
+</thead>
+<tbody>
+{% for item in site.data.ansp_composition %}
+<tr>
+<td>{{ item.ANSP_NAME }}</td>
+<td>{{ item.PRU_ATC_TYPE }}</td>
+<td>{{ item.AUA_CODE }}</td>
+<td>{{ item.AUA_NAME }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>

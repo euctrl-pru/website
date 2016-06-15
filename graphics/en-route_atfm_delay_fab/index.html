@@ -6,12 +6,18 @@ layout: graphic
 <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.20/topojson.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/d3-legend/1.10.0/d3-legend.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
-<link href="firs.css" rel="stylesheet">
-<script src="firs.js"></script>
+<link href="fabs.css" rel="stylesheet">
+<script src="colorbrewer.min.js"></script>
+<script src="fabs.js"></script>
 
 <body>
   <div id="tooltip" class="hidden">
     <p id="countryname"></p>
+  </div>
+  <div id="year-controls">
+    <input name="mode" type="radio" value="2015" id="year-2015"><label for="horizon-mode-mirror"> 2015</label>
+    <input name="mode" type="radio" value="2016" id="year-2016" checked><label for="year-2016"> 2016 (partial)</label>
+  </div>
   </div><div id="chart"></div>
 
   <script type="text/javascript">
@@ -19,12 +25,13 @@ layout: graphic
      // general design from
      // http://www.jeromecukier.net/blog/2013/11/20/getting-beyond-hello-world-with-d3/
      var params = {
-       refresh: false, // REMOVE, i.e. `false`, for production
-       topo: "euctrl-firs.json",
+       fabs: "fabs.json",
   	   world: "world-50m.json",
   	   worldnames: "world-country-names.tsv"
      };
 
+     // you can use query params such as
+     // <your URL>?width=600&height=300
      var query = window.location.search.substring(1);
      var vars = query.split("&");
      vars.forEach(function(v) {
