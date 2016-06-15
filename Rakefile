@@ -120,7 +120,7 @@ namespace :prod do
             sh "git status"
 
             puts 'Committing all...'
-            sh "git commit -m 'Updating to github.com/#{ENV['TRAVIS_REPO_SLUG']}/@#{sha} tagged #{committag}."
+            sh "git commit -m 'Updating to github.com/#{ENV['TRAVIS_REPO_SLUG']}/@#{sha} tagged #{committag}.'"
 
             # Make sure to make the output quiet, or else the API token will leak!
             puts '(Indirectly) Pushing to the Internet...'
