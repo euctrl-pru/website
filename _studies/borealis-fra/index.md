@@ -97,7 +97,7 @@ Borealis members and arriving in Spain and Portugal on the 14th of March 2016
 (nostrike) and 21st of March 2016 (during the strike).
  
 {% figure caption:"Figure 4. The impact of French strikes on Borealis HFE" class:"img-responsive center-block" %}
-{% img borealis-fig4.png magick:resize:700x700 alt:'The impact of French strikes on Borealis HFE' %}
+{% img borealis-fig4.png magick:resize:900x900 alt:'The impact of French strikes on Borealis HFE' %}
 {% endfigure %}
 
 
