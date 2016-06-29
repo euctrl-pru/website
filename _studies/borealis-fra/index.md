@@ -18,18 +18,11 @@ a.footnote:after {
 content: "]";
 }
 
-.footnotes  ol li::before {
-  all: initial;
-  * {
-    all: unset;
-  }
+.footnotes  ol li:target::before {
+all: initial;
+* {
+all: unset;
 }
-
-.bibliography  ol li::before {
-  all: initial;
-  * {
-    all: unset;
-  }
 }
 
 </style>
@@ -73,18 +66,6 @@ This study is also available as a PRU Leaflet, see
 
 
 
-<div markdown="1" class="wrapper blue"><div class="newwrap" markdown="1">
-#### Footnotes
-
-* footnotes will be placed here (this is essentially just a marker, this sentence won't be rendered)
-{:footnotes}
-
-[^1]: based on 2015 traffic figures (EUROCONTROL).
-[^2]: Performance data for Iceland is currently not available, which is why this
-    paper covers only the ATM performance of the three FABs (United
-    Kingdom-Ireland FAB, Denmark-Sweden FAB and North European FAB).
-
-</div></div>
 
 
 
@@ -198,3 +179,15 @@ become operational.
 
 {% bibliography --cited_in_order --file aviation %}
 
+<div markdown="1" class="wrapper blue"><div class="newwrap" markdown="1">
+#### Footnotes
+
+* footnotes will be placed here (this is essentially just a marker, this sentence won't be rendered)
+{:footnotes}
+
+[^1]: based on 2015 traffic figures (EUROCONTROL).
+[^2]: Performance data for Iceland is currently not available, which is why this
+    paper covers only the ATM performance of the three FABs (United
+    Kingdom-Ireland FAB, Denmark-Sweden FAB and North European FAB).
+
+</div></div>
