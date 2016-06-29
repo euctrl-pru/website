@@ -6,27 +6,6 @@ tags: fra, vertical, efficiency, ifr, flights, europe, eurocontrol
 excerpt: "Preliminary analysis of Borealis FRA implementation"
 needsMath: true
 ---
-<style>
-.footnotes {
-}
-
-a.footnote:before {
-content: "[";
-}
-
-a.footnote:after {
-content: "]";
-}
-
-.footnotes  ol li:target::before {
-all: initial;
-* {
-all: unset;
-}
-}
-
-</style>
-
 
 # {{ page.title }}
 
@@ -179,15 +158,11 @@ become operational.
 
 {% bibliography --cited_in_order --file aviation %}
 
-<div markdown="1" class="wrapper blue"><div class="newwrap" markdown="1">
-#### Footnotes
 
-* footnotes will be placed here (this is essentially just a marker, this sentence won't be rendered)
-{:footnotes}
+#### Footnotes
 
 [^1]: based on 2015 traffic figures (EUROCONTROL).
 [^2]: Performance data for Iceland is currently not available, which is why this
     paper covers only the ATM performance of the three FABs (United
     Kingdom-Ireland FAB, Denmark-Sweden FAB and North European FAB).
 
-</div></div>
