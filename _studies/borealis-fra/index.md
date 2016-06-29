@@ -6,7 +6,6 @@ tags: fra, vertical, efficiency, ifr, flights, europe, eurocontrol
 excerpt: "Preliminary analysis of Borealis FRA implementation"
 needsMath: true
 ---
-
 <style>
 .footnotes {
 }
@@ -25,7 +24,16 @@ content: "]";
     all: unset;
   }
 }
+
+.bibliography  ol li::before {
+  all: initial;
+  * {
+    all: unset;
+  }
+}
+
 </style>
+
 
 # {{ page.title }}
 
@@ -57,6 +65,29 @@ and analysing the benefits of FRA implementation across Europe in order to
 provide necessary assistance in planning and decision making processes to all
 interested stakeholders with the overall aim of improving the European ATM
 performance.
+
+### Note
+
+This study is also available as a PRU Leaflet, see 
+{% cite borealis-fra-leaflet --file aviation %} in the References section below.
+
+
+
+<div markdown="1" class="wrapper blue"><div class="newwrap" markdown="1">
+#### Footnotes
+
+* footnotes will be placed here (this is essentially just a marker, this sentence won't be rendered)
+{:footnotes}
+
+[^1]: based on 2015 traffic figures (EUROCONTROL).
+[^2]: Performance data for Iceland is currently not available, which is why this
+    paper covers only the ATM performance of the three FABs (United
+    Kingdom-Ireland FAB, Denmark-Sweden FAB and North European FAB).
+
+</div></div>
+
+
+
 
 ## Borealis overall
 
@@ -158,13 +189,12 @@ PRU will continue to monitor the Borealis ATM performance in order to
 evaluate the benefits of the FRA implementation as the new implementation steps
 become operational.
 
-#### Footnotes
-
-[^1]: based on 2015 traffic figures (EUROCONTROL).
-[^2]: Performance data for Iceland is currently not available, which is why this
-    paper covers only the ATM performance of the three FABs (United
-    Kingdom-Ireland FAB, Denmark-Sweden FAB and North European FAB).
 
 [hfepi]: <http://ansperformance.eu/references/methodology/horizontal_flight_efficiency_pi.html> "HFE Performance Indicator"
 
+
+
+## References
+
+{% bibliography --cited_in_order --file aviation %}
 
