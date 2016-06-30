@@ -7,4 +7,4 @@ redirect_to:
 # {{ page.title }}
 
 <a href="{{ "/graphs/" | prepend: site.baseurl | prepend: site.url }}" target="_blank">Graphs section</a>
-[
+
