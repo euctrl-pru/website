@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-- 2.2.0
+- 2.3
 before_script:
 - export GIT_TAG=build-$TRAVIS_BRANCH-$(date -u "+%Y-%m-%d-%H-%M-%S")-$TRAVIS_BUILD_NUMBER
 script: bundle exec rake prod:build
