@@ -17,6 +17,7 @@ group :jekyll_plugins do
   gem 'jekyll-scholar', github: 'inukshuk/jekyll-scholar'
   gem 'jekyll-redirect-from'
   gem 'jekyll-seo-tag'
+  gem 'rack', "~>1.6.4"
   gem 'jekyll-figure'
 end
 
