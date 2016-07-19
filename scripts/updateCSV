@@ -87,7 +87,7 @@ fi
 
 (
     cd ${SCRIPT_DIR}/../data/set/ert_flt;
-    DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_en-route_traffic_fab_fir_data '01-JAN-2015' '01-JUN-2016';
+    DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_en-route_traffic_fab_fir_data '01-JAN-2015' '01-JUL-2016';
     cp -f En-Route_Traffic_FAB_FIR.csv ${SCRIPT_DIR}/../graphics/en-route_atfm_delay_fab/
 )
 
@@ -99,7 +99,7 @@ fi
 
 (
     cd ${SCRIPT_DIR}/../data/set/apt_dly;
-    DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_airport_atfm_delay_data '01-JAN-2014' '01-JUN-2016';
+    DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_airport_atfm_delay_data '01-JAN-2014' '01-JUL-2016';
 )
 
 #(
