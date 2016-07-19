@@ -15,7 +15,7 @@ group :jekyll_plugins do
   gem 'jekyll-assets', github: 'jekyll/jekyll-assets'
   gem 'jekyll-sitemap', github: 'jekyll/jekyll-sitemap'
   gem 'jekyll-scholar', github: 'inukshuk/jekyll-scholar'
-  gem 'jekyll-redirect-from'
+  gem 'jekyll-redirect-from', github: 'jekyll/jekyll-redirect-from', ref: '4e50fab959ae8453573cd11fd5ef8374ec3a5b76'
   gem 'jekyll-seo-tag'
   gem 'rack', "~>1.6.4"
   gem 'jekyll-figure'
