@@ -5,15 +5,15 @@ title: Referenced material and Publications
 
 # {{ page.title }}
 
-## EU Directives
+## EU Directives <small>(sorted by year of pubblication)</small>
 
 {% bibliography --file legislation %}
 
-## Performance and Aviation
+## Performance and Aviation <small>(sorted by year of pubblication)</small>
 
 {% bibliography --file aviation %}
 
-## Statistics, Data Visualization et al.
+## Statistics, Data Visualizations et al. <small>(sorted by year of pubblication)</small>
 
 {% bibliography --file dataviz %}
 

@@ -34,7 +34,7 @@ layout: default
           <a href="#{{ item }}-section">{{ item }}</a>
           {% if forloop.last %}
           {% else %}
-            ,
+          ,
           {% endif %}
         {% endfor %}
       </div>
@@ -55,8 +55,7 @@ layout: default
                      <div>
                        <a href="{{ pag.url }}">{{ pag.title }}</a>
                {% assign isfirst = false %}
-            {% else %}
-                       , <a href="{{ pag.url }}">{{ pag.title }}</a>
+            {% else %}, <a href="{{ pag.url }}">{{ pag.title }}</a>
             {% endif %}
          {% endif %}
       {% endif%}

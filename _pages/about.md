@@ -17,9 +17,9 @@ Review Body (PRB) with data collection, analysis and data provision.
 
 The [PRB Dashboard](http://www.eurocontrol.int/prudata/dashboard/rp2_2016.html)
 is delivered by PRU to the European Commission/PRB on a quaterly basis and is
-the formal and official source of data in the context of Single European Sky
+the formal and official source of data in the context of the Single European Sky
 (SES) legislation.
-It covers only the FAB/Member States subject to SES legislation.
+The PRB Dashboard covers only the FABs/Member States subject to SES legislation.
 
 The PRU website (this site) and its [Data Download](/data/) and
 [Visualisations](/graphs/) sections cover all Eurocontrol Member States.
@@ -30,7 +30,10 @@ PRU website data generally provides higher degree of granularity both
 geographical and/or temporal.
 
 Our work is based on best practices and on specific theories and studies as
-listed in the [Bibliography]({{site.url}}/references/bibliography.html) page.
+explained in the [Methodology]({{site.url}}/references/methodology/) section.
+
+Finally the [Bibliography]({{site.url}}/references/bibliography.html) lists
+relevant pubblications and web resources that support and complement our work.
 
 For feedback or questions please contact us at:
 [Performance Review Unit](mailto:{{ site.owner.email }}) ({{ site.owner.email }}).
