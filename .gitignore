@@ -10,3 +10,4 @@ auto/
 .asset-cache/
 .jekyll-assets-cache/
 Gemfile.lock
+.auctex-auto/
