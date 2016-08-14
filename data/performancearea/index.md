@@ -58,30 +58,6 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 
 # Pan-European ANS Performance data repository
 
-<div class="well">
-
-<h2><small>Copyright notice and Disclaimer</small></h2>
-
-<small><span style="text-aligh:left">&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}.</span></small>
-
-This data is published by the the <small style="font-variant: small-caps;">EUROCONTROL</small> Performance Review Unit
-in the interest of the exchange of information.
-It may be copied in whole or in part providing that this copyright notice and disclaimer are included.
-The information may not be modified without prior written permission from the
-<small style="font-variant: small-caps;">EUROCONTROL</small> Performance Review Unit.
-
-The information does not necessarily reflect the official views or policy of
-<small style="font-variant: small-caps;">EUROCONTROL</small>,
-which makes no warranty, either implied or express, for the information contained in this document,
-including its accuracy, completeness or usefulness.
-
-For feedback or questions please contact us at: [Performance Review Unit](mailto:{{ site.owner.email }}) ({{ site.owner.email }}).
-
-<div class="container text-center">
-{% include _subscriber-button.html %}
-</div>
-
-</div>
 
 <style>
 td {
@@ -185,3 +161,29 @@ width: 8em;
 {{ page.fltr_i }} = filter for dataset and download.<br>
 {{ page.ndwk_i }} = experimental, [feedback](mailto:{{ site.owner.email }}) is more than welcome.<br>
 {{ page.attn_i }} = not (yet?) available.<br>
+
+
+<div class="well">
+
+<h2><small>Copyright notice and Disclaimer</small></h2>
+
+<small><span style="text-aligh:left">&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}.</span></small>
+
+This data is published by the the <small style="font-variant: small-caps;">EUROCONTROL</small> Performance Review Unit
+in the interest of the exchange of information.
+It may be copied in whole or in part providing that this copyright notice and disclaimer are included.
+The information may not be modified without prior written permission from the
+<small style="font-variant: small-caps;">EUROCONTROL</small> Performance Review Unit.
+
+The information does not necessarily reflect the official views or policy of
+<small style="font-variant: small-caps;">EUROCONTROL</small>,
+which makes no warranty, either implied or express, for the information contained in this document,
+including its accuracy, completeness or usefulness.
+
+For feedback or questions please contact us at: [Performance Review Unit](mailto:{{ site.owner.email }}) ({{ site.owner.email }}).
+
+<div class="container text-center">
+{% include _subscriber-button.html %}
+</div>
+
+</div>
