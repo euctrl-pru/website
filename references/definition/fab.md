@@ -47,3 +47,10 @@ have been taken:
 | UK-IRELAND FAB | UK-IRELAND FAB     | United Kingdom, Ireland                                                                      |
 | SW FAB         | South West FAB     | Portugal, Spain                                                                              |
 
+<br>
+<br>
+For the details about the computation of delay at FAB level (i.e. the FIRs
+used), please refer to the relevant section in the
+[En-route ATFM delays]({{site.url}}/references/dataset/En-Route_ATFM_Delay_FIR.html#fab-definitions)
+page part of the [Datasets Definition]({{site.url}}/references/dataset/)
+section.
