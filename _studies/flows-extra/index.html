@@ -2,8 +2,9 @@
 layout: default
 title:  "Flights flows in/out of Europe"
 date: 2015-11-11 11:11:11 +0100
+last-modified-date: 2016-08-19 19:06:31 +0100
 tags: flows, ifr, flights, europe, eurocontrol
-excerpt: "IFR Movements flows from and to Europe (Eurocontrol member States plus Kosovo) 2007-2014"
+excerpt: "IFR Movements flows from and to Eurocontrol member States (plus Kosovo) 2001-2015"
 ---
 
 
@@ -18,7 +19,8 @@ excerpt: "IFR Movements flows from and to Europe (Eurocontrol member States plus
   	<header role="banner">
   		<h1>{{ page.title }}</h1>
       <div class="lead-in">
-        Explore IFR flights flows between <a href="http://www.eurocontrol.int/about/member-states">Eurocontrol Member States</a> and other regions/countries for the period 2007 - 2014.<br>Click on a region to discover flows country-by-country. Hover on a region, country or flow in order to get the number of movements.
+        Explore IFR flights flows between <a href="http://www.eurocontrol.int/about/member-states">Eurocontrol Member States</a> and other regions/countries for the period 2001 - 2015.<br>Click on a region to discover flows country-by-country. Hover on a region, country or flow in order to get the number of movements.
+        <p><small>A circular plot of the flows internal to Eurocontrol Member States is available as a <a href="/studies/flows-intra/">separate study</a>.</small></p>
       </div>
       <div class="credits">
         by <a href="http://linkedin.com/in/espinielli">Enrico Spinielli</a> (data processing and visualization) &amp;
@@ -48,17 +50,17 @@ excerpt: "IFR Movements flows from and to Europe (Eurocontrol member States plus
           <div class="column-item">
             <h2>Estimating extra-European flight flows</h2>
             <p>
-              The flows above are about the extra-European flights for the years 2007-2014 which do not originate and arrive in one of the <a href="http://www.eurocontrol.int/about/member-states">Eurocontrol member States</a>' airports: internal flight flows have been filtered out because their much bigger size would otherwise mask the extra-European ones.
+              The flows above are about the extra-European flights for the years 2001-2015 which <b>do not</b> originate <b>and</b> arrive in one of the <a href="http://www.eurocontrol.int/about/member-states">Eurocontrol member States</a>' airports: internal flight flows have been filtered out because their much bigger size would otherwise mask the extra-European ones.
               <br>Furthermore military and helicopters flights have been taken out, as well as the flights whose departing (arriving) aerodrome is unknown (this last point looks like to be unconceaveable but it happens: flight plans have to be valid within its area of responsability for the Network Manager to accept them...)<br>
               This last set of filtered out flights do amount to very low figures and do not distort the overall distribution of the flows.
               <br>
               Finally, in order to clean the visualization and reduce the number of very small flows we have decided to show only the countries with more than 5 flights/day flows.
             </p>
             <p>Note that in/out flows are not typically balanced. This is partially due to the filtering we performed,
-            the sampling temporal window used (1 calendar year) ...</p>
+            the sampling temporal window used (1 calendar year), multi-lag flights,...</p>
             <p>
               The grouping into regions is arbitrary. We have kept all Eurocontrol member States under the same group irrespective of their accession date.<br>
-              The other regions are defined as follows:
+              The regions are defined as follows:
               <dl>
                 <dt>Eurocontrol</dt>
                 <dd>
@@ -87,9 +89,9 @@ excerpt: "IFR Movements flows from and to Europe (Eurocontrol member States plus
             <p>Bear with us: we are working on cleaning the data, refining our choices for the visualization and publishing a paper with our findings.<br>
               Here is a list of things we want to tackle:
               color palette for colorblind readers (<a href="https://en.wikipedia.org/wiki/Color_blindness#Frequency_of_red-green_color_blindness_in_males_of_various_populations">5-10% of males for many populations</a> for red-green);
-              similar colors for countries in the same region (thanks to Dr Sander for the suggestion);
-              intra-European flows.
+              similar colors for countries in the same region (thanks to Dr Sander for the suggestion); ordering regions similarly to their geographical position, i.e. Eurocontrol up (North), the on the right Asia (East), then Middle East ...
             </p>
+            <p>A further note of caution: the flows have been calculated from the archived flights from Eurocontrol's Network Manager. Historically different countries have joined Eurocontrol and the service of NM (once called CFMU) at different moments, so expecially for the early years in the diagram above we could have little flows for a country just because it was not yet serviced by CFMU/NM. This is the price we decided to pay to keep a fixed set of countries for the Eurocontrol "region".</p>
             <p class="note">We would really appreciate any feedbacks and/or comments to improve or appreciate ;-) our work.</p>
           </div>
         </div>
@@ -217,7 +219,7 @@ excerpt: "IFR Movements flows from and to Europe (Eurocontrol member States plus
       var cols = '683f92 cd3d08 b60275 6dae29 ec8f00 2058a5 00a592 009d3c 378974 ffca00'; // original set
 
       d3.json(datafile, function(data) {
-        var now = 2014;
+        var now = 2015;
         var chart = Globalmigration.chart(data, {
           element: '#diagram',
           width: 800,
@@ -227,7 +229,7 @@ excerpt: "IFR Movements flows from and to Europe (Eurocontrol member States plus
           margin: 100,
           arcPadding: 0.04,
           layout: {
-            alpha: -85, // start angle for first region, zero is up North
+            alpha: -5, // start angle for first region, zero is up North
             threshold: 1,
             labelThreshold: 2,
             sortSubgroups: d3.ascending,

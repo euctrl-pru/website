@@ -2,8 +2,9 @@
 layout: default
 title:  "Flights flows within Europe"
 date: 2015-12-09 15:10:01 +0100
+last-modified-date: 2016-08-19 19:06:31 +0100
 tags: flows, ifr, flights, europe, eurocontrol
-excerpt: "IFR Movements flows within Europe (Eurocontrol member States plus Kosovo) 2007-2014"
+excerpt: "IFR Movements flows within Europe (Eurocontrol member States plus Kosovo) 2001-2015"
 ---
 
 
@@ -18,7 +19,8 @@ excerpt: "IFR Movements flows within Europe (Eurocontrol member States plus Koso
   	<header role="banner">
   		<h1>{{ page.title }}</h1>
       <div class="lead-in">
-        Explore IFR flights flows between <a href="http://www.eurocontrol.int/about/member-states">Eurocontrol Member States</a> grouped as per STATFOR regions for the period 2007 - 2014.<br>Click on a region to discover flows country-by-country. Hover on a region, country or flow in order to get the number of movements.
+        Explore IFR flights flows between <a href="http://www.eurocontrol.int/about/member-states">Eurocontrol Member States</a> grouped as per STATFOR regions for the period 2001 - 2015.<br>Click on a region to discover flows country-by-country. Hover on a region, country or flow in order to get the number of movements.
+        <p><small>A circular plot of the flows to/from Eurocontrol Member States is available as a <a href="/studies/flows-extra/">separate study</a>.</small></p>
       </div>
       <div class="credits">
         by <a href="http://linkedin.com/in/espinielli">Enrico Spinielli</a> (data processing and visualization) &amp;
@@ -48,7 +50,7 @@ excerpt: "IFR Movements flows within Europe (Eurocontrol member States plus Koso
           <div class="column-item">
             <h2>Estimating intra-European flight flows</h2>
             <p>
-              The flows above are about the intra-European flights for the years 2007-2014, i.e. the ones that originate and arrive in one of the <a href="http://www.eurocontrol.int/about/member-states">Eurocontrol member States</a>' airports.
+              The flows above are about the intra-European flights for the years 2001-2015, i.e. the ones that originate <b>and</b> arrive in one of the <a href="http://www.eurocontrol.int/about/member-states">Eurocontrol member States</a>' airports.
             <p>
               For the grouping of countries into regions we have adopted the ESRA 08 classification
               from Eurocontrol/STAFTOR (see Fig. 35 page 46 of
@@ -90,8 +92,9 @@ excerpt: "IFR Movements flows within Europe (Eurocontrol member States plus Koso
               Here is a list of things we want to tackle:
               color palette for colorblind readers (<a href="https://en.wikipedia.org/wiki/Color_blindness#Frequency_of_red-green_color_blindness_in_males_of_various_populations">5-10% of males for many populations</a> for red-green);
               similar colors for countries in the same region (thanks to Dr Sander for the suggestion);
-              intra-European flows.
+              ordering regions similarly to their geographical position, i.e. ESRA North-West at the top left, Middle East ESRA Mediterranean at the bottom...
             </p>
+            <p>A further note of caution: the flows have been calculated from the archived flights from Eurocontrol's Network Manager. Historically different countries have joined Eurocontrol and the service of NM (once called CFMU) at different moments, so expecially for the early years in the diagram above we could have little flows for a country just because it was not yet serviced by CFMU/NM. This is the price we decided to pay to keep a fixed set of countries for the various regions.</p>
             <p class="note">We would really appreciate any feedbacks and/or comments to improve or appreciate ;-) our work.</p>
           </div>
         </div>
