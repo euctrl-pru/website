@@ -177,7 +177,7 @@ The information may not be modified without prior written permission from the
 
 The information does not necessarily reflect the official views or policy of
 <small style="font-variant: small-caps;">EUROCONTROL</small>,
-which makes no warranty, either implied or express, for the information contained in this document,
+which makes no warranty, either implied or expressed, for the information contained in this document,
 including its accuracy, completeness or usefulness.
 
 For feedback or questions please contact us at: [Performance Review Unit](mailto:{{ site.owner.email }}) ({{ site.owner.email }}).
