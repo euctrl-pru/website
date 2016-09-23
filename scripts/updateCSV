@@ -97,6 +97,15 @@ fi
     mv -f ansp_composition.csv ${SCRIPT_DIR}/../_data/.
 )
 
+######### extract monthly file for ert_dly ###########
+# limit to latest months not yet in data/csv directory
+(
+    cd ${SCRIPT_DIR}/../data/set/ert_dly;
+    DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_monthly_data 201609 201610;
+    mv -f ert_dly_fir_*.csv ${SCRIPT_DIR}/../_data/csv/.
+)
+
+
 (
     cd ${SCRIPT_DIR}/../data/set/apt_dly;
     DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_airport_atfm_delay_data '01-JAN-2014' '01-SEP-2016';
