@@ -23,7 +23,7 @@
 ##-   -V, --version           Output version information and exit.
 ##-
 ##- Examples:
-##- $ extract_enroute_atfm_delay_fir_data '01-JAN-2016' '01-FEB-2016'
+##- $ extract_enroute_atfm_delay_fir_data 20160101 20160201
 ##-
 ##- Caveat: be sure to use gnu-getopt and not OSX builtin or Git Bash missing one ;-)
 
