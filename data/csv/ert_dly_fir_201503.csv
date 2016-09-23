@@ -1,0 +1,1737 @@
+"YEAR","MONTH_NUM","MONTH_MON","FLT_DATE","ENTITY_NAME","ENTITY_TYPE","FLT_ERT_1","DLY_ERT_1","DLY_ERT_A_1","DLY_ERT_C_1","DLY_ERT_D_1","DLY_ERT_E_1","DLY_ERT_G_1","DLY_ERT_I_1","DLY_ERT_M_1","DLY_ERT_N_1","DLY_ERT_O_1","DLY_ERT_P_1","DLY_ERT_R_1","DLY_ERT_S_1","DLY_ERT_T_1","DLY_ERT_V_1","DLY_ERT_W_1","DLY_ERT_NA_1","FLT_ERT_1_DLY","FLT_ERT_1_DLY_15"
+"2015",3,"MAR",01-MAR-15,"Albania","COUNTRY (FIR)",403,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Armenia","COUNTRY (FIR)",115,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Austria","COUNTRY (FIR)",2625,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"BLUE MED FAB","FAB (FIR)",5063,903,0,903,0,0,0,0,0,0,0,0,0,0,0,0,0,0,46,29
+"2015",3,"MAR",01-MAR-15,"Baltic FAB","FAB (FIR)",1780,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Belgium","COUNTRY (FIR)",2787,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",637,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Bulgaria","COUNTRY (FIR)",1696,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Croatia","COUNTRY (FIR)",1062,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Cyprus","COUNTRY (FIR)",845,903,0,903,0,0,0,0,0,0,0,0,0,0,0,0,0,0,46,29
+"2015",3,"MAR",01-MAR-15,"Czech Republic","COUNTRY (FIR)",1660,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"DANUBE FAB","FAB (FIR)",1984,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"DK-SE FAB","FAB (FIR)",2334,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Denmark","COUNTRY (FIR)",1487,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Estonia","COUNTRY (FIR)",468,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"FAB CE","FAB (FIR)",4442,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",4048,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4430,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"FABEC","FAB (FIR)",13121,5598,0,3760,0,0,0,0,0,0,0,1021,0,817,0,0,0,0,319,156
+"2015",3,"MAR",01-MAR-15,"Finland","COUNTRY (FIR)",598,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"France","COUNTRY (FIR)",7110,3760,0,3760,0,0,0,0,0,0,0,0,0,0,0,0,0,0,183,111
+"2015",3,"MAR",01-MAR-15,"Georgia","COUNTRY (FIR)",315,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Germany","COUNTRY (FIR)",7057,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",01-MAR-15,"Greece","COUNTRY (FIR)",1316,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Hungary","COUNTRY (FIR)",1601,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Ireland","COUNTRY (FIR)",1032,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Italy","COUNTRY (FIR)",3799,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Latvia","COUNTRY (FIR)",573,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Lithuania","COUNTRY (FIR)",601,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Malta","COUNTRY (FIR)",235,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Moldova","COUNTRY (FIR)",99,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"NEFAB","FAB (FIR)",2331,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Netherlands","COUNTRY (FIR)",2971,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",01-MAR-15,"Norway","COUNTRY (FIR)",1353,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Poland","COUNTRY (FIR)",1581,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Portugal","COUNTRY (FIR)",1526,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",01-MAR-15,"Portugal Continental","COUNTRY (FIR)",1323,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",01-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",401,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Romania","COUNTRY (FIR)",1445,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"SES Area (RP2)","AREA (FIR)",20869,6886,0,4663,0,0,0,0,0,0,0,1406,0,817,0,0,0,0,395,192
+"2015",3,"MAR",01-MAR-15,"SW FAB","FAB (FIR)",4249,385,0,0,0,0,0,0,0,0,0,385,0,0,0,0,0,0,30,7
+"2015",3,"MAR",01-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1209,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Slovakia","COUNTRY (FIR)",1017,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Slovenia","COUNTRY (FIR)",680,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Spain","COUNTRY (FIR)",4132,385,0,0,0,0,0,0,0,0,0,385,0,0,0,0,0,0,30,7
+"2015",3,"MAR",01-MAR-15,"Spain Canarias","COUNTRY (FIR)",894,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Spain Continental","COUNTRY (FIR)",3886,385,0,0,0,0,0,0,0,0,0,385,0,0,0,0,0,0,30,7
+"2015",3,"MAR",01-MAR-15,"Sweden","COUNTRY (FIR)",1795,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Switzerland","COUNTRY (FIR)",2613,1838,0,0,0,0,0,0,0,0,0,1021,0,817,0,0,0,0,136,45
+"2015",3,"MAR",01-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",262,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"Turkey","COUNTRY (FIR)",3214,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",01-MAR-15,"UK Continental","COUNTRY (FIR)",5457,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",01-MAR-15,"UK Oceanic","COUNTRY (FIR)",1052,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"UK-Ireland FAB","FAB (FIR)",5515,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",01-MAR-15,"Ukraine","COUNTRY (FIR)",473,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",01-MAR-15,"United Kingdom","COUNTRY (FIR)",5620,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",02-MAR-15,"Albania","COUNTRY (FIR)",308,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Armenia","COUNTRY (FIR)",108,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Austria","COUNTRY (FIR)",2574,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",02-MAR-15,"BLUE MED FAB","FAB (FIR)",4895,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",02-MAR-15,"Baltic FAB","FAB (FIR)",1840,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Belgium","COUNTRY (FIR)",2911,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",550,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Bulgaria","COUNTRY (FIR)",1507,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Croatia","COUNTRY (FIR)",927,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Cyprus","COUNTRY (FIR)",727,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Czech Republic","COUNTRY (FIR)",1654,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"DANUBE FAB","FAB (FIR)",1845,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"DK-SE FAB","FAB (FIR)",2799,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Denmark","COUNTRY (FIR)",1714,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Estonia","COUNTRY (FIR)",487,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"FAB CE","FAB (FIR)",4343,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",02-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",4023,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",02-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4335,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",02-MAR-15,"FABEC","FAB (FIR)",14022,3625,0,484,0,0,0,0,0,0,0,1934,0,1056,0,0,151,0,231,102
+"2015",3,"MAR",02-MAR-15,"Finland","COUNTRY (FIR)",744,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"France","COUNTRY (FIR)",7021,453,0,453,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,12
+"2015",3,"MAR",02-MAR-15,"Georgia","COUNTRY (FIR)",278,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Germany","COUNTRY (FIR)",7764,151,0,0,0,0,0,0,0,0,0,0,0,0,0,0,151,0,14,3
+"2015",3,"MAR",02-MAR-15,"Greece","COUNTRY (FIR)",1167,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Hungary","COUNTRY (FIR)",1550,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Ireland","COUNTRY (FIR)",1092,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Italy","COUNTRY (FIR)",3746,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",02-MAR-15,"Latvia","COUNTRY (FIR)",573,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Lithuania","COUNTRY (FIR)",603,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Malta","COUNTRY (FIR)",240,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Moldova","COUNTRY (FIR)",85,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"NEFAB","FAB (FIR)",2973,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Netherlands","COUNTRY (FIR)",3016,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",02-MAR-15,"Norway","COUNTRY (FIR)",1853,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Poland","COUNTRY (FIR)",1622,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Portugal","COUNTRY (FIR)",1425,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",02-MAR-15,"Portugal Continental","COUNTRY (FIR)",1237,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",02-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",369,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Romania","COUNTRY (FIR)",1355,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"SES Area (RP2)","AREA (FIR)",23508,3650,0,484,0,0,0,0,0,0,25,1934,0,1056,0,0,151,0,235,102
+"2015",3,"MAR",02-MAR-15,"SW FAB","FAB (FIR)",4070,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",02-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1061,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Slovakia","COUNTRY (FIR)",983,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Slovenia","COUNTRY (FIR)",668,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Spain","COUNTRY (FIR)",3952,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",02-MAR-15,"Spain Canarias","COUNTRY (FIR)",735,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Spain Continental","COUNTRY (FIR)",3694,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",02-MAR-15,"Sweden","COUNTRY (FIR)",2123,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Switzerland","COUNTRY (FIR)",2529,3021,0,31,0,0,0,0,0,0,0,1934,0,1056,0,0,0,0,192,87
+"2015",3,"MAR",02-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",227,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"Turkey","COUNTRY (FIR)",2944,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",02-MAR-15,"UK Continental","COUNTRY (FIR)",5837,25,0,0,0,0,0,0,0,0,25,0,0,0,0,0,0,0,4,0
+"2015",3,"MAR",02-MAR-15,"UK Oceanic","COUNTRY (FIR)",978,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"UK-Ireland FAB","FAB (FIR)",5886,25,0,0,0,0,0,0,0,0,25,0,0,0,0,0,0,0,4,0
+"2015",3,"MAR",02-MAR-15,"Ukraine","COUNTRY (FIR)",440,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",02-MAR-15,"United Kingdom","COUNTRY (FIR)",5997,25,0,0,0,0,0,0,0,0,25,0,0,0,0,0,0,0,4,0
+"2015",3,"MAR",03-MAR-15,"Albania","COUNTRY (FIR)",340,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Armenia","COUNTRY (FIR)",95,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Austria","COUNTRY (FIR)",2410,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"BLUE MED FAB","FAB (FIR)",4682,3715,0,183,0,0,0,0,0,0,0,0,0,3532,0,0,0,0,141,102
+"2015",3,"MAR",03-MAR-15,"Baltic FAB","FAB (FIR)",1870,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Belgium","COUNTRY (FIR)",2807,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",541,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Bulgaria","COUNTRY (FIR)",1453,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Croatia","COUNTRY (FIR)",926,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Cyprus","COUNTRY (FIR)",730,3715,0,183,0,0,0,0,0,0,0,0,0,3532,0,0,0,0,141,102
+"2015",3,"MAR",03-MAR-15,"Czech Republic","COUNTRY (FIR)",1643,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"DANUBE FAB","FAB (FIR)",1781,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"DK-SE FAB","FAB (FIR)",2756,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Denmark","COUNTRY (FIR)",1680,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Estonia","COUNTRY (FIR)",464,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"FAB CE","FAB (FIR)",4183,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",3841,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4171,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"FABEC","FAB (FIR)",13633,734,0,293,0,0,177,0,0,0,0,0,0,264,0,0,0,0,43,22
+"2015",3,"MAR",03-MAR-15,"Finland","COUNTRY (FIR)",714,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"France","COUNTRY (FIR)",6720,245,0,68,0,0,177,0,0,0,0,0,0,0,0,0,0,0,13,5
+"2015",3,"MAR",03-MAR-15,"Georgia","COUNTRY (FIR)",277,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Germany","COUNTRY (FIR)",7572,264,0,0,0,0,0,0,0,0,0,0,0,264,0,0,0,0,17,11
+"2015",3,"MAR",03-MAR-15,"Greece","COUNTRY (FIR)",1213,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Hungary","COUNTRY (FIR)",1479,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Ireland","COUNTRY (FIR)",1026,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Italy","COUNTRY (FIR)",3549,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",03-MAR-15,"Latvia","COUNTRY (FIR)",541,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Lithuania","COUNTRY (FIR)",631,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Malta","COUNTRY (FIR)",233,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Moldova","COUNTRY (FIR)",80,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"NEFAB","FAB (FIR)",2879,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",03-MAR-15,"Netherlands","COUNTRY (FIR)",2814,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",03-MAR-15,"Norway","COUNTRY (FIR)",1805,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",03-MAR-15,"Poland","COUNTRY (FIR)",1654,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Portugal","COUNTRY (FIR)",1243,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Portugal Continental","COUNTRY (FIR)",1081,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",293,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Romania","COUNTRY (FIR)",1341,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"SES Area (RP2)","AREA (FIR)",22975,4449,0,476,0,0,177,0,0,0,0,0,0,3796,0,0,0,0,184,124
+"2015",3,"MAR",03-MAR-15,"SW FAB","FAB (FIR)",3727,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1000,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Slovakia","COUNTRY (FIR)",949,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Slovenia","COUNTRY (FIR)",615,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Spain","COUNTRY (FIR)",3640,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Spain Canarias","COUNTRY (FIR)",700,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Spain Continental","COUNTRY (FIR)",3384,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Sweden","COUNTRY (FIR)",2096,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Switzerland","COUNTRY (FIR)",2501,225,0,225,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,6
+"2015",3,"MAR",03-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",205,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"Turkey","COUNTRY (FIR)",2828,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",03-MAR-15,"UK Continental","COUNTRY (FIR)",5642,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",03-MAR-15,"UK Oceanic","COUNTRY (FIR)",950,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"UK-Ireland FAB","FAB (FIR)",5697,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",03-MAR-15,"Ukraine","COUNTRY (FIR)",423,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",03-MAR-15,"United Kingdom","COUNTRY (FIR)",5813,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",04-MAR-15,"Albania","COUNTRY (FIR)",338,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Armenia","COUNTRY (FIR)",106,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Austria","COUNTRY (FIR)",2538,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"BLUE MED FAB","FAB (FIR)",4712,1161,0,1098,0,0,0,0,0,0,0,0,0,63,0,0,0,0,66,35
+"2015",3,"MAR",04-MAR-15,"Baltic FAB","FAB (FIR)",1829,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Belgium","COUNTRY (FIR)",2930,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",555,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Bulgaria","COUNTRY (FIR)",1530,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Croatia","COUNTRY (FIR)",937,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Cyprus","COUNTRY (FIR)",697,1161,0,1098,0,0,0,0,0,0,0,0,0,63,0,0,0,0,66,35
+"2015",3,"MAR",04-MAR-15,"Czech Republic","COUNTRY (FIR)",1649,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"DANUBE FAB","FAB (FIR)",1882,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"DK-SE FAB","FAB (FIR)",2750,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Denmark","COUNTRY (FIR)",1649,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Estonia","COUNTRY (FIR)",486,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"FAB CE","FAB (FIR)",4321,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",3964,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4305,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"FABEC","FAB (FIR)",13864,1207,0,183,0,0,0,0,0,0,0,798,0,226,0,0,0,0,102,30
+"2015",3,"MAR",04-MAR-15,"Finland","COUNTRY (FIR)",699,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"France","COUNTRY (FIR)",6871,49,0,49,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0
+"2015",3,"MAR",04-MAR-15,"Georgia","COUNTRY (FIR)",290,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Germany","COUNTRY (FIR)",7769,289,0,63,0,0,0,0,0,0,0,0,0,226,0,0,0,0,25,5
+"2015",3,"MAR",04-MAR-15,"Greece","COUNTRY (FIR)",1207,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Hungary","COUNTRY (FIR)",1551,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Ireland","COUNTRY (FIR)",1199,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Italy","COUNTRY (FIR)",3602,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",04-MAR-15,"Latvia","COUNTRY (FIR)",565,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Lithuania","COUNTRY (FIR)",639,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Malta","COUNTRY (FIR)",224,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Moldova","COUNTRY (FIR)",92,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"NEFAB","FAB (FIR)",2819,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Netherlands","COUNTRY (FIR)",2928,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",04-MAR-15,"Norway","COUNTRY (FIR)",1729,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Poland","COUNTRY (FIR)",1612,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Portugal","COUNTRY (FIR)",1319,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Portugal Continental","COUNTRY (FIR)",1118,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",325,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Romania","COUNTRY (FIR)",1415,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"SES Area (RP2)","AREA (FIR)",23216,2368,0,1281,0,0,0,0,0,0,0,798,0,289,0,0,0,0,168,65
+"2015",3,"MAR",04-MAR-15,"SW FAB","FAB (FIR)",3746,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1036,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Slovakia","COUNTRY (FIR)",980,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Slovenia","COUNTRY (FIR)",652,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Spain","COUNTRY (FIR)",3658,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Spain Canarias","COUNTRY (FIR)",689,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Spain Continental","COUNTRY (FIR)",3408,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Sweden","COUNTRY (FIR)",2095,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Switzerland","COUNTRY (FIR)",2523,869,0,71,0,0,0,0,0,0,0,798,0,0,0,0,0,0,69,25
+"2015",3,"MAR",04-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",230,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Turkey","COUNTRY (FIR)",2914,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",04-MAR-15,"UK Continental","COUNTRY (FIR)",5642,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"UK Oceanic","COUNTRY (FIR)",994,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"UK-Ireland FAB","FAB (FIR)",5701,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"Ukraine","COUNTRY (FIR)",432,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",04-MAR-15,"United Kingdom","COUNTRY (FIR)",5809,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Albania","COUNTRY (FIR)",377,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Armenia","COUNTRY (FIR)",102,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Austria","COUNTRY (FIR)",2648,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"BLUE MED FAB","FAB (FIR)",4830,1111,0,978,0,0,0,0,0,0,0,0,0,133,0,0,0,0,70,38
+"2015",3,"MAR",05-MAR-15,"Baltic FAB","FAB (FIR)",1878,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Belgium","COUNTRY (FIR)",3003,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",548,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Bulgaria","COUNTRY (FIR)",1550,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Croatia","COUNTRY (FIR)",970,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Cyprus","COUNTRY (FIR)",736,1111,0,978,0,0,0,0,0,0,0,0,0,133,0,0,0,0,70,38
+"2015",3,"MAR",05-MAR-15,"Czech Republic","COUNTRY (FIR)",1736,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"DANUBE FAB","FAB (FIR)",1842,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"DK-SE FAB","FAB (FIR)",2785,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Denmark","COUNTRY (FIR)",1677,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Estonia","COUNTRY (FIR)",491,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"FAB CE","FAB (FIR)",4458,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",4134,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4449,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"FABEC","FAB (FIR)",14430,1515,0,1165,0,0,0,0,350,0,0,0,0,0,0,0,0,0,95,49
+"2015",3,"MAR",05-MAR-15,"Finland","COUNTRY (FIR)",757,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"France","COUNTRY (FIR)",7220,871,0,521,0,0,0,0,350,0,0,0,0,0,0,0,0,0,56,27
+"2015",3,"MAR",05-MAR-15,"Georgia","COUNTRY (FIR)",278,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Germany","COUNTRY (FIR)",7980,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",05-MAR-15,"Greece","COUNTRY (FIR)",1302,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",05-MAR-15,"Hungary","COUNTRY (FIR)",1527,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Ireland","COUNTRY (FIR)",1284,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Italy","COUNTRY (FIR)",3613,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",05-MAR-15,"Latvia","COUNTRY (FIR)",582,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Lithuania","COUNTRY (FIR)",637,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Malta","COUNTRY (FIR)",235,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Moldova","COUNTRY (FIR)",80,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"NEFAB","FAB (FIR)",2842,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Netherlands","COUNTRY (FIR)",3065,450,0,450,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29,14
+"2015",3,"MAR",05-MAR-15,"Norway","COUNTRY (FIR)",1682,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Poland","COUNTRY (FIR)",1654,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Portugal","COUNTRY (FIR)",1305,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Portugal Continental","COUNTRY (FIR)",1110,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",320,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Romania","COUNTRY (FIR)",1336,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"SES Area (RP2)","AREA (FIR)",24030,2626,0,2143,0,0,0,0,350,0,0,0,0,133,0,0,0,0,165,87
+"2015",3,"MAR",05-MAR-15,"SW FAB","FAB (FIR)",3955,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1093,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Slovakia","COUNTRY (FIR)",970,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Slovenia","COUNTRY (FIR)",669,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Spain","COUNTRY (FIR)",3869,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Spain Canarias","COUNTRY (FIR)",671,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Spain Continental","COUNTRY (FIR)",3613,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Sweden","COUNTRY (FIR)",2066,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Switzerland","COUNTRY (FIR)",2602,194,0,194,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,8
+"2015",3,"MAR",05-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",221,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Turkey","COUNTRY (FIR)",2994,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",05-MAR-15,"UK Continental","COUNTRY (FIR)",5948,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"UK Oceanic","COUNTRY (FIR)",1047,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"UK-Ireland FAB","FAB (FIR)",6024,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"Ukraine","COUNTRY (FIR)",425,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",05-MAR-15,"United Kingdom","COUNTRY (FIR)",6133,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Albania","COUNTRY (FIR)",361,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Armenia","COUNTRY (FIR)",120,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Austria","COUNTRY (FIR)",2717,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"BLUE MED FAB","FAB (FIR)",4969,409,0,89,0,0,0,0,0,0,0,0,0,320,0,0,0,0,27,11
+"2015",3,"MAR",06-MAR-15,"Baltic FAB","FAB (FIR)",2024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",06-MAR-15,"Belgium","COUNTRY (FIR)",3231,180,0,180,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,3
+"2015",3,"MAR",06-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",541,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Bulgaria","COUNTRY (FIR)",1578,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Croatia","COUNTRY (FIR)",986,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Cyprus","COUNTRY (FIR)",624,409,0,89,0,0,0,0,0,0,0,0,0,320,0,0,0,0,27,11
+"2015",3,"MAR",06-MAR-15,"Czech Republic","COUNTRY (FIR)",1831,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"DANUBE FAB","FAB (FIR)",1914,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"DK-SE FAB","FAB (FIR)",2794,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Denmark","COUNTRY (FIR)",1747,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Estonia","COUNTRY (FIR)",516,40,0,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0
+"2015",3,"MAR",06-MAR-15,"FAB CE","FAB (FIR)",4623,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",4262,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4610,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"FABEC","FAB (FIR)",15009,1764,0,924,0,0,0,0,0,0,0,0,0,840,0,0,0,0,108,57
+"2015",3,"MAR",06-MAR-15,"Finland","COUNTRY (FIR)",732,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"France","COUNTRY (FIR)",7721,177,0,177,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,5
+"2015",3,"MAR",06-MAR-15,"Georgia","COUNTRY (FIR)",323,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Germany","COUNTRY (FIR)",8269,840,0,0,0,0,0,0,0,0,0,0,0,840,0,0,0,0,44,29
+"2015",3,"MAR",06-MAR-15,"Greece","COUNTRY (FIR)",1204,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",06-MAR-15,"Hungary","COUNTRY (FIR)",1611,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Ireland","COUNTRY (FIR)",1232,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Italy","COUNTRY (FIR)",3898,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",06-MAR-15,"Latvia","COUNTRY (FIR)",652,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Lithuania","COUNTRY (FIR)",689,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Malta","COUNTRY (FIR)",237,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Moldova","COUNTRY (FIR)",104,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"NEFAB","FAB (FIR)",2896,40,0,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0
+"2015",3,"MAR",06-MAR-15,"Netherlands","COUNTRY (FIR)",3214,393,0,393,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,15
+"2015",3,"MAR",06-MAR-15,"Norway","COUNTRY (FIR)",1714,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Poland","COUNTRY (FIR)",1793,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",06-MAR-15,"Portugal","COUNTRY (FIR)",1486,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Portugal Continental","COUNTRY (FIR)",1287,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",372,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Romania","COUNTRY (FIR)",1418,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"SES Area (RP2)","AREA (FIR)",24629,2213,0,1053,0,0,0,0,0,0,0,0,0,1160,0,0,0,0,139,68
+"2015",3,"MAR",06-MAR-15,"SW FAB","FAB (FIR)",4247,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1061,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Slovakia","COUNTRY (FIR)",1028,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Slovenia","COUNTRY (FIR)",657,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Spain","COUNTRY (FIR)",4130,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Spain Canarias","COUNTRY (FIR)",821,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Spain Continental","COUNTRY (FIR)",3832,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Sweden","COUNTRY (FIR)",2103,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Switzerland","COUNTRY (FIR)",2748,174,0,174,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,5
+"2015",3,"MAR",06-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",203,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"Turkey","COUNTRY (FIR)",2983,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",06-MAR-15,"UK Continental","COUNTRY (FIR)",6149,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",06-MAR-15,"UK Oceanic","COUNTRY (FIR)",1045,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"UK-Ireland FAB","FAB (FIR)",6203,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",06-MAR-15,"Ukraine","COUNTRY (FIR)",482,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",06-MAR-15,"United Kingdom","COUNTRY (FIR)",6323,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",07-MAR-15,"Albania","COUNTRY (FIR)",392,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Armenia","COUNTRY (FIR)",117,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Austria","COUNTRY (FIR)",2646,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"BLUE MED FAB","FAB (FIR)",4473,457,0,0,0,0,0,0,0,0,0,0,0,457,0,0,0,0,38,11
+"2015",3,"MAR",07-MAR-15,"Baltic FAB","FAB (FIR)",1796,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Belgium","COUNTRY (FIR)",2628,230,0,230,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30,4
+"2015",3,"MAR",07-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",597,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Bulgaria","COUNTRY (FIR)",1639,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Croatia","COUNTRY (FIR)",1073,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Cyprus","COUNTRY (FIR)",682,457,0,0,0,0,0,0,0,0,0,0,0,457,0,0,0,0,38,11
+"2015",3,"MAR",07-MAR-15,"Czech Republic","COUNTRY (FIR)",1588,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"DANUBE FAB","FAB (FIR)",1906,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"DK-SE FAB","FAB (FIR)",1839,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Denmark","COUNTRY (FIR)",1282,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Estonia","COUNTRY (FIR)",420,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"FAB CE","FAB (FIR)",4356,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",3998,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4346,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"FABEC","FAB (FIR)",12248,3171,0,2388,0,0,0,0,0,0,0,783,0,0,0,0,0,0,205,97
+"2015",3,"MAR",07-MAR-15,"Finland","COUNTRY (FIR)",460,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"France","COUNTRY (FIR)",6703,1976,0,1976,0,0,0,0,0,0,0,0,0,0,0,0,0,0,114,65
+"2015",3,"MAR",07-MAR-15,"Georgia","COUNTRY (FIR)",298,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Germany","COUNTRY (FIR)",6774,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Greece","COUNTRY (FIR)",1190,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Hungary","COUNTRY (FIR)",1522,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Ireland","COUNTRY (FIR)",1212,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Italy","COUNTRY (FIR)",3375,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",07-MAR-15,"Latvia","COUNTRY (FIR)",569,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Lithuania","COUNTRY (FIR)",637,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Malta","COUNTRY (FIR)",228,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Moldova","COUNTRY (FIR)",92,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"NEFAB","FAB (FIR)",1632,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Netherlands","COUNTRY (FIR)",2599,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",07-MAR-15,"Norway","COUNTRY (FIR)",775,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Poland","COUNTRY (FIR)",1597,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Portugal","COUNTRY (FIR)",1731,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Portugal Continental","COUNTRY (FIR)",1488,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",407,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Romania","COUNTRY (FIR)",1385,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"SES Area (RP2)","AREA (FIR)",18352,3628,0,2388,0,0,0,0,0,0,0,783,0,457,0,0,0,0,243,108
+"2015",3,"MAR",07-MAR-15,"SW FAB","FAB (FIR)",3891,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1181,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Slovakia","COUNTRY (FIR)",984,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Slovenia","COUNTRY (FIR)",684,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Spain","COUNTRY (FIR)",3789,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Spain Canarias","COUNTRY (FIR)",1011,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Spain Continental","COUNTRY (FIR)",3561,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Sweden","COUNTRY (FIR)",1356,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Switzerland","COUNTRY (FIR)",2443,965,0,182,0,0,0,0,0,0,0,783,0,0,0,0,0,0,61,28
+"2015",3,"MAR",07-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",237,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Turkey","COUNTRY (FIR)",2991,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",07-MAR-15,"UK Continental","COUNTRY (FIR)",4895,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"UK Oceanic","COUNTRY (FIR)",1146,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"UK-Ireland FAB","FAB (FIR)",4959,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"Ukraine","COUNTRY (FIR)",436,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",07-MAR-15,"United Kingdom","COUNTRY (FIR)",5126,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Albania","COUNTRY (FIR)",396,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Armenia","COUNTRY (FIR)",112,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Austria","COUNTRY (FIR)",2584,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"BLUE MED FAB","FAB (FIR)",4995,407,0,321,0,0,0,0,0,0,0,0,0,86,0,0,0,0,38,7
+"2015",3,"MAR",08-MAR-15,"Baltic FAB","FAB (FIR)",1821,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Belgium","COUNTRY (FIR)",2884,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",616,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Bulgaria","COUNTRY (FIR)",1661,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Croatia","COUNTRY (FIR)",1060,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Cyprus","COUNTRY (FIR)",826,407,0,321,0,0,0,0,0,0,0,0,0,86,0,0,0,0,38,7
+"2015",3,"MAR",08-MAR-15,"Czech Republic","COUNTRY (FIR)",1635,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"DANUBE FAB","FAB (FIR)",1956,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"DK-SE FAB","FAB (FIR)",2393,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Denmark","COUNTRY (FIR)",1547,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Estonia","COUNTRY (FIR)",433,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"FAB CE","FAB (FIR)",4413,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",3992,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4398,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"FABEC","FAB (FIR)",13279,2298,0,2220,0,0,0,0,0,0,0,0,0,78,0,0,0,0,165,63
+"2015",3,"MAR",08-MAR-15,"Finland","COUNTRY (FIR)",579,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"France","COUNTRY (FIR)",7193,2220,0,2220,0,0,0,0,0,0,0,0,0,0,0,0,0,0,156,62
+"2015",3,"MAR",08-MAR-15,"Georgia","COUNTRY (FIR)",326,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Germany","COUNTRY (FIR)",7239,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Greece","COUNTRY (FIR)",1349,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Hungary","COUNTRY (FIR)",1587,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Ireland","COUNTRY (FIR)",1111,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Italy","COUNTRY (FIR)",3770,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Latvia","COUNTRY (FIR)",553,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Lithuania","COUNTRY (FIR)",641,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Malta","COUNTRY (FIR)",236,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Moldova","COUNTRY (FIR)",107,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"NEFAB","FAB (FIR)",2212,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Netherlands","COUNTRY (FIR)",2915,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",08-MAR-15,"Norway","COUNTRY (FIR)",1266,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Poland","COUNTRY (FIR)",1597,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Portugal","COUNTRY (FIR)",1583,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Portugal Continental","COUNTRY (FIR)",1391,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",399,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Romania","COUNTRY (FIR)",1395,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"SES Area (RP2)","AREA (FIR)",20928,2827,0,2663,0,0,0,0,0,0,0,0,0,164,0,0,0,0,210,74
+"2015",3,"MAR",08-MAR-15,"SW FAB","FAB (FIR)",4163,122,0,122,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,4
+"2015",3,"MAR",08-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1218,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Slovakia","COUNTRY (FIR)",953,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Slovenia","COUNTRY (FIR)",669,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Spain","COUNTRY (FIR)",4060,122,0,122,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,4
+"2015",3,"MAR",08-MAR-15,"Spain Canarias","COUNTRY (FIR)",883,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Spain Continental","COUNTRY (FIR)",3821,122,0,122,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,4
+"2015",3,"MAR",08-MAR-15,"Sweden","COUNTRY (FIR)",1784,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Switzerland","COUNTRY (FIR)",2654,78,0,0,0,0,0,0,0,0,0,0,0,78,0,0,0,0,9,1
+"2015",3,"MAR",08-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",243,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Turkey","COUNTRY (FIR)",3128,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",08-MAR-15,"UK Continental","COUNTRY (FIR)",5393,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"UK Oceanic","COUNTRY (FIR)",1036,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"UK-Ireland FAB","FAB (FIR)",5462,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"Ukraine","COUNTRY (FIR)",459,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",08-MAR-15,"United Kingdom","COUNTRY (FIR)",5594,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Albania","COUNTRY (FIR)",367,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Armenia","COUNTRY (FIR)",114,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Austria","COUNTRY (FIR)",2635,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"BLUE MED FAB","FAB (FIR)",5039,978,0,0,0,0,0,0,0,0,0,0,0,978,0,0,0,0,56,31
+"2015",3,"MAR",09-MAR-15,"Baltic FAB","FAB (FIR)",1985,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Belgium","COUNTRY (FIR)",3119,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",09-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",548,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Bulgaria","COUNTRY (FIR)",1434,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Croatia","COUNTRY (FIR)",972,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Cyprus","COUNTRY (FIR)",746,978,0,0,0,0,0,0,0,0,0,0,0,978,0,0,0,0,56,31
+"2015",3,"MAR",09-MAR-15,"Czech Republic","COUNTRY (FIR)",1721,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"DANUBE FAB","FAB (FIR)",1768,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"DK-SE FAB","FAB (FIR)",2801,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Denmark","COUNTRY (FIR)",1721,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Estonia","COUNTRY (FIR)",489,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"FAB CE","FAB (FIR)",4478,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",4116,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4465,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"FABEC","FAB (FIR)",14484,88,0,88,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,2
+"2015",3,"MAR",09-MAR-15,"Finland","COUNTRY (FIR)",743,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"France","COUNTRY (FIR)",7354,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",09-MAR-15,"Georgia","COUNTRY (FIR)",296,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Germany","COUNTRY (FIR)",7969,60,0,60,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,1
+"2015",3,"MAR",09-MAR-15,"Greece","COUNTRY (FIR)",1205,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Hungary","COUNTRY (FIR)",1508,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Ireland","COUNTRY (FIR)",1149,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Italy","COUNTRY (FIR)",3872,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",09-MAR-15,"Latvia","COUNTRY (FIR)",601,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Lithuania","COUNTRY (FIR)",665,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Malta","COUNTRY (FIR)",250,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Moldova","COUNTRY (FIR)",82,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"NEFAB","FAB (FIR)",2827,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Netherlands","COUNTRY (FIR)",3141,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",09-MAR-15,"Norway","COUNTRY (FIR)",1682,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Poland","COUNTRY (FIR)",1751,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Portugal","COUNTRY (FIR)",1462,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",09-MAR-15,"Portugal Continental","COUNTRY (FIR)",1276,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",09-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",375,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Romania","COUNTRY (FIR)",1283,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"SES Area (RP2)","AREA (FIR)",24001,1066,0,88,0,0,0,0,0,0,0,0,0,978,0,0,0,0,64,33
+"2015",3,"MAR",09-MAR-15,"SW FAB","FAB (FIR)",4061,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",09-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1086,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Slovakia","COUNTRY (FIR)",996,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Slovenia","COUNTRY (FIR)",653,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Spain","COUNTRY (FIR)",3940,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Spain Canarias","COUNTRY (FIR)",746,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Spain Continental","COUNTRY (FIR)",3677,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Sweden","COUNTRY (FIR)",2073,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Switzerland","COUNTRY (FIR)",2620,28,0,28,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1
+"2015",3,"MAR",09-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",239,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Turkey","COUNTRY (FIR)",2852,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",09-MAR-15,"UK Continental","COUNTRY (FIR)",5989,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"UK Oceanic","COUNTRY (FIR)",1061,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"UK-Ireland FAB","FAB (FIR)",6045,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"Ukraine","COUNTRY (FIR)",423,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",09-MAR-15,"United Kingdom","COUNTRY (FIR)",6177,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Albania","COUNTRY (FIR)",353,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Armenia","COUNTRY (FIR)",103,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Austria","COUNTRY (FIR)",2412,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"BLUE MED FAB","FAB (FIR)",4775,1214,0,143,0,0,0,0,0,0,0,0,0,1071,0,0,0,0,77,35
+"2015",3,"MAR",10-MAR-15,"Baltic FAB","FAB (FIR)",1890,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Belgium","COUNTRY (FIR)",2906,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",517,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Bulgaria","COUNTRY (FIR)",1497,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Croatia","COUNTRY (FIR)",957,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Cyprus","COUNTRY (FIR)",764,1214,0,143,0,0,0,0,0,0,0,0,0,1071,0,0,0,0,77,35
+"2015",3,"MAR",10-MAR-15,"Czech Republic","COUNTRY (FIR)",1649,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"DANUBE FAB","FAB (FIR)",1851,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"DK-SE FAB","FAB (FIR)",2655,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Denmark","COUNTRY (FIR)",1588,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Estonia","COUNTRY (FIR)",472,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"FAB CE","FAB (FIR)",4235,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",3859,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4223,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"FABEC","FAB (FIR)",13939,270,0,270,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,8
+"2015",3,"MAR",10-MAR-15,"Finland","COUNTRY (FIR)",711,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"France","COUNTRY (FIR)",6960,71,0,71,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,1
+"2015",3,"MAR",10-MAR-15,"Georgia","COUNTRY (FIR)",322,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Germany","COUNTRY (FIR)",7656,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",10-MAR-15,"Greece","COUNTRY (FIR)",1158,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Hungary","COUNTRY (FIR)",1499,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Ireland","COUNTRY (FIR)",1174,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Italy","COUNTRY (FIR)",3627,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Latvia","COUNTRY (FIR)",557,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Lithuania","COUNTRY (FIR)",627,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Malta","COUNTRY (FIR)",244,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Moldova","COUNTRY (FIR)",92,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"NEFAB","FAB (FIR)",2684,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Netherlands","COUNTRY (FIR)",2919,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",10-MAR-15,"Norway","COUNTRY (FIR)",1595,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Poland","COUNTRY (FIR)",1668,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Portugal","COUNTRY (FIR)",1263,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",10-MAR-15,"Portugal Continental","COUNTRY (FIR)",1106,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",10-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",315,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Romania","COUNTRY (FIR)",1397,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"SES Area (RP2)","AREA (FIR)",23231,1612,0,541,0,0,0,0,0,0,0,0,0,1071,0,0,0,0,105,46
+"2015",3,"MAR",10-MAR-15,"SW FAB","FAB (FIR)",3757,128,0,128,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,3
+"2015",3,"MAR",10-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1037,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Slovakia","COUNTRY (FIR)",911,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Slovenia","COUNTRY (FIR)",603,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Spain","COUNTRY (FIR)",3672,128,0,128,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,3
+"2015",3,"MAR",10-MAR-15,"Spain Canarias","COUNTRY (FIR)",694,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Spain Continental","COUNTRY (FIR)",3403,128,0,128,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,3
+"2015",3,"MAR",10-MAR-15,"Sweden","COUNTRY (FIR)",2022,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Switzerland","COUNTRY (FIR)",2504,199,0,199,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,7
+"2015",3,"MAR",10-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",196,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"Turkey","COUNTRY (FIR)",2861,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",10-MAR-15,"UK Continental","COUNTRY (FIR)",5731,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",10-MAR-15,"UK Oceanic","COUNTRY (FIR)",1014,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"UK-Ireland FAB","FAB (FIR)",5805,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",10-MAR-15,"Ukraine","COUNTRY (FIR)",438,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",10-MAR-15,"United Kingdom","COUNTRY (FIR)",5893,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",11-MAR-15,"Albania","COUNTRY (FIR)",348,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Armenia","COUNTRY (FIR)",118,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Austria","COUNTRY (FIR)",2607,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"BLUE MED FAB","FAB (FIR)",4780,1639,0,254,0,0,0,0,0,0,0,0,0,1385,0,0,0,0,88,49
+"2015",3,"MAR",11-MAR-15,"Baltic FAB","FAB (FIR)",1919,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Belgium","COUNTRY (FIR)",3049,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",11-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",559,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Bulgaria","COUNTRY (FIR)",1567,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Croatia","COUNTRY (FIR)",987,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Cyprus","COUNTRY (FIR)",714,1639,0,254,0,0,0,0,0,0,0,0,0,1385,0,0,0,0,88,49
+"2015",3,"MAR",11-MAR-15,"Czech Republic","COUNTRY (FIR)",1649,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"DANUBE FAB","FAB (FIR)",1909,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"DK-SE FAB","FAB (FIR)",2861,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Denmark","COUNTRY (FIR)",1734,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Estonia","COUNTRY (FIR)",460,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"FAB CE","FAB (FIR)",4415,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",4071,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4407,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"FABEC","FAB (FIR)",14158,359,0,310,0,0,0,0,0,0,0,0,0,0,49,0,0,0,33,6
+"2015",3,"MAR",11-MAR-15,"Finland","COUNTRY (FIR)",721,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"France","COUNTRY (FIR)",6992,160,0,111,0,0,0,0,0,0,0,0,0,0,49,0,0,0,14,3
+"2015",3,"MAR",11-MAR-15,"Georgia","COUNTRY (FIR)",304,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Germany","COUNTRY (FIR)",7912,199,0,199,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,3
+"2015",3,"MAR",11-MAR-15,"Greece","COUNTRY (FIR)",1145,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Hungary","COUNTRY (FIR)",1589,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Ireland","COUNTRY (FIR)",1060,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Italy","COUNTRY (FIR)",3664,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Latvia","COUNTRY (FIR)",546,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Lithuania","COUNTRY (FIR)",625,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Malta","COUNTRY (FIR)",243,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Moldova","COUNTRY (FIR)",103,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"NEFAB","FAB (FIR)",2921,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",11-MAR-15,"Netherlands","COUNTRY (FIR)",3019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",11-MAR-15,"Norway","COUNTRY (FIR)",1826,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",11-MAR-15,"Poland","COUNTRY (FIR)",1705,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Portugal","COUNTRY (FIR)",1303,264,0,264,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,5
+"2015",3,"MAR",11-MAR-15,"Portugal Continental","COUNTRY (FIR)",1132,264,0,264,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,5
+"2015",3,"MAR",11-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",300,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Romania","COUNTRY (FIR)",1424,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"SES Area (RP2)","AREA (FIR)",23689,2262,0,828,0,0,0,0,0,0,0,0,0,1385,49,0,0,0,147,60
+"2015",3,"MAR",11-MAR-15,"SW FAB","FAB (FIR)",3729,264,0,264,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,5
+"2015",3,"MAR",11-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1096,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Slovakia","COUNTRY (FIR)",1013,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Slovenia","COUNTRY (FIR)",684,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Spain","COUNTRY (FIR)",3638,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Spain Canarias","COUNTRY (FIR)",696,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Spain Continental","COUNTRY (FIR)",3385,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Sweden","COUNTRY (FIR)",2066,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Switzerland","COUNTRY (FIR)",2484,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",11-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",211,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Turkey","COUNTRY (FIR)",2912,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",11-MAR-15,"UK Continental","COUNTRY (FIR)",5717,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"UK Oceanic","COUNTRY (FIR)",942,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"UK-Ireland FAB","FAB (FIR)",5773,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"Ukraine","COUNTRY (FIR)",447,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",11-MAR-15,"United Kingdom","COUNTRY (FIR)",5864,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Albania","COUNTRY (FIR)",399,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Armenia","COUNTRY (FIR)",106,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Austria","COUNTRY (FIR)",2668,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"BLUE MED FAB","FAB (FIR)",5080,2513,0,1608,0,0,0,0,0,0,0,0,0,905,0,0,0,0,142,74
+"2015",3,"MAR",12-MAR-15,"Baltic FAB","FAB (FIR)",1938,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Belgium","COUNTRY (FIR)",3104,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",12-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",542,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Bulgaria","COUNTRY (FIR)",1529,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Croatia","COUNTRY (FIR)",983,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Cyprus","COUNTRY (FIR)",781,2513,0,1608,0,0,0,0,0,0,0,0,0,905,0,0,0,0,142,74
+"2015",3,"MAR",12-MAR-15,"Czech Republic","COUNTRY (FIR)",1729,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"DANUBE FAB","FAB (FIR)",1852,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"DK-SE FAB","FAB (FIR)",2919,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Denmark","COUNTRY (FIR)",1757,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Estonia","COUNTRY (FIR)",486,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"FAB CE","FAB (FIR)",4495,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",4159,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4484,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"FABEC","FAB (FIR)",14706,250,0,250,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,5
+"2015",3,"MAR",12-MAR-15,"Finland","COUNTRY (FIR)",750,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"France","COUNTRY (FIR)",7331,86,0,86,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3
+"2015",3,"MAR",12-MAR-15,"Georgia","COUNTRY (FIR)",276,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Germany","COUNTRY (FIR)",8146,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Greece","COUNTRY (FIR)",1341,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Hungary","COUNTRY (FIR)",1531,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Ireland","COUNTRY (FIR)",1184,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Italy","COUNTRY (FIR)",3793,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Latvia","COUNTRY (FIR)",570,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Lithuania","COUNTRY (FIR)",641,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Malta","COUNTRY (FIR)",266,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Moldova","COUNTRY (FIR)",93,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"NEFAB","FAB (FIR)",2996,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Netherlands","COUNTRY (FIR)",3177,164,0,164,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,2
+"2015",3,"MAR",12-MAR-15,"Norway","COUNTRY (FIR)",1847,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Poland","COUNTRY (FIR)",1711,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Portugal","COUNTRY (FIR)",1243,102,0,102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,0
+"2015",3,"MAR",12-MAR-15,"Portugal Continental","COUNTRY (FIR)",1097,102,0,102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,0
+"2015",3,"MAR",12-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",273,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Romania","COUNTRY (FIR)",1358,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"SES Area (RP2)","AREA (FIR)",24648,2865,0,1960,0,0,0,0,0,0,0,0,0,905,0,0,0,0,177,79
+"2015",3,"MAR",12-MAR-15,"SW FAB","FAB (FIR)",3900,102,0,102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,0
+"2015",3,"MAR",12-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1112,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Slovakia","COUNTRY (FIR)",992,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Slovenia","COUNTRY (FIR)",669,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Spain","COUNTRY (FIR)",3814,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",12-MAR-15,"Spain Canarias","COUNTRY (FIR)",668,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Spain Continental","COUNTRY (FIR)",3553,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",12-MAR-15,"Sweden","COUNTRY (FIR)",2113,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Switzerland","COUNTRY (FIR)",2605,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",12-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",233,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"Turkey","COUNTRY (FIR)",2956,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",12-MAR-15,"UK Continental","COUNTRY (FIR)",6078,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",12-MAR-15,"UK Oceanic","COUNTRY (FIR)",1050,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"UK-Ireland FAB","FAB (FIR)",6147,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",12-MAR-15,"Ukraine","COUNTRY (FIR)",440,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",12-MAR-15,"United Kingdom","COUNTRY (FIR)",6249,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",13-MAR-15,"Albania","COUNTRY (FIR)",382,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Armenia","COUNTRY (FIR)",128,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Austria","COUNTRY (FIR)",2795,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"BLUE MED FAB","FAB (FIR)",5163,591,0,404,0,0,0,0,0,0,0,0,0,187,0,0,0,0,30,18
+"2015",3,"MAR",13-MAR-15,"Baltic FAB","FAB (FIR)",2013,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Belgium","COUNTRY (FIR)",3254,84,0,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,2
+"2015",3,"MAR",13-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",602,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Bulgaria","COUNTRY (FIR)",1575,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Croatia","COUNTRY (FIR)",1062,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Cyprus","COUNTRY (FIR)",702,591,0,404,0,0,0,0,0,0,0,0,0,187,0,0,0,0,30,18
+"2015",3,"MAR",13-MAR-15,"Czech Republic","COUNTRY (FIR)",1801,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"DANUBE FAB","FAB (FIR)",1928,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"DK-SE FAB","FAB (FIR)",2998,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",13-MAR-15,"Denmark","COUNTRY (FIR)",1828,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Estonia","COUNTRY (FIR)",536,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"FAB CE","FAB (FIR)",4711,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",4332,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4698,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"FABEC","FAB (FIR)",15065,1251,0,1005,0,0,0,0,0,0,0,0,0,246,0,0,0,0,104,31
+"2015",3,"MAR",13-MAR-15,"Finland","COUNTRY (FIR)",728,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"France","COUNTRY (FIR)",7719,398,0,398,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31,10
+"2015",3,"MAR",13-MAR-15,"Georgia","COUNTRY (FIR)",323,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Germany","COUNTRY (FIR)",8326,769,0,523,0,0,0,0,0,0,0,0,0,246,0,0,0,0,66,19
+"2015",3,"MAR",13-MAR-15,"Greece","COUNTRY (FIR)",1252,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Hungary","COUNTRY (FIR)",1552,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Ireland","COUNTRY (FIR)",1253,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Italy","COUNTRY (FIR)",4026,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Latvia","COUNTRY (FIR)",647,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Lithuania","COUNTRY (FIR)",650,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Malta","COUNTRY (FIR)",261,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Moldova","COUNTRY (FIR)",82,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"NEFAB","FAB (FIR)",3074,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Netherlands","COUNTRY (FIR)",3187,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",13-MAR-15,"Norway","COUNTRY (FIR)",1881,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Poland","COUNTRY (FIR)",1785,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Portugal","COUNTRY (FIR)",1505,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Portugal Continental","COUNTRY (FIR)",1304,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",375,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Romania","COUNTRY (FIR)",1384,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"SES Area (RP2)","AREA (FIR)",25086,1842,0,1409,0,0,0,0,0,0,0,0,0,433,0,0,0,0,134,49
+"2015",3,"MAR",13-MAR-15,"SW FAB","FAB (FIR)",4287,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",13-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1169,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Slovakia","COUNTRY (FIR)",1031,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Slovenia","COUNTRY (FIR)",724,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Spain","COUNTRY (FIR)",4177,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",13-MAR-15,"Spain Canarias","COUNTRY (FIR)",853,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Spain Continental","COUNTRY (FIR)",3845,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",13-MAR-15,"Sweden","COUNTRY (FIR)",2173,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",13-MAR-15,"Switzerland","COUNTRY (FIR)",2782,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",13-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",218,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"Turkey","COUNTRY (FIR)",2998,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",13-MAR-15,"UK Continental","COUNTRY (FIR)",6193,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",13-MAR-15,"UK Oceanic","COUNTRY (FIR)",1092,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"UK-Ireland FAB","FAB (FIR)",6260,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",13-MAR-15,"Ukraine","COUNTRY (FIR)",457,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",13-MAR-15,"United Kingdom","COUNTRY (FIR)",6364,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",14-MAR-15,"Albania","COUNTRY (FIR)",434,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Armenia","COUNTRY (FIR)",112,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Austria","COUNTRY (FIR)",2623,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"BLUE MED FAB","FAB (FIR)",4721,1132,0,0,0,0,0,0,0,0,0,0,0,1132,0,0,0,0,64,31
+"2015",3,"MAR",14-MAR-15,"Baltic FAB","FAB (FIR)",1793,646,0,646,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30,20
+"2015",3,"MAR",14-MAR-15,"Belgium","COUNTRY (FIR)",2608,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",676,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Bulgaria","COUNTRY (FIR)",1578,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Croatia","COUNTRY (FIR)",1108,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Cyprus","COUNTRY (FIR)",753,1132,0,0,0,0,0,0,0,0,0,0,0,1132,0,0,0,0,64,31
+"2015",3,"MAR",14-MAR-15,"Czech Republic","COUNTRY (FIR)",1549,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"DANUBE FAB","FAB (FIR)",1856,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"DK-SE FAB","FAB (FIR)",1923,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Denmark","COUNTRY (FIR)",1337,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Estonia","COUNTRY (FIR)",440,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"FAB CE","FAB (FIR)",4290,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",3905,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4275,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"FABEC","FAB (FIR)",12156,599,0,599,0,0,0,0,0,0,0,0,0,0,0,0,0,0,53,13
+"2015",3,"MAR",14-MAR-15,"Finland","COUNTRY (FIR)",472,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"France","COUNTRY (FIR)",6665,599,0,599,0,0,0,0,0,0,0,0,0,0,0,0,0,0,53,13
+"2015",3,"MAR",14-MAR-15,"Georgia","COUNTRY (FIR)",284,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Germany","COUNTRY (FIR)",6742,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Greece","COUNTRY (FIR)",1259,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Hungary","COUNTRY (FIR)",1461,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Ireland","COUNTRY (FIR)",1185,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Italy","COUNTRY (FIR)",3550,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Latvia","COUNTRY (FIR)",573,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Lithuania","COUNTRY (FIR)",650,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Malta","COUNTRY (FIR)",246,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Moldova","COUNTRY (FIR)",90,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"NEFAB","FAB (FIR)",1800,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Netherlands","COUNTRY (FIR)",2628,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",14-MAR-15,"Norway","COUNTRY (FIR)",928,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Poland","COUNTRY (FIR)",1579,646,0,646,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30,20
+"2015",3,"MAR",14-MAR-15,"Portugal","COUNTRY (FIR)",1754,1113,0,1113,0,0,0,0,0,0,0,0,0,0,0,0,0,0,88,28
+"2015",3,"MAR",14-MAR-15,"Portugal Continental","COUNTRY (FIR)",1514,1113,0,1113,0,0,0,0,0,0,0,0,0,0,0,0,0,0,88,28
+"2015",3,"MAR",14-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",427,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Romania","COUNTRY (FIR)",1321,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"SES Area (RP2)","AREA (FIR)",18573,3490,0,2358,0,0,0,0,0,0,0,0,0,1132,0,0,0,0,235,92
+"2015",3,"MAR",14-MAR-15,"SW FAB","FAB (FIR)",3952,1113,0,1113,0,0,0,0,0,0,0,0,0,0,0,0,0,0,88,28
+"2015",3,"MAR",14-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1236,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Slovakia","COUNTRY (FIR)",931,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Slovenia","COUNTRY (FIR)",707,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Spain","COUNTRY (FIR)",3859,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Spain Canarias","COUNTRY (FIR)",1029,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Spain Continental","COUNTRY (FIR)",3583,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Sweden","COUNTRY (FIR)",1340,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Switzerland","COUNTRY (FIR)",2471,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",14-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",246,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Turkey","COUNTRY (FIR)",2962,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",14-MAR-15,"UK Continental","COUNTRY (FIR)",4899,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"UK Oceanic","COUNTRY (FIR)",1122,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"UK-Ireland FAB","FAB (FIR)",4974,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"Ukraine","COUNTRY (FIR)",448,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",14-MAR-15,"United Kingdom","COUNTRY (FIR)",5123,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Albania","COUNTRY (FIR)",440,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Armenia","COUNTRY (FIR)",121,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Austria","COUNTRY (FIR)",2664,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"BLUE MED FAB","FAB (FIR)",5096,898,0,0,0,0,0,0,0,0,0,0,0,898,0,0,0,0,59,27
+"2015",3,"MAR",15-MAR-15,"Baltic FAB","FAB (FIR)",1839,132,0,132,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,3
+"2015",3,"MAR",15-MAR-15,"Belgium","COUNTRY (FIR)",2813,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",15-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",688,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Bulgaria","COUNTRY (FIR)",1673,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Croatia","COUNTRY (FIR)",1146,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Cyprus","COUNTRY (FIR)",818,898,0,0,0,0,0,0,0,0,0,0,0,898,0,0,0,0,59,27
+"2015",3,"MAR",15-MAR-15,"Czech Republic","COUNTRY (FIR)",1670,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"DANUBE FAB","FAB (FIR)",1972,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"DK-SE FAB","FAB (FIR)",2420,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Denmark","COUNTRY (FIR)",1559,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Estonia","COUNTRY (FIR)",470,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"FAB CE","FAB (FIR)",4499,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",4074,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4485,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"FABEC","FAB (FIR)",13122,1808,0,1650,0,0,0,0,0,0,0,0,0,158,0,0,0,0,127,51
+"2015",3,"MAR",15-MAR-15,"Finland","COUNTRY (FIR)",599,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"France","COUNTRY (FIR)",6975,1650,0,1650,0,0,0,0,0,0,0,0,0,0,0,0,0,0,110,48
+"2015",3,"MAR",15-MAR-15,"Georgia","COUNTRY (FIR)",329,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Germany","COUNTRY (FIR)",7264,158,0,0,0,0,0,0,0,0,0,0,0,158,0,0,0,0,17,3
+"2015",3,"MAR",15-MAR-15,"Greece","COUNTRY (FIR)",1394,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Hungary","COUNTRY (FIR)",1550,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Ireland","COUNTRY (FIR)",1291,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Italy","COUNTRY (FIR)",3860,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Latvia","COUNTRY (FIR)",579,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Lithuania","COUNTRY (FIR)",628,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Malta","COUNTRY (FIR)",257,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Moldova","COUNTRY (FIR)",124,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"NEFAB","FAB (FIR)",2396,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Netherlands","COUNTRY (FIR)",2950,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",15-MAR-15,"Norway","COUNTRY (FIR)",1419,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Poland","COUNTRY (FIR)",1624,132,0,132,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,3
+"2015",3,"MAR",15-MAR-15,"Portugal","COUNTRY (FIR)",1602,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",15-MAR-15,"Portugal Continental","COUNTRY (FIR)",1371,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",15-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",391,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Romania","COUNTRY (FIR)",1401,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"SES Area (RP2)","AREA (FIR)",21102,3365,0,1782,0,0,0,0,0,0,0,0,0,1583,0,0,0,0,222,89
+"2015",3,"MAR",15-MAR-15,"SW FAB","FAB (FIR)",4145,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",15-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1311,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Slovakia","COUNTRY (FIR)",991,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Slovenia","COUNTRY (FIR)",727,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Spain","COUNTRY (FIR)",4043,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Spain Canarias","COUNTRY (FIR)",907,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Spain Continental","COUNTRY (FIR)",3763,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Sweden","COUNTRY (FIR)",1715,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Switzerland","COUNTRY (FIR)",2585,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",15-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",291,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"Turkey","COUNTRY (FIR)",3122,73,0,73,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,2
+"2015",3,"MAR",15-MAR-15,"UK Continental","COUNTRY (FIR)",5525,527,0,0,0,0,0,0,0,0,0,0,0,527,0,0,0,0,26,8
+"2015",3,"MAR",15-MAR-15,"UK Oceanic","COUNTRY (FIR)",1133,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"UK-Ireland FAB","FAB (FIR)",5595,527,0,0,0,0,0,0,0,0,0,0,0,527,0,0,0,0,26,8
+"2015",3,"MAR",15-MAR-15,"Ukraine","COUNTRY (FIR)",491,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",15-MAR-15,"United Kingdom","COUNTRY (FIR)",5711,527,0,0,0,0,0,0,0,0,0,0,0,527,0,0,0,0,26,8
+"2015",3,"MAR",16-MAR-15,"Albania","COUNTRY (FIR)",341,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"Armenia","COUNTRY (FIR)",107,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"Austria","COUNTRY (FIR)",2588,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"BLUE MED FAB","FAB (FIR)",4929,1065,0,1065,0,0,0,0,0,0,0,0,0,0,0,0,0,0,63,34
+"2015",3,"MAR",16-MAR-15,"Baltic FAB","FAB (FIR)",1906,75,0,75,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,2
+"2015",3,"MAR",16-MAR-15,"Belgium","COUNTRY (FIR)",3057,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",16-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",553,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"Bulgaria","COUNTRY (FIR)",1453,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"Croatia","COUNTRY (FIR)",965,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"Cyprus","COUNTRY (FIR)",745,1065,0,1065,0,0,0,0,0,0,0,0,0,0,0,0,0,0,63,34
+"2015",3,"MAR",16-MAR-15,"Czech Republic","COUNTRY (FIR)",1735,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"DANUBE FAB","FAB (FIR)",1793,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"DK-SE FAB","FAB (FIR)",2909,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"Denmark","COUNTRY (FIR)",1778,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"Estonia","COUNTRY (FIR)",505,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"FAB CE","FAB (FIR)",4412,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",4050,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4401,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"FABEC","FAB (FIR)",14327,808,0,314,0,0,0,0,0,0,0,0,0,347,0,147,0,0,64,19
+"2015",3,"MAR",16-MAR-15,"Finland","COUNTRY (FIR)",789,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"France","COUNTRY (FIR)",7181,293,0,293,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,9
+"2015",3,"MAR",16-MAR-15,"Georgia","COUNTRY (FIR)",295,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"Germany","COUNTRY (FIR)",7967,494,0,0,0,0,0,0,0,0,0,0,0,347,0,147,0,0,46,9
+"2015",3,"MAR",16-MAR-15,"Greece","COUNTRY (FIR)",1195,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"Hungary","COUNTRY (FIR)",1520,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"Ireland","COUNTRY (FIR)",1170,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"Italy","COUNTRY (FIR)",3776,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"Latvia","COUNTRY (FIR)",614,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"Lithuania","COUNTRY (FIR)",653,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"Malta","COUNTRY (FIR)",244,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"Moldova","COUNTRY (FIR)",81,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"NEFAB","FAB (FIR)",3080,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",16-MAR-15,"Netherlands","COUNTRY (FIR)",3104,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",16-MAR-15,"Norway","COUNTRY (FIR)",1886,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",16-MAR-15,"Poland","COUNTRY (FIR)",1671,75,0,75,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,2
+"2015",3,"MAR",16-MAR-15,"Portugal","COUNTRY (FIR)",1453,390,0,390,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28,11
+"2015",3,"MAR",16-MAR-15,"Portugal Continental","COUNTRY (FIR)",1237,390,0,390,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28,11
+"2015",3,"MAR",16-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",367,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"Romania","COUNTRY (FIR)",1302,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"SES Area (RP2)","AREA (FIR)",24102,2338,0,1844,0,0,0,0,0,0,0,0,0,347,0,147,0,0,161,66
+"2015",3,"MAR",16-MAR-15,"SW FAB","FAB (FIR)",4025,390,0,390,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28,11
+"2015",3,"MAR",16-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1116,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"Slovakia","COUNTRY (FIR)",981,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"Slovenia","COUNTRY (FIR)",652,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"Spain","COUNTRY (FIR)",3919,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"Spain Canarias","COUNTRY (FIR)",734,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"Spain Continental","COUNTRY (FIR)",3665,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"Sweden","COUNTRY (FIR)",2110,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"Switzerland","COUNTRY (FIR)",2525,21,0,21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+"2015",3,"MAR",16-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",241,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"Turkey","COUNTRY (FIR)",2928,65,0,65,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,2
+"2015",3,"MAR",16-MAR-15,"UK Continental","COUNTRY (FIR)",5996,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",16-MAR-15,"UK Oceanic","COUNTRY (FIR)",1094,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"UK-Ireland FAB","FAB (FIR)",6054,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",16-MAR-15,"Ukraine","COUNTRY (FIR)",430,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",16-MAR-15,"United Kingdom","COUNTRY (FIR)",6182,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",17-MAR-15,"Albania","COUNTRY (FIR)",339,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Armenia","COUNTRY (FIR)",121,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Austria","COUNTRY (FIR)",2401,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"BLUE MED FAB","FAB (FIR)",4717,673,0,0,0,0,0,0,0,0,0,0,0,673,0,0,0,0,57,16
+"2015",3,"MAR",17-MAR-15,"Baltic FAB","FAB (FIR)",1874,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Belgium","COUNTRY (FIR)",2944,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",546,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Bulgaria","COUNTRY (FIR)",1475,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Croatia","COUNTRY (FIR)",934,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Cyprus","COUNTRY (FIR)",768,673,0,0,0,0,0,0,0,0,0,0,0,673,0,0,0,0,57,16
+"2015",3,"MAR",17-MAR-15,"Czech Republic","COUNTRY (FIR)",1674,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"DANUBE FAB","FAB (FIR)",1801,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"DK-SE FAB","FAB (FIR)",2810,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Denmark","COUNTRY (FIR)",1666,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Estonia","COUNTRY (FIR)",431,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"FAB CE","FAB (FIR)",4217,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",3851,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4203,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"FABEC","FAB (FIR)",13849,1074,0,408,0,0,0,0,0,0,0,0,0,666,0,0,0,0,89,24
+"2015",3,"MAR",17-MAR-15,"Finland","COUNTRY (FIR)",743,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"France","COUNTRY (FIR)",6826,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",17-MAR-15,"Georgia","COUNTRY (FIR)",312,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Germany","COUNTRY (FIR)",7715,798,0,132,0,0,0,0,0,0,0,0,0,666,0,0,0,0,64,17
+"2015",3,"MAR",17-MAR-15,"Greece","COUNTRY (FIR)",1189,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Hungary","COUNTRY (FIR)",1465,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Ireland","COUNTRY (FIR)",1051,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Italy","COUNTRY (FIR)",3544,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Latvia","COUNTRY (FIR)",524,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Lithuania","COUNTRY (FIR)",635,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Malta","COUNTRY (FIR)",255,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Moldova","COUNTRY (FIR)",84,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"NEFAB","FAB (FIR)",2928,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Netherlands","COUNTRY (FIR)",2900,161,0,161,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,4
+"2015",3,"MAR",17-MAR-15,"Norway","COUNTRY (FIR)",1845,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Poland","COUNTRY (FIR)",1643,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Portugal","COUNTRY (FIR)",1317,265,0,265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29,4
+"2015",3,"MAR",17-MAR-15,"Portugal Continental","COUNTRY (FIR)",1117,265,0,265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29,4
+"2015",3,"MAR",17-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",363,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Romania","COUNTRY (FIR)",1350,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"SES Area (RP2)","AREA (FIR)",23391,2012,0,673,0,0,0,0,0,0,0,0,0,1339,0,0,0,0,175,44
+"2015",3,"MAR",17-MAR-15,"SW FAB","FAB (FIR)",3720,265,0,265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29,4
+"2015",3,"MAR",17-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1028,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Slovakia","COUNTRY (FIR)",967,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Slovenia","COUNTRY (FIR)",608,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Spain","COUNTRY (FIR)",3628,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Spain Canarias","COUNTRY (FIR)",689,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Spain Continental","COUNTRY (FIR)",3360,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Sweden","COUNTRY (FIR)",2043,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Switzerland","COUNTRY (FIR)",2345,115,0,115,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,3
+"2015",3,"MAR",17-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",222,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"Turkey","COUNTRY (FIR)",2940,34,0,34,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2
+"2015",3,"MAR",17-MAR-15,"UK Continental","COUNTRY (FIR)",5652,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",17-MAR-15,"UK Oceanic","COUNTRY (FIR)",976,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"UK-Ireland FAB","FAB (FIR)",5724,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",17-MAR-15,"Ukraine","COUNTRY (FIR)",435,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",17-MAR-15,"United Kingdom","COUNTRY (FIR)",5836,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",18-MAR-15,"Albania","COUNTRY (FIR)",347,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Armenia","COUNTRY (FIR)",109,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Austria","COUNTRY (FIR)",2496,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"BLUE MED FAB","FAB (FIR)",4805,2679,0,1457,0,0,0,0,0,0,0,0,0,1222,0,0,0,0,137,72
+"2015",3,"MAR",18-MAR-15,"Baltic FAB","FAB (FIR)",1844,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Belgium","COUNTRY (FIR)",2973,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",18-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",590,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Bulgaria","COUNTRY (FIR)",1495,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Croatia","COUNTRY (FIR)",982,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Cyprus","COUNTRY (FIR)",744,2679,0,1457,0,0,0,0,0,0,0,0,0,1222,0,0,0,0,137,72
+"2015",3,"MAR",18-MAR-15,"Czech Republic","COUNTRY (FIR)",1597,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"DANUBE FAB","FAB (FIR)",1838,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"DK-SE FAB","FAB (FIR)",2820,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Denmark","COUNTRY (FIR)",1654,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Estonia","COUNTRY (FIR)",477,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"FAB CE","FAB (FIR)",4247,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",3896,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4233,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"FABEC","FAB (FIR)",13485,120,0,120,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,2
+"2015",3,"MAR",18-MAR-15,"Finland","COUNTRY (FIR)",749,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"France","COUNTRY (FIR)",6912,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",18-MAR-15,"Georgia","COUNTRY (FIR)",308,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Germany","COUNTRY (FIR)",7307,74,0,74,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,2
+"2015",3,"MAR",18-MAR-15,"Greece","COUNTRY (FIR)",1250,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Hungary","COUNTRY (FIR)",1489,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Ireland","COUNTRY (FIR)",1200,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",18-MAR-15,"Italy","COUNTRY (FIR)",3635,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Latvia","COUNTRY (FIR)",563,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Lithuania","COUNTRY (FIR)",609,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Malta","COUNTRY (FIR)",263,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Moldova","COUNTRY (FIR)",96,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"NEFAB","FAB (FIR)",3035,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Netherlands","COUNTRY (FIR)",2874,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",18-MAR-15,"Norway","COUNTRY (FIR)",1910,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Poland","COUNTRY (FIR)",1608,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Portugal","COUNTRY (FIR)",1248,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Portugal Continental","COUNTRY (FIR)",1060,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",322,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Romania","COUNTRY (FIR)",1373,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"SES Area (RP2)","AREA (FIR)",23230,2799,0,1577,0,0,0,0,0,0,0,0,0,1222,0,0,0,0,147,74
+"2015",3,"MAR",18-MAR-15,"SW FAB","FAB (FIR)",3726,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",18-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1073,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Slovakia","COUNTRY (FIR)",978,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Slovenia","COUNTRY (FIR)",691,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Spain","COUNTRY (FIR)",3623,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",18-MAR-15,"Spain Canarias","COUNTRY (FIR)",678,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",18-MAR-15,"Spain Continental","COUNTRY (FIR)",3382,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Sweden","COUNTRY (FIR)",2151,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Switzerland","COUNTRY (FIR)",2390,46,0,46,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0
+"2015",3,"MAR",18-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",238,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"Turkey","COUNTRY (FIR)",2991,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",18-MAR-15,"UK Continental","COUNTRY (FIR)",5608,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",18-MAR-15,"UK Oceanic","COUNTRY (FIR)",1013,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"UK-Ireland FAB","FAB (FIR)",5672,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",18-MAR-15,"Ukraine","COUNTRY (FIR)",419,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",18-MAR-15,"United Kingdom","COUNTRY (FIR)",5781,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",19-MAR-15,"Albania","COUNTRY (FIR)",424,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"Armenia","COUNTRY (FIR)",111,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"Austria","COUNTRY (FIR)",2693,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"BLUE MED FAB","FAB (FIR)",5281,1258,0,12,0,0,0,0,0,0,0,0,0,1246,0,0,0,0,78,40
+"2015",3,"MAR",19-MAR-15,"Baltic FAB","FAB (FIR)",1934,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"Belgium","COUNTRY (FIR)",2987,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",19-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",600,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"Bulgaria","COUNTRY (FIR)",1538,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"Croatia","COUNTRY (FIR)",1024,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"Cyprus","COUNTRY (FIR)",818,1258,0,12,0,0,0,0,0,0,0,0,0,1246,0,0,0,0,78,40
+"2015",3,"MAR",19-MAR-15,"Czech Republic","COUNTRY (FIR)",1789,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"DANUBE FAB","FAB (FIR)",1843,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"DK-SE FAB","FAB (FIR)",2949,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"Denmark","COUNTRY (FIR)",1730,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"Estonia","COUNTRY (FIR)",493,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"FAB CE","FAB (FIR)",4568,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",4207,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4558,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"FABEC","FAB (FIR)",14784,719,0,309,0,0,0,0,189,0,0,0,0,0,0,221,0,0,53,22
+"2015",3,"MAR",19-MAR-15,"Finland","COUNTRY (FIR)",769,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"France","COUNTRY (FIR)",7387,331,0,142,0,0,0,0,189,0,0,0,0,0,0,0,0,0,28,9
+"2015",3,"MAR",19-MAR-15,"Georgia","COUNTRY (FIR)",317,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"Germany","COUNTRY (FIR)",8053,221,0,0,0,0,0,0,0,0,0,0,0,0,0,221,0,0,17,7
+"2015",3,"MAR",19-MAR-15,"Greece","COUNTRY (FIR)",1376,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"Hungary","COUNTRY (FIR)",1580,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"Ireland","COUNTRY (FIR)",1181,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",19-MAR-15,"Italy","COUNTRY (FIR)",3929,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",19-MAR-15,"Latvia","COUNTRY (FIR)",598,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"Lithuania","COUNTRY (FIR)",656,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"Malta","COUNTRY (FIR)",262,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"Moldova","COUNTRY (FIR)",88,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"NEFAB","FAB (FIR)",3026,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",19-MAR-15,"Netherlands","COUNTRY (FIR)",3127,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",19-MAR-15,"Norway","COUNTRY (FIR)",1842,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",19-MAR-15,"Poland","COUNTRY (FIR)",1706,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"Portugal","COUNTRY (FIR)",1290,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"Portugal Continental","COUNTRY (FIR)",1109,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",302,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"Romania","COUNTRY (FIR)",1382,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"SES Area (RP2)","AREA (FIR)",24815,2388,0,732,0,0,0,0,189,0,0,0,0,1246,0,221,0,0,167,72
+"2015",3,"MAR",19-MAR-15,"SW FAB","FAB (FIR)",3827,411,0,411,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,10
+"2015",3,"MAR",19-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1134,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"Slovakia","COUNTRY (FIR)",1010,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"Slovenia","COUNTRY (FIR)",693,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"Spain","COUNTRY (FIR)",3728,411,0,411,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,10
+"2015",3,"MAR",19-MAR-15,"Spain Canarias","COUNTRY (FIR)",642,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"Spain Continental","COUNTRY (FIR)",3492,411,0,411,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,10
+"2015",3,"MAR",19-MAR-15,"Sweden","COUNTRY (FIR)",2246,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"Switzerland","COUNTRY (FIR)",2663,167,0,167,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,6
+"2015",3,"MAR",19-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",271,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"Turkey","COUNTRY (FIR)",3177,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",19-MAR-15,"UK Continental","COUNTRY (FIR)",6058,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",19-MAR-15,"UK Oceanic","COUNTRY (FIR)",1024,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"UK-Ireland FAB","FAB (FIR)",6140,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",19-MAR-15,"Ukraine","COUNTRY (FIR)",433,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",19-MAR-15,"United Kingdom","COUNTRY (FIR)",6249,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",20-MAR-15,"Albania","COUNTRY (FIR)",363,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Armenia","COUNTRY (FIR)",129,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Austria","COUNTRY (FIR)",2550,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"BLUE MED FAB","FAB (FIR)",4524,775,0,702,0,0,0,28,0,0,0,0,0,45,0,0,0,0,48,22
+"2015",3,"MAR",20-MAR-15,"Baltic FAB","FAB (FIR)",1994,411,0,411,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28,9
+"2015",3,"MAR",20-MAR-15,"Belgium","COUNTRY (FIR)",3204,355,0,97,0,0,0,0,0,0,0,0,0,258,0,0,0,0,27,8
+"2015",3,"MAR",20-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",548,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Bulgaria","COUNTRY (FIR)",1573,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Croatia","COUNTRY (FIR)",979,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Cyprus","COUNTRY (FIR)",777,747,0,702,0,0,0,0,0,0,0,0,0,45,0,0,0,0,46,21
+"2015",3,"MAR",20-MAR-15,"Czech Republic","COUNTRY (FIR)",1761,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"DANUBE FAB","FAB (FIR)",1879,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"DK-SE FAB","FAB (FIR)",2903,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Denmark","COUNTRY (FIR)",1757,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Estonia","COUNTRY (FIR)",499,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"FAB CE","FAB (FIR)",4398,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",4066,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4378,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"FABEC","FAB (FIR)",14166,1223,0,636,0,0,0,0,329,0,0,0,0,258,0,0,0,0,87,31
+"2015",3,"MAR",20-MAR-15,"Finland","COUNTRY (FIR)",757,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"France","COUNTRY (FIR)",7466,325,0,257,0,0,0,0,68,0,0,0,0,0,0,0,0,0,26,11
+"2015",3,"MAR",20-MAR-15,"Georgia","COUNTRY (FIR)",353,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Germany","COUNTRY (FIR)",7631,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",20-MAR-15,"Greece","COUNTRY (FIR)",1243,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Hungary","COUNTRY (FIR)",1569,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Ireland","COUNTRY (FIR)",1292,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Italy","COUNTRY (FIR)",3315,28,0,0,0,0,0,28,0,0,0,0,0,0,0,0,0,0,2,1
+"2015",3,"MAR",20-MAR-15,"Latvia","COUNTRY (FIR)",622,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Lithuania","COUNTRY (FIR)",670,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Malta","COUNTRY (FIR)",259,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Moldova","COUNTRY (FIR)",91,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"NEFAB","FAB (FIR)",3029,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Netherlands","COUNTRY (FIR)",3194,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",20-MAR-15,"Norway","COUNTRY (FIR)",1840,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Poland","COUNTRY (FIR)",1749,411,0,411,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28,9
+"2015",3,"MAR",20-MAR-15,"Portugal","COUNTRY (FIR)",1420,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Portugal Continental","COUNTRY (FIR)",1216,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",370,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Romania","COUNTRY (FIR)",1412,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"SES Area (RP2)","AREA (FIR)",23960,2409,0,1749,0,0,0,28,329,0,0,0,0,303,0,0,0,0,163,62
+"2015",3,"MAR",20-MAR-15,"SW FAB","FAB (FIR)",4155,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1093,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Slovakia","COUNTRY (FIR)",1040,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Slovenia","COUNTRY (FIR)",663,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Spain","COUNTRY (FIR)",4036,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Spain Canarias","COUNTRY (FIR)",799,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Spain Continental","COUNTRY (FIR)",3736,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Sweden","COUNTRY (FIR)",2216,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Switzerland","COUNTRY (FIR)",2518,543,0,282,0,0,0,0,261,0,0,0,0,0,0,0,0,0,34,12
+"2015",3,"MAR",20-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",226,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"Turkey","COUNTRY (FIR)",3224,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",20-MAR-15,"UK Continental","COUNTRY (FIR)",6100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",20-MAR-15,"UK Oceanic","COUNTRY (FIR)",1133,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"UK-Ireland FAB","FAB (FIR)",6168,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",20-MAR-15,"Ukraine","COUNTRY (FIR)",455,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",20-MAR-15,"United Kingdom","COUNTRY (FIR)",6319,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",21-MAR-15,"Albania","COUNTRY (FIR)",445,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Armenia","COUNTRY (FIR)",123,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Austria","COUNTRY (FIR)",2627,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"BLUE MED FAB","FAB (FIR)",4779,1821,0,263,0,0,0,0,0,0,0,0,0,1558,0,0,0,0,102,60
+"2015",3,"MAR",21-MAR-15,"Baltic FAB","FAB (FIR)",1792,548,0,548,0,0,0,0,0,0,0,0,0,0,0,0,0,0,37,19
+"2015",3,"MAR",21-MAR-15,"Belgium","COUNTRY (FIR)",2518,740,0,740,0,0,0,0,0,0,0,0,0,0,0,0,0,0,70,13
+"2015",3,"MAR",21-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",627,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Bulgaria","COUNTRY (FIR)",1627,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Croatia","COUNTRY (FIR)",1080,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Cyprus","COUNTRY (FIR)",770,1821,0,263,0,0,0,0,0,0,0,0,0,1558,0,0,0,0,102,60
+"2015",3,"MAR",21-MAR-15,"Czech Republic","COUNTRY (FIR)",1622,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"DANUBE FAB","FAB (FIR)",1903,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"DK-SE FAB","FAB (FIR)",1882,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Denmark","COUNTRY (FIR)",1269,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Estonia","COUNTRY (FIR)",414,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"FAB CE","FAB (FIR)",4357,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",3950,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4347,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"FABEC","FAB (FIR)",12025,3784,0,1024,0,0,0,0,0,0,0,2513,0,0,0,0,247,0,256,96
+"2015",3,"MAR",21-MAR-15,"Finland","COUNTRY (FIR)",462,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"France","COUNTRY (FIR)",6628,3044,0,284,0,0,0,0,0,0,0,2513,0,0,0,0,247,0,186,83
+"2015",3,"MAR",21-MAR-15,"Georgia","COUNTRY (FIR)",317,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Germany","COUNTRY (FIR)",6569,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Greece","COUNTRY (FIR)",1209,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Hungary","COUNTRY (FIR)",1536,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Ireland","COUNTRY (FIR)",1172,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Italy","COUNTRY (FIR)",3597,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",21-MAR-15,"Latvia","COUNTRY (FIR)",550,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Lithuania","COUNTRY (FIR)",630,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Malta","COUNTRY (FIR)",248,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Moldova","COUNTRY (FIR)",94,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"NEFAB","FAB (FIR)",1769,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Netherlands","COUNTRY (FIR)",2637,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",21-MAR-15,"Norway","COUNTRY (FIR)",928,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Poland","COUNTRY (FIR)",1603,548,0,548,0,0,0,0,0,0,0,0,0,0,0,0,0,0,37,19
+"2015",3,"MAR",21-MAR-15,"Portugal","COUNTRY (FIR)",1682,673,0,673,0,0,0,0,0,0,0,0,0,0,0,0,0,0,61,17
+"2015",3,"MAR",21-MAR-15,"Portugal Continental","COUNTRY (FIR)",1463,673,0,673,0,0,0,0,0,0,0,0,0,0,0,0,0,0,61,17
+"2015",3,"MAR",21-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",385,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Romania","COUNTRY (FIR)",1397,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"SES Area (RP2)","AREA (FIR)",18558,6826,0,2508,0,0,0,0,0,0,0,2513,0,1558,0,0,247,0,456,192
+"2015",3,"MAR",21-MAR-15,"SW FAB","FAB (FIR)",3936,673,0,673,0,0,0,0,0,0,0,0,0,0,0,0,0,0,61,17
+"2015",3,"MAR",21-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1203,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Slovakia","COUNTRY (FIR)",963,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Slovenia","COUNTRY (FIR)",655,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Spain","COUNTRY (FIR)",3824,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Spain Canarias","COUNTRY (FIR)",1013,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Spain Continental","COUNTRY (FIR)",3579,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Sweden","COUNTRY (FIR)",1336,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Switzerland","COUNTRY (FIR)",2404,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",21-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",243,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Turkey","COUNTRY (FIR)",3194,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",21-MAR-15,"UK Continental","COUNTRY (FIR)",4969,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"UK Oceanic","COUNTRY (FIR)",1115,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"UK-Ireland FAB","FAB (FIR)",5040,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"Ukraine","COUNTRY (FIR)",451,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",21-MAR-15,"United Kingdom","COUNTRY (FIR)",5183,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Albania","COUNTRY (FIR)",462,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Armenia","COUNTRY (FIR)",117,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Austria","COUNTRY (FIR)",2631,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"BLUE MED FAB","FAB (FIR)",5194,3557,0,2195,0,0,0,0,0,0,0,0,0,1362,0,0,0,0,197,109
+"2015",3,"MAR",22-MAR-15,"Baltic FAB","FAB (FIR)",1871,465,0,465,0,0,0,0,0,0,0,0,0,0,0,0,0,0,37,10
+"2015",3,"MAR",22-MAR-15,"Belgium","COUNTRY (FIR)",2895,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",22-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",685,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Bulgaria","COUNTRY (FIR)",1722,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Croatia","COUNTRY (FIR)",1156,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Cyprus","COUNTRY (FIR)",904,3557,0,2195,0,0,0,0,0,0,0,0,0,1362,0,0,0,0,197,109
+"2015",3,"MAR",22-MAR-15,"Czech Republic","COUNTRY (FIR)",1716,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"DANUBE FAB","FAB (FIR)",2022,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"DK-SE FAB","FAB (FIR)",2476,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Denmark","COUNTRY (FIR)",1581,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Estonia","COUNTRY (FIR)",456,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"FAB CE","FAB (FIR)",4541,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",4099,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4529,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"FABEC","FAB (FIR)",13332,2026,0,801,0,0,0,0,0,0,0,648,0,0,0,0,577,0,158,52
+"2015",3,"MAR",22-MAR-15,"Finland","COUNTRY (FIR)",618,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"France","COUNTRY (FIR)",7170,2026,0,801,0,0,0,0,0,0,0,648,0,0,0,0,577,0,158,52
+"2015",3,"MAR",22-MAR-15,"Georgia","COUNTRY (FIR)",347,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Germany","COUNTRY (FIR)",7299,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Greece","COUNTRY (FIR)",1430,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Hungary","COUNTRY (FIR)",1613,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Ireland","COUNTRY (FIR)",1295,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Italy","COUNTRY (FIR)",3868,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Latvia","COUNTRY (FIR)",582,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Lithuania","COUNTRY (FIR)",657,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Malta","COUNTRY (FIR)",244,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Moldova","COUNTRY (FIR)",113,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"NEFAB","FAB (FIR)",2421,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Netherlands","COUNTRY (FIR)",3057,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",22-MAR-15,"Norway","COUNTRY (FIR)",1424,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Poland","COUNTRY (FIR)",1638,465,0,465,0,0,0,0,0,0,0,0,0,0,0,0,0,0,37,10
+"2015",3,"MAR",22-MAR-15,"Portugal","COUNTRY (FIR)",1544,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Portugal Continental","COUNTRY (FIR)",1335,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",375,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Romania","COUNTRY (FIR)",1477,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"SES Area (RP2)","AREA (FIR)",21395,6048,0,3461,0,0,0,0,0,0,0,648,0,1362,0,0,577,0,392,171
+"2015",3,"MAR",22-MAR-15,"SW FAB","FAB (FIR)",4212,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1289,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Slovakia","COUNTRY (FIR)",1037,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Slovenia","COUNTRY (FIR)",733,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Spain","COUNTRY (FIR)",4099,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Spain Canarias","COUNTRY (FIR)",903,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Spain Continental","COUNTRY (FIR)",3835,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Sweden","COUNTRY (FIR)",1863,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Switzerland","COUNTRY (FIR)",2602,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",22-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",290,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Turkey","COUNTRY (FIR)",3363,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",22-MAR-15,"UK Continental","COUNTRY (FIR)",5626,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"UK Oceanic","COUNTRY (FIR)",1165,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"UK-Ireland FAB","FAB (FIR)",5695,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"Ukraine","COUNTRY (FIR)",500,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",22-MAR-15,"United Kingdom","COUNTRY (FIR)",5840,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Albania","COUNTRY (FIR)",377,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Armenia","COUNTRY (FIR)",111,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Austria","COUNTRY (FIR)",2640,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"BLUE MED FAB","FAB (FIR)",5107,2470,0,52,0,0,0,0,0,0,0,0,0,2418,0,0,0,0,122,67
+"2015",3,"MAR",23-MAR-15,"Baltic FAB","FAB (FIR)",1946,566,0,566,0,0,0,0,0,0,0,0,0,0,0,0,0,0,45,11
+"2015",3,"MAR",23-MAR-15,"Belgium","COUNTRY (FIR)",3052,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",547,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Bulgaria","COUNTRY (FIR)",1497,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Croatia","COUNTRY (FIR)",975,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Cyprus","COUNTRY (FIR)",777,2470,0,52,0,0,0,0,0,0,0,0,0,2418,0,0,0,0,122,67
+"2015",3,"MAR",23-MAR-15,"Czech Republic","COUNTRY (FIR)",1741,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"DANUBE FAB","FAB (FIR)",1836,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"DK-SE FAB","FAB (FIR)",2927,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Denmark","COUNTRY (FIR)",1776,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Estonia","COUNTRY (FIR)",510,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"FAB CE","FAB (FIR)",4505,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",4130,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4490,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"FABEC","FAB (FIR)",14456,332,0,332,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30,8
+"2015",3,"MAR",23-MAR-15,"Finland","COUNTRY (FIR)",761,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"France","COUNTRY (FIR)",7277,285,0,285,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,6
+"2015",3,"MAR",23-MAR-15,"Georgia","COUNTRY (FIR)",310,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Germany","COUNTRY (FIR)",8029,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Greece","COUNTRY (FIR)",1226,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Hungary","COUNTRY (FIR)",1567,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Ireland","COUNTRY (FIR)",1264,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Italy","COUNTRY (FIR)",3923,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Latvia","COUNTRY (FIR)",631,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Lithuania","COUNTRY (FIR)",657,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Malta","COUNTRY (FIR)",229,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Moldova","COUNTRY (FIR)",85,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"NEFAB","FAB (FIR)",3046,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Netherlands","COUNTRY (FIR)",3095,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",23-MAR-15,"Norway","COUNTRY (FIR)",1873,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Poland","COUNTRY (FIR)",1716,566,0,566,0,0,0,0,0,0,0,0,0,0,0,0,0,0,45,11
+"2015",3,"MAR",23-MAR-15,"Portugal","COUNTRY (FIR)",1437,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Portugal Continental","COUNTRY (FIR)",1233,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",359,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Romania","COUNTRY (FIR)",1378,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"SES Area (RP2)","AREA (FIR)",24366,3368,0,950,0,0,0,0,0,0,0,0,0,2418,0,0,0,0,197,86
+"2015",3,"MAR",23-MAR-15,"SW FAB","FAB (FIR)",4091,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",23-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1092,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Slovakia","COUNTRY (FIR)",970,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Slovenia","COUNTRY (FIR)",660,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Spain","COUNTRY (FIR)",3977,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",23-MAR-15,"Spain Canarias","COUNTRY (FIR)",734,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",23-MAR-15,"Spain Continental","COUNTRY (FIR)",3716,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Sweden","COUNTRY (FIR)",2235,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Switzerland","COUNTRY (FIR)",2610,47,0,47,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,2
+"2015",3,"MAR",23-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",240,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"Turkey","COUNTRY (FIR)",2980,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",23-MAR-15,"UK Continental","COUNTRY (FIR)",6110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",23-MAR-15,"UK Oceanic","COUNTRY (FIR)",1113,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"UK-Ireland FAB","FAB (FIR)",6171,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",23-MAR-15,"Ukraine","COUNTRY (FIR)",438,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",23-MAR-15,"United Kingdom","COUNTRY (FIR)",6312,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",24-MAR-15,"Albania","COUNTRY (FIR)",334,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Armenia","COUNTRY (FIR)",116,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Austria","COUNTRY (FIR)",2590,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"BLUE MED FAB","FAB (FIR)",4777,1884,0,438,0,0,0,0,0,0,1446,0,0,0,0,0,0,0,96,54
+"2015",3,"MAR",24-MAR-15,"Baltic FAB","FAB (FIR)",1904,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Belgium","COUNTRY (FIR)",2904,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",599,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Bulgaria","COUNTRY (FIR)",1546,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Croatia","COUNTRY (FIR)",1006,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Cyprus","COUNTRY (FIR)",757,1884,0,438,0,0,0,0,0,0,1446,0,0,0,0,0,0,0,96,54
+"2015",3,"MAR",24-MAR-15,"Czech Republic","COUNTRY (FIR)",1610,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"DANUBE FAB","FAB (FIR)",1874,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"DK-SE FAB","FAB (FIR)",2834,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Denmark","COUNTRY (FIR)",1688,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Estonia","COUNTRY (FIR)",472,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"FAB CE","FAB (FIR)",4354,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",3991,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4338,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"FABEC","FAB (FIR)",13814,211,0,211,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,7
+"2015",3,"MAR",24-MAR-15,"Finland","COUNTRY (FIR)",713,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"France","COUNTRY (FIR)",6821,187,0,187,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,6
+"2015",3,"MAR",24-MAR-15,"Georgia","COUNTRY (FIR)",312,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Germany","COUNTRY (FIR)",7766,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Greece","COUNTRY (FIR)",1166,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Hungary","COUNTRY (FIR)",1473,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Ireland","COUNTRY (FIR)",1194,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Italy","COUNTRY (FIR)",3612,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Latvia","COUNTRY (FIR)",551,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Lithuania","COUNTRY (FIR)",625,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Malta","COUNTRY (FIR)",233,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Moldova","COUNTRY (FIR)",96,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"NEFAB","FAB (FIR)",2938,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Netherlands","COUNTRY (FIR)",2862,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",24-MAR-15,"Norway","COUNTRY (FIR)",1842,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Poland","COUNTRY (FIR)",1676,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Portugal","COUNTRY (FIR)",1296,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Portugal Continental","COUNTRY (FIR)",1122,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",347,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Romania","COUNTRY (FIR)",1346,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"SES Area (RP2)","AREA (FIR)",23418,2095,0,649,0,0,0,0,0,0,1446,0,0,0,0,0,0,0,109,61
+"2015",3,"MAR",24-MAR-15,"SW FAB","FAB (FIR)",3781,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1112,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Slovakia","COUNTRY (FIR)",911,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Slovenia","COUNTRY (FIR)",701,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Spain","COUNTRY (FIR)",3685,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Spain Canarias","COUNTRY (FIR)",689,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Spain Continental","COUNTRY (FIR)",3401,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Sweden","COUNTRY (FIR)",2158,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Switzerland","COUNTRY (FIR)",2342,24,0,24,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1
+"2015",3,"MAR",24-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",210,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"Turkey","COUNTRY (FIR)",2979,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",24-MAR-15,"UK Continental","COUNTRY (FIR)",5704,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",24-MAR-15,"UK Oceanic","COUNTRY (FIR)",1041,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"UK-Ireland FAB","FAB (FIR)",5776,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",24-MAR-15,"Ukraine","COUNTRY (FIR)",424,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",24-MAR-15,"United Kingdom","COUNTRY (FIR)",5871,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",25-MAR-15,"Albania","COUNTRY (FIR)",336,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Armenia","COUNTRY (FIR)",112,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Austria","COUNTRY (FIR)",2702,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"BLUE MED FAB","FAB (FIR)",4783,1145,0,803,0,0,0,0,0,0,0,0,0,342,0,0,0,0,74,30
+"2015",3,"MAR",25-MAR-15,"Baltic FAB","FAB (FIR)",1916,203,0,203,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,5
+"2015",3,"MAR",25-MAR-15,"Belgium","COUNTRY (FIR)",2997,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",551,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Bulgaria","COUNTRY (FIR)",1634,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Croatia","COUNTRY (FIR)",937,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Cyprus","COUNTRY (FIR)",791,1145,0,803,0,0,0,0,0,0,0,0,0,342,0,0,0,0,74,30
+"2015",3,"MAR",25-MAR-15,"Czech Republic","COUNTRY (FIR)",1765,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"DANUBE FAB","FAB (FIR)",1980,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"DK-SE FAB","FAB (FIR)",2978,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Denmark","COUNTRY (FIR)",1803,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Estonia","COUNTRY (FIR)",504,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"FAB CE","FAB (FIR)",4505,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",4155,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4495,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"FABEC","FAB (FIR)",14154,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,0,3,0
+"2015",3,"MAR",25-MAR-15,"Finland","COUNTRY (FIR)",756,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"France","COUNTRY (FIR)",6913,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",25-MAR-15,"Georgia","COUNTRY (FIR)",310,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Germany","COUNTRY (FIR)",8009,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,0,3,0
+"2015",3,"MAR",25-MAR-15,"Greece","COUNTRY (FIR)",1119,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Hungary","COUNTRY (FIR)",1634,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Ireland","COUNTRY (FIR)",1124,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Italy","COUNTRY (FIR)",3666,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",25-MAR-15,"Latvia","COUNTRY (FIR)",580,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Lithuania","COUNTRY (FIR)",639,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Malta","COUNTRY (FIR)",226,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Moldova","COUNTRY (FIR)",99,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"NEFAB","FAB (FIR)",3070,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Netherlands","COUNTRY (FIR)",2995,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",25-MAR-15,"Norway","COUNTRY (FIR)",1908,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Poland","COUNTRY (FIR)",1688,203,0,203,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,5
+"2015",3,"MAR",25-MAR-15,"Portugal","COUNTRY (FIR)",1282,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Portugal Continental","COUNTRY (FIR)",1134,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",289,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Romania","COUNTRY (FIR)",1504,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"SES Area (RP2)","AREA (FIR)",23847,1367,0,1006,0,0,0,0,0,0,0,0,0,342,0,0,19,0,95,35
+"2015",3,"MAR",25-MAR-15,"SW FAB","FAB (FIR)",3837,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1054,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Slovakia","COUNTRY (FIR)",1017,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Slovenia","COUNTRY (FIR)",641,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Spain","COUNTRY (FIR)",3741,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Spain Canarias","COUNTRY (FIR)",684,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Spain Continental","COUNTRY (FIR)",3494,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Sweden","COUNTRY (FIR)",2183,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Switzerland","COUNTRY (FIR)",2445,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",25-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",204,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Turkey","COUNTRY (FIR)",3188,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",25-MAR-15,"UK Continental","COUNTRY (FIR)",5719,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"UK Oceanic","COUNTRY (FIR)",969,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"UK-Ireland FAB","FAB (FIR)",5784,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"Ukraine","COUNTRY (FIR)",454,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",25-MAR-15,"United Kingdom","COUNTRY (FIR)",5862,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Albania","COUNTRY (FIR)",392,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Armenia","COUNTRY (FIR)",122,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Austria","COUNTRY (FIR)",2762,1014,0,0,0,0,0,1014,0,0,0,0,0,0,0,0,0,0,78,27
+"2015",3,"MAR",26-MAR-15,"BLUE MED FAB","FAB (FIR)",5106,7730,0,0,0,0,0,0,0,0,893,3183,0,0,3654,0,0,0,177,149
+"2015",3,"MAR",26-MAR-15,"Baltic FAB","FAB (FIR)",1909,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Belgium","COUNTRY (FIR)",2962,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",598,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Bulgaria","COUNTRY (FIR)",1669,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Croatia","COUNTRY (FIR)",1030,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Cyprus","COUNTRY (FIR)",813,7730,0,0,0,0,0,0,0,0,893,3183,0,0,3654,0,0,0,177,149
+"2015",3,"MAR",26-MAR-15,"Czech Republic","COUNTRY (FIR)",1865,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"DANUBE FAB","FAB (FIR)",1999,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"DK-SE FAB","FAB (FIR)",2921,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Denmark","COUNTRY (FIR)",1758,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Estonia","COUNTRY (FIR)",510,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"FAB CE","FAB (FIR)",4716,1014,0,0,0,0,0,1014,0,0,0,0,0,0,0,0,0,0,78,27
+"2015",3,"MAR",26-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",4349,1014,0,0,0,0,0,1014,0,0,0,0,0,0,0,0,0,0,78,27
+"2015",3,"MAR",26-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4701,1014,0,0,0,0,0,1014,0,0,0,0,0,0,0,0,0,0,78,27
+"2015",3,"MAR",26-MAR-15,"FABEC","FAB (FIR)",14707,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",26-MAR-15,"Finland","COUNTRY (FIR)",743,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"France","COUNTRY (FIR)",7257,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",26-MAR-15,"Georgia","COUNTRY (FIR)",304,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Germany","COUNTRY (FIR)",8218,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Greece","COUNTRY (FIR)",1344,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Hungary","COUNTRY (FIR)",1687,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Ireland","COUNTRY (FIR)",1113,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Italy","COUNTRY (FIR)",3804,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Latvia","COUNTRY (FIR)",585,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Lithuania","COUNTRY (FIR)",645,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Malta","COUNTRY (FIR)",247,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Moldova","COUNTRY (FIR)",92,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"NEFAB","FAB (FIR)",2825,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",26-MAR-15,"Netherlands","COUNTRY (FIR)",3090,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",26-MAR-15,"Norway","COUNTRY (FIR)",1649,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",26-MAR-15,"Poland","COUNTRY (FIR)",1681,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Portugal","COUNTRY (FIR)",1335,1049,0,1049,0,0,0,0,0,0,0,0,0,0,0,0,0,0,59,31
+"2015",3,"MAR",26-MAR-15,"Portugal Continental","COUNTRY (FIR)",1165,1049,0,1049,0,0,0,0,0,0,0,0,0,0,0,0,0,0,59,31
+"2015",3,"MAR",26-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",339,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Romania","COUNTRY (FIR)",1490,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"SES Area (RP2)","AREA (FIR)",24548,9793,0,1049,0,0,0,1014,0,0,893,3183,0,0,3654,0,0,0,314,207
+"2015",3,"MAR",26-MAR-15,"SW FAB","FAB (FIR)",4009,1049,0,1049,0,0,0,0,0,0,0,0,0,0,0,0,0,0,59,31
+"2015",3,"MAR",26-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1192,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Slovakia","COUNTRY (FIR)",1054,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Slovenia","COUNTRY (FIR)",690,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Spain","COUNTRY (FIR)",3917,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Spain Canarias","COUNTRY (FIR)",658,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Spain Continental","COUNTRY (FIR)",3666,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Sweden","COUNTRY (FIR)",2218,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Switzerland","COUNTRY (FIR)",2545,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",26-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",245,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"Turkey","COUNTRY (FIR)",3288,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",26-MAR-15,"UK Continental","COUNTRY (FIR)",6047,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",26-MAR-15,"UK Oceanic","COUNTRY (FIR)",987,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"UK-Ireland FAB","FAB (FIR)",6124,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",26-MAR-15,"Ukraine","COUNTRY (FIR)",463,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",26-MAR-15,"United Kingdom","COUNTRY (FIR)",6199,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",27-MAR-15,"Albania","COUNTRY (FIR)",362,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"Armenia","COUNTRY (FIR)",125,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"Austria","COUNTRY (FIR)",2915,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"BLUE MED FAB","FAB (FIR)",5405,5120,0,0,0,0,0,0,0,0,0,2657,0,2463,0,0,0,0,187,130
+"2015",3,"MAR",27-MAR-15,"Baltic FAB","FAB (FIR)",2086,938,0,938,0,0,0,0,0,0,0,0,0,0,0,0,0,0,55,27
+"2015",3,"MAR",27-MAR-15,"Belgium","COUNTRY (FIR)",3214,1383,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1383,0,99,31
+"2015",3,"MAR",27-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",609,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"Bulgaria","COUNTRY (FIR)",1803,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"Croatia","COUNTRY (FIR)",1063,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"Cyprus","COUNTRY (FIR)",737,5120,0,0,0,0,0,0,0,0,0,2657,0,2463,0,0,0,0,187,130
+"2015",3,"MAR",27-MAR-15,"Czech Republic","COUNTRY (FIR)",1926,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"DANUBE FAB","FAB (FIR)",2154,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"DK-SE FAB","FAB (FIR)",3021,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"Denmark","COUNTRY (FIR)",1862,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"Estonia","COUNTRY (FIR)",541,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"FAB CE","FAB (FIR)",4970,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",4566,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4952,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"FABEC","FAB (FIR)",15321,4579,0,2957,0,0,0,0,0,0,0,0,0,239,0,0,1383,0,325,124
+"2015",3,"MAR",27-MAR-15,"Finland","COUNTRY (FIR)",738,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"France","COUNTRY (FIR)",7823,1686,0,1686,0,0,0,0,0,0,0,0,0,0,0,0,0,0,111,53
+"2015",3,"MAR",27-MAR-15,"Georgia","COUNTRY (FIR)",347,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"Germany","COUNTRY (FIR)",8550,851,0,612,0,0,0,0,0,0,0,0,0,239,0,0,0,0,68,21
+"2015",3,"MAR",27-MAR-15,"Greece","COUNTRY (FIR)",1321,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"Hungary","COUNTRY (FIR)",1782,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"Ireland","COUNTRY (FIR)",1282,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"Italy","COUNTRY (FIR)",4135,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"Latvia","COUNTRY (FIR)",639,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"Lithuania","COUNTRY (FIR)",667,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"Malta","COUNTRY (FIR)",264,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"Moldova","COUNTRY (FIR)",101,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"NEFAB","FAB (FIR)",3120,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",27-MAR-15,"Netherlands","COUNTRY (FIR)",3207,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",27-MAR-15,"Norway","COUNTRY (FIR)",1959,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",27-MAR-15,"Poland","COUNTRY (FIR)",1856,938,0,938,0,0,0,0,0,0,0,0,0,0,0,0,0,0,55,27
+"2015",3,"MAR",27-MAR-15,"Portugal","COUNTRY (FIR)",1548,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",27-MAR-15,"Portugal Continental","COUNTRY (FIR)",1323,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",27-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",392,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"Romania","COUNTRY (FIR)",1598,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"SES Area (RP2)","AREA (FIR)",25638,10637,0,3895,0,0,0,0,0,0,0,2657,0,2702,0,0,1383,0,567,281
+"2015",3,"MAR",27-MAR-15,"SW FAB","FAB (FIR)",4513,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",27-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1183,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"Slovakia","COUNTRY (FIR)",1134,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"Slovenia","COUNTRY (FIR)",698,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"Spain","COUNTRY (FIR)",4388,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"Spain Canarias","COUNTRY (FIR)",871,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"Spain Continental","COUNTRY (FIR)",4070,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"Sweden","COUNTRY (FIR)",2236,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"Switzerland","COUNTRY (FIR)",2705,659,0,659,0,0,0,0,0,0,0,0,0,0,0,0,0,0,47,19
+"2015",3,"MAR",27-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",229,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"Turkey","COUNTRY (FIR)",3418,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",27-MAR-15,"UK Continental","COUNTRY (FIR)",6281,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"UK Oceanic","COUNTRY (FIR)",1031,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"UK-Ireland FAB","FAB (FIR)",6344,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"Ukraine","COUNTRY (FIR)",496,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",27-MAR-15,"United Kingdom","COUNTRY (FIR)",6473,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"Albania","COUNTRY (FIR)",429,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"Armenia","COUNTRY (FIR)",140,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"Austria","COUNTRY (FIR)",2788,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"BLUE MED FAB","FAB (FIR)",5011,2649,0,297,0,0,0,0,0,0,0,0,0,2352,0,0,0,0,129,81
+"2015",3,"MAR",28-MAR-15,"Baltic FAB","FAB (FIR)",1787,357,0,357,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,6
+"2015",3,"MAR",28-MAR-15,"Belgium","COUNTRY (FIR)",2758,1063,0,1063,0,0,0,0,0,0,0,0,0,0,0,0,0,0,83,29
+"2015",3,"MAR",28-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",713,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"Bulgaria","COUNTRY (FIR)",1840,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"Croatia","COUNTRY (FIR)",1204,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"Cyprus","COUNTRY (FIR)",784,2649,0,297,0,0,0,0,0,0,0,0,0,2352,0,0,0,0,129,81
+"2015",3,"MAR",28-MAR-15,"Czech Republic","COUNTRY (FIR)",1637,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"DANUBE FAB","FAB (FIR)",2120,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"DK-SE FAB","FAB (FIR)",2023,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"Denmark","COUNTRY (FIR)",1410,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"Estonia","COUNTRY (FIR)",462,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"FAB CE","FAB (FIR)",4623,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",4222,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4612,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"FABEC","FAB (FIR)",12756,4914,0,4668,0,0,0,0,0,0,0,0,0,246,0,0,0,0,326,149
+"2015",3,"MAR",28-MAR-15,"Finland","COUNTRY (FIR)",470,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"France","COUNTRY (FIR)",7069,3605,0,3605,0,0,0,0,0,0,0,0,0,0,0,0,0,0,219,115
+"2015",3,"MAR",28-MAR-15,"Georgia","COUNTRY (FIR)",295,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"Germany","COUNTRY (FIR)",7063,246,0,0,0,0,0,0,0,0,0,0,0,246,0,0,0,0,24,5
+"2015",3,"MAR",28-MAR-15,"Greece","COUNTRY (FIR)",1351,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"Hungary","COUNTRY (FIR)",1707,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"Ireland","COUNTRY (FIR)",1051,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"Italy","COUNTRY (FIR)",3724,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"Latvia","COUNTRY (FIR)",581,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"Lithuania","COUNTRY (FIR)",614,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"Malta","COUNTRY (FIR)",257,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"Moldova","COUNTRY (FIR)",98,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"NEFAB","FAB (FIR)",1881,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"Netherlands","COUNTRY (FIR)",2736,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",28-MAR-15,"Norway","COUNTRY (FIR)",1000,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"Poland","COUNTRY (FIR)",1585,357,0,357,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,6
+"2015",3,"MAR",28-MAR-15,"Portugal","COUNTRY (FIR)",1841,2921,0,2921,0,0,0,0,0,0,0,0,0,0,0,0,0,0,192,95
+"2015",3,"MAR",28-MAR-15,"Portugal Continental","COUNTRY (FIR)",1587,2921,0,2921,0,0,0,0,0,0,0,0,0,0,0,0,0,0,192,95
+"2015",3,"MAR",28-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",416,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"Romania","COUNTRY (FIR)",1532,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"SES Area (RP2)","AREA (FIR)",19575,11835,0,9237,0,0,0,0,0,0,0,0,0,2598,0,0,0,0,737,363
+"2015",3,"MAR",28-MAR-15,"SW FAB","FAB (FIR)",4469,3915,0,3915,0,0,0,0,0,0,0,0,0,0,0,0,0,0,255,127
+"2015",3,"MAR",28-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1311,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"Slovakia","COUNTRY (FIR)",1071,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"Slovenia","COUNTRY (FIR)",765,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"Spain","COUNTRY (FIR)",4350,994,0,994,0,0,0,0,0,0,0,0,0,0,0,0,0,0,63,32
+"2015",3,"MAR",28-MAR-15,"Spain Canarias","COUNTRY (FIR)",1133,836,0,836,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50,26
+"2015",3,"MAR",28-MAR-15,"Spain Continental","COUNTRY (FIR)",4097,158,0,158,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,6
+"2015",3,"MAR",28-MAR-15,"Sweden","COUNTRY (FIR)",1472,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"Switzerland","COUNTRY (FIR)",2573,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",28-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",266,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"Turkey","COUNTRY (FIR)",3391,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",28-MAR-15,"UK Continental","COUNTRY (FIR)",5091,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",28-MAR-15,"UK Oceanic","COUNTRY (FIR)",1114,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"UK-Ireland FAB","FAB (FIR)",5167,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",28-MAR-15,"Ukraine","COUNTRY (FIR)",464,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",28-MAR-15,"United Kingdom","COUNTRY (FIR)",5331,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",29-MAR-15,"Albania","COUNTRY (FIR)",554,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"Armenia","COUNTRY (FIR)",103,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"Austria","COUNTRY (FIR)",3116,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",29-MAR-15,"BLUE MED FAB","FAB (FIR)",6116,2801,0,1309,0,0,0,0,0,0,0,0,0,1492,0,0,0,0,168,83
+"2015",3,"MAR",29-MAR-15,"Baltic FAB","FAB (FIR)",2034,170,0,170,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,5
+"2015",3,"MAR",29-MAR-15,"Belgium","COUNTRY (FIR)",3044,2281,0,2281,0,0,0,0,0,0,0,0,0,0,0,0,0,0,131,56
+"2015",3,"MAR",29-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",795,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"Bulgaria","COUNTRY (FIR)",2002,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"Croatia","COUNTRY (FIR)",1402,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"Cyprus","COUNTRY (FIR)",990,2801,0,1309,0,0,0,0,0,0,0,0,0,1492,0,0,0,0,168,83
+"2015",3,"MAR",29-MAR-15,"Czech Republic","COUNTRY (FIR)",1868,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"DANUBE FAB","FAB (FIR)",2320,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"DK-SE FAB","FAB (FIR)",2678,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"Denmark","COUNTRY (FIR)",1752,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"Estonia","COUNTRY (FIR)",502,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"FAB CE","FAB (FIR)",5201,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",29-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",4712,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",29-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",5188,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",29-MAR-15,"FABEC","FAB (FIR)",14445,20642,0,15629,0,0,0,0,0,0,0,2883,0,2130,0,0,0,0,1107,614
+"2015",3,"MAR",29-MAR-15,"Finland","COUNTRY (FIR)",611,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"France","COUNTRY (FIR)",7928,15888,0,13005,0,0,0,0,0,0,0,2883,0,0,0,0,0,0,817,487
+"2015",3,"MAR",29-MAR-15,"Georgia","COUNTRY (FIR)",356,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"Germany","COUNTRY (FIR)",7877,2392,0,262,0,0,0,0,0,0,0,0,0,2130,0,0,0,0,151,70
+"2015",3,"MAR",29-MAR-15,"Greece","COUNTRY (FIR)",1613,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"Hungary","COUNTRY (FIR)",1884,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"Ireland","COUNTRY (FIR)",1107,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"Italy","COUNTRY (FIR)",4595,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"Latvia","COUNTRY (FIR)",644,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"Lithuania","COUNTRY (FIR)",696,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"Malta","COUNTRY (FIR)",277,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"Moldova","COUNTRY (FIR)",118,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"NEFAB","FAB (FIR)",2502,7,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+"2015",3,"MAR",29-MAR-15,"Netherlands","COUNTRY (FIR)",3025,81,0,81,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,1
+"2015",3,"MAR",29-MAR-15,"Norway","COUNTRY (FIR)",1465,7,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+"2015",3,"MAR",29-MAR-15,"Poland","COUNTRY (FIR)",1782,170,0,170,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,5
+"2015",3,"MAR",29-MAR-15,"Portugal","COUNTRY (FIR)",1792,82,0,82,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,2
+"2015",3,"MAR",29-MAR-15,"Portugal Continental","COUNTRY (FIR)",1551,82,0,82,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,2
+"2015",3,"MAR",29-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",436,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"Romania","COUNTRY (FIR)",1705,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"SES Area (RP2)","AREA (FIR)",22802,23874,0,17369,0,0,0,0,0,0,0,2883,0,3622,0,0,0,0,1307,711
+"2015",3,"MAR",29-MAR-15,"SW FAB","FAB (FIR)",4979,254,0,254,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,9
+"2015",3,"MAR",29-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1497,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"Slovakia","COUNTRY (FIR)",1175,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"Slovenia","COUNTRY (FIR)",887,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"Spain","COUNTRY (FIR)",4842,172,0,172,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,7
+"2015",3,"MAR",29-MAR-15,"Spain Canarias","COUNTRY (FIR)",908,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"Spain Continental","COUNTRY (FIR)",4601,172,0,172,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,7
+"2015",3,"MAR",29-MAR-15,"Sweden","COUNTRY (FIR)",1970,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"Switzerland","COUNTRY (FIR)",2801,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",29-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",293,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"Turkey","COUNTRY (FIR)",3602,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",29-MAR-15,"UK Continental","COUNTRY (FIR)",5771,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",29-MAR-15,"UK Oceanic","COUNTRY (FIR)",951,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"UK-Ireland FAB","FAB (FIR)",5834,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",29-MAR-15,"Ukraine","COUNTRY (FIR)",567,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",29-MAR-15,"United Kingdom","COUNTRY (FIR)",5952,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",30-MAR-15,"Albania","COUNTRY (FIR)",433,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"Armenia","COUNTRY (FIR)",121,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"Austria","COUNTRY (FIR)",2957,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",30-MAR-15,"BLUE MED FAB","FAB (FIR)",5875,5908,0,2929,0,0,0,0,0,0,0,0,0,707,2272,0,0,0,261,174
+"2015",3,"MAR",30-MAR-15,"Baltic FAB","FAB (FIR)",2116,259,0,259,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,3
+"2015",3,"MAR",30-MAR-15,"Belgium","COUNTRY (FIR)",3169,2735,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2735,0,142,78
+"2015",3,"MAR",30-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",669,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"Bulgaria","COUNTRY (FIR)",1730,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"Croatia","COUNTRY (FIR)",1196,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"Cyprus","COUNTRY (FIR)",879,5908,0,2929,0,0,0,0,0,0,0,0,0,707,2272,0,0,0,261,174
+"2015",3,"MAR",30-MAR-15,"Czech Republic","COUNTRY (FIR)",1853,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"DANUBE FAB","FAB (FIR)",2112,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"DK-SE FAB","FAB (FIR)",2870,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",30-MAR-15,"Denmark","COUNTRY (FIR)",1747,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"Estonia","COUNTRY (FIR)",546,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"FAB CE","FAB (FIR)",4993,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",30-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",4582,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",30-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4976,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",30-MAR-15,"FABEC","FAB (FIR)",15232,15600,0,8274,0,0,0,0,0,0,0,0,0,2109,0,0,5217,0,782,451
+"2015",3,"MAR",30-MAR-15,"Finland","COUNTRY (FIR)",744,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"France","COUNTRY (FIR)",8064,6269,0,6269,0,0,0,0,0,0,0,0,0,0,0,0,0,0,262,177
+"2015",3,"MAR",30-MAR-15,"Georgia","COUNTRY (FIR)",324,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"Germany","COUNTRY (FIR)",8212,3798,0,1689,0,0,0,0,0,0,0,0,0,2109,0,0,0,0,239,113
+"2015",3,"MAR",30-MAR-15,"Greece","COUNTRY (FIR)",1482,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",30-MAR-15,"Hungary","COUNTRY (FIR)",1793,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"Ireland","COUNTRY (FIR)",1187,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"Italy","COUNTRY (FIR)",4437,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"Latvia","COUNTRY (FIR)",674,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"Lithuania","COUNTRY (FIR)",733,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"Malta","COUNTRY (FIR)",284,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"Moldova","COUNTRY (FIR)",90,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"NEFAB","FAB (FIR)",2859,182,0,0,0,182,0,0,0,0,0,0,0,0,0,0,0,0,8,4
+"2015",3,"MAR",30-MAR-15,"Netherlands","COUNTRY (FIR)",3047,2482,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2482,0,120,74
+"2015",3,"MAR",30-MAR-15,"Norway","COUNTRY (FIR)",1663,182,0,0,0,182,0,0,0,0,0,0,0,0,0,0,0,0,8,4
+"2015",3,"MAR",30-MAR-15,"Poland","COUNTRY (FIR)",1841,259,0,259,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,3
+"2015",3,"MAR",30-MAR-15,"Portugal","COUNTRY (FIR)",1752,25,0,0,0,0,0,0,0,0,0,0,0,25,0,0,0,0,2,1
+"2015",3,"MAR",30-MAR-15,"Portugal Continental","COUNTRY (FIR)",1371,25,0,0,0,0,0,0,0,0,0,0,0,25,0,0,0,0,2,1
+"2015",3,"MAR",30-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",545,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"Romania","COUNTRY (FIR)",1525,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"SES Area (RP2)","AREA (FIR)",24993,21974,0,11462,0,182,0,0,0,0,0,0,0,2841,2272,0,5217,0,1076,633
+"2015",3,"MAR",30-MAR-15,"SW FAB","FAB (FIR)",4633,25,0,0,0,0,0,0,0,0,0,0,0,25,0,0,0,0,2,1
+"2015",3,"MAR",30-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1313,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"Slovakia","COUNTRY (FIR)",1079,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"Slovenia","COUNTRY (FIR)",803,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"Spain","COUNTRY (FIR)",4505,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"Spain Canarias","COUNTRY (FIR)",729,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"Spain Continental","COUNTRY (FIR)",4262,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"Sweden","COUNTRY (FIR)",2196,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",30-MAR-15,"Switzerland","COUNTRY (FIR)",2729,316,0,316,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,9
+"2015",3,"MAR",30-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",274,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"Turkey","COUNTRY (FIR)",3358,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",30-MAR-15,"UK Continental","COUNTRY (FIR)",6317,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",30-MAR-15,"UK Oceanic","COUNTRY (FIR)",1055,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"UK-Ireland FAB","FAB (FIR)",6385,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",30-MAR-15,"Ukraine","COUNTRY (FIR)",484,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",30-MAR-15,"United Kingdom","COUNTRY (FIR)",6581,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",31-MAR-15,"Albania","COUNTRY (FIR)",408,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"Armenia","COUNTRY (FIR)",104,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"Austria","COUNTRY (FIR)",2733,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",31-MAR-15,"BLUE MED FAB","FAB (FIR)",5553,8127,0,58,0,0,0,0,5470,0,0,0,0,2599,0,0,0,0,206,154
+"2015",3,"MAR",31-MAR-15,"Baltic FAB","FAB (FIR)",2018,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",31-MAR-15,"Belgium","COUNTRY (FIR)",3022,373,0,373,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,12
+"2015",3,"MAR",31-MAR-15,"Bosnia and Herzegovina","COUNTRY (FIR)",659,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"Bulgaria","COUNTRY (FIR)",1736,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"Croatia","COUNTRY (FIR)",1142,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"Cyprus","COUNTRY (FIR)",819,8127,0,58,0,0,0,0,5470,0,0,0,0,2599,0,0,0,0,206,154
+"2015",3,"MAR",31-MAR-15,"Czech Republic","COUNTRY (FIR)",1812,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"DANUBE FAB","FAB (FIR)",2097,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"DK-SE FAB","FAB (FIR)",2747,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"Denmark","COUNTRY (FIR)",1663,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"Estonia","COUNTRY (FIR)",493,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"FAB CE","FAB (FIR)",4717,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",31-MAR-15,"FAB CE (SES RP1)","FAB (FIR)",4271,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",31-MAR-15,"FAB CE (SES RP2)","FAB (FIR)",4702,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",31-MAR-15,"FABEC","FAB (FIR)",14237,4811,0,373,0,0,0,0,0,0,0,0,0,2117,0,0,2321,0,144,101
+"2015",3,"MAR",31-MAR-15,"Finland","COUNTRY (FIR)",710,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"France","COUNTRY (FIR)",7668,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",31-MAR-15,"Georgia","COUNTRY (FIR)",315,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"Germany","COUNTRY (FIR)",7590,4438,0,0,0,0,0,0,0,0,0,0,0,2117,0,0,2321,0,123,89
+"2015",3,"MAR",31-MAR-15,"Greece","COUNTRY (FIR)",1434,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"Hungary","COUNTRY (FIR)",1727,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"Ireland","COUNTRY (FIR)",1103,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"Italy","COUNTRY (FIR)",4192,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",31-MAR-15,"Latvia","COUNTRY (FIR)",611,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"Lithuania","COUNTRY (FIR)",687,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"Malta","COUNTRY (FIR)",307,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"Moldova","COUNTRY (FIR)",93,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"NEFAB","FAB (FIR)",2712,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"Netherlands","COUNTRY (FIR)",2770,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",31-MAR-15,"Norway","COUNTRY (FIR)",1592,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"Poland","COUNTRY (FIR)",1762,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",31-MAR-15,"Portugal","COUNTRY (FIR)",1494,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",31-MAR-15,"Portugal Continental","COUNTRY (FIR)",1318,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",31-MAR-15,"Portugal Santa Maria","COUNTRY (FIR)",343,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"Romania","COUNTRY (FIR)",1550,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"SES Area (RP2)","AREA (FIR)",23700,13988,0,1481,0,0,0,0,5470,0,0,0,0,4716,0,0,2321,0,416,291
+"2015",3,"MAR",31-MAR-15,"SW FAB","FAB (FIR)",4542,1050,0,1050,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,36
+"2015",3,"MAR",31-MAR-15,"Serbia and Montenegro","COUNTRY (FIR)",1226,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"Slovakia","COUNTRY (FIR)",1085,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"Slovenia","COUNTRY (FIR)",725,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"Spain","COUNTRY (FIR)",4421,1050,0,1050,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,36
+"2015",3,"MAR",31-MAR-15,"Spain Canarias","COUNTRY (FIR)",718,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"Spain Continental","COUNTRY (FIR)",4150,1050,0,1050,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,36
+"2015",3,"MAR",31-MAR-15,"Sweden","COUNTRY (FIR)",2034,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"Switzerland","COUNTRY (FIR)",2557,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",31-MAR-15,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",244,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"Turkey","COUNTRY (FIR)",3290,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",31-MAR-15,"UK Continental","COUNTRY (FIR)",6009,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",31-MAR-15,"UK Oceanic","COUNTRY (FIR)",1018,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"UK-Ireland FAB","FAB (FIR)",6090,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2015",3,"MAR",31-MAR-15,"Ukraine","COUNTRY (FIR)",475,,,,,,,,,,,,,,,,,,,
+"2015",3,"MAR",31-MAR-15,"United Kingdom","COUNTRY (FIR)",6249,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
