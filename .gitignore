@@ -11,5 +11,5 @@ auto/
 .jekyll-assets-cache/
 Gemfile.lock
 .auctex-auto/
-.bundle/
-vendor/
+vendor
+.bundle
