@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 # Jekyll
 gem 'jekyll', "3.1.3"
 
-gem 'rake'
-gem 'html-proofer'
+# gem 'rake'
+# gem 'html-proofer'
 gem 'uglifier'
 gem 'mini_magick'
 
@@ -16,4 +16,5 @@ gem 'jekyll-sitemap'
 gem 'jekyll-scholar'
 gem 'jekyll-redirect-from'
 gem 'jekyll-seo-tag'
+gem 'rack'
 gem 'jekyll-figure'
