@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 # Jekyll
 gem 'jekyll', "3.1.3"
 
+gem 'activesupport', '4.2.7'
+
 gem 'rake'
 gem 'html-proofer'
 gem 'uglifier'
