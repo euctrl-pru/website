@@ -120,14 +120,24 @@ else
         opt_h
         exit 1
     fi
+
+    (( "$WEF" > "$TIL" )) && echo "Error: WEF > TIL" && exit 1
 fi
 
-ts="$WEF"
-while [ "$ts" != "$TIL" ]; do
-    next=$(date -d "$ts +1 month" "+%Y%m%d")
+
+
+
+beg="$WEF"
+while (( "$beg" != "$TIL" )); do
+    next=$(date -d "$beg +1 month" "+%Y%m%d")
+
+    YYYY=$(date --date="$beg" +"%Y")
+    MMMM=$(date --date="$beg" +"%m")
+    OUTPUT_FILENAME="ert_dly_fir_${YYYY}${MMMM}.csv"
 
     "${SCRIPT_DIR}"/extract_enroute_atfm_delay_fir_data \
-                   "'$(date --date="$ts" +"%d-%b-%Y" | tr '[:lower:]' '[:upper:]')'" \
-                   "'$(date --date="$next" +"%d-%b-%Y" | tr '[:lower:]' '[:upper:]')'"
-    ts=$next
+                   -f "$OUTPUT_FILENAME" \
+                   "$beg" \
+                   "$next"
+    beg=$next
 done

@@ -120,13 +120,22 @@ else
         opt_h
         exit 1
     fi
+
+    (( "$WEF" > "$TIL" )) && echo "Error: WEF > TIL" && exit 1
+
 fi
 
-ts="$WEF"
-while [ "$ts" != "$TIL" ]; do
-    next=$(date -d "$ts +1 month" "+%Y%m%d")
+beg="$WEF"
+while (( "$beg" < "$TIL" )); do
+    next=$(date -d "$beg +1 month" "+%Y%m%d")
 
-    extract_en-route_traffic_data "$ts" "$next"
-    extract_en-route_traffic_fab_fir_data "$ts" "$next"
-    ts=$next
+    YYYY=$(date --date="$beg" +"%Y")
+    MMMM=$(date --date="$beg" +"%m")
+
+    OUTPUT_FILENAME="ert_flt_${YYYY}${MMMM}.csv"
+    extract_en-route_traffic_data -f "$OUTPUT_FILENAME" "$beg" "$next"
+
+    OUTPUT_FILENAME="ert_flt_fab_fir_${YYYY}${MMMM}.csv"
+    extract_en-route_traffic_fab_fir_data -f "$OUTPUT_FILENAME" "$beg" "$next"
+    beg=$next
 done
