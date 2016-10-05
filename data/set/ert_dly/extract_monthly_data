@@ -29,11 +29,11 @@
 ##- Caveat: be sure to use gnu-getopt and not OSX builtin or Git Bash missing one ;-)
 
 
-SCRIPT=$(basename ${BASH_SOURCE[0]})
-OUTPUT_FILENAME=''
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SCRIPT=$(basename "${BASH_SOURCE[0]}")
 
-help=$(grep "^##-" ${BASH_SOURCE} | cut -c 4-)
-version=$(grep "^#--"  "${BASH_SOURCE}" | cut -c 4-)
+help=$(grep "^##-" "${SCRIPT_DIR}/${SCRIPT}" | cut -c 4-)
+version=$(grep "^#--"  "${SCRIPT_DIR}/${SCRIPT}" | cut -c 4-)
 opt_h() {
     echo "$help"
 }
@@ -45,7 +45,15 @@ opt_v() {
 
 # Execute getopt
 TEMP=$(getopt -o :hV --long ":help,version" -n "$SCRIPT" -- "$@");
+
+if [ $? != 0 ]
+then
+    echo "Invalid option(s): $*" >&2
+    exit 1
+fi
+
 eval set -- "$TEMP"
+unset TEMP
 
 while true; do
     case "$1" in
@@ -79,33 +87,47 @@ if (( $# != 2 )); then
     opt_h
     exit 1
 else
-    WEF=$(date --date="${1}01" +"%Y%m%d")
-    if [ -z $WEF ]
+    WEFTIL_FORMAT="^[0-9][0-9][0-9][0-9][0-9][0-9]$"
+
+    # test WEF is of correct format
+    if [[ ! ($1 =~ $WEFTIL_FORMAT) ]]
     then
-        echo "Error: invalid WEF"
-        opt_h
+        echo "Error: WEF is not a 6-digit number"
+        echo_h
         exit 1
-    else
-        declare -ri WEF_YYYY=$(( $(date --date=$WEF +"%Y") ))
-        declare -ri WEF_MMMM=$(( $(date --date=$WEF +"%m") ))
     fi
 
-    TIL=$(date --date="${2}01" +"%Y%m%d")
-    if [ -z $TIL ]
+    WEF=$(date --date="${1}01" +"%Y%m%d" 2>/dev/null)
+    if [ -z "$WEF" ]
     then
-        echo "Error: invalid TIL"
+        echo "Error: invalid WEF = $WEF"
         opt_h
         exit 1
-    else
-        declare -ri TIL_YYYY=$(( $(date --date=$TIL +"%Y") ))
-        declare -ri TIL_MMMM=$(( $(date --date=$TIL +"%m") ))
+    fi
+
+    # test TIL is of correct format
+    if [[ ! ($2 =~ $WEFTIL_FORMAT) ]]
+    then
+        echo "Error: TIL is not a 6-digit number"
+        echo_h
+        exit 1
+    fi
+
+    TIL=$(date --date="${2}01" +"%Y%m%d" 2>/dev/null)
+    if [ -z "$TIL" ]
+    then
+        echo "Error: invalid TIL = $TIL"
+        opt_h
+        exit 1
     fi
 fi
 
 ts="$WEF"
 while [ "$ts" != "$TIL" ]; do
     next=$(date -d "$ts +1 month" "+%Y%m%d")
-    echo $ts $next
-    extract_enroute_atfm_delay_fir_data $ts $next
+
+    "${SCRIPT_DIR}"/extract_enroute_atfm_delay_fir_data \
+                   "'$(date --date="$ts" +"%d-%b-%Y" | tr '[:lower:]' '[:upper:]')'" \
+                   "'$(date --date="$next" +"%d-%b-%Y" | tr '[:lower:]' '[:upper:]')'"
     ts=$next
 done

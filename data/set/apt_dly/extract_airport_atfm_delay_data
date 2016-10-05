@@ -23,67 +23,111 @@
 ##-   -V, --version           Output version information and exit.
 ##-
 ##- Examples:
-##- $ extract_airport_atfm_delay_data '01-JAN-2014' '01-JUN-2016'
+##- Extract data from Jan 1, 2014 to Jun 1, 2016 (excluded):
+##- $ extract_airport_atfm_delay_data 20140101 20160601
 ##-
 ##- Caveat: be sure to use gnu-getopt and not OSX builtin or Git Bash missing one ;-)
 
-SCRIPT=$(basename ${BASH_SOURCE[0]})
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SCRIPT=$(basename "${BASH_SOURCE[0]}")
 OUTPUT_FILENAME='apt_dly.json'  # this is a trick
 
-help=$(grep "^##-" "${SCRIPT}" | cut -c 4-)
-version=$(grep "^#--"  "${SCRIPT}" | cut -c 4-)
 opt_h() {
-  echo "$help"
+    help=$(grep "^##-" "${SCRIPT_DIR}/${SCRIPT}" | cut -c 4-)
+    echo "$help"
 }
 
 opt_v() {
-  echo "$version"
+    version=$(grep "^#--"  "${SCRIPT_DIR}/${SCRIPT}" | cut -c 4-)
+    echo "$version"
 }
 
 
 
 # Execute getopt
 TEMP=$(getopt -o :hV --long "help,version" -n "$SCRIPT" -- "$@");
+
+if [ $? != 0 ]
+then
+    echo "Invalid option(s): $*" >&2
+    exit 1
+fi
+
 eval set -- "$TEMP"
+unset TEMP
 
 while true; do
-   case $1 in
-   -h|--help)
-      opt_h
-      exit
-      ;;
-   -V|--version)
-      opt_v
-      exit
-      ;;
-   --)
-      shift
-      break
-      ;;
-   \?)
-      echo "Invalid option: -$OPTARG" >&2
-      opt_h
-      exit 1
-      ;;
-   *)
-      echo "Internal error!"
-      exit 1
-      ;;
-   esac
+    case $1 in
+        -h|--help)
+            opt_h
+            exit
+            ;;
+        -V|--version)
+            opt_v
+            exit
+            ;;
+        --)
+            shift
+            break
+            ;;
+        \?)
+            echo "Invalid option: -$OPTARG" >&2
+            opt_h
+            exit 1
+            ;;
+        *)
+            echo "Internal error!"
+            exit 1
+            ;;
+    esac
 done
+
 
 # there are two mandatory arguments
 if (( $# != 2 )); then
-   echo "Error: illegal number of parameters"
-   opt_h
-   exit 1
+    echo "Error: illegal number of parameters"
+    opt_h
+    exit 1
 else
-    WEF=$1
-    TIL=$2
+    WEFTIL_FORMAT="^[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$"
+
+    # test WEF is of correct format
+    if [[ ! ($1 =~ $WEFTIL_FORMAT) ]]
+    then
+        echo "Error: WEF is not a 8-digit number"
+        echo_h
+        exit 1
+    fi
+
+    WEF=$(date --date="${1}" +"%Y%m%d" 2>/dev/null)
+    if [ -z "$WEF" ]
+    then
+        echo "Error: invalid WEF = $WEF"
+        opt_h
+        exit 1
+    fi
+
+    # test TIL is of correct format
+    if [[ ! ($2 =~ $WEFTIL_FORMAT) ]]
+    then
+        echo "Error: TIL is not a 8-digit number"
+        echo_h
+        exit 1
+    fi
+
+    TIL=$(date --date="${2}" +"%Y%m%d" 2>/dev/null)
+    if [ -z "$TIL" ]
+    then
+        echo "Error: invalid TIL = $TIL"
+        opt_h
+        exit 1
+    fi
 fi
 
+WEF=$(date --date="$WEF" +"%d-%b-%Y" | tr '[:lower:]' '[:upper:]')
+TIL=$(date --date="$WEF" +"%d-%b-%Y" | tr '[:lower:]' '[:upper:]')
 
-sql -S $DBUSR/$DBPWD@$DBNAME @airport_arrival_atfm_delay_csv.sql $OUTPUT_FILENAME $WEF $TIL
+sql -S "$DBUSR"/"$DBPWD"@"$DBNAME" @airport_arrival_atfm_delay_csv.sql $OUTPUT_FILENAME "'$WEF'" "'$TIL'"
 
 # remove blank lines in place
 sed -i -E 's/^ +//; s/ +$//; /^$/d' $OUTPUT_FILENAME

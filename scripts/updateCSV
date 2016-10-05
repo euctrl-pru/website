@@ -29,85 +29,92 @@
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SCRIPT="$(basename "${BASH_SOURCE[0]}")"
 
-help=$(grep "^##-" "${SCRIPT}" | cut -c 4-)
-version=$(grep "^#--"  "${SCRIPT}" | cut -c 4-)
+help=$(grep "^##-" "${SCRIPT_DIR}/${SCRIPT}" | cut -c 4-)
+version=$(grep "^#--"  "${SCRIPT_DIR}/${SCRIPT}" | cut -c 4-)
 
 opt_h() {
-  echo "$help"
+    echo "$help"
 }
 
 opt_v() {
-  echo "$version"
+    echo "$version"
 }
 
 
 # Execute getopt
 TEMP=$(getopt -o :hV --long "help,version" -n "${SCRIPT}" -- "$@");
+
+if [ $? != 0 ]
+then
+    echo "Invalid option(s): $*" >&2
+    exit 1
+fi
+
 eval set -- "$TEMP"
 unset TEMP
 
 while true; do
-   case $1 in
-   -h|--help)
-      opt_h
-      exit
-      ;;
-   -V|--version)
-      opt_v
-      exit
-      ;;
-   --)
-      shift
-      break
-      ;;
-   \?)
-      echo "Invalid option: -$OPTARG" >&2
-      opt_h
-      exit 1
-      ;;
-   *)
-      echo "Internal error!"
-      exit 1
-      ;;
-   esac
+    case $1 in
+        -h|--help)
+            opt_h
+            exit
+            ;;
+        -V|--version)
+            opt_v
+            exit
+            ;;
+        --)
+            shift
+            break
+            ;;
+        \?)
+            echo "Invalid option: -$OPTARG" >&2
+            opt_h
+            exit 1
+            ;;
+        *)
+            echo "Internal error!"
+            exit 1
+            ;;
+    esac
 done
 
 # there are NO mandatory arguments
 if (( $# != 0 )); then
-   echo "Error: illegal number of parameters"
-   opt_h
-   exit 1
+    echo "Error: illegal number of parameters"
+    opt_h
+    exit 1
 fi
 
 
 (
-    cd ${SCRIPT_DIR}/../data/set/hfe;
+    cd "${SCRIPT_DIR}/../data/set/hfe" || exit;
     DBUSR=$HFEDBUSR DBPWD=$HFEDBPWD ./extract_horizontal_flight_efficiency_data;
 )
 
 (
-    cd ${SCRIPT_DIR}/../data/set/ert_flt;
+    cd "${SCRIPT_DIR}/../data/set/ert_flt" || exit;
     DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_en-route_traffic_fab_fir_data '01-JAN-2015' '01-SEP-2016';
-    cp -f En-Route_Traffic_FAB_FIR.csv ${SCRIPT_DIR}/../graphics/en-route_atfm_delay_fab/
+    cp -f En-Route_Traffic_FAB_FIR.csv "${SCRIPT_DIR}/../graphics/en-route_atfm_delay_fab/"
 )
 
 (
-    cd ${SCRIPT_DIR}/../data/set/ert_dly;
+    cd "${SCRIPT_DIR}/../data/set/ert_dly" || exit;
     DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_ansp_composition_data;
-    mv -f ansp_composition.csv ${SCRIPT_DIR}/../_data/.
+    mv -f ansp_composition.csv "${SCRIPT_DIR}/../_data/."
 )
 
 ######### extract monthly file for ert_dly ###########
 # limit to latest months not yet in data/csv directory
 (
-    cd ${SCRIPT_DIR}/../data/set/ert_dly;
+    cd "${SCRIPT_DIR}/../data/set/ert_dly" || exit;
     DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_monthly_data 201609 201610;
-    mv -f ert_dly_fir_*.csv ${SCRIPT_DIR}/../_data/csv/.
+    mv -f ert_dly_fir_*.csv "${SCRIPT_DIR}/../_data/csv/."
 )
 
 
 (
-    cd ${SCRIPT_DIR}/../data/set/apt_dly;
+    cd "${SCRIPT_DIR}/../data/set/apt_dly" || exit;
     DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_airport_atfm_delay_data '01-JAN-2014' '01-SEP-2016';
 )
 
