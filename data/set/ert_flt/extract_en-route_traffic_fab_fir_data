@@ -125,7 +125,7 @@ else
 fi
 
 WEF=$(date --date="$WEF" +"%d-%b-%Y" | tr '[:lower:]' '[:upper:]')
-TIL=$(date --date="$WEF" +"%d-%b-%Y" | tr '[:lower:]' '[:upper:]')
+TIL=$(date --date="$TIL" +"%d-%b-%Y" | tr '[:lower:]' '[:upper:]')
 
 sql -S "$DBUSR"/"$DBPWD"@"$DBNAME" @en-route_traffic_fab_fir_csv.sql "$OUTPUT_FILENAME" "'$WEF'" "'$TIL'"
 
