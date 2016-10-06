@@ -9,7 +9,7 @@
 ##- Usage: extract_en-route_traffic_data [-f filename] WEF TIL
 ##- Extract Rn-route Traffic data to csv file, filename,
 ##- for the interval [WEF, TIL). Note: TIL is _not_ included.
-##- WEF/TIL format: <YYYY><MM><DD>, i.e. 20160311 ()Mar 11, 2016)
+##- WEF/TIL format: <YYYY><MM><DD>, i.e. 20160311 (Mar 11, 2016)
 ##-
 ##- Assumptions:
 ##-   DBUSR                   environment variable for the relevant schema username.
@@ -44,7 +44,7 @@ opt_v() {
 
 
 # Execute getopt
-TEMP=$(getopt -o :hV --long ",help,version" -n "$SCRIPT" -- "$@");
+TEMP=$(getopt -o f:hV --long "file:help,version" -n "$SCRIPT" -- "$@");
 
 if [ $? != 0 ]
 then
