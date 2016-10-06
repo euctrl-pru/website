@@ -107,7 +107,7 @@ exclude:
   - "*.sql"
   - "references/*.bib"
   - tmp
-  - auto
+  - references/auto
   - node_modules
   - package.json
   - npm-debug.log
@@ -115,3 +115,5 @@ exclude:
   - vendor
   - .travis.yml
   - "data/set/*/extract_*"
+  - "*.py"
+  - "*.R"
