@@ -13,3 +13,5 @@ Gemfile.lock
 .auctex-auto/
 vendor
 .bundle
+.Rproj.user
+.Rhistory

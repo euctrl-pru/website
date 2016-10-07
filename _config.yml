@@ -116,4 +116,6 @@ exclude:
   - .travis.yml
   - "data/set/*/extract_*"
   - "*.py"
-  - "*.R"
+  - R/
+  - website.Rproj
+  - .Rhistory
