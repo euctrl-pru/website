@@ -93,7 +93,7 @@ else
     if [[ ! ($1 =~ $WEFTIL_FORMAT) ]]
     then
         echo "Error: WEF is not a 6-digit number"
-        echo_h
+        opt_h
         exit 1
     fi
 
@@ -109,7 +109,7 @@ else
     if [[ ! ($2 =~ $WEFTIL_FORMAT) ]]
     then
         echo "Error: TIL is not a 6-digit number"
-        echo_h
+        opt_h
         exit 1
     fi
 
