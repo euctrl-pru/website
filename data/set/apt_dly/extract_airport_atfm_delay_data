@@ -95,7 +95,7 @@ else
     if [[ ! ($1 =~ $WEFTIL_FORMAT) ]]
     then
         echo "Error: WEF is not a 8-digit number"
-        echo_h
+        opt_h
         exit 1
     fi
 
@@ -111,7 +111,7 @@ else
     if [[ ! ($2 =~ $WEFTIL_FORMAT) ]]
     then
         echo "Error: TIL is not a 8-digit number"
-        echo_h
+        opt_h
         exit 1
     fi
 
@@ -125,7 +125,7 @@ else
 fi
 
 WEF=$(date --date="$WEF" +"%d-%b-%Y" | tr '[:lower:]' '[:upper:]')
-TIL=$(date --date="$WEF" +"%d-%b-%Y" | tr '[:lower:]' '[:upper:]')
+TIL=$(date --date="$TIL" +"%d-%b-%Y" | tr '[:lower:]' '[:upper:]')
 
 sql -S "$DBUSR"/"$DBPWD"@"$DBNAME" @airport_arrival_atfm_delay_csv.sql $OUTPUT_FILENAME "'$WEF'" "'$TIL'"
 
