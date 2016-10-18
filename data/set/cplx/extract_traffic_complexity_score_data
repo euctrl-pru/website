@@ -27,60 +27,67 @@
 ##-
 ##- Caveat: be sure to use gnu-getopt and not OSX builtin or Git Bash missing one ;-)
 
-SCRIPT=$(basename ${BASH_SOURCE[0]})
-OUTPUT_FILENAME=cplx.csv
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SCRIPT=$(basename "${BASH_SOURCE[0]}")
+OUTPUT_FILENAME='cplx.csv'
 
-help=$(grep "^##-" "${SCRIPT}" | cut -c 4-)
-version=$(grep "^#--"  "${SCRIPT}" | cut -c 4-)
 opt_h() {
-  echo "$help"
+    help=$(grep "^##-" "${SCRIPT_DIR}/${SCRIPT}" | cut -c 4-)
+    echo "$help"
 }
 
 opt_v() {
-  echo "$version"
+    version=$(grep "^#--"  "${SCRIPT_DIR}/${SCRIPT}" | cut -c 4-)
+    echo "$version"
 }
-
 
 
 # Execute getopt
 TEMP=$(getopt -o :hV --long "help,version" -n "$SCRIPT" -- "$@");
+
+if [ $? != 0 ]
+then
+    echo "Invalid option(s): $*" >&2
+    exit 1
+fi
 eval set -- "$TEMP"
+unset TEMP
 
 while true; do
-   case $1 in
-   -h|--help)
-      opt_h
-      exit
-      ;;
-   -V|--version)
-      opt_v
-      exit
-      ;;
-   --)
-      shift
-      break
-      ;;
-   \?)
-      echo "Invalid option: -$OPTARG" >&2
-      opt_h
-      exit 1
-      ;;
-   *)
-      echo "Internal error!"
-      exit 1
-      ;;
-   esac
+    case $1 in
+        -h|--help)
+            opt_h
+            exit
+            ;;
+        -V|--version)
+            opt_v
+            exit
+            ;;
+        --)
+            shift
+            break
+            ;;
+        \?)
+            echo "Invalid option: -$OPTARG" >&2
+            opt_h
+            exit 1
+            ;;
+        *)
+            echo "Internal error!"
+            exit 1
+            ;;
+    esac
 done
 
 # there are NO mandatory arguments
 if (( $# != 0 )); then
-   echo "Error: illegal number of parameters"
-   opt_h
-   exit 1
+    echo "Error: illegal number of parameters"
+    opt_h
+    exit 1
 fi
 
 
-sql -S $DBUSR/$DBPWD@$DBNAME @traffic_complexity_score_csv.sql $OUTPUT_FILENAME
+sql -S "$DBUSR"/"$DBPWD"@"$DBNAME" @traffic_complexity_score_csv.sql "$OUTPUT_FILENAME"
 
 # remove blank lines in place
-sed -i -E 's/^ +//; s/ +$//; /^$/d' $OUTPUT_FILENAME
+sed -i -E 's/^ +//; s/ +$//; /^$/d' "$OUTPUT_FILENAME"

@@ -140,42 +140,13 @@ relevant for **SES RP2**.
 
 Click to zoom in/out. Hoover with the mouse to get further information.
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.20/topojson.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
-
-{% stylesheet fabs %}
-{% javascript fabs %}
-
-<div id="tooltip" class="hidden">
-    <p id="info"></p>
-</div>
-<div id="chart"></div>
-
-<script type="text/javascript">
-(function () {
-
-  // general design from
-  // http://www.jeromecukier.net/blog/2013/11/20/getting-beyond-hello-world-with-d3/
-  var params = {
-    refresh: false, // REMOVE, i.e. `false`, for production
-  	width: 800,
-  	height:580,
-  	scale: 530,
-    rotateLat:-53,
-    rotateLon: 0,
-    topo: "{% asset_path euctrl-firs.json %}",
-  	world: "{% asset_path world-50m.json %}"
-  };
-
-  var query = window.location.search.substring(1);
-  var vars = query.split("&");
-  vars.forEach(function(v) {
-      var p = v.split("=");
-      params[p[0]] = p[1];
-  })
-
-  vis.init(params);
-}());
+{% javascript vendor/pym.min %}
+<div id="fabs_firs_map"></div>
+<script>
+ var pymParent = new pym.Parent(
+   'fabs_firs_map',
+   '{{ "/graphics/fabs_firs_map/index.html" | prepend: site.baseurl | prepend: site.url }}',
+   {});
 </script>
 
 

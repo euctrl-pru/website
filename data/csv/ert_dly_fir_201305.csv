@@ -1,0 +1,1365 @@
+"YEAR","MONTH_NUM","MONTH_MON","FLT_DATE","ENTITY_NAME","ENTITY_TYPE","FLT_ERT_1","DLY_ERT_1","DLY_ERT_A_1","DLY_ERT_C_1","DLY_ERT_D_1","DLY_ERT_E_1","DLY_ERT_G_1","DLY_ERT_I_1","DLY_ERT_M_1","DLY_ERT_N_1","DLY_ERT_O_1","DLY_ERT_P_1","DLY_ERT_R_1","DLY_ERT_S_1","DLY_ERT_T_1","DLY_ERT_V_1","DLY_ERT_W_1","DLY_ERT_NA_1","FLT_ERT_1_DLY","FLT_ERT_1_DLY_15"
+"2013",5,"MAY",01-MAY-13,"Albania","COUNTRY (FIR)",518,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Armenia","COUNTRY (FIR)",126,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Austria","COUNTRY (FIR)",3122,397,0,0,0,0,0,0,0,0,0,397,0,0,0,0,0,0,33,11
+"2013",5,"MAY",01-MAY-13,"Belgium","COUNTRY (FIR)",3115,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",694,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Bulgaria","COUNTRY (FIR)",1545,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Croatia","COUNTRY (FIR)",1254,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Cyprus","COUNTRY (FIR)",872,2138,0,2138,0,0,0,0,0,0,0,0,0,0,0,0,0,0,121,65
+"2013",5,"MAY",01-MAY-13,"Czech Republic","COUNTRY (FIR)",1785,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Denmark","COUNTRY (FIR)",1704,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Estonia","COUNTRY (FIR)",479,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Finland","COUNTRY (FIR)",601,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"France","COUNTRY (FIR)",7494,166,0,166,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,4
+"2013",5,"MAY",01-MAY-13,"Georgia","COUNTRY (FIR)",271,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Germany","COUNTRY (FIR)",8070,471,0,471,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,13
+"2013",5,"MAY",01-MAY-13,"Greece","COUNTRY (FIR)",1661,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Hungary","COUNTRY (FIR)",1616,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Ireland","COUNTRY (FIR)",1254,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Italy","COUNTRY (FIR)",4387,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Latvia","COUNTRY (FIR)",608,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",01-MAY-13,"Lithuania","COUNTRY (FIR)",660,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Malta","COUNTRY (FIR)",296,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Moldova","COUNTRY (FIR)",229,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Netherlands","COUNTRY (FIR)",3208,219,0,219,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,6
+"2013",5,"MAY",01-MAY-13,"Norway","COUNTRY (FIR)",1431,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Poland","COUNTRY (FIR)",1764,353,0,353,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,8
+"2013",5,"MAY",01-MAY-13,"Portugal","COUNTRY (FIR)",1345,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Portugal Continental","COUNTRY (FIR)",1205,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",282,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Romania","COUNTRY (FIR)",1363,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1333,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Slovakia","COUNTRY (FIR)",1013,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Slovenia","COUNTRY (FIR)",857,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Spain","COUNTRY (FIR)",4365,810,0,810,0,0,0,0,0,0,0,0,0,0,0,0,0,0,42,26
+"2013",5,"MAY",01-MAY-13,"Spain Canarias","COUNTRY (FIR)",584,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Spain Continental","COUNTRY (FIR)",4193,810,0,810,0,0,0,0,0,0,0,0,0,0,0,0,0,0,42,26
+"2013",5,"MAY",01-MAY-13,"Sweden","COUNTRY (FIR)",1690,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Switzerland","COUNTRY (FIR)",2722,76,0,76,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,3
+"2013",5,"MAY",01-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",268,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Turkey","COUNTRY (FIR)",3292,328,0,0,0,0,0,0,0,0,328,0,0,0,0,0,0,0,23,9
+"2013",5,"MAY",01-MAY-13,"UK Continental","COUNTRY (FIR)",6409,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",01-MAY-13,"UK Oceanic","COUNTRY (FIR)",1049,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"Ukraine","COUNTRY (FIR)",1426,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",01-MAY-13,"United Kingdom","COUNTRY (FIR)",6570,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",02-MAY-13,"Albania","COUNTRY (FIR)",540,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Armenia","COUNTRY (FIR)",118,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Austria","COUNTRY (FIR)",3092,543,0,0,0,0,0,0,0,0,0,543,0,0,0,0,0,0,36,13
+"2013",5,"MAY",02-MAY-13,"Belgium","COUNTRY (FIR)",3208,626,0,146,0,0,0,0,0,0,0,0,0,0,0,0,480,0,54,14
+"2013",5,"MAY",02-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",694,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Bulgaria","COUNTRY (FIR)",1482,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Croatia","COUNTRY (FIR)",1293,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Cyprus","COUNTRY (FIR)",863,2433,0,2433,0,0,0,0,0,0,0,0,0,0,0,0,0,0,168,69
+"2013",5,"MAY",02-MAY-13,"Czech Republic","COUNTRY (FIR)",1904,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Denmark","COUNTRY (FIR)",1841,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Estonia","COUNTRY (FIR)",503,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Finland","COUNTRY (FIR)",780,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"France","COUNTRY (FIR)",8226,809,0,279,0,0,0,0,0,0,0,0,0,0,0,0,530,0,67,21
+"2013",5,"MAY",02-MAY-13,"Georgia","COUNTRY (FIR)",258,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Germany","COUNTRY (FIR)",8720,309,0,309,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,11
+"2013",5,"MAY",02-MAY-13,"Greece","COUNTRY (FIR)",1760,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Hungary","COUNTRY (FIR)",1629,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Ireland","COUNTRY (FIR)",1392,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Italy","COUNTRY (FIR)",4522,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Latvia","COUNTRY (FIR)",633,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Lithuania","COUNTRY (FIR)",657,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Malta","COUNTRY (FIR)",284,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Moldova","COUNTRY (FIR)",211,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Netherlands","COUNTRY (FIR)",3337,1615,0,1615,0,0,0,0,0,0,0,0,0,0,0,0,0,0,106,52
+"2013",5,"MAY",02-MAY-13,"Norway","COUNTRY (FIR)",1877,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Poland","COUNTRY (FIR)",1742,127,0,127,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,1
+"2013",5,"MAY",02-MAY-13,"Portugal","COUNTRY (FIR)",1327,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Portugal Continental","COUNTRY (FIR)",1209,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",243,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Romania","COUNTRY (FIR)",1320,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1377,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Slovakia","COUNTRY (FIR)",1020,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Slovenia","COUNTRY (FIR)",859,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Spain","COUNTRY (FIR)",4499,1022,0,1022,0,0,0,0,0,0,0,0,0,0,0,0,0,0,77,29
+"2013",5,"MAY",02-MAY-13,"Spain Canarias","COUNTRY (FIR)",590,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Spain Continental","COUNTRY (FIR)",4256,1022,0,1022,0,0,0,0,0,0,0,0,0,0,0,0,0,0,77,29
+"2013",5,"MAY",02-MAY-13,"Sweden","COUNTRY (FIR)",2199,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Switzerland","COUNTRY (FIR)",2897,619,0,410,0,0,0,0,0,0,0,0,0,0,0,0,209,0,31,15
+"2013",5,"MAY",02-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",300,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Turkey","COUNTRY (FIR)",3275,130,0,0,0,0,0,0,0,0,130,0,0,0,0,0,0,0,11,3
+"2013",5,"MAY",02-MAY-13,"UK Continental","COUNTRY (FIR)",6749,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",02-MAY-13,"UK Oceanic","COUNTRY (FIR)",1148,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"Ukraine","COUNTRY (FIR)",1296,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",02-MAY-13,"United Kingdom","COUNTRY (FIR)",6904,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",03-MAY-13,"Albania","COUNTRY (FIR)",589,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Armenia","COUNTRY (FIR)",155,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Austria","COUNTRY (FIR)",3230,619,0,0,0,0,0,0,0,0,0,619,0,0,0,0,0,0,43,21
+"2013",5,"MAY",03-MAY-13,"Belgium","COUNTRY (FIR)",3376,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",754,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Bulgaria","COUNTRY (FIR)",1501,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Croatia","COUNTRY (FIR)",1444,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Cyprus","COUNTRY (FIR)",760,441,0,441,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,15
+"2013",5,"MAY",03-MAY-13,"Czech Republic","COUNTRY (FIR)",1917,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Denmark","COUNTRY (FIR)",1863,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Estonia","COUNTRY (FIR)",526,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Finland","COUNTRY (FIR)",770,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"France","COUNTRY (FIR)",8819,712,0,596,0,0,0,0,0,0,116,0,0,0,0,0,0,0,60,19
+"2013",5,"MAY",03-MAY-13,"Georgia","COUNTRY (FIR)",288,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Germany","COUNTRY (FIR)",9036,359,0,359,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,12
+"2013",5,"MAY",03-MAY-13,"Greece","COUNTRY (FIR)",1694,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",03-MAY-13,"Hungary","COUNTRY (FIR)",1742,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Ireland","COUNTRY (FIR)",1340,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Italy","COUNTRY (FIR)",4971,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",03-MAY-13,"Latvia","COUNTRY (FIR)",679,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Lithuania","COUNTRY (FIR)",668,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Malta","COUNTRY (FIR)",298,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Moldova","COUNTRY (FIR)",198,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Netherlands","COUNTRY (FIR)",3355,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",03-MAY-13,"Norway","COUNTRY (FIR)",1848,227,0,227,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,6
+"2013",5,"MAY",03-MAY-13,"Poland","COUNTRY (FIR)",1731,148,0,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,5
+"2013",5,"MAY",03-MAY-13,"Portugal","COUNTRY (FIR)",1389,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Portugal Continental","COUNTRY (FIR)",1253,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",288,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Romania","COUNTRY (FIR)",1455,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1409,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Slovakia","COUNTRY (FIR)",1107,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Slovenia","COUNTRY (FIR)",963,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Spain","COUNTRY (FIR)",4855,903,0,903,0,0,0,0,0,0,0,0,0,0,0,0,0,0,67,24
+"2013",5,"MAY",03-MAY-13,"Spain Canarias","COUNTRY (FIR)",662,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Spain Continental","COUNTRY (FIR)",4579,903,0,903,0,0,0,0,0,0,0,0,0,0,0,0,0,0,67,24
+"2013",5,"MAY",03-MAY-13,"Sweden","COUNTRY (FIR)",2203,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Switzerland","COUNTRY (FIR)",3034,413,0,413,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35,9
+"2013",5,"MAY",03-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",287,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Turkey","COUNTRY (FIR)",3285,103,0,0,0,0,0,0,0,0,103,0,0,0,0,0,0,0,10,2
+"2013",5,"MAY",03-MAY-13,"UK Continental","COUNTRY (FIR)",6921,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",03-MAY-13,"UK Oceanic","COUNTRY (FIR)",1141,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"Ukraine","COUNTRY (FIR)",1305,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",03-MAY-13,"United Kingdom","COUNTRY (FIR)",7075,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",04-MAY-13,"Albania","COUNTRY (FIR)",699,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Armenia","COUNTRY (FIR)",121,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Austria","COUNTRY (FIR)",3384,2076,0,0,0,0,0,0,0,0,0,159,0,0,0,0,1917,0,139,63
+"2013",5,"MAY",04-MAY-13,"Belgium","COUNTRY (FIR)",2994,532,0,532,0,0,0,0,0,0,0,0,0,0,0,0,0,0,44,13
+"2013",5,"MAY",04-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",941,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Bulgaria","COUNTRY (FIR)",1734,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Croatia","COUNTRY (FIR)",1797,937,0,0,0,0,0,0,0,0,0,0,0,0,0,0,937,0,61,27
+"2013",5,"MAY",04-MAY-13,"Cyprus","COUNTRY (FIR)",775,1702,0,973,0,0,0,0,0,0,0,0,0,729,0,0,0,0,104,46
+"2013",5,"MAY",04-MAY-13,"Czech Republic","COUNTRY (FIR)",1846,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Denmark","COUNTRY (FIR)",1401,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Estonia","COUNTRY (FIR)",538,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Finland","COUNTRY (FIR)",498,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"France","COUNTRY (FIR)",8444,1826,0,403,0,0,0,0,1423,0,0,0,0,0,0,0,0,0,135,54
+"2013",5,"MAY",04-MAY-13,"Georgia","COUNTRY (FIR)",284,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Germany","COUNTRY (FIR)",7779,291,0,291,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24,7
+"2013",5,"MAY",04-MAY-13,"Greece","COUNTRY (FIR)",2062,452,0,452,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28,12
+"2013",5,"MAY",04-MAY-13,"Hungary","COUNTRY (FIR)",1803,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Ireland","COUNTRY (FIR)",1240,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Italy","COUNTRY (FIR)",4976,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Latvia","COUNTRY (FIR)",696,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Lithuania","COUNTRY (FIR)",647,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Malta","COUNTRY (FIR)",278,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Moldova","COUNTRY (FIR)",195,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Netherlands","COUNTRY (FIR)",2890,88,0,88,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,1
+"2013",5,"MAY",04-MAY-13,"Norway","COUNTRY (FIR)",996,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Poland","COUNTRY (FIR)",1845,298,0,298,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24,10
+"2013",5,"MAY",04-MAY-13,"Portugal","COUNTRY (FIR)",1479,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Portugal Continental","COUNTRY (FIR)",1340,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",302,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Romania","COUNTRY (FIR)",1477,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1745,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Slovakia","COUNTRY (FIR)",1176,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Slovenia","COUNTRY (FIR)",1181,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Spain","COUNTRY (FIR)",4891,4326,0,4326,0,0,0,0,0,0,0,0,0,0,0,0,0,0,273,125
+"2013",5,"MAY",04-MAY-13,"Spain Canarias","COUNTRY (FIR)",713,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Spain Continental","COUNTRY (FIR)",4693,4326,0,4326,0,0,0,0,0,0,0,0,0,0,0,0,0,0,273,125
+"2013",5,"MAY",04-MAY-13,"Sweden","COUNTRY (FIR)",1459,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Switzerland","COUNTRY (FIR)",2941,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",04-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",379,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Turkey","COUNTRY (FIR)",3388,281,0,0,0,0,0,0,0,0,281,0,0,0,0,0,0,0,21,6
+"2013",5,"MAY",04-MAY-13,"UK Continental","COUNTRY (FIR)",5659,292,0,292,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,11
+"2013",5,"MAY",04-MAY-13,"UK Oceanic","COUNTRY (FIR)",1141,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"Ukraine","COUNTRY (FIR)",1406,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",04-MAY-13,"United Kingdom","COUNTRY (FIR)",5783,292,0,292,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,11
+"2013",5,"MAY",05-MAY-13,"Albania","COUNTRY (FIR)",709,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"Armenia","COUNTRY (FIR)",112,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"Austria","COUNTRY (FIR)",3363,964,0,0,0,0,0,0,0,0,0,964,0,0,0,0,0,0,68,29
+"2013",5,"MAY",05-MAY-13,"Belgium","COUNTRY (FIR)",3146,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",864,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"Bulgaria","COUNTRY (FIR)",1711,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"Croatia","COUNTRY (FIR)",1626,413,0,413,0,0,0,0,0,0,0,0,0,0,0,0,0,0,34,11
+"2013",5,"MAY",05-MAY-13,"Cyprus","COUNTRY (FIR)",947,6298,0,6298,0,0,0,0,0,0,0,0,0,0,0,0,0,0,295,186
+"2013",5,"MAY",05-MAY-13,"Czech Republic","COUNTRY (FIR)",1974,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"Denmark","COUNTRY (FIR)",1635,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"Estonia","COUNTRY (FIR)",541,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"Finland","COUNTRY (FIR)",627,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"France","COUNTRY (FIR)",8439,1104,0,401,0,0,0,0,606,0,97,0,0,0,0,0,0,0,93,28
+"2013",5,"MAY",05-MAY-13,"Georgia","COUNTRY (FIR)",267,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"Germany","COUNTRY (FIR)",8295,20,0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0
+"2013",5,"MAY",05-MAY-13,"Greece","COUNTRY (FIR)",2094,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",05-MAY-13,"Hungary","COUNTRY (FIR)",1752,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"Ireland","COUNTRY (FIR)",1306,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"Italy","COUNTRY (FIR)",5167,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"Latvia","COUNTRY (FIR)",685,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",05-MAY-13,"Lithuania","COUNTRY (FIR)",646,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"Malta","COUNTRY (FIR)",298,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"Moldova","COUNTRY (FIR)",197,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"Netherlands","COUNTRY (FIR)",3035,130,0,130,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,3
+"2013",5,"MAY",05-MAY-13,"Norway","COUNTRY (FIR)",1475,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"Poland","COUNTRY (FIR)",1953,488,0,488,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35,10
+"2013",5,"MAY",05-MAY-13,"Portugal","COUNTRY (FIR)",1485,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",05-MAY-13,"Portugal Continental","COUNTRY (FIR)",1264,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",05-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",366,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"Romania","COUNTRY (FIR)",1450,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1641,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"Slovakia","COUNTRY (FIR)",1197,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"Slovenia","COUNTRY (FIR)",1077,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"Spain","COUNTRY (FIR)",4932,5101,0,5101,0,0,0,0,0,0,0,0,0,0,0,0,0,0,339,160
+"2013",5,"MAY",05-MAY-13,"Spain Canarias","COUNTRY (FIR)",689,420,0,420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31,11
+"2013",5,"MAY",05-MAY-13,"Spain Continental","COUNTRY (FIR)",4688,4681,0,4681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,308,149
+"2013",5,"MAY",05-MAY-13,"Sweden","COUNTRY (FIR)",1858,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"Switzerland","COUNTRY (FIR)",2985,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",05-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",326,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"Turkey","COUNTRY (FIR)",3474,318,0,0,0,0,0,0,0,0,318,0,0,0,0,0,0,0,21,11
+"2013",5,"MAY",05-MAY-13,"UK Continental","COUNTRY (FIR)",5876,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",05-MAY-13,"UK Oceanic","COUNTRY (FIR)",1128,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"Ukraine","COUNTRY (FIR)",1410,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",05-MAY-13,"United Kingdom","COUNTRY (FIR)",6024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",06-MAY-13,"Albania","COUNTRY (FIR)",552,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Armenia","COUNTRY (FIR)",112,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Austria","COUNTRY (FIR)",3156,1721,0,0,0,0,0,0,0,0,0,801,0,0,0,0,920,0,105,54
+"2013",5,"MAY",06-MAY-13,"Belgium","COUNTRY (FIR)",3274,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",700,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Bulgaria","COUNTRY (FIR)",1515,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Croatia","COUNTRY (FIR)",1346,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Cyprus","COUNTRY (FIR)",840,1568,0,1568,0,0,0,0,0,0,0,0,0,0,0,0,0,0,75,43
+"2013",5,"MAY",06-MAY-13,"Czech Republic","COUNTRY (FIR)",1961,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Denmark","COUNTRY (FIR)",1890,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Estonia","COUNTRY (FIR)",498,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Finland","COUNTRY (FIR)",738,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"France","COUNTRY (FIR)",8385,282,0,192,0,0,0,0,0,0,90,0,0,0,0,0,0,0,31,3
+"2013",5,"MAY",06-MAY-13,"Georgia","COUNTRY (FIR)",236,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Germany","COUNTRY (FIR)",8899,876,0,760,0,0,0,0,0,0,0,0,0,116,0,0,0,0,64,26
+"2013",5,"MAY",06-MAY-13,"Greece","COUNTRY (FIR)",1714,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Hungary","COUNTRY (FIR)",1608,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Ireland","COUNTRY (FIR)",1289,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Italy","COUNTRY (FIR)",4813,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",06-MAY-13,"Latvia","COUNTRY (FIR)",617,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Lithuania","COUNTRY (FIR)",640,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Malta","COUNTRY (FIR)",287,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Moldova","COUNTRY (FIR)",163,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Netherlands","COUNTRY (FIR)",3234,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Norway","COUNTRY (FIR)",1983,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Poland","COUNTRY (FIR)",1925,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Portugal","COUNTRY (FIR)",1407,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Portugal Continental","COUNTRY (FIR)",1213,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",344,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Romania","COUNTRY (FIR)",1338,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1384,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Slovakia","COUNTRY (FIR)",1073,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Slovenia","COUNTRY (FIR)",864,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Spain","COUNTRY (FIR)",4719,1511,0,1511,0,0,0,0,0,0,0,0,0,0,0,0,0,0,104,40
+"2013",5,"MAY",06-MAY-13,"Spain Canarias","COUNTRY (FIR)",626,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Spain Continental","COUNTRY (FIR)",4494,1511,0,1511,0,0,0,0,0,0,0,0,0,0,0,0,0,0,104,40
+"2013",5,"MAY",06-MAY-13,"Sweden","COUNTRY (FIR)",2268,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Switzerland","COUNTRY (FIR)",2933,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",06-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",291,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Turkey","COUNTRY (FIR)",3219,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"UK Continental","COUNTRY (FIR)",6273,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",06-MAY-13,"UK Oceanic","COUNTRY (FIR)",1095,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"Ukraine","COUNTRY (FIR)",1230,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",06-MAY-13,"United Kingdom","COUNTRY (FIR)",6430,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",07-MAY-13,"Albania","COUNTRY (FIR)",500,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Armenia","COUNTRY (FIR)",161,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Austria","COUNTRY (FIR)",3230,692,0,0,0,0,0,0,0,0,0,692,0,0,0,0,0,0,51,22
+"2013",5,"MAY",07-MAY-13,"Belgium","COUNTRY (FIR)",3212,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",07-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",696,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Bulgaria","COUNTRY (FIR)",1443,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Croatia","COUNTRY (FIR)",1307,999,0,0,0,0,0,0,0,0,0,0,0,0,0,0,999,0,74,27
+"2013",5,"MAY",07-MAY-13,"Cyprus","COUNTRY (FIR)",740,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Czech Republic","COUNTRY (FIR)",1914,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Denmark","COUNTRY (FIR)",1799,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Estonia","COUNTRY (FIR)",488,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Finland","COUNTRY (FIR)",752,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"France","COUNTRY (FIR)",8258,445,0,258,0,0,0,0,187,0,0,0,0,0,0,0,0,0,35,13
+"2013",5,"MAY",07-MAY-13,"Georgia","COUNTRY (FIR)",271,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Germany","COUNTRY (FIR)",8750,842,0,0,0,0,0,0,0,0,0,0,0,92,0,0,750,0,59,23
+"2013",5,"MAY",07-MAY-13,"Greece","COUNTRY (FIR)",1680,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Hungary","COUNTRY (FIR)",1607,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Ireland","COUNTRY (FIR)",1354,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Italy","COUNTRY (FIR)",4603,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",07-MAY-13,"Latvia","COUNTRY (FIR)",622,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Lithuania","COUNTRY (FIR)",641,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Malta","COUNTRY (FIR)",303,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Moldova","COUNTRY (FIR)",167,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Netherlands","COUNTRY (FIR)",3249,238,0,238,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,9
+"2013",5,"MAY",07-MAY-13,"Norway","COUNTRY (FIR)",1967,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Poland","COUNTRY (FIR)",1923,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",07-MAY-13,"Portugal","COUNTRY (FIR)",1252,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Portugal Continental","COUNTRY (FIR)",1091,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",289,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Romania","COUNTRY (FIR)",1294,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1321,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Slovakia","COUNTRY (FIR)",993,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Slovenia","COUNTRY (FIR)",921,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Spain","COUNTRY (FIR)",4468,418,0,418,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,9
+"2013",5,"MAY",07-MAY-13,"Spain Canarias","COUNTRY (FIR)",580,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Spain Continental","COUNTRY (FIR)",4225,418,0,418,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,9
+"2013",5,"MAY",07-MAY-13,"Sweden","COUNTRY (FIR)",2196,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Switzerland","COUNTRY (FIR)",2810,36,0,36,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,1
+"2013",5,"MAY",07-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",274,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Turkey","COUNTRY (FIR)",3092,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"UK Continental","COUNTRY (FIR)",6530,159,0,159,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,1
+"2013",5,"MAY",07-MAY-13,"UK Oceanic","COUNTRY (FIR)",1134,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"Ukraine","COUNTRY (FIR)",1206,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",07-MAY-13,"United Kingdom","COUNTRY (FIR)",6703,159,0,159,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,1
+"2013",5,"MAY",08-MAY-13,"Albania","COUNTRY (FIR)",511,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Armenia","COUNTRY (FIR)",129,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Austria","COUNTRY (FIR)",3390,1436,0,7,0,0,0,0,0,0,0,735,0,0,0,0,694,0,86,41
+"2013",5,"MAY",08-MAY-13,"Belgium","COUNTRY (FIR)",3347,511,0,0,0,0,0,0,0,0,0,0,0,0,0,0,511,0,32,15
+"2013",5,"MAY",08-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",744,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Bulgaria","COUNTRY (FIR)",1531,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Croatia","COUNTRY (FIR)",1384,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Cyprus","COUNTRY (FIR)",847,6431,0,6431,0,0,0,0,0,0,0,0,0,0,0,0,0,0,210,163
+"2013",5,"MAY",08-MAY-13,"Czech Republic","COUNTRY (FIR)",1896,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Denmark","COUNTRY (FIR)",1848,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Estonia","COUNTRY (FIR)",530,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Finland","COUNTRY (FIR)",764,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"France","COUNTRY (FIR)",7943,758,0,574,0,0,0,0,184,0,0,0,0,0,0,0,0,0,62,17
+"2013",5,"MAY",08-MAY-13,"Georgia","COUNTRY (FIR)",268,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Germany","COUNTRY (FIR)",9184,1219,0,716,0,0,0,0,0,0,0,0,0,288,0,0,215,0,77,36
+"2013",5,"MAY",08-MAY-13,"Greece","COUNTRY (FIR)",1696,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Hungary","COUNTRY (FIR)",1666,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Ireland","COUNTRY (FIR)",1302,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Italy","COUNTRY (FIR)",4801,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Latvia","COUNTRY (FIR)",659,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Lithuania","COUNTRY (FIR)",673,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Malta","COUNTRY (FIR)",288,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Moldova","COUNTRY (FIR)",189,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Netherlands","COUNTRY (FIR)",3335,609,0,228,0,0,0,0,0,0,0,0,0,0,0,0,381,0,42,20
+"2013",5,"MAY",08-MAY-13,"Norway","COUNTRY (FIR)",1612,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Poland","COUNTRY (FIR)",1971,374,0,374,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,10
+"2013",5,"MAY",08-MAY-13,"Portugal","COUNTRY (FIR)",1288,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Portugal Continental","COUNTRY (FIR)",1124,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",284,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Romania","COUNTRY (FIR)",1403,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1425,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Slovakia","COUNTRY (FIR)",1050,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Slovenia","COUNTRY (FIR)",982,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Spain","COUNTRY (FIR)",4661,1848,0,1848,0,0,0,0,0,0,0,0,0,0,0,0,0,0,119,56
+"2013",5,"MAY",08-MAY-13,"Spain Canarias","COUNTRY (FIR)",647,231,0,231,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,6
+"2013",5,"MAY",08-MAY-13,"Spain Continental","COUNTRY (FIR)",4424,1617,0,1617,0,0,0,0,0,0,0,0,0,0,0,0,0,0,99,50
+"2013",5,"MAY",08-MAY-13,"Sweden","COUNTRY (FIR)",2292,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Switzerland","COUNTRY (FIR)",3007,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",08-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",309,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Turkey","COUNTRY (FIR)",3179,520,0,0,0,0,0,0,0,0,520,0,0,0,0,0,0,0,27,15
+"2013",5,"MAY",08-MAY-13,"UK Continental","COUNTRY (FIR)",6519,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",08-MAY-13,"UK Oceanic","COUNTRY (FIR)",1080,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"Ukraine","COUNTRY (FIR)",1342,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",08-MAY-13,"United Kingdom","COUNTRY (FIR)",6660,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",09-MAY-13,"Albania","COUNTRY (FIR)",540,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Armenia","COUNTRY (FIR)",135,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Austria","COUNTRY (FIR)",3168,812,0,0,0,0,0,0,0,0,0,812,0,0,0,0,0,0,59,27
+"2013",5,"MAY",09-MAY-13,"Belgium","COUNTRY (FIR)",3027,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",759,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Bulgaria","COUNTRY (FIR)",1528,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Croatia","COUNTRY (FIR)",1419,238,0,238,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,9
+"2013",5,"MAY",09-MAY-13,"Cyprus","COUNTRY (FIR)",845,1102,0,1102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,80,32
+"2013",5,"MAY",09-MAY-13,"Czech Republic","COUNTRY (FIR)",1951,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Denmark","COUNTRY (FIR)",1526,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Estonia","COUNTRY (FIR)",481,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Finland","COUNTRY (FIR)",608,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"France","COUNTRY (FIR)",7606,748,0,748,0,0,0,0,0,0,0,0,0,0,0,0,0,0,53,19
+"2013",5,"MAY",09-MAY-13,"Georgia","COUNTRY (FIR)",257,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Germany","COUNTRY (FIR)",7942,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Greece","COUNTRY (FIR)",1866,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",09-MAY-13,"Hungary","COUNTRY (FIR)",1660,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Ireland","COUNTRY (FIR)",1347,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Italy","COUNTRY (FIR)",4748,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Latvia","COUNTRY (FIR)",624,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Lithuania","COUNTRY (FIR)",649,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Malta","COUNTRY (FIR)",285,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Moldova","COUNTRY (FIR)",191,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Netherlands","COUNTRY (FIR)",3143,611,0,611,0,0,0,0,0,0,0,0,0,0,0,0,0,0,45,19
+"2013",5,"MAY",09-MAY-13,"Norway","COUNTRY (FIR)",1100,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Poland","COUNTRY (FIR)",1950,37,0,0,0,0,0,0,0,0,0,0,0,0,0,0,37,0,3,1
+"2013",5,"MAY",09-MAY-13,"Portugal","COUNTRY (FIR)",1340,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",09-MAY-13,"Portugal Continental","COUNTRY (FIR)",1197,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",09-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",280,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Romania","COUNTRY (FIR)",1409,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1468,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Slovakia","COUNTRY (FIR)",1109,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Slovenia","COUNTRY (FIR)",981,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Spain","COUNTRY (FIR)",4690,237,0,237,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24,4
+"2013",5,"MAY",09-MAY-13,"Spain Canarias","COUNTRY (FIR)",588,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Spain Continental","COUNTRY (FIR)",4440,237,0,237,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24,4
+"2013",5,"MAY",09-MAY-13,"Sweden","COUNTRY (FIR)",1694,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Switzerland","COUNTRY (FIR)",2716,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",09-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",339,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Turkey","COUNTRY (FIR)",3338,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"UK Continental","COUNTRY (FIR)",6527,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",09-MAY-13,"UK Oceanic","COUNTRY (FIR)",1128,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"Ukraine","COUNTRY (FIR)",1408,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",09-MAY-13,"United Kingdom","COUNTRY (FIR)",6680,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",10-MAY-13,"Albania","COUNTRY (FIR)",572,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Armenia","COUNTRY (FIR)",141,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Austria","COUNTRY (FIR)",3208,660,0,0,0,0,0,0,0,0,0,623,0,0,0,0,37,0,48,21
+"2013",5,"MAY",10-MAY-13,"Belgium","COUNTRY (FIR)",3075,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",760,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Bulgaria","COUNTRY (FIR)",1572,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Croatia","COUNTRY (FIR)",1463,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Cyprus","COUNTRY (FIR)",757,141,0,141,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,2
+"2013",5,"MAY",10-MAY-13,"Czech Republic","COUNTRY (FIR)",1915,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Denmark","COUNTRY (FIR)",1577,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Estonia","COUNTRY (FIR)",525,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Finland","COUNTRY (FIR)",661,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"France","COUNTRY (FIR)",8095,913,0,913,0,0,0,0,0,0,0,0,0,0,0,0,0,0,63,25
+"2013",5,"MAY",10-MAY-13,"Georgia","COUNTRY (FIR)",261,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Germany","COUNTRY (FIR)",8181,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",10-MAY-13,"Greece","COUNTRY (FIR)",1822,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",10-MAY-13,"Hungary","COUNTRY (FIR)",1728,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Ireland","COUNTRY (FIR)",1368,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Italy","COUNTRY (FIR)",4959,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",10-MAY-13,"Latvia","COUNTRY (FIR)",668,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Lithuania","COUNTRY (FIR)",665,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Malta","COUNTRY (FIR)",287,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Moldova","COUNTRY (FIR)",202,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Netherlands","COUNTRY (FIR)",3194,312,0,312,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,10
+"2013",5,"MAY",10-MAY-13,"Norway","COUNTRY (FIR)",1370,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Poland","COUNTRY (FIR)",1975,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Portugal","COUNTRY (FIR)",1430,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",10-MAY-13,"Portugal Continental","COUNTRY (FIR)",1220,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",10-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",345,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Romania","COUNTRY (FIR)",1476,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1455,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Slovakia","COUNTRY (FIR)",1091,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Slovenia","COUNTRY (FIR)",976,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Spain","COUNTRY (FIR)",4870,2133,0,2133,0,0,0,0,0,0,0,0,0,0,0,0,0,0,149,66
+"2013",5,"MAY",10-MAY-13,"Spain Canarias","COUNTRY (FIR)",683,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Spain Continental","COUNTRY (FIR)",4566,2133,0,2133,0,0,0,0,0,0,0,0,0,0,0,0,0,0,149,66
+"2013",5,"MAY",10-MAY-13,"Sweden","COUNTRY (FIR)",1757,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Switzerland","COUNTRY (FIR)",2793,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",10-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",292,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Turkey","COUNTRY (FIR)",3290,168,0,0,0,0,0,0,0,0,168,0,0,0,0,0,0,0,13,4
+"2013",5,"MAY",10-MAY-13,"UK Continental","COUNTRY (FIR)",6698,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",10-MAY-13,"UK Oceanic","COUNTRY (FIR)",1161,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"Ukraine","COUNTRY (FIR)",1402,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",10-MAY-13,"United Kingdom","COUNTRY (FIR)",6870,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",11-MAY-13,"Albania","COUNTRY (FIR)",709,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Armenia","COUNTRY (FIR)",114,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Austria","COUNTRY (FIR)",3444,2245,0,0,0,0,0,0,0,0,0,2245,0,0,0,0,0,0,143,77
+"2013",5,"MAY",11-MAY-13,"Belgium","COUNTRY (FIR)",2866,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",948,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Bulgaria","COUNTRY (FIR)",1795,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Croatia","COUNTRY (FIR)",1812,293,0,0,0,0,0,0,0,0,0,0,0,0,0,0,293,0,26,7
+"2013",5,"MAY",11-MAY-13,"Cyprus","COUNTRY (FIR)",766,1090,0,0,0,0,0,0,0,0,0,0,0,1090,0,0,0,0,56,33
+"2013",5,"MAY",11-MAY-13,"Czech Republic","COUNTRY (FIR)",1857,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Denmark","COUNTRY (FIR)",1411,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Estonia","COUNTRY (FIR)",562,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Finland","COUNTRY (FIR)",505,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"France","COUNTRY (FIR)",8421,4667,0,4382,0,0,0,0,0,0,285,0,0,0,0,0,0,0,288,145
+"2013",5,"MAY",11-MAY-13,"Georgia","COUNTRY (FIR)",246,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Germany","COUNTRY (FIR)",7778,80,0,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,0
+"2013",5,"MAY",11-MAY-13,"Greece","COUNTRY (FIR)",2057,2423,0,0,0,0,0,0,0,0,0,0,0,2423,0,0,0,0,159,76
+"2013",5,"MAY",11-MAY-13,"Hungary","COUNTRY (FIR)",1820,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Ireland","COUNTRY (FIR)",1258,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Italy","COUNTRY (FIR)",5077,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Latvia","COUNTRY (FIR)",710,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Lithuania","COUNTRY (FIR)",683,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Malta","COUNTRY (FIR)",278,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Moldova","COUNTRY (FIR)",201,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Netherlands","COUNTRY (FIR)",2794,581,0,581,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35,21
+"2013",5,"MAY",11-MAY-13,"Norway","COUNTRY (FIR)",950,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Poland","COUNTRY (FIR)",1961,608,0,608,0,0,0,0,0,0,0,0,0,0,0,0,0,0,42,20
+"2013",5,"MAY",11-MAY-13,"Portugal","COUNTRY (FIR)",1538,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Portugal Continental","COUNTRY (FIR)",1342,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",348,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Romania","COUNTRY (FIR)",1575,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1737,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Slovakia","COUNTRY (FIR)",1218,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Slovenia","COUNTRY (FIR)",1182,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Spain","COUNTRY (FIR)",4879,2345,0,2345,0,0,0,0,0,0,0,0,0,0,0,0,0,0,188,54
+"2013",5,"MAY",11-MAY-13,"Spain Canarias","COUNTRY (FIR)",692,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Spain Continental","COUNTRY (FIR)",4672,2345,0,2345,0,0,0,0,0,0,0,0,0,0,0,0,0,0,188,54
+"2013",5,"MAY",11-MAY-13,"Sweden","COUNTRY (FIR)",1474,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Switzerland","COUNTRY (FIR)",2951,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",11-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",383,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Turkey","COUNTRY (FIR)",3482,122,0,0,0,0,0,0,0,0,122,0,0,0,0,0,0,0,8,2
+"2013",5,"MAY",11-MAY-13,"UK Continental","COUNTRY (FIR)",5531,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",11-MAY-13,"UK Oceanic","COUNTRY (FIR)",1144,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"Ukraine","COUNTRY (FIR)",1517,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",11-MAY-13,"United Kingdom","COUNTRY (FIR)",5743,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",12-MAY-13,"Albania","COUNTRY (FIR)",722,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",12-MAY-13,"Armenia","COUNTRY (FIR)",128,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",12-MAY-13,"Austria","COUNTRY (FIR)",3598,4453,0,0,0,0,0,0,0,0,0,4453,0,0,0,0,0,0,264,135
+"2013",5,"MAY",12-MAY-13,"Belgium","COUNTRY (FIR)",3273,438,0,438,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32,11
+"2013",5,"MAY",12-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",870,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",12-MAY-13,"Bulgaria","COUNTRY (FIR)",1747,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",12-MAY-13,"Croatia","COUNTRY (FIR)",1708,691,0,691,0,0,0,0,0,0,0,0,0,0,0,0,0,0,53,17
+"2013",5,"MAY",12-MAY-13,"Cyprus","COUNTRY (FIR)",982,5695,0,5695,0,0,0,0,0,0,0,0,0,0,0,0,0,0,273,170
+"2013",5,"MAY",12-MAY-13,"Czech Republic","COUNTRY (FIR)",2093,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",12-MAY-13,"Denmark","COUNTRY (FIR)",1693,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",12-MAY-13,"Estonia","COUNTRY (FIR)",576,88,0,88,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,2
+"2013",5,"MAY",12-MAY-13,"Finland","COUNTRY (FIR)",631,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",12-MAY-13,"France","COUNTRY (FIR)",9092,1556,0,1378,0,0,0,0,0,0,175,0,0,3,0,0,0,0,99,40
+"2013",5,"MAY",12-MAY-13,"Georgia","COUNTRY (FIR)",287,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",12-MAY-13,"Germany","COUNTRY (FIR)",8694,693,0,0,0,0,0,0,0,0,0,0,0,693,0,0,0,0,35,21
+"2013",5,"MAY",12-MAY-13,"Greece","COUNTRY (FIR)",2265,5310,0,441,0,0,0,0,0,0,0,0,0,4869,0,0,0,0,260,160
+"2013",5,"MAY",12-MAY-13,"Hungary","COUNTRY (FIR)",1823,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",12-MAY-13,"Ireland","COUNTRY (FIR)",1326,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",12-MAY-13,"Italy","COUNTRY (FIR)",5458,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",12-MAY-13,"Latvia","COUNTRY (FIR)",709,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",12-MAY-13,"Lithuania","COUNTRY (FIR)",706,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",12-MAY-13,"Malta","COUNTRY (FIR)",296,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",12-MAY-13,"Moldova","COUNTRY (FIR)",215,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",12-MAY-13,"Netherlands","COUNTRY (FIR)",3112,95,0,95,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,2
+"2013",5,"MAY",12-MAY-13,"Norway","COUNTRY (FIR)",1531,115,0,115,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,2
+"2013",5,"MAY",12-MAY-13,"Poland","COUNTRY (FIR)",2091,195,0,195,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,5
+"2013",5,"MAY",12-MAY-13,"Portugal","COUNTRY (FIR)",1487,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",12-MAY-13,"Portugal Continental","COUNTRY (FIR)",1284,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",12-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",357,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",12-MAY-13,"Romania","COUNTRY (FIR)",1527,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",12-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1728,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",12-MAY-13,"Slovakia","COUNTRY (FIR)",1303,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",12-MAY-13,"Slovenia","COUNTRY (FIR)",1144,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",12-MAY-13,"Spain","COUNTRY (FIR)",5066,4873,0,4873,0,0,0,0,0,0,0,0,0,0,0,0,0,0,343,136
+"2013",5,"MAY",12-MAY-13,"Spain Canarias","COUNTRY (FIR)",670,472,0,472,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31,13
+"2013",5,"MAY",12-MAY-13,"Spain Continental","COUNTRY (FIR)",4831,4401,0,4401,0,0,0,0,0,0,0,0,0,0,0,0,0,0,312,123
+"2013",5,"MAY",12-MAY-13,"Sweden","COUNTRY (FIR)",1960,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",12-MAY-13,"Switzerland","COUNTRY (FIR)",3224,533,0,533,0,0,0,0,0,0,0,0,0,0,0,0,0,0,37,17
+"2013",5,"MAY",12-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",417,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",12-MAY-13,"Turkey","COUNTRY (FIR)",3550,181,0,0,0,0,0,0,0,0,181,0,0,0,0,0,0,0,13,4
+"2013",5,"MAY",12-MAY-13,"UK Continental","COUNTRY (FIR)",6079,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",12-MAY-13,"UK Oceanic","COUNTRY (FIR)",1093,145,0,145,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,5
+"2013",5,"MAY",12-MAY-13,"Ukraine","COUNTRY (FIR)",1624,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",12-MAY-13,"United Kingdom","COUNTRY (FIR)",6263,145,0,145,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,5
+"2013",5,"MAY",13-MAY-13,"Albania","COUNTRY (FIR)",556,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Armenia","COUNTRY (FIR)",111,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Austria","COUNTRY (FIR)",3290,1144,0,0,0,0,0,0,0,0,0,1144,0,0,0,0,0,0,79,38
+"2013",5,"MAY",13-MAY-13,"Belgium","COUNTRY (FIR)",3359,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",751,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Bulgaria","COUNTRY (FIR)",1481,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Croatia","COUNTRY (FIR)",1413,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Cyprus","COUNTRY (FIR)",801,1753,0,1753,0,0,0,0,0,0,0,0,0,0,0,0,0,0,107,48
+"2013",5,"MAY",13-MAY-13,"Czech Republic","COUNTRY (FIR)",1920,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Denmark","COUNTRY (FIR)",1939,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Estonia","COUNTRY (FIR)",517,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Finland","COUNTRY (FIR)",780,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"France","COUNTRY (FIR)",8830,593,0,415,0,0,0,0,0,0,178,0,0,0,0,0,0,0,57,11
+"2013",5,"MAY",13-MAY-13,"Georgia","COUNTRY (FIR)",253,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Germany","COUNTRY (FIR)",9082,2101,0,844,0,0,0,0,0,0,0,0,0,1257,0,0,0,0,159,58
+"2013",5,"MAY",13-MAY-13,"Greece","COUNTRY (FIR)",1812,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Hungary","COUNTRY (FIR)",1625,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Ireland","COUNTRY (FIR)",1262,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Italy","COUNTRY (FIR)",4882,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",13-MAY-13,"Latvia","COUNTRY (FIR)",637,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Lithuania","COUNTRY (FIR)",655,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Malta","COUNTRY (FIR)",289,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Moldova","COUNTRY (FIR)",167,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Netherlands","COUNTRY (FIR)",3360,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",13-MAY-13,"Norway","COUNTRY (FIR)",2002,432,0,432,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35,11
+"2013",5,"MAY",13-MAY-13,"Poland","COUNTRY (FIR)",1985,56,0,0,0,0,0,0,0,0,0,0,0,0,56,0,0,0,4,3
+"2013",5,"MAY",13-MAY-13,"Portugal","COUNTRY (FIR)",1442,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Portugal Continental","COUNTRY (FIR)",1261,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",339,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Romania","COUNTRY (FIR)",1330,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1456,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Slovakia","COUNTRY (FIR)",1071,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Slovenia","COUNTRY (FIR)",940,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Spain","COUNTRY (FIR)",4729,1040,0,938,0,0,0,0,0,0,0,0,0,0,0,0,102,0,102,18
+"2013",5,"MAY",13-MAY-13,"Spain Canarias","COUNTRY (FIR)",627,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",13-MAY-13,"Spain Continental","COUNTRY (FIR)",4491,1040,0,938,0,0,0,0,0,0,0,0,0,0,0,0,102,0,102,18
+"2013",5,"MAY",13-MAY-13,"Sweden","COUNTRY (FIR)",2362,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Switzerland","COUNTRY (FIR)",3013,406,0,406,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,10
+"2013",5,"MAY",13-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",319,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Turkey","COUNTRY (FIR)",3229,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"UK Continental","COUNTRY (FIR)",6763,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",13-MAY-13,"UK Oceanic","COUNTRY (FIR)",1095,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"Ukraine","COUNTRY (FIR)",1244,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",13-MAY-13,"United Kingdom","COUNTRY (FIR)",6967,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",14-MAY-13,"Albania","COUNTRY (FIR)",513,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"Armenia","COUNTRY (FIR)",138,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"Austria","COUNTRY (FIR)",3164,979,0,0,0,0,0,0,0,0,0,979,0,0,0,0,0,0,74,24
+"2013",5,"MAY",14-MAY-13,"Belgium","COUNTRY (FIR)",3287,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",719,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"Bulgaria","COUNTRY (FIR)",1436,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"Croatia","COUNTRY (FIR)",1316,111,0,111,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,0
+"2013",5,"MAY",14-MAY-13,"Cyprus","COUNTRY (FIR)",740,123,0,93,0,0,0,0,0,0,0,0,0,0,0,0,30,0,9,5
+"2013",5,"MAY",14-MAY-13,"Czech Republic","COUNTRY (FIR)",1904,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"Denmark","COUNTRY (FIR)",1835,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"Estonia","COUNTRY (FIR)",494,81,0,81,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,3
+"2013",5,"MAY",14-MAY-13,"Finland","COUNTRY (FIR)",760,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"France","COUNTRY (FIR)",8238,1256,0,562,0,0,0,0,0,0,0,694,0,0,0,0,0,0,77,41
+"2013",5,"MAY",14-MAY-13,"Georgia","COUNTRY (FIR)",265,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"Germany","COUNTRY (FIR)",8964,837,0,330,0,0,0,0,0,0,0,0,0,507,0,0,0,0,52,25
+"2013",5,"MAY",14-MAY-13,"Greece","COUNTRY (FIR)",1678,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",14-MAY-13,"Hungary","COUNTRY (FIR)",1614,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"Ireland","COUNTRY (FIR)",1301,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"Italy","COUNTRY (FIR)",4316,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",14-MAY-13,"Latvia","COUNTRY (FIR)",605,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"Lithuania","COUNTRY (FIR)",638,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"Malta","COUNTRY (FIR)",286,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"Moldova","COUNTRY (FIR)",165,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"Netherlands","COUNTRY (FIR)",3280,490,0,490,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31,16
+"2013",5,"MAY",14-MAY-13,"Norway","COUNTRY (FIR)",1977,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",14-MAY-13,"Poland","COUNTRY (FIR)",1924,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"Portugal","COUNTRY (FIR)",1310,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"Portugal Continental","COUNTRY (FIR)",1151,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",307,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"Romania","COUNTRY (FIR)",1297,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1373,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"Slovakia","COUNTRY (FIR)",1082,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"Slovenia","COUNTRY (FIR)",916,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"Spain","COUNTRY (FIR)",4420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",14-MAY-13,"Spain Canarias","COUNTRY (FIR)",591,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"Spain Continental","COUNTRY (FIR)",4170,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",14-MAY-13,"Sweden","COUNTRY (FIR)",2371,576,0,0,0,0,0,0,0,0,0,0,0,0,0,0,576,0,40,17
+"2013",5,"MAY",14-MAY-13,"Switzerland","COUNTRY (FIR)",2815,235,0,0,0,0,0,0,0,0,0,0,0,0,235,0,0,0,10,7
+"2013",5,"MAY",14-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",264,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"Turkey","COUNTRY (FIR)",3092,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"UK Continental","COUNTRY (FIR)",6640,86,0,86,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,1
+"2013",5,"MAY",14-MAY-13,"UK Oceanic","COUNTRY (FIR)",1113,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"Ukraine","COUNTRY (FIR)",1221,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",14-MAY-13,"United Kingdom","COUNTRY (FIR)",6802,86,0,86,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,1
+"2013",5,"MAY",15-MAY-13,"Albania","COUNTRY (FIR)",574,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Armenia","COUNTRY (FIR)",139,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Austria","COUNTRY (FIR)",3397,1634,0,0,0,0,0,0,0,0,0,1634,0,0,0,0,0,0,102,49
+"2013",5,"MAY",15-MAY-13,"Belgium","COUNTRY (FIR)",3474,349,0,349,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29,6
+"2013",5,"MAY",15-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",763,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Bulgaria","COUNTRY (FIR)",1509,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Croatia","COUNTRY (FIR)",1349,581,0,581,0,0,0,0,0,0,0,0,0,0,0,0,0,0,37,15
+"2013",5,"MAY",15-MAY-13,"Cyprus","COUNTRY (FIR)",739,1095,0,1095,0,0,0,0,0,0,0,0,0,0,0,0,0,0,43,31
+"2013",5,"MAY",15-MAY-13,"Czech Republic","COUNTRY (FIR)",1904,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Denmark","COUNTRY (FIR)",1883,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Estonia","COUNTRY (FIR)",543,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Finland","COUNTRY (FIR)",782,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"France","COUNTRY (FIR)",8411,723,0,292,0,0,0,0,0,0,0,431,0,0,0,0,0,0,63,17
+"2013",5,"MAY",15-MAY-13,"Georgia","COUNTRY (FIR)",273,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Germany","COUNTRY (FIR)",9301,3439,0,1322,0,0,0,0,0,0,0,0,0,685,0,0,1432,0,210,95
+"2013",5,"MAY",15-MAY-13,"Greece","COUNTRY (FIR)",1666,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Hungary","COUNTRY (FIR)",1708,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Ireland","COUNTRY (FIR)",1316,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Italy","COUNTRY (FIR)",4622,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Latvia","COUNTRY (FIR)",671,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Lithuania","COUNTRY (FIR)",686,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Malta","COUNTRY (FIR)",282,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Moldova","COUNTRY (FIR)",187,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Netherlands","COUNTRY (FIR)",3424,285,0,285,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,7
+"2013",5,"MAY",15-MAY-13,"Norway","COUNTRY (FIR)",1964,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Poland","COUNTRY (FIR)",1980,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Portugal","COUNTRY (FIR)",1389,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Portugal Continental","COUNTRY (FIR)",1215,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",327,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Romania","COUNTRY (FIR)",1483,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1445,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Slovakia","COUNTRY (FIR)",1127,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Slovenia","COUNTRY (FIR)",988,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Spain","COUNTRY (FIR)",4546,4559,0,1425,0,0,0,0,0,0,0,0,0,0,0,0,3134,0,220,148
+"2013",5,"MAY",15-MAY-13,"Spain Canarias","COUNTRY (FIR)",615,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Spain Continental","COUNTRY (FIR)",4307,4559,0,1425,0,0,0,0,0,0,0,0,0,0,0,0,3134,0,220,148
+"2013",5,"MAY",15-MAY-13,"Sweden","COUNTRY (FIR)",2442,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Switzerland","COUNTRY (FIR)",2988,372,0,0,0,0,0,0,0,0,0,0,0,0,372,0,0,0,17,11
+"2013",5,"MAY",15-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",359,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Turkey","COUNTRY (FIR)",3193,73,0,0,0,0,0,0,0,0,73,0,0,0,0,0,0,0,6,3
+"2013",5,"MAY",15-MAY-13,"UK Continental","COUNTRY (FIR)",6653,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",15-MAY-13,"UK Oceanic","COUNTRY (FIR)",1056,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"Ukraine","COUNTRY (FIR)",1304,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",15-MAY-13,"United Kingdom","COUNTRY (FIR)",6800,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",16-MAY-13,"Albania","COUNTRY (FIR)",560,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Armenia","COUNTRY (FIR)",138,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Austria","COUNTRY (FIR)",3241,796,0,0,0,0,0,0,0,0,0,0,0,0,796,0,0,0,59,25
+"2013",5,"MAY",16-MAY-13,"Belgium","COUNTRY (FIR)",3408,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",698,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Bulgaria","COUNTRY (FIR)",1578,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Croatia","COUNTRY (FIR)",1286,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Cyprus","COUNTRY (FIR)",869,2456,0,2147,0,0,0,0,0,0,0,0,0,309,0,0,0,0,151,80
+"2013",5,"MAY",16-MAY-13,"Czech Republic","COUNTRY (FIR)",2116,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Denmark","COUNTRY (FIR)",1955,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Estonia","COUNTRY (FIR)",533,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Finland","COUNTRY (FIR)",801,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"France","COUNTRY (FIR)",8783,2022,0,829,0,0,0,0,0,0,0,0,0,0,0,0,1193,0,120,74
+"2013",5,"MAY",16-MAY-13,"Georgia","COUNTRY (FIR)",262,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Germany","COUNTRY (FIR)",9321,3513,0,576,0,0,0,0,0,0,0,0,0,1610,0,0,1327,0,233,93
+"2013",5,"MAY",16-MAY-13,"Greece","COUNTRY (FIR)",1811,2747,0,0,0,0,0,2747,0,0,0,0,0,0,0,0,0,0,36,26
+"2013",5,"MAY",16-MAY-13,"Hungary","COUNTRY (FIR)",1785,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Ireland","COUNTRY (FIR)",1475,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Italy","COUNTRY (FIR)",4714,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Latvia","COUNTRY (FIR)",669,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Lithuania","COUNTRY (FIR)",663,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Malta","COUNTRY (FIR)",315,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Moldova","COUNTRY (FIR)",191,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Netherlands","COUNTRY (FIR)",3439,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,0,1,0
+"2013",5,"MAY",16-MAY-13,"Norway","COUNTRY (FIR)",1973,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Poland","COUNTRY (FIR)",2035,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Portugal","COUNTRY (FIR)",1406,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Portugal Continental","COUNTRY (FIR)",1249,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",284,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Romania","COUNTRY (FIR)",1506,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1430,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Slovakia","COUNTRY (FIR)",1180,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Slovenia","COUNTRY (FIR)",862,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Spain","COUNTRY (FIR)",4770,795,0,795,0,0,0,0,0,0,0,0,0,0,0,0,0,0,55,22
+"2013",5,"MAY",16-MAY-13,"Spain Canarias","COUNTRY (FIR)",609,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Spain Continental","COUNTRY (FIR)",4506,795,0,795,0,0,0,0,0,0,0,0,0,0,0,0,0,0,55,22
+"2013",5,"MAY",16-MAY-13,"Sweden","COUNTRY (FIR)",2393,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Switzerland","COUNTRY (FIR)",3146,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",16-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",332,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Turkey","COUNTRY (FIR)",3344,310,0,0,0,0,0,0,0,0,310,0,0,0,0,0,0,0,19,10
+"2013",5,"MAY",16-MAY-13,"UK Continental","COUNTRY (FIR)",6936,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",16-MAY-13,"UK Oceanic","COUNTRY (FIR)",1174,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"Ukraine","COUNTRY (FIR)",1380,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",16-MAY-13,"United Kingdom","COUNTRY (FIR)",7109,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",17-MAY-13,"Albania","COUNTRY (FIR)",595,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",17-MAY-13,"Armenia","COUNTRY (FIR)",149,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",17-MAY-13,"Austria","COUNTRY (FIR)",3508,1269,0,0,0,0,0,0,0,0,0,0,0,0,646,0,623,0,96,34
+"2013",5,"MAY",17-MAY-13,"Belgium","COUNTRY (FIR)",3447,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",17-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",809,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",17-MAY-13,"Bulgaria","COUNTRY (FIR)",1622,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",17-MAY-13,"Croatia","COUNTRY (FIR)",1536,543,0,0,0,0,0,0,0,0,0,0,0,0,0,0,543,0,47,11
+"2013",5,"MAY",17-MAY-13,"Cyprus","COUNTRY (FIR)",752,314,0,314,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,9
+"2013",5,"MAY",17-MAY-13,"Czech Republic","COUNTRY (FIR)",2098,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",17-MAY-13,"Denmark","COUNTRY (FIR)",1862,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",17-MAY-13,"Estonia","COUNTRY (FIR)",610,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",17-MAY-13,"Finland","COUNTRY (FIR)",783,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",17-MAY-13,"France","COUNTRY (FIR)",9404,1118,0,1118,0,0,0,0,0,0,0,0,0,0,0,0,0,0,82,30
+"2013",5,"MAY",17-MAY-13,"Georgia","COUNTRY (FIR)",275,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",17-MAY-13,"Germany","COUNTRY (FIR)",9686,8447,0,335,0,0,0,0,0,0,0,0,0,257,0,0,7855,0,459,269
+"2013",5,"MAY",17-MAY-13,"Greece","COUNTRY (FIR)",1840,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",17-MAY-13,"Hungary","COUNTRY (FIR)",1798,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",17-MAY-13,"Ireland","COUNTRY (FIR)",1461,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",17-MAY-13,"Italy","COUNTRY (FIR)",5176,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",17-MAY-13,"Latvia","COUNTRY (FIR)",738,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",17-MAY-13,"Lithuania","COUNTRY (FIR)",733,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",17-MAY-13,"Malta","COUNTRY (FIR)",306,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",17-MAY-13,"Moldova","COUNTRY (FIR)",205,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",17-MAY-13,"Netherlands","COUNTRY (FIR)",3408,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",17-MAY-13,"Norway","COUNTRY (FIR)",1123,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",17-MAY-13,"Poland","COUNTRY (FIR)",2100,61,0,61,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0
+"2013",5,"MAY",17-MAY-13,"Portugal","COUNTRY (FIR)",1396,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",17-MAY-13,"Portugal Continental","COUNTRY (FIR)",1214,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",17-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",319,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",17-MAY-13,"Romania","COUNTRY (FIR)",1554,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",17-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1585,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",17-MAY-13,"Slovakia","COUNTRY (FIR)",1182,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",17-MAY-13,"Slovenia","COUNTRY (FIR)",1059,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",17-MAY-13,"Spain","COUNTRY (FIR)",4973,4065,0,4065,0,0,0,0,0,0,0,0,0,0,0,0,0,0,285,108
+"2013",5,"MAY",17-MAY-13,"Spain Canarias","COUNTRY (FIR)",665,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",17-MAY-13,"Spain Continental","COUNTRY (FIR)",4676,4065,0,4065,0,0,0,0,0,0,0,0,0,0,0,0,0,0,285,108
+"2013",5,"MAY",17-MAY-13,"Sweden","COUNTRY (FIR)",2254,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",17-MAY-13,"Switzerland","COUNTRY (FIR)",3364,886,0,886,0,0,0,0,0,0,0,0,0,0,0,0,0,0,43,29
+"2013",5,"MAY",17-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",335,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",17-MAY-13,"Turkey","COUNTRY (FIR)",3326,403,0,0,0,0,0,0,0,0,403,0,0,0,0,0,0,0,23,10
+"2013",5,"MAY",17-MAY-13,"UK Continental","COUNTRY (FIR)",7047,1239,0,719,0,0,0,0,0,0,0,0,0,520,0,0,0,0,80,44
+"2013",5,"MAY",17-MAY-13,"UK Oceanic","COUNTRY (FIR)",1194,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",17-MAY-13,"Ukraine","COUNTRY (FIR)",1427,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",17-MAY-13,"United Kingdom","COUNTRY (FIR)",7210,1239,0,719,0,0,0,0,0,0,0,0,0,520,0,0,0,0,80,44
+"2013",5,"MAY",18-MAY-13,"Albania","COUNTRY (FIR)",734,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Armenia","COUNTRY (FIR)",115,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Austria","COUNTRY (FIR)",3622,1434,0,487,0,0,0,0,0,0,0,0,0,0,947,0,0,0,91,42
+"2013",5,"MAY",18-MAY-13,"Belgium","COUNTRY (FIR)",2912,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",978,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Bulgaria","COUNTRY (FIR)",1874,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Croatia","COUNTRY (FIR)",1858,2836,0,2836,0,0,0,0,0,0,0,0,0,0,0,0,0,0,210,82
+"2013",5,"MAY",18-MAY-13,"Cyprus","COUNTRY (FIR)",771,117,0,0,0,0,0,0,0,0,0,0,0,117,0,0,0,0,13,3
+"2013",5,"MAY",18-MAY-13,"Czech Republic","COUNTRY (FIR)",1947,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Denmark","COUNTRY (FIR)",1477,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Estonia","COUNTRY (FIR)",557,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Finland","COUNTRY (FIR)",516,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"France","COUNTRY (FIR)",8555,2641,0,2492,0,0,0,0,0,0,0,0,0,0,0,0,149,0,205,66
+"2013",5,"MAY",18-MAY-13,"Georgia","COUNTRY (FIR)",254,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Germany","COUNTRY (FIR)",8121,1451,0,1451,0,0,0,0,0,0,0,0,0,0,0,0,0,0,109,37
+"2013",5,"MAY",18-MAY-13,"Greece","COUNTRY (FIR)",2197,383,0,0,0,0,0,0,0,0,0,0,0,383,0,0,0,0,29,11
+"2013",5,"MAY",18-MAY-13,"Hungary","COUNTRY (FIR)",1872,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Ireland","COUNTRY (FIR)",1422,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Italy","COUNTRY (FIR)",5044,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Latvia","COUNTRY (FIR)",696,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Lithuania","COUNTRY (FIR)",704,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Malta","COUNTRY (FIR)",300,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Moldova","COUNTRY (FIR)",217,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Netherlands","COUNTRY (FIR)",2869,150,0,150,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,5
+"2013",5,"MAY",18-MAY-13,"Norway","COUNTRY (FIR)",1051,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Poland","COUNTRY (FIR)",1984,1706,0,1706,0,0,0,0,0,0,0,0,0,0,0,0,0,0,113,50
+"2013",5,"MAY",18-MAY-13,"Portugal","COUNTRY (FIR)",1514,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Portugal Continental","COUNTRY (FIR)",1326,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",343,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Romania","COUNTRY (FIR)",1552,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1855,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Slovakia","COUNTRY (FIR)",1242,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Slovenia","COUNTRY (FIR)",1248,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Spain","COUNTRY (FIR)",4841,3709,0,2602,0,0,0,0,0,0,0,0,0,1107,0,0,0,0,294,91
+"2013",5,"MAY",18-MAY-13,"Spain Canarias","COUNTRY (FIR)",675,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Spain Continental","COUNTRY (FIR)",4632,3709,0,2602,0,0,0,0,0,0,0,0,0,1107,0,0,0,0,294,91
+"2013",5,"MAY",18-MAY-13,"Sweden","COUNTRY (FIR)",1518,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Switzerland","COUNTRY (FIR)",3051,1336,0,1240,0,0,0,0,0,0,0,0,0,96,0,0,0,0,99,28
+"2013",5,"MAY",18-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",428,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Turkey","COUNTRY (FIR)",3469,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"UK Continental","COUNTRY (FIR)",5788,3577,0,1344,0,0,0,0,0,0,0,0,0,2233,0,0,0,0,177,106
+"2013",5,"MAY",18-MAY-13,"UK Oceanic","COUNTRY (FIR)",1232,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"Ukraine","COUNTRY (FIR)",1500,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",18-MAY-13,"United Kingdom","COUNTRY (FIR)",5983,3577,0,1344,0,0,0,0,0,0,0,0,0,2233,0,0,0,0,177,106
+"2013",5,"MAY",19-MAY-13,"Albania","COUNTRY (FIR)",717,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Armenia","COUNTRY (FIR)",124,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Austria","COUNTRY (FIR)",3342,1066,0,301,0,0,0,0,0,0,0,0,0,0,0,0,765,0,63,31
+"2013",5,"MAY",19-MAY-13,"Belgium","COUNTRY (FIR)",3043,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",871,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Bulgaria","COUNTRY (FIR)",1846,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Croatia","COUNTRY (FIR)",1633,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Cyprus","COUNTRY (FIR)",916,4757,0,4757,0,0,0,0,0,0,0,0,0,0,0,0,0,0,206,113
+"2013",5,"MAY",19-MAY-13,"Czech Republic","COUNTRY (FIR)",1956,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Denmark","COUNTRY (FIR)",1561,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Estonia","COUNTRY (FIR)",543,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Finland","COUNTRY (FIR)",581,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"France","COUNTRY (FIR)",8080,3290,0,3290,0,0,0,0,0,0,0,0,0,0,0,0,0,0,202,101
+"2013",5,"MAY",19-MAY-13,"Georgia","COUNTRY (FIR)",260,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Germany","COUNTRY (FIR)",8066,5678,0,422,0,0,0,0,0,0,0,0,0,0,0,0,5256,0,354,163
+"2013",5,"MAY",19-MAY-13,"Greece","COUNTRY (FIR)",2219,368,0,368,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,11
+"2013",5,"MAY",19-MAY-13,"Hungary","COUNTRY (FIR)",1870,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Ireland","COUNTRY (FIR)",1308,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Italy","COUNTRY (FIR)",5041,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Latvia","COUNTRY (FIR)",680,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Lithuania","COUNTRY (FIR)",664,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Malta","COUNTRY (FIR)",322,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Moldova","COUNTRY (FIR)",201,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Netherlands","COUNTRY (FIR)",3025,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",19-MAY-13,"Norway","COUNTRY (FIR)",1168,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Poland","COUNTRY (FIR)",1940,975,0,975,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,30
+"2013",5,"MAY",19-MAY-13,"Portugal","COUNTRY (FIR)",1408,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Portugal Continental","COUNTRY (FIR)",1251,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",313,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Romania","COUNTRY (FIR)",1577,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1755,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Slovakia","COUNTRY (FIR)",1266,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Slovenia","COUNTRY (FIR)",1077,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Spain","COUNTRY (FIR)",4852,3441,0,2978,0,0,0,0,0,0,0,0,0,0,0,0,463,0,236,98
+"2013",5,"MAY",19-MAY-13,"Spain Canarias","COUNTRY (FIR)",640,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Spain Continental","COUNTRY (FIR)",4619,3441,0,2978,0,0,0,0,0,0,0,0,0,0,0,0,463,0,236,98
+"2013",5,"MAY",19-MAY-13,"Sweden","COUNTRY (FIR)",1844,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Switzerland","COUNTRY (FIR)",2903,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",19-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",381,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Turkey","COUNTRY (FIR)",3498,393,0,0,0,0,0,0,0,0,393,0,0,0,0,0,0,0,25,14
+"2013",5,"MAY",19-MAY-13,"UK Continental","COUNTRY (FIR)",6141,1871,0,705,0,0,0,0,0,0,0,0,0,1166,0,0,0,0,129,55
+"2013",5,"MAY",19-MAY-13,"UK Oceanic","COUNTRY (FIR)",1187,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"Ukraine","COUNTRY (FIR)",1434,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",19-MAY-13,"United Kingdom","COUNTRY (FIR)",6318,1871,0,705,0,0,0,0,0,0,0,0,0,1166,0,0,0,0,129,55
+"2013",5,"MAY",20-MAY-13,"Albania","COUNTRY (FIR)",577,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Armenia","COUNTRY (FIR)",118,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Austria","COUNTRY (FIR)",3228,555,0,0,0,0,0,0,0,0,0,0,0,0,158,0,397,0,35,13
+"2013",5,"MAY",20-MAY-13,"Belgium","COUNTRY (FIR)",3188,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",766,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Bulgaria","COUNTRY (FIR)",1594,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Croatia","COUNTRY (FIR)",1482,483,0,0,0,0,0,483,0,0,0,0,0,0,0,0,0,0,36,15
+"2013",5,"MAY",20-MAY-13,"Cyprus","COUNTRY (FIR)",774,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Czech Republic","COUNTRY (FIR)",1820,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Denmark","COUNTRY (FIR)",1722,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Estonia","COUNTRY (FIR)",508,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Finland","COUNTRY (FIR)",764,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"France","COUNTRY (FIR)",8399,924,0,924,0,0,0,0,0,0,0,0,0,0,0,0,0,0,69,30
+"2013",5,"MAY",20-MAY-13,"Georgia","COUNTRY (FIR)",250,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Germany","COUNTRY (FIR)",8322,201,0,201,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,4
+"2013",5,"MAY",20-MAY-13,"Greece","COUNTRY (FIR)",1877,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Hungary","COUNTRY (FIR)",1631,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Ireland","COUNTRY (FIR)",1314,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Italy","COUNTRY (FIR)",5017,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Latvia","COUNTRY (FIR)",637,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Lithuania","COUNTRY (FIR)",674,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Malta","COUNTRY (FIR)",308,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Moldova","COUNTRY (FIR)",204,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Netherlands","COUNTRY (FIR)",3199,251,0,251,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,8
+"2013",5,"MAY",20-MAY-13,"Norway","COUNTRY (FIR)",1546,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Poland","COUNTRY (FIR)",1983,786,0,71,0,0,0,0,0,0,0,0,0,0,0,0,715,0,33,24
+"2013",5,"MAY",20-MAY-13,"Portugal","COUNTRY (FIR)",1387,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Portugal Continental","COUNTRY (FIR)",1225,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",311,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Romania","COUNTRY (FIR)",1367,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1595,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Slovakia","COUNTRY (FIR)",1029,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Slovenia","COUNTRY (FIR)",1012,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Spain","COUNTRY (FIR)",4785,1965,0,1133,0,0,0,0,0,0,0,0,0,0,0,0,832,0,142,55
+"2013",5,"MAY",20-MAY-13,"Spain Canarias","COUNTRY (FIR)",630,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Spain Continental","COUNTRY (FIR)",4556,1965,0,1133,0,0,0,0,0,0,0,0,0,0,0,0,832,0,142,55
+"2013",5,"MAY",20-MAY-13,"Sweden","COUNTRY (FIR)",2261,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Switzerland","COUNTRY (FIR)",3018,210,0,210,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,6
+"2013",5,"MAY",20-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",314,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Turkey","COUNTRY (FIR)",3291,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"UK Continental","COUNTRY (FIR)",6719,1955,0,1228,0,0,0,0,178,0,0,0,0,549,0,0,0,0,123,64
+"2013",5,"MAY",20-MAY-13,"UK Oceanic","COUNTRY (FIR)",1111,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"Ukraine","COUNTRY (FIR)",1297,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",20-MAY-13,"United Kingdom","COUNTRY (FIR)",6876,1955,0,1228,0,0,0,0,178,0,0,0,0,549,0,0,0,0,123,64
+"2013",5,"MAY",21-MAY-13,"Albania","COUNTRY (FIR)",575,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Armenia","COUNTRY (FIR)",134,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Austria","COUNTRY (FIR)",3337,767,0,0,0,0,0,0,0,0,0,0,0,0,184,0,583,0,42,19
+"2013",5,"MAY",21-MAY-13,"Belgium","COUNTRY (FIR)",3257,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",789,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Bulgaria","COUNTRY (FIR)",1517,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Croatia","COUNTRY (FIR)",1455,812,0,520,0,0,0,0,0,0,0,0,0,0,0,0,292,0,64,21
+"2013",5,"MAY",21-MAY-13,"Cyprus","COUNTRY (FIR)",727,172,0,172,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,4
+"2013",5,"MAY",21-MAY-13,"Czech Republic","COUNTRY (FIR)",1929,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Denmark","COUNTRY (FIR)",1848,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Estonia","COUNTRY (FIR)",478,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Finland","COUNTRY (FIR)",746,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"France","COUNTRY (FIR)",8607,440,0,368,0,0,0,0,72,0,0,0,0,0,0,0,0,0,36,9
+"2013",5,"MAY",21-MAY-13,"Georgia","COUNTRY (FIR)",267,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Germany","COUNTRY (FIR)",8943,382,0,0,0,0,0,0,0,0,0,0,0,382,0,0,0,0,34,8
+"2013",5,"MAY",21-MAY-13,"Greece","COUNTRY (FIR)",1766,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",21-MAY-13,"Hungary","COUNTRY (FIR)",1641,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Ireland","COUNTRY (FIR)",1217,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Italy","COUNTRY (FIR)",4643,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",21-MAY-13,"Latvia","COUNTRY (FIR)",617,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Lithuania","COUNTRY (FIR)",642,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Malta","COUNTRY (FIR)",310,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Moldova","COUNTRY (FIR)",208,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Netherlands","COUNTRY (FIR)",3254,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",21-MAY-13,"Norway","COUNTRY (FIR)",1944,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Poland","COUNTRY (FIR)",1990,932,0,0,0,0,0,0,0,0,0,0,0,0,0,0,932,0,54,31
+"2013",5,"MAY",21-MAY-13,"Portugal","COUNTRY (FIR)",1263,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Portugal Continental","COUNTRY (FIR)",1111,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",310,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Romania","COUNTRY (FIR)",1349,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1487,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Slovakia","COUNTRY (FIR)",1058,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Slovenia","COUNTRY (FIR)",1056,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Spain","COUNTRY (FIR)",4564,237,0,237,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,4
+"2013",5,"MAY",21-MAY-13,"Spain Canarias","COUNTRY (FIR)",600,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Spain Continental","COUNTRY (FIR)",4298,237,0,237,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,4
+"2013",5,"MAY",21-MAY-13,"Sweden","COUNTRY (FIR)",2410,784,0,0,0,0,0,0,0,0,0,0,0,0,20,0,764,0,58,23
+"2013",5,"MAY",21-MAY-13,"Switzerland","COUNTRY (FIR)",2962,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",21-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",300,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Turkey","COUNTRY (FIR)",3180,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"UK Continental","COUNTRY (FIR)",6685,1161,0,1161,0,0,0,0,0,0,0,0,0,0,0,0,0,0,70,43
+"2013",5,"MAY",21-MAY-13,"UK Oceanic","COUNTRY (FIR)",1133,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"Ukraine","COUNTRY (FIR)",1288,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",21-MAY-13,"United Kingdom","COUNTRY (FIR)",6885,1161,0,1161,0,0,0,0,0,0,0,0,0,0,0,0,0,0,70,43
+"2013",5,"MAY",22-MAY-13,"Albania","COUNTRY (FIR)",563,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"Armenia","COUNTRY (FIR)",127,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"Austria","COUNTRY (FIR)",3342,925,0,354,0,0,0,0,0,0,0,0,0,0,571,0,0,0,86,20
+"2013",5,"MAY",22-MAY-13,"Belgium","COUNTRY (FIR)",3466,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",812,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"Bulgaria","COUNTRY (FIR)",1551,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"Croatia","COUNTRY (FIR)",1430,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"Cyprus","COUNTRY (FIR)",800,1235,0,1235,0,0,0,0,0,0,0,0,0,0,0,0,0,0,67,37
+"2013",5,"MAY",22-MAY-13,"Czech Republic","COUNTRY (FIR)",1927,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"Denmark","COUNTRY (FIR)",1878,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",22-MAY-13,"Estonia","COUNTRY (FIR)",526,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"Finland","COUNTRY (FIR)",782,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"France","COUNTRY (FIR)",8747,631,0,631,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51,17
+"2013",5,"MAY",22-MAY-13,"Georgia","COUNTRY (FIR)",244,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"Germany","COUNTRY (FIR)",9159,266,0,266,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24,5
+"2013",5,"MAY",22-MAY-13,"Greece","COUNTRY (FIR)",1801,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"Hungary","COUNTRY (FIR)",1672,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"Ireland","COUNTRY (FIR)",1354,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"Italy","COUNTRY (FIR)",4725,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",22-MAY-13,"Latvia","COUNTRY (FIR)",642,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"Lithuania","COUNTRY (FIR)",707,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"Malta","COUNTRY (FIR)",275,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"Moldova","COUNTRY (FIR)",195,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"Netherlands","COUNTRY (FIR)",3363,622,0,387,0,0,235,0,0,0,0,0,0,0,0,0,0,0,45,16
+"2013",5,"MAY",22-MAY-13,"Norway","COUNTRY (FIR)",2086,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"Poland","COUNTRY (FIR)",2075,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",22-MAY-13,"Portugal","COUNTRY (FIR)",1293,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",22-MAY-13,"Portugal Continental","COUNTRY (FIR)",1129,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",22-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",285,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"Romania","COUNTRY (FIR)",1424,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1502,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"Slovakia","COUNTRY (FIR)",1130,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"Slovenia","COUNTRY (FIR)",1030,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"Spain","COUNTRY (FIR)",4607,1583,0,1583,0,0,0,0,0,0,0,0,0,0,0,0,0,0,83,51
+"2013",5,"MAY",22-MAY-13,"Spain Canarias","COUNTRY (FIR)",607,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"Spain Continental","COUNTRY (FIR)",4372,1583,0,1583,0,0,0,0,0,0,0,0,0,0,0,0,0,0,83,51
+"2013",5,"MAY",22-MAY-13,"Sweden","COUNTRY (FIR)",2473,1079,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1079,0,84,29
+"2013",5,"MAY",22-MAY-13,"Switzerland","COUNTRY (FIR)",3111,267,0,267,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,9
+"2013",5,"MAY",22-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",347,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"Turkey","COUNTRY (FIR)",3225,488,0,0,0,0,0,0,0,0,488,0,0,0,0,0,0,0,27,19
+"2013",5,"MAY",22-MAY-13,"UK Continental","COUNTRY (FIR)",6829,1289,0,619,0,0,0,0,0,0,0,0,0,670,0,0,0,0,99,30
+"2013",5,"MAY",22-MAY-13,"UK Oceanic","COUNTRY (FIR)",1055,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"Ukraine","COUNTRY (FIR)",1406,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",22-MAY-13,"United Kingdom","COUNTRY (FIR)",6989,1289,0,619,0,0,0,0,0,0,0,0,0,670,0,0,0,0,99,30
+"2013",5,"MAY",23-MAY-13,"Albania","COUNTRY (FIR)",616,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Armenia","COUNTRY (FIR)",130,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Austria","COUNTRY (FIR)",3401,448,0,0,0,0,0,0,0,0,0,335,0,0,113,0,0,0,30,15
+"2013",5,"MAY",23-MAY-13,"Belgium","COUNTRY (FIR)",3324,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",831,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Bulgaria","COUNTRY (FIR)",1625,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Croatia","COUNTRY (FIR)",1486,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Cyprus","COUNTRY (FIR)",850,758,0,758,0,0,0,0,0,0,0,0,0,0,0,0,0,0,58,23
+"2013",5,"MAY",23-MAY-13,"Czech Republic","COUNTRY (FIR)",2067,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Denmark","COUNTRY (FIR)",1960,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Estonia","COUNTRY (FIR)",537,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Finland","COUNTRY (FIR)",773,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"France","COUNTRY (FIR)",9018,1944,0,622,0,0,0,0,9,0,0,1013,0,0,0,0,300,0,95,53
+"2013",5,"MAY",23-MAY-13,"Georgia","COUNTRY (FIR)",249,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Germany","COUNTRY (FIR)",9336,2775,0,0,0,0,0,0,0,0,0,0,0,2525,0,0,250,0,171,84
+"2013",5,"MAY",23-MAY-13,"Greece","COUNTRY (FIR)",1998,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",23-MAY-13,"Hungary","COUNTRY (FIR)",1733,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Ireland","COUNTRY (FIR)",1371,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Italy","COUNTRY (FIR)",4948,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Latvia","COUNTRY (FIR)",678,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Lithuania","COUNTRY (FIR)",747,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Malta","COUNTRY (FIR)",292,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Moldova","COUNTRY (FIR)",205,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Netherlands","COUNTRY (FIR)",3330,221,0,221,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,5
+"2013",5,"MAY",23-MAY-13,"Norway","COUNTRY (FIR)",2075,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Poland","COUNTRY (FIR)",2125,688,0,688,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,19
+"2013",5,"MAY",23-MAY-13,"Portugal","COUNTRY (FIR)",1429,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Portugal Continental","COUNTRY (FIR)",1241,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",336,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Romania","COUNTRY (FIR)",1441,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1622,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Slovakia","COUNTRY (FIR)",1168,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Slovenia","COUNTRY (FIR)",1040,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Spain","COUNTRY (FIR)",4788,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",23-MAY-13,"Spain Canarias","COUNTRY (FIR)",613,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Spain Continental","COUNTRY (FIR)",4535,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",23-MAY-13,"Sweden","COUNTRY (FIR)",2469,377,0,0,0,0,0,0,0,0,0,0,0,0,0,0,377,0,26,13
+"2013",5,"MAY",23-MAY-13,"Switzerland","COUNTRY (FIR)",3154,344,0,344,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,9
+"2013",5,"MAY",23-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",424,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Turkey","COUNTRY (FIR)",3449,203,0,0,0,0,0,0,0,0,203,0,0,0,0,0,0,0,17,3
+"2013",5,"MAY",23-MAY-13,"UK Continental","COUNTRY (FIR)",6978,1646,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1646,0,107,48
+"2013",5,"MAY",23-MAY-13,"UK Oceanic","COUNTRY (FIR)",1207,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"Ukraine","COUNTRY (FIR)",1397,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",23-MAY-13,"United Kingdom","COUNTRY (FIR)",7193,1646,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1646,0,107,48
+"2013",5,"MAY",24-MAY-13,"Albania","COUNTRY (FIR)",651,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Armenia","COUNTRY (FIR)",132,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Austria","COUNTRY (FIR)",3578,1425,0,0,0,0,0,0,0,0,0,0,0,771,654,0,0,0,82,41
+"2013",5,"MAY",24-MAY-13,"Belgium","COUNTRY (FIR)",3491,1242,0,704,0,0,0,0,0,0,0,0,0,0,0,0,538,0,94,37
+"2013",5,"MAY",24-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",807,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Bulgaria","COUNTRY (FIR)",1633,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Croatia","COUNTRY (FIR)",1568,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Cyprus","COUNTRY (FIR)",744,157,0,157,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,6
+"2013",5,"MAY",24-MAY-13,"Czech Republic","COUNTRY (FIR)",2075,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Denmark","COUNTRY (FIR)",1966,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Estonia","COUNTRY (FIR)",581,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Finland","COUNTRY (FIR)",803,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"France","COUNTRY (FIR)",9600,2719,0,2084,0,0,0,0,0,0,82,553,0,0,0,0,0,0,181,68
+"2013",5,"MAY",24-MAY-13,"Georgia","COUNTRY (FIR)",245,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Germany","COUNTRY (FIR)",9676,5528,0,1907,0,0,0,0,0,0,0,0,0,3621,0,0,0,0,327,158
+"2013",5,"MAY",24-MAY-13,"Greece","COUNTRY (FIR)",1997,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",24-MAY-13,"Hungary","COUNTRY (FIR)",1812,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Ireland","COUNTRY (FIR)",1492,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Italy","COUNTRY (FIR)",5298,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",24-MAY-13,"Latvia","COUNTRY (FIR)",764,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Lithuania","COUNTRY (FIR)",753,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Malta","COUNTRY (FIR)",314,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Moldova","COUNTRY (FIR)",224,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Netherlands","COUNTRY (FIR)",3516,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",24-MAY-13,"Norway","COUNTRY (FIR)",1998,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Poland","COUNTRY (FIR)",2216,558,0,558,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,16
+"2013",5,"MAY",24-MAY-13,"Portugal","COUNTRY (FIR)",1416,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Portugal Continental","COUNTRY (FIR)",1236,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",325,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Romania","COUNTRY (FIR)",1509,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1637,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Slovakia","COUNTRY (FIR)",1188,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Slovenia","COUNTRY (FIR)",1071,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Spain","COUNTRY (FIR)",5074,1492,0,1492,0,0,0,0,0,0,0,0,0,0,0,0,0,0,104,42
+"2013",5,"MAY",24-MAY-13,"Spain Canarias","COUNTRY (FIR)",653,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Spain Continental","COUNTRY (FIR)",4784,1492,0,1492,0,0,0,0,0,0,0,0,0,0,0,0,0,0,104,42
+"2013",5,"MAY",24-MAY-13,"Sweden","COUNTRY (FIR)",2375,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Switzerland","COUNTRY (FIR)",3256,34,0,0,0,0,34,0,0,0,0,0,0,0,0,0,0,0,3,1
+"2013",5,"MAY",24-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",378,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Turkey","COUNTRY (FIR)",3345,274,0,0,0,0,0,0,0,0,274,0,0,0,0,0,0,0,15,11
+"2013",5,"MAY",24-MAY-13,"UK Continental","COUNTRY (FIR)",7440,6120,0,6120,0,0,0,0,0,0,0,0,0,0,0,0,0,0,344,181
+"2013",5,"MAY",24-MAY-13,"UK Oceanic","COUNTRY (FIR)",1237,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"Ukraine","COUNTRY (FIR)",1429,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",24-MAY-13,"United Kingdom","COUNTRY (FIR)",7613,6120,0,6120,0,0,0,0,0,0,0,0,0,0,0,0,0,0,344,181
+"2013",5,"MAY",25-MAY-13,"Albania","COUNTRY (FIR)",780,224,0,0,0,0,0,0,0,0,0,0,0,224,0,0,0,0,21,7
+"2013",5,"MAY",25-MAY-13,"Armenia","COUNTRY (FIR)",108,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"Austria","COUNTRY (FIR)",3764,1248,0,216,0,0,0,0,0,0,0,0,0,0,1032,0,0,0,61,41
+"2013",5,"MAY",25-MAY-13,"Belgium","COUNTRY (FIR)",3112,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",998,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"Bulgaria","COUNTRY (FIR)",1946,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"Croatia","COUNTRY (FIR)",1948,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"Cyprus","COUNTRY (FIR)",734,811,0,811,0,0,0,0,0,0,0,0,0,0,0,0,0,0,71,21
+"2013",5,"MAY",25-MAY-13,"Czech Republic","COUNTRY (FIR)",2018,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"Denmark","COUNTRY (FIR)",1515,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"Estonia","COUNTRY (FIR)",578,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"Finland","COUNTRY (FIR)",522,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"France","COUNTRY (FIR)",8986,3087,0,2697,0,0,0,0,0,0,293,97,0,0,0,0,0,0,240,79
+"2013",5,"MAY",25-MAY-13,"Georgia","COUNTRY (FIR)",264,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"Germany","COUNTRY (FIR)",8437,4516,0,2622,0,0,0,0,0,0,0,0,0,1894,0,0,0,0,281,135
+"2013",5,"MAY",25-MAY-13,"Greece","COUNTRY (FIR)",2269,290,0,137,0,0,0,0,0,0,0,0,0,153,0,0,0,0,23,5
+"2013",5,"MAY",25-MAY-13,"Hungary","COUNTRY (FIR)",1954,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"Ireland","COUNTRY (FIR)",1414,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"Italy","COUNTRY (FIR)",5267,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",25-MAY-13,"Latvia","COUNTRY (FIR)",784,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"Lithuania","COUNTRY (FIR)",742,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"Malta","COUNTRY (FIR)",294,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"Moldova","COUNTRY (FIR)",260,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"Netherlands","COUNTRY (FIR)",3082,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",25-MAY-13,"Norway","COUNTRY (FIR)",1071,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"Poland","COUNTRY (FIR)",2139,2335,0,2308,0,0,0,0,0,0,0,0,0,27,0,0,0,0,152,66
+"2013",5,"MAY",25-MAY-13,"Portugal","COUNTRY (FIR)",1496,593,0,593,0,0,0,0,0,0,0,0,0,0,0,0,0,0,44,15
+"2013",5,"MAY",25-MAY-13,"Portugal Continental","COUNTRY (FIR)",1315,593,0,593,0,0,0,0,0,0,0,0,0,0,0,0,0,0,44,15
+"2013",5,"MAY",25-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",325,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"Romania","COUNTRY (FIR)",1603,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1967,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"Slovakia","COUNTRY (FIR)",1297,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"Slovenia","COUNTRY (FIR)",1309,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"Spain","COUNTRY (FIR)",5080,3561,0,3561,0,0,0,0,0,0,0,0,0,0,0,0,0,0,192,101
+"2013",5,"MAY",25-MAY-13,"Spain Canarias","COUNTRY (FIR)",670,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"Spain Continental","COUNTRY (FIR)",4884,3561,0,3561,0,0,0,0,0,0,0,0,0,0,0,0,0,0,192,101
+"2013",5,"MAY",25-MAY-13,"Sweden","COUNTRY (FIR)",1575,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",25-MAY-13,"Switzerland","COUNTRY (FIR)",3049,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",25-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",513,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"Turkey","COUNTRY (FIR)",3541,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"UK Continental","COUNTRY (FIR)",6462,755,0,755,0,0,0,0,0,0,0,0,0,0,0,0,0,0,56,19
+"2013",5,"MAY",25-MAY-13,"UK Oceanic","COUNTRY (FIR)",1210,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"Ukraine","COUNTRY (FIR)",1500,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",25-MAY-13,"United Kingdom","COUNTRY (FIR)",6633,755,0,755,0,0,0,0,0,0,0,0,0,0,0,0,0,0,56,19
+"2013",5,"MAY",26-MAY-13,"Albania","COUNTRY (FIR)",731,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Armenia","COUNTRY (FIR)",112,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Austria","COUNTRY (FIR)",3530,1051,0,1051,0,0,0,0,0,0,0,0,0,0,0,0,0,0,77,31
+"2013",5,"MAY",26-MAY-13,"Belgium","COUNTRY (FIR)",3405,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",871,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Bulgaria","COUNTRY (FIR)",1933,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Croatia","COUNTRY (FIR)",1705,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Cyprus","COUNTRY (FIR)",951,2133,0,1989,0,0,0,0,0,144,0,0,0,0,0,0,0,0,138,62
+"2013",5,"MAY",26-MAY-13,"Czech Republic","COUNTRY (FIR)",2024,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Denmark","COUNTRY (FIR)",1728,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Estonia","COUNTRY (FIR)",591,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Finland","COUNTRY (FIR)",640,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"France","COUNTRY (FIR)",8959,4863,0,4808,0,0,0,0,0,0,0,55,0,0,0,0,0,0,348,129
+"2013",5,"MAY",26-MAY-13,"Georgia","COUNTRY (FIR)",258,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Germany","COUNTRY (FIR)",8907,274,0,274,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,6
+"2013",5,"MAY",26-MAY-13,"Greece","COUNTRY (FIR)",2311,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",26-MAY-13,"Hungary","COUNTRY (FIR)",1934,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Ireland","COUNTRY (FIR)",1378,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Italy","COUNTRY (FIR)",5349,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",26-MAY-13,"Latvia","COUNTRY (FIR)",761,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Lithuania","COUNTRY (FIR)",732,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Malta","COUNTRY (FIR)",323,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Moldova","COUNTRY (FIR)",223,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Netherlands","COUNTRY (FIR)",3262,59,0,59,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,1
+"2013",5,"MAY",26-MAY-13,"Norway","COUNTRY (FIR)",1510,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Poland","COUNTRY (FIR)",2095,1171,0,839,0,0,0,0,0,0,0,0,0,332,0,0,0,0,91,31
+"2013",5,"MAY",26-MAY-13,"Portugal","COUNTRY (FIR)",1417,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Portugal Continental","COUNTRY (FIR)",1250,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",309,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Romania","COUNTRY (FIR)",1645,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1790,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Slovakia","COUNTRY (FIR)",1326,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Slovenia","COUNTRY (FIR)",1144,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Spain","COUNTRY (FIR)",5067,3458,0,3189,0,0,0,0,0,0,0,0,0,269,0,0,0,0,264,92
+"2013",5,"MAY",26-MAY-13,"Spain Canarias","COUNTRY (FIR)",634,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Spain Continental","COUNTRY (FIR)",4848,3458,0,3189,0,0,0,0,0,0,0,0,0,269,0,0,0,0,264,92
+"2013",5,"MAY",26-MAY-13,"Sweden","COUNTRY (FIR)",1898,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Switzerland","COUNTRY (FIR)",3131,248,0,248,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,4
+"2013",5,"MAY",26-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",451,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Turkey","COUNTRY (FIR)",3655,403,0,0,0,0,0,0,0,0,403,0,0,0,0,0,0,0,24,14
+"2013",5,"MAY",26-MAY-13,"UK Continental","COUNTRY (FIR)",6569,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",26-MAY-13,"UK Oceanic","COUNTRY (FIR)",1159,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"Ukraine","COUNTRY (FIR)",1531,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",26-MAY-13,"United Kingdom","COUNTRY (FIR)",6744,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",27-MAY-13,"Albania","COUNTRY (FIR)",598,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Armenia","COUNTRY (FIR)",137,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Austria","COUNTRY (FIR)",3459,1694,0,1092,0,0,0,0,0,0,0,0,0,0,602,0,0,0,107,52
+"2013",5,"MAY",27-MAY-13,"Belgium","COUNTRY (FIR)",3408,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",801,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Bulgaria","COUNTRY (FIR)",1702,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Croatia","COUNTRY (FIR)",1504,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Cyprus","COUNTRY (FIR)",806,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Czech Republic","COUNTRY (FIR)",1986,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Denmark","COUNTRY (FIR)",1938,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Estonia","COUNTRY (FIR)",560,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Finland","COUNTRY (FIR)",783,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"France","COUNTRY (FIR)",9275,2033,0,1645,0,0,0,0,309,79,0,0,0,0,0,0,0,0,160,54
+"2013",5,"MAY",27-MAY-13,"Georgia","COUNTRY (FIR)",263,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Germany","COUNTRY (FIR)",9209,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",27-MAY-13,"Greece","COUNTRY (FIR)",1945,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Hungary","COUNTRY (FIR)",1772,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Ireland","COUNTRY (FIR)",1265,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Italy","COUNTRY (FIR)",5184,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Latvia","COUNTRY (FIR)",675,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Lithuania","COUNTRY (FIR)",656,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Malta","COUNTRY (FIR)",290,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Moldova","COUNTRY (FIR)",226,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Netherlands","COUNTRY (FIR)",3385,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",27-MAY-13,"Norway","COUNTRY (FIR)",2051,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",27-MAY-13,"Poland","COUNTRY (FIR)",2047,204,0,204,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,6
+"2013",5,"MAY",27-MAY-13,"Portugal","COUNTRY (FIR)",1403,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Portugal Continental","COUNTRY (FIR)",1236,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",324,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Romania","COUNTRY (FIR)",1527,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1563,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Slovakia","COUNTRY (FIR)",1168,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Slovenia","COUNTRY (FIR)",1040,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Spain","COUNTRY (FIR)",4923,1274,0,447,0,0,0,0,0,0,0,0,0,0,0,0,827,0,98,35
+"2013",5,"MAY",27-MAY-13,"Spain Canarias","COUNTRY (FIR)",645,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Spain Continental","COUNTRY (FIR)",4680,1274,0,447,0,0,0,0,0,0,0,0,0,0,0,0,827,0,98,35
+"2013",5,"MAY",27-MAY-13,"Sweden","COUNTRY (FIR)",2331,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Switzerland","COUNTRY (FIR)",3122,340,0,340,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,9
+"2013",5,"MAY",27-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",375,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Turkey","COUNTRY (FIR)",3368,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"UK Continental","COUNTRY (FIR)",6590,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",27-MAY-13,"UK Oceanic","COUNTRY (FIR)",1066,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"Ukraine","COUNTRY (FIR)",1311,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",27-MAY-13,"United Kingdom","COUNTRY (FIR)",6742,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",28-MAY-13,"Albania","COUNTRY (FIR)",617,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"Armenia","COUNTRY (FIR)",137,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"Austria","COUNTRY (FIR)",3395,550,0,0,0,0,0,0,0,0,0,0,0,0,550,0,0,0,45,15
+"2013",5,"MAY",28-MAY-13,"Belgium","COUNTRY (FIR)",3290,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",28-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",819,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"Bulgaria","COUNTRY (FIR)",1587,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"Croatia","COUNTRY (FIR)",1506,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"Cyprus","COUNTRY (FIR)",762,802,0,348,0,0,0,0,0,0,0,0,0,0,454,0,0,0,54,21
+"2013",5,"MAY",28-MAY-13,"Czech Republic","COUNTRY (FIR)",1950,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"Denmark","COUNTRY (FIR)",1837,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"Estonia","COUNTRY (FIR)",538,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"Finland","COUNTRY (FIR)",751,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"France","COUNTRY (FIR)",8554,1275,0,936,0,0,0,0,0,0,0,0,0,0,0,0,339,0,106,35
+"2013",5,"MAY",28-MAY-13,"Georgia","COUNTRY (FIR)",258,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"Germany","COUNTRY (FIR)",9144,5082,0,0,0,0,0,0,0,0,0,0,0,116,1846,0,3120,0,192,134
+"2013",5,"MAY",28-MAY-13,"Greece","COUNTRY (FIR)",1866,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"Hungary","COUNTRY (FIR)",1675,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"Ireland","COUNTRY (FIR)",1254,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"Italy","COUNTRY (FIR)",4830,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",28-MAY-13,"Latvia","COUNTRY (FIR)",676,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"Lithuania","COUNTRY (FIR)",660,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"Malta","COUNTRY (FIR)",333,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"Moldova","COUNTRY (FIR)",211,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"Netherlands","COUNTRY (FIR)",3304,352,0,352,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,13
+"2013",5,"MAY",28-MAY-13,"Norway","COUNTRY (FIR)",2048,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"Poland","COUNTRY (FIR)",2050,151,0,151,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,3
+"2013",5,"MAY",28-MAY-13,"Portugal","COUNTRY (FIR)",1285,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"Portugal Continental","COUNTRY (FIR)",1148,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",308,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"Romania","COUNTRY (FIR)",1448,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1502,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",28-MAY-13,"Slovakia","COUNTRY (FIR)",1110,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"Slovenia","COUNTRY (FIR)",1043,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"Spain","COUNTRY (FIR)",4638,1593,0,1045,0,0,0,0,0,0,0,0,0,0,0,0,548,0,100,48
+"2013",5,"MAY",28-MAY-13,"Spain Canarias","COUNTRY (FIR)",577,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",28-MAY-13,"Spain Continental","COUNTRY (FIR)",4393,1593,0,1045,0,0,0,0,0,0,0,0,0,0,0,0,548,0,100,48
+"2013",5,"MAY",28-MAY-13,"Sweden","COUNTRY (FIR)",2283,185,0,185,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,5
+"2013",5,"MAY",28-MAY-13,"Switzerland","COUNTRY (FIR)",2940,1721,0,466,0,0,0,0,0,0,0,0,0,0,0,0,1255,0,120,46
+"2013",5,"MAY",28-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",326,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"Turkey","COUNTRY (FIR)",3269,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"UK Continental","COUNTRY (FIR)",6783,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",28-MAY-13,"UK Oceanic","COUNTRY (FIR)",1144,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"Ukraine","COUNTRY (FIR)",1364,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",28-MAY-13,"United Kingdom","COUNTRY (FIR)",6979,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",29-MAY-13,"Albania","COUNTRY (FIR)",567,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Armenia","COUNTRY (FIR)",154,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Austria","COUNTRY (FIR)",3504,1056,0,0,0,0,0,0,0,0,0,0,0,0,1056,0,0,0,71,34
+"2013",5,"MAY",29-MAY-13,"Belgium","COUNTRY (FIR)",3442,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",837,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Bulgaria","COUNTRY (FIR)",1636,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Croatia","COUNTRY (FIR)",1446,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Cyprus","COUNTRY (FIR)",776,5731,0,5731,0,0,0,0,0,0,0,0,0,0,0,0,0,0,208,137
+"2013",5,"MAY",29-MAY-13,"Czech Republic","COUNTRY (FIR)",1980,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Denmark","COUNTRY (FIR)",1921,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Estonia","COUNTRY (FIR)",548,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Finland","COUNTRY (FIR)",759,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"France","COUNTRY (FIR)",8672,578,0,528,0,0,0,0,0,0,0,0,0,0,50,0,0,0,46,21
+"2013",5,"MAY",29-MAY-13,"Georgia","COUNTRY (FIR)",247,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Germany","COUNTRY (FIR)",9272,1372,0,134,0,0,0,0,0,0,0,0,0,0,883,0,355,0,97,39
+"2013",5,"MAY",29-MAY-13,"Greece","COUNTRY (FIR)",1885,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Hungary","COUNTRY (FIR)",1742,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Ireland","COUNTRY (FIR)",1297,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Italy","COUNTRY (FIR)",4722,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",29-MAY-13,"Latvia","COUNTRY (FIR)",663,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Lithuania","COUNTRY (FIR)",703,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Malta","COUNTRY (FIR)",285,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Moldova","COUNTRY (FIR)",214,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Netherlands","COUNTRY (FIR)",3348,193,0,0,0,0,0,0,0,0,0,0,0,0,0,0,193,0,15,5
+"2013",5,"MAY",29-MAY-13,"Norway","COUNTRY (FIR)",2082,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Poland","COUNTRY (FIR)",2132,791,0,0,0,0,0,0,0,0,0,0,0,0,0,0,791,0,52,18
+"2013",5,"MAY",29-MAY-13,"Portugal","COUNTRY (FIR)",1369,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",29-MAY-13,"Portugal Continental","COUNTRY (FIR)",1223,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",29-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",306,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Romania","COUNTRY (FIR)",1529,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1500,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",29-MAY-13,"Slovakia","COUNTRY (FIR)",1140,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Slovenia","COUNTRY (FIR)",1035,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Spain","COUNTRY (FIR)",4776,2505,0,1982,0,0,0,0,0,0,0,0,0,0,0,0,523,0,149,72
+"2013",5,"MAY",29-MAY-13,"Spain Canarias","COUNTRY (FIR)",624,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Spain Continental","COUNTRY (FIR)",4527,2505,0,1982,0,0,0,0,0,0,0,0,0,0,0,0,523,0,149,72
+"2013",5,"MAY",29-MAY-13,"Sweden","COUNTRY (FIR)",2390,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Switzerland","COUNTRY (FIR)",3020,304,0,9,0,0,0,0,0,0,0,0,0,0,295,0,0,0,22,8
+"2013",5,"MAY",29-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",403,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Turkey","COUNTRY (FIR)",3337,95,0,0,0,0,0,0,0,0,95,0,0,0,0,0,0,0,8,2
+"2013",5,"MAY",29-MAY-13,"UK Continental","COUNTRY (FIR)",6881,811,0,798,0,0,0,0,0,13,0,0,0,0,0,0,0,0,65,17
+"2013",5,"MAY",29-MAY-13,"UK Oceanic","COUNTRY (FIR)",1126,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"Ukraine","COUNTRY (FIR)",1448,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",29-MAY-13,"United Kingdom","COUNTRY (FIR)",7049,811,0,798,0,0,0,0,0,13,0,0,0,0,0,0,0,0,65,17
+"2013",5,"MAY",30-MAY-13,"Albania","COUNTRY (FIR)",606,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Armenia","COUNTRY (FIR)",153,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Austria","COUNTRY (FIR)",3339,96,0,0,0,0,0,0,0,0,0,0,0,0,96,0,0,0,8,2
+"2013",5,"MAY",30-MAY-13,"Belgium","COUNTRY (FIR)",3268,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",30-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",780,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Bulgaria","COUNTRY (FIR)",1789,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Croatia","COUNTRY (FIR)",1520,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Cyprus","COUNTRY (FIR)",805,9541,0,1096,0,0,0,0,0,0,0,0,0,8445,0,0,0,0,278,211
+"2013",5,"MAY",30-MAY-13,"Czech Republic","COUNTRY (FIR)",1942,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Denmark","COUNTRY (FIR)",1959,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Estonia","COUNTRY (FIR)",541,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Finland","COUNTRY (FIR)",782,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"France","COUNTRY (FIR)",9010,616,0,555,0,0,0,0,0,0,0,0,0,0,0,0,61,0,44,17
+"2013",5,"MAY",30-MAY-13,"Georgia","COUNTRY (FIR)",271,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Germany","COUNTRY (FIR)",8761,57,0,57,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0
+"2013",5,"MAY",30-MAY-13,"Greece","COUNTRY (FIR)",2063,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",30-MAY-13,"Hungary","COUNTRY (FIR)",1836,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Ireland","COUNTRY (FIR)",1344,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Italy","COUNTRY (FIR)",4998,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",30-MAY-13,"Latvia","COUNTRY (FIR)",716,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Lithuania","COUNTRY (FIR)",735,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Malta","COUNTRY (FIR)",303,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Moldova","COUNTRY (FIR)",222,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Netherlands","COUNTRY (FIR)",3335,375,0,375,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,8
+"2013",5,"MAY",30-MAY-13,"Norway","COUNTRY (FIR)",2070,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",30-MAY-13,"Poland","COUNTRY (FIR)",1942,547,0,547,0,0,0,0,0,0,0,0,0,0,0,0,0,0,41,14
+"2013",5,"MAY",30-MAY-13,"Portugal","COUNTRY (FIR)",1387,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Portugal Continental","COUNTRY (FIR)",1245,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",289,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Romania","COUNTRY (FIR)",1581,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1675,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Slovakia","COUNTRY (FIR)",1151,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Slovenia","COUNTRY (FIR)",1037,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Spain","COUNTRY (FIR)",4882,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+"2013",5,"MAY",30-MAY-13,"Spain Canarias","COUNTRY (FIR)",585,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Spain Continental","COUNTRY (FIR)",4665,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+"2013",5,"MAY",30-MAY-13,"Sweden","COUNTRY (FIR)",2413,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Switzerland","COUNTRY (FIR)",3051,631,0,0,0,0,0,0,0,0,0,0,0,0,631,0,0,0,49,18
+"2013",5,"MAY",30-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",424,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Turkey","COUNTRY (FIR)",3526,148,0,0,0,0,0,0,0,0,148,0,0,0,0,0,0,0,11,5
+"2013",5,"MAY",30-MAY-13,"UK Continental","COUNTRY (FIR)",6992,146,0,146,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,1
+"2013",5,"MAY",30-MAY-13,"UK Oceanic","COUNTRY (FIR)",1204,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"Ukraine","COUNTRY (FIR)",1466,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",30-MAY-13,"United Kingdom","COUNTRY (FIR)",7159,146,0,146,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,1
+"2013",5,"MAY",31-MAY-13,"Albania","COUNTRY (FIR)",657,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"Armenia","COUNTRY (FIR)",134,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"Austria","COUNTRY (FIR)",3559,290,0,0,0,0,0,0,0,0,0,0,0,0,290,0,0,0,18,6
+"2013",5,"MAY",31-MAY-13,"Belgium","COUNTRY (FIR)",3372,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",31-MAY-13,"Bosnia and Herzegovina","COUNTRY (FIR)",838,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"Bulgaria","COUNTRY (FIR)",1829,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"Croatia","COUNTRY (FIR)",1683,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"Cyprus","COUNTRY (FIR)",736,1015,0,1015,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52,29
+"2013",5,"MAY",31-MAY-13,"Czech Republic","COUNTRY (FIR)",2004,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",31-MAY-13,"Denmark","COUNTRY (FIR)",1931,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"Estonia","COUNTRY (FIR)",616,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"Finland","COUNTRY (FIR)",791,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"France","COUNTRY (FIR)",9472,329,0,329,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,12
+"2013",5,"MAY",31-MAY-13,"Georgia","COUNTRY (FIR)",270,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"Germany","COUNTRY (FIR)",8869,1849,0,63,0,0,0,0,0,0,0,0,0,454,0,0,1332,0,123,38
+"2013",5,"MAY",31-MAY-13,"Greece","COUNTRY (FIR)",2095,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",31-MAY-13,"Hungary","COUNTRY (FIR)",1849,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"Ireland","COUNTRY (FIR)",1430,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"Italy","COUNTRY (FIR)",5390,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",31-MAY-13,"Latvia","COUNTRY (FIR)",770,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"Lithuania","COUNTRY (FIR)",727,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"Malta","COUNTRY (FIR)",305,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"Moldova","COUNTRY (FIR)",277,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"Netherlands","COUNTRY (FIR)",3413,313,0,313,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,9
+"2013",5,"MAY",31-MAY-13,"Norway","COUNTRY (FIR)",1980,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2013",5,"MAY",31-MAY-13,"Poland","COUNTRY (FIR)",2082,711,0,0,0,0,0,0,0,0,0,0,0,276,0,0,435,0,35,17
+"2013",5,"MAY",31-MAY-13,"Portugal","COUNTRY (FIR)",1427,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"Portugal Continental","COUNTRY (FIR)",1231,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"Portugal Santa Maria","COUNTRY (FIR)",335,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"Romania","COUNTRY (FIR)",1648,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"Serbia and Montenegro","COUNTRY (FIR)",1737,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"Slovakia","COUNTRY (FIR)",1239,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"Slovenia","COUNTRY (FIR)",1148,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"Spain","COUNTRY (FIR)",5111,1815,0,1815,0,0,0,0,0,0,0,0,0,0,0,0,0,0,125,49
+"2013",5,"MAY",31-MAY-13,"Spain Canarias","COUNTRY (FIR)",614,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"Spain Continental","COUNTRY (FIR)",4857,1815,0,1815,0,0,0,0,0,0,0,0,0,0,0,0,0,0,125,49
+"2013",5,"MAY",31-MAY-13,"Sweden","COUNTRY (FIR)",2361,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"Switzerland","COUNTRY (FIR)",3117,850,0,0,0,0,0,0,0,0,0,0,0,0,850,0,0,0,58,24
+"2013",5,"MAY",31-MAY-13,"The former Yugoslav Republic of Macedonia","COUNTRY (FIR)",404,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"Turkey","COUNTRY (FIR)",3471,294,0,0,0,0,0,0,0,0,294,0,0,0,0,0,0,0,16,8
+"2013",5,"MAY",31-MAY-13,"UK Continental","COUNTRY (FIR)",7168,651,0,651,0,0,0,0,0,0,0,0,0,0,0,0,0,0,57,15
+"2013",5,"MAY",31-MAY-13,"UK Oceanic","COUNTRY (FIR)",1197,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"Ukraine","COUNTRY (FIR)",1613,,,,,,,,,,,,,,,,,,,
+"2013",5,"MAY",31-MAY-13,"United Kingdom","COUNTRY (FIR)",7332,651,0,651,0,0,0,0,0,0,0,0,0,0,0,0,0,0,57,15

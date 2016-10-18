@@ -105,18 +105,17 @@ exclude:
   - Gemfile.lock
   - Rakefile
   - "*.sql"
-  - data/set/apt_dly/extract_airport_atfm_delay_data
-  - data/set/clpx/extract_traffic_complexity_score_data
-  - data/set/ert_flt/extract_en-route_traffic_fab_fir_data
-  - data/set/hfe/extract_horizontal_flight_efficiency_data
-  - references/aviation.bib
-  - references/legislation.bib
-  - references/dataviz.bib
+  - "references/*.bib"
   - tmp
-  - auto
+  - references/auto
   - node_modules
   - package.json
   - npm-debug.log
   - scripts
   - vendor
   - .travis.yml
+  - "data/set/*/extract_*"
+  - "*.py"
+  - R/
+  - website.Rproj
+  - .Rhistory
