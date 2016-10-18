@@ -236,7 +236,7 @@ var vis;
 
         svg.on("mousemove", function () {
             // update tooltip position
-            tooltip.style("top", (event.pageY + 16) + "px").style("left", (event.pageX + 10) + "px");
+            tooltip.style("top", (d3.event.pageY + 16) + "px").style("left", (d3.event.pageX + 10) + "px");
             return true;
         });
 
