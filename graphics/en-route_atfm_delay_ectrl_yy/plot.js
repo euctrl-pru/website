@@ -1,6 +1,6 @@
 (function () {
   var width = 700;
-  var height = 0.618 * width;
+  var height = 0.618 * width; // golden ratio
 
   var svg = d3.select('svg')
         .attr("width", width)
@@ -140,10 +140,6 @@
       .attr("transform", "translate(" + (width - margin.right -65) + ",20)");
 
     var legendOrdinal = d3.legendColor()
-    //d3 symbol creates a path-string, for example
-    //"M0,-8.059274488676564L9.306048591020996,
-    //8.059274488676564 -9.306048591020996,8.059274488676564Z"
-    //          .shape("path", d3.symbol().type(d3.symbolTriangle).size(150)())
           .labels(labels.reverse())
           .shapeWidth(15)
           .shapePadding(5)
@@ -151,29 +147,6 @@
 
     svg.select(".legendOrdinal")
       .call(legendOrdinal);
-
-
-
-
-    // var legend = g.selectAll(".legend")
-    //       .data(data.columns.slice(2).reverse())
-    //       .enter().append("g")
-    //       .attr("class", "legend")
-    //       .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; })
-    //       .style("font", "10px sans-serif");
-
-    // legend.append("rect")
-    //   .attr("x", plot_width - 18)
-    //   .attr("width", 18)
-    //   .attr("height", 18)
-    //   .attr("fill", z);
-
-    // legend.append("text")
-    //   .attr("x", plot_width - 24)
-    //   .attr("y", 9)
-    //   .attr("dy", ".35em")
-    //   .attr("text-anchor", "end")
-    //   .text(function(d) { return d; });
   });
 
   // sum all the delays up
