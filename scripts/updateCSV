@@ -111,6 +111,7 @@ fi
     cd "${SCRIPT_DIR}/../data/set/ert_dly" || exit;
     DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_monthly_data 201609 201610;
     mv -f ert_dly_fir_*.csv "${SCRIPT_DIR}/../data/csv/."
+    mv -f ert_dly_aua_*.csv "${SCRIPT_DIR}/../data/csv/."
 )
 
 
