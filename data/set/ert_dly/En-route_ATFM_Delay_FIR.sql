@@ -10,13 +10,13 @@ DEFINE OUTFILE = '&1'
 DEFINE WEF = '&2'
 DEFINE TIL = '&3'
 
-spool '&OUTFILE';
+SPOOL '&OUTFILE';
 
 
 
 WITH data AS (
 SELECT * FROM PRUDEV.V_PRU_FAC_TDC_DD
-WHERE ENTRY_DATE >= '&WEF' and ENTRY_DATE <'&TIL'
+WHERE ENTRY_DATE >= '&WEF' AND ENTRY_DATE <'&TIL'
 )
 
 SELECT
@@ -124,7 +124,7 @@ WHERE
    UNIT_CODE IN ('EG_CT', 'EG_OC', 'LEGC', 'LP_CT', 'LP_OC')) AND
   -- just because did not calculate further back in time
   ENTRY_DATE >= '01-JAN-2013'
-order by 4,5;
+ORDER BY 4,5;
 
-spool off;
-quit
+SPOOL OFF;
+QUIT
