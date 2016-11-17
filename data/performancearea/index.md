@@ -81,16 +81,29 @@ width: 8em;
 </style>
 ## Operations
 
-### En-route
+Please note that software release 20.0 of the Network Manager on 04 April 2016 introduced a change to improve the accuracy of the ATFM delay calculation for operational purposes.
+For more information on the the change in methodology <a href="{{site.url}}/references/methodology/ATFM_delay_calculation.html">click here</a>. 
 
-|    Data description                                                                                                                       |     Period                                                  |    Excel                          |    CSV                                        |    Metadata                      |
+### En-route
+ 
+|    En-route flights and ATFM delay (Version 2 - new methodology as of 04 April 2016)                                                                                                                       |     Period                                                  |    Excel                          |    CSV                                        |    Metadata                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|-----------------------------------|-----------------------------------------------|----------------------------------|
-| En-route IFR flights and ATFM delays [(AUA)](/references/definition/aua.html)<br><small>Daily IFR traffic and en-route [ATFM delay](/references/definition/atfm_delay.html) by entity and delay cause (AUA based)</small>                                | {{ page.dates.ert_dly_aua.beg }} - {{ page.dates.ert_dly_aua.end }} | [xls {{ page.dwnld_i }}][ERT-DLY-AUAxlsx] |                                               | [meta {{ page.info_i }}][ERT-DLY-AUA-meta] |
-| En-route IFR flights and ATFM delays [(FIR)](/references/definition/fir.html)<br><small>Daily IFR traffic and en-route [ATFM delay](/references/definition/atfm_delay.html) by entity and delay cause (FIR based)</small>                                | {{ page.dates.ert_dly_fir.beg }} - {{ page.dates.ert_dly_fir.end }} | [xls {{ page.dwnld_i }}][ERT-DLY-FIRxlsx] |                                               | [meta {{ page.info_i }}][ERT-DLY-FIR-meta] |
+| En-route IFR flights and ATFM delays [(AUA)](/references/definition/aua.html) - Version 2 <br><small>Daily IFR traffic and en-route [ATFM delay](/references/definition/atfm_delay.html) by entity and delay cause (AUA based)</small>                                | {{ page.dates.ert_dly_aua.beg }} - {{ page.dates.ert_dly_aua.end }} | [xls {{ page.dwnld_i }}][ERT-DLY-AUA-v2xlsx] |                                               | [meta {{ page.info_i }}][ERT-DLY-AUA-meta] |
+| En-route IFR flights and ATFM delays [(FIR)](/references/definition/fir.html) - Version 2 <br><small>Daily IFR traffic and en-route [ATFM delay](/references/definition/atfm_delay.html) by entity and delay cause (FIR based)</small>                                | {{ page.dates.ert_dly_fir.beg }} - {{ page.dates.ert_dly_fir.end }} | [xls {{ page.dwnld_i }}][ERT-DLY-FIR-v2xlsx] |                                               | [meta {{ page.info_i }}][ERT-DLY-FIR-meta] |
+ 
+|     En-route flights and ATFM delay (Version 1 - old methodology for entire period)                                                                                                                       |     Period                                                  |    Excel                          |    CSV                                        |    Metadata                      |
+|-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|-----------------------------------|-----------------------------------------------|----------------------------------|
+| En-route IFR flights and ATFM delays [(AUA)](/references/definition/aua.html) - Version 1 <br><small>Daily IFR traffic and en-route [ATFM delay](/references/definition/atfm_delay.html) by entity and delay cause (AUA based)</small>                               | {{ page.dates.ert_dly_aua.beg }} - {{ page.dates.ert_dly_aua.end }} | [xls {{ page.dwnld_i }}][ERT-DLY-AUA-v1xlsx] |                                               | [meta {{ page.info_i }}][ERT-DLY-AUA-meta] |
+| En-route IFR flights and ATFM delays [(FIR)](/references/definition/fir.html) - Version 1 <br><small>Daily IFR traffic and en-route [ATFM delay](/references/definition/atfm_delay.html) by entity and delay cause (FIR based)</small>                         | {{ page.dates.ert_dly_fir.beg }} - {{ page.dates.ert_dly_fir.end }} | [xls {{ page.dwnld_i }}][ERT-DLY-FIR-v1xlsx] |                                               | [meta {{ page.info_i }}][ERT-DLY-FIR-meta] |
+ 
+|    Flight efficiency                                                                                                                       |     Period                                                  |    Excel                          |    CSV                                        |    Metadata                      |
+|-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|-----------------------------------|-----------------------------------------------|----------------------------------|
 | Horizontal en-route flight efficiency <br><small>Daily [en-route flight efficiency](/references/methodology/horizontal_flight_efficiency_pi.html) data by entity (actual trajectory & flight plan)</small> | {{ page.dates.hfe.beg }} - {{ page.dates.hfe.end }}         | [xls {{ page.dwnld_i }}][HFExlsx]     | [csv {{ page.fltr_i }} {{ page.ndwk_i }}][HFEcsv] | [meta {{ page.info_i }}][HFEmeta]     |
 
-[ERT-DLY-AUAxlsx]: <{{site.url}}/data/set/ert_dly/En-Route_ATFM_Delay_AUA.xlsm> "ERT-DLY (Excel)"
-[ERT-DLY-FIRxlsx]: <{{site.url}}/data/set/ert_dly/En-Route_ATFM_Delay_FIR.xlsm> "ERT-DLY (Excel)"
+[ERT-DLY-AUA-v2xlsx]: <{{site.url}}/data/set/ert_dly/En-Route_ATFM_Delay_AUA_v2.xlsm> "ERT-DLY (Excel)"
+[ERT-DLY-AUA-v1xlsx]: <{{site.url}}/data/set/ert_dly/En-Route_ATFM_Delay_AUA_v1.xlsm> "ERT-DLY (Excel)"
+[ERT-DLY-FIR-v2xlsx]: <{{site.url}}/data/set/ert_dly/En-Route_ATFM_Delay_FIR_v2.xlsm> "ERT-DLY (Excel)"
+[ERT-DLY-FIR-v1xlsx]: <{{site.url}}/data/set/ert_dly/En-Route_ATFM_Delay_FIR_v1.xlsm> "ERT-DLY (Excel)"
 [ERT-DLYcsv]: <{{site.url}}/404.html> "ERT-DLY (CSV)"
 [ERT-DLY-AUA-meta]: <{{site.url}}/references/dataset/En-Route_ATFM_Delay_AUA.html> "ERT-DLY (Meta)"
 [ERT-DLY-FIR-meta]: <{{site.url}}/references/dataset/En-Route_ATFM_Delay_FIR.html> "ERT-DLY (Meta)"
@@ -99,12 +112,15 @@ width: 8em;
 [HFEcsv]: <{{site.url}}/data/set/hfe/horizontal_flight_efficiency.html> "HFE (CSV)"
 [HFEmeta]: <{{site.url}}/references/dataset/Horizontal_Flight_Efficiency.html> "HFE (Meta)"
 
+
+
 ### Airport/terminal
 
 | Data description                                                                                                                                                        | Period                                                       | Excel                                   | CSV                                               | Metadata                         |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|-----------------------------------------|---------------------------------------------------|----------------------------------|
 | Airport traffic<br><small>Daily IFR arrivals and departures by airport</small>                                                                                          | {{ page.dates.apt_flt.beg }} - {{ page.dates.apt_flt.end }}  | [xls {{ page.dwnld_i }}][APT-FLTxlsx]   |                                                   | [meta {{ page.info_i }}][APT-FLTmeta] |
-| Airport arrival ATFM delays<br><small>Daily IFR arrivals and airport arrival [ATFM delay](/references/definition/atfm_delay.html) by airport and delay category</small> | {{ page.dates.apt_dly.beg }} - {{ page.dates.apt_dly.end }}  | [xls {{ page.dwnld_i }}][APT-DLYxlsx] | [csv {{ page.fltr_i }} {{ page.ndwk_i }}][APT-DLYcsv] | [meta {{ page.info_i }}][APT-DLYmeta] |
+| Airport arrival ATFM delays - Version 2<br><small>Daily IFR arrivals and airport arrival [ATFM delay](/references/definition/atfm_delay.html) by airport and delay category</small> | {{ page.dates.apt_dly.beg }} - {{ page.dates.apt_dly.end }}  | [xls {{ page.dwnld_i }}][APT-DLY-v2xlsx] | [csv {{ page.fltr_i }} {{ page.ndwk_i }}][APT-DLYcsv] | [meta {{ page.info_i }}][APT-DLYmeta] |
+| Airport arrival ATFM delays - Version 1<br><small>Daily IFR arrivals and airport arrival [ATFM delay](/references/definition/atfm_delay.html) by airport and delay category</small> | {{ page.dates.apt_dly.beg }} - {{ page.dates.apt_dly.end }}  | [xls {{ page.dwnld_i }}][APT-DLY-v1xlsx] |  | [meta {{ page.info_i }}][APT-DLYmeta] |
 | Arrival Sequencing and Metering (ASMA) additional time<br><small>Monthly ASMA [additional](/references/definition/additional_asma_time.html) and [unimpeded](/references/definition/unimpeded_asma_time.html) time</small>             | {{ page.dates.asma.beg }} - {{ page.dates.asma.end }}        | [xls {{ page.dwnld_i }}][ASMAxlsx]    |                                                   | [meta {{ page.info_i }}][ASMAmeta]    |
 | Taxi-out additional time<br><small>Monthly taxi out [additional](/references/definition/additional_taxi-out_time.html) and [unimpeded](/references/definition/unimpeded_taxi-out_time.html) time</small>  | {{ page.dates.tx_out.beg }} - {{ page.dates.tx_out.end }}    | [xls {{ page.dwnld_i }}][TX-OUTxlsx]  |                                                   | [meta {{ page.info_i }}][TX-OUTmeta]  |
 | ATC pre-departure delays<br><small>Daily [ATC pre-departure delay](/references/definition/atc_pre-departure_delay.html) by airport</small>             | {{ page.dates.atc_pre.beg }} - {{ page.dates.atc_pre.end }}  | [xls {{ page.dwnld_i }}][ATC-PRExlsx] |                                                   | [meta {{ page.info_i }}][ATC-PREmeta] |
@@ -115,7 +131,8 @@ width: 8em;
 [APT-FLTcsv]: <{{site.url}}/404.html> "APT-FLT (CSV)"
 [APT-FLTmeta]: <{{site.url}}/references/dataset/Airport_Traffic.html>  "APT-FLT (Meta)"
 
-[APT-DLYxlsx]: <{{site.url}}/data/set/apt_dly/Airport_Arrival_ATFM_Delay.xlsm> "APT-DLY (Excel)"
+[APT-DLY-v2xlsx]: <{{site.url}}/data/set/apt_dly/Airport_Arrival_ATFM_Delay_v2.xlsm> "APT-DLY (Excel)"
+[APT-DLY-v1xlsx]: <{{site.url}}/data/set/apt_dly/Airport_Arrival_ATFM_Delay_v1.xlsm> "APT-DLY (Excel)"
 [APT-DLYcsv]: <{{site.url}}/data/set/apt_dly/airport_arrival_atfm_delay.html> "APT-DLY (CSV)"
 [APT-DLYmeta]: <{{site.url}}/references/dataset/Airport_Arrival_ATFM_Delay.html> "APT-DLY (Meta)"
 

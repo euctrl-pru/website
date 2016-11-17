@@ -12,18 +12,19 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 
 # {{ page.title }}
 
-In the spirit of fostering collaboration, transparency and reproducibility, we here describe
-why and how we calculate the various metrics in our website.
+In order to encourage collaboration, transparency and reproducibility of performance indicators, 
+please find below methodological information related to the computation of the indicators used
+in our website:
 
-The following is a draft list of the topics we want to document:
+* [ATFM delay computation](/references/methodology/ATFM_delay_calculation.html)
 
-* [Unimpeded ASMA Time metric](/references/methodology/unimpeded_asma_time.html).
+* [Unimpeded ASMA Time metric](/references/methodology/unimpeded_asma_time.html)
 
-* [Additional ASMA Time performance indicator](/references/methodology/additional_asma_time_pi.html).
+* [Additional ASMA Time performance indicator](/references/methodology/additional_asma_time_pi.html)
 
-* [Unimpeded Taxi-out Time metric](/references/methodology/unimpeded_taxi-out_time.html).
+* [Unimpeded Taxi-out Time metric](/references/methodology/unimpeded_taxi-out_time.html)
 
-* [Horizontal Flight Efficiency performance indicators](/references/methodology/horizontal_flight_efficiency_pi.html).
+* [Horizontal Flight Efficiency performance indicators](/references/methodology/horizontal_flight_efficiency_pi.html)
 
 * Data Dimensions used in the processing of data. {{ page.attn_i }}
 
