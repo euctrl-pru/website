@@ -98,7 +98,7 @@ For more information on the the change in methodology <a href="{{site.url}}/refe
  
 |    Flight efficiency                                                                                                                       |     Period                                                  |    Excel                          |    CSV                                        |    Metadata                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|-----------------------------------|-----------------------------------------------|----------------------------------|
-| Horizontal en-route flight efficiency <br><small>Daily [en-route flight efficiency](/references/methodology/horizontal_flight_efficiency_pi.html) data by entity (actual trajectory & flight plan)</small> | {{ page.dates.hfe.beg }} - {{ page.dates.hfe.end }}         | [xls {{ page.dwnld_i }}][HFExlsx]     | [csv {{ page.fltr_i }} {{ page.ndwk_i }}][HFEcsv] | [meta {{ page.info_i }}][HFEmeta]     |
+| Horizontal en-route flight efficiency <br><small>Daily [en-route flight efficiency](/references/methodology/horizontal_flight_efficiency_pi.html) data by entity (actual trajectory, KEA indicator, & flight plan, KEP indicator)</small> | {{ page.dates.hfe.beg }} - {{ page.dates.hfe.end }}         | [xls {{ page.dwnld_i }}][HFExlsx]     | [csv {{ page.fltr_i }} {{ page.ndwk_i }}][HFEcsv] | [meta {{ page.info_i }}][HFEmeta]     |
 
 [ERT-DLY-AUA-v2xlsx]: <{{site.url}}/data/set/ert_dly/En-Route_ATFM_Delay_AUA_v2.xlsm> "ERT-DLY (Excel)"
 [ERT-DLY-AUA-v1xlsx]: <{{site.url}}/data/set/ert_dly/En-Route_ATFM_Delay_AUA_v1.xlsm> "ERT-DLY (Excel)"
