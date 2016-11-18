@@ -19,12 +19,8 @@ airport (airport delay) or sector (en-route delay) location.
 Minute.
 
 ## Modification of the ATFM delay calculation (NM release 20.0)
-Please note that software release 20.0 of the Network Manager on 04 April 2016
-introduced a change to improve the accuracy of the ATFM delay calculation for
-operational purposes.
 
-ATFM delays shown in this section take this change as of April into account.
-
+Please note that software release 20.0 of the Network Manager on 04 April 2016 introduced a change to improve the accuracy of the ATFM delay calculation for operational purposes.
 For more information on the the change in methodology [click here].
 
 

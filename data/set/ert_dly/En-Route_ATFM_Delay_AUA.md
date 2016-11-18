@@ -8,7 +8,7 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 # {{ page.title }}
 
 Please note that software release 20.0 of the Network Manager on 04 April 2016 introduced a change to improve the accuracy of the ATFM delay calculation for operational purposes.
-For more information on the the change in methodology <a href="{{site.url}}/references/methodology/ATFM_delay_calculation.html">click here</a>. 
+For more information on the change in methodology <a href="{{site.url}}/references/methodology/ATFM_delay_calculation.html">click here</a>. 
 
 ## Data description
 
