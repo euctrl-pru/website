@@ -24,6 +24,12 @@ Please note that software release 20.0 of the Network Manager on 04 April 2016
 introduced a change to improve the accuracy of the ATFM delay calculation for
 operational purposes.
 
+<<<<<<< Updated upstream
+=======
+ATFM delays data and graphs in this website take this change into account as of
+April 2016.
+
+>>>>>>> Stashed changes
 For more information on the the change in methodology [click here][atfm_dly_rea].
 
 
