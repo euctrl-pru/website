@@ -1,4 +1,5 @@
 library(tidyverse)
+library(stringr)
 library(lubridate)
 
 #library(ggseas) # TODO: investigate
@@ -63,12 +64,20 @@ get_ert_dly <- function(path) {
     arrange(date, entity_name)
 }
 
-csvs <- list.files(path = "data/csv", pattern = "ert_dly_fir_.*.csv$", full.names = TRUE)
+# return a list of
+#
+#
+#
+load_ert_dly_for <- function(entity = "fir") {
+  file_pattern <- str_c("ert_dly_", entity, "_.*.csv$")
+  csvs <- list.files(path = "data/csv", pattern = file_pattern, full.names = TRUE)
+  all <- lapply(csvs, get_ert_dly)
+  ert_dly <- bind_rows(all)
+  # make entity (name) var into factor
+  ert_dly <- ert_dly %>% mutate_each(funs(factor), entity_name)
+  return(ert_dly)
+}
 
-all <- lapply(csvs, get_ert_dly)
-ert_dly <- bind_rows(all)
-ert_dly_all <- ert_dly
-rm(all, csvs)
 
 # TIDY!!!
 # There are 3 groups of datasets (they are both calculated by COUNTRY FIRs kind of geography):
@@ -85,77 +94,130 @@ rm(all, csvs)
 #    * id, name, type (country, fab, area)
 #
 # NOTE: entities of different type are geograpfically overlapping, i.e. FIR or FAB or SES Area
+get_summaries <- function(df) {
+  # is it correct to ZERO NAs?
+  dly_summaries <- df %>% 
+    select(date, entity_name, num_flights, delayed_flights, delayed_flights_gt15) %>%
+    mutate(delayed_flights = ifelse(is.na(delayed_flights), 0, delayed_flights)) %>%
+    mutate(delayed_flights_gt15 = ifelse(is.na(delayed_flights_gt15), 0, delayed_flights_gt15))
+  
+  dly_summaries
+}
 
-# make entity (name) var into factor
-ert_dly_all %>% mutate_each(funs(factor), entity_name)
-
-dly_summaries <- ert_dly_all %>% 
-  select(date, entity_name, num_flights, delayed_flights, delayed_flights_gt15)
-
-dly_details <- ert_dly_all %>% 
-  select(-delayed_flights, -delayed_flights_gt15) %>%
-  gather(key = delay_type, value = delay, A:`NA`)
-
-# make delay_type factors
-dly_details <-  dly_details %>% mutate_each(funs(factor), delay_type)
-
-# make entity type a factor
-dly_details <-  dly_details %>% mutate_each(funs(factor), entity_type)
-
-
-# zero delay_total cells which are NA
-dly_details <- dly_details %>%
-  mutate(delay = ifelse(is.na(delay), 0, delay)) %>%
-  mutate(delay_total = ifelse(is.na(delay_total), 0, delay_total))
-
-# TODO: assert that num_flights is not null
+get_details <- function(df) {
+  dly_details <- df %>% 
+    select(-delayed_flights, -delayed_flights_gt15) %>%
+    gather(key = delay_type, value = delay, A:`NA`)
+  
+  # make delay_type factors
+  dly_details <-  dly_details %>% mutate_each(funs(factor), delay_type)
+  
+  # make entity type a factor
+  dly_details <-  dly_details %>% mutate_each(funs(factor), entity_type)
+  
+  # IS IT CORRECT to ZERO NAs????
+  # zero delay_total cells which are NA
+  dly_details <- dly_details %>%
+    mutate(delay = ifelse(is.na(delay), 0, delay)) %>%
+    mutate(delay_total = ifelse(is.na(delay_total), 0, delay_total))
+  
+  dly_details
+}
 
 
-avg_dly_entity <- dly_details %>%
-  mutate(yyyy = year(date)) %>%
-  group_by(entity_name, delay_type, yyyy) %>%
-  summarise(flt_entity_yy = sum(num_flights),
-            dly_entity_yy = sum(delay_total),
-            avg_dly_yy = dly_entity_yy / flt_entity_yy)
+get_averages <- function(details_df) {  
+  avg_dly_entity <- details_df %>%
+    mutate(yyyy = year(date)) %>%
+    group_by(entity_name, delay_type, yyyy) %>%
+    summarise(flt_entity_yy = sum(num_flights),
+              dly_entity_yy = sum(delay_total),
+              avg_dly_yy = dly_entity_yy / flt_entity_yy)
+  
+  avg_dly_entity
+}
 
+
+####### FIR ########
+fir_ert_dly_all <- load_ert_dly_for(entity = "fir")
+fir_dly_details <- get_details(fir_ert_dly_all)
+fir_avg_dly_entity <- get_averages(fir_dly_details)
+fir_dly_summaries <- get_summaries(fir_ert_dly_all)
 
 # state yearly
-dly_stt_yy <- avg_dly_entity %>% 
+fir_dly_stt_yy <- fir_avg_dly_entity %>% 
   filter(!grepl("COUNTRY", entity_name))
 
-# continental States
-continental_yy <- dly_stt_yy %>%
-filter(!(entity_name %in% c("Portugal", "Portugal Santa Maria"))) %>%
+# (continental) States
+continental_yy <- fir_dly_stt_yy %>%
+  filter(!(entity_name %in% c("Portugal", "Portugal Santa Maria"))) %>%
   filter(!(entity_name %in% c("Spain", "Spain Canarias"))) %>%
   filter(!(entity_name %in% c("United Kingdom")))
 
+continental_dd <- fir_dly_details %>%
+  filter(!(entity_name %in% c("Portugal", "Portugal Santa Maria"))) %>%
+  filter(!(entity_name %in% c("Spain", "Spain Canarias"))) %>%
+  filter(!(entity_name %in% c("United Kingdom")))
+
+
 # FABs
-fab_yy <- avg_dly_entity %>% filter(grepl("FAB", entity_name))
+fab_yy <- fir_avg_dly_entity %>% filter(grepl("FAB", entity_name))
+
+fab_dd <- fir_dly_details %>% 
+  filter(grepl("FAB", entity_name)) %>%
+  filter(!(entity_name %in% c("FAB CE (SES RP1)"))) %>%
+  mutate(avg_dd = ifelse(num_flights == 0, 0, delay_total / num_flights))
+
+
+g <- ggplot(fab_dd, aes(date, avg_dd))
+g <- g + geom_line() + scale_x_date(date_labels = "%b-%Y", date_minor_breaks = "1 month")
+g <- g + facet_wrap(~entity_name, nrow = 5)
+g <- g + labs(title = "Average Daily En-route ATFM Delay",
+              y = "Average Delay (min/flight)") +
+  theme(axis.text.x = element_text(angle = 40, hjust = 1))
+ggsave("R/avg_delay_per_fab.png")
+
+
+# There are few interesting peaks:
+# let's check Aug 2016
+fff <- fab_dd %>%
+  filter(between(date, as.Date("2016-08-01"), as.Date("2016-08-31")))
+g <- ggplot(fff, aes(date, avg_dd))
+g <- g + geom_line() + scale_x_date(date_labels = "%d-%b", date_minor_breaks = "1 day")
+g <- g + facet_wrap(~entity_name, nrow = 5)
+g <- g + labs(title = "Average Daily En-route ATFM Delay: Aug 2016",
+              y = "Average Delay (min/flight)") +
+  theme(axis.text.x = element_text(angle = 40, hjust = 1))
+# annotate SW FAB plot
+ddd <- fab_dd %>% 
+  filter(between(date, as.Date("2016-08-23"), as.Date("2016-08-23"))) %>%
+  filter((entity_name %in% c("SW FAB") & delay_type == "C"))
+g <- g + 
+  geom_point(data = ddd) +
+  geom_text(data = ddd, label = "Strike (Spain)", hjust = 1, nudge_x = 0.1)
+ggsave("R/spain_strike_aug_2016.png")
+
 
 # SES Area
-ses_yy <- avg_dly_entity %>% filter(grepl("SES", entity_name))
+ses_yy <- fir_avg_dly_entity %>% filter(grepl("SES", entity_name))
 
 # Let'splot France
-
 fr_dly <- continental_yy %>% filter(entity_name == "France")
 
 gg_fr <- ggplot(fr_dly, aes(yyyy, avg_dly_yy))
-gg_fr <- gg_fr + geom_bar(stat="identity", aes(fill = delay_type))
+gg_fr <- gg_fr + geom_bar(stat="identity", aes(fill = delay_type)) +
+  labs(title = "Yearly Average Daily En-route ATFM Delay: France")
+ggsave("R/yearly_avg_delay_cause_France.png")
 
-# ggsave("R/stt_dly_yy_bar.png")
-
-dly_type_yy <- dly_details %>%
+continental_dly_type_yy <- continental_dd %>%
   mutate(yyyy = year(date)) %>%
   group_by(yyyy, delay_type) %>%
   summarise(delay_per_type = sum(delay), num_flights = sum(num_flights),
             delay_flt = delay_per_type / num_flights)
 
-# Delays details need to be filtered per entity type too
-#dly_type_stt_yy <- dly_type_yy %>%
-  
-
-gg_type <- ggplot(dly_type_yy, aes(yyyy, delay_flt)) +
-  geom_bar(stat="identity", aes(fill = delay_type))
+gg_type <- ggplot(continental_dly_type_yy, aes(yyyy, delay_flt)) +
+  geom_bar(stat="identity", aes(fill = delay_type)) +
+  labs(title = "Yearly Average Daily En-route ATFM Delays: (continental) States")
+ggsave("R/yearly_avg_delay_cause_Continental.png")
 
 
 
@@ -163,14 +225,14 @@ gg_type <- ggplot(dly_type_yy, aes(yyyy, delay_flt)) +
 # see http://www.nytimes.com/interactive/2016/08/08/sports/olympics/history-olympic-dominance-charts.html
 # devtools::install_github("hrbrmstr/streamgraph")
 
-library(streamgraph)
-# streamgraph of total delay per country
-continental_yy %>% streamgraph("entity_name", "avg_dly_yy", "yyyy", interactive=FALSE) %>%
-  sg_axis_x(1, "year", "%Y") %>%
-  sg_legend(show=FALSE)
-#  sg_legend(show=FALSE, label="Country: ")
-
-ggsave("R/stt_dly_yy_streamgraph.png")
+# library(streamgraph)
+# # streamgraph of total delay per country
+# continental_yy %>% streamgraph("entity_name", "avg_dly_yy", "yyyy", interactive=FALSE) %>%
+#   sg_axis_x(1, "year", "%Y") %>%
+#   sg_legend(show=FALSE)
+# #  sg_legend(show=FALSE, label="Country: ")
+# 
+# ggsave("R/stt_dly_yy_streamgraph.png")
 
 
 # TODO: stremgraph of the total different delays
@@ -223,44 +285,44 @@ map = readOGR("R/states.topojson", "states", verbose = FALSE)
 
 map_name <- data.frame(
   icao  = c("LA", "UD", "LO",
-          "EB", "LQ", "LB",
-          "LD", "LC", "LK",
-          "EK",
-          "EE",
-          "EF", "LF",
-          "UG", "ED", "LG",
-          "LH",
-          "EI", "LI",
-          "EV", "EY", "EL",
-          "LM", "LU", "LN", "LY",
-          "EH", "EN",
-          "EP", "LP",
-          "LR",
-          "LY", "LZ", "LJ",
-          "LE", "ES", "LS",
-          "LW", "LT",
-          "UK", "EG"
-          ),
+            "EB", "LQ", "LB",
+            "LD", "LC", "LK",
+            "EK",
+            "EE",
+            "EF", "LF",
+            "UG", "ED", "LG",
+            "LH",
+            "EI", "LI",
+            "EV", "EY", "EL",
+            "LM", "LU", "LN", "LY",
+            "EH", "EN",
+            "EP", "LP",
+            "LR",
+            "LY", "LZ", "LJ",
+            "LE", "ES", "LS",
+            "LW", "LT",
+            "UK", "EG"
+  ),
   id = c("Albania", "Armenia", "Austria",
-          "Belgium", "Bosnia and Herzegovina", "Bulgaria",
-          "Croatia", "Cyprus", "Czech Republic",
-          "Denmark",
-          "Estonia",
-          "Finland", "France",
-          "Georgia", "Germany", "Greece",
-          "Hungary",
-          "Ireland", "Italy",
-          "Latvia", "Lithuania", "Luxembourg",
-          "Malta", "Moldova", "Monaco", "Montenegro",
-          "Netherlands", "Norway",
-          "Poland", "Portugal Continental",
-          "Romania",
-          "Serbia", "Slovakia", "Slovenia",
-          "Spain Continental", "Sweden", "Switzerland",
-          "The former Yugoslav Republic of Macedonia", "Turkey",
-          "Ukraine", "UK Continental"
-          )
+         "Belgium", "Bosnia and Herzegovina", "Bulgaria",
+         "Croatia", "Cyprus", "Czech Republic",
+         "Denmark",
+         "Estonia",
+         "Finland", "France",
+         "Georgia", "Germany", "Greece",
+         "Hungary",
+         "Ireland", "Italy",
+         "Latvia", "Lithuania", "Luxembourg",
+         "Malta", "Moldova", "Monaco", "Montenegro",
+         "Netherlands", "Norway",
+         "Poland", "Portugal Continental",
+         "Romania",
+         "Serbia", "Slovakia", "Slovenia",
+         "Spain Continental", "Sweden", "Switzerland",
+         "The former Yugoslav Republic of Macedonia", "Turkey",
+         "Ukraine", "UK Continental"
   )
+)
 
 map_df <- fortify(map)
 map_df <- merge(map_df, map_name, by="id")
