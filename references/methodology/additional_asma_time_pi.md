@@ -35,6 +35,8 @@ The indicator is used as part of the performance monitoring and reporting under:
 * EUROCONTROL: performance review reporting {% cite atmap-2009 --file aviation %}.
 
 
+This web page is generated from {% cite pru-adasma-pi --file aviation %}.
+
 ## Purpose of the document
 
 The purpose of this document is twofold:
@@ -52,7 +54,8 @@ This document covers the data processing and calculation of the additional ASMA
 time performance indicator.
 
 The calculation of this performance indicator is performed according to the
-Airport Operator Data Flow standard for data collection and processing, under
+Airport Operator Data Flow {% cite ir691-apt --file aviation %} standard for
+data collection and processing, under
 the responsibility of the airports division in the QoS department of the PRU,
 which is compliant with IR691/2010 and IR390/2013. For the calculation of the
 indicator, the Airport Operator Data Flow is combined with trajectory data
@@ -1034,5 +1037,4 @@ case-by-case analyses if significant variations are observed.
 # References
 
 {% bibliography --cited_in_order --file aviation --file legislation %}
-[x] Airport Data Flow Data Specifications
 
