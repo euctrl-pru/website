@@ -23,7 +23,7 @@ ANSP_NAME NOT IN (
 'NATS (Oceanic)',
 'NAV Portugal (Santa Maria)'
 )
-ORDER BY LOWER(ANSP_NAME), PRU_ATC_TYPE;
+ORDER BY LOWER(AUA_CODE), PRU_ATC_TYPE;
 
 spool off;
 quit
