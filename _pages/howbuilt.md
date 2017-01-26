@@ -5,7 +5,7 @@ permalink: /about/howbuilt
 ---
 # {{ page.title }}
 
-This site is designed and built using the following principles:
+This portal is designed and built using the following principles:
 
 * everything has to be version controlled
 * adopt KISS princicple: Keep It Simple and Stupid.

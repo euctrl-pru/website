@@ -1,0 +1,68 @@
+---
+layout: default
+---
+<style type="text/css">
+ span.go-to-top {
+  font-size: x-small;
+ }
+</style>
+
+{% assign sectionletter = "" %}
+{% assign currentletter = "" %}
+{% assign isfirst = true %}
+
+<!-- build the list of alphabeth letters from the relevant pages -->
+{% assign alphabeth = "" | split: ' ' %}
+{% assign pages = (site.pages | sort: 'title_lowercase' ) %}
+{% assign current_letter = '' %}
+{% for page in pages %}
+   {% if page.resource == true and page.entity == 'definition' %}
+      {% assign page_letter = (page.title | split: '' | first | upcase ) %}
+      {% if page_letter != current_letter %}
+         {% assign alphabeth = alphabeth | push: page_letter %}
+         {% assign current_letter = page_letter %}
+      {% endif %}
+   {% endif %}
+{% endfor %}
+
+
+  <h2>Index of Definitions</h2>
+  <div class="container">
+    <div class="row">
+      <div>
+        {% for item in alphabeth %}
+          <a href="#{{ item }}-section">{{ item }}</a>
+          {% if forloop.last %}
+          {% else %}
+          ,
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+{% assign pp = (site.pages | sort: 'title_lowercase' ) %}
+{% for item in alphabeth %}
+   {% assign isfirst = true %}
+   {% for pag in pp %}
+      {% if pag.resource == true and pag.entity == 'definition' %}
+         {% assign pag_letter = (pag.title | split: '' | first | upcase ) %}
+         {% if pag_letter == item %}
+            {% if isfirst %}
+               <h3 id="{{ item }}-section">{{ item }}</h3>
+                 <div class="container">
+                   <div class="row">
+                     <div>
+                       <a href="{{ pag.url }}">{{ pag.title }}</a>
+               {% assign isfirst = false %}
+            {% else %}<br> <a href="{{ pag.url }}">{{ pag.title }}</a>
+            {% endif %}
+         {% endif %}
+      {% endif%}
+   {% endfor %}
+   {% unless isfirst %}
+    </div>
+    </div>
+    </div>
+   {% endunless %}
+{% endfor %}
