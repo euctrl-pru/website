@@ -8,7 +8,7 @@ The PRU is an *independent* unit established by EUROCONTROL.
 It is responsible for monitoring and reviewing the performance of the European
 ATM System on behalf of its Member States.
 The unit also supports the
-[Performance Review Commission](https://www.eurocontrol.int/node/1737) (PRC) and
+[Performance Review Commission](http://www.eurocontrol.int/articles/about-european-ans-performance-review) (PRC) and
 makes recommendations to the PRC for performance improvements of the European
 ATM System on the basis of thorough analyses.
 
