@@ -4,7 +4,7 @@
       var crt_cap_ert_YY = new google.visualization.ChartWrapper({
          chartType: 'ComboChart',
          containerId: 'crt_cap_ert_YY',
-         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1g_EclskD6qP8b_aYYhW3xrng616ZysYW5WVtGD9pOXk/edit?usp=sharing&alt=json&sheet=ERT_ATFM_YY&range=A1:I9',
+         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1g_EclskD6qP8b_aYYhW3xrng616ZysYW5WVtGD9pOXk/edit?usp=sharing&alt=json&sheet=ERT_ATFM_YY&range=A1:I10',
          options: {
             width: 500, height: 300,
             chartArea: { left: 65, top: 20 },
