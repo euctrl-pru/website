@@ -19,7 +19,7 @@ dates:
     end: Jan 2017
   hfe_kpi:
     beg: Dec 2014
-    end: Jan 2017
+    end: Dec 2016
   apt_flt:
     beg: Jan 2014
     end: Jan 2017
@@ -43,7 +43,7 @@ dates:
     end: Jan 2017
   cplx:
     beg: &cplxbeg Jan 2014
-    end: &cplxend Jan 2017
+    end: &cplxend Dec 2016
 
 dwnld_i: <i class="fa pru fa-download"></i>
 info_i: <i class="fa pru fa-info-circle"></i>
