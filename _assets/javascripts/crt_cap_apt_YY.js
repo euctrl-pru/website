@@ -5,7 +5,7 @@
          {
             chartType: 'ComboChart',
             containerId: 'crt_cap_apt_YY',
-            dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1gYIeqeWdcxd7mdXImchbppdI7QvZzp7ucfZdNJbBbyE/edit?usp=sharing&alt=json&sheet=APT_ATFM_YY&range=A1:I10',
+            dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1gYIeqeWdcxd7mdXImchbppdI7QvZzp7ucfZdNJbBbyE/edit?usp=sharing&alt=json&sheet=APT_ATFM_YY&range=A1:I11',
            options: {
                width: 500, height: 300,
                chartArea: { left: 70, top: 20 },
