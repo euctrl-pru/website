@@ -4,7 +4,7 @@
       var crt_hfe_YY = new google.visualization.ChartWrapper({
          chartType: 'ComboChart',
          containerId: 'crt_hfe_YY',
-         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1KgOIBF93axvXD6ENQYvEsWHqnA8eW_RvGV4EQlGava4/edit?usp=sharing&sheet=HFE_YY&range=A1:C9',
+         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1KgOIBF93axvXD6ENQYvEsWHqnA8eW_RvGV4EQlGava4/edit?usp=sharing&sheet=HFE_YY&range=A1:C11',
             options: {
                width: 500, height: 300,
                chartArea: { left: 85, top: 60, width: '55%' },
