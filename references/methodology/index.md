@@ -12,22 +12,32 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 
 # {{ page.title }}
 
-In order to encourage collaboration, transparency and reproducibility of performance indicators, 
+In order to encourage collaboration, transparency and reproducibility of performance indicators,
 please find below methodological information related to the computation of the indicators used
 in our website:
 
-* [ATFM delay computation]({{ "/references/methodology/ATFM_delay_calculation.html" | prepend: site.baseurl | prepend: site.url }})
+* En-route
+  * [ATFM delay computation][atfmdelay]
+  * [Horizontal Flight Efficiency performance indicators][hfe]
+  * [En-route Vertical Flight Efficiency][ervfe]
 
-* [Unimpeded ASMA Time metric]({{ "/references/methodology/unimpeded_asma_time.html" | prepend: site.baseurl | prepend: site.url }})
-
-* [Additional ASMA Time performance indicator]({{ "/references/methodology/additional_asma_time_pi.html" | prepend: site.baseurl | prepend: site.url }})
-
-* [Unimpeded Taxi-out Time metric]({{ "/references/methodology/unimpeded_taxi-out_time.html" | prepend: site.baseurl | prepend: site.url }})
-
-* [Horizontal Flight Efficiency performance indicators]({{ "/references/methodology/horizontal_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }})
+* Airport
+  * [Unimpeded ASMA Time metric][uasma]
+  * [Additional ASMA Time performance indicator][aasma]
+  * [Unimpeded Taxi-out Time metric][tasma]
+  * [Vertical Flight Efficiency during Climb and Descent][cdvfe]
 
 * Data Dimensions used in the processing of data. {{ page.attn_i }}
 
 <br><br>
 {{ page.attn_i }} = not (yet?) available.<br>
 
+
+[atfmdelay]: <{{ "/references/methodology/ATFM_delay_calculation.html" | prepend: site.baseurl | prepend: site.url }}> "ATFM delay computation"
+[hfe]: <{{ "/references/methodology/horizontal_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }}> "Horizontal Flight Efficiency performance indicators"
+[ervfe]: <{{ "/references/methodology/en-route_vertical_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }}> "En-route Vertical Flight Efficiency"
+
+[uasma]: <{{ "/references/methodology/unimpeded_asma_time.html" | prepend: site.baseurl | prepend: site.url }}> "Unimpeded ASMA Time metric"
+[aasma]: <{{ "/references/methodology/additional_asma_time_pi.html" | prepend: site.baseurl | prepend: site.url }}> "Additional ASMA Time performance indicator"
+[tasma]: <{{ "/references/methodology/unimpeded_taxi-out_time.html" | prepend: site.baseurl | prepend: site.url }}> "Unimpeded Taxi-out Time metric"
+[cdvfe]: <{{ "/references/methodology/cd_vertical_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }}> "Vertical Flight Efficiency during Climb and Descent"
