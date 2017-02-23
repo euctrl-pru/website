@@ -1,10 +1,13 @@
 
 source 'https://rubygems.org'
 
-# Jekyll
-gem 'jekyll', "3.1.3"
+# install it first
+gem 'activesupport', '4.2.8'
 
-gem 'activesupport', '4.2.7'
+# Jekyll
+gem 'jekyll', "3.4.0"
+
+gem 'tzinfo-data'
 
 gem 'rake'
 gem 'html-proofer'

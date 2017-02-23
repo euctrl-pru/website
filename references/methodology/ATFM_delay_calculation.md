@@ -58,4 +58,4 @@ sets in the [download area]({{site.url}}/data/performancearea/):
 
 
 
-[NM20-rn]: <{{site.url}}/references/library/NM_20_FB750_Delay_Calculation_improvements.pdf> "NM 20 Release Notes: Delay calculation improvements"
+[NM20-rn]: <{{"/references/library/NM_20_FB750_Delay_Calculation_improvements.pdf" | prepend: site.baseurl | prepend: site.url }}> "NM 20 Release Notes: Delay calculation improvements"

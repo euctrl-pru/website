@@ -53,9 +53,9 @@ layout: default
                  <div class="container">
                    <div class="row">
                      <div>
-                       <a href="{{ pag.url }}">{{ pag.title }}</a>
+                       <a href="{{ pag.url | prepend: site.baseurl | prepend: site.url }}">{{ pag.title }}</a>
                {% assign isfirst = false %}
-            {% else %}<br> <a href="{{ pag.url }}">{{ pag.title }}</a>
+            {% else %}<br> <a href="{{ pag.url | prepend: site.baseurl | prepend: site.url  }}">{{ pag.title }}</a>
             {% endif %}
          {% endif %}
       {% endif%}

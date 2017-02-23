@@ -16,15 +16,15 @@ In order to encourage collaboration, transparency and reproducibility of perform
 please find below methodological information related to the computation of the indicators used
 in our website:
 
-* [ATFM delay computation](/references/methodology/ATFM_delay_calculation.html)
+* [ATFM delay computation]({{ "/references/methodology/ATFM_delay_calculation.html" | prepend: site.baseurl | prepend: site.url }})
 
-* [Unimpeded ASMA Time metric](/references/methodology/unimpeded_asma_time.html)
+* [Unimpeded ASMA Time metric]({{ "/references/methodology/unimpeded_asma_time.html" | prepend: site.baseurl | prepend: site.url }})
 
-* [Additional ASMA Time performance indicator](/references/methodology/additional_asma_time_pi.html)
+* [Additional ASMA Time performance indicator]({{ "/references/methodology/additional_asma_time_pi.html" | prepend: site.baseurl | prepend: site.url }})
 
-* [Unimpeded Taxi-out Time metric](/references/methodology/unimpeded_taxi-out_time.html)
+* [Unimpeded Taxi-out Time metric]({{ "/references/methodology/unimpeded_taxi-out_time.html" | prepend: site.baseurl | prepend: site.url }})
 
-* [Horizontal Flight Efficiency performance indicators](/references/methodology/horizontal_flight_efficiency_pi.html)
+* [Horizontal Flight Efficiency performance indicators]({{ "/references/methodology/horizontal_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }})
 
 * Data Dimensions used in the processing of data. {{ page.attn_i }}
 

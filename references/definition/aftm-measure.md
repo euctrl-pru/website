@@ -19,4 +19,4 @@ In the context of ATFM (**A**ir **T**raffic **F**low **M**anagement) a *measure*
 
 {% bibliography --cited --file legislation %}
 
-see [Regulation](/references/definition/regulation.html)
+see [Regulation]({{ "/references/definition/regulation.html"| prepend: site.baseurl | prepend: site.url }})

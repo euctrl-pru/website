@@ -30,4 +30,4 @@ April 2016.
 For more information on the the change in methodology [click here][atfm_dly_rea].
 
 
-[atfm_dly_rea]: <{{site.url}}/references/methodology/ATFM_delay_calculation.html> "ATFM Delay calculation changes due to REA"
+[atfm_dly_rea]: <{{ "/references/methodology/ATFM_delay_calculation.html" | prepend: site.baseurl | prepend: site.url }}> "ATFM Delay calculation changes due to REA"

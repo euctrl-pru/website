@@ -7,11 +7,11 @@ keywords: metadata, performance, data, statistics, economics, air transport, fli
 ---
 # {{ page.title }}
 
-* [Datasets](/references/dataset/)
-* [Acronyms](/references/acronym/)
-* [Definitions](/references/definition/)
-* [ANSP's](/references/ANSP/)
-* [Methodology](/references/methodology/)
-* [Bibliography](/references/bibliography.html)
+* [Datasets]({{ "/references/dataset/" | prepend: site.baseurl | prepend: site.url }})
+* [Acronyms]({{ "/references/acronym/" | prepend: site.baseurl | prepend: site.url }})
+* [Definitions]({{ "/references/definition/" | prepend: site.baseurl | prepend: site.url }})
+* [ANSP's]({{ "/references/ANSP/" | prepend: site.baseurl | prepend: site.url }})
+* [Methodology]({{ "/references/methodology/" | prepend: site.baseurl | prepend: site.url }})
+* [Bibliography]({{ "/references/bibliography.html" | prepend: site.baseurl | prepend: site.url }})
 
 

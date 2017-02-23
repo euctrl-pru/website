@@ -8,4 +8,5 @@ keywords: metadata, performance, data, statistics, weather, air transport, fligh
 ---
 # {{ page.title }}
 
-In the context of ATFM, a *regulation* is one of the possible [ATFM measure](/references/definition/aftm-measure.html)s.
+In the context of ATFM, a *regulation* is one of the possible
+[ATFM measure]({{ "/references/definition/aftm-measure.html" | prepend: site.baseurl | prepend: site.url }})s.

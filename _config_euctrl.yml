@@ -1,0 +1,5 @@
+# from http://stackoverflow.com/a/27400343/963575
+url: "http://webtest.eurocontrol.int" # the base hostname & protocol for your site; NO https if served by github pages!!!
+canonical: "http://webtest.eurocontrol.int"  # NO https if served by github pages!!!
+baseurl: "/ansperformance" # see https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/
+searchsites: "webtest.eurocontrol.int/ansperformance"

@@ -10,4 +10,4 @@ keywords: metadata, performance, data, statistics, air transport, flights, europ
 
 ## See also
 
-[Definition Short term ATFCM measures](/references/definition/short_term_atfcm_measures.html)
+[Definition Short term ATFCM measures]({{ "/references/definition/short_term_atfcm_measures.html"| prepend: site.baseurl | prepend: site.url }})

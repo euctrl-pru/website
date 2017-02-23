@@ -24,7 +24,7 @@ excerpt: "IFR Movements flows within Europe (Eurocontrol member States plus Koso
       Click on a region to discover flows country-by-country. Hover on a region,
       country or flow in order to get the number of movements.
       <p><small>A circular plot of the flows to/from Eurocontrol Member States is
-        available as a <a href="/studies/flows-extra/">separate study</a>.</small></p>
+        available as a <a href="{{ '/studies/flows-extra/' | prepend: site.baseurl | prepend: site.url }}">separate study</a>.</small></p>
     </div>
     <div class="credits">
       by <a href="http://linkedin.com/in/espinielli">Enrico Spinielli</a> (data processing and visualization)
@@ -181,11 +181,19 @@ excerpt: "IFR Movements flows within Europe (Eurocontrol member States plus Koso
   </footer>
 
   <div id=help-wrapper class=help-wrapper>
+    <style type="text/css">
+      .help h3 {
+        background-image:url({% asset_path i.png %})
+      }
+      .help .tab {
+        background-image:url({% asset_path helptab.png %})
+      }
+    </style>
     <div class="help" id="help">
       <div class="tab">How to read the plot</div>
       <div class="help-content">
         <h3>How to read the plot</h3>
-        <img src="{% asset_path help.png %}" alt="help" class="left">
+        {% img help.png title:"Help" alt:"help" class:"left" %}
         <p>
           Origins and destinations are represented by the circle’s segments.
           Each region/country is assigned a colour.

@@ -5,25 +5,38 @@ permalink: /
 excerpt: Performance monitoring data, analyses and visualizations for Eurocontrol's 41 Member States.
 keywords: metadata, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
 ---
-<style>
- .container#main-text:after {
-   background-image: url({{ 'wordcloud.svg' | asset_path }});
- }
+<style type="text/css">
+.img-responsive {
+    margin: 0 auto;
+}
+
+#main-text.row:after {
+	background-image: url({{ 'wordcloud.svg' | asset_path }});
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	overflow: visible;
+	content: "";
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+/*	position: absolute;*/
+	display: block;
+	top: 0;
+	opacity: 0.2;
+}
 </style>
 
-<div class="container-fluid">
-   <div class="row">
+<div class="row">
 	<img src="{% asset_path european-ans-performance-review.jpg %}" class="img-responsive">
-   </div>
 </div>
 <br>
 
-<div class="container text-center">
+<div class="row text-center">
   {% include _subscriber-button.html %}
 </div>
 <br>
-<div class="container" id="main-text">
-  <div class="row">
+
+<div class="row" id="main-text">
 	<p>Welcome to the Performance Review Unit (PRU) Portal!</p>
 
 	{% include pru.html %}
@@ -33,8 +46,4 @@ keywords: metadata, performance, data, statistics, economics, air transport, fli
 		<a href="mailto:{{ site.owner.email }}">Performance Review Unit</a>
 		({{ site.owner.email }}).
 	</p>
-  </div>
 </div>
-<br>
-<br>
-

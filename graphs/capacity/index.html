@@ -9,7 +9,7 @@ Please note that software release 20.0 of the Network Manager on 04 April 2016
 introduced a change to improve the accuracy of the ATFM delay calculation for
 operational purposes.
 For more information on the change in methodology
-<a href="{{site.url}}/references/methodology/ATFM_delay_calculation.html">click here</a>.
+<a href="{{ '' | prepend: site.baseurl | prepend: site.url }}/references/methodology/ATFM_delay_calculation.html">click here</a>.
 
 <h3 id="ert_dly">En-route ATFM delays</h3>
 <div class="row">
@@ -22,7 +22,8 @@ For more information on the change in methodology
         <div id="tbl_cap_ert_YY"></div>
     </div>
     <div class="col-lg-6 offset-10" style="border-style: solid; border-width:thin; border-color: #bfbfbf;">
-      <h5><a href="{{site.url}}/references/dataset/En-Route_ATFM_Delay_FIR.html">En-route ATFM delays</a> by <a href="{{site.url}}/references/definition/fab.html">FAB (FIR)</a> (Jan 2017)</h5>
+      <h5><a href="{{ '' | prepend: site.baseurl | prepend: site.url }}/references/dataset/En-Route_ATFM_Delay_FIR.html">En-route ATFM delays</a> by
+      <a href="{{ '' | prepend: site.baseurl | prepend: site.url }}/references/definition/fab.html">FAB (FIR)</a> (Jan 2017)</h5>
         <div id="tbl_cap_fir_ert_YY"></div>
         <br>
         <div id="crt_cap_fir_ert_YY"></div>
@@ -55,6 +56,7 @@ For more information on the change in methodology
 {% javascript tbl_cap_apt_YY %}
 
 <script>
+ tbl_cap_fir_ert_YY.chart('{{ "" | prepend: site.baseurl | prepend: site.url }}');
  var pymParent = new pym.Parent(
    'crt_cap_fir_ert_YY',
    '{{ "/graphics/en-route_atfm_delay_fab/index.html" | prepend: site.baseurl | prepend: site.url }}',

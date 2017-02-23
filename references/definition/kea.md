@@ -22,4 +22,4 @@ The key performance indicator is used in the Single European Sky (SES)
 Performance Scheme.
 
 More information on the methodology used to compute
-[Horizontal en-route flight efficiency](/references/methodology/horizontal_flight_efficiency_pi.html).
+[Horizontal en-route flight efficiency]({{ "/references/methodology/horizontal_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }}).

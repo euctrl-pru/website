@@ -12,22 +12,22 @@ introduced a change to improve the accuracy of the ATFM delay calculation for
 operational purposes.
 For more information on the change in methodology [click here][atfm_dly_rea].
 
-[atfm_dly_rea]: <{{site.url}}/references/methodology/ATFM_delay_calculation.html> "ATFM Delay calculation changes due to REA"
+[atfm_dly_rea]: <{{ "/references/methodology/ATFM_delay_calculation.html" | prepend: site.baseurl | prepend: site.url}}> "ATFM Delay calculation changes due to REA"
 
 
 ## Data description
 
 The *Airport Arrival ATFM Delay* provides an indication of
-[ATFM delays](/references/definition/atfm_delay.html) on the ground due to
-constraints at airports.
+[ATFM delays]({{ "/references/definition/atfm_delay.html" | prepend: site.baseurl | prepend: site.url }})
+on the ground due to constraints at airports.
 
 In Europe, when traffic demand is anticipated to exceed the available capacity
 in en route centres or at airports, Air Traffic Control
-([ATC](/references/definition/atc.html)) units may request
-the local Flow Management Position ([FMP](/references/definition/fmp.html)) to
+([ATC]({{ "/references/acronym/atc.html" | prepend: site.baseurl | prepend: site.url }})) units may request
+the local Flow Management Position ([FMP]({{ "/references/acronym/fmp.html"  | prepend: site.baseurl | prepend: site.url }})) to
 instigate an Air Traffic Flow Management
-([ATFM](/references/definition/atfm.html)) measure, or
-[regulation](/references/definition/regulation.html).
+([ATFM]({{ "/references/acronym/atfm.html" | prepend: site.baseurl | prepend: site.url }})) measure, or
+[regulation]({{ "/references/definition/regulation.html"  | prepend: site.baseurl | prepend: site.url }}).
 Aircraft expected to arrive during a period of congestion are given ATFM delay
 at their departure airport, under the authority of the
 Network Manager, in order to regulate the flow of traffic into the constrained
@@ -74,4 +74,3 @@ airport capacity shortfalls since 2009.
 | DLY_APT_ARR_NA_1 | Network Manager | NA - Not specified - AD              | AD Disruptions       | Minutes of airport arrival ATFM delay with delay code NA - Not specified              | 0           |
 | FLT_ARR_1_DLY    | Network Manager | FLT_ARR_1_DLY                        |                      | Number of airport ATFM arrival delayed arrivals                                       | 0           |
 | FLT_ARR_1_DLY_15 | Network Manager | FLT_ARR_1_DLY_15                     |                      | Number of airport ATFM arrival delayed arrivals (>15 min.)                            | 0           |
- 

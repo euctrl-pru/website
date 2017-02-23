@@ -10,11 +10,12 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 ## Data description
 
 The
-[ATC pre-departure delay](/references/definition/atc_pre-departure_delay.html)
+[ATC pre-departure delay]({{ "/references/definition/atc_pre-departure_delay.html"  | prepend: site.baseurl | prepend: site.url }})
 is a proxy for ATC induced delays at the departure stand to avoid queuing at the
 departure runway.
 
-The data is based on [IATA delay code 89](/references/definition/IATA_code_89.html)
+The data is based on
+[IATA delay code 89]({{ "/references/definition/IATA_code_89.html"  | prepend: site.baseurl | prepend: site.url }})
 [see {% cite iata:delaycodes --file aviation %}] which, besides delays caused by
 local ATC constraints, also includes delays due to late push-back approval and some other
 reasons which may introduce a certain level of bias.

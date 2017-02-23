@@ -12,10 +12,10 @@ needsMath: true
 
 The *actual taxi-out time* of a flight is the time elapsed between the off-block
 time of this flight and its take-off time.
-  
+
 The *unimpeded taxi-out time* is the taxi-out time in non congested conditions
 at airports.  The unimpeded taxi-out time is used in the calculation of the
-[additional taxi-out time](/references/definition/additional_taxi-out_time.html).
+[additional taxi-out time][atxot].
 
 This technical note describes the methodology used in order to calculate the
 unimpeded taxi-out time.
@@ -184,13 +184,13 @@ Unimpeded taxi-out time is calculated in five steps:
 The following checks are performed to test the validity of the results:
 
 #### Coverage
-  
+
 The percentage of flights with valid data and for which it was possible
 to define an unimpeded reference time should be at least 90%.
 
 #### Distribution of residual errors
 
-[Additional taxi-out time](/references/definition/additional_taxi-out_time.html)
+[Additional taxi-out time][atxot]
 for unimpeded flights should have a distribution centered around zero and with
 a standard deviation below 3 minutes.
 
@@ -201,7 +201,7 @@ a standard deviation below 3 minutes.
 
 
 #### Evolution of the additional taxi-out time with the congestion level
-  
+
 In order to be able to consolidate in a single graph for a given airport
 with different groups (departure stand and departure runway) and different
 saturation levels the data has to be normalised. 
@@ -229,13 +229,13 @@ The additional time as a function of the congestion index should:
 
 ### Unimpeded taxi-out time Monitoring
 
-[Additional taxi-out time](/references/definition/additional_taxi-out_time.html)
+[Additional taxi-out time][atxot]
 for unimpeded flights should remain close to zero.
 A change in the unimpeded taxi-out time might indicate a change in operational
 procedures or use of infrastructure during the reference period under
 consideration.
 In such a case, new unimpeded taxi-out times will be calculated in order
-to consider the impact of these changes. 
+to consider the impact of these changes.
 
 {% figure caption:"Verification of monthly statistics" class:"img-responsive center-block" %}
 {% img check2.jpg alt:"Verification of monthly statistics" title:"Verification of monthly statistics" magick:resize:300x300 %}
@@ -247,12 +247,13 @@ Every month the following checks are carried out for each of the airports:
 * Percentage of flights with valid data and associated unimpeded times should
   remain greater than 90%.
 * For unimpeded flights,
-  * the median of the [additional taxi-out times](/references/definition/additional_taxi-out_time.html)
+  * the median of the [additional taxi-out times][atxot]
     distribution should remain within the interval $$ \mathopen] -1 minute, +1 minute \mathclose[ $$,
   * The standard deviation of the
-    [additional taxi-out times](/references/definition/additional_taxi-out_time.html)
+    [additional taxi-out times][atxot]
     distribution should be smaller than 3 minutes, and
   * P75-P25 should be smaller than 3 minutes.
 
 If one of these conditions is not met, new unimpeded taxi-out times are calculated.
 
+[atxot]: <{{ "/references/definition/additional_taxi-out_time.html" | prepend: site.baseurl | prepend: site.url }}> "Additional Taxi-out Time definition"

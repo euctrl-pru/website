@@ -14,7 +14,7 @@ permalink: /posts/
         <ul>
         {% endif %}
 
-        <h4>{{ post.date | date: "%d %b" }} &mdash; <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
+        <h4>{{ post.date | date: "%d %b" }} &mdash; <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
             <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
 
         {% if forloop.last %}

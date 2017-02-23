@@ -40,12 +40,12 @@ entry/exit point into the reference area is used for the calculation.
 The planned trajectory is derived from the flight plans submitted by airspace
 users to the Network Manager.
 The actual flown trajectory is based on processed radar track data (a.k.a. correlated
-position reports or [CPR](/references/definition/cpr.html)) submitted by ANSPs
-to the EUROCONTROL Enhanced Tactical Flow 
-Management System ([ETFMS](/references/definition/etfms.html)).
+position reports or [CPR]({{ "/references/acronym/cpr.html" | prepend: site.baseurl | prepend: site.url }})) submitted by ANSPs
+to the EUROCONTROL Enhanced Tactical Flow Management System
+([ETFMS]({{ "/references/acronym/etfms.html" | prepend: site.baseurl | prepend: site.url }})).
 
-**[KEP](/references/definition/kep.html)** and
-**[KEA](/references/definition/kea.html)** are performance indicators measuring
+**[KEP]({{ "/references/acronym/kep.html" | prepend: site.baseurl | prepend: site.url }})** and
+**[KEA]({{ "/references/acronym/kea.html" | prepend: site.baseurl | prepend: site.url }})** are performance indicators measuring
 horizontal en-route flight inefficiency in flight plans (KEP) and in actual
 flown trajectories (KEA) over a period of 12 months.
 **Please note that the values are NOT monthly averages but the average over the
@@ -60,7 +60,7 @@ the ten worst days (for each measured area) are excluded from the computation.
 
 ## Methodology
 
-[Horizontal en-route flight efficiency methodology](/references/methodology/horizontal_flight_efficiency_pi.html)
+[Horizontal en-route flight efficiency methodology]({{ "/references/methodology/horizontal_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }})
 is fully consistent with the Single European Sky (SES) Performance Scheme
 [see {% cite pru-hfe-pi --file aviation %}].
 

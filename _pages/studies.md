@@ -17,7 +17,7 @@ title: "Studies"
         <ul>
     {% endif %}
 
-    <h4>{{ s.date | date: "%d %b" }} &mdash; <a href="{{ s.url }}" title="{{ s.title }}">{{ s.title }}</a></h4>
+    <h4>{{ s.date | date: "%d %b" }} &mdash; <a href="{{ s.url | prepend: site.baseurl | prepend: site.url }}" title="{{ s.title }}">{{ s.title }}</a></h4>
     <p>{{ s.excerpt | strip_html | truncate: 160 }}</p>
 
     {% if forloop.last %}

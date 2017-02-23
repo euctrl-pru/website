@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
 {% if site.url %}
-  {% assign base = site.url %}
+  {% assign base =  site.baseurl | prepend: site.url %}
 {% elsif site.github.url %}
   {% assign base = site.github.url %}
 {% endif %}
@@ -19,4 +19,4 @@
     <subtitle>{{ site.description | xml_escape }}</subtitle>
   {% endif %}
 
-  <icon>{{ site.url }}/apple-touch-icon-precomposed.png</icon>
+  <icon>{{ site.baseurl | prepend: site.url }}/apple-touch-icon-precomposed.png</icon>

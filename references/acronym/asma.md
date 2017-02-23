@@ -11,5 +11,5 @@ keywords: metadata, performance, data, statistics, economics, air transport, fli
 **A**rrival **S**equencing and **M**etering **A**rea.
 
 See also the
-[Additional ASMA time methodology](/references/methodology/unimpeded_asma_time.html)
-in the [Methodology](/references/methodology/) section.
+[Additional ASMA time methodology]({{ "/references/methodology/unimpeded_asma_time.html" | prepend: site.baseurl | prepend: site.url }})
+in the [Methodology]({{ "/references/methodology/" | prepend: site.baseurl | prepend: site.url }}) section.

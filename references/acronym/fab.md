@@ -28,8 +28,8 @@ width: 20em;
 See also the
 [Functional Airspace Block](https://ext.eurocontrol.int/lexicon/index.php/Functional_Airspace_Block){:target="_blank"}
 page at [ATM Lexicon](https://ext.eurocontrol.int/lexicon/index.php/Main_Page)
-and the [Functional Airspace Block](/references/definition/fab.html)
-definition in the [Definitions](/references/definition/) section.
+and the [Functional Airspace Block]({{ "/references/acronym/fab.html" | prepend: site.baseurl | prepend: site.url }})
+definition in the [Definitions]({{ "/references/definition/" | prepend: site.baseurl | prepend: site.url }}) section.
 
 
 The <a href="http://www.eurocontrol.int/dossiers/fabs" target="_blank">FAB</a>
@@ -61,6 +61,6 @@ have been taken:
 <br>
 For the details about the computation of delay at FAB level (i.e. the FIRs
 used), please refer to the relevant section in the
-[En-route ATFM delays]({{site.url}}/references/dataset/En-Route_ATFM_Delay_FIR.html#fab-definitions)
-page part of the [Datasets Definition]({{site.url}}/references/dataset/)
+[En-route ATFM delays]({{ "/references/dataset/En-Route_ATFM_Delay_FIR.html#fab-definitions" | prepend: site.baseurl | prepend: site.url }})
+page part of the [Datasets Definition]({{ "/references/dataset/" | prepend: site.baseurl | prepend: site.url }})
 section.

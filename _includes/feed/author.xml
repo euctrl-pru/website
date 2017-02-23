@@ -6,6 +6,6 @@
     {% if site.owner.email %}
       <email>{{ site.owner.email }}</email>
     {% endif %}
-    <uri>{{ site.url | xml_escape }}/</uri>
+    <uri>{{  site.baseurl | prepend: site.url | xml_escape }}/</uri>
   </author>
 {% endif %}

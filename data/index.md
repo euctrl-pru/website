@@ -9,5 +9,5 @@ keywords: metadata, performance, data, statistics, economics, air transport, fli
 
 Data by:
 
-* [Performance Area](/data/performancearea/)
+* [Performance Area]({{ "/data/performancearea/" | prepend: site.baseurl | prepend: site.url }})
 
