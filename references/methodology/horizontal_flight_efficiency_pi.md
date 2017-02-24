@@ -157,8 +157,8 @@ the comparison between the length of a trajectory and the shortest distance
 between its endpoints.
 
 
-{% figure caption:"HFE as comparison of flight length and Great Circle Distance" class:"img-responsive center-block" %}
-{% img hfe-01.png magick:resize:400x400 alt:'HFE as comparison of flight length and Great Circle Distance' %}
+{% figure caption:"Figure 1 HFE as comparison of flight length and Great Circle Distance" class:"img-responsive center-block" %}
+{% img hfe-01.png magick:resize:400x400 alt:'Figure 1: HFE as comparison of flight length and Great Circle Distance' %}
 {% endfigure %}
 
 
@@ -175,8 +175,8 @@ In addition, there is a specific need which stems from the requirements of
 Reference Period 2 (RP2) **to measure local performance (FAB level) while at the
 same time keeping the network perspective.**
 
-{% figure caption:"Local Performance Requirement" class:"img-responsive center-block" %}
-{% img hfe-02.png magick:resize:700x700 alt:'Local Performance Requirement' %}
+{% figure caption:"Figure 2: Local Performance Requirement" class:"img-responsive center-block" %}
+{% img hfe-02.png magick:resize:700x700 alt:'Figure 2: Local Performance Requirement' %}
 {% endfigure %}
 
 
@@ -206,18 +206,18 @@ parts, e.g., between the entry and exit into a FAB.
 The achieved distance is the average of two quantities. The first quantity
 considers how closer to destination the trajectory takes from its entry point
 into an area to its exit point from the area (left part of
-Figure {@fig:avg-and-achieved-distance}). This can be calculated as the
+Figure 3). This can be calculated as the
 difference between
 
 1. the great circle distance from the entry point N to the destination D and
 1. the great circle distance from the exit point X to the destination D.
 
-{% figure caption:"The two Quantities Averaged in the Achieved Distance" class:"img-responsive center-block" %}
-{% img hfe-03.png magick:resize:550x550 alt:'The two Quantities Averaged in the Achieved Distance' %}
+{% figure caption:"Figure 3: The two Quantities Averaged in the Achieved Distance" class:"img-responsive center-block" %}
+{% img hfe-03.png magick:resize:550x550 alt:'Figure 3: The two Quantities Averaged in the Achieved Distance' %}
 {% endfigure %}
 
 
-In the Figure {@fig:avg-and-achieved-distance}, the distance from $N$ to
+In the Figure 3, the distance from $N$ to
 $D$ is the radius of the circle centred at $D$ and going through the point of
 entry $N$, while the distance from $X$ to $D$ is the radius of the circle
 centred at $D$ and going through the point $X$.
@@ -253,10 +253,10 @@ It might seem natural to consider the comparison of the flown distance in a
 local area with the great circle distance between the entry and exit point of
 the same area. Such a measurement would not take into consideration the network
 perspective, as can be seen in the (extreme, for illustration purposes) example
-of the Figure {@fig:local-efficiency}.
+of the Figure 4.
 
-{% figure caption:"A case of perfect local efficiency with no network contribution" class:"img-responsive center-block" %}
-{% img hfe-04.png magick:resize:480x480 alt:'A case of perfect local efficiency with no network contribution]' %}
+{% figure caption:"Figure 4: A case of perfect local efficiency with no network contribution" class:"img-responsive center-block" %}
+{% img hfe-04.png magick:resize:480x480 alt:'Figure 4: A case of perfect local efficiency with no network contribution]' %}
 {% endfigure %}
 
 
@@ -283,11 +283,11 @@ The value of the achieved distance between two points is by construction less
 than the direct distance between the same two points. This enables a
 decomposition of the inefficiency into a local component (which we call
 extension) and a network contribution (which we call interface) as shown in
-the Figure {@fig:decomposition-inefficiency}. 
+the Figure 5.
 
 
-{% figure caption:"Decomposition of Inefficiency" class:"img-responsive center-block" %}
-{% img hfe-05.png magick:resize:600x600 alt:'Decomposition of Inefficiency' %}
+{% figure caption:"Figure 5: Decomposition of Inefficiency" class:"img-responsive center-block" %}
+{% img hfe-05.png magick:resize:600x600 alt:'Figure 5: Decomposition of Inefficiency' %}
 {% endfigure %}
 
 
@@ -306,8 +306,8 @@ distance.
 
 ## Independence of local performance from performance outside the local area
 
-{% figure caption:"Independence of local performance from performance outside the local area" class:"img-responsive center-block" %}
-{% img hfe-06.png magick:resize:700x700 alt:'Independence of local performance from performance outside the local area' %}
+{% figure caption:"Figure 6: Independence of local performance from performance outside the local area" class:"img-responsive center-block" %}
+{% img hfe-06.png magick:resize:700x700 alt:'Figure 6: Independence of local performance from performance outside the local area' %}
 {% endfigure %}
 
 
@@ -315,9 +315,9 @@ The value of the achieved distance to be considered for a local area depends
 only on the position of the entry and exit points with respect to the origin and
 destination of the trajectory. As a consequence, the value of the local
 inefficiency is independent from the characteristics of the rest of the
-trajectory. 
+trajectory.
 
-Consider the situation in Figure {@fig:independence-performance} (once again an
+Consider the situation in Figure 6 (once again an
 extreme example to illustrate the point), with two flights traversing a FAB, one
 with a direct trajectory from the origin to destination (thus both inside and
 outside the FAB), and the other with a direct (and aligned) trajectory inside
