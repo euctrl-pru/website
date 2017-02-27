@@ -1,0 +1,333 @@
+---
+layout: prcq
+title: "ANS Safety Performance"
+---
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
+google.load('visualization', '1', { packages: ['corechart', 'controls'] });
+</script>
+<script type="text/javascript">
+
+function drawVisualization()
+ {
+
+// SAFETY - total accidents - YY - CHART
+      var crt_saf_acc_YY = new google.visualization.ChartWrapper({
+         chartType: 'ComboChart',
+         containerId: 'crt_saf_acc_YY',
+         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/gviz/tq?sheet=saf&range=A5:D15&headers=1&tq=',
+         options: {
+            titleTextStyle: { color: 'grey', fontSize: 12 },
+            chartArea: { left: 40, top: 40, width: '80%', height: '55%' },
+            legend: {
+               position: 'top',
+               maxLines: 3,
+               textStyle: {color: 'grey', fontSize: 10 }
+            },
+            isStacked : 'true',
+            series: {
+               0: { type: 'bars', color: '4F81BD', targetAxisIndex: 0 },
+               1: { type: 'bars', color: 'DCE6F2', targetAxisIndex: 0 },
+               2: { type: 'lines', color: 'C0504D', lineWidth: 0, pointSize: 12, targetAxisIndex: 1 }
+            },
+            vAxes:{
+               0: {
+                  title:'count',
+                  titleTextStyle: { color: 'grey', fontSize: 11 },
+                  textStyle: { color: 'grey' }
+               },
+               1: {
+                  title: '% of fatal accidents',
+                  titleTextStyle: { color: 'C0504D', fontSize: 11 },
+                  textStyle: { color:'C0504D' }
+               }
+            },
+            hAxis: {
+               title: 'Source: SRC Intermediate Report 2015',
+               titleTextStyle: { color: 'grey', fontSize: 11 },
+               type: 'string',
+               slantedTextAngle: 40,
+               textStyle: { fontSize: 11 }
+            }
+         },
+         view: {columns: [0, 2, 1, 3] }
+      });
+      crt_saf_acc_YY.draw();
+
+// SAFETY - accidents with ATM contribution- YY - CHART [EU_YY]
+      var crt_saf_accatm_YY = new google.visualization.ChartWrapper({
+         chartType: 'ComboChart',
+         containerId: 'crt_saf_accatm_YY',
+         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/gviz/tq?sheet=saf&range=A23:D33&headers=1&tq=',
+         options: {
+            titleTextStyle: { color: 'grey', fontSize: 12 },
+            chartArea: { left: 40, top: 40, width: '80%', height: '55%' },
+            legend: {
+               position: 'top',
+               maxLines: 2,
+               textStyle: { color: 'grey', fontSize: 10 }
+            },
+            isStacked : 'true',
+            series: {
+               0: { type: 'bars', color: '4F81BD', targetAxisIndex: 0 },
+               1: { type: 'bars', color: 'DCE6F2', targetAxisIndex: 0 },
+               2: { type: 'lines', color: 'C0504D', lineWidth: 0, pointSize: 12, targetAxisIndex: 1 }
+            },
+            vAxes: {
+               0: {
+                  title: 'count',
+                  titleTextStyle: { color: 'grey', fontSize: 11 },
+                  textStyle: { color: 'grey' }
+               },
+               1: {
+                  title: '% of accidents',
+                  titleTextStyle: { color: 'C0504D', fontSize: 11 },
+                  textStyle: { color:'C0504D' }
+               }
+            },
+            hAxis: {
+               title: 'Source: SRC Intermediate Report 2015',
+               titleTextStyle: { color: 'grey', fontSize: 11 },
+               type: 'string',
+               slantedTextAngle: 40,
+               textStyle: { fontSize: 11 }
+            }
+         },
+         view: { columns: [0, 1, 2, 3] }
+      });
+      crt_saf_accatm_YY.draw();
+
+
+// SAFETY - Separation minima infringements - YY - CHART
+      var crt_saf_smi_YY = new google.visualization.ChartWrapper({
+         chartType: 'ComboChart',
+         containerId: 'crt_saf_smi_YY',
+         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/gviz/tq?sheet=saf&range=A41:F51&headers=1&tq=',
+         options: {
+            titleTextStyle: { color: 'grey', fontSize: 12 },
+            chartArea: { left: 40, top: 40, width: '80%', height: '55%' },
+            legend: {
+               position: 'top',
+               maxLines: 3,
+               textStyle: {color: 'grey', fontSize: 10 }
+            },
+            isStacked : 'true',
+            series: {
+               0: { type: 'lines', color:'darkgrey', lineWidth: 1, pointSize: 6,targetAxisIndex: 0 },
+               1: { type: 'lines', color:'#5D7CBA', lineWidth: 1, pointSize: 6,targetAxisIndex: 1 },
+               2: { type: 'bars', color:'#376092', targetAxisIndex: 0 },
+               3: { type: 'bars', color:'#B9CDE5', targetAxisIndex: 0 }
+            },
+            vAxes:{
+               0: {
+                  title:'count',
+                  titleTextStyle: { color: 'grey', fontSize: 11 },
+                  textStyle: { color: 'grey' }
+               },
+               1: {
+                  title: 'total nr. of reported SMIs',
+                  titleTextStyle: { color: '#5D7CBA', fontSize: 11 },
+                  textStyle: { color:'#5D7CBA' }
+               }
+            },
+            hAxis: {
+               title: 'Source: SRC Intermediate Report 2015',
+               titleTextStyle: { color: 'grey', fontSize: 11 },
+               type: 'string',
+               slantedTextAngle: 40,
+               textStyle: { fontSize: 11 }
+            }
+         },
+         view: {columns: [0, 1, 2, 4, 5] }
+      });
+      crt_saf_smi_YY.draw();
+
+// SAFETY - UNAUTHORISED PENETRATION OF AIRSPACE - YY - CHART [EU_YY]
+      var crt_saf_upa_YY = new google.visualization.ChartWrapper({
+         chartType: 'ComboChart',
+         containerId: 'crt_saf_upa_YY',
+         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/gviz/tq?sheet=saf&range=A59:F69&headers=1&tq=',
+         options: {
+            titleTextStyle: { color: 'grey', fontSize: 12 },
+            chartArea: { left: 40, top: 40, width: '80%', height: '55%' },
+            legend: {
+               position: 'top',
+               maxLines: 2,
+               textStyle: { color: 'grey', fontSize: 10 }
+            },
+            isStacked : 'true',
+            series: {
+               0: { type: 'lines', color: 'darkgrey', lineWidth: 1, pointSize: 6,targetAxisIndex: 0 },
+               1: { type: 'lines', color: '#5D7CBA', lineWidth: 1, pointSize: 6,targetAxisIndex: 1 },
+               2: { type: 'bars', color: '#376092', targetAxisIndex: 0 },
+               3: { type: 'bars', color: '#B9CDE5', targetAxisIndex: 0 }
+            },
+            vAxes: {
+               0: {
+                  title: 'count',
+                  titleTextStyle: { color: 'grey', fontSize: 11 },
+                  textStyle: { color: 'grey' }
+               },
+               1: {
+                  title: 'total nr. of reported UPAs',
+                  titleTextStyle: { color: '#5D7CBA', fontSize: 11 },
+                  textStyle: { color:'#5D7CBA' }
+               }
+            },
+            hAxis: {
+               title: 'Source: SRC Intermediate Report 2015',
+               titleTextStyle: { color: 'grey', fontSize: 11 },
+               type: 'string',
+               slantedTextAngle: 40,
+               textStyle: { fontSize: 11 }
+            }
+         },
+         view: { columns: [0, 1, 2, 4, 5] }
+      });
+      crt_saf_upa_YY.draw();
+
+// SAFETY - RUNWAY INCURSIONS - YY - CHART [EU_YY]
+      var crt_saf_ri_YY = new google.visualization.ChartWrapper({
+         chartType: 'ComboChart',
+         containerId: 'crt_saf_ri_YY',
+         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/gviz/tq?sheet=saf&range=A77:F87&headers=1&tq=',
+         options: {
+            title: 'Runway Incursions (RIs)',
+            titleTextStyle : { color: 'grey', fontSize: 12 },
+            chartArea: { left: 40, top: 40, width: '80%', height: '55%' },
+            legend: {
+               position: 'top',
+               maxLines: 2,
+               textStyle: { color: 'grey', fontSize: 10 }
+            },
+            isStacked : 'true',
+            series: {
+               0: { type: 'lines', color: 'darkgrey', lineWidth: 1, pointSize: 6,targetAxisIndex: 0 },
+               1: { type: 'lines', color: '#5D7CBA', lineWidth: 1, pointSize: 6,targetAxisIndex: 1 },
+               2: { type: 'bars',  color: '#376092', targetAxisIndex: 0 },
+               3: { type: 'bars',  color: '#B9CDE5', targetAxisIndex: 0 }
+            },
+            vAxes:{
+               0: {
+                  title:'count',
+                  titleTextStyle: { color: 'grey', fontSize: 11 },
+                  textStyle: { color: 'grey' }
+               },
+               1: {
+                  title:'Total nr. of Reported RIs',
+                  titleTextStyle: { color: 'grey', fontSize: 11 },
+                  textStyle: { color:'grey' }
+               }
+            },
+            hAxis: {
+               title: 'Source: SRC Intermediate Report 2015',
+               titleTextStyle: { color: 'grey', fontSize: 11 },
+               type: 'string',
+               slantedTextAngle: 40,
+               textStyle: { fontSize: 11 }
+            }
+         },
+         view: { columns: [0, 1, 2, 4, 5] }
+      });
+      crt_saf_ri_YY.draw();
+
+// SAFETY - ATM Specific Technical Events - YY - CHART [EU_YY]
+      var crt_saf_aso_YY = new google.visualization.ChartWrapper({
+         chartType: 'ComboChart',
+         containerId: 'crt_saf_aso_YY',
+         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/gviz/tq?sheet=saf&range=A95:H105&headers=1&tq=',
+         options: {
+            titleTextStyle : { color: 'grey', fontSize: 12 },
+            chartArea: { left: 40, top: 40, width: '80%', height: '55%' },
+            legend: {
+               position: 'top',
+               maxLines: 3,
+               textStyle: { color: 'grey', fontSize: 10 }
+            },
+            isStacked : 'true',
+            series: {
+               2: { type: 'bars', color: '#B9CDE5' },
+               1: { type: 'bars', color: '#376092' },
+               0: { type: 'bars', color: '#C0504D' }
+            },
+            vAxis: {
+               title: 'Number of Occurrences',
+               titleTextStyle: { color: 'grey', fontSize: 11 },
+               textStyle: { color: 'grey' }
+            },
+            hAxis: {
+               title: 'Source: SRC Intermediate Report 2015',
+               titleTextStyle: { color: 'grey', fontSize: 11 },
+               type: 'string',
+               slantedTextAngle: 40,
+               textStyle: { fontSize: 11 }
+            }
+         },
+         view: { columns: [0, 7, 6, 5] }
+      });
+      crt_saf_aso_YY.draw();
+
+
+}
+google.setOnLoadCallback(drawVisualization)
+</script>
+
+<h2 class="page-header">ANS safety performance</h2>
+<div class="well well-sm">
+<div class="row">
+<div class="col-xs-6 col-sm-3">
+  Reference area: <span style="color:#800000;" class="text-muted">EUROCONTROL area</span>
+</div>
+
+<div class="col-xs-6 col-sm-3">
+  Last update: <span style="color:#800000; background-color:#f7f8f9" class="text-muted">09-FEB-2017</span>
+</div>
+
+<div class="col-xs-6 col-sm-3">
+  Update rate: <span style="color:#800000;" class="text-muted">Annually</span>
+</div>
+
+<div class="col-xs-6 col-sm-3">
+  Data and methodologies <button type = "button" class = "btn btn-primary btn-sm">PRU Portal</button>
+</div>
+</div>
+</div>
+
+<h3 class="sub-header">Air traffic accidents</h3>
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+  <h4>Air traffic accidents</h4>
+  <div id="crt_saf_acc_YY"></div>
+</div>
+<div class="col-xs-6 col-sm-6 placeholder">
+  <h4>Accidents with ATM contribution</h4>
+  <div id="crt_saf_accatm_YY"></div>
+</div>
+</div>
+<div class="well well-sm">commentary to be included</div>
+
+<h3 class="sub-header">ATM related incidents</h3>
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+  <h4>Separation Minima Infringements (SMI)</h4>
+  <div id="crt_saf_smi_YY"></div>
+</div>
+<div class="col-xs-6 col-sm-6 placeholder">
+  <h4>Unauthorised Penetration of Airspace (UPAs)</h4>
+  <div id="crt_saf_upa_YY"></div>
+</div>
+</div>
+<div class="well well-sm">commentary to be included</div>
+
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+  <h4>Runway Incursions (RIs)</h4>
+  <div id="crt_saf_ri_YY"></div>
+</div>
+<div class="col-xs-6 col-sm-6 placeholder">
+  <h4>ATM Specific Occurrences (ATM-S)</h4>
+  <div id="crt_saf_aso_YY"></div>
+</div>
+</div>
+<div class="well well-sm">commentary to be included</div>
+

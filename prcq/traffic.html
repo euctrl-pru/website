@@ -1,0 +1,194 @@
+---
+layout: prcq
+title: "Traffic Evolution"
+---
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
+google.load('visualization', '1', { packages: ['corechart', 'controls'] });
+</script>
+<script type="text/javascript">
+
+function drawVisualization()
+ {
+
+// TRAFFIC - ERT FLTS - YY - CHART
+ var crt_ertfltsYY = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_ertfltsYY',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=flts&range=A1:E13',
+    options: {
+        //width: 500, height: 200,
+        //chartArea: {left: 80, top: 30, width:'60%',height:'65%'},
+        titleTextStyle : {color: '#1F1F2E', fontSize: 12},
+        legend: 'none',
+        series: {
+              0: {type: 'bars', color:'#4F81BD', targetAxisIndex: 0},
+              1: {type: 'lines', color:'#B89470', lineWidth: 0, pointSize: 7, targetAxisIndex: 1}
+            },
+        vAxes:{
+              0:{ title:'Avg. daily IFR flights',
+                titleTextStyle : {color: '#1F1F2E', fontSize: 11}, textStyle:{color: '#1F1F2E'}},
+              1:{ title:'year on year (%)',
+                titleTextStyle : {color: '#1F1F2E', fontSize: 11}, textStyle:{color:'#B89470'}}
+            }
+        },
+    view: {columns: [0,1,2], rows: [0,1,2,3,4,5,6,7,8,9,10,11]}
+  }); crt_ertfltsYY.draw();
+
+
+// TRAFFIC - ERT SU - YY - CHART
+ var crt_ertsuYY = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_ertsuYY',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=flts&range=A1:E13',
+    options: {
+        //width: 500, height: 200,
+        //chartArea: {left: 80, top: 30, width:'60%',height:'65%'},
+        titleTextStyle : {color: '#1F1F2E', fontSize: 12},
+        legend: 'none',
+        series: {
+              0: {type: 'bars', color:'#4F81BD', targetAxisIndex: 0},
+              1: {type: 'lines', color:'#B89470', lineWidth: 0, pointSize: 7, targetAxisIndex: 1}
+            },
+        vAxes:{
+              0:{ title:'Avg. daily en-route service units',
+                titleTextStyle : {color: '#1F1F2E', fontSize: 11}, textStyle:{color: '#1F1F2E'}},
+              1:{ title:'year on year (%)',
+                titleTextStyle : {color: '#1F1F2E', fontSize: 11}, textStyle:{color:'#B89470'}}
+            }
+        },
+    view: {columns: [0,3,4], rows: [0,1,2,3,4,5,6,7,8,9,10,11]}
+  }); crt_ertsuYY.draw();
+
+// Flight type - YY - CHART -
+  var crt_flttypeYY = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_flttypeYY',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=flts&range=G1:J5&hl=en_GB',
+    options:{
+          //width: 450, height: 150,
+          //chartArea: {left: 80, top: 30, width:'60%',height:'60%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: 'none',
+            seriesType: 'bars',
+          colors: ['#4F81BD'],
+          vAxis:{title:'Avg. daily IFR flights',
+              titleTextStyle : {color: 'grey', fontSize: 11},
+              textStyle:{color: '#5D7CBA'}}
+        },
+    view: {'columns': [0,3], rows: [1,2,3]}
+  }); crt_flttypeYY.draw();
+
+
+// Traffic segment - YY - CHART -
+  var crt_segYY = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_segYY',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=flts&range=L1:O7&hl=en_GB',
+    options:{
+          //width: 450, height: 150,
+          //chartArea: {left: 80, top: 30, width:'60%',height:'60%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: 'none',
+            seriesType: 'bars',
+          colors: ['#4F81BD'],
+          vAxis:{title:'Avg. daily IFR flights',
+              titleTextStyle : {color: 'grey', fontSize: 11},
+              textStyle:{color: '#5D7CBA'}}
+        },
+    view: {'columns': [0,3], rows: [1,2,3,4,5,6]}
+  }); crt_segYY.draw();
+
+
+// TRAFFIC - ANSP - YY - CHART
+ var crt_anspfltsYY = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_anspfltsYY',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=flts&range=Q1:T40',
+    options: {
+        height: 350,
+        chartArea: {left: 50, top: 10, width:'100%',height:'50%'},
+        titleTextStyle : {color: '#1F1F2E', fontSize: 12},
+        legend: 'none',
+        series: {
+              0: {type: 'bars', color:'#4F81BD', targetAxisIndex: 0},
+              1: {type: 'lines', color:'#B89470', lineWidth: 0, pointSize: 7, targetAxisIndex: 1}
+            },
+        vAxes:{
+              0:{ title:'Avg. daily IFR flights',
+                titleTextStyle : {color: '#1F1F2E', fontSize: 11}, textStyle:{color: '#1F1F2E'}},
+              1:{ title:'year on year (%)',
+                titleTextStyle : {color: '#1F1F2E', fontSize: 11}, textStyle:{color:'#B89470'}}
+            },
+            hAxis: {slantedTextAngle: 90,
+              textStyle: {color: 'grey', fontSize: 12}}
+        },
+    view: {columns: [0,2,3] }
+  }); crt_anspfltsYY.draw();
+
+}
+google.setOnLoadCallback(drawVisualization)
+</script>
+
+<h2 class="page-header">{{ page.title }}</h2>
+
+
+<div class="well well-sm">
+<div class="row">
+<div class="col-xs-6 col-sm-3">
+    Reference area: <span style="color:#800000;" class="text-muted">EUROCONTROL area</span>
+</div>
+
+<div class="col-xs-6 col-sm-3">
+    Last update: <span style="color:#800000; background-color:#f7f8f9" class="text-muted">09-FEB-2017</span>
+</div>
+
+<div class="col-xs-6 col-sm-3">
+    Update rate: <span style="color:#800000;" class="text-muted">Quarterly</span>
+</div>
+
+<div class="col-xs-6 col-sm-3">
+    Data and methodologies <button type = "button" class = "btn btn-primary btn-sm">PRU Portal</button>
+</div>
+</div>
+</div>
+
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+    <h4>Average daily flights</h4>
+    <span class="text-muted">EUROCONTROL area</span>
+    <div id="crt_ertfltsYY"></div>
+</div>
+<div class="col-xs-6 col-sm-6 placeholder">
+    <h4>Average daily en-route Service Units</h4>
+    <span class="text-muted">CRCO area</span>
+    <div id="crt_ertsuYY"></div>
+</div>
+</div>
+<div class="well well-sm">At system level, traffic increased by 2.4% in 2016 which corresponds to an additional 681 flights per day on average.</div>
+
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+    <h4>Change by flight type</h4>
+    <div id="crt_flttypeYY"></div>
+</div>
+<div class="col-xs-6 col-sm-6 placeholder">
+    <h4>Change by traffic segment</h4>
+    <div id="crt_segYY"></div>
+</div>
+</div>
+<div class="well well-sm">The main driver of the observed traffic growth in 2016 was the growth in the intra-European low cost traffic segment.</div>
+
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-4">
+    <h4>Traffic growth by geography</h4>
+    <img src="traffic_ansp.png" class="img-responsive" alt="Generic placeholder thumbnail">
+</div>
+<div class="col-xs-6 col-sm-8 placeholder">
+    <h4>Traffic variation by Air Navigation Service Provider (ANSP)</h4>
+    <div id="crt_anspfltsYY"></div>
+</div>
+      </div>
+<div class="well well-sm"> Peak traffic load continued to rise at a higher rate than average traffic in 2016. September 9th 2016 was the peak day in 2016 with 34,024 flights. It was also the 2nd highest on record (27 June 2008). <br> Although annual traffic was still slightly below 2008 levels, the third quarter in 2016 was the highest on record.<br>
+The highest growth compared to 2015 was observed in Portugal (+10.5%), Ireland (7.5%), Spain (+7.5%) and Poland (+7.3%). <br>The most notable traffic decreases in 2016 were in Ukraine (-9.0%), Moldova (-8.3%), Armenia (-7.8%), Albania (-7.8%).
+</div>

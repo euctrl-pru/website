@@ -1,0 +1,409 @@
+---
+layout: prcq
+title: "ANS performance @ airports"
+---
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
+google.load('visualization', '1', { packages: ['corechart', 'controls'] });
+</script>
+<script type="text/javascript">
+
+function drawVisualization()
+ {
+
+// ERT - CHART - En-route ATFM delay per flight
+ var crt_apt1 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt1',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=apt&range=A1:B11',
+    options: {
+        //width: 500, height: 200,
+        //chartArea: {left: 80, top: 30, width:'60%',height:'65%'},
+        titleTextStyle : {color: '#1F1F2E', fontSize: 12},
+        legend: 'none',
+        series: {
+              0: {type: 'lines', color:'4F81BD', lineWidth: 3, pointSize: 12, targetAxisIndex: 0}
+            },
+        vAxes:{
+              0:{ title:'minutes per arrival',
+                titleTextStyle : {color: '#1F1F2E', fontSize: 11}, textStyle:{color: '#1F1F2E'}}
+            }
+        },
+    view: {columns: [0,1], rows: [0,1,2,3,4,5,6,7,8,9]}
+  }); crt_apt1.draw();
+
+// ERT - CHART - Total en-route delay by reported cause
+  var crt_apt2 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt2',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=apt&range=G1:I8&hl=en_GB',
+    options:{
+                    chartArea: {left: 60, top: 30, width:'100%',height:'55%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: 'none',
+           series: {
+              0: {type: 'bars', color:'DCE6F2', targetAxisIndex: 0},
+              1: {type: 'lines', color:'C0504D', lineWidth: 0, pointSize: 12, pointShape: 'diamond', targetAxisIndex: 0}
+            },
+        vAxes:{
+              0:{ title:'minutes',
+                titleTextStyle : {color: '#1F1F2E', fontSize: 11}, format: 'short', textStyle:{color: '#1F1F2E'}}
+            }
+        },
+    view: {'columns': [0,2,1], rows: [0,1,2,3,4,5,6]}
+  }); crt_apt2.draw();
+
+
+
+// TRAFFIC - ANSP - YY - CHART
+ var crt_apt3 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt3',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=apt&range=A57:E87',
+    options: {
+        height: 350,
+        chartArea: {left: 80, top: 10, width:'75%',height:'50%'},
+        titleTextStyle : {color: '#1F1F2E', fontSize: 12},
+        legend: 'none',
+        series: {
+              0: {type: 'bars', color:'#4F81BD', targetAxisIndex: 0},
+              1: {type: 'lines', color:'#B89470', lineWidth: 0, pointSize: 7, targetAxisIndex: 1}
+            },
+        vAxes:{
+              0:{ title:'Avg. daily movements',
+                titleTextStyle : {color: '#1F1F2E', fontSize: 11}, textStyle:{color: '#1F1F2E'}},
+              1:{ title:'year on year (%)',
+                titleTextStyle : {color: '#1F1F2E', fontSize: 11}, textStyle:{color:'#B89470'}}
+            },
+            hAxis: {slantedTextAngle: 90,
+              textStyle: {color: 'grey', fontSize: 12}}
+        },
+    view: {columns: [1,2,4] }
+  }); crt_apt3.draw();
+
+
+//
+  var crt_apt4 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt4',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=apt&range=H65:O70',
+    options:{
+        height: 300,
+        chartArea: {left: 50, top: 10, width:'100%',height:'50%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 11}},
+          isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#D99694', targetAxisIndex: 0},
+                1: {type:'bars',color:'#FAC090', targetAxisIndex: 0},
+                2: {type:'bars',color:'#92D050', targetAxisIndex: 0},
+                3: {type:'bars', color:'#B9CDE5', targetAxisIndex: 0},
+                4: {type:'bars',color:'92D050', targetAxisIndex: 0}
+              },
+          hAxis: {slantedTextAngle: 90,
+              textStyle: {color: 'grey', fontSize: 12}},
+          vAxis: {title: 'minutes per arrival', format: '0.0',
+              titleTextStyle: {color: 'grey', fontSize: 12}}
+        },
+    view: {'columns': [0,1,2,3,4]}
+  }); crt_apt4.draw();
+
+
+
+//
+  var crt_apt5 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt5',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=apt&range=B22:G52',
+    options:{
+        height: 300,
+        chartArea: {left: 50, top: 10, width:'100%',height:'50%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 11}},
+          isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#D99694', targetAxisIndex: 0},
+                1: {type:'bars',color:'#FAC090', targetAxisIndex: 0},
+                2: {type:'bars',color:'#92D050', targetAxisIndex: 0},
+                3: {type:'bars', color:'#B9CDE5', targetAxisIndex: 0},
+                4: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 1}
+              },
+          hAxis: {slantedTextAngle: 90,
+              textStyle: {color: 'grey', fontSize: 12}},
+          vAxis: {title: 'minutes per arrival', format: '0.0',
+              titleTextStyle: {color: 'grey', fontSize: 12}}
+        },
+    view: {'columns': [0,1,2,3,4,5]}
+  }); crt_apt5.draw();
+
+
+//
+  var crt_apt6 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt6',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=apt&range=H65:O70',
+    options:{
+        height: 300,
+        chartArea: {left: 50, top: 10, width:'100%',height:'50%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 11}},
+          isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0}
+              },
+          hAxis: {slantedTextAngle: 90,
+              textStyle: {color: 'grey', fontSize: 12}},
+          vAxis: {title: 'minutes per arrival', format: '0.0',
+              titleTextStyle: {color: 'grey', fontSize: 12}}
+        },
+    view: {'columns': [0,5]}
+  }); crt_apt6.draw();
+
+
+
+//
+  var crt_apt7 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt7',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=apt&range=J22:O52',
+    options:{
+        height: 300,
+        chartArea: {left: 50, top: 10, width:'100%',height:'50%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 11}},
+          isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0},
+                1: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 1}
+              },
+          hAxis: {slantedTextAngle: 90,
+              textStyle: {color: 'grey', fontSize: 12}},
+          vAxis: {title: 'minutes per arrival', format: '0.0',
+              titleTextStyle: {color: 'grey', fontSize: 12}}
+        },
+    view: {'columns': [0,5,4]}
+  }); crt_apt7.draw();
+
+
+//
+  var crt_apt8 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt8',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=apt&range=H65:O70',
+    options:{
+        height: 300,
+        chartArea: {left: 50, top: 10, width:'100%',height:'50%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 11}},
+          isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0}
+              },
+          hAxis: {slantedTextAngle: 90,
+              textStyle: {color: 'grey', fontSize: 12}},
+          vAxis: {title: 'minutes per departure', format: '0.0',
+              titleTextStyle: {color: 'grey', fontSize: 12}}
+        },
+    view: {'columns': [0,6]}
+  }); crt_apt8.draw();
+
+
+
+//
+  var crt_apt9 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt9',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=apt&range=S22:AC52',
+    options:{
+        height: 300,
+        chartArea: {left: 50, top: 10, width:'100%',height:'50%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 11}},
+          isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0},
+                1: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 1}
+              },
+          hAxis: {slantedTextAngle: 90,
+              textStyle: {color: 'grey', fontSize: 12}},
+          vAxis: {title: 'minutes per departure', format: '0.0',
+              titleTextStyle: {color: 'grey', fontSize: 12}}
+        },
+    view: {'columns': [0,5,4]}
+  }); crt_apt9.draw();
+
+//
+  var crt_apt10 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt10',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=apt&range=H65:O70',
+    options:{
+        height: 300,
+        chartArea: {left: 50, top: 10, width:'100%',height:'50%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 11}},
+          isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0}
+              },
+          hAxis: {slantedTextAngle: 90,
+              textStyle: {color: 'grey', fontSize: 12}},
+          vAxis: {title: 'minutes per departure', format: '0.0',
+              titleTextStyle: {color: 'grey', fontSize: 12}}
+        },
+    view: {'columns': [0,7]}
+  }); crt_apt10.draw();
+
+
+//
+  var crt_apt11 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt11',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=apt&range=S22:AC52',
+    options:{
+        height: 300,
+        chartArea: {left: 50, top: 10, width:'100%',height:'50%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 11}},
+          isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0},
+                1: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 1}
+              },
+          hAxis: {slantedTextAngle: 90,
+              textStyle: {color: 'grey', fontSize: 12}},
+          vAxis: {title: 'minutes per departure', format: '0.0',
+              titleTextStyle: {color: 'grey', fontSize: 12}}
+        },
+    view: {'columns': [0,10,9]}
+  }); crt_apt11.draw();
+
+
+}
+google.setOnLoadCallback(drawVisualization)
+</script>
+
+<h1 class="page-header">{{ page.title }}</h1>
+<div class="well well-sm">
+<div class="row">
+<div class="col-xs-6 col-sm-3">
+    Reference area: <span style="color:#800000;" class="text-muted">EUROCONTROL area</span>
+</div>
+
+<div class="col-xs-6 col-sm-3">
+    Last update: <span style="color:#800000; background-color:#f7f8f9" class="text-muted">09-FEB-2017</span>
+</div>
+
+<div class="col-xs-6 col-sm-3">
+    Update rate: <span style="color:#800000;" class="text-muted">Quarterly</span>
+</div>
+
+<div class="col-xs-6 col-sm-3">
+    Data and methodologies <button type = "button" class = "btn btn-primary btn-sm">PRU Portal</button>
+</div>
+</div>
+</div>
+
+
+
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-4">
+    <h4>Traffic at the top 30 airports</h4>
+    <img src="traffic_ansp.png" class="img-responsive" alt="Generic placeholder thumbnail">
+</div>
+<div class="col-xs-6 col-sm-8 ">
+    <h4>Traffic variation by Airport</h4>
+    <div id="crt_apt3"></div>
+</div>
+  </div>
+<div class="well well-sm"> To be commented </div>
+
+<h3 class="sub-header">Arrival flow management</h3>
+<h4 class="page-header">Airport arrival ATFM delays</h4>
+<div class="row ">
+<div class="col-xs-6 col-sm-6 ">
+    <h5>Airport ATFM delay per arrival</h5>
+    <span class="text-muted">EUROCONTROL area</span>
+    <div id="crt_apt1"></div>
+</div>
+<div class="col-xs-6 col-sm-6 ">
+    <h5>Total airport ATFM delay by reported cause</h5>
+    <span class="text-muted">EUROCONTROL area</span>
+    <div id="crt_apt2"></div>
+</div>
+</div>
+<br>
+<div class="row ">
+<div class="col-xs-6 col-sm-4">
+    <h5>Top 30 airports</h5>
+    <div id="crt_apt4"></div>
+</div>
+<div class="col-xs-6 col-sm-8 ">
+    <h5>Airport ATFM arrival delay by airport (2016)</h5>
+    <div id="crt_apt5"></div>
+</div>
+  </div>
+<div class="well well-sm"> To be commented </div>
+
+<h4 class="page-header">Additional ASMA time</h4>
+<div class="row ">
+<div class="col-xs-6 col-sm-4">
+    <h5>Top 30 airports</h5>
+    <div id="crt_apt6"></div>
+</div>
+<div class="col-xs-6 col-sm-8 ">
+    <h5>Additional ASMA time by airport (2016)</h5>
+    <div id="crt_apt7"></div>
+</div>
+  </div>
+<div class="well well-sm"> To be commented </div>
+
+<h3 class="sub-header">Departure flow management</h3>
+<h4 class="page-header">ATC pre-departure delays</h4>
+<div class="row ">
+<div class="col-xs-6 col-sm-4">
+    <h5>Top 30 airports</h5>
+    <div id="crt_apt8"></div>
+</div>
+<div class="col-xs-6 col-sm-8 ">
+    <h5>ATC pre-departure delays by airport (2016)</h5>
+    <div id="crt_apt9"></div>
+</div>
+  </div>
+<div class="well well-sm"> To be commented </div>
+
+<h4 class="page-header">Additional taxi-out time</h4>
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-4">
+    <h5>Top 30 airports</h5>
+    <div id="crt_apt10"></div>
+</div>
+<div class="col-xs-6 col-sm-8 ">
+    <h5>Additional taxi-out by airport (2016)</h5>
+    <div id="crt_apt11"></div>
+</div>
+  </div>
+ <div class="well well-sm"> To be commented </div>
+
+<h2 class="sub-header">Key observations - ANS performance @ airports</h2>
+<div class="well well-sm">
+Controlled movements at the top 30 airports in the EUROCONTROL area (in terms of traffic) increased for the third consecutive year in 2016. Average daily movements increased by +2.7% compared to 2015 which corresponds to 594 additional movements each day.<br><br>
+Nine of top 30 airports (Amsterdam, Istanbul Ataturk, London Gatwick, Stockholm Arlanda, Istanbul Sabiha Gökçen, Dublin, Berlin Tegel, Geneva, Lisbon, and Warsaw) reported their highest traffic level on record surpassing the traffic levels observed before the economic crisis starting in 2008. <br><br>
+Antalya experienced a 30% reduction in traffic in 2016 which resulted in Warsaw entering the top 30 airports in terms of traffic instead. Amsterdam reported a 5.9% increase in traffic in 2016 which made it the airport with the most commercial movements in Europe in 2016. A number of airports (Manchester (MAN), Palma (PMI), Lisbon (LIS), Warsaw (WAW), and Dublin (DUB) experienced high growth rates above 8% in 2016. <br><br>
+The two Istanbul airports, which reported a remarkable traffic growth over the past years, were affected by the situation in Turkey, resulting in a notable slowdown in traffic growth. Of the top 30 airports, six showed a traffic decrease in 2016. The highest decrease in traffic among the top 30 airports in 2016 was observed for Brussels (BRU) airport with -6.5% compared to 2015 as a result of the terrorist attacks in March 2016. <br><br>
+The global implementation roadmaps driven by the ICAO GANP and the supporting ASBU modules cast their light on Europe. This strengthens the level of enabler deployments such as A-CDM or procedural changes in form of continuous climb or descent operations, time based separations and the use of improved wake vortex categorisations (RECAT-EU).<br><br>
+Despite the positive effect the aforementioned enablers are expected to have on performance, the substantial traffic increase at some airports contributed to higher levels of operational inefficiency and resulted in somewhat higher additional times during descent and in the taxi-out phase compared to 2015. <br><br>
+Average airport arrival ATFM delay decreased slightly in 2016 at the top 30 airports but is still heavily concentrated among a few airports. Five airports (Istanbul Sabiha Gökçen, Istanbul Ataturk, Amsterdam, London Heathrow, and London Gatwick) accounted for 59% of the airport arrival ATFM delay reported for the top 30 airports. At Istanbul Sabiha Gökçen, 42.5% of all arrivals in 2016 were airport ATFM delayed compared to Istanbul Ataturk with 20.3% of the arrivals being delayed. <br><br>
+The problem at the two Turkish airports is clearly capacity related and linked to the substantial growth observed over the past years. The peak arrival throughput at Sabiha Gökçen airport quadrupled over the past eight years making it the second busiest single runway airport in the EUROCONTROL area after London Gatwick. The situation in Istanbul is expected to improve with the opening of the first phase of the new Istanbul Airport which is scheduled for 2017/2018.<br><br>
+Airport arrival ATFM performance at Amsterdam and the two London airports (LHR, LGW) was to a large extent affected by weather which required reducing the available capacity. <br><br>
+London Heathrow, Istanbul Ataturk, and Istanbul Sabiha Gökçen show all up with a continuously high arrival throughput close to the peak declared arrival capacity. Constant operations close to maximum capacity generate high delays and possibly cancellations when there is a mismatch between scheduled demand and the capacity that can be made available. <br><br>
+At London Heathrow, wind is by far the most dominant factor affecting the airports arrival capacity. The introduction of time based separations in spring 2015 is expected to reduce ATFM delays due to high headwinds at the airport. In 2016, the average weather related ATFM delay per arrival decreased slightly and it will be interesting to see the impact on time based separation on performance once longer time series of data are available. <br><br>
+The high intensity operation with a clear focus on the maximisation of runway throughput at London Heathrow comes at a price and the analyses of the additional time in approach and in the taxi out phase show comparatively high levels of inefficiency. In fact, London Heathrow alone accounted for one quarter of the total additional ASMA time in 2016. The average holding per arrival at London Heathrow improved slightly in 2016 but is still above 8 minutes per arrival which is in line with a deliberate decision taken during the airport scheduling process after consultation with airlines. The cross border arrival management (XMAN) project was set up already in March 2014 to reduce airborne holdings on specific traffic flows but it would be worth to investigate further possibilities to reduce holding times at airports through a better support of the network while ensuring a continuous arrival flow into the airport. <br><br>
+Due to the lack of data the additional holding time is presently not available for the two Istanbul airports and it would be interesting to get this complementary information in addition to the airport arrival ATFM delay to be able to provide a more balanced picture. <br><br>
+The problem with the small Greek airports generating very high delays highlighted in last year’s report still persisted in 2016. Overall, nine regional Greek airports accounted for 5.3% of all airport ATFM delays in the EUROCONTROL area. ATFM regulations should not be applied continuously to regulate demand at airports and the issue, most likely linked to scheduling and variability needs to be addressed proactively in order to avoid a repetition of high delays also in summer 2017. The PRC will be monitoring the situation which now persists for several years.  <br><br>
+Despite yet a higher number of ATFM regulated flight in 2016, overall ATFM slot adherence at the top 30 airports improved again which is positive in terms of network predictability. <br><br>
+Whereas A-CDM implementation is considered to be an enabler to improve situation awareness and performance, it is important to ensure that the available information is used to improve local processes. A-CDM can also help improving the data quality which is presently an issue for the measurement of ATC pre-departure delays. An evaluation of the 2016 data showed that 40% of the delay reported by the top 30 airports was not attributed to a valid delay cause which clearly requires improvement in the future.
+<br><br>
+Building on the initial analysis included in last year’s report, the vertical flight efficiency in climbs and descents at the top 30 airports was also addressed. It is worth pointing out that the measure is complementary to the ASMA additional time and cannot be added to get a combined measure. <br><br>
+On average, inefficiencies (expressed in average time flown level per flight) were more than 6 times higher in descent than in climb with notable differences by airport. On average, level flight time during descent increased slightly in 2016 to reach 3.1 minutes per arrival (+0.2 min vs 2015). The analysis also clearly showed that there is a link between vertical flight inefficiencies and the fragmentation of service provision in Europe which suggests scope for future improvements.
+</div>

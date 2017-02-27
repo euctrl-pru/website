@@ -1,0 +1,181 @@
+---
+layout: prcq
+title: "ANS cost-efficiency"
+---
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
+google.load('visualization', '1', { packages: ['corechart', 'controls'] });
+</script>
+<script type="text/javascript">
+
+function drawVisualization()
+ {
+
+
+// ERT A
+  var crt_eco1 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_eco1',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=eco&range=I1:M7',
+    options:{
+        chartArea: {left: 80, top: 10, width:'80%',height:'80%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: {position:'right',textStyle:{color: 'grey', fontSize: 11}},
+          isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#9999FF', targetAxisIndex: 0},
+                1: {type:'bars',color:'#FF0000', targetAxisIndex: 0},
+                2: {type:'bars',color:'#EEE800', targetAxisIndex: 0},
+                3: {type:'lines', color:'#B89470', lineWidth: 0, pointSize: 10, targetAxisIndex: 1}
+              },
+          hAxis: {slantedTextAngle: 90,
+              textStyle: {fontSize: 12}},
+          vAxes:{
+              0:{ title:'Euro(2015) per composite flight hour'},
+              1:{ title:'year on year (%)',
+                titleTextStyle : {color: '#1F1F2E', fontSize: 11}, textStyle:{color:'#B89470'}}
+            }
+        },
+    view: {'columns': [0,1,2,3,4]}
+  }); crt_eco1.draw();
+
+
+// ERT - CHART -
+ var crt_eco2 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_eco2',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=eco&range=A1:F6',
+    options: {
+        chartArea: {left: 80, top: 10, width:'60%',height:'80%'},
+        titleTextStyle : {color: '#1F1F2E', fontSize: 12},
+        legend: 'right',
+        //seriesType: 'bars',
+        series: {
+                0: {type:'bars',color:'#003366', targetAxisIndex: 0},
+                1: {type:'bars',color:'#FFC000', targetAxisIndex: 0},
+                2: {type:'bars',color:'#993366', targetAxisIndex: 0},
+              },
+        vAxes:{
+              0:{ title:'% change', format: '0%',
+                titleTextStyle : {color: '#1F1F2E', fontSize: 12}, textStyle:{color: '#1F1F2E'}}
+            },
+        hAxis: {slantedTextAngle: 45,}
+        },
+    view: {columns: [0,3,4,5], rows: [0,1,2,3,4]}
+  }); crt_eco2.draw();
+
+// ERT A
+  var crt_eco3 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_eco3',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=eco&range=A11:H49',
+    options:{
+        height: 380,
+        chartArea: {left: 80, top: 10, width:'750%',height:'50%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 11}},
+          isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#9999FF', targetAxisIndex: 0},
+                1: {type:'bars',color:'#FF0000', targetAxisIndex: 0},
+                2: {type:'bars',color:'#EEE800', targetAxisIndex: 0},
+                3: {type:'lines', color:'#B89470', lineWidth: 0, pointSize: 10, targetAxisIndex: 1}
+              },
+          hAxis: {slantedTextAngle: 90,
+              textStyle: {fontSize: 12}},
+          vAxes:{
+              0:{ title:'Euro(2015) per composite flight hour'},
+              1:{ title:'year on year (%)',
+                titleTextStyle : {color: '#1F1F2E', fontSize: 11}, textStyle:{color:'#B89470'}}
+            }
+        },
+    view: {'columns': [0,1,2,3,7]}
+  }); crt_eco3.draw();
+
+
+// F
+  var crt_eco4 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_eco4',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=flts&range=L10:M17&hl=en_GB',
+    options:{
+          //width: 450, height: 150,
+          //chartArea: {left: 80, top: 30, width:'60%',height:'60%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: 'none',
+            seriesType: 'bars',
+          colors: ['#4F81BD'],
+          vAxis:{title:'Avg. daily IFR flights',
+              titleTextStyle : {color: 'grey', fontSize: 11},
+              textStyle:{color: '#5D7CBA'}}
+        },
+    view: {'columns': [0,3], rows: [1,2,3]}
+  }); crt_eco4.draw();
+
+
+}
+google.setOnLoadCallback(drawVisualization)
+</script>
+
+<h1 class="page-header"># {{ page.title }}</h1>
+<div class="well well-sm">
+<div class="row">
+<div class="col-xs-6 col-sm-3">
+    Reference area: <span style="color:#800000;" class="text-muted">EUROCONTROL area</span>
+</div>
+
+<div class="col-xs-6 col-sm-3">
+    Last update: <span style="color:#800000; background-color:#f7f8f9" class="text-muted">09-FEB-2017</span>
+</div>
+
+<div class="col-xs-6 col-sm-3">
+    Update rate: <span style="color:#800000;" class="text-muted">Annually</span>
+</div>
+
+<div class="col-xs-6 col-sm-3">
+  <a href="http://www.eurocontrol.int/ACE/Dashboard/ACE-Framework.html" class="btn btn-primary btn-sm" target="_blank">ACE Dashboard</a>
+</div>
+</div>
+</div>
+<h3 class="sub-header">Changes in economic cost-effectiveness (37 ANSPs)</h3>
+<div class="row">
+<div class="col-xs-6 col-sm-6 ">
+    <div id="crt_eco1"></div>
+</div>
+<div class="col-xs-6 col-sm-6">
+    <div id="crt_eco2"></div>
+</div>
+</div>
+<div class="well well-sm"> ANSPs cost-efficiency at Pan-European system shows that in 2015 the gate-to-gate unit economic costs increased by +4.2%, breaking a trend of 4 years of consecutive decreases. This increase is mainly due to higher ATFM delays unit costs in 2015 (+38.7%) while unit ATM/CNS provision costs remained fairly constant compared to 2014.
+</div>
+
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-4">
+    <h4>Economic cost-effectiveness by location (2015)</h4>
+    <img src="cost_eff_ansp.png" class="img-responsive" alt="Generic placeholder thumbnail">
+</div>
+<div class="col-xs-6 col-sm-8 placeholder">
+    <h4>Economic gate-to-gate cost effectiveness (2015)</h4>
+    <div id="crt_eco3"></div>
+</div>
+</div>
+<div class="well well-sm"> To be commented </div>
+
+<h2 class="sub-header">Key observations - ANS cost-efficiency</h2>
+<div class="well well-sm">
+PRR 2016 analyses performance in 2016 for all key performance areas, except for cost-efficiency, which analyses performance in 2015 as this is the latest year for which actual financial data are available. On the other hand, PRR 2016 also presents an outlook for 2016-2019 in terms of cost-efficiency trends. <br><br>
+
+The en-route cost-efficiency performance Pan-European system (39 States) improved in 2015 since real en-route unit costs decreased from 50.4 €2009 to 49.2 €2009 per service unit (TSU) which corresponds to a -2.4% reduction compared to 2014. This reduction is mainly due to the fact that traffic (+3.9%) rose faster than en-route ANS costs (+1.5%).<br><br>
+
+Over the 2009-2015 period, en-route unit costs reduced by -3.3% p.a. since traffic volumes rose by +3.1% p.a. while en-route costs remained fairly constant (-0.2% p.a.). This performance improvement should be seen in the light of (a) the cost-containment measures initiated in 2009-2010 in response of the traffic downturn arising from the economic recession, and (b) for SES States, the implementation of the Performance Scheme and the incentive mechanism embedded in the charging scheme which contributed to maintain a downward pressure on costs during RP1.<br><br>
+
+The outlook for 2016-2019 suggests that en-route unit costs are expected to decrease from 49.2 €2009 in 2015 to 46.1 €2009 in 2019, representing a decrease of -1.6% p.a. on average until 2019. Overall, at Pan-European level between 2009 and 2019, the trend in total en-route costs is planned to remain flat, while traffic is planned to increase by some +31%, implying substantial cost-efficiency improvements over this 10-years cycle.<br><br>
+
+European terminal ANS unit costs amount to 171.6 €2009 in 2015, which is the first year of application of the “determined costs” method for terminal ANS. In 2015, 30 States operated 36 Terminal Charging Zones (TCZs) which included a total of 173 airports.<br><br>
+
+Detailed analysis shows that there are wide differences in the level of unit costs at TCZ level ranging from 955 €2009 for Belgium Antwerp TCZ to 96 €2009 for Estonia TCZ. Caution is needed when interpreting these results since several factors on top of performance-related issues can affect the level of terminal unit costs in a specific TCZ. These factors include the number and size of aerodromes included in the charging zone, the use of different cost-allocation between en-route and terminal ANS, differences in traffic levels across TCZs and the scope of ANS provided.<br><br>
+
+The outlook for 2016-2019 suggests that total terminal ANS costs are planned to slightly decrease (i.e. on average by -0.7% p.a.), while TNSUs are foreseen to increase at an average rate of +1.4% per year. As a result, terminal ANS unit costs are expected to reduce by -2.1% p.a. between 2015 and 2019.<br><br>
+
+Detailed benchmarking analysis focusing on ANSPs cost-efficiency at Pan-European system shows that in 2015 the gate-to-gate unit economic costs increased by +4.2%, breaking a trend of 4 years of consecutive decreases. This increase is mainly due to higher ATFM delays unit costs in 2015 (+38.7%) while unit ATM/CNS provision costs remained fairly constant compared to 2014.
+</div>
