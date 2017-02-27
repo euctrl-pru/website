@@ -6,14 +6,35 @@
  */
 (function () {
     'use strict';
+
+    var baseurl = $('div.navbar-brand a').attr("href").split("/");
+    baseurl.splice(0, 3);
+    baseurl.pop();
+    baseurl = "/" + baseurl.join("/");
+
+    function stripBaseURL(base, path) {
+        // strip baseurl
+        var re = new RegExp("^" + base);
+        return path.replace(re, "");
+    }
+
+    function getMenu(path) {
+        var b = path.split("/");
+        return "/" + b[1] + "/";
+    }
+
     $(
         function () {
             var activePage = window.location.pathname;
-            activePage = '/' + activePage.split('/')[1] + '/';
+            // remove baseurl part before matching
+            activePage = stripBaseURL(baseurl, activePage)
+            var activeMenu = getMenu(activePage);
             $('.nav li a').each(function () {
-                var currentPage = $(this)[0].pathname;
-                if (activePage === currentPage) {
+                var currentNav = $(this)[0].pathname;
+                currentNav = stripBaseURL(baseurl, currentNav)
+                if (activeMenu === currentNav) {
                     $(this).parent().addClass('active');
+                    return false; // break the loop
                 }
             });
         }
