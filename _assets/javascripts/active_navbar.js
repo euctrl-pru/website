@@ -10,9 +10,10 @@
     var baseurl = $('div.navbar-brand a').attr("href").split("/");
     baseurl.splice(0, 3);
     baseurl.pop();
-    baseurl = "/" + baseurl.join("/");
+    baseurl = baseurl == "" ? baseurl : "/" + baseurl.join("/");
 
     function stripBaseURL(base, path) {
+        if (base === "") return path;
         // strip baseurl
         var re = new RegExp("^" + base);
         return path.replace(re, "");
