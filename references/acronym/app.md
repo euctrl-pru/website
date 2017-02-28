@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "ANSP - Air Navigation Services Provider"
+title: "APP - Approach Control Office"
 resource: true
 entity: acronym
 excerpt: Performance Review Unit MetaData Definitions.
@@ -8,4 +8,5 @@ keywords: metadata, performance, data, statistics, air transport, flights, europ
 ---
 # {{ page.title }}
 
-A body that manages flight traffic on behalf of a company, region or country.
+A unit established to provide air traffic control service to controlled flights arriving at,
+or departing from, one or more aerodromes.

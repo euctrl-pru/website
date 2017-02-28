@@ -8,6 +8,6 @@ keywords: metadata, performance, data, statistics, air transport, flights, europ
 ---
 # {{ page.title }}
 
-**A**ir **N**avigation **S**ervice
-
-A generic term describing the totality of services provided in order to ensure the safety, regularity and efficiency of air navigation and the appropriate functioning of the air navigation system. 
+A generic term describing the totality of services provided in order to ensure the safety,
+regularity and efficiency of air navigation and the appropriate functioning of the
+air navigation system.

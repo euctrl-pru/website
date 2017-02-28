@@ -8,8 +8,11 @@ keywords: metadata, performance, data, statistics, economics, air transport, fli
 ---
 # {{ page.title }}
 
-**A**ir Traffic Control **U**nit **A**irspace.
+Airspace under provision of air traffic control service.
 
-See also the
-[Air Traffic Control Unit Airspace](https://ext.eurocontrol.int/lexicon/index.php/Air_Traffic_Control_Unit_Airspace){:target="_blank"}
-page at [ATM Lexicon](https://ext.eurocontrol.int/lexicon/index.php/Main_Page).
+## See Also
+
+* [Air Traffic Control Unit Airspace][auaLEXI]{:target="_blank"} page at [ATM Lexicon][lexi].
+
+[auaLEXI]: <https://ext.eurocontrol.int/lexicon/index.php/Air_Traffic_Control_Unit_Airspace> "AUA - ATM Lexicon"
+[lexi]: <https://ext.eurocontrol.int/lexicon/index.php/Main_Page> "ATM Lexicon"

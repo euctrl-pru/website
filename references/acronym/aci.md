@@ -8,6 +8,13 @@ keywords: metadata, performance, data, statistics, air transport, flights, europ
 ---
 # {{ page.title }}
 
-**A**irports **C**ouncil **I**nternational 
+Airports Council International (ACI) represents airports interests with Governments and
+international organizations, develops standards, policies and recommended practices
+for airports, and provides information and training opportunities to raise standards
+around the world.
 
-See also the [ACI](http://www.aci-europe.org/)){:target="_blank"} web page.
+
+## See Also
+
+* [ACI](http://www.aci.aero/){:target="_blank"} home page.
+* [ACI Europe](http://www.aci-europe.org/){:target="_blank"} web page.
