@@ -9,7 +9,15 @@ keywords: metadata, performance, data, statistics, air transport, flights, europ
 
 # {{ page.title }}
 
-**C**orrelated **P**osition **R**eport
+Aircraft position data derived from [ATC][atc] surveillance systems.
 
-See also the
-[Correlated Position Report](https://ext.eurocontrol.int/lexicon/index.php/Correlated_Position_Report){:target="_blank"}
+## See Also
+
+* [Correlated Position Report][cprLEXI]{:target="_blank"} at [ATM Lexicon][lexi]{:target="_blank"}.
+* [Flight Data Services][cprECTRL]{:target="_blank"} page at [EUROCONTROL][ectrl]{:target="_blank"}.
+
+[cprLEXI]: <https://ext.eurocontrol.int/lexicon/index.php/Correlated_Position_Report> "CPR - ATM Lexicon"
+[lexi]: <https://ext.eurocontrol.int/lexicon/index.php/Main_Page> "ATM Lexicon"
+[atc]: <{{ "/references/acronym/atc.html" | prepend: site.baseurl | prepend: site.url }}> "Air Traffic Control"
+[cprECTRL]: <http://www.eurocontrol.int/articles/flight-data-services> "Flight Data Services - EUROCONTROL"
+[ectrl]: <https://www.eurocontrol.int/> "EUROCONTROL"

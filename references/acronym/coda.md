@@ -8,8 +8,15 @@ keywords: air transport, flights, europe, delay, CODA
 ---
 # {{ page.title }}
 
-**C**entral **O**ffice for **D**elay **A**nalysis.
+The Central Office for Delay Analysis within EUROCONTROL provides policy
+makers and managers of the ECAC Air Transport System with timely,
+consistent and comprehensive information on the air traffic delay situation
+in Europe, and to make these available to anyone with an interest in delay
+performance.
 
-See also the
-[CODA](https://www.eurocontrol.int/articles/central-office-delay-analysis-coda)
-page at [EUROCONTROL](https://www.eurocontrol.int/)'s website.
+## See Also
+
+* [CODA][codaECTRL]{:target="_blank"} page at [EUROCONTROL][ectrl]{:target="_blank"}.
+
+[codaECTRL]: <https://www.eurocontrol.int/articles/central-office-delay-analysis-coda> "CODA - EUROCONTROL"
+[ectrl]: <https://www.eurocontrol.int/> "EUROCONTROL"
