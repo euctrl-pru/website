@@ -1,6 +1,7 @@
 
 source 'https://rubygems.org'
 
+
 # install it first
 gem 'activesupport', '4.2.8'
 
@@ -23,3 +24,5 @@ gem 'jekyll-scholar'
 gem 'jekyll-redirect-from'
 gem 'jekyll-seo-tag'
 gem 'jekyll-figure'
+
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
