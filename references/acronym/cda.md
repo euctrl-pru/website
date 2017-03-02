@@ -20,8 +20,11 @@ compliance with published procedures and ATC instructions.
 
 * [CDA][cdaLEXI]{:target="_blank"} page at [ATM Lexicon][lexi]{:target="_blank"}.
 * [CDA][cdaSB]{:target="_blank"} page at [SKYbrary][sb]{:target="_blank"}.
+* [CCO and CDO][cdaSB]{:target="_blank"} page at [EUROCONTROL][ectrl]{:target="_blank"}.
 
 [cdaLEXI]: <https://ext.eurocontrol.int/lexicon/index.php/Continuous_descent_approach> "Continuous Descent Approach - ATM Lexicon"
 [cdaSB]: <http://www.skybrary.aero/index.php/Continuous_Descent> "Continuous Descent Approach - SKYbrary"
+[cdoECTRL]: <http://www.eurocontrol.int/service/continuous-climb-and-descend-operations> "CCO and CDO - EUROCONTROL"
+[ectrl]: <https://www.eurocontrol.int/> "EUROCONTROL"
 [lexi]: <https://ext.eurocontrol.int/lexicon/index.php/Main_Page> "ATM Lexicon"
 [sb]: <http://www.skybrary.aero> "SKYbrary"

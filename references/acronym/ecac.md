@@ -10,8 +10,6 @@ published: true
 
 # {{ page.title }}
 
-# {{ page.title }}
-
 ECAC is Europe's largest and longest-standing aviation organisation and
 is part of the ICAO air transport global community.
 
