@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "SID - Standard Instrument Departure"
+title: "STAR - Standard Arrival Route"
 resource: true
 entity: acronym
 excerpt: Performance Review Unit MetaData Definitions.
@@ -8,10 +8,9 @@ keywords: metadata, performance, data, statistics, air transport, flights, europ
 ---
 # {{ page.title }}
 
-A Standard Instrument Departure Route is a standard ATS route identified
-in an instrument departure procedure by which aircraft should proceed from
-take-off phase to the en-route phase.
-
+A Standard Arrival Route is a standard ATS route identified in an approach
+procedure by which aircraft should proceed from the en-route phase to an
+initial approach fix.
 
 ## See Also
 

@@ -8,4 +8,10 @@ keywords: metadata, performance, data, statistics, air transport, flights, europ
 ---
 # {{ page.title }}
 
-**R**eporting **P**eriod 1, 2012-2014, of the SES Performance Scheme for EU and associated States.
+The Reporting Period 1 of the [SES][ses] Performance Scheme for EU and
+associated States covers the years 2012-2014.
+
+## See Also
+
+
+* [SES][ses].
