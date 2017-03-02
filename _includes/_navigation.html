@@ -19,6 +19,10 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+          <li class="">
+            <a href="{{ '/prcq/' | prepend: site.baseurl | prepend: site.url }}"
+            style="background-color: #bfc6e8;">PRC Quaterly</a></li>
+          </li>
           <li class=""><a href="{{ '/posts/' | prepend: site.baseurl | prepend: site.url }}">News</a></li>
           <li class="dropdown">
               <a href="{{ '/graphs/' | prepend: site.baseurl | prepend: site.url }}" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
@@ -34,9 +38,6 @@
 
           <li class="">
             <a href="{{ '/data/performancearea' | prepend: site.baseurl | prepend: site.url }}">Data</a></li>
-          </li>
-          <li class="">
-            <a href="{{ '/prcq/' | prepend: site.baseurl | prepend: site.url }}">PRC Quaterly</a></li>
           </li>
           <li class="">
           <a href="{{ '/studies/' | prepend: site.baseurl | prepend: site.url }}">Studies</a></li>
