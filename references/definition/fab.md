@@ -2,7 +2,7 @@
 layout: default
 title: "FAB - Functional Airspace Blocks"
 resource: true
-entity: acronym
+entity: definition
 excerpt: Performance Review Unit MetaData Definitions.
 keywords: metadata, performance, data, statistics, air transport, flights, europe, delay, safety
 ---

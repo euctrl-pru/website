@@ -8,4 +8,5 @@ keywords: metadata, performance, data, statistics, air transport, flights, europ
 ---
 # {{ page.title }}
 
-All civil aviation operations other than scheduled air services and non-scheduled air transport operations for remuneration or hire. 
+All civil aviation operations other than scheduled air services
+and non-scheduled air transport operations for remuneration or hire.

@@ -8,4 +8,5 @@ keywords: metadata, performance, data, statistics, air transport, flights, europ
 ---
 # {{ page.title }}
 
-Encompasses all flights conducted in accordance with the rules and procedures of ICAO. 
+GAT encompasses all flights conducted in accordance with the rules
+and procedures of ICAO.

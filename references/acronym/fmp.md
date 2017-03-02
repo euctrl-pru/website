@@ -16,6 +16,7 @@ management service.
 
 ## See Also
 
-* [FMP][fmpLEXI]{:target="_blank"} page at [ATM Lexicon]{:target="_blank"}.
+* [FMP][fmpLEXI]{:target="_blank"} page at [ATM Lexicon][lexi]{:target="_blank"}.
 
-[fmpLEXI]: <http://www.eurocontrol.int/lexicon/lexicon/en/index.php/Flow_Management_Position> "FMP - ATM Lexicon"
+[fmpLEXI]: <https://ext.eurocontrol.int/lexicon/index.php/Flow_Management_Position> "FMP - ATM Lexicon"
+[lexi]: <https://ext.eurocontrol.int/lexicon/index.php/Main_Page> "ATM Lexicon"

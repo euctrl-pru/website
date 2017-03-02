@@ -8,4 +8,14 @@ keywords: metadata, performance, data, statistics, air transport, flights, europ
 ---
 # {{ page.title }}
 
-See also the [ICAO](http://www.icao.int/){:target="_blank"} web page.
+The International Civil Aviation Organization is an agency of the
+United Nations.
+It codifies the principles and techniques of international air
+navigation and fosters the planning and development of
+international air transport to ensure safe and orderly growth.
+
+## See Also
+
+* [ICAO][icao]{:target="_blank"} website.
+
+[icao]: <http://www.icao.int> "ICAO"

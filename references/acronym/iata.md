@@ -8,4 +8,13 @@ keywords: metadata, performance, data, statistics, air transport, flights, europ
 ---
 # {{ page.title }}
 
-See also the [IATA](www.iata.org/){:target="_blank"} web page.
+The International Air Transport Association is a trade association
+of the world’s airlines. It supports airline activity and helps
+ formulate industry policy and standards.
+
+
+## See Also
+
+* [IATA][iata]{:target="_blank"} website.
+
+[iata]: <www.iata.org/> "IATA"
