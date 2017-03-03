@@ -20,15 +20,7 @@ to find out reasons for particular observations.
 | Term  | Definition |
 |-------|------------|
 | [CPF][cpf]   | Correlated Position reports for a Flight |
-| FTFM  | Trajectory information based on the last filed flight plan |
-| KPA   | Key Performance Area |
-| GCD   | Great Circle Distance |
-| PRISME | Pan-European Repository of Information Supporting the Management of EATM |
-| PRR   | Performance Review Report |
-| PRU   | Performance Review Unit |
-| RAD   | Route Availability Document |
-| SES   | Single European Sky |
-| VFI   | Vertical Flight Inefficiency |
+| [PRISME][prisme] | Pan-European Repository of Information Supporting the Management of EATM |
 
 {:.table-caption}
 Table 1: Acronyms and terminology
@@ -56,7 +48,7 @@ Finally, the results are calculated and processed for presentation.
 This process is visualised in Figure 1.
 
 
-{% figure caption:"Figure 1: Different stesp of the analysis" class:"img-responsive center-block" %}
+{% figure caption:"Figure 1: Different steps of the analysis" class:"img-responsive center-block" %}
 {% img vfe-cd-figure-001.png magick:resize:800x400 alt:'Different stesp of the analysis' %}
 {% endfigure %}
 
@@ -119,7 +111,7 @@ For each flight, the 4D point where the flight crosses the 200NM radius around
 the departure airport (for the first time) is determined. This point is defined
 as D200. Within the part of the trajectory from take-off until D200 included,
 the first 4D point at which the aircraft reaches the highest altitude is
-defined as the ToCD200.
+defined as the ToC-D200.
 If the aircraft is still climbing when passing the 200NM radius, D200 and
 ToC-D200 are the same.
 
@@ -128,7 +120,7 @@ Abatement Departure Procedures (NADP) defined by ICAO end at this altitude
 {% cite icao:8168 --file aviation %}.
 
 Overall, the part of the trajectory considered for the analysis goes from 3000
-feet AGL (included) until ToCD200.
+feet AGL (included) until ToC-D200.
 
 The CCO/CDO Task Force uses 2500 feet as lower limit which is chosen in
 relation to the availability of trajectory data.
@@ -262,8 +254,8 @@ With:
 | $D_f$                                | Total distance flown level by flight $f$ during the climb/descent |
 | $D_{3000, f}$                        | Track distance flown by flight $f$ when passing $3000$ feet AGL |
 | $D_{\textrm{TOC} - \textrm{CCO}, f}$ | Track distance flown by flight $f$ when passing TOC-CCO |
-| $D_{\textrm{TOD} - \textrm{CDO}, f}$ | Track distance flown by flight 𝑓 when passing TOD-CDO |
-| $D_{1800, f}$                        | Track distance flown by flight 𝑓when passing 1800 feet AGL |
+| $D_{\textrm{TOD} - \textrm{CDO}, f}$ | Track distance flown by flight $f$ when passing TOD-CDO |
+| $D_{1800, f}$                        | Track distance flown by flight $f$ when passing 1800 feet AGL |
 | $T_f^{+}$                            | Total time flown by flight $f$ during the climb/descent |
 | $T_f$                                | Total time flown level by flight $f$ during the climb/descent |
 | $T_{3000, f}$                        | Time at which flight $f$ passes $3000$ feet AGL |
@@ -276,6 +268,7 @@ With:
 
 
 [cpf]: <{{ "/references/acronym/cpf.html" | prepend: site.baseurl | prepend: site.url }}> "CPF"
+[prisme]: <{{ "/references/acronym/prisme.html" | prepend: site.baseurl | prepend: site.url }}> "PRISME"
 
 
 ## References

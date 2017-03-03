@@ -20,14 +20,10 @@ particular observations.
 
 | Term  | Definition |
 |-------|------------|
-| FTFM  | Trajectory information based on the last filed flight plan |
-| KPA   | Key Performance Area |
-| GCD   | Great Circle Distance |
-| PRISME | Pan-European Repository of Information Supporting the Management of EATM |
-| PRR   | Performance Review Report |
-| PRU   | Performance Review Unit |
-| RAD   | Route Availability Document |
-| SES   | Single European Sky |
+| [FTFM][ftfm]  | Trajectory information based on the last filed flight plan |
+| [GCD][gcd]   | Great Circle Distance |
+| [PRISME][prisme] | Pan-European Repository of Information Supporting the Management of EATM |
+| [RAD][rad]   | Route Availability Document |
 | VFI   | Vertical Flight Inefficiency |
 
 {:.table-caption}
@@ -66,7 +62,7 @@ processed in order to be compared with the reference. In the last step the diffe
 calculated. The process is visualised in Figure 1.
 
 
-{% figure caption:"Figure 1: Different stesp of the analysis" class:"img-responsive center-block" %}
+{% figure caption:"Figure 1: Different steps of the analysis" class:"img-responsive center-block" %}
 {% img vfe-er-figure-001.png magick:resize:800x400 alt:'Different stesp of the analysis' %}
 {% endfigure %}
 
@@ -180,3 +176,9 @@ With:
 | $L_{ {ref}, i}$ | Flight level of the $i^{th}$ percentile range over all reference flights in the GCD bucket around the GCD of the considered airport pair. |
 | $L_{ {act}, i}$ | Flight level of the $i^{th}$ percentile range over all flights on the considered airport pair. |
 | $n_{ {act}, i}$ | Number of flights on the considered airport pair in the percentile range. |
+
+
+[rad]: <{{ "/references/acronym/rad.html" | prepend: site.baseurl | prepend: site.url }}> "RAD"
+[prisme]: <{{ "/references/acronym/prisme.html" | prepend: site.baseurl | prepend: site.url }}> "PRISME"
+[gcd]: <{{ "/references/acronym/gcd.html" | prepend: site.baseurl | prepend: site.url }}> "GCD"
+[ftfm]: <{{ "/references/acronym/ftfm.html" | prepend: site.baseurl | prepend: site.url }}> "FTFM"
