@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "MET - Meteorological Services for Air Navigation"
+title: "MET - METeorological services for air navigation"
 resource: true
 entity: acronym
 excerpt: Performance Review Unit MetaData Definitions.

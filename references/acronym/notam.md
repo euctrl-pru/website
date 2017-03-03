@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "NOTAM - Notices to Airmen"
+title: "NOTAM - NOTices to AirMen"
 resource: true
 entity: acronym
 excerpt: Performance Review Unit MetaData Definitions.

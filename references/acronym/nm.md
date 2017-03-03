@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "NM - Nautical mile (1.852 km)"
+title: "NM - Nautical Mile"
 resource: true
 entity: acronym
 excerpt: Performance Review Unit MetaData Definitions.

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: AUA - Air Traffic control Unit Airspace
+title: AUA - Air traffic control Unit Airspace
 resource: true
 entity: acronym
 excerpt: Performance Review Unit MetaData Definitions.

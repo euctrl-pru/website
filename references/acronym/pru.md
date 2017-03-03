@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "PRU - Performance Review Unit (EUROCONTROL)"
+title: "PRU - Performance Review Unit"
 resource: true
 entity: acronym
 excerpt: Performance Review Unit MetaData Definitions.

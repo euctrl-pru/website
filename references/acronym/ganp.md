@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "GANP - Global Air Navigation Capacity & Efficiency Plan (ICAO)"
+title: "GANP - Global Air Navigation Plan"
 resource: true
 entity: acronym
 excerpt: Performance Review Unit MetaData Definitions.

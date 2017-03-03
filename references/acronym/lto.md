@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "LTO - Landing and Take-off Cycle"
+title: "LTO - Landing and Take-off cycle"
 resource: true
 entity: acronym
 excerpt: Performance Review Unit MetaData Definitions.

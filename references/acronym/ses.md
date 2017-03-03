@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "SES - Single European Sky (EU)"
+title: "SES - Single European Sky"
 resource: true
 entity: acronym
 excerpt: Performance Review Unit MetaData Definitions.

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "CRCO - EUROCONTROL Central Route Charges Office"
+title: "CRCO - Central Route Charges Office"
 resource: true
 entity: acronym
 excerpt: Performance Review Unit MetaData Definitions.

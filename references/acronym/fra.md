@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "FRA - Free route airspace"
+title: "FRA - Free Route Airspace"
 resource: true
 entity: acronym
 excerpt: Performance Review Unit MetaData Definitions.

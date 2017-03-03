@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "STATFOR - EUROCONTROL Statistics and Forecast Service"
+title: "STATFOR - Statistics and Forecast Service"
 resource: true
 entity: acronym
 excerpt: Performance Review Unit MetaData Definitions.

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "CDR - Conditional Route"
+title: "CDR - ConDitional Route"
 resource: true
 entity: acronym
 excerpt: Performance Review Unit MetaData Definitions.

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "MTOW - Maximum Take-off Weight"
+title: "MTOW - Maximum Take-Off Weight"
 resource: true
 entity: acronym
 excerpt: Performance Review Unit MetaData Definitions.

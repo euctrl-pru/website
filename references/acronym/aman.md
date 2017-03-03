@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "AMAN - Arrival Management"
+title: "AMAN - Arrival MANagement"
 resource: true
 entity: acronym
 excerpt: Performance Review Unit MetaData Definitions.
