@@ -1,190 +1,206 @@
 ---
 layout: prcq
-title: "PRC Air Navigation Service performance review - 2016"
+title: "Executive summary - draft final Performance Review Report 2016"
 ---
 
 ## {{ page.title }}
 
-PRR 2016 presents an assessment of the performance of Air Navigation Services (ANS) in the EUROCONTROL area for the calendar year 2016.
+PRR 2016 presents an assessment of the performance of [Air Navigation Services (ANS)][ans] in the [EUROCONTROL area][ectl_area] for the calendar year 2016.
 
 {% figure class:"img-responsive center-block img-rounded" %}
 {% img prcq-traffic-text.png magick:resize:80x80 alt:'Traffic' %}
 {% endfigure %}
 
-In 2016, air traffic in the EUROCONTROL area (ESRA08) continued to increase for the third year in a row.
-On average, the number of controlled flights increased by 2.4% compared to 2015.
-The main driver of the observed growth in 2016 was the growth in the intra-European low cost traffic segment.
+In 2016, air traffic in the EUROCONTROL area [(ESRA08)][esra08] continued to increase for the third year in a row. 
+On average, the number of controlled flights increased by 2.4% compared to 2015. 
+The main driver of the observed growth in 2016 was the growth in the intra-European low cost traffic segment. 
 As in previous years, passenger numbers grew at a higher rate than traffic (+5.1% vs. 2015).
 
-Although annual traffic in 2016 was still slightly below pre-economic crisis levels in 2008,
-the third quarter in 2016 was the highest on record.
-Of the 39 Air Navigation Service Providers (ANSPs) included in the analysis, 25 showed an
-increase in traffic compared to 14 ANSPs which showed a decline in 2016.
-In absolute terms, ENAIRE (Spain), NATS (UK), and DSNA (France) experienced the highest year
-on year growth in 2016.
+In 2016, annual traffic reached the pre-economic crisis level of 2008 and the third quarter in 2016 was the highest on record. 
+Of the 39 [Air Navigation Service Providers (ANSPs)][ansp] included in the analysis, 25 showed an increase in traffic compared 
+to 14 [ANSPs][ansp] which showed a decline in 2016. 
+In absolute terms, ENAIRE (Spain), NATS (UK), and DSNA (France) experienced the highest year on year growth in 2016. 
 DHMI (Turkey), UKSATSE (Ukraine) and ROMATSA (Romania) reported the highest absolute decrease in 2016.
-The substantial traffic increase in some areas contributed to a decrease in overall service quality.
-The share of flights arriving within 15 minutes of their scheduled time decreased
-by 1.6% points to reach 81.5% in 2016.
+The substantial traffic increase in some areas contributed to a decrease in overall service quality. 
 
+The share of flights arriving within 15 minutes of their scheduled time decreased 
+by 1.6 percent points to reach 81.5% in 2016.
 
 {% figure class:"img-responsive center-block img-rounded" %}
 {% img prcq-safety-text.png magick:resize:80x80 alt:'Safety' %}
 {% endfigure %}
 
-Safety is the primary objective of Air Navigation Services and overall safety levels
-in the EUROCONTROL area remain high.
-There was only one reported air traffic accident with direct ANS contribution in 2015,
-which is the latest year for which validated data is available.
+Safety is the primary objective of ANS and overall safety levels in the [EUROCONTROL area][ectl_area] remain high. 
 
-With the exception of Unauthorised Penetrations of Airspace (UPAs), the number of all
-key risk occurrence types (Separation minima infringements (SMIs), Runway incursions (RIs),
-and ATM Specific Occurrences) decreased in the EUROCONTROL area in 2015, despite the increase
-in traffic.
-Overall, there were 15 SMIs and 28 UPAs per hundred thousand controlled flight hours
-in the airspace and 8 RIs per hundred thousand movements at airports in 2015.
+There was only one reported air traffic accident with direct ANS contribution in 2015, which is the latest year for which validated data is available.     
 
-The quality and completeness of safety data reported to EUROCONTROL increased over the past
-years but with scope for further improvement, particularly in terms of severity classification.
-Although this has been pointed out by the PRC on several occasions, 16% of the reported
-occurrences were still not severity classified in 2015.
+With the exception of [Unauthorised Penetrations of Airspace (UPAs)][upa], the number of all key risk occurrence types [(Separation minima infringements (SMIs)][smi], 
+[Runway incursions (RIs)][ri] , and ATM Specific Occurrences) decreased in the [EUROCONTROL area][ectl_area] in 2015, despite the increase in traffic. Overall, there were 15 [SMIs][smi] and 28 [UPAs][upa] UPAs per hundred thousand controlled flight hours in the airspace and 8 [RIs][ri] per hundred thousand movements at airports in 2015.    
 
-The PRC review of the implementation status of the Acceptable Level of
-Safety Performance (ALoSP) concept in EUROCONTROL Member States clearly
-suggested that there is a need for common definitions and guidance material
-in order to ensure a harmonised approach in the EUROCONTROL area.
+The quality and completeness of safety data reported to EUROCONTROL increased over the past 
+years but with scope for further improvement, particularly in terms of severity classification. 
+Although this has been pointed out by the PRC on several occasions, 16% of the reported 
+occurrences were still not severity classified in 2015.   
 
+The PRC review of the implementation status of the [Acceptable Level of Safety Performance (ALoSP)][alos] 
+concept in EUROCONTROL Member States clearly suggested that there is a need for common definitions and 
+guidance material in order to ensure a harmonised approach in the [EUROCONTROL area][ectl_area].  
 
 {% figure class:"img-responsive center-block img-rounded" %}
 {% img prcq-operations-enroute-text.png magick:resize:80x80 alt:'Operations En-route' %}
 {% endfigure %}
 
-The PRC’s concern about over conservative capacity planning and the risk of a performance deterioration
-when traffic grows again has been voiced on several occasions.
-In 2016, total en-route ATFM delays increased by 20% compared to 2015 and the share of flights affected
-by en-route ATFM delays increased from 3.9% to 4.8% in 2016.
+The PRC’s concern about over conservative capacity planning and the risk of performance deterioration 
+when traffic grows again has been voiced on several occasions. 
+In 2016, total en-route [ATFM delays][ATFM_dly] increased by 21% compared to 2015 and the share of 
+flights affected by en-route [ATFM delays][ATFM_dly] increased from 3.9% to 4.8% in 2016. 
 
-ATC Capacity/Staffing related constraints remained by far the main driver of
-en-route ATFM delays (55.3%), followed by weather related constraints (18.3%),
-ATC disruptions/industrial actions (12.3%), and Event related constraints (9.1%)
+ATC Capacity/Staffing related constraints remained by far the main driver of 
+en-route [ATFM delays][ATFM_dly] (55.3%), followed by weather related constraints (18.3%), 
+ATC disruptions/ industrial actions (12.3%), and Event related constraints (9.1%) 
 which also include delays due to ATC system upgrades.
 
-Three quarters of the en-route delays were generated by four air navigation service providers:
-DSNA (41.6%), DFS (13.0%), Maastricht (11.4%), and ENAIRE (9%).
-The vast majority of Area Control Centres (ACCs) provided a good performance in 2016 and notable
-improvements were observed at Lisbon, Athens, and Zagreb ACCs.
-The most constraining ACCs in 2016 were Brest, Nicosia, Bordeaux, Brussels, Barcelona, Prestwick,
-Maastricht UAC, Warsaw, Canarias, Karlsruhe UAC, and Marseille.
-Together, they accounted for 70.1% of all en-route ATFM delays but only 30.1% of total flight
-hours controlled in the EUROCONTROL area.
+Three quarters of the en-route [ATFM delays][ATFM_dly] were generated by four [ANSPs][ansp]: 
+DSNA (41.6%), DFS (13.0%), Maastricht (11.4%), and ENAIRE (9%).  
+The vast majority of [Area Control Centres (ACCs)][acc] provided a good performance in 2016 and notable 
+improvements were observed at Lisbon, Athens, and Zagreb [ACCs][acc]. 
+The most constraining [ACCs][acc] in 2016 were Brest, Nicosia, Bordeaux, Brussels, Barcelona, Prestwick, 
+Maastricht UAC, Warsaw, Canarias, Karlsruhe UAC, and Marseille. 
+Together, they accounted for 70.1% of all en-route ATFM delays but only 30.1% of total flight 
+hours controlled in the [EUROCONTROL area][ectl_area].
 
-The reasons for the constraints varied by ACC and were in some cases exacerbated by the higher
-than expected traffic growth. In view of the number of planned major project implementations
-over the next years it is important to reiterate the message from last year’s PRR
-that ANSPs need to effectively coordinate the planning and implementation of all changes
-to the ATM system that could adversely affect operations with the Network Manager.
+The reasons for the constraints varied by [ACCs][acc] and were in some cases exacerbated by the higher 
+than expected traffic growth. In view of the number of planned major project implementations 
+over the next years it is important to reiterate the message from last year’s PRR 
+that [ANSPs][ansp]  need to effectively coordinate the planning and implementation of all changes 
+to the ATM system that could adversely affect operations with the [Network Manager][nm].
 
-Horizontal en-route flight efficiency in the EUROCONTROL area decreased slightly from 97.3%
-to 97.1% in 2016, after a continuous improvement over the past years.
-The effects of ATC industrial action on specific days in 2016 are clearly visible but the
-overall impact on system wide flight efficiency remains within 0.03% points.
-Despite slight decrease in flight efficiency at system level in 2016, the benefits of Free Route Airspace (FRA)
-implementation and related reductions in fuel burn, emissions and costs are clearly visible
-in a number of Member States.
-On average, flight efficiency is 1.6% points better in Member States where FRA is fully implemented
-all day and actual flown trajectories are notably closer to the filed flight plans.
+[Horizontal en-route flight efficiency][hfe] in the [EUROCONTROL area][ectl_area] decreased 
+slightly from 97.3% to 97.1% in 2016, after a continuous improvement over the past years. 
+The effects of ATC industrial action on specific days in 2016 are clearly visible but the 
+overall impact on system wide flight efficiency remains within 0.03 percent points.
+Despite slight decrease in flight efficiency at system level in 2016, the benefits of 
+[Free Route Airspace (FRA)][fra] implementation and related reductions in fuel burn, 
+emissions and costs are clearly visible in a number of Member States. 
+On average, flight efficiency is 1.6% points better in Member States where [FRA][fra] 
+is fully implemented all day and actual flown trajectories are notably closer to the filed flight plans.  
 
-Complementary to horizontal flight efficiency, an initial evaluation of vertical en-route
-flight efficiency in this year’s PRR enabled to identify clear differences on specific
-airport pairs and work is in progress to better quantify the measured inefficiencies
+Complementary to horizontal flight efficiency, an initial evaluation of vertical en-route 
+flight efficiency in this year’s PRR enabled to identify clear differences on specific 
+airport pairs and work is in progress to better quantify the measured inefficiencies 
 in terms of fuel burn and CO2 emissions in the future.
 
-Close civil military cooperation and coordination has been pointed out as an important enabler
-to improve capacity and flight efficiency performance.
-Some areas for further improvement identified in a PRC survey relate to the lack of impact
-assessment in terms of capacity and route options for restricted/segregated airspace
-and the absence of clear strategic objectives.
-
+Close civil military cooperation and coordination has been pointed out as an important enabler 
+to improve capacity and flight efficiency performance. 
+Some areas for further improvement identified in a PRC survey relate to the lack of impact 
+assessment in terms of capacity and route options for restricted/segregated airspace 
+and the absence of clear strategic objectives.  
 
 {% figure class:"img-responsive center-block img-rounded" %}
 {% img prcq-operations-airport-text.png magick:resize:80x80 alt:'Operations at Airports' %}
 {% endfigure %}
 
-The analysis of the top 30 airports in terms of traffic showed that nine airports
-(Amsterdam, Istanbul Ataturk, London Gatwick, Stockholm Arlanda, Istanbul Sabiha Gökçen,
-Dublin, Berlin Tegel, Geneva, Lisbon, and Warsaw) reported their highest traffic level
-on record, surpassing the levels observed before the economic crisis starting in 2008.
-Amsterdam reported a 5.9% increase in traffic in 2016 which made it the airport with the
-most commercial movements in Europe in 2016.
+The analysis of the top 30 airports in terms of traffic showed that nine airports 
+(Amsterdam, Istanbul Ataturk, London Gatwick, Stockholm Arlanda, Istanbul Sabiha Gökçen, 
+Dublin, Berlin Tegel, Geneva, Lisbon, and Warsaw) reported their highest traffic level 
+on record, surpassing the levels observed before the economic crisis starting in 2008. 
+Amsterdam reported a 5.9% increase in traffic in 2016 which made it the airport with the 
+most commercial movements in Europe in 2016.  
 
-The two Istanbul airports, which reported a remarkable traffic growth over the past years,
-were affected by the situation in Turkey, resulting in a notable slowdown in traffic growth.
-Of the top 30 airports, six showed a traffic decrease in 2016 with the highest decrease
-observed for Brussels airport (-6.5% vs 2015) as a result of the reduced capacity following
-the terrorist attacks in March 2016.
+The two Istanbul airports, which reported a remarkable traffic growth over the past years, 
+were affected by the situation in Turkey, resulting in a notable slowdown in traffic growth. 
+Of the top 30 airports, six showed a traffic decrease in 2016 with the highest decrease 
+observed for Brussels airport (-6.5% vs 2015) as a result of the reduced capacity following 
+the terrorist attacks in March 2016. 
 
-The substantial traffic increase at some airports contributed to higher levels of operational
-inefficiency and resulted in somewhat higher additional times during descent and in the
-taxi-out phase compared to 2015.
+The substantial traffic increase at some airports contributed to higher levels of operational 
+inefficiency and resulted in somewhat higher additional times during descent and in the 
+taxi-out phase compared to 2015. 
 
-Average airport arrival ATFM delay and additional holding (ASMA) time decreased slightly
-in 2016 at the top 30 airports but were still heavily concentrated among a few airports.
-Five airports (Istanbul Sabiha Gökçen, Istanbul Ataturk, Amsterdam, London Heathrow, and
-London Gatwick) accounted for 59% of the airport arrival ATFM delay reported for the
-top 30 airports.
-The situation in Istanbul is expected to improve with the opening of the first phase of
+Average airport arrival [ATFM delay][ATFM_dly] and [additional holding (ASMA) time][asma_add] 
+decreased slightly in 2016 at the top 30 airports but were still heavily concentrated among 
+a few airports. 
+Five airports (Istanbul Sabiha Gökçen, Istanbul Ataturk, Amsterdam, London Heathrow, and 
+London Gatwick) accounted for 59% of the airport arrival ATFM delay reported for the top 
+30 airports. 
+The situation in Istanbul is expected to improve with the opening of the first phase of 
 the new Istanbul Airport which is scheduled for 2017/2018.
-Airport arrival ATFM performance at Amsterdam and the two London airports (LHR, LGW)
+Airport arrival ATFM performance at Amsterdam and the two London airports (LHR, LGW) 
 was to a large extent affected by weather which required reducing the available capacity.
 
-London Heathrow, Istanbul Ataturk, and Istanbul Sabiha Gökçen show all up with a continuously
+London Heathrow, Istanbul Ataturk, and Istanbul Sabiha Gökçen show all up with a continuously 
 high arrival throughput close to the peak declared arrival capacity.
-Although this maximises the use of capacity, the high intensity operation close to maximum
-capacity can result in high delays and possibly cancellations when there is a mismatch
+Although this maximises the use of capacity, the high intensity operation close to maximum 
+capacity can result in high delays and possibly cancellations when there is a mismatch 
 between scheduled demand and the capacity that can be made available.
-It is therefore no surprise that those airports show comparatively high levels of inefficiency.
 
-The group of smaller Greek airports reported in last year’s report continued to generate
-high ATFM delays in 2016. The issue appears to be linked to scheduling and variability
-and needs to be addressed proactively in order to avoid a repetition of high delays also
-in summer 2017.
-The PRC will be monitoring the situation which now persists for several years.
+The group of smaller Greek airports reported in last year’s report continued to generate 
+high [ATFM delays][ATFM_dly] in 2016. The issue appears to be linked to scheduling and variability 
+and needs to be addressed proactively in order to avoid a repetition of high delays also 
+in summer 2017. The PRC will be monitoring the situation which now persists for several years.   
 
-Whereas A-CDM implementation is considered to be an enabler to improve situation
-awareness and performance, it is important to ensure that the available information
-is used to improve local processes. A-CDM can also help improving the data quality
-which is presently an issue for the measurement of ATC pre-departure delays.
+Whereas [A-CDM][a_cdm] implementation is considered to be an enabler to improve situation 
+awareness and performance, it is important to ensure that the available information 
+is used to improve local processes. [A-CDM][a_cdm] can also help improving the data quality 
+which is presently an issue for the measurement of [ATC pre-departure delays][atc_pre]. 
 
-Vertical flight efficiency in climbs and descents at the top 30 airports has been
-added as a new metric in this year’s report.
-On average, inefficiencies were more than 6 times higher in descent than
-in climb with notable differences by airport.
+[Vertical flight efficiency in climbs and descents][vfe_cdo] at the top 30 airports has been 
+added as a new metric in this year’s report. On average, inefficiencies were more than 
+6 times higher in descent than in climb with notable differences by airport.
 
 
 {% figure class:"img-responsive center-block img-rounded" %}
 {% img prcq-economics-text.png magick:resize:80x80 alt:'Economics' %}
 {% endfigure %}
 
-In 2015, which is the latest year for which actual financial data are available,
-gate-to-gate ATM/CNS provision costs increased by 1.7% and amounted to some
-€8.2 Billion at Pan-European system level.
+In 2015, which is the latest year for which actual financial data are available, 
+the en-route ANS unit costs of the Pan-European system amounted to 49.2 €2009 per 
+service unit (TSU). 
+This is -2.4% lower than in 2014 since in 2015 the number of TSUs rose faster (+3.9%) 
+than en-route ANS costs (+1.5%). En-route unit costs are expected to reduce by -1.6% p.a. 
+over the 2015-2019 period and reach a value of 46.1 €2009. If these plans materialise, 
+the en-route unit costs in 2019 will be some -23% lower than in 2009, implying substantial 
+cost-efficiency improvements during this 10 year period.
 
-At the same time traffic, expressed in terms of composite flight hours, increased
-at a slightly higher rate (+1.8%), leading to a fairly constant system wide unit
-cost in 2015 (-0.1% vs 2014).
-Operating costs (including staff, non-staff operating costs and exceptional cost items)
-account for some 81% of total ATM/CNS provision costs, and capital-related costs
-(cost of capital and depreciation) amount to some 19%.
+In 2015, European terminal ANS unit costs amounted to 171.6 €2009 per terminal service unit (TNSU) 
+and are expected to decrease by -2.1% p.a. until 2019. This performance improvement reflects the 
+fact that total terminal ANS costs are planned to reduce by -0.7% p.a. while TNSUs are expected to 
+increase by +1.4% p.a. between 2015 and 2019.
 
-In order to also consider the service quality provided by ANSPs, the gate-to-gate
-economic performance combines ATM/CNS provision costs and the cost of ATFM delay.
-Although ATM/CNS provision costs per composite flight hour decreased slightly in 2015,
-gate-to-gate unit economic costs increased by +4.2% to reach €505 per composite flight-hour
-due to a substantial increase in unit cost of ATFM delays (+38.7% vs. 2014).
-This was the first increase in unit economic costs since 2010.
+Detailed ANSPs benchmarking analysis indicates that in 2015 gate-to-gate ATM/CNS provision costs 
+increased by +1.7% and amounted to some €8.2 Billion at Pan-European system level. At the same time traffic, 
+expressed in terms of [composite flight hours][composite_hr], increased at a slightly higher rate (+1.8%). 
+As a result, gate-to-gate unit ATM/CNS provision costs remained fairly constant in 2015 (-0.1% vs 2014).
 
-Over the 2010-2014 period, economic costs per composite flight-hour decreased
-by -5.4% p.a. in real terms, mainly due to the substantial decreases in unit costs
-of ATFM delay (-23.4% p.a.).
-Over this period, ATM/CNS provision costs remained close to their 2010 level
-(-0.1% p.a.) while the number of composite flight-hours slightly increased (+1.0% p. a.).
+In order to also consider the service quality provided by ANSPs, the gate-to-gate economic performance 
+combines ATM/CNS provision costs and the cost of ATFM delays. Although unit ATM/CNS provision costs 
+remained constant in 2015, unit economic costs increased by +4.2% to reach €505 per composite flight-hour 
+reflecting a substantial increase in the unit costs of ATFM delays (+38.7% vs. 2014). In fact, the trend 
+of decreasing ATFM delays observed in previous years stopped in 2013, when a new cycle characterised by 
+higher delays started. 
+The analysis provided in the operational en-route ANS performance chapter of this report indicates that 
+this trend continued in 2016 since en-route ATFM delays were +20.9% higher than in 2015. This implies 
+that in 2016, the unit costs of delays will be significantly higher than in 2015 and will negatively 
+affect ANSPs economic cost-effectiveness.
+
+
+[composite_hr]: <{{ "/references/definition/composite_flight_hour.html" | prepend: site.baseurl | prepend: site.url }}> "Composite flight hour definition"
+[esra08]: <{{ "/references/definition/ESRA_2008_Area.html" | prepend: site.baseurl | prepend: site.url }}> "ESRA 08 area"
+[ectl_area]: <{{ "/references/definition/eurocontrol_area.html" | prepend: site.baseurl | prepend: site.url }}> "EUROCONTROL area"
+[atfm_dly]: <{{ "/references/definition/atfm_delay.html" | prepend: site.baseurl | prepend: site.url }}> "ATFM delay"
+[atc_pre]: <{{ "/references/definition/atc_pre-departure_delay.html" | prepend: site.baseurl | prepend: site.url }}> "ATC pre-departure delay"
+[a_cdm]: <{{ "/references/definition/a_cdm.html" | prepend: site.baseurl | prepend: site.url }}> "A-CDM"
+[asma_add]: <{{ "/references/definition/additional_asma_time.html" | prepend: site.baseurl | prepend: site.url }}> "Additional ASMA time"
+
+[ansp]: <{{ "/references/acronym/ansp.html" | prepend: site.baseurl | prepend: site.url }}> "Air Navigation Service Provider"
+[ans]: <{{ "/references/acronym/ans.html" | prepend: site.baseurl | prepend: site.url }}> "Air Navigation Services"
+[upa]: <{{ "/references/acronym/uap.html" | prepend: site.baseurl | prepend: site.url }}> "Unauthorised Penetrations of Airspace"
+[smi]: <{{ "/references/acronym/smi.html" | prepend: site.baseurl | prepend: site.url }}> "Separation minima infringements (SMIs)"
+[ri]: <{{ "/references/acronym/ri.html" | prepend: site.baseurl | prepend: site.url }}> "Runway incursions (RIs)"
+[alos]: <{{ "/references/acronym/alos.html" | prepend: site.baseurl | prepend: site.url }}> "Acceptable Level of Safety Performance (ALoSP)"
+[acc]: <{{ "/references/acronym/acc.html" | prepend: site.baseurl | prepend: site.url }}> "Area Control Center"
+[nm]: <{{ "/references/acronym/nm.html" | prepend: site.baseurl | prepend: site.url }}> "Network Manager"
+[fra]: <{{ "/references/acronym/fra.html" | prepend: site.baseurl | prepend: site.url }}> "Free Route Airspace (FRA)"
+
+[vfe_cdo]: <{{ "/references/methodology/cd_vertical_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }}> "Vertical en-route flight efficiency"
+[hfe]: <{{ "/references/methodology/horizontal_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }}> "Horizontal en-route flight efficiency"

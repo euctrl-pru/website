@@ -283,28 +283,37 @@ function drawVisualization()
 google.setOnLoadCallback(drawVisualization)
 </script>
 
-<h1 class="page-header">{{ page.title }}</h1>
-<div class="well well-sm">
 <div class="row">
-<div class="col-xs-6 col-sm-3">
-    Reference area: <span style="color:#800000;" class="text-muted">EUROCONTROL area</span>
+<div class="col-xs-1 col-sm-1"> 
+{% figure class:"img-responsive left-block img-rounded" %}
+{% img prcq-operations-airport.png magick:resize:60x60 alt:'Airports' %}
+{% endfigure %}
 </div>
-
-<div class="col-xs-6 col-sm-3">
-    Last update: <span style="color:#800000; background-color:#f7f8f9" class="text-muted">09-FEB-2017</span>
-</div>
-
-<div class="col-xs-6 col-sm-3">
-    Update rate: <span style="color:#800000;" class="text-muted">Quarterly</span>
-</div>
-
-<div class="col-xs-6 col-sm-3">
-    Data and methodologies <button type = "button" class = "btn btn-primary btn-sm">PRU Portal</button>
-</div>
+<div class="col-xs-11 col-sm-11 placeholder">
+<h3 class="page-header">{{ page.title }}</h3>
 </div>
 </div>
 
-
+<table class = "table">
+   <thead>
+      <tr>
+         <th>Period</th>
+         <th>Area</th>
+         <th>Update rate</th>       
+         <th>Last update</th>
+         <th></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class = "active">
+         <td>Jan-Dec 2016</td>
+         <td><a href={{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}>EUROCONTROL area</a></td>
+         <td>Quarterly</td>
+         <td>03-March-2017</td>
+         <td><a href="http://ansperformance.eu" class="btn btn-primary btn-sm" target="_blank" role="button">PRU Portal</a></td>  
+      </tr>
+   </tbody>  
+</table>
 
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-4">
@@ -348,59 +357,44 @@ The two Istanbul airports, which reported a remarkable traffic growth over the p
   </div>
 <div class="well well-sm">Average airport arrival ATFM delay decreased slightly in 2016 at the top 30 airports but is still heavily concentrated among a few airports. Five airports (Istanbul Sabiha Gökçen, Istanbul Ataturk, Amsterdam, London Heathrow, and London Gatwick) accounted for 59% of the airport arrival ATFM delay reported for the top 30 airports. At Istanbul Sabiha Gökçen, 42.5% of all arrivals in 2016 were airport ATFM delayed compared to Istanbul Ataturk with 20.3% of the arrivals being delayed. <br><br>
 The problem at the two Turkish airports is clearly capacity related and linked to the substantial growth observed over the past years. The peak arrival throughput at Sabiha Gökçen airport quadrupled over the past eight years making it the second busiest single runway airport in the EUROCONTROL area after London Gatwick. The situation in Istanbul is expected to improve with the opening of the first phase of the new Istanbul Airport which is scheduled for 2017/2018.<br><br>
-Airport arrival ATFM performance at Amsterdam and the two London airports (LHR, LGW) was to a large extent affected by weather which required reducing the available capacity. <br><br>
-London Heathrow, Istanbul Ataturk, and Istanbul Sabiha Gökçen show all up with a continuously high arrival throughput close to the peak declared arrival capacity. Constant operations close to maximum capacity generate high delays and possibly cancellations when there is a mismatch between scheduled demand and the capacity that can be made available. <br><br>
-At London Heathrow, wind is by far the most dominant factor affecting the airports arrival capacity. The introduction of time based separations in spring 2015 is expected to reduce ATFM delays due to high headwinds at the airport. In 2016, the average weather related ATFM delay per arrival decreased slightly and it will be interesting to see the impact on time based separation on performance once longer time series of data are available.</div>
+</div>
 
-<h4 class="page-header">Additional ASMA time</h4>
+<h4 class="page-header"><a href={{"/references/definition/additional_asma_time.html"| prepend: site.baseurl | prepend: site.url }}>Additional ASMA time</a></h4>
 <div class="row ">
 <div class="col-xs-6 col-sm-4">
     <h5>Top 30 airports</h5>
     <div id="crt_apt6"></div>
 </div>
 <div class="col-xs-6 col-sm-8 ">
-    <h5>Additional ASMA time by airport (2016)</h5>
+    <h5><a href={{"/references/definition/additional_asma_time.html"| prepend: site.baseurl | prepend: site.url }}>Additional ASMA time by airport (2016)</a></h5>
     <div id="crt_apt7"></div>
 </div>
   </div>
 <div class="well well-sm"> To be commented </div>
 
 <h3 class="sub-header">Departure flow management</h3>
-<h4 class="page-header">ATC pre-departure delays</h4>
+<h4 class="page-header"><a href={{"/references/definition/atc_pre-departure_delay.html"| prepend: site.baseurl | prepend: site.url }}>ATC pre-departure delays</a></h4>
 <div class="row ">
 <div class="col-xs-6 col-sm-4">
     <h5>Top 30 airports</h5>
     <div id="crt_apt8"></div>
 </div>
 <div class="col-xs-6 col-sm-8 ">
-    <h5>ATC pre-departure delays by airport (2016)</h5>
+    <h5><a href={{"/references/definition/atc_pre-departure_delay.html"| prepend: site.baseurl | prepend: site.url }}>ATC pre-departure delays by airport (2016)</a></h5>
     <div id="crt_apt9"></div>
 </div>
   </div>
 <div class="well well-sm"> To be commented </div>
 
-<h4 class="page-header">Additional taxi-out time</h4>
+<h4 class="page-header"><a href={{"/references/definition/additional_taxi-out_time.html"| prepend: site.baseurl | prepend: site.url }}>Additional taxi-out time</a></h4>
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-4">
     <h5>Top 30 airports</h5>
     <div id="crt_apt10"></div>
 </div>
 <div class="col-xs-6 col-sm-8 ">
-    <h5>Additional taxi-out by airport (2016)</h5>
+    <h5><a href={{"/references/definition/additional_taxi-out_time.html"| prepend: site.baseurl | prepend: site.url }}>Additional taxi-out by airport (2016)</a></h5>
     <div id="crt_apt11"></div>
 </div>
   </div>
  <div class="well well-sm"> To be commented </div>
-
-<h2 class="sub-header">Key observations - ANS performance @ airports</h2>
-<div class="well well-sm">
-
-The global implementation roadmaps driven by the ICAO GANP and the supporting ASBU modules cast their light on Europe. This strengthens the level of enabler deployments such as A-CDM or procedural changes in form of continuous climb or descent operations, time based separations and the use of improved wake vortex categorisations (RECAT-EU).<br><br>
-Despite the positive effect the aforementioned enablers are expected to have on performance, the substantial traffic increase at some airports contributed to higher levels of operational inefficiency and resulted in somewhat higher additional times during descent and in the taxi-out phase compared to 2015. <br><br>
-
-The high intensity operation with a clear focus on the maximisation of runway throughput at London Heathrow comes at a price and the analyses of the additional time in approach and in the taxi out phase show comparatively high levels of inefficiency. In fact, London Heathrow alone accounted for one quarter of the total additional ASMA time in 2016. The average holding per arrival at London Heathrow improved slightly in 2016 but is still above 8 minutes per arrival which is in line with a deliberate decision taken during the airport scheduling process after consultation with airlines. The cross border arrival management (XMAN) project was set up already in March 2014 to reduce airborne holdings on specific traffic flows but it would be worth to investigate further possibilities to reduce holding times at airports through a better support of the network while ensuring a continuous arrival flow into the airport. <br><br>
-Due to the lack of data the additional holding time is presently not available for the two Istanbul airports and it would be interesting to get this complementary information in addition to the airport arrival ATFM delay to be able to provide a more balanced picture. <br><br>
-The problem with the small Greek airports generating very high delays highlighted in last year’s report still persisted in 2016. Overall, nine regional Greek airports accounted for 5.3% of all airport ATFM delays in the EUROCONTROL area. ATFM regulations should not be applied continuously to regulate demand at airports and the issue, most likely linked to scheduling and variability needs to be addressed proactively in order to avoid a repetition of high delays also in summer 2017. The PRC will be monitoring the situation which now persists for several years.  <br><br>
-Despite yet a higher number of ATFM regulated flight in 2016, overall ATFM slot adherence at the top 30 airports improved again which is positive in terms of network predictability. <br><br>
-Whereas A-CDM implementation is considered to be an enabler to improve situation awareness and performance, it is important to ensure that the available information is used to improve local processes. A-CDM can also help improving the data quality which is presently an issue for the measurement of ATC pre-departure delays. An evaluation of the 2016 data showed that 40% of the delay reported by the top 30 airports was not attributed to a valid delay cause which clearly requires improvement in the future.
-</div>

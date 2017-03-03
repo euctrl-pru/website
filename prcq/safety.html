@@ -272,26 +272,37 @@ function drawVisualization()
 google.setOnLoadCallback(drawVisualization)
 </script>
 
-<h2 class="page-header">{{ page.title }}</h2>
-<div class="well well-sm">
 <div class="row">
-<div class="col-xs-6 col-sm-3">
-  Reference area: <span style="color:#800000;" class="text-muted">EUROCONTROL area</span>
+<div class="col-xs-1 col-sm-1"> 
+{% figure class:"img-responsive left-block img-rounded" %}
+{% img prcq-safety.png magick:resize:60x60 alt:'Safety' %}
+{% endfigure %}
+</div>
+<div class="col-xs-11 col-sm-11 placeholder">
+<h3 class="page-header">{{ page.title }}</h3>
+</div>
 </div>
 
-<div class="col-xs-6 col-sm-3">
-  Last update: <span style="color:#800000; background-color:#f7f8f9" class="text-muted">09-FEB-2017</span>
-</div>
-
-<div class="col-xs-6 col-sm-3">
-  Update rate: <span style="color:#800000;" class="text-muted">Annually</span>
-</div>
-
-<div class="col-xs-6 col-sm-3">
-  Data and methodologies <button type = "button" class = "btn btn-primary btn-sm">PRU Portal</button>
-</div>
-</div>
-</div>
+<table class = "table">
+   <thead>
+      <tr>
+         <th>Period</th>
+         <th>Area</th>
+         <th>Update rate</th>       
+         <th>Last update</th>
+         <th></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class = "active">
+         <td>Jan-Dec 2015</td>
+         <td><a href={{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}>EUROCONTROL area</a></td>
+         <td>Annually</td>
+         <td>03-March-2017</td>
+         <td></td>
+      </tr>
+   </tbody>  
+</table>
 
 <h3 class="sub-header">Air traffic accidents</h3>
 <div class="row placeholders">

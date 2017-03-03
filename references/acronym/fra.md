@@ -15,6 +15,14 @@ way points, without reference to the ATS route network,
 subject to airspace availability.
 Within this airspace, flights remain subject to air traffic control.
 
+
+## Free route airspace implementation status December 2016
+
+{% figure class:"img-responsive center-block img-rounded" %}
+{% img fra_dec_2016.png magick:resize:700x700 alt:'FRA implementation status 2016' %}
+{% endfigure %}
+
+
 ## See Also
 
 * [FRA][fraECTRL]{:target="_blank"} page at [EUROCONTROL][ectrl]{:target="_blank"}.
