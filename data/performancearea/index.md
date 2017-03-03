@@ -7,13 +7,13 @@ keywords: performance, data, statistics, economics, air transport, flights, euro
 dates:
   ert_flt:
     beg: Jan 2014
-    end: Jan 2017
+    end: Feb 2017
   ert_dly_aua:
     beg: Jan 2011
-    end: Jan 2017
+    end: Feb 2017
   ert_dly_fir:
     beg: Jan 2013
-    end: Jan 2017
+    end: Feb 2017
   hfe:
     beg: Jan 2014
     end: Dec 2016
@@ -22,25 +22,28 @@ dates:
     end: Dec 2016
   apt_flt:
     beg: Jan 2014
-    end: Jan 2017
+    end: Feb 2017
   apt_dly:
     beg: Jan 2014
-    end: Jan 2017
+    end: Feb 2017
   asma:
     beg: Jan 2014
-    end: Dec 2016
+    end: Jan 2017
+  cdo:
+    beg: Jan 2015
+    end: Feb 2017
   tx_out:
     beg: Jan 2014
-    end: Dec 2016
+    end: Jan 2017
   atc_pre:
     beg: Jan 2014
-    end: Dec 2016
+    end: Jan 2017
   slt_adh:
     beg: Jan 2014
-    end: Jan 2017
+    end: Feb 2017
   ace_opt:
     beg: Jan 2014
-    end: Jan 2017
+    end: Feb 2017
   cplx:
     beg: &cplxbeg Jan 2014
     end: &cplxend Dec 2016
@@ -130,6 +133,7 @@ For more information on the the change in methodology
 | Airport arrival ATFM delays - **[Version 2][DelayREA]** <br><small>Daily IFR arrivals and airport arrival [ATFM delay][ATFMdelay] by airport and delay category</small> | {{ page.dates.apt_dly.beg }} - {{ page.dates.apt_dly.end }}  | [xls {{ page.dwnld_i }}][APT-DLY-v2xlsx] | [csv {{ page.fltr_i }} {{ page.ndwk_i }}][APT-DLYcsv] | [meta {{ page.info_i }}][APT-DLYmeta] |
 | Airport traffic<br><small>Daily IFR arrivals and departures by airport</small>                                                                                          | {{ page.dates.apt_flt.beg }} - {{ page.dates.apt_flt.end }}  | [xls {{ page.dwnld_i }}][APT-FLTxlsx]   |                                                   | [meta {{ page.info_i }}][APT-FLTmeta] |
 | Arrival Sequencing and Metering (ASMA) additional time<br><small>Monthly ASMA [additional][ASMAadditional] and [unimpeded][ASMAunimpeded] time</small>                  | {{ page.dates.asma.beg }} - {{ page.dates.asma.end }}        | [xls {{ page.dwnld_i }}][ASMAxlsx]    |                                                   | [meta {{ page.info_i }}][ASMAmeta]    |
+| Vertical flight efficiency - Continuous climb and descent operations<br><small>Monthly continuous climb and descent data</small>                  | {{ page.dates.cdo.beg }} - {{ page.dates.cdo.end }}        | [xls {{ page.dwnld_i }}][CDOxlsx]    |                                                   | [meta {{ page.info_i }}][CDOmeta]    |
 | Taxi-out additional time<br><small>Monthly taxi out [additional][ASMAadditional] and [unimpeded][ASMAunimpeded] time</small>  | {{ page.dates.tx_out.beg }} - {{ page.dates.tx_out.end }}    | [xls {{ page.dwnld_i }}][TX-OUTxlsx]  |                                                   | [meta {{ page.info_i }}][TX-OUTmeta]  |
 | ATC pre-departure delays<br><small>Daily [ATC pre-departure delay][ATCpredepdelay] by airport</small>                         | {{ page.dates.atc_pre.beg }} - {{ page.dates.atc_pre.end }}  | [xls {{ page.dwnld_i }}][ATC-PRExlsx] |                                                   | [meta {{ page.info_i }}][ATC-PREmeta] |
 | ATFM slot adherence<br><small>Daily ATFM slot adherence by airport</small>                                                    | {{ page.dates.slt_adh.beg }} - {{ page.dates.slt_adh.end }}  | [xls {{ page.dwnld_i }}][SLT-ADHxlsx] |                                                   | [meta {{ page.info_i }}][SLT-ADHmeta] |
@@ -156,6 +160,10 @@ For more information on the the change in methodology
 [ASMAxlsx]: <{{ "/data/set/asma/ASMA_Additional_Time.xlsm" | prepend: site.baseurl | prepend: site.url }}> "ASMA (Excel)"
 [ASMAcsv]: <{{ "/404.html" | prepend: site.baseurl | prepend: site.url }}> "ASMA (CSV)"
 [ASMAmeta]: <{{ "/references/dataset/ASMA_Additional_Time.html" | prepend: site.baseurl | prepend: site.url }}> "ASMA (Meta)"
+
+[CDOxlsx]: <{{ "/data/set/cdo_cco/Vertical_Flight_Efficiency_cdo_cco.xlsm" | prepend: site.baseurl | prepend: site.url }}> "CDO/CCO (Excel)"
+[CDOcsv]: <{{ "/404.html" | prepend: site.baseurl | prepend: site.url }}> "CDO/CCO (CSV)"
+[CDOmeta]: <{{ "/references/dataset/Continuous_Climb_Descent.html" | prepend: site.baseurl | prepend: site.url }}> "CDO/CCO (Meta)"
 
 [TX-OUTxlsx]: <{{ "/data/set/tx_out/Taxi-Out_Additional_Time.xlsm" | prepend: site.baseurl | prepend: site.url }}> "TX-OUT (Excel)"
 [TX-OUTcsv]: <{{ "/404.html" | prepend: site.baseurl | prepend: site.url }}> "TX-OUT (CSV)"
