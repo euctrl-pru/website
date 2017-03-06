@@ -131,16 +131,7 @@ function drawVisualization()
 google.setOnLoadCallback(drawVisualization)
 </script>
 
-<div class="row">
-<div class="col-xs-1 col-sm-1"> 
-{% figure class:"img-responsive left-block img-rounded" %}
-{% img prcq-traffic.png magick:resize:60x60 alt:'Traffic' %}
-{% endfigure %}
-</div>
-<div class="col-xs-11 col-sm-11 placeholder">
-<h3 class="page-header">{{ page.title }}</h3>
-</div>
-</div>
+<h3 class="page-header">{% img prcq-traffic.png magick:resize:60x60 alt:'Traffic' style:'margin-right\:3px' %} {{ page.title }}</h3>
 
 <table class = "table">
    <thead>
