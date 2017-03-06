@@ -94,7 +94,7 @@ figure {
   margin: 1.5em 0;
   /* border-top: 1px dotted #0098d8; */
   /* border-bottom: 1px dotted #0098d8; */
-  
+
 }
 
 figure img {
@@ -122,4 +122,8 @@ figcaption {
   text-align: center;
   font-style: italic;
   line-height: 1.5em;
+}
+
+#prcq-sidebar {
+  padding-top: 35px;
 }

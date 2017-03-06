@@ -2,17 +2,18 @@
 layout: default
 ---
 
+{% include _draft.html %}
 
 <div class="row">
-   <div class="col-sm-2">
-      <nav class="nav-sidebar" id="prcq-sidebar">
+   <div class="col-sm-2" id="prcq-sidebar">
+      <nav class="nav-sidebar">
          <ul class="nav" data-spy="affix" data-offset-top="5">
             <li><a href="{{ '/prcq/executive-summary.html' | prepend: site.baseurl | prepend: site.url }}">Executive Summary</a></li>
             <li><a href="{{ '/prcq/traffic.html' | prepend: site.baseurl | prepend: site.url }}">Traffic</a></li>
             <li><a href="{{ '/prcq/safety.html' | prepend: site.baseurl | prepend: site.url }}">Safety</a></li>
             <li><a href="{{ '/prcq/ops-en-route.html' | prepend: site.baseurl | prepend: site.url }}">Operations En-route</a></li>
             <li><a href="{{ '/prcq/ops-airport.html' | prepend: site.baseurl | prepend: site.url }}">Operations Airport</a></li>
-            <li><a href="{{ '/prcq/economics.html' | prepend: site.baseurl | prepend: site.url }}">Economics</a></li>
+<!--             <li><a href="{{ '/prcq/economics.html' | prepend: site.baseurl | prepend: site.url }}">Economics</a></li> -->
          </ul>
       </nav>
    </div>
