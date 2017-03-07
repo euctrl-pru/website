@@ -17,11 +17,13 @@ function drawVisualization()
          containerId: 'crt_saf_acc_YY',
          dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/gviz/tq?sheet=saf&range=A5:D15&headers=1&tq=',
          options: {
-            titleTextStyle: { color: 'grey', fontSize: 12 },
-            chartArea: { left: 40, top: 40, width: '80%', height: '55%' },
+            title: 'Air traffic accidents',
+            titlePosition: 'out',
+            titleTextStyle: { color: 'grey', fontSize: 16,},
+            chartArea: { left: 40, top: 60, width: '80%', height: '55%' },
             legend: {
                position: 'top',
-               maxLines: 3,
+               maxLines: 2,
                textStyle: {color: 'grey', fontSize: 10 }
             },
             isStacked : 'true',
@@ -43,7 +45,6 @@ function drawVisualization()
                }
             },
             hAxis: {
-               title: 'Source: SRC Intermediate Report 2015',
                titleTextStyle: { color: 'grey', fontSize: 11 },
                type: 'string',
                slantedTextAngle: 40,
@@ -60,8 +61,10 @@ function drawVisualization()
          containerId: 'crt_saf_accatm_YY',
          dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/gviz/tq?sheet=saf&range=A23:D33&headers=1&tq=',
          options: {
-            titleTextStyle: { color: 'grey', fontSize: 12 },
-            chartArea: { left: 40, top: 40, width: '80%', height: '55%' },
+            title: 'Accidents with ATM contribution', 
+            titlePosition: 'out',
+            titleTextStyle: { color: 'grey', fontSize: 16 },
+            chartArea: { left: 40, top: 60, width: '80%', height: '55%' },
             legend: {
                position: 'top',
                maxLines: 2,
@@ -86,7 +89,6 @@ function drawVisualization()
                }
             },
             hAxis: {
-               title: 'Source: SRC Intermediate Report 2015',
                titleTextStyle: { color: 'grey', fontSize: 11 },
                type: 'string',
                slantedTextAngle: 40,
@@ -104,11 +106,10 @@ function drawVisualization()
          containerId: 'crt_saf_smi_YY',
          dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/gviz/tq?sheet=saf&range=A41:F51&headers=1&tq=',
          options: {
-            titleTextStyle: { color: 'grey', fontSize: 12 },
-            chartArea: { left: 40, top: 40, width: '80%', height: '55%' },
+            chartArea: { left: 50, top: 40, width: '75%', height: '60%' },
             legend: {
                position: 'top',
-               maxLines: 3,
+               maxLines: 2,
                textStyle: {color: 'grey', fontSize: 10 }
             },
             isStacked : 'true',
@@ -125,13 +126,12 @@ function drawVisualization()
                   textStyle: { color: 'grey' }
                },
                1: {
-                  title: 'total nr. of reported SMIs',
+                  title: 'reported SMIs',
                   titleTextStyle: { color: '#5D7CBA', fontSize: 11 },
                   textStyle: { color:'#5D7CBA' }
                }
             },
             hAxis: {
-               title: 'Source: SRC Intermediate Report 2015',
                titleTextStyle: { color: 'grey', fontSize: 11 },
                type: 'string',
                slantedTextAngle: 40,
@@ -148,8 +148,7 @@ function drawVisualization()
          containerId: 'crt_saf_upa_YY',
          dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/gviz/tq?sheet=saf&range=A59:F69&headers=1&tq=',
          options: {
-            titleTextStyle: { color: 'grey', fontSize: 12 },
-            chartArea: { left: 40, top: 40, width: '80%', height: '55%' },
+            chartArea: { left: 50, top: 40, width: '75%', height: '60%' },
             legend: {
                position: 'top',
                maxLines: 2,
@@ -169,13 +168,12 @@ function drawVisualization()
                   textStyle: { color: 'grey' }
                },
                1: {
-                  title: 'total nr. of reported UPAs',
+                  title: 'reported UPAs',
                   titleTextStyle: { color: '#5D7CBA', fontSize: 11 },
                   textStyle: { color:'#5D7CBA' }
                }
             },
             hAxis: {
-               title: 'Source: SRC Intermediate Report 2015',
                titleTextStyle: { color: 'grey', fontSize: 11 },
                type: 'string',
                slantedTextAngle: 40,
@@ -192,9 +190,7 @@ function drawVisualization()
          containerId: 'crt_saf_ri_YY',
          dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/gviz/tq?sheet=saf&range=A77:F87&headers=1&tq=',
          options: {
-            title: 'Runway Incursions (RIs)',
-            titleTextStyle : { color: 'grey', fontSize: 12 },
-            chartArea: { left: 40, top: 40, width: '80%', height: '55%' },
+            chartArea: { left: 50, top: 40, width: '75%', height: '60%' },
             legend: {
                position: 'top',
                maxLines: 2,
@@ -214,13 +210,12 @@ function drawVisualization()
                   textStyle: { color: 'grey' }
                },
                1: {
-                  title:'Total nr. of Reported RIs',
+                  title:'reported RIs',
                   titleTextStyle: { color: 'grey', fontSize: 11 },
                   textStyle: { color:'grey' }
                }
             },
             hAxis: {
-               title: 'Source: SRC Intermediate Report 2015',
                titleTextStyle: { color: 'grey', fontSize: 11 },
                type: 'string',
                slantedTextAngle: 40,
@@ -238,7 +233,7 @@ function drawVisualization()
          dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/gviz/tq?sheet=saf&range=A95:H105&headers=1&tq=',
          options: {
             titleTextStyle : { color: 'grey', fontSize: 12 },
-            chartArea: { left: 40, top: 40, width: '80%', height: '55%' },
+            chartArea: { left: 50, top: 40, width: '75%', height: '60%' },
             legend: {
                position: 'top',
                maxLines: 3,
@@ -256,7 +251,6 @@ function drawVisualization()
                textStyle: { color: 'grey' }
             },
             hAxis: {
-               title: 'Source: SRC Intermediate Report 2015',
                titleTextStyle: { color: 'grey', fontSize: 11 },
                type: 'string',
                slantedTextAngle: 40,
@@ -272,16 +266,7 @@ function drawVisualization()
 google.setOnLoadCallback(drawVisualization)
 </script>
 
-<div class="row">
-<div class="col-xs-1 col-sm-1"> 
-{% figure class:"img-responsive left-block img-rounded" %}
-{% img prcq-safety.png magick:resize:60x60 alt:'Safety' %}
-{% endfigure %}
-</div>
-<div class="col-xs-11 col-sm-11 placeholder">
-<h3 class="page-header">{{ page.title }}</h3>
-</div>
-</div>
+<h3 class="page-header">{% img prcq-safety.png magick:resize:60x60 alt:'Safety' style:'margin-right\:3px' %} {{ page.title }}</h3>
 
 <table class = "table">
    <thead>
@@ -290,7 +275,7 @@ google.setOnLoadCallback(drawVisualization)
          <th>Area</th>
          <th>Update rate</th>       
          <th>Last update</th>
-         <th></th>
+         <th>Source</th>
       </tr>
    </thead>
    <tbody>
@@ -299,7 +284,18 @@ google.setOnLoadCallback(drawVisualization)
          <td><a href={{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}>EUROCONTROL area</a></td>
          <td>Annually</td>
          <td>03-March-2017</td>
-         <td></td>
+         <td><a href={{"/references/acronym/src.html"| prepend: site.baseurl | prepend: site.url }}>SRC</a></td>
+      </tr>
+   </tbody>  
+</table>
+
+
+<table class = "table">
+   <tbody>
+      <tr class = "active">
+         <td><span style="color: rgb(192, 80, 77);">
+         Please note that the preliminary (P) 2016 data will only be available in April 2017 
+         </span> </td>
       </tr>
    </tbody>  
 </table>
@@ -307,38 +303,76 @@ google.setOnLoadCallback(drawVisualization)
 <h3 class="sub-header">Air traffic accidents</h3>
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
-  <h4>Air traffic accidents</h4>
   <div id="crt_saf_acc_YY"></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
-  <h4>Accidents with ATM contribution</h4>
   <div id="crt_saf_accatm_YY"></div>
 </div>
 </div>
-<div class="well well-sm">commentary to be included</div>
+
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+<div class="panel panel-info"><div class="panel-heading">
+Overall, there there were 91 accidents in the EUROCONTROL area in 2015 of which 18 were fatal.<br>
+Similarly to 2014 this represents approximately the 20% of total accidents.
+</div></div></div>
+<div class="col-xs-6 col-sm-6 placeholder">
+<div class="panel panel-info"><div class="panel-heading">
+ There was only one reported accident with direct ATM contribution in 2015 which is the same number as in 2014.<br>
+ The accident with direct ATM contribution in 2015 was a non-fatal ground collision.
+</div></div></div>
+</div>
 
 <h3 class="sub-header">ATM related incidents</h3>
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
-  <h4>Separation Minima Infringements (SMI)</h4>
-  <div id="crt_saf_smi_YY"></div>
+<h4><a href={{"/references/acronym/smi.html"| prepend: site.baseurl | prepend: site.url }}>Separation Minima Infringements (SMI)</a></h4>
+<div id="crt_saf_smi_YY"></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
-  <h4>Unauthorised Penetration of Airspace (UPAs)</h4>
-  <div id="crt_saf_upa_YY"></div>
+<h4><a href={{"/references/acronym/upa.html"| prepend: site.baseurl | prepend: site.url }}>Unauthorised Penetration of Airspace (UPAs)</a></h4>
+<div id="crt_saf_upa_YY"></div>
 </div>
 </div>
-<div class="well well-sm">commentary to be included</div>
 
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
-  <h4>Runway Incursions (RIs)</h4>
-  <div id="crt_saf_ri_YY"></div>
+<div class="panel panel-info"><div class="panel-heading">
+ Despite an increase in traffic, the number of reported risk bearing SMIs (Severity A+B) decreased in 2015 from 273 to 241.   
+ Overall, 10% of all occurrences reported in 2015 were categorised as risk bearing occurrences which is 2% less than in 2014. 
+</div></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
-  <h4>ATM Specific Occurrences (ATM-S)</h4>
-  <div id="crt_saf_aso_YY"></div>
+<div class="panel panel-info"><div class="panel-heading">
+ The number of risk bearing UPA occurrences (Severity A+B) increased notably from 60 to 88 in 2015. 
+ As a result, the share of risk bearing UPA occurrences in the total reported UPAs increased from 1% to 2% in 2015. 
+</div></div>
 </div>
 </div>
-<div class="well well-sm">commentary to be included</div>
 
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+<h4><a href={{"/references/acronym/ri.html"| prepend: site.baseurl | prepend: site.url }}>Runway Incursions (RIs)</a></h4>
+<div id="crt_saf_ri_YY"></div>
+</div>
+<div class="col-xs-6 col-sm-6 placeholder">
+<h4>ATM Specific Occurrences (ATM-S)</h4>
+
+<div id="crt_saf_aso_YY"></div>
+</div>
+</div>
+
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+<div class="panel panel-info"><div class="panel-heading">
+The reported risk bearing runway incursions (Severity A+B) decreased from 100 to 94 in 2015.  
+At the same time, the share of risk bearing runway incursions remained at 7% of the total reported RI occurrences in 2015. 
+</div></div>
+</div>
+<div class="col-xs-6 col-sm-6 placeholder">
+<div class="panel panel-info"><div class="panel-heading">
+The total number of risk bearing ATM specific occurrences decreased from 463 to 453 in 2015 (-2.2%). 
+At the same time, the total number of reported ATM Specific Occurrences increased which was mainly due to changes in data submission in one State.
+</div></div>
+</div>
+</div>

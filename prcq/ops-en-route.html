@@ -19,7 +19,6 @@ function drawVisualization()
     options: {
         //width: 500, height: 200,
         //chartArea: {left: 80, top: 30, width:'60%',height:'65%'},
-        titleTextStyle : {color: '#1F1F2E', fontSize: 12},
         legend: 'none',
         series: {
               0: {type: 'lines', color:'4F81BD', lineWidth: 3, pointSize: 12, targetAxisIndex: 0}
@@ -40,10 +39,10 @@ function drawVisualization()
     options:{
           chartArea: {left: 60, top: 30, width:'100%',height:'55%'},
           titleTextStyle : {color: 'grey', fontSize: 12},
-          legend: 'none',
+          legend: 'top',
            series: {
-              0: {type: 'bars', color:'DCE6F2', targetAxisIndex: 0},
-              1: {type: 'lines', color:'C0504D', lineWidth: 0, pointSize: 12, pointShape: 'diamond', targetAxisIndex: 0}
+              0: {type: 'bars', color:'#4F81BD', targetAxisIndex: 0},
+              1: {type: 'bars', color:'DCE6F2', targetAxisIndex: 0}
             },
         vAxes:{
               0:{ title:'minutes',
@@ -201,16 +200,7 @@ function drawVisualization()
 google.setOnLoadCallback(drawVisualization)
 </script>
 
-<div class="row">
-<div class="col-xs-1 col-sm-1"> 
-{% figure class:"img-responsive left-block img-rounded" %}
-{% img prcq-operations-enroute.png magick:resize:60x60 alt:'En-route' %}
-{% endfigure %}
-</div>
-<div class="col-xs-11 col-sm-11 placeholder">
-<h3 class="page-header">{{ page.title }}</h3>
-</div>
-</div>
+<h3 class="page-header">{% img prcq-operations-enroute.png magick:resize:60x60 alt:'En-route' style:'margin-right\:3px' %} {{ page.title }}</h3>
 
 <table class = "table">
    <thead>
@@ -219,7 +209,8 @@ google.setOnLoadCallback(drawVisualization)
          <th>Area</th>
          <th>Update rate</th>       
          <th>Last update</th>
-         <th></th>
+         <th>Source(s)</th>
+         <th>Further information</th>
       </tr>
    </thead>
    <tbody>
@@ -228,28 +219,37 @@ google.setOnLoadCallback(drawVisualization)
          <td><a href={{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}>EUROCONTROL area</a></td>
          <td>Quarterly</td>
          <td>03-March-2017</td>
+          <td>
+          <a href={{"/references/acronym/nm-cfmu.html"| prepend: site.baseurl | prepend: site.url }}>NM</a></td>
          <td><a href="http://ansperformance.eu" class="btn btn-primary btn-sm" target="_blank" role="button">PRU Portal</a></td>  
       </tr>
    </tbody>  
 </table>
 
-<h3 class="page-header">En-route ATFM delays</h3>
+<h3 class="page-header">En-route <a href={{"/references/definition/atfm_delay.html"| prepend: site.baseurl | prepend: site.url }}>ATFM delays</a></h3>
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
-    <h4>En-route ATFM delay per flight</h4>
-    <span class="text-muted">EUROCONTROL area</span>
+    <h4>En-route <a href={{"/references/definition/atfm_delay.html"| prepend: site.baseurl | prepend: site.url }}>ATFM delay</a> per flight</h4>
+    <span class="text-muted"><a href={{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}>EUROCONTROL area</a></span>
     <div id="crt_ertdlyYY"></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
-    <h4>Total en-route delay by reported cause</h4>
-    <span class="text-muted">EUROCONTROL area</span>
+    <h4>Total en-route delay by reported <a href={{"/references/definition/atfm_delay_codes.html"| prepend: site.baseurl | prepend: site.url }}>ATFM delay cause</a></h4>
+    <span class="text-muted"><a href={{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}>EUROCONTROL area</a></span>
     <div id="crt_ertdlytot"></div>
 </div>
 </div>
-<div class="well well-sm">Total en-route ATFM delays, for the EUROCONTROL area, increased by +20.9% in 2016 which corresponds to 0.86 minutes (51 seconds) of en-route ATFM delay per flight (0.73 in 2015).<br>
-  According to the delay classifications, as reported by the local flow management positions (FMPs), Capacity/Staffing related issues remain by far the main driver of en-route ATFM delays (55.3%), followed by weather related delays (18.3%), ATC disruptions/ industrial actions (12.3%), and Event related delays (9.1%) which also include delays due to ATC system upgrades.
-</div>
 
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+<div class="panel panel-info"><div class="panel-heading">
+Total en-route ATFM delays, for the EUROCONTROL area, increased by +20.9% in 2016 which corresponds to 0.86 minutes (51 seconds) of en-route ATFM delay per flight (0.73 in 2015).
+</div></div></div>
+<div class="col-xs-6 col-sm-6 placeholder">
+<div class="panel panel-info"><div class="panel-heading">
+ According to the delay classifications, as reported by the local flow management positions (FMPs), Capacity/Staffing related issues remain by far the main driver of en-route ATFM delays (55.3%), followed by weather related delays (18.3%), ATC disruptions/ industrial actions (12.3%), and Event related delays (9.1%) which also include delays due to ATC system upgrades.
+</div></div></div>
+</div>
 
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-2">

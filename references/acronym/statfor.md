@@ -16,3 +16,4 @@ and to monitor and analyse the evolution of the Air Transport Industry.
 * [STATFOR][statforECTRL]{:target="_blank"} page at [EUROCONTROL][ectrl]{:target="_blank"}.
 
 [statforECTRL]: <"http://www.eurocontrol.int/statfor"> "STATFOR - EUROCONTROL"
+[ectrl]: <https://www.eurocontrol.int/> "EUROCONTROL"

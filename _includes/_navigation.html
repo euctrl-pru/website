@@ -41,7 +41,10 @@
           </li>
           <li class="">
           <a href="{{ '/studies/' | prepend: site.baseurl | prepend: site.url }}">Studies</a></li>
-          <li class="dropdown">
+      </ul>
+      <!-- let's keep About & C0. out of navigation.yml to have it right-aligned -->
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
               <a href="{{ '/references/' | prepend: site.baseurl | prepend: site.url }}" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
                  aria-haspopup="true" aria-expanded="false">References</a>
               <ul class="dropdown-menu">
@@ -54,9 +57,6 @@
                    <li><a href="{{ '/references/bibliography.html' | prepend: site.baseurl | prepend: site.url }}">Bibliography</a></li>
               </ul>
           </li>
-      </ul>
-      <!-- let's keep About & C0. out of navigation.yml to have it right-aligned -->
-      <ul class="nav navbar-nav navbar-right">
         <li>
           <!-- a search box for the content of this site -->
           <!-- inspired by http://hardik.org/2013/06/01/stylising-duckduckgo-site-search/ -->
