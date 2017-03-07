@@ -134,7 +134,7 @@ For more information on the the change in methodology
 | Airport traffic<br><small>Daily IFR arrivals and departures by airport</small>                                                                                          | {{ page.dates.apt_flt.beg }} - {{ page.dates.apt_flt.end }}  | [xls {{ page.dwnld_i }}][APT-FLTxlsx]   |                                                   | [meta {{ page.info_i }}][APT-FLTmeta] |
 | Arrival Sequencing and Metering (ASMA) additional time<br><small>Monthly ASMA [additional][ASMAadditional] and [unimpeded][ASMAunimpeded] time</small>                  | {{ page.dates.asma.beg }} - {{ page.dates.asma.end }}        | [xls {{ page.dwnld_i }}][ASMAxlsx]    |                                                   | [meta {{ page.info_i }}][ASMAmeta]    |
 | Vertical flight efficiency - Continuous climb and descent operations<br><small>Monthly continuous climb and descent data</small>                  | {{ page.dates.cdo.beg }} - {{ page.dates.cdo.end }}        | [xls {{ page.dwnld_i }}][CDOxlsx]    |                                                   | [meta {{ page.info_i }}][CDOmeta]    |
-| Taxi-out additional time<br><small>Monthly taxi out [additional][ASMAadditional] and [unimpeded][ASMAunimpeded] time</small>  | {{ page.dates.tx_out.beg }} - {{ page.dates.tx_out.end }}    | [xls {{ page.dwnld_i }}][TX-OUTxlsx]  |                                                   | [meta {{ page.info_i }}][TX-OUTmeta]  |
+| Taxi-out additional time<br><small>Monthly taxi out [additional][TX-OUTadditional] and [unimpeded][TX-OUTunimpeded] time</small>  | {{ page.dates.tx_out.beg }} - {{ page.dates.tx_out.end }}    | [xls {{ page.dwnld_i }}][TX-OUTxlsx]  |                                                   | [meta {{ page.info_i }}][TX-OUTmeta]  |
 | ATC pre-departure delays<br><small>Daily [ATC pre-departure delay][ATCpredepdelay] by airport</small>                         | {{ page.dates.atc_pre.beg }} - {{ page.dates.atc_pre.end }}  | [xls {{ page.dwnld_i }}][ATC-PRExlsx] |                                                   | [meta {{ page.info_i }}][ATC-PREmeta] |
 | ATFM slot adherence<br><small>Daily ATFM slot adherence by airport</small>                                                    | {{ page.dates.slt_adh.beg }} - {{ page.dates.slt_adh.end }}  | [xls {{ page.dwnld_i }}][SLT-ADHxlsx] |                                                   | [meta {{ page.info_i }}][SLT-ADHmeta] |
 
@@ -146,6 +146,8 @@ For more information on the the change in methodology
 
 [ASMAadditional]: <{{ "/references/definition/additional_asma_time.html" | prepend: site.baseurl | prepend: site.url }}> "ASMA Additional Time definition"
 [ASMAunimpeded]: <{{ "/references/definition/unimpeded_asma_time.html" | prepend: site.baseurl | prepend: site.url }}> "ASMA Unimpeded Time definition"
+[TX-OUTadditional]: <{{ "/references/definition/additional_taxi-out_time.html" | prepend: site.baseurl | prepend: site.url }}> "Taxi-out Additional Time definition"
+[TX-OUTunimpeded]: <{{ "/references/definition/unimpeded_taxi-out_time.html" | prepend: site.baseurl | prepend: site.url }}> "Taxi-out Unimpeded Time definition"
 [ATCpredepdelay]: <{{ "/references/definition/atc_pre-departure_delay.html" | prepend: site.baseurl | prepend: site.url }}> "ATC Pre-departure Delay definition"
 
 [APT-FLTxlsx]: <{{ "/data/set/apt_flt/Airport_Traffic.xlsm" | prepend: site.baseurl | prepend: site.url }}> "APT-FLT (Excel)"
