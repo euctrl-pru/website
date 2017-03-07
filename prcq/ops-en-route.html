@@ -1,6 +1,6 @@
 ---
 layout: prcq
-title: "Operational en-route ANS performance"
+title: "Operational En-route ANS Performance"
 ---
 
 <script type="text/javascript" src="http://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
@@ -59,7 +59,7 @@ function drawVisualization()
     containerId: 'crt_ertdlypie',
     dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=ert&range=A15:C18&hl=en_GB',
     options: {
-            title: '2016', 
+            title: '2016',
             titlePosition: 'out',
             titleTextStyle: { color: 'grey', fontSize: 16 },
                        // width: 300,
@@ -191,7 +191,7 @@ function drawVisualization()
                position: 'top',
                maxLines: 2,
                textStyle: {color: 'grey', fontSize: 11 }
-                },  
+                },
         series: {
               0: {type: 'bars', color:'#C0504D', targetAxisIndex: 0},
               1: {type: 'bars', color:'#4F81BD', targetAxisIndex: 0}
@@ -216,7 +216,7 @@ google.setOnLoadCallback(drawVisualization)
       <tr>
          <th>Period</th>
          <th>Area</th>
-         <th>Update rate</th>       
+         <th>Update rate</th>
          <th>Last update</th>
          <th>Source(s)</th>
          <th>Further information</th>
@@ -225,37 +225,37 @@ google.setOnLoadCallback(drawVisualization)
    <tbody>
       <tr class = "active">
          <td>Jan-Dec 2016</td>
-         <td><a href={{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}>EUROCONTROL area</a></td>
+         <td><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL area</a></td>
          <td>Quarterly</td>
          <td>03-March-2017</td>
           <td>
-          <a href={{"/references/acronym/nm-cfmu.html"| prepend: site.baseurl | prepend: site.url }}>NM</a></td>
-         <td><a href="http://ansperformance.eu" class="btn btn-primary btn-sm" target="_blank" role="button">PRU Portal</a></td>  
+          <a href='{{"/references/acronym/nm-cfmu.html"| prepend: site.baseurl | prepend: site.url }}'>NM</a></td>
+         <td><a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}" class="btn btn-primary btn-sm" role="button">PRU Portal</a></td>
       </tr>
-   </tbody>  
+   </tbody>
 </table>
 
-<h3 class="page-header">En-route <a href={{"/references/definition/atfm_delay.html"| prepend: site.baseurl | prepend: site.url }}>ATFM delays</a></h3>
+<h3 class="page-header">En-route <a href='{{"/references/definition/atfm_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATFM delays</a></h3>
 
 <table class = "table">
    <tbody>
       <tr class = "active">
          <td><span style="color: rgb(192, 80, 77);">
-         Please note that software release 20.0 of the Network Manager on 04 April 2016 introduced a change to improve the accuracy of the ATFM delay calculation for operational purposes. For more information on the change in methodology <a href={{"/references/methodology/ATFM_delay_calculation.html"| prepend: site.baseurl | prepend: site.url }}>click here</a>. 
+         Please note that software release 20.0 of the Network Manager on 04 April 2016 introduced a change to improve the accuracy of the ATFM delay calculation for operational purposes. For more information on the change in methodology <a href='{{"/references/methodology/ATFM_delay_calculation.html"| prepend: site.baseurl | prepend: site.url }}'>click here</a>.
          </span> </td>
       </tr>
-   </tbody>  
+   </tbody>
 </table>
 
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
-    <h4>En-route <a href={{"/references/definition/atfm_delay.html"| prepend: site.baseurl | prepend: site.url }}>ATFM delay</a> per flight</h4>
-    <span class="text-muted"><a href={{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}>EUROCONTROL area</a></span>
+    <h4>En-route <a href='{{"/references/definition/atfm_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATFM delay</a> per flight</h4>
+    <span class="text-muted"><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL area</a></span>
     <div id="crt_ertdlyYY"></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
-    <h4>Total en-route delay by reported <a href={{"/references/definition/atfm_delay_codes.html"| prepend: site.baseurl | prepend: site.url }}>ATFM delay cause</a></h4>
-    <span class="text-muted"><a href={{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}>EUROCONTROL area</a></span>
+    <h4>Total en-route delay by reported <a href='{{"/references/definition/atfm_delay_codes.html"| prepend: site.baseurl | prepend: site.url }}'>ATFM delay cause</a></h4>
+    <span class="text-muted"><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL area</a></span>
     <div id="crt_ertdlytot"></div>
 </div>
 </div>
@@ -268,7 +268,7 @@ En-route ATFM delays in the EUROCONTROL area increased for the third year in a r
 </div></div></div>
 <div class="col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
- According to the <a href={{"/references/definition/atfm_delay_codes.html"| prepend: site.baseurl | prepend: site.url }}>ATFM delay classifications</a>, as reported by the <a href={{"/references/acronym/fmp.html"| prepend: site.baseurl | prepend: site.url }}>FMPs</a>, Capacity/Staffing related issues remain by far the main driver of en-route ATFM delays (55.3%), followed by weather related delays (18.3%), ATC disruptions/ industrial actions (12.3%), and Event related delays (9.1%) which also include delays due to ATC system upgrades.
+ According to the <a href='{{"/references/definition/atfm_delay_codes.html"| prepend: site.baseurl | prepend: site.url }}'>ATFM delay classifications</a>, as reported by the <a href='{{"/references/acronym/fmp.html"| prepend: site.baseurl | prepend: site.url }}'>FMPs</a>, Capacity/Staffing related issues remain by far the main driver of en-route ATFM delays (55.3%), followed by weather related delays (18.3%), ATC disruptions/ industrial actions (12.3%), and Event related delays (9.1%) which also include delays due to ATC system upgrades.
 </div></div></div>
 </div>
 
@@ -284,7 +284,7 @@ En-route ATFM delays in the EUROCONTROL area increased for the third year in a r
 
 <div class="panel panel-info">
   <div class="panel-heading">
-   Overall, 92% of the flights in the EUROCONTROL area were not affected by ATFM delays in 2016. However, the share of flights affected by en-route ATFM delays in the EUROCONTROL area increased continuously over the past three years to reach 4.8% of the controlled flights in 2016. 3.2% of the flights were affected by <a href={{"/prcq/ops-airport.html"| prepend: site.baseurl | prepend: site.url }}>airport ATFM delays</a> in 2016. 
+   Overall, 92% of the flights in the EUROCONTROL area were not affected by ATFM delays in 2016. However, the share of flights affected by en-route ATFM delays in the EUROCONTROL area increased continuously over the past three years to reach 4.8% of the controlled flights in 2016. 3.2% of the flights were affected by <a href='{{"/prcq/ops-airport.html"| prepend: site.baseurl | prepend: site.url }}'>airport ATFM delays</a> in 2016.
   </div>
 </div>
 
@@ -301,7 +301,7 @@ En-route ATFM delays in the EUROCONTROL area increased for the third year in a r
   </div>
 </div>
 
-<h3 class="page-header"><a href={{"/references/methodology/horizontal_flight_efficiency_pi.html"| prepend: site.baseurl | prepend: site.url }}>Horizontal en-route flight efficiency</a></h3>
+<h3 class="page-header"><a href='{{"/references/methodology/horizontal_flight_efficiency_pi.html"| prepend: site.baseurl | prepend: site.url }}'>Horizontal en-route flight efficiency</a></h3>
 
 <div class="row placeholders">
 <div class="col-sm-2">

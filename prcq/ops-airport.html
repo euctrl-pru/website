@@ -1,6 +1,6 @@
 ---
 layout: prcq
-title: "ANS performance @ airports"
+title: "ANS Performance @ Airports"
 ---
 
 <script type="text/javascript" src="http://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
@@ -133,7 +133,7 @@ function drawVisualization()
     view: {'columns': [0,5,4]}
   }); crt_apt9.draw();
 
-// TAXI OUT 
+// TAXI OUT
   var crt_apt10 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt10',
@@ -184,7 +184,7 @@ google.setOnLoadCallback(drawVisualization)
       <tr>
          <th>Period</th>
          <th>Area</th>
-         <th>Update rate</th>       
+         <th>Update rate</th>
          <th>Last update</th>
          <th>Source(s)</th>
          <th>Further information</th>
@@ -193,30 +193,30 @@ google.setOnLoadCallback(drawVisualization)
    <tbody>
       <tr class = "active">
          <td>Jan-Dec 2016</td>
-         <td><a href={{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}>EUROCONTROL area</a></td>
+         <td><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL area</a></td>
          <td>Quarterly</td>
          <td>03-March-2017</td>
           <td>
-          <a href={{"/references/acronym/nm-cfmu.html"| prepend: site.baseurl | prepend: site.url }}>NM</a></td>
-         <td><a href="http://ansperformance.eu" class="btn btn-primary btn-sm" target="_blank" role="button">PRU Portal</a></td>   
+          <a href='{{"/references/acronym/nm-cfmu.html"| prepend: site.baseurl | prepend: site.url }}'>NM</a></td>
+         <td><a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}" class="btn btn-primary btn-sm" role="button">PRU Portal</a></td>
       </tr>
-   </tbody>  
+   </tbody>
 </table>
 
 <h3 class="sub-header">Arrival flow management</h3>
-<div> 
-This section analyses ANS-related inefficiencies on the arrival flow at the top 30 European airports in terms of arrival <a href={{"/references/definition/atfm_delay.html"| prepend: site.baseurl | prepend: site.url }}>ATFM delay</a> and <a href={{"/references/definition/additional_asma_time.html"| prepend: site.baseurl | prepend: site.url }}>additional ASMA time</a>.   
+<div>
+This section analyses ANS-related inefficiencies on the arrival flow at the top 30 European airports in terms of arrival <a href='{{"/references/definition/atfm_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATFM delay</a> and <a href='{{"/references/definition/additional_asma_time.html"| prepend: site.baseurl | prepend: site.url }}'>additional ASMA time</a>.
 </div>
 
-<h4 class="page-header">Airport arrival <a href={{"/references/definition/atfm_delay.html"| prepend: site.baseurl | prepend: site.url }}>ATFM delays</a> (min per arrival)</h4>
+<h4 class="page-header">Airport arrival <a href='{{"/references/definition/atfm_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATFM delays</a> (min per arrival)</h4>
 <table class = "table">
    <tbody>
       <tr class = "active">
          <td><span style="color: rgb(192, 80, 77);">
-         Please note that software release 20.0 of the Network Manager on 04 April 2016 introduced a change to improve the accuracy of the ATFM delay calculation for operational purposes. For more information on the change in methodology <a href={{"/references/methodology/ATFM_delay_calculation.html"| prepend: site.baseurl | prepend: site.url }}>click here</a>. 
+         Please note that software release 20.0 of the Network Manager on 04 April 2016 introduced a change to improve the accuracy of the ATFM delay calculation for operational purposes. For more information on the change in methodology <a href='{{"/references/methodology/ATFM_delay_calculation.html"| prepend: site.baseurl | prepend: site.url }}'>click here</a>.
          </span> </td>
       </tr>
-   </tbody>  
+   </tbody>
 </table>
 <div class="row ">
 <div class="col-sm-2">
@@ -235,60 +235,60 @@ This section analyses ANS-related inefficiencies on the arrival flow at the top 
           </div>
     </div>
 
-<h4 class="page-header"><a href={{"/references/definition/additional_asma_time.html"| prepend: site.baseurl | prepend: site.url }}>Additional ASMA time</a></h4>
+<h4 class="page-header"><a href='{{"/references/definition/additional_asma_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional ASMA time</a></h4>
 <div class="row ">
 <div class="col-sm-2">
     <h5>Top 30 airports</h5>
     <div id="crt_apt6"></div>
 </div>
 <div class="col-sm-10">
-    <h5><a href={{"/references/definition/additional_asma_time.html"| prepend: site.baseurl | prepend: site.url }}>Additional ASMA time by airport (2016)</a></h5>
+    <h5><a href='{{"/references/definition/additional_asma_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional ASMA time by airport (2016)</a></h5>
     <div id="crt_apt7"></div>
 </div>
   </div><br>
 
     <div class="panel panel-info">
           <div class="panel-heading">
-          The main driver for the <a href={{"/references/definition/additional_asma_time.html"| prepend: site.baseurl | prepend: site.url }}>additional ASMA time</a> in Europe was London Heathrow which accounted for 25 % of the total minutes of the top 30 airports, while its traffic share was less than 3%. This is a consequence of the mode of operations at Heathrow, ensuring a constant demand to maximise runway throughput.
+          The main driver for the <a href='{{"/references/definition/additional_asma_time.html"| prepend: site.baseurl | prepend: site.url }}'>additional ASMA time</a> in Europe was London Heathrow which accounted for 25 % of the total minutes of the top 30 airports, while its traffic share was less than 3%. This is a consequence of the mode of operations at Heathrow, ensuring a constant demand to maximise runway throughput.
           </div>
     </div>
 
 <h3 class="sub-header">Departure flow management</h3>
-<div> 
-This section analyses ANS-related inefficiencies on the departure flow at the top 30 European airports in terms of <a href={{"/references/definition/atc_pre-departure_delay.html"| prepend: site.baseurl | prepend: site.url }}>ATC pre-departure delays</a> at the gate and <a href={{"/references/definition/additional_taxi-out_time.html"| prepend: site.baseurl | prepend: site.url }}>additional taxi-out time</a>.  
+<div>
+This section analyses ANS-related inefficiencies on the departure flow at the top 30 European airports in terms of <a href='{{"/references/definition/atc_pre-departure_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATC pre-departure delays</a> at the gate and <a href='{{"/references/definition/additional_taxi-out_time.html"| prepend: site.baseurl | prepend: site.url }}'>additional taxi-out time</a>.
 </div>
-<h4 class="page-header"><a href={{"/references/definition/atc_pre-departure_delay.html"| prepend: site.baseurl | prepend: site.url }}>ATC pre-departure delays</a></h4>
+<h4 class="page-header"><a href='{{"/references/definition/atc_pre-departure_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATC pre-departure delays</a></h4>
 <div class="row ">
 <div class="col-sm-2">
     <h5>Top 30 airports</h5>
     <div id="crt_apt8"></div>
 </div>
 <div class="col-sm-10">
-    <h5><a href={{"/references/definition/atc_pre-departure_delay.html"| prepend: site.baseurl | prepend: site.url }}>ATC pre-departure delays by airport (2016)</a></h5>
+    <h5><a href='{{"/references/definition/atc_pre-departure_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATC pre-departure delays by airport (2016)</a></h5>
     <div id="crt_apt9"></div>
 </div>
   </div><br>
 
     <div class="panel panel-info">
           <div class="panel-heading">
-          ATC-pre departure delays remained unchanged at the top 30 airports in 2016. The two Istanbul airports showed the highest level of ATC-pre departure delays, followed by Rome (FCO) and Amsterdam (AMS).  
+          ATC-pre departure delays remained unchanged at the top 30 airports in 2016. The two Istanbul airports showed the highest level of ATC-pre departure delays, followed by Rome (FCO) and Amsterdam (AMS).
           </div>
     </div>
 
-<h4 class="page-header"><a href={{"/references/definition/additional_taxi-out_time.html"| prepend: site.baseurl | prepend: site.url }}>Additional taxi-out time</a></h4>
+<h4 class="page-header"><a href='{{"/references/definition/additional_taxi-out_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional taxi-out time</a></h4>
 <div class="row placeholders">
 <div class="col-sm-2">
     <h5>Top 30 airports</h5>
     <div id="crt_apt10"></div>
 </div>
 <div class="col-sm-10">
-    <h5><a href={{"/references/definition/additional_taxi-out_time.html"| prepend: site.baseurl | prepend: site.url }}>Additional taxi-out by airport (2016)</a></h5>
+    <h5><a href='{{"/references/definition/additional_taxi-out_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional taxi-out by airport (2016)</a></h5>
     <div id="crt_apt11"></div>
 </div>
   </div><br>
 
       <div class="panel panel-info">
           <div class="panel-heading">
-          Additional taxi-out time increased slightly at the top 30 airports in 2016. London Heathrow (LHR), London Gatwick (LGW) and Rome (FCO) showed the highest levels of additional taxi-out time per departure in 2016.    
+          Additional taxi-out time increased slightly at the top 30 airports in 2016. London Heathrow (LHR), London Gatwick (LGW) and Rome (FCO) showed the highest levels of additional taxi-out time per departure in 2016.
           </div>
     </div>

@@ -61,7 +61,7 @@ function drawVisualization()
          containerId: 'crt_saf_accatm_YY',
          dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/gviz/tq?sheet=saf&range=A23:D33&headers=1&tq=',
          options: {
-            title: 'Accidents with ATM contribution', 
+            title: 'Accidents with ATM contribution',
             titlePosition: 'out',
             titleTextStyle: { color: 'grey', fontSize: 16 },
             chartArea: { left: 40, top: 60, width: '80%', height: '55%' },
@@ -273,7 +273,7 @@ google.setOnLoadCallback(drawVisualization)
       <tr>
          <th>Period</th>
          <th>Area</th>
-         <th>Update rate</th>       
+         <th>Update rate</th>
          <th>Last update</th>
          <th>Source</th>
       </tr>
@@ -281,12 +281,12 @@ google.setOnLoadCallback(drawVisualization)
    <tbody>
       <tr class = "active">
          <td>Jan-Dec</td>
-         <td><a href={{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}>EUROCONTROL area</a></td>
+         <td><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL Area</a></td>
          <td>Annually</td>
          <td>03-March-2017</td>
-         <td><a href={{"/references/acronym/src.html"| prepend: site.baseurl | prepend: site.url }}>SRC</a></td>
+         <td><a href='{{"/references/acronym/src.html"| prepend: site.baseurl | prepend: site.url }}'>SRC</a></td>
       </tr>
-   </tbody>  
+   </tbody>
 </table>
 
 
@@ -294,10 +294,10 @@ google.setOnLoadCallback(drawVisualization)
    <tbody>
       <tr class = "active">
          <td><span style="color: rgb(192, 80, 77);">
-         Please note that the preliminary (P) 2016 data will only be available in April 2017 
+         Please note that the preliminary (P) 2016 data will only be available in April 2017
          </span> </td>
       </tr>
-   </tbody>  
+   </tbody>
 </table>
 
 <h3 class="sub-header">Air traffic accidents</h3>
@@ -326,11 +326,11 @@ Similarly to 2014 this represents approximately the 20% of total accidents.
 <h3 class="sub-header">ATM related incidents</h3>
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
-<h4><a href={{"/references/acronym/smi.html"| prepend: site.baseurl | prepend: site.url }}>Separation Minima Infringements (SMI)</a></h4>
+<h4><a href='{{"/references/acronym/smi.html"| prepend: site.baseurl | prepend: site.url }}'>Separation Minima Infringements (SMI)</a></h4>
 <div id="crt_saf_smi_YY"></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
-<h4><a href={{"/references/acronym/upa.html"| prepend: site.baseurl | prepend: site.url }}>Unauthorised Penetration of Airspace (UPAs)</a></h4>
+<h4><a href='{{"/references/acronym/upa.html"| prepend: site.baseurl | prepend: site.url }}'>Unauthorised Penetration of Airspace (UPAs)</a></h4>
 <div id="crt_saf_upa_YY"></div>
 </div>
 </div>
@@ -338,21 +338,21 @@ Similarly to 2014 this represents approximately the 20% of total accidents.
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
- Despite an increase in traffic, the number of reported risk bearing SMIs (Severity A+B) decreased in 2015 from 273 to 241.   
- Overall, 10% of all occurrences reported in 2015 were categorised as risk bearing occurrences which is 2% less than in 2014. 
+ Despite an increase in traffic, the number of reported risk bearing SMIs (Severity A+B) decreased in 2015 from 273 to 241.
+ Overall, 10% of all occurrences reported in 2015 were categorised as risk bearing occurrences which is 2% less than in 2014.
 </div></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
- The number of risk bearing UPA occurrences (Severity A+B) increased notably from 60 to 88 in 2015. 
- As a result, the share of risk bearing UPA occurrences in the total reported UPAs increased from 1% to 2% in 2015. 
+ The number of risk bearing UPA occurrences (Severity A+B) increased notably from 60 to 88 in 2015.
+ As a result, the share of risk bearing UPA occurrences in the total reported UPAs increased from 1% to 2% in 2015.
 </div></div>
 </div>
 </div>
 
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
-<h4><a href={{"/references/acronym/ri.html"| prepend: site.baseurl | prepend: site.url }}>Runway Incursions (RIs)</a></h4>
+<h4><a href='{{"/references/acronym/ri.html"| prepend: site.baseurl | prepend: site.url }}'>Runway Incursions (RIs)</a></h4>
 <div id="crt_saf_ri_YY"></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
@@ -365,13 +365,13 @@ Similarly to 2014 this represents approximately the 20% of total accidents.
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
-The reported risk bearing runway incursions (Severity A+B) decreased from 100 to 94 in 2015.  
-At the same time, the share of risk bearing runway incursions remained at 7% of the total reported RI occurrences in 2015. 
+The reported risk bearing runway incursions (Severity A+B) decreased from 100 to 94 in 2015.
+At the same time, the share of risk bearing runway incursions remained at 7% of the total reported RI occurrences in 2015.
 </div></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
-The total number of risk bearing ATM specific occurrences decreased from 463 to 453 in 2015 (-2.2%). 
+The total number of risk bearing ATM specific occurrences decreased from 463 to 453 in 2015 (-2.2%).
 At the same time, the total number of reported ATM Specific Occurrences increased which was mainly due to changes in data submission in one State.
 </div></div>
 </div>

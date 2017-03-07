@@ -1,6 +1,6 @@
 ---
 layout: prcq
-title: "Executive summary - draft final Performance Review Report 2016"
+title: "Executive Summary - draft final Performance Review Report 2016"
 ---
 <style>
 .headimg {
@@ -222,29 +222,29 @@ that in 2016, the unit costs of delays will be significantly higher than in 2015
 affect ANSPs economic cost-effectiveness.
 
 
-[composite_hr]: <{{ "/references/definition/composite_flight_hour.html" | prepend: site.baseurl | prepend: site.url }}> "Composite flight hour definition"
-[esra08]: <{{ "/references/definition/ESRA_2008_Area.html" | prepend: site.baseurl | prepend: site.url }}> "ESRA 08 area"
-[ectl_area]: <{{ "/references/definition/eurocontrol_area.html" | prepend: site.baseurl | prepend: site.url }}> "EUROCONTROL area"
-[atfm_dly]: <{{ "/references/definition/atfm_delay.html" | prepend: site.baseurl | prepend: site.url }}> "ATFM delay"
-[atc_pre]: <{{ "/references/definition/atc_pre-departure_delay.html" | prepend: site.baseurl | prepend: site.url }}> "ATC pre-departure delay"
+[composite_hr]: <{{ "/references/definition/composite_flight_hour.html" | prepend: site.baseurl | prepend: site.url }}> "Composite Flight Hour definition"
+[esra08]: <{{ "/references/definition/ESRA_2008_Area.html" | prepend: site.baseurl | prepend: site.url }}> "ESRA 08 Area"
+[ectl_area]: <{{ "/references/definition/eurocontrol_area.html" | prepend: site.baseurl | prepend: site.url }}> "EUROCONTROL Area"
+[atfm_dly]: <{{ "/references/definition/atfm_delay.html" | prepend: site.baseurl | prepend: site.url }}> "ATFM Delay"
+[atc_pre]: <{{ "/references/definition/atc_pre-departure_delay.html" | prepend: site.baseurl | prepend: site.url }}> "ATC Pre-departure Delay"
 [a_cdm]: <{{ "/references/definition/a_cdm.html" | prepend: site.baseurl | prepend: site.url }}> "A-CDM"
 [asma_add]: <{{ "/references/definition/additional_asma_time.html" | prepend: site.baseurl | prepend: site.url }}> "Additional ASMA time"
 
 [ansp]: <{{ "/references/acronym/ansp.html" | prepend: site.baseurl | prepend: site.url }}> "Air Navigation Service Provider"
 [ans]: <{{ "/references/acronym/ans.html" | prepend: site.baseurl | prepend: site.url }}> "Air Navigation Services"
 [upa]: <{{ "/references/acronym/uap.html" | prepend: site.baseurl | prepend: site.url }}> "Unauthorised Penetrations of Airspace"
-[smi]: <{{ "/references/acronym/smi.html" | prepend: site.baseurl | prepend: site.url }}> "Separation minima infringements (SMIs)"
-[ri]: <{{ "/references/acronym/ri.html" | prepend: site.baseurl | prepend: site.url }}> "Runway incursions (RIs)"
+[smi]: <{{ "/references/acronym/smi.html" | prepend: site.baseurl | prepend: site.url }}> "Separation Minima Infringements (SMIs)"
+[ri]: <{{ "/references/acronym/ri.html" | prepend: site.baseurl | prepend: site.url }}> "Runway Incursions (RIs)"
 [alos]: <{{ "/references/acronym/alos.html" | prepend: site.baseurl | prepend: site.url }}> "Acceptable Level of Safety Performance (ALoSP)"
 [acc]: <{{ "/references/acronym/acc.html" | prepend: site.baseurl | prepend: site.url }}> "Area Control Center"
 [nm]: <{{ "/references/acronym/nm.html" | prepend: site.baseurl | prepend: site.url }}> "Network Manager"
 [fra]: <{{ "/references/acronym/fra.html" | prepend: site.baseurl | prepend: site.url }}> "Free Route Airspace (FRA)"
 
-[vfe_cdo]: <{{ "/references/methodology/cd_vertical_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }}> "Vertical en-route flight efficiency"
-[hfe]: <{{ "/references/methodology/horizontal_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }}> "Horizontal en-route flight efficiency"
+[vfe_cdo]: <{{ "/references/methodology/cd_vertical_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }}> "Vertical En-route Flight Efficiency"
+[hfe]: <{{ "/references/methodology/horizontal_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }}> "Horizontal En-route Flight Efficiency"
 
 [traffic]: <{{ "/prcq/traffic.html" | prepend: site.baseurl | prepend: site.url }}> "Traffic"
 [safety]: <{{ "/prcq/safety.html" | prepend: site.baseurl | prepend: site.url }}> "Safety"
-[ops_ert]: <{{ "/prcq/ops-airport.html" | prepend: site.baseurl | prepend: site.url }}> "Operations en-route"
-[ops_apt]: <{{ "/prcq/ops-en-route.html" | prepend: site.baseurl | prepend: site.url }}> "Operations at airports"
+[ops_ert]: <{{ "/prcq/ops-airport.html" | prepend: site.baseurl | prepend: site.url }}> "Operations En-route"
+[ops_apt]: <{{ "/prcq/ops-en-route.html" | prepend: site.baseurl | prepend: site.url }}> "Operations at Airports"
 [economics]: <{{ "/prcq/economics.html" | prepend: site.baseurl | prepend: site.url }}> "Economics"
