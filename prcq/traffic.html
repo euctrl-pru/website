@@ -66,11 +66,11 @@ function drawVisualization()
     dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=flts&range=G1:J5&hl=en_GB',
     options:{
           //width: 450, height: 150,
-          //chartArea: {left: 80, top: 30, width:'60%',height:'60%'},
+          chartArea: {left: 60, top: 10, width:'80%',height:'60%'},
           legend: 'none',
             seriesType: 'bars',
           colors: ['#4F81BD'],
-          vAxis:{title:'Avg. daily flights',
+          vAxis:{title:'Change avg. daily flights vs 2015',
               titleTextStyle : {color: '#5D7CBA', fontSize: 12},
               textStyle:{color: '#5D7CBA'}}
         },
@@ -84,12 +84,12 @@ function drawVisualization()
     containerId: 'crt_segYY',
     dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=flts&range=L1:O7&hl=en_GB',
     options:{
-          //width: 450, height: 150,
-          //chartArea: {left: 80, top: 30, width:'60%',height:'60%'},
+         // width: 450, height: 150,
+          chartArea: {left: 60, top: 10, width:'80%',height:'60%'},
           legend: 'none',
             seriesType: 'bars',
           colors: ['#4F81BD'],
-          vAxis:{title:'Avg. daily flights',
+          vAxis:{title:'Change avg. daily flights vs 2015',
               titleTextStyle : {color: '#5D7CBA', fontSize: 12},
               textStyle:{color: '#5D7CBA'}}
         },
@@ -131,9 +131,6 @@ function drawVisualization()
     options: {
         height: 350,
         chartArea: {left: 70, top: 10, width:'85%',height:'50%'},
-        //title: 'Traffic variation at the top 30 airports in terms of traffic (2016)',
-        //titlePosition: 'out',
-       // titleTextStyle: {color: 'grey', fontSize: 16,},
         legend: 'none',
         series: {
               0: {type: 'bars', color:'#4F81BD', targetAxisIndex: 0},

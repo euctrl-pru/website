@@ -19,7 +19,7 @@ PRR 2016 presents an assessment of the performance of
 the calendar year 2016.
 
 
-### {% img prcq-traffic.png magick:resize:50x50 alt:'Traffic' class:'leadimg' %} Traffic
+### {% img prcq-traffic.png magick:resize:50x50 alt:'Traffic' class:'leadimg' %} [Traffic][traffic]
 
 In 2016, air traffic in the EUROCONTROL area [(ESRA08)][esra08] continued to
 increase for the third year in a row.
@@ -46,7 +46,7 @@ decreased by 1.6 percent points to reach 81.5% in 2016.
 
 
 
-### {% img prcq-safety.png magick:resize:50x50 alt:'Safety' class:'leadimg' %} Safety
+### {% img prcq-safety.png magick:resize:50x50 alt:'Safety' class:'leadimg' %} [Safety][safety]
 
 Safety is the primary objective of ANS and overall safety levels in the
 [EUROCONTROL area][ectl_area] remain high.
@@ -76,7 +76,7 @@ guidance material in order to ensure a harmonised approach in the
 
 
 
-### {% img prcq-operations-enroute.png magick:resize:50x50 alt:'Operations En-route' class:'leadimg' %} Operations En-route
+### {% img prcq-operations-enroute.png magick:resize:50x50 alt:'Operations En-route' class:'leadimg' %} [Operations En-route][ops_ert]
 
 The PRC’s concern about over conservative capacity planning and the risk
 of performance deterioration when traffic grows again has been voiced on
@@ -137,7 +137,7 @@ restricted/segregated airspace and the absence of clear strategic objectives.
 
 
 
-### {% img prcq-operations-airport.png magick:resize:50x50 alt:'Operations at Airports' class:'leadimg' %} Operations at Airports
+### {% img prcq-operations-airport.png magick:resize:50x50 alt:'Operations at Airports' class:'leadimg' %} [Operations at Airports][ops_apt]
 
 The analysis of the top 30 airports in terms of traffic showed that nine airports
 (Amsterdam, Istanbul Ataturk, London Gatwick, Stockholm Arlanda, Istanbul Sabiha Gökçen,
@@ -189,7 +189,7 @@ added as a new metric in this year’s report. On average, inefficiencies were m
 
 
 
-### {% img prcq-economics.png magick:resize:50x50 alt:'Economics' class:'leadimg' %} Economics
+### {% img prcq-economics.png magick:resize:50x50 alt:'Economics' class:'leadimg' %} [Economics][economics]
 
 In 2015, which is the latest year for which actual financial data are available,
 the en-route ANS unit costs of the Pan-European system amounted to 49.2 €2009 per
@@ -242,3 +242,9 @@ affect ANSPs economic cost-effectiveness.
 
 [vfe_cdo]: <{{ "/references/methodology/cd_vertical_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }}> "Vertical en-route flight efficiency"
 [hfe]: <{{ "/references/methodology/horizontal_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }}> "Horizontal en-route flight efficiency"
+
+[traffic]: <{{ "/prcq/traffic.html" | prepend: site.baseurl | prepend: site.url }}> "Traffic"
+[safety]: <{{ "/prcq/safety.html" | prepend: site.baseurl | prepend: site.url }}> "Safety"
+[ops_ert]: <{{ "/prcq/ops-airport.html" | prepend: site.baseurl | prepend: site.url }}> "Operations en-route"
+[ops_apt]: <{{ "/prcq/ops-en-route.html" | prepend: site.baseurl | prepend: site.url }}> "Operations at airports"
+[economics]: <{{ "/prcq/economics.html" | prepend: site.baseurl | prepend: site.url }}> "Economics"
