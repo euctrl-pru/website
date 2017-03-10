@@ -5,7 +5,7 @@ title: "Welcome to the new PRC Quarterly online review!"
 
 
 
-## {% img ralph_riedle.png magick:resize:90x90 alt:'Ralph Riedle' class:'leadimg' %} {{ page.title }}
+### {% img ralph_riedle.png magick:resize:90x90 alt:'Ralph Riedle' class:'leadimg' %} {{ page.title }}
 
 From April 2017 onwards, the PRC will publish short quarterly briefings so that
 high level performance information is available more quickly. The quarterly PRC
