@@ -18,7 +18,7 @@ figures from the [draft final Performance Review Report (PRR 2016)][PRR2016_cons
 which is presently available for consultation.
 
 Stakeholders are invited to provide comments on the draft final PRR 2016 to
-[Catherine Hennessy](mailto:PRU-support@eurocontrol.int)
+[Performance Review Unit (PRU-support@eurocontrol.int)](mailto:PRU-support@eurocontrol.int)
 **no later than 07 April 2017**.
 
 We are looking forward to hearing from you!
