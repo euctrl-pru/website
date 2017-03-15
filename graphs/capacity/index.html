@@ -45,16 +45,16 @@ keywords: capacity, dataviz, performance, air transport, flights, europe
 
 <div class="row"> 
     <div class="col-sm-6">
-        <h5>Evolution over time (EUROCONTROL level)</h5>
+        <h5>Evolution over time and by <a href='{{"/references/definition/atfm_delay_codes.html"| prepend: site.baseurl | prepend: site.url }}'>delay cause</a> (EUROCONTROL area)</h5>
         <div id="crt_cap_ert_YY"></div><br>
         <div id="crt_cap_ert_MM"></div>
     </div>
 
     <div class="col-sm-6 offset-10">
-        <h5>Results by ANSP (Jan-Dec 2016)</h5>
+        <h5>Results by ANSP (Jan-Feb 2017)</h5>
         <div id="tbl_cap_ert_YY"></div>
     </div>
-</div><br>
+</div><br> 
 
 <div class="row">
 <h4><a href="{{ '' | prepend: site.baseurl | prepend: site.url }}/references/dataset/En-Route_ATFM_Delay_FIR.html">En-route ATFM delays</a> by
@@ -64,24 +64,25 @@ keywords: capacity, dataviz, performance, air transport, flights, europe
     </div> 
 
     <div class="col-sm-6 offset-10">
-        <h5>Results by <a href="{{ '' | prepend: site.baseurl | prepend: site.url }}/references/definition/fab.html">FAB (FIR)</a> (Jan-Dec 2016)</h5>
+        <h5>Results by <a href="{{ '' | prepend: site.baseurl | prepend: site.url }}/references/definition/fab.html">FAB (FIR)</a> (2015, 2016, Jan-Feb 2017)</h5>
         <div id="tbl_cap_fir_ert_YY"></div>
     </div>
 </div><br>
 
 <h4 id="apt_dly">Airport Arrival <a href='{{"/references/definition/atfm_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATFM delays</a></h4>
 
-<div class="row">
+<div class="row"> 
     <div class="col-sm-6">
-        <div id="crt_cap_apt_YY"></div>
-        <div id="crt_cap_apt_MM"></div>
+        <h5>Evolution over time and by <a href='{{"/references/definition/atfm_delay_codes.html"| prepend: site.baseurl | prepend: site.url }}'>delay cause</a> (EUROCONTROL area)</h5>
+        <div id="crt_cap_apt_YY"></div><br>
+        <div id="crt_cap_apt_MM"></div>  
     </div>
 
     <div class="col-sm-6 offset-10">
-        <h5>Airport Arrival ATFM Delays by Airport (Jan-Feb 2017)</h5>
+        <h5>Results by airport (Jan-Feb 2017)</h5>
         <div id="tbl_cap_apt_YY"></div>
     </div>
-</div> 
+</div><br>  
 
 {% javascript crt_cap_ert_YY %}
 {% javascript crt_cap_ert_MM %}

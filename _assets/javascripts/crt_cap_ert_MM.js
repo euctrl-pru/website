@@ -40,7 +40,7 @@
                   //titleTextStyle: { color: 'grey', fontSize: 10 },
                   type: 'string',
                   slantedText: true,
-                  slantedTextAngle: 40,
+                  //slantedTextAngle: 40,
                   showTextEvery: 1,
                   textStyle: { fontSize: 11 }
                }
