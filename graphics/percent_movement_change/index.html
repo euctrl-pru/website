@@ -11,7 +11,7 @@ layout: graphic
  }
 
  .xlabel, .axis text {
-   font: 10px sans-serif;
+   font: 8px sans-serif;
  }
 
  .axis path,
@@ -63,9 +63,9 @@ layout: graphic
   <script src="//d3js.org/d3.v3.min.js"></script>
   <script>
 
-   var margin = {top: 20, right: 30, bottom: 40, left: 30},
-       width = 540 - margin.left - margin.right,
-       height = 450 - margin.top - margin.bottom;
+   var margin = {top: 20, right: 10, bottom: 40, left: 40},
+       width = 550 - margin.left - margin.right,
+       height = 400 - margin.top - margin.bottom;
 
    var formatPercent = d3.format("+,%");
    var x = d3.scale.linear()
@@ -130,7 +130,7 @@ layout: graphic
         .attr("x", width / 2 )
         .attr("y",  height + margin.bottom - 4)
         .style("text-anchor", "bottom")
-        .text("% change (Jan 2017 vs Jan 2016)");
+        .text("% change (Jan-Feb 2017 vs Jan-Feb 2016)");
 
      svg.append("g")
         .attr("class", "x axis")
