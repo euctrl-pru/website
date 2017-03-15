@@ -1,0 +1,5 @@
+# from http://stackoverflow.com/a/27400343/963575
+url: "http://www.eurocontrol.int" # the base hostname & protocol for your site; NO https if served by github pages!!!
+canonical: "http://www.eurocontrol.int"  # NO https if served by github pages!!!
+baseurl: "/prudata/prcq" # see https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/
+searchsites: "www.eurocontrol.int/prudata/prcq"
