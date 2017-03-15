@@ -6,10 +6,11 @@
          containerId: 'crt_cap_ert_YY',
          dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1g_EclskD6qP8b_aYYhW3xrng616ZysYW5WVtGD9pOXk/edit?usp=sharing&alt=json&sheet=ERT_ATFM_YY&range=A1:I11',
          options: {
-            width: 500, height: 300,
-            chartArea: { left: 65, top: 20 },
-            title: 'En-route ATFM Delays (yearly)',
-            titleTextStyle: { color: 'grey', fontSize: 12 },
+            //width: 500, height: 300,
+            //chartArea: { left: 65, top: 20 },
+            chartArea: { left: 50, top: 20, width: '60%', height: '70%' },
+            //title: 'En-route ATFM Delays (yearly)',
+            //titleTextStyle: { color: 'grey', fontSize: 12 },
             legend: {
                position: 'right',
                textStyle: { color: 'grey', fontSize: 9 }
@@ -34,8 +35,8 @@
                slantedText: true,
                slantedTextAngle: 40,
                showTextEvery: 1,
-               title: 'Source: PRU Analysis; NM',
-               titleTextStyle: { color: 'grey', fontSize: 10 }
+               //title: 'Source: PRU Analysis; NM',
+               //titleTextStyle: { color: 'grey', fontSize: 10 }
             }
          },
          view: { columns: [0, 2, 3, 4, 5, 6, 7, 8] }

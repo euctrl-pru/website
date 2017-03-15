@@ -5,11 +5,34 @@ excerpt: Traffic data visualization.
 keywords: visualization, graphs, dataviz, performance, air transport, flights, europe
 ---
 
+<table class = "table">
+   <thead>
+      <tr>
+         <th>Period</th>
+         <th>Area</th>
+         <th>Update rate</th>
+         <th>Last update</th>
+         <th>Source(s)</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class = "active">
+         <td>Jan-Feb 2017</td>
+         <td><a href={{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}>EUROCONTROL area</a></td>
+         <td>Monthly</td>
+         <td>15-March-2017</td>
+         <td>
+          <a href="{{ '/references/acronym/nm-cfmu.html' | prepend: site.baseurl | prepend: site.url }}">NM</a>,
+          <a href="{{ '/references/acronym/crco.html'    | prepend: site.baseurl | prepend: site.url }}">CRCO</a>
+          </td>
+      </tr>
+   </tbody>
+</table>
+
+
 <h3 id="ert_flt">Flights</h3>
 <div class="row">
     <div class="col-lg-6">
-        <h5>EUROCONTROL Area</h5>
-        <br>
         <div id="crt_flts_YY"></div>
         <div id="crt_flts_MM"></div>
     </div>

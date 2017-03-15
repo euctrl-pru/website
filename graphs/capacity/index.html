@@ -5,47 +5,83 @@ excerpt: Capacity data visualizations.
 keywords: capacity, dataviz, performance, air transport, flights, europe
 ---
 
-Please note that software release 20.0 of the Network Manager on 04 April 2016
-introduced a change to improve the accuracy of the ATFM delay calculation for
-operational purposes.
-For more information on the change in methodology
-<a href="{{ '' | prepend: site.baseurl | prepend: site.url }}/references/methodology/ATFM_delay_calculation.html">click here</a>.
 
-<h3 id="ert_dly">En-route ATFM delays</h3>
-<div class="row">
-    <div class="col-lg-6">
-        <h5>EUROCONTROL Area</h5>
-        <div id="crt_cap_ert_YY"></div>
+<table class = "table">
+   <thead>
+      <tr>
+         <th>Period</th>
+         <th>Area</th>
+         <th>Update rate</th>
+         <th>Last update</th>
+         <th>Source(s)</th>
+         <th>Data</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class = "active">
+         <td>Jan-Feb 2017</td>
+         <td><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL area</a></td>
+         <td>Monthly</td>
+         <td>15-March-2017</td>
+          <td>
+          <a href='{{"/references/acronym/nm-cfmu.html"| prepend: site.baseurl | prepend: site.url }}'>NM</a>,
+          <a href='{{"/references/acronym/pru.html"   | prepend: site.baseurl | prepend: site.url }}'>PRU</a></td>
+          <td><a href='{{"/data/performancearea/" | prepend: site.baseurl | prepend: site.url }}'><span class="glyphicon glyphicon-download" aria-hidden="true"></span></a></td>
+      </tr>
+   </tbody>
+</table>
+
+<table class = "table"> 
+   <tbody>
+      <tr class = "active">
+         <td><span style="color: rgb(192, 80, 77);">
+         Please note that software release 20.0 of the Network Manager on 04 April 2016 introduced a change to improve the accuracy of the ATFM delay calculation for operational purposes. For more information on the change in methodology <a href='{{"/references/methodology/ATFM_delay_calculation.html"| prepend: site.baseurl | prepend: site.url }}'>click here</a>.
+         </span> </td>
+      </tr>
+   </tbody>
+</table>
+
+<h4 class="page-header">En-route <a href='{{"/references/definition/atfm_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATFM delays</a></h4>
+
+<div class="row"> 
+    <div class="col-sm-6">
+        <h5>Evolution over time (EUROCONTROL level)</h5>
+        <div id="crt_cap_ert_YY"></div><br>
         <div id="crt_cap_ert_MM"></div>
+    </div>
 
-        <h5>En-route ATFM delays by Entity (Jan-Feb 2017)</h5>
+    <div class="col-sm-6 offset-10">
+        <h5>Results by ANSP (Jan-Dec 2016)</h5>
         <div id="tbl_cap_ert_YY"></div>
     </div>
-    <div class="col-lg-6 offset-10" style="border-style: solid; border-width:thin; border-color: #bfbfbf;">
-      <h5><a href="{{ '' | prepend: site.baseurl | prepend: site.url }}/references/dataset/En-Route_ATFM_Delay_FIR.html">En-route ATFM delays</a> by
-      <a href="{{ '' | prepend: site.baseurl | prepend: site.url }}/references/definition/fab.html">FAB (FIR)</a> (Jan-Feb 2017)</h5>
-        <div id="tbl_cap_fir_ert_YY"></div>
-        <br>
-        <div id="crt_cap_fir_ert_YY"></div>
-
-        <br>
-    </div>
-</div>
-
-<h3 id="apt_dly">Airport Arrival ATFM delays</h3>
+</div><br>
 
 <div class="row">
-    <div class="col-lg-6">
-        <h5>EUROCONTROL Area</h5>
+<h4><a href="{{ '' | prepend: site.baseurl | prepend: site.url }}/references/dataset/En-Route_ATFM_Delay_FIR.html">En-route ATFM delays</a> by
+      <a href="{{ '' | prepend: site.baseurl | prepend: site.url }}/references/definition/fab.html">FAB (FIR)</a></h4>
+    <div class="col-sm-6"><br><br>
+        <div id="crt_cap_fir_ert_YY"></div> 
+    </div> 
+
+    <div class="col-sm-6 offset-10">
+        <h5>Results by <a href="{{ '' | prepend: site.baseurl | prepend: site.url }}/references/definition/fab.html">FAB (FIR)</a> (Jan-Dec 2016)</h5>
+        <div id="tbl_cap_fir_ert_YY"></div>
+    </div>
+</div><br>
+
+<h4 id="apt_dly">Airport Arrival <a href='{{"/references/definition/atfm_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATFM delays</a></h4>
+
+<div class="row">
+    <div class="col-sm-6">
         <div id="crt_cap_apt_YY"></div>
         <div id="crt_cap_apt_MM"></div>
     </div>
-    <div class="col-lg-6 offset-10">
+
+    <div class="col-sm-6 offset-10">
         <h5>Airport Arrival ATFM Delays by Airport (Jan-Feb 2017)</h5>
         <div id="tbl_cap_apt_YY"></div>
     </div>
-</div>
-
+</div> 
 
 {% javascript crt_cap_ert_YY %}
 {% javascript crt_cap_ert_MM %}
@@ -53,7 +89,7 @@ For more information on the change in methodology
 {% javascript tbl_cap_fir_ert_YY %}
 {% javascript crt_cap_apt_YY %}
 {% javascript crt_cap_apt_MM %}
-{% javascript tbl_cap_apt_YY %}
+{% javascript tbl_cap_apt_YY %} 
 
 <script>
  tbl_cap_fir_ert_YY.chart('{{ "" | prepend: site.baseurl | prepend: site.url }}');

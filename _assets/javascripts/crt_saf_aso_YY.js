@@ -1,14 +1,13 @@
 (function() {
    function dv() {
-      // SAFETY - ATM Specific Technical Events - YY - CHART [EU_YY]
+// SAFETY - ATM Specific Technical Events - YY - CHART [EU_YY]
       var crt_saf_aso_YY = new google.visualization.ChartWrapper({
          chartType: 'ComboChart',
          containerId: 'crt_saf_aso_YY',
-         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1qChhA2bkwkIv5B70cFNOEs4ubuP1xE2gceWcfAJozcg/edit?usp=sharing&sheet=ASO&range=A5:H16',
+         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1qChhA2bkwkIv5B70cFNOEs4ubuP1xE2gceWcfAJozcg/edit?usp=sharing&sheet=ASO&range=A5:H17',
          options: {
-            title: 'ATM Specific Occurrences (ATM-S)',
             titleTextStyle : { color: 'grey', fontSize: 12 },
-            chartArea: { left: 50, top: 50, width: '70%', height: '55%' },
+            chartArea: { left: 50, top: 40, width: '75%', height: '60%' },
             legend: {
                position: 'top',
                maxLines: 3,
@@ -21,19 +20,16 @@
                0: { type: 'bars', color: '#C0504D' }
             },
             vAxis: {
-               title: 'Number of Occurrences',
+               title: 'count',
                titleTextStyle: { color: 'grey', fontSize: 11 },
                textStyle: { color: 'grey' }
             },
             hAxis: {
-               title: 'Source: SRC Intermediate Report 2015',
-               titleTextStyle: { color: 'grey', fontSize: 11 },
                type: 'string',
-               slantedTextAngle: 40,
                textStyle: { fontSize: 11 }
             }
          },
-         view: { columns: [0, 7, 6, 5] }
+         view: { columns: [0, 7, 6, 5], rows: [2,3,4,5,6,7,8,9,10,11]  }
       });
       crt_saf_aso_YY.draw();
    }

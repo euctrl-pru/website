@@ -17,7 +17,7 @@ function drawVisualization()
          containerId: 'crt_saf_acc_YY',
          dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/gviz/tq?sheet=saf&range=A5:D15&headers=1&tq=',
          options: {
-            title: 'Air traffic accidents',
+            title: 'Accidents',
             titlePosition: 'out',
             titleTextStyle: { color: 'grey', fontSize: 16,},
             chartArea: { left: 40, top: 60, width: '80%', height: '55%' },
@@ -83,7 +83,7 @@ function drawVisualization()
                   textStyle: { color: 'grey' }
                },
                1: {
-                  title: '% of accidents',
+                  title: '% of accidents with ATM contribution',
                   titleTextStyle: { color: 'C0504D', fontSize: 11 },
                   textStyle: { color:'C0504D' }
                }
@@ -97,170 +97,7 @@ function drawVisualization()
          },
          view: { columns: [0, 1, 2, 3] }
       });
-      crt_saf_accatm_YY.draw();
-
-
-// SAFETY - Separation minima infringements - YY - CHART
-      var crt_saf_smi_YY = new google.visualization.ChartWrapper({
-         chartType: 'ComboChart',
-         containerId: 'crt_saf_smi_YY',
-         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/gviz/tq?sheet=saf&range=A41:F51&headers=1&tq=',
-         options: {
-            chartArea: { left: 50, top: 40, width: '75%', height: '60%' },
-            legend: {
-               position: 'top',
-               maxLines: 2,
-               textStyle: {color: 'grey', fontSize: 10 }
-            },
-            isStacked : 'true',
-            series: {
-               0: { type: 'lines', color:'darkgrey', lineWidth: 1, pointSize: 6,targetAxisIndex: 0 },
-               1: { type: 'lines', color:'#5D7CBA', lineWidth: 1, pointSize: 6,targetAxisIndex: 1 },
-               2: { type: 'bars', color:'#376092', targetAxisIndex: 0 },
-               3: { type: 'bars', color:'#B9CDE5', targetAxisIndex: 0 }
-            },
-            vAxes:{
-               0: {
-                  title:'count',
-                  titleTextStyle: { color: 'grey', fontSize: 11 },
-                  textStyle: { color: 'grey' }
-               },
-               1: {
-                  title: 'reported SMIs',
-                  titleTextStyle: { color: '#5D7CBA', fontSize: 11 },
-                  textStyle: { color:'#5D7CBA' }
-               }
-            },
-            hAxis: {
-               titleTextStyle: { color: 'grey', fontSize: 11 },
-               type: 'string',
-               slantedTextAngle: 40,
-               textStyle: { fontSize: 11 }
-            }
-         },
-         view: {columns: [0, 1, 2, 4, 5] }
-      });
-      crt_saf_smi_YY.draw();
-
-// SAFETY - UNAUTHORISED PENETRATION OF AIRSPACE - YY - CHART [EU_YY]
-      var crt_saf_upa_YY = new google.visualization.ChartWrapper({
-         chartType: 'ComboChart',
-         containerId: 'crt_saf_upa_YY',
-         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/gviz/tq?sheet=saf&range=A59:F69&headers=1&tq=',
-         options: {
-            chartArea: { left: 50, top: 40, width: '75%', height: '60%' },
-            legend: {
-               position: 'top',
-               maxLines: 2,
-               textStyle: { color: 'grey', fontSize: 10 }
-            },
-            isStacked : 'true',
-            series: {
-               0: { type: 'lines', color: 'darkgrey', lineWidth: 1, pointSize: 6,targetAxisIndex: 0 },
-               1: { type: 'lines', color: '#5D7CBA', lineWidth: 1, pointSize: 6,targetAxisIndex: 1 },
-               2: { type: 'bars', color: '#376092', targetAxisIndex: 0 },
-               3: { type: 'bars', color: '#B9CDE5', targetAxisIndex: 0 }
-            },
-            vAxes: {
-               0: {
-                  title: 'count',
-                  titleTextStyle: { color: 'grey', fontSize: 11 },
-                  textStyle: { color: 'grey' }
-               },
-               1: {
-                  title: 'reported UPAs',
-                  titleTextStyle: { color: '#5D7CBA', fontSize: 11 },
-                  textStyle: { color:'#5D7CBA' }
-               }
-            },
-            hAxis: {
-               titleTextStyle: { color: 'grey', fontSize: 11 },
-               type: 'string',
-               slantedTextAngle: 40,
-               textStyle: { fontSize: 11 }
-            }
-         },
-         view: { columns: [0, 1, 2, 4, 5] }
-      });
-      crt_saf_upa_YY.draw();
-
-// SAFETY - RUNWAY INCURSIONS - YY - CHART [EU_YY]
-      var crt_saf_ri_YY = new google.visualization.ChartWrapper({
-         chartType: 'ComboChart',
-         containerId: 'crt_saf_ri_YY',
-         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/gviz/tq?sheet=saf&range=A77:F87&headers=1&tq=',
-         options: {
-            chartArea: { left: 50, top: 40, width: '75%', height: '60%' },
-            legend: {
-               position: 'top',
-               maxLines: 2,
-               textStyle: { color: 'grey', fontSize: 10 }
-            },
-            isStacked : 'true',
-            series: {
-               0: { type: 'lines', color: 'darkgrey', lineWidth: 1, pointSize: 6,targetAxisIndex: 0 },
-               1: { type: 'lines', color: '#5D7CBA', lineWidth: 1, pointSize: 6,targetAxisIndex: 1 },
-               2: { type: 'bars',  color: '#376092', targetAxisIndex: 0 },
-               3: { type: 'bars',  color: '#B9CDE5', targetAxisIndex: 0 }
-            },
-            vAxes:{
-               0: {
-                  title:'count',
-                  titleTextStyle: { color: 'grey', fontSize: 11 },
-                  textStyle: { color: 'grey' }
-               },
-               1: {
-                  title:'reported RIs',
-                  titleTextStyle: { color: 'grey', fontSize: 11 },
-                  textStyle: { color:'grey' }
-               }
-            },
-            hAxis: {
-               titleTextStyle: { color: 'grey', fontSize: 11 },
-               type: 'string',
-               slantedTextAngle: 40,
-               textStyle: { fontSize: 11 }
-            }
-         },
-         view: { columns: [0, 1, 2, 4, 5] }
-      });
-      crt_saf_ri_YY.draw();
-
-// SAFETY - ATM Specific Technical Events - YY - CHART [EU_YY]
-      var crt_saf_aso_YY = new google.visualization.ChartWrapper({
-         chartType: 'ComboChart',
-         containerId: 'crt_saf_aso_YY',
-         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/gviz/tq?sheet=saf&range=A95:H105&headers=1&tq=',
-         options: {
-            titleTextStyle : { color: 'grey', fontSize: 12 },
-            chartArea: { left: 50, top: 40, width: '75%', height: '60%' },
-            legend: {
-               position: 'top',
-               maxLines: 3,
-               textStyle: { color: 'grey', fontSize: 10 }
-            },
-            isStacked : 'true',
-            series: {
-               2: { type: 'bars', color: '#B9CDE5' },
-               1: { type: 'bars', color: '#376092' },
-               0: { type: 'bars', color: '#C0504D' }
-            },
-            vAxis: {
-               title: 'Number of Occurrences',
-               titleTextStyle: { color: 'grey', fontSize: 11 },
-               textStyle: { color: 'grey' }
-            },
-            hAxis: {
-               titleTextStyle: { color: 'grey', fontSize: 11 },
-               type: 'string',
-               slantedTextAngle: 40,
-               textStyle: { fontSize: 11 }
-            }
-         },
-         view: { columns: [0, 7, 6, 5] }
-      });
-      crt_saf_aso_YY.draw();
-
+      crt_saf_accatm_YY.draw(); 
 
 }
 google.setOnLoadCallback(drawVisualization)
@@ -283,15 +120,14 @@ google.setOnLoadCallback(drawVisualization)
          <td>Jan-Dec</td>
          <td><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL Area</a></td>
          <td>Annually</td>
-         <td>03-March-2017</td>
-         <td><a href='{{"/references/acronym/src.html"| prepend: site.baseurl | prepend: site.url }}'>SRC</a></td>
+         <td>15-March-2017</td>
+         <td><a href="http://www.eurocontrol.int" target="_blank">EUROCONTROL</a></td>
       </tr>
    </tbody>
 </table>
 
-
 <table class = "table">
-   <tbody>
+   <tbody> 
       <tr class = "active">
          <td><span style="color: rgb(192, 80, 77);">
          Please note that the preliminary (P) 2016 data will only be available in April 2017
@@ -300,7 +136,7 @@ google.setOnLoadCallback(drawVisualization)
    </tbody>
 </table>
 
-<h3 class="sub-header">Air traffic accidents</h3>
+<h3 class="sub-header">Accidents</h3>
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
   <div id="crt_saf_acc_YY"></div>
@@ -313,13 +149,12 @@ google.setOnLoadCallback(drawVisualization)
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
-Overall, there there were 91 accidents in the EUROCONTROL area in 2015 of which 18 were fatal.<br>
+Overall, there were 91 accidents in the EUROCONTROL area in 2015 out of which 18 were fatal.<br>
 Similarly to 2014 this represents approximately the 20% of total accidents.
 </div></div></div>
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
- There was only one reported accident with direct ATM contribution in 2015 which is the same number as in 2014.<br>
- The accident with direct ATM contribution in 2015 was a non-fatal ground collision.
+ There was only one reported accident with direct ATM contribution in 2015 (non-fatal ground collision).
 </div></div></div>
 </div>
 
@@ -328,6 +163,7 @@ Similarly to 2014 this represents approximately the 20% of total accidents.
 <div class="col-xs-6 col-sm-6 placeholder">
 <h4><a href='{{"/references/acronym/smi.html"| prepend: site.baseurl | prepend: site.url }}'>Separation Minima Infringements (SMI)</a></h4>
 <div id="crt_saf_smi_YY"></div>
+
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
 <h4><a href='{{"/references/acronym/upa.html"| prepend: site.baseurl | prepend: site.url }}'>Unauthorised Penetration of Airspace (UPAs)</a></h4>
@@ -339,13 +175,13 @@ Similarly to 2014 this represents approximately the 20% of total accidents.
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
  Despite an increase in traffic, the number of reported risk bearing SMIs (Severity A+B) decreased in 2015 from 273 to 241.
- Overall, 10% of all occurrences reported in 2015 were categorised as risk bearing occurrences which is 2% less than in 2014.
+ Overall, 10% of all reported SMIs in 2015 were categorised as risk bearing which is 2% less than in 2014.
 </div></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
  The number of risk bearing UPA occurrences (Severity A+B) increased notably from 60 to 88 in 2015.
- As a result, the share of risk bearing UPA occurrences in the total reported UPAs increased from 1% to 2% in 2015.
+ As a result, the share of risk bearing UPAs in the total reported increased from 1% to 2% in 2015.
 </div></div>
 </div>
 </div>
@@ -365,14 +201,20 @@ Similarly to 2014 this represents approximately the 20% of total accidents.
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
-The reported risk bearing runway incursions (Severity A+B) decreased from 100 to 94 in 2015.
-At the same time, the share of risk bearing runway incursions remained at 7% of the total reported RI occurrences in 2015.
+The reported risk bearing RIs (Severity A+B) decreased from 100 to 94 in 2015.
+At the same time, the share of risk bearing RIs remained at 7% of the total reported RIs in 2015.
 </div></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
-The total number of risk bearing ATM specific occurrences decreased from 463 to 453 in 2015 (-2.2%).
-At the same time, the total number of reported ATM Specific Occurrences increased which was mainly due to changes in data submission in one State.
+The total number of risk bearing ATM-S decreased from 463 to 453 in 2015.
+However, the total number of reported ATM-S increased which was mainly due to changes in data submission in one State.
 </div></div>
 </div>
 </div>
+
+
+{% javascript crt_saf_smi_YY %}
+{% javascript crt_saf_upa_YY %}
+{% javascript crt_saf_ri_YY %}
+{% javascript crt_saf_aso_YY %}

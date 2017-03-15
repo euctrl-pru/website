@@ -89,7 +89,7 @@ a change to improve the accuracy of the ATFM delay calculation for operational p
 For more information on the the change in methodology
 <a href="{{ "/references/methodology/ATFM_delay_calculation.html" | prepend: site.baseurl | prepend: site.url }}">click here</a>.
 
-### En-route
+### {% img prcq-operations-enroute.png magick:resize:50x50 alt:'Operations En-route' class:'leadimg' %} Operations En-route
 
 | Data description                                             | Period                                                 | Excel                              | CSV | Metadata                           |
 |-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|-----------------------------------|-----------------------------------------------|----------------------------------|
@@ -125,7 +125,7 @@ For more information on the the change in methodology
 [DelayREA]: <{{ "/references/methodology/ATFM_delay_calculation.html" | prepend: site.baseurl | prepend: site.url }}> "ATFM Delay calculation: handling of REA msg"
 
 
-### Airport/terminal
+### {% img prcq-operations-airport.png magick:resize:50x50 alt:'Operations at Airports' class:'leadimg' %} Operations at Airports
 
 | Data description                                                     | Period                                                       | Excel                              | CSV |  Metadata                         |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|-----------------------------------------|---------------------------------------------------|----------------------------------|
@@ -188,7 +188,7 @@ For more information on the the change in methodology
 [ACEmeta]: <{{ "/references/dataset/ACE_Monthly_Operational_Data.html" | prepend: site.baseurl | prepend: site.url }}> "ACE (Meta)"
 [ACEurl]: <http://www.eurocontrol.int/documents/economic-information-disclosure-specification> "ACE specs"
 
-### Traffic complexity scores
+### {% img prcq-traffic.png magick:resize:50x50 alt:'Traffic' class:'leadimg' %} Traffic
 
 | Data description                                             | Period                                                 | Excel                              | CSV | Metadata                           |
 |--------------------------------------------------------------|--------------------------------------------------------|------------------------------------|-----|------------------------------------|

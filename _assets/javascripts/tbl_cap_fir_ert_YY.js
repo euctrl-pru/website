@@ -40,12 +40,12 @@ var tbl_cap_fir_ert_YY = {};
         options: {
             // allowHtml: true,
             width: 550,
-            height: 240,
+            height: 450,
             sort: 'enable',
             sortColumn: 0,
-            sortAscending: false
+            sortAscending: true
         },
-          view: { columns: [0, 1, 2, 3, 4] }
+          view: { columns: [0, 1, 2, 3, 4], columns: [1,2,3,4,5] }
       });
       tbl.draw();
     }

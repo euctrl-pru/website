@@ -14,8 +14,8 @@ var d3, queue, vis, params, topojson;
     vis.params = params || {};
 
     chart = d3.select(vis.params.chart || "#chart"); // placeholder div for svg
-    width = vis.params.width || 600;
-    height = vis.params.height || 600;
+    width = vis.params.width || 500;
+    height = vis.params.height || 450;
     active = d3.select(null);
 
     svg = chart.selectAll("svg")

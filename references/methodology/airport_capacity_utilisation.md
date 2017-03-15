@@ -34,7 +34,7 @@ While a number of airports show the classical throughput peaking behaviour with 
 
 For a more detailed explanation of the methodology see [Schinwald/Hornung (2014)][she_ho].
 
-## See Also
+## See Also 
 
 * [Basic Load Index (BLI)][bli].
 * [Peak Load Index (PLI)][pli].
