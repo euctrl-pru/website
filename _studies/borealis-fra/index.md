@@ -59,7 +59,7 @@ based on processed radar track data submitted by ANSPs to the EUROCONTROL. The
 full methodology is described in more detail in the metadata which is
 available [online][hfepi].
 
-A year-on-year comparison of 2015 (JAN-DEC) and 2016 (JANMAY) of the overall
+A year-on-year comparison of 2015 (JAN-DEC) and 2016 (JAN-MAY) of the overall
 en-route HFE for both the actual trajectories and the filed flight plans for the
 airspace managed by Borealis members is shown on Figure 2.
 
