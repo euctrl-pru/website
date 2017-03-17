@@ -30,6 +30,6 @@ Ralph Riedle
 Chairman
 Performance Review Commission
 
-[PRR2016_consult]: <http://www.eurocontrol.int/publications/draft-performance-review-report-prr-2016.pdf> "Draft final PRR 2016"
+[PRR2016_consult]: <http://www.eurocontrol.int/node/11418> "Draft final PRR 2016"
 [PRU_portal]: <http://ansperformance.eu/> "PRU Portal"
 
