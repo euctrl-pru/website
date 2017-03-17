@@ -116,9 +116,12 @@ function drawVisualization()
               1:{ title:'year on year (%)',
                 titleTextStyle : {color: '#C0504D', fontSize: 11}, textStyle:{color:'#C0504D'}}
             },
-            hAxis: {slantedTextAngle: 90,
-              textStyle: {color: 'grey', fontSize: 12}}
-        },
+        hAxis: {
+          textStyle: {color: 'grey', fontSize: 12},
+          slantedText: true,
+          slantedTextAngle: 45
+        }
+    },
     view: {columns: [0,2,3] }
   }); crt_anspfltsYY.draw();
 
@@ -142,7 +145,10 @@ function drawVisualization()
               1:{ title:'year on year (%)',
                 titleTextStyle : {color: '#C0504D', fontSize: 11}, textStyle:{color:'#C0504D'}}
             },
-            hAxis: {slantedTextAngle: 90, title: '* A-CDM implemented airport', titleTextStyle: {color: 'grey', fontSize: 11},
+            hAxis: {
+              slantedTextAngle: 45,
+              title: '* A-CDM implemented airport',
+              titleTextStyle: {color: 'grey', fontSize: 11},
               textStyle: {color: 'grey', fontSize: 12}}
         },
     view: {columns: [1,2,4] }

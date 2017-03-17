@@ -148,7 +148,10 @@ function drawVisualization()
                 6: {type:'bars',color:'C4BD97', targetAxisIndex: 0},
                 7: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 6, pointShape: 'diamond', targetAxisIndex: 1}
               },
-          hAxis: {slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 12}},
+          hAxis: {
+            slantedTextAngle: 45,
+            textStyle: {color: 'grey', fontSize: 12}
+          },
           vAxes:{
               0:{ format: '0.0', title:'minutes per flight',titleTextStyle: { fontSize: 12}, textStyle : {fontSize: 12}},
               1:{ format: '0.0%', title:'en-route ATFM delayed flights (%)', titleTextStyle : {fontSize: 12}, textStyle:{fontSize: 12}}
@@ -170,7 +173,10 @@ function drawVisualization()
               0: {type: 'lines', color:'4F81BD', lineWidth: 4, pointSize: 0, targetAxisIndex: 0},
               1: {type: 'lines', color:'C0504D', lineWidth: 4, pointSize: 0, targetAxisIndex: 0}
             },
-            hAxis: {slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 12}},
+            hAxis: {
+              slantedTextAngle: 50,
+              textStyle: {color: 'grey', fontSize: 12}
+            },
             vAxis: {title: 'efficiency (%)', titleTextStyle : {fontSize: 12}, minValue: 0.92, maxValue: 1.0, viewWindow: { min: 0.92, max: 1.0 }, format: 'percent',textStyle:{fontSize: 12}
                }
         },
@@ -193,13 +199,15 @@ function drawVisualization()
                textStyle: {color: 'grey', fontSize: 11 }
                 },
         series: {
-              0: {type: 'bars', color:'#C0504D', targetAxisIndex: 0},
+              0: {type: 'bars', color:'#C0504D', pointSize: 6, targetAxisIndex: 0},
               1: {type: 'bars', color:'#4F81BD', targetAxisIndex: 0}
             },
         vAxes:{
               0:{ title:'efficiency (%)', format: 'percent', titleTextStyle : {color: '#1F1F2E', fontSize: 11}, textStyle:{color: '#1F1F2E'}}
               },
-            hAxis: {slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 12}}
+            hAxis: {
+              slantedTextAngle: 50,
+              textStyle: {color: 'grey', fontSize: 12}}
         },
     view: {columns: [0,1,2] }
   }); crt_hfe2.draw();
