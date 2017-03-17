@@ -8,4 +8,11 @@ keywords: metadata, performance, data, statistics, air transport, flights, europ
 ---
 # {{ page.title }}
 
-**K**ey performance **E**nvironment indicator based on **A**ctual trajectory.
+KEA is the horizontal flight efficiency indicator calculated using
+the trajectories generated via radar data.
+
+## See Also
+
+* [HFE][hef] page in the [Methodology section][]{:target="_blank"}.
+
+[hfe]: <{{ "references/methodology/horizontal_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }}> "HFE methodology"

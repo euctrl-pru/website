@@ -7,10 +7,12 @@
             containerId: 'crt_flts_YY',
             dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Ap6_pXhVLZcgfUcdbqsUBvZaI_AdVsT35XLY1oPKyJ4/edit?usp=sharing&sheet=IFR_YY&range=A1:D11&headers=1&hl=en_GB',
             options: {
-               width: 500, height: 300,
-               chartArea: { left: 75, top: 20 },
-               title: 'Average Daily Flights (yearly)',
-               titleTextStyle: { color: 'grey', fontSize: 12 },
+               //width: 500, 
+               height: 250,
+               //chartArea: { left: 75, top: 20 },
+               //title: 'Average Daily Flights (yearly)',
+               //titleTextStyle: { color: 'grey', fontSize: 12 },
+               chartArea: { left: 50, top: 20, width: '70%', height: '70%' },
                legend: {
                   position: 'top',
                   maxLines: 2,
@@ -47,11 +49,11 @@
                   }
                },
                hAxis: {
-                  title: 'Source: PRU Analysis; NM',
-                  titleTextStyle: { color: 'grey', fontSize: 10 },
-                  slantedText: true,
+                  //title: 'Source: PRU Analysis; NM',
+                  //titleTextStyle: { color: 'grey', fontSize: 10 },
+                  //slantedText: true,
                   showTextEvery: 1,
-                  slantedTextAngle: 40
+                  //slantedTextAngle: 40
                }
             },
             view: { columns: [0, 2, 3] }

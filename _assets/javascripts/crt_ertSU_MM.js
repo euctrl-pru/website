@@ -7,10 +7,11 @@
             containerId: 'crt_ertSU_MM',
             dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1txmPuoLLfCuuQdWSQfBZmQWPEHD__MVu-Y5xsvWCO3Y/edit?usp=sharing&sheet=ERT_SU_MM&range=A1:F49&headers=1&tq=where%20A%3D1',
             options: {
-               width: 500, height: 300,
-               title: 'Average Daily Service Units (monthly)',
-               titleTextStyle: { color: 'grey', fontSize: 12 },
-               chartArea: { left: 78, top: 20 },
+               //width: 500, height: 300,
+               //title: 'Average Daily Service Units (monthly)',
+               //titleTextStyle: { color: 'grey', fontSize: 12 },
+               chartArea: { left: 50, top: 30, width: '70%', height: '70%' },
+               //chartArea: { left: 78, top: 20 },
                legend: {
                   position: 'top',
                   maxLines: 2,
@@ -41,7 +42,7 @@
                },
                vAxes:{
                   0: {
-                     title: 'Average Daily Service Units',
+                     title: 'Avg. daily en-rout SU',
                      titleTextStyle: { fontSize: 11, color: 'grey' },
                      minValue: 20000,
                      viewWindow: { min: 20000 },
@@ -49,17 +50,17 @@
                      gridlines: { color: 'transparent' }
                   },
                   1: {
-                     title: 'cum. change vs prev. year (%)',
+                     title: 'cum. change vs previous year (%)',
                      titleTextStyle: { color: '#376092', fontSize: 11},
                      textStyle: { color: '#376092' }
                   }
                },
                hAxis: {
-                  title: 'Source: CRCO',
-                  titleTextStyle: { color: 'grey', fontSize: 10 },
+                  //title: 'Source: CRCO',
+                  //titleTextStyle: { color: 'grey', fontSize: 10 },
                   type: 'string',
-                  slantedText: true,
-                  slantedTextAngle: 40,
+                  //slantedText: true,
+                 // slantedTextAngle: 40,
                   textStyle: { fontSize: 11 }
                }
             },

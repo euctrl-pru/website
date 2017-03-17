@@ -15,8 +15,12 @@ In the context of ATFM (**A**ir **T**raffic **F**low **M**anagement) a *measure*
 {% cite eu:255/2010 --file legislation %}
 
 
+## See Also
+
+* [Regulation]({{ "/references/definition/regulation.html"| prepend: site.baseurl | prepend: site.url }})
+
+
 ## References
 
 {% bibliography --cited --file legislation %}
 
-see [Regulation]({{ "/references/definition/regulation.html"| prepend: site.baseurl | prepend: site.url }})

@@ -8,4 +8,5 @@ keywords: metadata, performance, data, statistics, air transport, flights, europ
 ---
 # {{ page.title }}
 
-**S**eparation **M**inima **I**nfringement: A situation in which prescribed separation minima were not maintained between aircraft.
+Separation Minima Infringement is a situation in which prescribed
+separation minima were not maintained between aircraft.

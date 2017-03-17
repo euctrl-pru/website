@@ -8,7 +8,10 @@
          options: {
             //allowHtml: true,
             width: 550,
-            height: 440,
+            height: 420,
+            sort: 'enable',
+            sortColumn: 2,
+            sortAscending: false
          },
          view: { columns: [0, 1, 2, 3, 4] }
       });

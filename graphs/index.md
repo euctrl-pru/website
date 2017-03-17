@@ -12,4 +12,3 @@ keywords: metadata, performance, data, statistics, economics, air transport, fli
 * [Capacity]( {{ "/graphs/capacity/" | prepend: site.baseurl | prepend: site.url }})
 * [Environment]({{ "/graphs/environment/" | prepend: site.baseurl | prepend: site.url }})
 * [Cost Efficiency]({{ "/graphs/cost-efficiency/" | prepend: site.baseurl | prepend: site.url }})
-

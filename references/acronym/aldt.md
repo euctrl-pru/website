@@ -8,8 +8,12 @@ keywords: metadata, performance, data, statistics, air transport, flights, europ
 ---
 # {{ page.title }}
 
-**A**ctual **L**an**D**ing **T**ime.
+The actual date and time when the aircraft has landed (touch down).
 
-See also the
-[Actual LanDing Time](https://ext.eurocontrol.int/lexicon/index.php/Actual_landing_time){:target="_blank"}
-page at [ATM Lexicon](https://ext.eurocontrol.int/lexicon/index.php/Main_Page).
+## See Also
+
+* [Actual LanDing Time][aldt]{:target="_blank"} page at [ATM Lexicon][lexi]{:target="_blank"}.
+
+
+[aldt]: <https://ext.eurocontrol.int/lexicon/index.php/Actual_landing_time> "Actual LanDing Time"
+[lexi]: <https://ext.eurocontrol.int/lexicon/index.php/Main_Page> "ATM Lexicon"

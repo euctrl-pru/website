@@ -6,10 +6,10 @@
          containerId: 'crt_hfe_YY',
          dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1KgOIBF93axvXD6ENQYvEsWHqnA8eW_RvGV4EQlGava4/edit?usp=sharing&sheet=HFE_YY&range=A1:C11',
             options: {
-               width: 500, height: 300,
+              // width: 500, height: 300,
                chartArea: { left: 85, top: 60, width: '55%' },
-               title: 'Horizontal En-route Flight Efficiency (yearly)',
-               titleTextStyle: { color: 'grey', fontSize: 11 },
+               //title: 'Horizontal En-route Flight Efficiency (yearly)',
+               //titleTextStyle: { color: 'grey', fontSize: 14 },
                legend: {
                   position: 'right',
                   textStyle: { color: 'grey', fontSize: 10 }
@@ -38,7 +38,6 @@
                   format: '0.0%'
                },
                hAxis: {
-                  title: 'Source: PRU Analysis',
                   titleTextStyle: { color: 'grey', fontSize: 10 }
                }
             },

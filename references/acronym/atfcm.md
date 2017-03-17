@@ -8,8 +8,17 @@ keywords: metadata, performance, data, statistics, air transport, flights, europ
 ---
 # {{ page.title }}
 
-**A**ir **T**raffic **F**low and **C**apacity **M**anagement
+A service complementary to Air Traffic Control ([ATC][atc]), the objective of which is
+to optimise traffic flows according to air traffic control capacity
+while enabling airlines to operate safe and efficient flights.
 
-See also the
-[ATFCM](http://www.eurocontrol.int/articles/air-traffic-flow-and-capacity-management){:target="_blank"}
-page on the [EUROCONTROL](https://www.eurocontrol.int/){:target="_blank"} website.
+## See Also
+
+* [ATFCM][atfcmECTRL]{:target="_blank"} page on the [EUROCONTROL][ectrl]{:target="_blank"} website.
+* [ATFCM][atfcmLEXI]{:target="_blank"} page at [ATM Lexicon][lexi]{:target="_blank"}.
+
+[atc]: <{{ "/references/acronym/atc.html" | prepend: site.baseurl | prepend: site.url }}> "Air Traffic Control"
+[atfcmECTRL]: <http://www.eurocontrol.int/articles/air-traffic-flow-and-capacity-management> "ATFCM - EUROCONTROL"
+[atfcmLEXI]: <https://ext.eurocontrol.int/lexicon/index.php/Air_Traffic_Flow_and_Capacity_Management> "Air Traffic Flow and Capacity Management - ATM Lexicon"
+[ectrl]: <https://www.eurocontrol.int/> "EUROCONTROL"
+[lexi]: <https://ext.eurocontrol.int/lexicon/index.php/Main_Page> "ATM Lexicon"

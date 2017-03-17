@@ -1,66 +1,26 @@
 ---
 layout: default
-title: "FAB - Functional Airspace Blocks"
+title: "FAB - Functional Airspace Block"
 resource: true
 entity: acronym
 excerpt: Performance Review Unit MetaData Definitions.
 keywords: metadata, performance, data, statistics, air transport, flights, europe, delay, safety
 ---
-<style>
-td {
-  white-space: nowrap;
-}
-th:nth-child(1) {
-width: 16em;
-}
-th:nth-child(2) {
-width: 20em;
-}
-</style>
-
-
 
 # {{ page.title }}
 
-
-**F**unctional **A**irspace **B**lock.
-
-See also the
-[Functional Airspace Block](https://ext.eurocontrol.int/lexicon/index.php/Functional_Airspace_Block){:target="_blank"}
-page at [ATM Lexicon](https://ext.eurocontrol.int/lexicon/index.php/Main_Page)
-and the [Functional Airspace Block]({{ "/references/acronym/fab.html" | prepend: site.baseurl | prepend: site.url }})
-definition in the [Definitions]({{ "/references/definition/" | prepend: site.baseurl | prepend: site.url }}) section.
+An airspace block based on operational requirements and established
+regardless of State boundaries, where the provision of air navigation
+services and related functions are performance-driven and optimised
+with a view to introducing enhanced cooperation among air navigation
+service providers or, where appropriate, an integrated provider.
 
 
-The <a href="http://www.eurocontrol.int/dossiers/fabs" target="_blank">FAB</a>
-concept was developed in the 1st legislative package of the Single European Sky
-(SES I) as one of the main means for reducing airspace fragmentation. The 2nd
-legislative package (SES II) tackled the creation of FABs in terms of service
-provision, in addition to the airspace organisation issues. 
+## See Also
 
-The twofold objective of the legislative packagers is to optimise air traffic
-flows and increase the efficiency of air traffic services in Europe.
+* [FAB definition][fab].
+* [FAB][fabLEXI]{:target="_blank"} page at [ATM Lexicon][lexi]{:target="_blank"}.
 
-SES II lays down a definite commitment date for the Member States to improve
-performance by implementing FABs, i.e. 4 December 2012. Nine FAB initiatives
-have been taken: 
-
-| Short name     | Name               | Countries                                                                                    |
-|----------------|--------------------|----------------------------------------------------------------------------------------------|
-| NEFAB          | North European FAB | Estonia, Finland, Latvia, Norway                                                             |
-| Denmark-Sweden | Denmark-Sweden     | Denmark, Sweden                                                                              |
-| BALTIC FAB     | BALTIC FAB         | Poland, Lithuania                                                                            |
-| FABEC          | FAB Europe Central | France, Germany, Belgium, Netherlands, Luxembourg, and Switzerland                           |
-| FABCE          | FAB Central Europe | Czech Republic, Slovak Republic, Austria, Hungary, Croatia, Slovenia, Bosnia and Herzegovina |
-| DANUBE         | DANUBE             | Bulgaria, Romania                                                                            |
-| BLUE MED       | BLUE MED           | Italy, Malta, Greece, Cyprus, (and Egypt, Tunisia, Albania, Jordan as observers)             |
-| UK-IRELAND FAB | UK-IRELAND FAB     | United Kingdom, Ireland                                                                      |
-| SW FAB         | South West FAB     | Portugal, Spain                                                                              |
-
-<br>
-<br>
-For the details about the computation of delay at FAB level (i.e. the FIRs
-used), please refer to the relevant section in the
-[En-route ATFM delays]({{ "/references/dataset/En-Route_ATFM_Delay_FIR.html#fab-definitions" | prepend: site.baseurl | prepend: site.url }})
-page part of the [Datasets Definition]({{ "/references/dataset/" | prepend: site.baseurl | prepend: site.url }})
-section.
+[fab]: <{{ "/references/definition/fab.html" | prepend: site.baseurl | prepend: site.url }}> "FAB definition"
+[fabLEXI]: <https://ext.eurocontrol.int/lexicon/index.php/Functional_Airspace_Block> "FAB - ATM Lexicon"
+[lexi]: <https://ext.eurocontrol.int/lexicon/index.php/Main_Page> "ATM Lexicon"

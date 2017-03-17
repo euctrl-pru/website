@@ -1,0 +1,262 @@
+---
+layout: prcq
+title: "Air Traffic Evolution"
+---
+
+<html>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
+google.load('visualization', '1', { packages: ['corechart', 'controls'] });
+</script>
+<script type="text/javascript">
+
+function drawVisualization()
+ {
+
+// TRAFFIC - ERT FLTS - YY - CHART
+ var crt_ertfltsYY = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_ertfltsYY',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=flts&range=A1:E13',
+    options: {
+        //width: 500, height: 200,
+        //chartArea: {left: 80, top: 30, width:'60%',height:'65%'},
+        legend: 'none',
+        series: {
+              0: {type: 'bars', color:'#4F81BD', targetAxisIndex: 0},
+              1: {type: 'lines', color:'#C0504D', lineWidth: 0, pointSize: 7, targetAxisIndex: 1}
+            },
+        vAxes:{
+              0:{format:'short', title:'Avg. daily flights (000)',
+                titleTextStyle : {color: '#4F81BD', fontSize: 12}, textStyle:{color: '#4F81BD'}},
+              1:{ title:'year on year (%)',
+                titleTextStyle : {color: '#C0504D', fontSize: 12}, textStyle:{color:'#C0504D'}}
+            }
+        },
+    view: {columns: [0,1,2], rows: [3,4,5,6,7,8,9,10,11]}
+  }); crt_ertfltsYY.draw();
+
+
+// TRAFFIC - ERT SU - YY - CHART
+ var crt_ertsuYY = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_ertsuYY',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=flts&range=A1:E13',
+    options: {
+        //width: 500, height: 200,
+        //chartArea: {left: 80, top: 30, width:'60%',height:'65%'},
+        legend: 'none',
+        series: {
+              0: {type: 'bars', color:'#4F81BD', targetAxisIndex: 0},
+              1: {type: 'lines', color:'#C0504D', lineWidth: 0, pointSize: 7, targetAxisIndex: 1}
+            },
+        vAxes:{
+              0:{format:'short',  title:'Avg. daily en-route SU',
+                titleTextStyle : {color: '#4F81BD', fontSize: 12}, textStyle:{color: '#4F81BD'}},
+              1:{ title:'year on year (%)',
+                titleTextStyle : {color: '#C0504D', fontSize: 12}, textStyle:{color:'#C0504D'}}
+            }
+        },
+    view: {columns: [0,3,4], rows: [3,4,5,6,7,8,9,10,11]}
+  }); crt_ertsuYY.draw();
+
+// Flight type - YY - CHART -
+  var crt_flttypeYY = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_flttypeYY',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=flts&range=G1:J5&hl=en_GB',
+    options:{
+          //width: 450, height: 150,
+          chartArea: {left: 60, top: 10, width:'80%',height:'60%'},
+          legend: 'none',
+            seriesType: 'bars',
+          colors: ['#4F81BD'],
+          vAxis:{title:'Change avg. daily flights vs 2015',
+              titleTextStyle : {color: '#5D7CBA', fontSize: 12},
+              textStyle:{color: '#5D7CBA'}}
+        },
+    view: {'columns': [0,3], rows: [1,2,3]}
+  }); crt_flttypeYY.draw();
+
+
+// Traffic segment - YY - CHART -
+  var crt_segYY = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_segYY',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=flts&range=L1:O7&hl=en_GB',
+    options:{
+         // width: 450, height: 150,
+          chartArea: {left: 60, top: 10, width:'80%',height:'60%'},
+          legend: 'none',
+            seriesType: 'bars',
+          colors: ['#4F81BD'],
+          vAxis:{title:'Change avg. daily flights vs 2015',
+              titleTextStyle : {color: '#5D7CBA', fontSize: 12},
+              textStyle:{color: '#5D7CBA'}}
+        },
+    view: {'columns': [0,3], rows: [1,2,3,4,5,6]}
+  }); crt_segYY.draw();
+
+
+// TRAFFIC - ANSP - YY - CHART
+ var crt_anspfltsYY = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_anspfltsYY',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=flts&range=Q1:T40',
+    options: {
+        height: 350,
+        chartArea: {left: 70, top: 10, width:'85%',height:'50%'},
+        legend: 'none',
+        series: {
+              0: {type: 'bars', color:'#4F81BD', targetAxisIndex: 0},
+              1: {type: 'lines', color:'#C0504D', lineWidth: 0, pointSize: 7, targetAxisIndex: 1}
+            },
+        vAxes:{
+              0:{ title:'change avg. daily flights vs 2015',
+                titleTextStyle : {color: '#4F81BD', fontSize: 11}, textStyle:{color: '#4F81BD'}},
+              1:{ title:'year on year (%)',
+                titleTextStyle : {color: '#C0504D', fontSize: 11}, textStyle:{color:'#C0504D'}}
+            },
+        hAxis: {
+          textStyle: {color: 'grey', fontSize: 12},
+          slantedText: true,
+          slantedTextAngle: 45
+        }
+    },
+    view: {columns: [0,2,3] }
+  }); crt_anspfltsYY.draw();
+
+
+// TRAFFIC - T30 airports - YY - CHART
+ var crt_apt3 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt3',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=apt&range=A57:E87',
+    options: {
+        height: 350,
+        chartArea: {left: 70, top: 10, width:'85%',height:'50%'},
+        legend: 'none',
+        series: {
+              0: {type: 'bars', color:'#4F81BD', targetAxisIndex: 0},
+              1: {type: 'lines', color:'#C0504D', lineWidth: 0, pointSize: 7, targetAxisIndex: 1}
+            },
+        vAxes:{
+              0:{ title:'Avg. daily movements',
+                titleTextStyle : {color: '#4F81BD', fontSize: 11}, textStyle:{color: '#4F81BD'}},
+              1:{ title:'year on year (%)',
+                titleTextStyle : {color: '#C0504D', fontSize: 11}, textStyle:{color:'#C0504D'}}
+            },
+            hAxis: {
+              slantedTextAngle: 45,
+              title: '* A-CDM implemented airport',
+              titleTextStyle: {color: 'grey', fontSize: 11},
+              textStyle: {color: 'grey', fontSize: 12}}
+        },
+    view: {columns: [1,2,4] }
+  }); crt_apt3.draw();
+
+}
+google.setOnLoadCallback(drawVisualization)
+</script>
+
+<h3 class="page-header">{% img prcq-traffic.png magick:resize:60x60 alt:'Traffic' style:'margin-right\:3px' %} {{ page.title }}</h3>
+
+<table class = "table">
+   <thead>
+      <tr>
+         <th>Period</th>
+         <th>Area</th>
+         <th>Update rate</th>
+         <th>Last update</th>
+         <th>Source(s)</th>
+         <th>Data</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class = "active">
+         <td>Jan-Dec 2016</td>
+         <td><a href={{"/references/definition/ESRA_08_Area.html"| prepend: site.baseurl | prepend: site.url }}>ESRA08 area</a></td>
+         <td>Quarterly</td>
+         <td>15-March-2017</td>
+         <td>
+          <a href="{{ '/references/acronym/nm-cfmu.html' | prepend: site.baseurl | prepend: site.url }}">NM</a>,
+          <a href="{{ '/references/acronym/crco.html'    | prepend: site.baseurl | prepend: site.url }}">CRCO</a>,
+          <a href="{{ '/references/acronym/statfor.html' | prepend: site.baseurl | prepend: site.url }}">STATFOR</a></td>
+          <td><a href='{{"/data/performancearea/" | prepend: site.baseurl | prepend: site.url }}'><span class="glyphicon glyphicon-download" style="font-size:25px;"></span></a></td>
+      </tr>
+   </tbody>
+</table>
+
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+    <h4>Average daily controlled flights</h4>
+    <span class="text-muted"><a href={{"/references/definition/ESRA_2008_Area.html"| prepend: site.baseurl | prepend: site.url }}>ESRA08 area</a></span>
+    <div id="crt_ertfltsYY"></div>
+</div>
+<div class="col-xs-6 col-sm-6 placeholder">
+    <h4>Average daily en-route <a href={{"/references/acronym/su.html"| prepend: site.baseurl | prepend: site.url }}>Service Units (SU)</a></h4>
+    <span class="text-muted">CRCO area</span>
+    <div id="crt_ertsuYY"></div>
+</div>
+</div><br>
+
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+<div class="panel panel-info"><div class="panel-heading">
+At system level <a href={{"/references/definition/ESRA_2008_Area.html"| prepend: site.baseurl | prepend: site.url }}>(ESRA08)</a>, traffic increased by 2.4% in 2016 which corresponds to an additional 681 flights per day on average.
+</div></div></div>
+<div class="col-xs-6 col-sm-6 placeholder">
+<div class="panel panel-info"><div class="panel-heading">
+As was the case in previous years, en-route service units (SU) grew at a higher rate than flights in 2016 (+4.2% vs 2015).
+</div></div></div>
+</div>
+
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+    <h4>Change by flight type</h4>
+    <span class="text-muted">2016 vs. 2015</span>
+    <div id="crt_flttypeYY"></div>
+</div>
+<div class="col-xs-6 col-sm-6 placeholder">
+    <h4>Change by traffic segment</h4>
+    <span class="text-muted">2016 vs. 2015</span>
+    <div id="crt_segYY"></div>
+</div>
+</div>
+
+<div class="panel panel-info"><div class="panel-heading">
+        The main driver of the observed traffic growth in 2016 was the growth in the intra-European low cost traffic segment.
+</div></div>
+
+
+<div class="row placeholders">
+<div class="col-sm-12 placeholder">
+    <h4>Traffic variation by <a href={{"/references/acronym/ansp.html"| prepend: site.baseurl | prepend: site.url }}>ANSP</a></h4>
+    <div id="crt_anspfltsYY"></div>
+</div>
+</div><br><br>
+
+    <div class="panel panel-info">
+      <div class="panel-heading">
+          Peak traffic load continued to rise at a higher rate than average traffic in 2016 and the 3rd quarter in
+          2016 was the highest on record. September 9th 2016 was the peak day in 2016 with 34,024 flights. It was
+          also the 2nd highest on record (27 June 2008). <br><br>
+
+          The highest growth compared to 2015 was observed in Portugal (+10.5%), Ireland (7.5%), Spain (+7.5%) and Poland (+7.3%).
+          The most notable traffic decreases in 2016 were in Ukraine (-9.0%), Moldova (-8.3%), Armenia (-7.8%), Albania (-7.8%).
+      </div>
+    </div> 
+
+<div class="row placeholders">
+<div class="col-sm-12 ">
+    <h4>Traffic variation at the top 30 airports in terms of traffic (2016)</h4>
+    <div id="crt_apt3"></div>
+</div>
+  </div>
+
+    <div class="panel panel-info">
+          <div class="panel-heading">
+        Controlled movements at the top 30 airports in the <a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL area</a> increased for the 3rd consecutive year in 2016. Average daily movements increased by +2.7% compared to 2015 which corresponds to 594 additional movements each day.<br><br>
+        Antalya experienced a 30% reduction in traffic in 2016 which resulted in Warsaw entering the top 30 airports in terms of traffic instead. Amsterdam reported a 5.9% increase in traffic in 2016 which made it the airport with the most commercial movements in Europe in 2016. A number of airports (Manchester (MAN), Palma (PMI), Lisbon (LIS), Warsaw (WAW), and Dublin (DUB) experienced high growth rates above 8% in 2016. <br><br>
+        The two Istanbul airports, which reported a remarkable traffic growth over the past years, were affected by the situation in Turkey, resulting in a notable slowdown in traffic growth. Of the top 30 airports, six showed a traffic decrease in 2016. The highest decrease in traffic among the top 30 airports in 2016 was observed for Brussels (BRU) airport with -6.5% compared to 2015 as a result of the reduced capacity following the terrorist attacks in March 2016.
+          </div>
+    </div>

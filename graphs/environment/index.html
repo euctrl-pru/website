@@ -5,27 +5,48 @@ excerpt: Environment data visualizations.
 keywords: environment, performance, air transport, flights, europe
 ---
 
-<h3 id="hfe">Horizontal En-route Flight Efficiency (HFE)</h3>
+<h3 id="hfe"><a href='{{"/references/methodology/horizontal_flight_efficiency_pi.html"| prepend: site.baseurl | prepend: site.url }}'>Horizontal En-route Flight Efficiency (HFE)</a></h3>
+
+<table class = "table">
+   <thead>
+      <tr>
+         <th>Period</th>
+         <th>Area</th>
+         <th>Update rate</th>
+         <th>Last update</th>
+         <th>Source(s)</th>
+         <th>Methodology</th>
+         <th>Data</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class = "active">
+         <td>Jan-Dec 2016</td>
+         <td><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL area</a></td>
+         <td>Monthly</td>
+         <td>15-Jan-2017</td>
+          <td><a href='{{"/references/acronym/nm-cfmu.html"| prepend: site.baseurl | prepend: site.url }}'>NM</a>,
+              <a href='{{"/references/acronym/pru.html"   | prepend: site.baseurl | prepend: site.url }}'>PRU</a>
+          </td>
+		 <td><a href='{{"/references/methodology/horizontal_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }}'><span class="glyphicon glyphicon-info-sign" style="font-size:25px;"></span></a></td>
+         <td><a href='{{"/data/performancearea/" | prepend: site.baseurl | prepend: site.url }}'><span class="glyphicon glyphicon-download" style="font-size:25px;"></span></a></td>
+      </tr>
+   </tbody>
+</table>
+
 
 <div class="row">
-    <div class="col-lg-6">
-        <h5>EUROCONTROL Area</h5>
-        <div id="crt_hfe_YY"></div>
+    <div class="col-sm-6">
+        <h4>Evolution over time (EUROCONTROL level)</h4>
+        <div id="crt_hfe_YY"></div><br>
         <div id="crt_hfe_MM"></div>
     </div>
 
-    <div class="col-lg-6 offset-10">
-        <h5>Horizontal En-route Flight Efficiency by Entity (Jan - Dec 2016)</h5>
+    <div class="col-sm-6 offset-10">
+        <h4>Results by entity (Jan-Dec 2016)</h4>
         <div id="tbl_hfe_YY"></div>
     </div>
 </div>
-
-<h3 id="asma">Additional ASMA Time</h3>
-*This section is still under development. Please visit us again soon!*
-
-<h3 id="txo">Additional Taxi-out Time</h3>
-*This section is still under development. Please visit us again soon!*
-
 
 {% javascript crt_hfe_YY %}
 {% javascript crt_hfe_MM %}

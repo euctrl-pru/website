@@ -6,10 +6,11 @@
          containerId: 'crt_cap_apt_MM',
          dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1gYIeqeWdcxd7mdXImchbppdI7QvZzp7ucfZdNJbBbyE/edit?usp=sharing&alt=json&sheet=APT_ATFM_MM&range=A1:M49&tq=where%20A%3D1',
          options: {
-            width: 500, height: 300,
-            chartArea: { left: 65, top: 20 },
-            title: 'Airport Arrival ATFM Delays (monthly)',
-            titleTextStyle : { color: 'grey', fontSize: 12 },
+            //width: 500, height: 300,
+            //chartArea: { left: 65, top: 20 },
+            chartArea: { left: 50, top: 20, width: '60%', height: '70%' },
+            //title: 'Airport Arrival ATFM Delays (monthly)',
+            //titleTextStyle : { color: 'grey', fontSize: 12 },
             legend: {
                position: 'right',
                textStyle: { color: 'grey', fontSize: 9 }
@@ -36,8 +37,8 @@
                format: '0.0'
             },
             hAxis: {
-               title: 'Source: PRU Analysis',
-               titleTextStyle: { color: 'grey', fontSize: 10 },
+               //title: 'Source: PRU Analysis',
+               //titleTextStyle: { color: 'grey', fontSize: 10 },
                type: 'string',
                slantedText: true,
                showTextEvery: 1,

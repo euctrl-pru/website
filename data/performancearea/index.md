@@ -7,40 +7,43 @@ keywords: performance, data, statistics, economics, air transport, flights, euro
 dates:
   ert_flt:
     beg: Jan 2014
-    end: Jan 2017
+    end: Feb 2017
   ert_dly_aua:
     beg: Jan 2011
-    end: Jan 2017
+    end: Feb 2017
   ert_dly_fir:
     beg: Jan 2013
-    end: Jan 2017
+    end: Feb 2017
   hfe:
     beg: Jan 2014
     end: Dec 2016
   hfe_kpi:
     beg: Dec 2014
-    end: Dec 2016
+    end: Feb 2017
   apt_flt:
     beg: Jan 2014
-    end: Jan 2017
+    end: Feb 2017
   apt_dly:
     beg: Jan 2014
-    end: Jan 2017
+    end: Feb 2017
   asma:
     beg: Jan 2014
-    end: Dec 2016
+    end: Jan 2017
+  cdo:
+    beg: Jan 2015
+    end: Feb 2017
   tx_out:
     beg: Jan 2014
-    end: Dec 2016
+    end: Jan 2017
   atc_pre:
     beg: Jan 2014
-    end: Dec 2016
+    end: Jan 2017
   slt_adh:
     beg: Jan 2014
-    end: Jan 2017
+    end: Feb 2017
   ace_opt:
     beg: Jan 2014
-    end: Jan 2017
+    end: Feb 2017
   cplx:
     beg: &cplxbeg Jan 2014
     end: &cplxend Dec 2016
@@ -86,7 +89,7 @@ a change to improve the accuracy of the ATFM delay calculation for operational p
 For more information on the the change in methodology
 <a href="{{ "/references/methodology/ATFM_delay_calculation.html" | prepend: site.baseurl | prepend: site.url }}">click here</a>.
 
-### En-route
+### {% img prcq-operations-enroute.png magick:resize:50x50 alt:'Operations En-route' class:'leadimg' %} Operations En-route
 
 | Data description                                             | Period                                                 | Excel                              | CSV | Metadata                           |
 |-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|-----------------------------------|-----------------------------------------------|----------------------------------|
@@ -122,7 +125,7 @@ For more information on the the change in methodology
 [DelayREA]: <{{ "/references/methodology/ATFM_delay_calculation.html" | prepend: site.baseurl | prepend: site.url }}> "ATFM Delay calculation: handling of REA msg"
 
 
-### Airport/terminal
+### {% img prcq-operations-airport.png magick:resize:50x50 alt:'Operations at Airports' class:'leadimg' %} Operations at Airports
 
 | Data description                                                     | Period                                                       | Excel                              | CSV |  Metadata                         |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|-----------------------------------------|---------------------------------------------------|----------------------------------|
@@ -130,7 +133,8 @@ For more information on the the change in methodology
 | Airport arrival ATFM delays - **[Version 2][DelayREA]** <br><small>Daily IFR arrivals and airport arrival [ATFM delay][ATFMdelay] by airport and delay category</small> | {{ page.dates.apt_dly.beg }} - {{ page.dates.apt_dly.end }}  | [xls {{ page.dwnld_i }}][APT-DLY-v2xlsx] | [csv {{ page.fltr_i }} {{ page.ndwk_i }}][APT-DLYcsv] | [meta {{ page.info_i }}][APT-DLYmeta] |
 | Airport traffic<br><small>Daily IFR arrivals and departures by airport</small>                                                                                          | {{ page.dates.apt_flt.beg }} - {{ page.dates.apt_flt.end }}  | [xls {{ page.dwnld_i }}][APT-FLTxlsx]   |                                                   | [meta {{ page.info_i }}][APT-FLTmeta] |
 | Arrival Sequencing and Metering (ASMA) additional time<br><small>Monthly ASMA [additional][ASMAadditional] and [unimpeded][ASMAunimpeded] time</small>                  | {{ page.dates.asma.beg }} - {{ page.dates.asma.end }}        | [xls {{ page.dwnld_i }}][ASMAxlsx]    |                                                   | [meta {{ page.info_i }}][ASMAmeta]    |
-| Taxi-out additional time<br><small>Monthly taxi out [additional][ASMAadditional] and [unimpeded][ASMAunimpeded] time</small>  | {{ page.dates.tx_out.beg }} - {{ page.dates.tx_out.end }}    | [xls {{ page.dwnld_i }}][TX-OUTxlsx]  |                                                   | [meta {{ page.info_i }}][TX-OUTmeta]  |
+| Vertical flight efficiency - Continuous climb and descent operations<br><small>Monthly continuous climb and descent data</small>                  | {{ page.dates.cdo.beg }} - {{ page.dates.cdo.end }}        | [xls {{ page.dwnld_i }}][CDOxlsx]    |                                                   | [meta {{ page.info_i }}][CDOmeta]    |
+| Taxi-out additional time<br><small>Monthly taxi out [additional][TX-OUTadditional] and [unimpeded][TX-OUTunimpeded] time</small>  | {{ page.dates.tx_out.beg }} - {{ page.dates.tx_out.end }}    | [xls {{ page.dwnld_i }}][TX-OUTxlsx]  |                                                   | [meta {{ page.info_i }}][TX-OUTmeta]  |
 | ATC pre-departure delays<br><small>Daily [ATC pre-departure delay][ATCpredepdelay] by airport</small>                         | {{ page.dates.atc_pre.beg }} - {{ page.dates.atc_pre.end }}  | [xls {{ page.dwnld_i }}][ATC-PRExlsx] |                                                   | [meta {{ page.info_i }}][ATC-PREmeta] |
 | ATFM slot adherence<br><small>Daily ATFM slot adherence by airport</small>                                                    | {{ page.dates.slt_adh.beg }} - {{ page.dates.slt_adh.end }}  | [xls {{ page.dwnld_i }}][SLT-ADHxlsx] |                                                   | [meta {{ page.info_i }}][SLT-ADHmeta] |
 
@@ -142,6 +146,8 @@ For more information on the the change in methodology
 
 [ASMAadditional]: <{{ "/references/definition/additional_asma_time.html" | prepend: site.baseurl | prepend: site.url }}> "ASMA Additional Time definition"
 [ASMAunimpeded]: <{{ "/references/definition/unimpeded_asma_time.html" | prepend: site.baseurl | prepend: site.url }}> "ASMA Unimpeded Time definition"
+[TX-OUTadditional]: <{{ "/references/definition/additional_taxi-out_time.html" | prepend: site.baseurl | prepend: site.url }}> "Taxi-out Additional Time definition"
+[TX-OUTunimpeded]: <{{ "/references/definition/unimpeded_taxi-out_time.html" | prepend: site.baseurl | prepend: site.url }}> "Taxi-out Unimpeded Time definition"
 [ATCpredepdelay]: <{{ "/references/definition/atc_pre-departure_delay.html" | prepend: site.baseurl | prepend: site.url }}> "ATC Pre-departure Delay definition"
 
 [APT-FLTxlsx]: <{{ "/data/set/apt_flt/Airport_Traffic.xlsm" | prepend: site.baseurl | prepend: site.url }}> "APT-FLT (Excel)"
@@ -156,6 +162,10 @@ For more information on the the change in methodology
 [ASMAxlsx]: <{{ "/data/set/asma/ASMA_Additional_Time.xlsm" | prepend: site.baseurl | prepend: site.url }}> "ASMA (Excel)"
 [ASMAcsv]: <{{ "/404.html" | prepend: site.baseurl | prepend: site.url }}> "ASMA (CSV)"
 [ASMAmeta]: <{{ "/references/dataset/ASMA_Additional_Time.html" | prepend: site.baseurl | prepend: site.url }}> "ASMA (Meta)"
+
+[CDOxlsx]: <{{ "/data/set/cdo_cco/Vertical_Flight_Efficiency_cdo_cco.xlsm" | prepend: site.baseurl | prepend: site.url }}> "CDO/CCO (Excel)"
+[CDOcsv]: <{{ "/404.html" | prepend: site.baseurl | prepend: site.url }}> "CDO/CCO (CSV)"
+[CDOmeta]: <{{ "/references/dataset/Continuous_Climb_Descent.html" | prepend: site.baseurl | prepend: site.url }}> "CDO/CCO (Meta)"
 
 [TX-OUTxlsx]: <{{ "/data/set/tx_out/Taxi-Out_Additional_Time.xlsm" | prepend: site.baseurl | prepend: site.url }}> "TX-OUT (Excel)"
 [TX-OUTcsv]: <{{ "/404.html" | prepend: site.baseurl | prepend: site.url }}> "TX-OUT (CSV)"
@@ -178,7 +188,7 @@ For more information on the the change in methodology
 [ACEmeta]: <{{ "/references/dataset/ACE_Monthly_Operational_Data.html" | prepend: site.baseurl | prepend: site.url }}> "ACE (Meta)"
 [ACEurl]: <http://www.eurocontrol.int/documents/economic-information-disclosure-specification> "ACE specs"
 
-### Traffic complexity scores
+### {% img prcq-traffic.png magick:resize:50x50 alt:'Traffic' class:'leadimg' %} Traffic
 
 | Data description                                             | Period                                                 | Excel                              | CSV | Metadata                           |
 |--------------------------------------------------------------|--------------------------------------------------------|------------------------------------|-----|------------------------------------|
@@ -197,27 +207,6 @@ For more information on the the change in methodology
 {{ page.attn_i }} = not (yet?) available.<br>
 
 
-<div class="well">
-
-<h2><small>Copyright notice and Disclaimer</small></h2>
-
-<small><span style="text-aligh:left">&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}.</span></small>
-
-This data is published by the the <small style="font-variant: small-caps;">EUROCONTROL</small> Performance Review Unit
-in the interest of the exchange of information.
-It may be copied in whole or in part providing that this copyright notice and disclaimer are included.
-The information may not be modified without prior written permission from the
-<small style="font-variant: small-caps;">EUROCONTROL</small> Performance Review Unit.
-
-The information does not necessarily reflect the official views or policy of
-<small style="font-variant: small-caps;">EUROCONTROL</small>,
-which makes no warranty, either implied or expressed, for the information contained in this document,
-including its accuracy, completeness or usefulness.
-
-For feedback or questions please contact us at: [Performance Review Unit](mailto:{{ site.owner.email }}) ({{ site.owner.email }}).
-
 <div class="container text-center">
 {% include _subscriber-button.html %}
-</div>
-
 </div>

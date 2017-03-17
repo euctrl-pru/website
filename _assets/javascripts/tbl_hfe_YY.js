@@ -7,8 +7,8 @@
          dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1KgOIBF93axvXD6ENQYvEsWHqnA8eW_RvGV4EQlGava4/edit?usp=sharing&sheet=HFE_ENTITY&range=A1:C53&headers=1',
          options: {
             //allowHtml: true,
-            width: 550,
-            height: 440,
+           // width: 550,
+            height: 450,
          },
          view: { columns: [0, 1, 2] }
       });

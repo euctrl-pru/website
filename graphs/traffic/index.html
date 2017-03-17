@@ -6,37 +6,84 @@ keywords: visualization, graphs, dataviz, performance, air transport, flights, e
 ---
 
 <h3 id="ert_flt">Flights</h3>
+
+<table class = "table">
+   <thead>
+      <tr>
+         <th>Period</th>
+         <th>Area</th>
+         <th>Update rate</th>
+         <th>Last update</th>
+         <th>Source(s)</th>
+         <th>Data</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class = "active">
+         <td>Jan-Feb 2017</td>
+         <td><a href={{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}>EUROCONTROL area</a></td>
+         <td>Monthly</td>
+         <td>15-March-2017</td>
+         <td>
+          <a href="{{ '/references/acronym/nm-cfmu.html' | prepend: site.baseurl | prepend: site.url }}">NM</a>,
+          <a href='{{"/references/acronym/pru.html"   | prepend: site.baseurl | prepend: site.url }}'>PRU</a>
+          </td>
+          <td><a href='{{"/data/performancearea/" | prepend: site.baseurl | prepend: site.url }}'><span class="glyphicon glyphicon-download" style="font-size:25px;"></span></a></td>
+      </tr>
+   </tbody>
+</table>
+
 <div class="row">
-    <div class="col-lg-6">
-        <h5>EUROCONTROL Area</h5>
-        <br>
-        <div id="crt_flts_YY"></div>
+    <div class="col-sm-6">
+        <h5>Evolution over time</h5><br>
+        <div id="crt_flts_YY"></div><br>
         <div id="crt_flts_MM"></div>
     </div>
-    <div class="col-lg-6 offset-10 text-justified"  style="border-style: solid; border-width:thin; border-color: #bfbfbf;">
-        <h5>Flights by entity (Jan 2017 vs Jan 2016)</h5>
+    <div class="col-sm-6 offset-10 text-justified"  style="border-style: solid; border-width:thin; border-color: #bfbfbf;">
+        <h5>Flights by <a href='{{"/references/acronym/ansp.html"| prepend: site.baseurl | prepend: site.url }}'>ANSP</a> (Jan-Feb)</h5>
         <div id="tbl_flts_YY"></div>
         <div id="crt_prc_change"></div>
     </div>
-</div>
+</div> 
 
 <h3 id="ert_sun">En-route service units (SU)</h3>
+
+<table class = "table">
+   <thead>
+      <tr>
+         <th>Period</th>
+         <th>Area</th>
+         <th>Update rate</th>
+         <th>Last update</th>
+         <th>Source(s)</th>
+         <th>CRCO dashboard</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class = "active">
+         <td>Jan-Feb 2017</td>
+         <td>CRCO area</td>
+         <td>Monthly</td>
+         <td>15-March-2017</td>
+         <td>
+          <a href="{{ '/references/acronym/crco.html'    | prepend: site.baseurl | prepend: site.url }}">CRCO</a>
+          </td>
+          <td><a href="http://www.eurocontrol.int/ServiceUnits/Dashboard/" target="_blank"><span class="glyphicon glyphicon-dashboard" style="font-size:25px;"></span></a></td>
+      </tr>
+   </tbody>
+</table>
+
 <div class="row">
-    <div class="col-lg-6">
-        <h5>CRCO Area</h5>
-        <br>
-        <div id="crt_ertSU_YY"></div>
+    <div class="col-sm-6">
+        <h5>Evolution over time</h5>
+        <div id="crt_ertSU_YY"></div><br>
         <div id="crt_ertSU_MM"></div>
-    </div>
-    <div class="col-lg-6 offset-10 text-justified">
-        <h5>En-route SU by charging zone (Jan  2017 vs Jan 2016)</h5>
+    </div> 
+    <div class="col-sm-6 offset-10 text-justified">
+        <h5>En-route SU by charging zone (Jan-Feb)</h5>
         <div id="tbl_ertSU_YY"></div>
     </div>
 </div>
-<p>For further details and drill down analysis, please refer to the <a
-href="http://www.eurocontrol.int/ServiceUnits/Dashboard/">Service Unit
-Dashboard</a>.</p>
-
 
 {% javascript crt_flts_YY %}
 {% javascript crt_flts_MM %}

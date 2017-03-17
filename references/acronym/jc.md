@@ -8,4 +8,8 @@ keywords: metadata, performance, data, statistics, air transport, flights, europ
 ---
 # {{ page.title }}
 
-The EUROCONTROL definition of “just culture”, also adopted by other European aviation stakeholders, is a culture in which “front line operators or others are not punished for actions, omissions or decisions taken by them that are commensurate with their experience and training, but where gross negligence, wilful violations and destructive acts are not tolerated.”
+The EUROCONTROL definition of “just culture”, also adopted by other European
+aviation stakeholders, is a culture in which “front line operators or others
+are not punished for actions, omissions or decisions taken by them that are
+commensurate with their experience and training, but where gross negligence,
+wilful violations and destructive acts are not tolerated.”

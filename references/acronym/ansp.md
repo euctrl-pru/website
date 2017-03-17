@@ -8,4 +8,4 @@ keywords: metadata, performance, data, statistics, air transport, flights, europ
 ---
 # {{ page.title }}
 
-**A**ir **N**avigation **S**ervices **P**rovider
+A body that manages flight traffic on behalf of a company, region or country.

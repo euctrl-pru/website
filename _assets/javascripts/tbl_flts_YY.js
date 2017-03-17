@@ -8,7 +8,7 @@
          options: {
             //allowHtml: true,
             width: 550,
-            height: 320,
+            height: 200,
          },
          view: { columns: [0, 1, 2, 3] }
       });

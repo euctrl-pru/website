@@ -8,4 +8,14 @@ keywords: metadata, performance, data, statistics, air transport, flights, europ
 ---
 # {{ page.title }}
 
-Unauthorised penetration of airspace (also known as Airspace Infringement). The penetration by an aircraft into a portion of airspace without prior permission of the appropriate authorities (when such prior permission is required). EUROCONTROL HEIDI – ESARR 2 taxonomy
+Unauthorised penetration of airspace (also known as Airspace Infringement).
+The penetration by an aircraft into a portion of airspace without prior
+permission of the appropriate authorities
+(when such prior permission is required).
+
+## See Also
+
+* [UAP][uapSB]{:target="_blank"} page at [SKYbrary][sb]{:target="_blank"}.
+
+[uapSB]: <http://www.skybrary.aero/index.php/Unauthorised_Penetration_of_Airspace> "UAP - SKYbrary"
+[sb]: <http://www.skybrary.aero> "SKYbrary"

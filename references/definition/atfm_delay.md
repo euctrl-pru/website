@@ -10,9 +10,10 @@ keywords: metadata, performance, data, statistics, economics, air transport, fli
 
 The duration between the last take-off time requested by the aircraft operator
 and the take-off slot allocated by the Network Manager following a regulation
-communicated by the [FMP](/references/definition/fmp.html), in relation to an
+communicated by the [FMP][fmp], in relation to an
 airport (airport delay) or sector (en-route delay) location.
 
+See also [ATFM delay causes and codes][atfm_code].
 
 ## Unit of Measurement
 
@@ -31,3 +32,5 @@ For more information on the the change in methodology [click here][atfm_dly_rea]
 
 
 [atfm_dly_rea]: <{{ "/references/methodology/ATFM_delay_calculation.html" | prepend: site.baseurl | prepend: site.url }}> "ATFM Delay calculation changes due to REA"
+[fmp]: <{{ "/references/acronym/fmp.html" | prepend: site.baseurl | prepend: site.url }}> "FMP"
+[atfm_code]: <{{ "/references/definition/atfm_delay_codes.html" | prepend: site.baseurl | prepend: site.url }}> "ATFM delay causes and codes"
