@@ -19,7 +19,7 @@ dates:
     end: Dec 2016
   hfe_kpi:
     beg: Dec 2014
-    end: Dec 2016
+    end: Feb 2017
   apt_flt:
     beg: Jan 2014
     end: Feb 2017
