@@ -151,7 +151,8 @@ WHERE
   UNIT_PRU_TYPE = 'ANSP' and
   UNIT_NAME NOT IN ('NATS','NATS (Oceanic)','HungaroControl',
                     'Avinor (Continental)','Avinor (Oceanic)','NAV Portugal (Santa Maria)',
-                    'UNKNOWN','MILITARY','AIRPORT','PIA','BHANSA', 'KFOR (HungaroControl)' )
+                    'UNKNOWN','MILITARY','AIRPORT','PIA','BHANSA', 'KFOR (HungaroControl)',
+                    'Israel AA', 'ONDA' )
 ORDER BY 4,5;
 
 
