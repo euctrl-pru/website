@@ -66,7 +66,7 @@ see {% cite complexitymetrics --file aviation %} in the References.
 | ENTITY_NAME        | PRU             | ENTITY_NAME        | Entity name                                                     | Slovenia Control |
 | ENTITY_TYPE        | PRU             | ENTITY_TYPE        | Type of the entity to which the data relates (ANSP, FAB, AREA)  | ANSP (AUA)       |
 | CPLX_FLIGHT_HRS    | NM/PRU          | CPLX_FLIGHT_HRS    | Complexity flight hours                                         | 89.4             |
-| CPLX_INTER         | NM/PRU          | CPLX_INTER         | Complexity interactions                                         | 9.4              |
+| CPLX_INTER         | NM/PRU          | CPLX_INTER         | Complexity interactions (hours of interactions)                 | 9.4              |
 | VERTICAL_INTER_HRS | NM/PRU          | VERTICAL_INTER_HRS | Hours of vertical interactions                                  | 1.0              |
 | HORIZ_INTER_HRS    | NM/PRU          | HORIZ_INTER_HRS    | Hours of horizontal interactions                                | 5.8              |
 | SPEED_INTER_HRS    | NM/PRU          | SPEED_INTER_HRS    | Hours of speed interactions                                     | 1.5              |
@@ -77,7 +77,7 @@ see {% cite complexitymetrics --file aviation %} in the References.
 $$
 \begin{align*}
 
-\text{Adjacent Density}        & = \frac{CPLX\_INTER}{CPLX\_FLIGHT\_HRS} 60 \\
+\text{Adjusted Density}        & = \frac{CPLX\_INTER}{CPLX\_FLIGHT\_HRS} 60 \\
 \text{Vertical interactions}   & = \frac{VERTICAL\_INTER\_HRS}{CPLX\_FLIGHT\_HRS} 60 \\
 \text{Horizontal interactions} & = \frac{HORIZ\_INTER\_HRS}{CPLX\_FLIGHT\_HRS} 60 \\
 \text{Speed interactions}      & = \frac{SPEED\_INTER\_HRS}{CPLX\_FLIGHT\_HRS} 60 \\
