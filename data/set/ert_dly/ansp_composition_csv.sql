@@ -1,27 +1,35 @@
-set sqlformat csv;
-set term off;
-set feedback off;
+SET SQLFORMAT CSV;
+SET TERM OFF;
+SET VERIFY OFF;
+SET FEEDBACK OFF;
 SET TRIMSPOOL ON;
--- take name from argument 1
-spool '&1';
+-- take output file name from argument 1
+DEFINE OUTFILE = '&1'
+
+-- take period from argument 2
+DEFINE INSTANT = '&2'
+SPOOL '&OUTFILE';
+
 
 
 SELECT ANSP_NAME, PRU_ATC_TYPE, AUA_CODE, AUA_NAME
 FROM PRUDEV.V_PRU_REL_CFMU_AUA_ANSP
 WHERE
-(WEF >= '01-JAN-2015' AND TILL > '01-JAN-2020') AND
+(WEF <= '&INSTANT' AND TILL >= '&INSTANT') AND
 ANSP_NAME NOT IN (
-'MILITARY',
-'UNKNOWN',
-'AIRPORT',
-'BHANSA',
-'Avinor (Continental)',
-'Avinor (Oceanic)',
-'HungaroControl',
-'KFOR (HungaroControl)',
-'NATS',
-'NATS (Oceanic)',
-'NAV Portugal (Santa Maria)'
+    'MILITARY',
+    'UNKNOWN',
+    'AIRPORT',
+    'BHANSA',
+    'Avinor (Continental)',
+    'Avinor (Oceanic)',
+    'HungaroControl',
+    'KFOR (HungaroControl)',
+    'NATS',
+    'NATS (Oceanic)',
+    'NAV Portugal (Santa Maria)',
+    'Israel AA',
+    'ONDA'
 )
 ORDER BY LOWER(AUA_CODE), PRU_ATC_TYPE;
 
