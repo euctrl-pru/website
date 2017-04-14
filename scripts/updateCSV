@@ -95,21 +95,22 @@ fi
 (
     cd "${SCRIPT_DIR}/../data/set/ert_flt" || exit;
     DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_en-route_traffic_fab_fir_data \
-         -f En-Route_Traffic_FAB_FIR.csv 20150101 20170202;
+         -f En-Route_Traffic_FAB_FIR.csv 20150101 20170302;
     cp -f En-Route_Traffic_FAB_FIR.csv "${SCRIPT_DIR}/../graphics/en-route_atfm_delay_fab/"
 )
 
 (
     cd "${SCRIPT_DIR}/../data/set/ert_dly" || exit;
-    DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_ansp_composition_data;
+    DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_ansp_composition_data 20170301;
     mv -f ansp_composition.csv "${SCRIPT_DIR}/../_data/."
+    mv -f date_ansp_composition.yml "${SCRIPT_DIR}/../_data/."
 )
 
 ######### extract monthly file for ert_dly ###########
 # limit to latest months not yet in data/csv directory
 (
     cd "${SCRIPT_DIR}/../data/set/ert_dly" || exit;
-    DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_monthly_data 201609 201703;
+    DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_monthly_data 201609 201704;
     mv -f ert_dly_fir_*.csv "${SCRIPT_DIR}/../data/csv/."
     mv -f ert_dly_aua_*.csv "${SCRIPT_DIR}/../data/csv/."
 )
@@ -117,7 +118,7 @@ fi
 
 (
     cd "${SCRIPT_DIR}/../data/set/apt_dly" || exit;
-    DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_airport_atfm_delay_data 20140101 20170202;
+    DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_airport_atfm_delay_data 20140101 20170302;
 )
 
 #(

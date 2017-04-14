@@ -96,6 +96,9 @@ Unit Airspace (AUA). A list for each ANSP will be provided in due course.
 
 ## ANSP Composition
 
+{% assign ansp_composition_query_date = site.data.date_ansp_composition["date"] %}
+
+ANSP composition at {{ ansp_composition_query_date }}.
 <table>
 <thead>
 <tr>
