@@ -118,7 +118,7 @@ fi
 
 (
     cd "${SCRIPT_DIR}/../data/set/apt_dly" || exit;
-    DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_airport_atfm_delay_data 20140101 20170302;
+    DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_airport_atfm_delay_data 20140101 20170401;
 )
 
 #(

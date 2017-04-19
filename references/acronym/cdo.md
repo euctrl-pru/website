@@ -18,11 +18,11 @@ approach fix/final approach point.
 
 ## See Also
 
-* [CDA][cda].
+* [Continuous Descent Approach][cda].
 * [CDO][cdoLEXI]{:target="_blank"} page at [ATM Lexicon][lexi]{:target="_blank"}.
-* [CCO and CDO][cdaSB]{:target="_blank"} page at [EUROCONTROL][ectrl]{:target="_blank"}.
+* [CCO and CDO][cdoECTRL]{:target="_blank"} page at [EUROCONTROL][ectrl]{:target="_blank"}.
 
-[cda]: <{{ "/references/acronym/cda.html" | prepend: site.baseurl | prepend: site.url }}> ""
+[cda]: <{{ "/references/acronym/cda.html" | prepend: site.baseurl | prepend: site.url }}> "Continuous Descent Approach"
 
 
 [cdoLEXI]: <https://ext.eurocontrol.int/lexicon/index.php/Continuous_descent_operation> "Continuous Descent Operation - ATM Lexicon"
