@@ -44,7 +44,7 @@ only one reported air traffic accident with direct ANS contribution in 2015, whi
 With the exception of [Unauthorised Penetrations of Airspace (UPAs)][upa], the number of all key risk occurrence types 
 [(Separation minima infringements (SMIs)][smi], [Runway incursions (RIs)][ri], and ATM Specific Occurrences) decreased in the 
 [EUROCONTROL area][ectl_area] in 2015, despite the increase in traffic. Overall, there were 15 [SMIs][smi] and 28 [UPAs][upa] 
-per hundred thousand controlled flight hours in the airspace and 8 [RIs][ri] per hundred thousand movements at airports reported in 2015.    
+per hundred thousand controlled flight hours in the airspace and less than one reported [RI][ri] per ten thousand movements in 2015.    
 
 The quality and completeness of safety data reported to EUROCONTROL increased over the past years but with scope for further improvement, 
 particularly in terms of severity classification. Although this has been pointed out by the PRC on several occasions, 16% of the reported 
