@@ -17,4 +17,4 @@ of the world’s airlines. It supports airline activity and helps
 
 * [IATA][iata]{:target="_blank"} website.
 
-[iata]: <www.iata.org/> "IATA"
+[iata]: <http://www.iata.org> "IATA"

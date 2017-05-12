@@ -9,12 +9,17 @@ keywords: metadata, dataset, performance, data, statistics, economics, air trans
 # {{ page.title }}
 
 ## Data description
-This data provides the results of the analysis of vertical flight profiles during climb and descent at airports. 
-The methodology is desto measure and observe vertical flight efficiency without highlighting specific reasons for the observed behaviour. More detailed case studies are needed to find out reasons for particular observations.
+This data provides the results of the analysis of vertical flight profiles
+during climb and descent at airports.
+The methodology is desto measure and observe vertical flight efficiency
+without highlighting specific reasons for the observed behaviour.
+More detailed case studies are needed to find out reasons for particular
+observations.
 
 ## Methodology
 
-[Vertical flight efficiency during climb and descent]({{ "/references/methodology/cd_vertical_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }})
+The methodology being applied for the characterisation of CCO/CDO is described
+in the relevant [methodology page][cdo_cco_meth].
 
 
 ## Column naming and types
@@ -34,3 +39,6 @@ The methodology is desto measure and observe vertical flight efficiency without 
 | PERC_CDO_FLIGHTS       | PRU             | PERC_CDO_FLIGHTS       | Percentage of flights that are considered CDO (and don't have any considered level flight) | 75.6%    |
 | MEDIAN_CCO_ALT         | PRU             | MEDIAN_CCO_ALT         | Median CCO altitude in feet                                                                | 7290     |
 | PERC_CCO_FLIGHTS       | PRU             | PERC_CCO_FLIGHTS       | Percentage of flights that are considered CCO (and don't have any considered level flight) | 75.6%    |
+
+
+[cdo_cco_meth]: <{{ "/references/methodology/cd_vertical_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }}> "Vertical flight efficiency during climb and descent methodology"

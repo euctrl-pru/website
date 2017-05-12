@@ -36,7 +36,8 @@ See also [ATFM delay][atfm_delay].
 
 
 
-The list of ATFM delay causes can be found out in the [ATFCM Users Manual](http://www.cfmu.eurocontrol.int/cfmu/gallery/content/public/library/handbook_supplements/basic_handbook/docu_atfcm_users_manual_latest.pdf){:target="_blank"}. 
+The list of ATFM delay causes can be found out in the [ATFCM Users Manual][atfcmUM]{:target="_blank"}.
 
 [fmp]: <{{ "/references/acronym/fmp.html" | prepend: site.baseurl | prepend: site.url }}> "FMP"
 [atfm_delay]: <{{ "/references/definition/atfm_delay.html" | prepend: site.baseurl | prepend: site.url }}> "ATFM delay"
+[atfcmUM]: <https://www.eurocontrol.int/sites/default/files/content/documents/nm/network-operations/HANDBOOK/atfcm-users-manual-next.pdf> "ATFCM Users Manual - EUROCONTROL"

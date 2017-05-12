@@ -52,7 +52,7 @@ total duration of all interactions.
 
 {% img cplx_speed.png alt:"Speed interactions" title:"Speed interactions" magick:resize:150x150 %}
 
-More information on the methodologies used for the computation of the complexity score
+More information on the methodology used for the computation of the complexity score
 see {% cite complexitymetrics --file aviation %} in the References.
 
 ## Column naming and types

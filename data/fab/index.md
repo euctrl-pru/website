@@ -15,27 +15,15 @@ keywords: fab, performance, data, statistics, economics, air transport, flights,
 </style>
 
 
-# {{ page.title }}
+# {{ page.title }} {#top}
 
-<a name="top"></a>
-<a href="top" class="back-to-top">Back to Top</a>
+<a href="#top" class="back-to-top">Back to Top</a>
 
-[A](#A),
 [B](#B),
-[C](#C),
 [D](#D),
-[E](#E),
 [F](#F),
-[G](#G),
-[H](#H),
-[I](#I),
-[L](#L),
-[M](#M),
 [N](#N),
-[P](#P),
-[R](#R),
 [S](#S),
-[T](#T),
 [U](#U)
 
 <style type="text/css">
@@ -72,29 +60,20 @@ $('a.back-to-top').click(function() {
 
 
 
-## NEFAB
-
-
-## Denmark-Sweden
-
-
-## BALTIC FAB
-
-
-## FABEC
-
-
-## FABCE
-
-
-## DANUBE
-
+## BALTIC FAB {#B}
 
 ## BLUE MED
 
+## DANUBE {#D}
 
-## UK-IRELAND FAB
+## Denmark-Sweden
 
+## FABCE {#F}
 
-## SW FAB
+## FABEC
 
+## NEFAB {#N}
+
+## SW FAB {#S}
+
+## UK-IRELAND FAB {#U}

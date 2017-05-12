@@ -1,8 +1,6 @@
 ---
 layout: default
 title: "Departure Slot"
-redirect_to:
-  - http://www.eurocontrol.int/lexicon/lexicon/en/index.php/ATFM_departure_slot
 resource: true
 entity: definition
 excerpt: Performance Review Unit MetaData Definitions.
@@ -10,4 +8,14 @@ keywords: metadata, performance, data, statistics, air transport, flights, europ
 ---
 # {{ page.title }}
 
-<a href="http://www.eurocontrol.int/lexicon/lexicon/en/index.php/ATFM_departure_slot" target="_blank">Departure slot</a>
+A departure slot is a time when an aircraft can take off,
+the so called **C**alculated **T**ime of **T**ake **O**ff or [CTOT][ctot].
+
+
+## See Also
+
+* [What is a slot][wiasECTRL] page at [EUROCONTROL][ectrl] website.
+
+[wiasECTRL]: <http://www.eurocontrol.int/news/what-slot> "What is a slot - EUROCONTROL"
+[ctot]: <{{ "/references/acronym/ctot.html" | prepend: site.baseurl | prepend: site.url }}> "Calculated Time of Take Off"
+[ectrl]: <https://www.eurocontrol.int/> "EUROCONTROL"

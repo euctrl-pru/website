@@ -200,7 +200,7 @@
         }
     }
 
-    queue()
+    d3.queue()
         .defer(d3.csv, dataFile)
         .await(ready);
 }());

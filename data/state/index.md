@@ -15,10 +15,9 @@ font-size: x-small;
 </style>
 
 
-# {{ page.title }}
+# {{ page.title }} {#top}
 
-<a name="top"></a>
-<a href="top" class="back-to-top">Back to Top</a>
+<a href="#top" class="back-to-top">Back to Top</a>
 
 [A](#A),
 [B](#B),
@@ -71,7 +70,7 @@ return false;
 </script>
 
 
-## Albania<a name="A"></a>
+## Albania {#A}
 
 
 ## Armenia
@@ -80,7 +79,7 @@ return false;
 ## Austria
 
 
-## Belgium<a name="B"></a>
+## Belgium {#B}
 
 
 ## Bosnia and Herzegovina

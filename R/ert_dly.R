@@ -4,78 +4,6 @@ library(lubridate)
 
 #library(ggseas) # TODO: investigate
 
-# get the list of CSV files for en-route ATFM delay
-get_ert_dly <- function(path) {
-  col_types <- cols(
-    YEAR = col_integer(),
-    MONTH_NUM = col_integer(),
-    MONTH_MON = col_character(),
-    FLT_DATE = col_date(format = "%d-%b-%y"),
-    ENTITY_NAME= col_character(),
-    ENTITY_TYPE = col_character(),
-    FLT_ERT_1 = col_integer(),
-    DLY_ERT_1 = col_integer(),
-    DLY_ERT_A_1 = col_integer(),
-    DLY_ERT_C_1 = col_integer(),
-    DLY_ERT_D_1 = col_integer(),
-    DLY_ERT_E_1 = col_integer(),
-    DLY_ERT_G_1 = col_integer(),
-    DLY_ERT_I_1 = col_integer(),
-    DLY_ERT_M_1 = col_integer(),
-    DLY_ERT_N_1 = col_integer(),
-    DLY_ERT_O_1 = col_integer(),
-    DLY_ERT_P_1 = col_integer(),
-    DLY_ERT_R_1 = col_integer(),
-    DLY_ERT_S_1 = col_integer(),
-    DLY_ERT_T_1 = col_integer(),
-    DLY_ERT_V_1 = col_integer(),
-    DLY_ERT_W_1 = col_integer(),
-    DLY_ERT_NA_1 = col_integer(),
-    FLT_ERT_1_DLY = col_integer(),
-    FLT_ERT_1_DLY_15 = col_integer()
-  ) 
-  read_csv(path, col_types = col_types) %>%
-    select(
-      # yyyy = YEAR, mm = MONTH_NUM,
-      date = FLT_DATE, 
-      #day = day(date),
-      entity_name = ENTITY_NAME, entity_type = ENTITY_TYPE,
-      num_flights = FLT_ERT_1,
-      delay_total = DLY_ERT_1,
-      A = DLY_ERT_A_1,
-      C = DLY_ERT_C_1,
-      D = DLY_ERT_D_1,
-      E = DLY_ERT_E_1,
-      G = DLY_ERT_G_1,
-      I = DLY_ERT_I_1,
-      M = DLY_ERT_M_1,
-      N = DLY_ERT_N_1,
-      O = DLY_ERT_O_1,
-      P = DLY_ERT_P_1,
-      R = DLY_ERT_R_1,
-      S = DLY_ERT_S_1,
-      `T` = DLY_ERT_T_1,
-      V = DLY_ERT_V_1,
-      W = DLY_ERT_W_1,
-      `NA` = DLY_ERT_NA_1,
-      delayed_flights = FLT_ERT_1_DLY,
-      delayed_flights_gt15 = FLT_ERT_1_DLY_15
-    ) %>%
-    arrange(date, entity_name)
-}
-
-# read in ert_dly file (FIR by default)
-load_ert_dly_for <- function(entity = "fir") {
-  file_pattern <- str_c("ert_dly_", entity, "_.*.csv$")
-  csvs <- list.files(path = "data/csv", pattern = file_pattern, full.names = TRUE)
-  all <- lapply(csvs, get_ert_dly)
-  ert_dly <- bind_rows(all)
-  # make entity (name) var into factor
-  ert_dly <- ert_dly %>% mutate_each(funs(factor), entity_name)
-  return(ert_dly)
-}
-
-
 # TIDY!!!
 # There are 3 groups of datasets (they are both calculated by COUNTRY FIRs kind of geography):
 # 1. daily summary values;
@@ -107,10 +35,10 @@ get_details <- function(df) {
     gather(key = delay_type, value = delay, A:`NA`)
   
   # make delay_type factors
-  dly_details <-  dly_details %>% mutate_each(funs(factor), delay_type)
+  dly_details <-  dly_details %>% mutate_at(c("delay_type"), factor)
   
   # make entity type a factor
-  dly_details <-  dly_details %>% mutate_each(funs(factor), entity_type)
+  dly_details <-  dly_details %>% mutate_at(c("entity_type"), factor)
   
   # IS IT CORRECT to ZERO NAs????
   # zero delay_total cells which are NA
@@ -135,7 +63,7 @@ get_averages <- function(details_df) {
 
 
 ####### FIR ########
-fir_ert_dly_all <- load_ert_dly_for(entity = "fir")
+fir_ert_dly_all <- load_ert_dly_for(monthpattern = "2013.*",entity = "fir")
 fir_dly_details <- get_details(fir_ert_dly_all)
 fir_avg_dly_entity <- get_averages(fir_dly_details)
 fir_dly_summaries <- get_summaries(fir_ert_dly_all)

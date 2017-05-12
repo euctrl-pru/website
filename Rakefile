@@ -39,10 +39,16 @@ namespace :dev do
 
   desc 'Check links: site needs to be running.'
   task :test do
-    HTMLProofer.check_directory('./_site', {
-                                  :check_favicon => true,
-                                  :url_ignore => ['http://localhost:4000']
-                                }).run
+    HTMLProofer.check_directories(["_site/"], {
+      :check_favicon => false,
+      :empty_alt_ignore => false,
+      :href_ignore => ["#", "http://localhost:4000", /^(https?\:\/\/)?(www\.)?youtube\.com\/.+$/],
+      :parallel => {:in_processes => 4},
+      :only_4xx => true,
+      :check_html => false,
+      :typhoeus => {
+        :timeout => 3 }
+    }).run
   end
 
   desc 'Clean up generated site'

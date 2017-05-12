@@ -12,7 +12,7 @@ needsMath: true
 ## Introduction
 
 The actual time spent by a flight between its last entry in the
-[ASMA]({{ "/references/definition/asma.html" | prepend: site.baseurl | prepend: site.url }}) (Entry-time at 40 NM upstream -
+[ASMA]({{ "/references/acronym/asma.html" | prepend: site.baseurl | prepend: site.url }}) (Entry-time at 40 NM upstream -
 $$A_{LET}$$) and the actual landing time
 ([$$A_{ALDT}$$]({{ "/references/acronym/aldt.html" | prepend: site.baseurl | prepend: site.url }})) is denoted
 *[ASMA transit time]({{ "/references/definition/asma_transit_time.html" | prepend: site.baseurl | prepend: site.url }})*

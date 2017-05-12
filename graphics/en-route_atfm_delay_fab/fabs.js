@@ -75,9 +75,9 @@ var d3, queue, vis, params, topojson;
       else {
         d.YEAR = +d.YEAR;
         d.id = fabsInfo[obj_idx].id;
-        d.FLT_ERT_1 = +d.FLT_ERT_1;
-        d.DLY_ERT_1 = +d.DLY_ERT_1;
-        d.rate = d.FLT_ERT_1 == 0 ? 0 : d.DLY_ERT_1 / d.FLT_ERT_1;
+        d.flt = +d.flt;
+        d.dly = +d.dly;
+        d.rate = d.flt == 0 ? 0 : d.dly / d.flt;
       }
     });
     vis.trafficdelays = trafficdelays;
@@ -93,7 +93,7 @@ var d3, queue, vis, params, topojson;
     var fabs = (params.fabs || "fabs.json") + (params.refresh ? ("#" + Math.random()) : "");
     var world = (params.world || "world-50m.json") + (params.refresh ? ("#" + Math.random()) : "");
     var names = (params.worldnames || "world-country-names.tsv") + (params.refresh ? ("#" + Math.random()) : "");
-    var trafficdelays = (params.trafficdelays || "En-Route_Traffic_FAB_FIR.csv") + (params.refresh ? ("#" + Math.random()) : "");
+    var trafficdelays = (params.trafficdelays || "monthly_ert_dly_fab_fir.csv") + (params.refresh ? ("#" + Math.random()) : "");
 
     queue()
       .defer(d3.json, fabs)

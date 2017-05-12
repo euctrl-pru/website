@@ -21,5 +21,5 @@ and emissions, and more generally to aviation environmental impact.
 
 * [CAEP][caepICAO]{:target="_blank"} page at [ICAO][icao]{:target="_blank"}.
 
-[caepICAO]: <www.icao.int/ENVIRONMENTAL-PROTECTION/Pages/CAEP.aspx> "Committee on Aviation Environmental Protection - ICAO"
+[caepICAO]: <http://www.icao.int/ENVIRONMENTAL-PROTECTION/Pages/CAEP.aspx> "Committee on Aviation Environmental Protection - ICAO"
 [icao]: <http://www.icao.int> "ICAO"

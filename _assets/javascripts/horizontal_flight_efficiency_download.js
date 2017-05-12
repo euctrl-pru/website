@@ -33,7 +33,7 @@
     }
 
     function conditionData(hfe) {
-        var fullDateFormat = d3.time.format("%d-%b-%y");
+        var fullDateFormat = d3.time.format("%Y-%m-%dT%H:%M:%SZ");
         hfe.forEach(function (d) {
             d.YEAR = +d.YEAR;
             d.MONTH_NUM = +d.MONTH_NUM;
@@ -147,7 +147,7 @@
         }
     }
 
-    queue()
+    d3.queue()
         .defer(d3.csv, dataFile)
         .await(ready);
 

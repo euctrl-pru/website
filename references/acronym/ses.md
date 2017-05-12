@@ -21,6 +21,6 @@ environmental footprint, and reducing costs related to service provision.
 * [SES 2+][sesplusEC]{:target="_blank"} page at [European Commission][ec]{:target="_blank"}.
 
 
-[sesEC]: <https://ec.europa.eu/transport/modes/air/single-european-sky_en> "SES - EC"
+[sesEC]: <https://ec.europa.eu/transport/modes/air/single_european_sky_en> "SES - EC"
 [sesplusEC]: <https://ec.europa.eu/transport/modes/air/single_european_sky/ses2plus_en> "SES 2+ - EC"
 [ec]: <https://ec.europa.eu/commission/index_en> "European Commission"

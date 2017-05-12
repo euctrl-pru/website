@@ -12,6 +12,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r, echo=TRUE, cache=FALSE}
 library(knitr)
+# Remember to run read_ert_flt.R
+
 # Remember to run ert_dly.R
 read_chunk("ert_dly.R")
 ```

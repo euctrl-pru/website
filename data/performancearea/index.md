@@ -7,40 +7,40 @@ keywords: performance, data, statistics, economics, air transport, flights, euro
 dates:
   ert_flt:
     beg: Jan 2014
-    end: Mar 2017
+    end: Apr 2017
   ert_dly_aua:
     beg: Jan 2011
-    end: Mar 2017
+    end: Apr 2017
   ert_dly_fir:
     beg: Jan 2013
-    end: Mar 2017
+    end: Apr 2017
   hfe:
     beg: Jan 2014
-    end: Mar 2017
+    end: Apr 2017
   apt_flt:
     beg: Jan 2014
-    end: Mar 2017
+    end: Apr 2017
   apt_dly:
     beg: Jan 2014
-    end: Mar 2017
+    end: Apr 2017
   asma:
     beg: Jan 2014
-    end: Feb 2017
+    end: Mar 2017
   cdo:
     beg: Jan 2015
-    end: Mar 2017
+    end: Apr 2017
   tx_out:
     beg: Jan 2014
-    end: Feb 2017
+    end: Mar 2017
   atc_pre:
     beg: Jan 2014
-    end: Feb 2017
+    end: Mar 2017
   slt_adh:
     beg: Jan 2014
-    end: Mar 2017
+    end: Apr 2017
   ace_opt:
     beg: Jan 2014
-    end: Mar 2017
+    end: Apr 2017
   cplx:
     beg: &cplxbeg Jan 2014
     end: &cplxend Dec 2016
@@ -84,7 +84,8 @@ width: 8em;
 Please note that software release 20.0 of the Network Manager on 04 April 2016 introduced
 a change to improve the accuracy of the ATFM delay calculation for operational purposes.
 For more information on the the change in methodology
-<a href="{{ "/references/methodology/ATFM_delay_calculation.html" | prepend: site.baseurl | prepend: site.url }}">click here</a>.
+<a href="{{ "/references/methodology/ATFM_delay_calculation.html" | prepend: site.baseurl | prepend: site.url }}">click here</a>.<br>
+Changes due to the Post Operations Performance Adjustment Process are not considered on this page. More information including the list of changes in 2016 is available from the respective <a href="http://www.eurocontrol.int/publications/post-operations-performance-adjustment-process" target="_blank">NM website</a>.
 
 ### {% img prcq-operations-enroute.png magick:resize:50x50 alt:'Operations En-route' class:'leadimg' %} Operations En-route
 

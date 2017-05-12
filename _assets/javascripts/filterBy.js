@@ -23,14 +23,14 @@ function buildFilter(id, allLabel, dim, dimGroup) {
   });
 
   function filterByDim(val) {
-    console.log(val);
+    // console.log(val);
     dim.filterAll();
     if (+val !== -1) {
       dim.filter(function (d) { return d === dims[val].text; });
     }
     else {
       dim.filterAll();
-      console.log("selected '" + allLabel + "'.");
+      // console.log("selected '" + allLabel + "'.");
     }
     dc.redrawAll();
   }

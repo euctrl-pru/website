@@ -15,7 +15,7 @@ function drawVisualization()
       var crt_saf_acc_YY = new google.visualization.ChartWrapper({
          chartType: 'ComboChart',
          containerId: 'crt_saf_acc_YY',
-         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/gviz/tq?sheet=saf&range=A5:D15&headers=1&tq=',
+         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1LLmxl-dEBtNQEGRjX9wqY2umfMdeO6-rgwYyIGx-J6E/gviz/tq?sheet=saf&range=A5:D15&headers=1&tq=',
          options: {
             title: 'Accidents',
             titlePosition: 'out',
@@ -59,7 +59,7 @@ function drawVisualization()
       var crt_saf_accatm_YY = new google.visualization.ChartWrapper({
          chartType: 'ComboChart',
          containerId: 'crt_saf_accatm_YY',
-         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/gviz/tq?sheet=saf&range=A23:D33&headers=1&tq=',
+         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1LLmxl-dEBtNQEGRjX9wqY2umfMdeO6-rgwYyIGx-J6E/gviz/tq?sheet=saf&range=A23:D33&headers=1&tq=',
          options: {
             title: 'Accidents with ATM contribution',
             titlePosition: 'out',
@@ -120,7 +120,7 @@ google.setOnLoadCallback(drawVisualization)
          <td>Jan-Dec</td>
          <td><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL Area</a></td>
          <td>Annually</td>
-         <td>15-March-2017</td>
+         <td>28-April-2017</td>
          <td><a href="http://www.eurocontrol.int" target="_blank">EUROCONTROL</a></td>
       </tr>
    </tbody>
@@ -130,13 +130,13 @@ google.setOnLoadCallback(drawVisualization)
    <tbody> 
       <tr class = "active">
          <td><span style="color: rgb(192, 80, 77);">
-         Please note that the preliminary (P) 2016 data will only be available in April 2017
+         Please note that the 2016 data is still preliminary (P).
          </span> </td>
       </tr>
    </tbody>
 </table>
 
-<h3 class="sub-header">Accidents</h3>
+<h3 class="sub-header">Accidents (fixed wing, weight > 2250 kg MTOW)</h3>
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
   <div id="crt_saf_acc_YY"></div>
@@ -149,12 +149,12 @@ google.setOnLoadCallback(drawVisualization)
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
-Overall, there were 91 accidents in the EUROCONTROL area in 2015 out of which 18 were fatal.<br>
-Similarly to 2014 this represents approximately the 20% of total accidents.
+According to the preliminary data, there were 67 accidents in the EUROCONTROL area in 2016 of which 15 were fatal.<br>
 </div></div></div>
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
- There was only one reported accident with direct ATM contribution in 2015 (non-fatal ground collision).
+ There was no reported accident with direct ATM contribution in 2016 (P), compared to one reported accident with direct ATM 
+ contribution in 2015 (non fatal ground collision).
 </div></div></div>
 </div>
 
@@ -174,14 +174,14 @@ Similarly to 2014 this represents approximately the 20% of total accidents.
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
- Despite an increase in traffic, the number of reported risk bearing SMIs (Severity A+B) decreased in 2015 from 273 to 241.
- Overall, 10% of all reported SMIs in 2015 were categorised as risk bearing which is 2% less than in 2014.
+ The preliminary data for 2016 indicates that the number of reported risk bearing SMIs (Severity A+B) increased in 2016.
+ Overall, 12.5% of all reported SMIs in 2016 were categorised as risk bearing which represents an increase on 2015 (10.3%).
 </div></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
- The number of risk bearing UPA occurrences (Severity A+B) increased notably from 60 to 88 in 2015.
- As a result, the share of risk bearing UPAs in the total reported increased from 1% to 2% in 2015.
+ Following the increase in 2015, the number of reported risk bearing UPAs (Severity A+B) decreased in 2016 (P).
+ As a result, the share of risk bearing UPAs decreased from 2.0% to 1.7% in 2016.
 </div></div>
 </div>
 </div>
@@ -201,14 +201,13 @@ Similarly to 2014 this represents approximately the 20% of total accidents.
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
-The reported risk bearing RIs (Severity A+B) decreased from 100 to 94 in 2015.
-At the same time, the share of risk bearing RIs remained at 7% of the total reported RIs in 2015.
+The reported risk bearing RIs (Severity A+B) increased in 2016 (P).
+At the same time, the share of risk bearing RIs decreased from 6.7% to 6.0% in 2016 (P).
 </div></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
-The total number of risk bearing ATM-S decreased from 463 to 453 in 2015.
-However, the total number of reported ATM-S increased which was mainly due to changes in data submission in one State.
+The total number of risk bearing ATM-S decreased notably in 2016 (P).
 </div></div>
 </div>
 </div>

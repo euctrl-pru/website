@@ -7,7 +7,7 @@ var tbl_cap_fir_ert_YY = {};
     var twodecimals = d3.format(".2n");
     var integerFormatter = new google.visualization.NumberFormat({fractionDigits: 0, groupingSymbol: '' });
     var twodecimalFormatter = new google.visualization.NumberFormat({ fractionDigits: 2, groupingSymbol: '' });
-    d3.text((baseurl || "") + "/data/set/ert_flt/En-Route_Traffic_FAB_FIR.csv", function(text) {
+    d3.text((baseurl || "") + "/graphics/en-route_atfm_delay_fab/monthly_ert_dly_fab_fir.csv", function(text) {
       var csvArray = d3.csv.parseRows(text, function (d, i) {
         if (i === 0) {
             return ["Year","FAB","Flights","Delay [min.]", "Avg. per Flight"];

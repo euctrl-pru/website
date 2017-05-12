@@ -48,7 +48,7 @@ When using GitHub Pages any repository named `<username or
 organization nane>.github.io` will be served on the web by GitHub web servers.
 And if you want your site to be visible under your own domain name you just need
 to specify it in a file called `CNAME` and the magic will happen.
-(Ok, there are [few other things to setup](cname) but it is soooo simple.)
+(Ok, there are [few other things to setup][cname] but it is soooo simple.)
 
 And our `CNAME` points to `ansperformance.eu`.
 
