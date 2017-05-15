@@ -50,7 +50,7 @@
     }
 
     function conditionData(arr) {
-        var fullDateFormat = d3.time.format("%d-%b-%y");
+        var fullDateFormat = d3.time.format("%Y-%m-%dT%H:%M:%SZ");
 
         arr.forEach(function (d) {
             d.YEAR = +d.YEAR;
