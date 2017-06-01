@@ -96,11 +96,6 @@ TIL = 2017-05-01
 
     Rscript R/export_ert_dly_fab_fir 2015-01-01 ${TIL};
     Rscript R/export_apt_dly 2014-01-01 ${TIL};
-)
 
-(
-    cd "${SCRIPT_DIR}/../data/set/ert_dly" || exit;
-    DBUSR=$YYYDBUSR DBPWD=$YYYDBPWD ./extract_ansp_composition_data 20170501;
-    mv -f ansp_composition.csv "${SCRIPT_DIR}/../_data/."
-    mv -f date_ansp_composition.yml "${SCRIPT_DIR}/../_data/."
+    Rscript R/export_ansp_composition ${TIL};
 )
