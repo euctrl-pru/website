@@ -19,11 +19,11 @@ suppressMessages(library(tidyr))
 suppressMessages(library(purrr))
 suppressMessages(library(dplyr))
 
-ftype <- "fab_fir"
+ftype <- "fir"
 csvs <- list.files("data/csv", pattern = str_c("ert_dly_", ftype,"_\\d{4}\\.csv\\.bz2"), full.names = TRUE)
 
 
-get_ert_flt <- function(path) {
+get_ert_dly <- function(path) {
   col_types <- cols(
     # HACK: read doubles by default and then cast to integer
     # FIX: fix on write_csv
@@ -32,9 +32,10 @@ get_ert_flt <- function(path) {
     MONTH_NUM = col_integer(),
     MONTH_MON = col_character(),
     FLT_DATE = col_datetime(format = ""),
-    ENTITY_NAME = col_character()
-    )
-
+    ENTITY_NAME = col_character(),
+    ENTITY_TYPE = col_character()
+  )
+  
   read_csv(path, col_types = col_types) %>%
     mutate(
       FLT_ERT_1 = as.integer(FLT_ERT_1),
@@ -61,8 +62,9 @@ get_ert_flt <- function(path) {
 
 
 all <- csvs %>%
-  map(get_ert_flt) %>%
+  map(get_ert_dly) %>%
   bind_rows() %>%
+  filter(ENTITY_TYPE == "FAB (FIR)", ENTITY_NAME != "FAB CE (SES RP1)", ENTITY_NAME != "FAB CE") %>%
   select(YEAR, MONTH_NUM, FLT_DATE, ENTITY_NAME, FLT_ERT_1, DLY_ERT_1) %>%
   replace_na(replace = list(FLT_ERT_1= 0, DLY_ERT_1 = 0)) %>%
   group_by(YEAR, ENTITY_NAME) %>%

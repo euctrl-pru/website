@@ -90,12 +90,13 @@ TIL = 2017-05-01
 
 (
     cd "${SCRIPT_DIR}/../" || exit;
+    Rscript R/export_ert_dly -t ansp 2017-01-01 ${TIL};
+    Rscript R/export_ert_dly -t fir 2017-01-01 ${TIL};
+    Rscript R/export_apt_dly 2014-01-01 ${TIL};
     Rscript R/export_hfe.R;
+
     Rscript R/generate_ert_flt_percent_chage.R
     Rscript R/ R/generate_monthly_ert_dly_fab_fir.R
-
-    Rscript R/export_ert_dly_fab_fir 2015-01-01 ${TIL};
-    Rscript R/export_apt_dly 2014-01-01 ${TIL};
 
     Rscript R/export_ansp_composition ${TIL};
 )
