@@ -339,7 +339,7 @@ inefficiency of the FAB will also be greater than zero.
 
 ## Summary of the different quantities
 
-Table {@tab:summary} below provides a summary of the different quantities
+[Table 3](#tab:summary) below provides a summary of the different quantities
 involved in the computation of the additional distance (and therefore the
 inefficiency) for a flight. As can be seen in the last column, while the lengths
 of the trajectory, the achieved distances and the additional distances are
@@ -359,7 +359,7 @@ courses.
 | Additional distance | $K = L -H (= L - G)$ | $K_j = L_j - H_j$ | $\sum_{j} K_j = K$ |  Yes  |
 
 {:.table-caption}
-Table 3: Summary of the different quantities used to compute HFE
+<a name="tab:summary"></a>Table 3: Summary of the different quantities used to compute HFE
 
 
 ## Aggregation of results to produce the indicator
