@@ -86,13 +86,13 @@ if (( $# != 0 )); then
     exit 1
 fi
 
-TIL = 2017-06-01
+TIL=2017-06-01
 
 (
     cd "${SCRIPT_DIR}/../" || exit;
-    Rscript R/export_ert_dly -t ansp 2017-01-01 ${TIL};
-    Rscript R/export_ert_dly -t fir 2017-01-01 ${TIL};
-    Rscript R/export_apt_dly 2014-01-01 ${TIL};
+    Rscript R/export_ert_dly.R -t ansp 2017-01-01 ${TIL};
+    Rscript R/export_ert_dly.R -t fir 2017-01-01 ${TIL};
+    Rscript R/export_apt_dly.R 2014-01-01 ${TIL};
     Rscript R/export_hfe.R;
 
     Rscript R/generate_ert_flt_percent_chage.R
