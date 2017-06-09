@@ -1,6 +1,7 @@
 library(dplyr)
 library(ggplot2)
 library(viridis)
+library(lubridate)
 
 source("R/read_ert_dly.R")
 year_end <- floor_date(Sys.Date(), "month")
