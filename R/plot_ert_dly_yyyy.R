@@ -16,7 +16,6 @@ ectrl_summaries_yyyy <- ectrl_summaries %>%
 ectrl_yyyy <- inner_join(ectrl_details_yyyy, ectrl_summaries_yyyy, by = "yyyy")
 
 
-# g <- ggplot(ectrl_yyyy, aes(x = ymd(str_c(yyyy, "0101")), y = delay/flt_tot, fill = delay_group))
 g <- ggplot(ectrl_yyyy, aes(x = yyyy, y = delay/flt_tot, fill = delay_group))
 
 plot <- g +
@@ -37,7 +36,7 @@ plot <- g +
       "Capacity (ATC)")) +
   labs(
     x = "Year",
-    y = "Minutes of delay per flight",
+    y = "En-route ATFM delay (min/flight)",
     title = "Yearly en-route ATFM delay",
     subtitle = "Split per delay group")
 
