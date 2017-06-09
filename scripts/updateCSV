@@ -86,7 +86,7 @@ if (( $# != 0 )); then
     exit 1
 fi
 
-TIL = 2017-05-01
+TIL = 2017-06-01
 
 (
     cd "${SCRIPT_DIR}/../" || exit;
