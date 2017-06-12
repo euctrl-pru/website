@@ -24,7 +24,7 @@ ectrl_mm12 <- inner_join(ectrl_details_mm12, ectrl_summaries_mm12, by = c("yyyy"
 
 g <- ggplot(ectrl_mm12, aes(x = date, y = delay/flt_tot, fill = delay_group))
 
-plot <- g +
+ert_dly_12m_plot <- g +
   geom_bar(stat = "identity") +
   scale_x_date(
     date_labels = "%b-%Y",
@@ -43,8 +43,10 @@ plot <- g +
     x = "Month",
     y = "En-route ATFM delay (min/flight)",
     title = "Last year monthly en-route ATFM delay",
-    subtitle = "Split per delay group")
+    subtitle = "Split per delay group") +
+  theme(legend.position = c(0.85, 0.8))
 
-plot + theme(legend.position = c(0.85, 0.8))
+ggsave("_assets/images/ert_dly_12mm.png", plot = ert_dly_12m_plot)
+
 # library(plotly)
 # ggplotly(plot)
