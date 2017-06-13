@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Base of Aircraft Data (BADA)"
+title: "BADA - Base of Aircraft Data"
 resource: true
 entity: acronym
 excerpt: Performance Review Unit MetaData Definitions.

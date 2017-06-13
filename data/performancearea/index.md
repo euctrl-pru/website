@@ -173,7 +173,7 @@ Changes due to the Post Operations Performance Adjustment Process are not consid
 [CPLX1xlsx]: <{{ "/data/set/cplx/Traffic_Complexity_Scores2.xlsm" | prepend: site.baseurl | prepend: site.url }}> "CPLX (Excel)"
 [CPLXcsv]: <{{ "/404.html" | prepend: site.baseurl | prepend: site.url }}> "CPLX (CSV)"
 [CPLXmeta]: <{{ "/references/dataset/Traffic_Complexity_Score.html" | prepend: site.baseurl | prepend: site.url }}> "CPLX (Meta)"
-[CPLXbada]: <{{ "" | prepend: site.baseurl | prepend: site.url }}/references/acronym/bada.html> "ATFM Delay definition"
+[CPLXbada]: <{{ "" | prepend: site.baseurl | prepend: site.url }}/references/acronym/bada.html> "Base of Aircraft Data"
 
 ### {% img prcq-economics.png magick:resize:50x50 alt:'ATM Cost-Effectiveness (ACE) operational data' class:'leadimg' %} ATM Cost-Effectiveness (ACE) operational data
 
