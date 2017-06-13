@@ -113,6 +113,7 @@ AUTHORS text
 *.gz binary
 *.zip binary
 *.7z binary
+*.bz2 binary
 
 *.pdf binary
 

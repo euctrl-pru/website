@@ -44,18 +44,13 @@ in more detail in the relevant [NM Release presentation][NM20-rn].
 
 ## Impact on this webpage
 
-**Graphs:** The ATFM delay related graphs shown on this web page take the change
-in methodology as of April 2016 into account.
+The ATFM delay related graphs shown on this web page and data in the 
+[download area]({{site.url}}/data/performancearea/) take the change in 
+methodology as of April 2016 into account.
 
-**Download area:** In the interest of transparency, the PRU publishes both data
-sets in the [download area]({{site.url}}/data/performancearea/):
-
-* ATFM delays based on the old methodology (i.e. REA message related ATFM delays
-  are included) are marked as **Version 1**.
-
-* ATFM delays based on the revised methodology (as of 04 April 2016) are marked
-  as **Version 2**.
-
+In the ATFM delay download files, the data computed in accordance with the old methodology 
+(i.e. REA message related ATFM delays are included) are marked as **Version 1** and the data 
+based on the revised methodology (as of 04 April 2016) are marked as **Version 2**.
 
 
 [NM20-rn]: <{{"/references/library/NM_20_FB750_Delay_Calculation_improvements.pdf" | prepend: site.baseurl | prepend: site.url }}> "NM 20 Release Notes: Delay calculation improvements"
