@@ -13,6 +13,6 @@ the trajectories generated via radar data.
 
 ## See Also
 
-* [HFE][hef] page in the [Methodology section][]{:target="_blank"}.
+* [HFE][hef] in the [Methodology]({{ "/references/methodology/" | prepend: site.baseurl | prepend: site.url }}) section.
 
 [hfe]: <{{ "references/methodology/horizontal_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }}> "HFE methodology"
