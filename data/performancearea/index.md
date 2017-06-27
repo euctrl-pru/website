@@ -169,8 +169,8 @@ Changes due to the Post Operations Performance Adjustment Process are not consid
 | Complexity (based on [BADA][CPLXbada] version 3.6) <br><small>Complexity by ANSP</small>              | {{ page.dates.cplx.beg }} - {{ page.dates.cplx.end }}  | [xls {{ page.dwnld_i }}][CPLXxlsx] |    | [meta {{ page.info_i }}][CPLXmeta] |
 | Complexity (based on [BADA][CPLXbada] version 3.13.1) <br><small>Complexity by ANSP</small>              | {{ page.dates.cplx1.beg }} - {{ page.dates.cplx1.end }}  | [xls {{ page.dwnld_i }}][CPLX1xlsx] |    | [meta {{ page.info_i }}][CPLXmeta] |
 
-[CPLXxlsx]: <{{ "/data/set/cplx/Traffic_Complexity_Scores1.xlsm" | prepend: site.baseurl | prepend: site.url }}> "CPLX (Excel)"
-[CPLX1xlsx]: <{{ "/data/set/cplx/Traffic_Complexity_Scores2.xlsm" | prepend: site.baseurl | prepend: site.url }}> "CPLX (Excel)"
+[CPLXxlsx]: <{{ "/data/set/cplx/Traffic_Complexity_Scores_1.xlsm" | prepend: site.baseurl | prepend: site.url }}> "CPLX (Excel)"
+[CPLX1xlsx]: <{{ "/data/set/cplx/Traffic_Complexity_Scores_2.xlsm" | prepend: site.baseurl | prepend: site.url }}> "CPLX (Excel)"
 [CPLXcsv]: <{{ "/404.html" | prepend: site.baseurl | prepend: site.url }}> "CPLX (CSV)"
 [CPLXmeta]: <{{ "/references/dataset/Traffic_Complexity_Score.html" | prepend: site.baseurl | prepend: site.url }}> "CPLX (Meta)"
 [CPLXbada]: <{{ "" | prepend: site.baseurl | prepend: site.url }}/references/acronym/bada.html> "Base of Aircraft Data"
