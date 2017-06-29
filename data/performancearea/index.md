@@ -85,12 +85,12 @@ width: 8em;
 </style>
 ## Operations
 
-Please note that software release 20.0 of the Network Manager on 04 April 2016 introduced
+<span style="color: rgb(192, 80, 77);">Please note that software release 20.0 of the Network Manager on 04 April 2016 introduced
 a change to improve the accuracy of the ATFM delay calculation for operational purposes.
 For more information on the the change in methodology
-<a href="{{ "/references/methodology/ATFM_delay_calculation.html" | prepend: site.baseurl | prepend: site.url }}">click here</a>.<br>
+<a href="{{ "/references/methodology/ATFM_delay_calculation.html" | prepend: site.baseurl | prepend: site.url }}">click here</a>.</span> <br>
 <br>
-Changes due to the Post Operations Performance Adjustment Process are not considered on this page. More information including the list of changes in 2016 is available from the respective <a href="http://www.eurocontrol.int/publications/post-operations-performance-adjustment-process" target="_blank">NM website</a>.
+<span style="color: rgb(192, 80, 77);">Different from the SES performance scheme, changes due to the Post Operations Performance Adjustment Process in 2016 are not considered in the ATFM delay data on this page. More information including the list of changes in 2016 is available from the respective <a href="http://www.eurocontrol.int/publications/post-operations-performance-adjustment-process" target="_blank">NM website</a></span> .
 
 ### {% img prcq-operations-enroute.png magick:resize:50x50 alt:'Operations En-route' class:'leadimg' %} Operations En-route
 
