@@ -67,7 +67,7 @@ all <- csvs %>%
   bind_rows()
 
 all %>% 
-  filter(YEAR >= 2016, MONTH_NUM >=1, MONTH_NUM < 5) %>%
+  filter(YEAR >= 2016, MONTH_NUM >=1, MONTH_NUM < 7) %>%
   rename(entity = ENTITY_NAME) %>%
   group_by(YEAR, entity) %>%
   summarise(flt = sum(FLT_ERT_1)) %>%
