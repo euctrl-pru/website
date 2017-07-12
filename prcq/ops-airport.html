@@ -15,7 +15,7 @@ function drawVisualization()
   var crt_apt4 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt4',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1LLmxl-dEBtNQEGRjX9wqY2umfMdeO6-rgwYyIGx-J6E/edit?usp=sharing&sheet=apt&range=A1:E4',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1AqfON7ds2BlGnK4NFQ_NmVd3KsHl2UXRrksyOISJ9zY/edit?usp=sharing&sheet=apt&range=A1:E4',
     options:{
           height: 300,
           chartArea: {left: 40, top: 10, },
@@ -28,7 +28,8 @@ function drawVisualization()
                 3: {type:'bars',color:'#B9CDE5', targetAxisIndex: 0},
                 4: {type:'bars',color:'92D050', targetAxisIndex: 0}
               },
-          hAxis: {slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}},
+          hAxis: {slantedText: true,
+            slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}},
           vAxis: {title: 'minutes per arrival', format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
         },
     view: {'columns': [0,1,2,3,4]}
@@ -38,10 +39,10 @@ function drawVisualization()
   var crt_apt5 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt5',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1LLmxl-dEBtNQEGRjX9wqY2umfMdeO6-rgwYyIGx-J6E/edit?usp=sharing&sheet=apt&range=A10:F40',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1AqfON7ds2BlGnK4NFQ_NmVd3KsHl2UXRrksyOISJ9zY/edit?usp=sharing&sheet=apt&range=A10:F40',
     options:{
         height: 300,
-        chartArea: {left: 80, top: 10, width:'100%', height:'40%'},
+        chartArea: {left: 80, top: 10, width:'100%', height:'35%'},
           legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 12} ,maxLines: 2},
           isStacked : 'true',
           series: {
@@ -51,7 +52,7 @@ function drawVisualization()
                 3: {type:'bars',color:'#B9CDE5', targetAxisIndex: 0},
                 4: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 0}
               },
-          hAxis: {slantedTextAngle: 45, textStyle: {color: 'grey', fontSize: 11},},
+          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 10},},
           vAxis: {format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
         },
     view: {'columns': [0,1,2,3,4,5]}
@@ -61,14 +62,14 @@ function drawVisualization()
   var crt_apt6 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt6',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1LLmxl-dEBtNQEGRjX9wqY2umfMdeO6-rgwYyIGx-J6E/edit?usp=sharing&sheet=apt&range=H1:I4',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1AqfON7ds2BlGnK4NFQ_NmVd3KsHl2UXRrksyOISJ9zY/edit?usp=sharing&sheet=apt&range=H1:I4',
     options:{
           height: 300, chartArea: {left: 40, top: 10,},
           legend: {position:'none'},
           series: {
                 0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0}
               },
-          hAxis: {slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}},
+          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}},
           vAxis: {title: 'minutes per arrival', format: '0.0', minValue: 0.0, titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
         },
     view: {'columns': [0,1]}
@@ -78,17 +79,17 @@ function drawVisualization()
   var crt_apt7 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt7',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1LLmxl-dEBtNQEGRjX9wqY2umfMdeO6-rgwYyIGx-J6E/edit?usp=sharing&sheet=apt&range=H10:J40',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1AqfON7ds2BlGnK4NFQ_NmVd3KsHl2UXRrksyOISJ9zY/edit?usp=sharing&sheet=apt&range=H10:J40',
     options:{
         height: 300,
-        chartArea: {left: 80, top: 10, width:'100%',height:'45%'},
+        chartArea: {left: 80, top: 10, width:'100%',height:'40%'},
           legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 11}},
       //    isStacked : 'true',
           series: {
                 0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0},
                 1: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 0}
               },
-          hAxis: {slantedTextAngle: 45, textStyle: {color: 'grey', fontSize: 11}, },
+          hAxis: {slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}, },
           vAxis: {format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
         },
     view: {'columns': [0,2,1]}
@@ -99,14 +100,14 @@ function drawVisualization()
   var crt_apt8 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt8',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1LLmxl-dEBtNQEGRjX9wqY2umfMdeO6-rgwYyIGx-J6E/edit?usp=sharing&sheet=apt&range=L1:M4',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1AqfON7ds2BlGnK4NFQ_NmVd3KsHl2UXRrksyOISJ9zY/edit?usp=sharing&sheet=apt&range=L1:M4',
     options:{
           height: 300, chartArea: {left: 40, top: 10, width:'100%',height:'50%'},
           legend: {position:'none'},
           series: {
                 0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0}
               },
-          hAxis: {slantedTextAngle: 45, textStyle: {color: 'grey', fontSize: 11}},
+          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}},
           vAxis: {title: 'minutes per departure', format: '0.0', minValue: 0.0, titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
         },
     view: {'columns': [0,1]}
@@ -116,10 +117,10 @@ function drawVisualization()
   var crt_apt9 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt9',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1LLmxl-dEBtNQEGRjX9wqY2umfMdeO6-rgwYyIGx-J6E/edit?usp=sharing&sheet=apt&range=L10:N40',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1AqfON7ds2BlGnK4NFQ_NmVd3KsHl2UXRrksyOISJ9zY/edit?usp=sharing&sheet=apt&range=L10:N40',
     options:{
         height: 300,
-        chartArea: {left: 80, top: 10, width:'100%',height:'50%'},
+        chartArea: {left: 80, top: 10, width:'100%',height:'40%'},
           titleTextStyle : {color: 'grey', fontSize: 12},
           legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 11}},
           isStacked : 'true',
@@ -127,7 +128,7 @@ function drawVisualization()
                 0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0},
                 1: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 0}
               },
-          hAxis: {slantedTextAngle: 45, textStyle: {color: 'grey', fontSize: 11},},
+          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11},},
           vAxis: {format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
         },
     view: {'columns': [0,2,1]}
@@ -137,14 +138,14 @@ function drawVisualization()
   var crt_apt10 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt10',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1LLmxl-dEBtNQEGRjX9wqY2umfMdeO6-rgwYyIGx-J6E/edit?usp=sharing&sheet=apt&range=P1:Q4',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1AqfON7ds2BlGnK4NFQ_NmVd3KsHl2UXRrksyOISJ9zY/edit?usp=sharing&sheet=apt&range=P1:Q4',
     options:{
           height: 300, chartArea: {left: 40, top: 10, width:'100%',height:'50%'},
           legend: {position:'none'},
           series: {
                 0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0}
               },
-          hAxis: {slantedTextAngle: 45, textStyle: {color: 'grey', fontSize: 11}},
+          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}},
           vAxis: {title: 'minutes per departure', format: '0.0', minValue: 0.0, titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
         },
     view: {'columns': [0,1]}
@@ -155,10 +156,10 @@ function drawVisualization()
   var crt_apt11 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt11',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1LLmxl-dEBtNQEGRjX9wqY2umfMdeO6-rgwYyIGx-J6E/edit?usp=sharing&sheet=apt&range=P10:R40',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1AqfON7ds2BlGnK4NFQ_NmVd3KsHl2UXRrksyOISJ9zY/edit?usp=sharing&sheet=apt&range=P10:R40',
     options:{
         height: 300,
-        chartArea: {left: 80, top: 10, width:'100%',height:'50%'},
+        chartArea: {left: 80, top: 10, width:'100%',height:'40%'},
           titleTextStyle : {color: 'grey', fontSize: 12},
           legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 11}},
           isStacked : 'true',
@@ -166,7 +167,7 @@ function drawVisualization()
                 0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0},
                 1: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 0}
               },
-          hAxis: {slantedTextAngle: 45, textStyle: {color: 'grey', fontSize: 11},},
+          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11},},
           vAxis: {format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
         },
     view: {'columns': [0,2,1]}
@@ -192,10 +193,10 @@ google.setOnLoadCallback(drawVisualization)
    </thead>
    <tbody>
       <tr class = "active">
-         <td>Jan-Mar</td>
+         <td>Jan-Jun (YTD)</td>
          <td><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL area</a></td>
          <td>Quarterly</td>
-         <td>28-April-2017</td>
+         <td>14-July-2017</td>
           <td>
           <a href='{{"/references/acronym/nm-cfmu.html"| prepend: site.baseurl | prepend: site.url }}'>NM</a>,
           <a href='{{"/references/acronym/pru.html"   | prepend: site.baseurl | prepend: site.url }}'>PRU</a>,
@@ -226,14 +227,15 @@ This section analyses ANS-related inefficiencies on the arrival flow at the top 
     <div id="crt_apt4"></div>
 </div>
 <div class="col-sm-10">
-    <h5>Airport arrival ATFM delay by airport (Q1-2017 vs. Q1-2016)</h5>
+    <h5>Airport arrival ATFM delay by airport (Jan-Jun 2017 vs. Jan-Jun 2016)</h5>
     <div id="crt_apt5"></div>
 </div>
   </div><br>
 
     <div class="panel panel-info">
           <div class="panel-heading">
-            In the first quarter 2017, average airport arrival ATFM delay at the top 30 airports was slightly below average airport ATFM arrival delay in Q1 in 2016. Whereas capacity related delays decreased notably, there has been a substantial increase in weather-related delays in Q1 2017. 
+            In the first half of 2017, average airport arrival ATFM delay at the top 30 airports was 0.18 min below average airport ATFM arrival delay in 2016. The improvement is mainly due to a reduction in capacity related airport arrival ATFM delays. Weather related delays in the first half of 2017 remained at a similar level as in 2016. <br>
+            Similar to the trends observed for traffic growth at those airports, Amsterdam and Lisbon airport showed the highest increase and the two Istanbul airports showed the most notable reduction of average airport arrival ATFM delays in the first half of 2017.
           </div>
     </div>
 
@@ -244,7 +246,7 @@ This section analyses ANS-related inefficiencies on the arrival flow at the top 
     <div id="crt_apt6"></div>
 </div>
 <div class="col-sm-10">
-    <h5><a href='{{"/references/definition/additional_asma_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional ASMA time by airport</a></h5>
+    <h5><a href='{{"/references/definition/additional_asma_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional ASMA time by airport</a> Jan-Jun 2017</h5>
     <div id="crt_apt7"></div>
 </div>
   </div><br>
@@ -260,7 +262,7 @@ This section analyses ANS-related inefficiencies on the departure flow at the to
     <div id="crt_apt8"></div>
 </div>
 <div class="col-sm-10">
-    <h5><a href='{{"/references/definition/atc_pre-departure_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATC pre-departure delays by airport</a></h5>
+    <h5><a href='{{"/references/definition/atc_pre-departure_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATC pre-departure delays by airport</a> Jan-Jun 2017</h5>
     <div id="crt_apt9"></div>
 </div>
   </div><br>
@@ -273,7 +275,7 @@ This section analyses ANS-related inefficiencies on the departure flow at the to
     <div id="crt_apt10"></div>
 </div>
 <div class="col-sm-10">
-    <h5><a href='{{"/references/definition/additional_taxi-out_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional taxi-out by airport</a></h5>
+    <h5><a href='{{"/references/definition/additional_taxi-out_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional taxi-out by airport</a> Jan-Jun 2017</h5>
     <div id="crt_apt11"></div>
 </div>
   </div><br>

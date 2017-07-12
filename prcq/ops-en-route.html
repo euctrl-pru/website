@@ -15,7 +15,7 @@ function drawVisualization()
  var crt_ertdlyYY = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_ertdlyYY',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1LLmxl-dEBtNQEGRjX9wqY2umfMdeO6-rgwYyIGx-J6E/edit?usp=sharing&sheet=ert&range=A1:B11',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1AqfON7ds2BlGnK4NFQ_NmVd3KsHl2UXRrksyOISJ9zY/edit?usp=sharing&sheet=ert&range=A1:B11',
     options: {
         //width: 500, height: 200,
         //chartArea: {left: 80, top: 30, width:'60%',height:'65%'},
@@ -35,7 +35,7 @@ function drawVisualization()
   var crt_ertdlytot = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_ertdlytot',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1LLmxl-dEBtNQEGRjX9wqY2umfMdeO6-rgwYyIGx-J6E/edit?usp=sharing&sheet=ert&range=G1:I8&hl=en_GB',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1AqfON7ds2BlGnK4NFQ_NmVd3KsHl2UXRrksyOISJ9zY/edit?usp=sharing&sheet=ert&range=G1:I8&hl=en_GB',
     options:{
           chartArea: {left: 50, top: 30, width:'100%',height:'55%'},
           titleTextStyle : {color: 'grey', fontSize: 12},
@@ -57,7 +57,7 @@ function drawVisualization()
   var crt_ertdlypie = new google.visualization.ChartWrapper({
     chartType: 'PieChart',
     containerId: 'crt_ertdlypie',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1LLmxl-dEBtNQEGRjX9wqY2umfMdeO6-rgwYyIGx-J6E/edit?usp=sharing&sheet=ert&range=A15:C18&hl=en_GB',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1AqfON7ds2BlGnK4NFQ_NmVd3KsHl2UXRrksyOISJ9zY/edit?usp=sharing&sheet=ert&range=A15:C18&hl=en_GB',
     options: {
             title: '2016',
             titlePosition: 'out',
@@ -81,7 +81,7 @@ function drawVisualization()
  var crt_ertdly1 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_ertdly1',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1LLmxl-dEBtNQEGRjX9wqY2umfMdeO6-rgwYyIGx-J6E/edit?usp=sharing&sheet=ert&range=A22:F30',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1AqfON7ds2BlGnK4NFQ_NmVd3KsHl2UXRrksyOISJ9zY/edit?usp=sharing&sheet=ert&range=A22:F30',
     options: {
         chartArea: {left: 50, top: 40, width:'95%',height:'60%'},
         titleTextStyle : {color: '#1F1F2E', fontSize: 12},
@@ -107,7 +107,7 @@ function drawVisualization()
   var crt_ertdly3 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_ertdly3',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1LLmxl-dEBtNQEGRjX9wqY2umfMdeO6-rgwYyIGx-J6E/edit?usp=sharing&sheet=ert&range=A32:I72',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1AqfON7ds2BlGnK4NFQ_NmVd3KsHl2UXRrksyOISJ9zY/edit?usp=sharing&sheet=ert&range=A32:I72',
     options:{
         height: 370,
         chartArea: {left: 50, top: 30, width:'100%',height:'50%'},
@@ -145,19 +145,20 @@ function drawVisualization()
  var crt_hfe1 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_hfe1',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1LLmxl-dEBtNQEGRjX9wqY2umfMdeO6-rgwYyIGx-J6E/edit?usp=sharing&sheet=ert&range=A76:c80',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1AqfON7ds2BlGnK4NFQ_NmVd3KsHl2UXRrksyOISJ9zY/edit?usp=sharing&sheet=ert&range=A76:c80',
     options: {
-        height: 300, chartArea: {left: 45, top: 30, width:'100%',height:'50%'},
+        height: 300, chartArea: {left: 50, top: 25, width:'100%',height:'45%'},
         legend: 'none',
         series: {
               0: {type: 'lines', color:'4F81BD', lineWidth: 4, pointSize: 0, targetAxisIndex: 0},
               1: {type: 'lines', color:'C0504D', lineWidth: 4, pointSize: 0, targetAxisIndex: 0}
             },
             hAxis: {
+              slantedText: true,
               slantedTextAngle: 90,
               textStyle: {color: 'grey', fontSize: 12}
             },
-            vAxis: {title: 'efficiency (%)', titleTextStyle : {fontSize: 12}, minValue: 0.92, maxValue: 1.0, viewWindow: { min: 0.92, max: 1.0 }, format: 'percent',textStyle:{fontSize: 12}
+            vAxis: {minValue: 0.92, maxValue: 1.0, viewWindow: { min: 0.94, max: 1.0 }, format: 'percent',textStyle:{fontSize: 12}
                }
         },
     view: {columns: [0,1,2], rows: [0,1,2,3]}
@@ -168,10 +169,10 @@ function drawVisualization()
  var crt_hfe2 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_hfe2',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1LLmxl-dEBtNQEGRjX9wqY2umfMdeO6-rgwYyIGx-J6E/edit?usp=sharing&sheet=ert&range=E75:G114',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1AqfON7ds2BlGnK4NFQ_NmVd3KsHl2UXRrksyOISJ9zY/edit?usp=sharing&sheet=ert&range=E75:G114',
     options: {
         height: 300,
-        chartArea: {left: 70, top: 20, width:'95%',height:'45%'},
+        chartArea: {left: 65, top: 20, width:'95%',height:'45%'},
         titleTextStyle : {color: '#1F1F2E', fontSize: 12},
         legend: {
                position: 'top',
@@ -187,7 +188,7 @@ function drawVisualization()
               },
             hAxis: {
               slantedTextAngle: 90,
-              textStyle: {color: 'grey', fontSize: 12}}
+              textStyle: {color: 'grey', fontSize: 11}}
         },
     view: {columns: [0,1,2] }
   }); crt_hfe2.draw();
@@ -212,10 +213,10 @@ google.setOnLoadCallback(drawVisualization)
    </thead>
    <tbody>
       <tr class = "active">
-         <td>Jan-Mar</td>
+         <td>Jan-Jun (YTD)</td>
          <td><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL area</a></td>
          <td>Quarterly</td>
-         <td>28-April-2017</td>
+         <td>14-Jun-2017</td>
           <td>
           <a href='{{"/references/acronym/nm-cfmu.html"| prepend: site.baseurl | prepend: site.url }}'>NM</a></td>
           <td><a href='{{"/data/performancearea/" | prepend: site.baseurl | prepend: site.url }}'><span class="glyphicon glyphicon-download" style="font-size:25px;"></span></a></td>
@@ -251,12 +252,12 @@ google.setOnLoadCallback(drawVisualization)
 <div class="row placeholders">
 <div class="col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
-In the 1st Quarter 2017, total en-route ATFM delays in the EUROCONTROL area decreased by 42% compared to the same period in 2015. As a result, average en-route ATFM delay per flight decreased from 0.67 in Q1 2015 to 0.38 in Q1 2016.<br><br>
+In the first half of 2017, total en-route ATFM delays in the EUROCONTROL area decreased by 28% compared to the same period in 2016. As a result, average en-route ATFM delay per flight decreased from 0.92 to 0.64 in the first six months of 2017.<br><br>
 
 </div></div></div>
 <div class="col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
- The main contributors for the en-route ATFM delay reduction in Q1 2017 were substantial reductions in ATC disruptions/industrial actions (mainly France) and events which also include delays due to ATC system upgrades (ERATO implementation in France in 2016).
+ Whereas capacity related delays increased further in the first half of 2017, there was a notable reduction in ATC disruption/industrial actions and events (ATC system upgrades) mainly linked to performance improvements in France (ATC strikes and ERATO implementation in France in 2016). 
 </div></div></div>
 </div>
 
@@ -272,22 +273,22 @@ In the 1st Quarter 2017, total en-route ATFM delays in the EUROCONTROL area decr
 
 <div class="panel panel-info">
   <div class="panel-heading">
-   Overall, 95.5% of the controlled flights in the EUROCONTROL area were not affected by ATFM delays in the first Quarter 2017.
-   Compared to the first quarter in 2016, the share of flights affected by en-route ATFM delays decreased by 0.8 percent points to 2.0%. At the same time, the share of flights affected by <a href='{{"/prcq/ops-airport.html"| prepend: site.baseurl | prepend: site.url }}'>airport ATFM delays</a> decreased from 2.8% in Q1 2016 to 2.6% in Q1 2017.
+   Overall, 95.3% of the controlled flights in the EUROCONTROL area were not affected by ATFM delays in the first half of 2017.
+   Compared to 2016, the share of flights affected by en-route ATFM delays decreased by 2.2 percent points to 2.3%. <br>At the same time, the share of flights affected by <a href='{{"/prcq/ops-airport.html"| prepend: site.baseurl | prepend: site.url }}'>airport ATFM delays</a> decreased from 3.0% in 2016 to 2.4% in the first half of 2017.
   </div>
 </div>
 
 <div class="row placeholders">
 <div class="col-sm-12 placeholder">
     <h4>En-route ATFM delay by ANSP</h4>
-    <span class="text-muted">Q1-2017</span>
+    <span class="text-muted">Jan-Jun 2017</span>
     <div id="crt_ertdly3"></div>
 </div>
 </div>
 <br>
 <div class="panel panel-info">
   <div class="panel-heading">
-   In Q1 2017, average en-route delay per flight was highest in France (DSNA), followed by Portugal (Continental), and Cyprus.
+   In the first half of 2017, average en-route delay per flight was highest in Cyprus (mainly staffing and capacity related), followed by DSNA/France (capacity and strike related) and Maastricht Upper Area Control Centre/MUAC (capacity and weather related). 
   </div>
 </div>
 
@@ -304,7 +305,7 @@ In the 1st Quarter 2017, total en-route ATFM delays in the EUROCONTROL area decr
 </div><br>
 <div class="panel panel-info">
   <div class="panel-heading">
-   Despite the increase in traffic in Q1 2017, horizontal flight efficiency improved compared to the same period last year. The efficiency of actual flight trajectories increased from 95.4% in Q1 2016 to 95.6% in Q1 2017.
+   Despite the continued increase in traffic in the first half of 2017, horizontal flight efficiency improved compared to the same period last year. The efficiency of actual flight trajectories increased from 97.1% in 2016 to 97.3% in 2017.
   </div>
 </div>
 
