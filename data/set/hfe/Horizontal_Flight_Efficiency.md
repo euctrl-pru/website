@@ -5,6 +5,8 @@ title: Horizontal Flight Efficiency Dataset
 permalink: /references/dataset/Horizontal_Flight_Efficiency.html
 excerpt: Performance Review Unit MetaData Definitions.
 keywords: metadata, dataset, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
+ndwk_i: <i class="fa pru fa-flask"></i>
+fltr_i: <i class="fa pru fa-filter"></i>
 ---
 <style>
 td {
@@ -75,13 +77,21 @@ is fully consistent with the Single European Sky (SES) Performance Scheme
 | YEAR             | Network Manager | YEAR             | Reference year                                                                                    | 2014      |
 | MONTH_NUM        | Network Manager | MONTH_NUM        | Month (numeric)                                                                                   | 9         |
 | MONTH_MON        | Network Manager | MONTH_MON        | Month (3-letter code)                                                                             | SEP       |
-| ENTRY_DATE       | Network Manager | ENTRY_DATE       | The entry date considered                                                                         | 06-Sep-14 |
+| ENTRY_DATE       | Network Manager | ENTRY_DATE       | The entry date considered                                                                         | 06-Sep-14 (*) |
 | ENTITY_NAME      | Network Manager | ENTITY_NAME      | Name of the entity to with the data refers                                                        | FABEC     |
 | ENTITY_TYPE      | Network Manager | ENTITY_TYPE      | Type of the entity                                                                                | FAB (FIR) |
 | MODEL_TYPE       | Network Manager | MODEL_TYPE       | The type of trajectory used for the calculation (CPF=actual, FTFM=flight plan)                    | FTFM      |
 | DIST_FLOWN_KM    | Network Manager | DIST_FLOWN_KM    | Sum of flown distances in kilometre                                                               | 8699586   |
 | DIST_DIRECT_KM   | Network Manager | DIST_DIRECT_KM   | Sum of direct flown distances in kilometre                                                        | 8405033   |
 | DIST_ACHIEVED_KM | Network Manager | DIST_ACHIEVED_KM | Sum of achieved distances in kilometre                                                            | 8255220   |
+
+(*) The experimental [CSV files]({{ "/data/csv/" | prepend: site.baseurl | prepend: site.url }}) and
+[HFE filter and csv download {{ page.fltr_i }} {{ page.ndwk_i }}][HFEcsv] use [ISO 8601][iso8601] date time format,
+i.e. `2017-01-02T00:00:00Z`
+
+[HFEcsv]: <{{ "/data/set/hfe/horizontal_flight_efficiency.html" | prepend: site.baseurl | prepend: site.url }}> "HFE (CSV)"
+[iso8601]: <https://en.wikipedia.org/wiki/ISO_8601> "Wikipedia: ISO 8601"
+
 
 ### KEP/KEA KPI data
 

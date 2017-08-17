@@ -2,9 +2,10 @@
 
 "Generate yearly en-route ATFM traffic (and % change) per ANSP (AUA based) for graphics.
 
-Usage: generate_ert_flt_percent_change [-h]
+Usage: generate_ert_flt_percent_change [-h] TIL
 
 -h --help             show this help text
+TIL                   year, month and day (YYYY-MM-DD, i.e. 2017-08-01) till when compute (non inclusive)
 " -> doc
 
 suppressMessages(library(docopt))
@@ -12,11 +13,29 @@ suppressMessages(library(docopt))
 # retrieve the command-line arguments
 opts <- docopt(doc)
 
+suppressMessages(library(lubridate))
+suppressMessages(library(purrr))
+
+safe_ymd <- safely(ymd)
+til <- safe_ymd(opts$TIL, quiet = TRUE)
+
+if (is.null(til$result)) {
+  cat("Error: invalid TIL, it must be in YYYY-MM-DD format", "\n")
+  cat(doc, "\n")
+  q(status = -1)
+} else {
+  til <- til$result
+  curr <- til - months(1)
+  prev_year <-  year(curr - years(1))
+  curr_month <- month(curr)
+  curr_year <- year(curr)
+}
+
+
 
 suppressMessages(library(dplyr))
 suppressMessages(library(readr))
 suppressMessages(library(stringr))
-suppressMessages(library(purrr))
 suppressMessages(library(tidyr))
 
 
@@ -66,12 +85,16 @@ all <- csvs %>%
   map(get_ert_flt) %>%
   bind_rows()
 
-all %>% 
-  filter(YEAR >= 2016, MONTH_NUM >=1, MONTH_NUM < 7) %>%
+all %>%
+  filter(YEAR >= prev_year, MONTH_NUM >=1, MONTH_NUM < curr_month) %>%
   rename(entity = ENTITY_NAME) %>%
   group_by(YEAR, entity) %>%
   summarise(flt = sum(FLT_ERT_1)) %>%
-  arrange(entity)%>%
-  spread(YEAR, flt) %>%
-  mutate(prc_change = round(100 *(`2017` - `2016`) / `2016`, digits = 2)) %>%
+  ungroup() %>%
+  arrange(entity, YEAR) %>%
+  mutate(flt_prev = lag(flt)) %>%
+  filter(YEAR == curr_year) %>%
+  select(-YEAR) %>%
+  mutate(prc_change = round(100 *(flt - flt_prev) / flt_prev, digits = 2)) %>%
+  set_names(c("entity", as.character(curr_year), as.character(prev_year), "prc_change")) %>%
   write_tsv(str_c("graphics/percent_movement_change/ert_flt_ansp.tsv"))

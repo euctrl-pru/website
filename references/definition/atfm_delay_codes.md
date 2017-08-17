@@ -4,7 +4,7 @@ title: ATFM Delay Codes
 resource: true
 entity: definition
 excerpt: Performance Review Unit MetaData Definitions.
-keywords: metadata, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
+keywords: metadata| performance| data| statistics| economics| air transport| flights| europe| cost efficiency
 ---
 # {{ page.title }}
 
@@ -15,26 +15,43 @@ For post-ops analysis individual delay codes can be included in a ATFM delay gro
 See also [ATFM delay][atfm_delay].
 
 
-| Delay code                                             | Delay group       | Description                                                                                                                                                                                                                                                                                                                                                                     |
-|--------------------------------------------------------|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| C - ATC Capacity                                       | Capacity (ATC)    | Demand exceeds declared or expected ATC capacity.                                                                                                                                                                                                                                                                                                                               |
-| S - ATC Staffing                                       | Staffing (ATC)    | Unplanned staff shortage reducing expected capacity.                                                                                                                                                                                                                                                                                                                            |
-| I - Industrial Action (ATC)                            | Disruptions (ATC) | Reduction in any capacity due to industrial action by ATC staff                                                                                                                                                                                                                                                                                                                 |
-| T - Equipment (ATC)                                    | Disruptions (ATC) | Reduction of expected or declared capacity due to the non-availability or degradation of equipment used to provide an ATC service.                                                                                                                                                                                                                                              |
-| R - ATC Routeing                                       | Capacity/Routing  | Network solutions / scenarios used to balance demand and capacity                                                                                                                                                                                                                                                                                                               |
-| M - Airspace Management                                | Capacity/Routing  | Reduction in declared or expected capacity following changes in airspace / route availability due to small scale military activity                                                                                                                                                                                                                                              |
-| G - Aerodrome Capacity                                 | Capacity/Routing  | Reduction in declared or expected capacity due to the degradation or non-availability of infrastructure at an airport. e.g. Work in Progress, shortage of aircraft stands etc. or when demand exceeds expected aerodrome capacity.  |                   |                                                                                                                                                                                                                                                                                                                                                                                 |
-| V - Environmental Issues                               | Capacity/Routing  | Reduction in any capacity or when demand exceeds any capacity due to agreed local noise, runway usage or similar procedures. This category should only be used with prior agreement in the planning process.                                                                                                                                                                    |
-| E - Equipment (non-ATC)                                | Disruptions       | Reduced capacity due to the degradation or non-availability of support equipment at an airport e.g. Fire Service, De-icing / snow removal equipment or other ground handling equipment.                                                                                                                                                                                         |
-| N - Industrial Action (non-ATC)                        | Disruptions       | A reduction in expected / planned capacity due to industrial action by non ATC personnel.                                                                                                                                                                                                                                                                                       |
-| O - Other                                              | Disruptions       | This should only be used in exceptional circumstances when no other category is sufficient. An explanatory ANM remark MUST be given to allow post ops analysis.                                                                                                                                                                                                                 |
-| A - Accident/Incident                                  | Disruptions       | Reduction of expected ATC capacity due to an aircraft accident / incident.                                                                                                                                                                                                                                                                                                      |
-| NA - Not specified                                     | Disruptions       |                                                                                                                                                                                                                                                                                                                                                                                 |
-| P - Special Event                                      | Events            | Reduction in planned, declared or expected capacity or when demand exceeds the above capacities as a result of a major sporting, governmental or social event. It may also be used for ATM system upgrades and transitions. Large multinational military exercises may also use this reason. This category should only be used with prior approval during the planning process. |
-| W - Weather                                            | Weather           | Reduction in expected capacity due to any weather phenomena. This includes where weather impacts airport infrastructure capacity, but where aerodrome services are operating as planned / expected.                                                                                                                                                                             |
-| D - De-icing                                           | Weather           | De-icing                                                                                             |
 
 
+| REF LOC | REGU REASON CODE | REGU REASON NAME | REASON GROUP | ATTRIBUTE |
+|---------|------------------|------------------|--------------|-----------|
+|Airport|C|ATC Capacity|AD Capacity (ATC)|Airport / TMA|
+|Airport|S|ATC Staffing|AD Staffing (ATC)|Airport / TMA|
+|Airport|I|Industrial Action (ATC)|AD Disruptions (ATC)|Airport / TMA|
+|Airport|T|Equipment (ATC)|AD Disruptions (ATC)|Airport / TMA|
+|Airport|G|Aerodrome Capacity|AD Capacity|Airport / TMA|
+|Airport|M|Military Activity|AD Capacity|Airport / TMA|
+|Airport|R|ATC Routeing|AD Capacity|Airport / TMA|
+|Airport|V|Environmental Issues|AD Capacity|Airport / TMA|
+|Airport|A|Accident/Incident|AD Disruptions|Airport / TMA|
+|Airport|E|Aerodrome Services|AD Disruptions|Airport / TMA|
+|Airport|N|Industrial Action (non-ATC)|AD Disruptions|Airport / TMA|
+|Airport|NA|Not regulated/Not specified|AD Disruptions|Airport / TMA|
+|Airport|O|Other|AD Disruptions|Airport / TMA|
+|Airport|P|Special Event|AD Events|Airport / TMA|
+|Airport|D|De-icing|AD Weather|Airport / TMA|
+|Airport|W|Weather|AD Weather|Airport / TMA|
+|En route|C|ATC Capacity|ER Capacity (ATC)|En route|
+|En route|S|ATC Staffing|ER Staffing (ATC)|En route|
+|En route|I|Industrial Action (ATC)|ER Disruptions (ATC)|En route|
+|En route|T|Equipment (ATC)|ER Disruptions (ATC)|En route|
+|En route|G|Aerodrome Capacity|ER Capacity|En route|
+|En route|M|Military Activity|ER Capacity|En route|
+|En route|R|ATC Routeing|ER Capacity|En route|
+|En route|V|Environmental Issues|ER Capacity|En route|
+|En route|A|Accident/Incident|ER Disruptions|En route|
+|En route|E|Aerodrome Services|ER Disruptions|En route|
+|En route|N|Industrial Action (non-ATC)|ER Disruptions|En route|
+|En route|NA|Not regulated/Not specified|ER Disruptions|En route|
+|En route|O|Other|ER Disruptions|En route|
+|En route|P|Special Event|ER Events|En route|
+|En route|D|De-icing|ER Weather|En route|
+|En route|W|Weather|ER Weather|En route|
+|na|NA|Not regulated/Not specified|ER Disruptions|En route|
 
 The list of ATFM delay causes can be found out in the [ATFCM Users Manual][atfcmUM]{:target="_blank"}.
 

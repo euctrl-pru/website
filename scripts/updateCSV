@@ -86,17 +86,19 @@ if (( $# != 0 )); then
     exit 1
 fi
 
-TIL=2017-07-01
+APT_DLY_WEF=2014-01-01
+ERT_DLY_WEF=2017-01-01
+TIL=2017-08-01
 
 (
     cd "${SCRIPT_DIR}/../" || exit;
-    Rscript R/export_ert_dly.R -t ansp 2017-01-01 ${TIL};
-    Rscript R/export_ert_dly.R -t fir 2017-01-01 ${TIL};
-    Rscript R/export_apt_dly.R 2014-01-01 ${TIL};
+    Rscript R/export_ert_dly.R -t ansp ${ERT_DLY_WEF} ${TIL};
+    Rscript R/export_ert_dly.R -t fir ${ERT_DLY_WEF} ${TIL};
+    Rscript R/export_apt_dly.R ${APT_DLY_WEF} ${TIL};
     Rscript R/export_hfe.R;
 
-    Rscript R/generate_ert_flt_percent_chage.R
-    Rscript R/ R/generate_monthly_ert_dly_fab_fir.R
+    Rscript R/generate_ert_flt_percent_chage.R ${TIL};
+    Rscript R/ R/generate_monthly_ert_dly_fab_fir.R;
 
     Rscript R/export_ansp_composition.R ${TIL};
 )

@@ -66,6 +66,7 @@ layout: graphic
    var margin = {top: 20, right: 10, bottom: 40, left: 40},
        width = 550 - margin.left - margin.right,
        height = 400 - margin.top - margin.bottom;
+   var xlabel_text = "% change (Jan-Jul 2017 vs Jan-Jul 2016)";
 
    var formatPercent = d3.format("+,%");
    var x = d3.scale.linear()
@@ -130,7 +131,7 @@ layout: graphic
         .attr("x", width / 2 )
         .attr("y",  height + margin.bottom - 4)
         .style("text-anchor", "bottom")
-        .text("% change (Jan-Jun 2017 vs Jan-Jun 2016)");
+        .text(xlabel_text);
 
      svg.append("g")
         .attr("class", "x axis")
