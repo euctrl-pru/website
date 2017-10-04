@@ -1,6 +1,6 @@
 ---
 layout: prcq
-title: "Overview - January-June 2017"
+title: "Overview - January-September 2017"
 ---
 <style>
 .headimg {
@@ -20,12 +20,12 @@ In the first six months of 2017, air traffic in the EUROCONTROL area [(ESRA08)][
 which corresponds to 1069 additional flights per day. At the same time, average daily en-route service units (SU)
 grew by 6.5% between January and June 2017, compared to the same period in 2016.
 
-As was the case in 2016 and in Q1 2017, the Pan-European low cost traffic segment remained the main driver of the observed traffic growth.
+Pan-European traffic and the traffic from and to Europe showed substantial growth in the first nine months of 2017. 
+The main driver of the observed traffic growth remained the low cost traffic segment, followed by traditional scheduled traffic. 
 
 With the exception of Avinor (Norway), all [Air Navigation Service Providers (ANSPs)][ansp]  reported a
-traffic increase in the first half of 2017. In absolute terms, DSNA (France), ENAIRE (Spain), NATS (UK),
-DFS (Germany), and Maastricht Upper Area Control Centre (MUAC) reported the highest traffic growth
-in the first half of 2017.
+traffic increase in the first nine months of 2017. In absolute terms, DSNA (France), ENAIRE (Spain), DFS (Germany),
+NATS (UK), and Maastricht Upper Area Control Centre (MUAC) reported the highest traffic growth between January and September 2017.
 
 ### {% img prcq-safety.png magick:resize:50x50 alt:'Safety' class:'leadimg' %} [Safety][safety]
 
@@ -38,27 +38,27 @@ For a more detailed review of ANS safety performance in the EUROCONTROL area ple
 
 ### {% img prcq-operations-enroute.png magick:resize:50x50 alt:'Operations En-route' class:'leadimg' %} [Operations En-route][ops_ert]
 
-In the first half of 2017, total en-route ATFM delays in the EUROCONTROL area decreased by 28% compared to the same period in 2016. As a result, average en-route ATFM delay per flight decreased from 0.92 in 2016 to 0.64 in the first six months of 2017.
+n the first nine months of 2017, total en-route ATFM delays in the EUROCONTROL area decreased by 3.8% compared to the same period in 2016. At the same time, the number of flights increased by +4.1%, resulting in an average en-route ATFM delay of 1.0 minutes per flight which is the same level as in the first nine months of 2016.
 
-The main reasons for the en-route ATFM delay reduction in 2017 were substantially lower strike related delays and less delays due to events such as the ERATO implementation in France in 2016. It is worth pointing out that, at the same time, capacity related delays increased in 2017. 
+Although average en-route ATFM delay stayed at a similar level, there was a notable change in the underlying delay reasons. Whereas capacity/staffing and weather related delays increased further in the first nine months of 2017, there was a notable reduction in ATC disruption/industrial actions and events (ATC system upgrades) linked to performance improvements in France. 
 
-Overall, 95.3% of the controlled flights in the EUROCONTROL area were not affected by ATFM delays in the first half of 2017.
-Compared to 2016, the share of flights affected by en-route ATFM delays decreased by 2.2 percent points to 2.3%. At the same time, the share of flights affected by <a href='{{"/prcq/ops-airport.html"| prepend: site.baseurl | prepend: site.url }}'>airport ATFM delays</a> decreased from 3.0% in 2016 to 2.4% in the first half of 2017.
+Overall, 90.8% of the controlled flights in the EUROCONTROL area were not affected by ATFM delays between January and September 2017.
+Compared to 2016, the share of flights affected by en-route ATFM delays increased by 0.6 percent points to 6.1%. At the same time, the share of flights affected by <a href='{{"/prcq/ops-airport.html"| prepend: site.baseurl | prepend: site.url }}'>airport ATFM delays</a> stayed at the same level as in 2016 (2.4%).
 
-In the first half of 2017, average en-route delay per flight was highest in Cyprus (mainly staffing and capacity related), followed by DSNA/France (capacity and strike related) and Maastricht Upper Area Control Centre/MUAC (capacity and weather related).
+In the first nine months of 2017, average en-route delay per flight was highest in Cyprus (mainly staffing and capacity related), followed by DSNA/France (capacity, strike and weather related) and Maastricht Upper Area Control Centre/MUAC (capacity and weather related).
 
-Despite the continued increase in traffic in the first half of 2017, horizontal flight efficiency improved compared to the same period last year. The efficiency of actual flight trajectories increased from 97.1% in 2016 to 97.3% in 2017.
+Despite the continued increase in traffic in 2017, horizontal flight efficiency improved compared to the same period last year. The efficiency of actual flight trajectories increased from 97.1% in 2016 to 97.3% in 2017.
 
 ### {% img prcq-operations-airport.png magick:resize:50x50 alt:'Operations at airports' class:'leadimg' %} [Operations Airport][ops_apt]
 
-Amsterdam airport was the aiport with the highest number of commercial movements in the first six months in 2017. <br>
-The two Istanbul airports and Rome Fiumicino showed the highest decrease in traffic between January and June 2017. <br>
-The highest growth was observed for Brussels airport followed by Lisbon, Manchester, and Warsaw.<br>
+Amsterdam airport remained the airport with the highest number of commercial movements in the first nine months in 2017. <br>
+The two Istanbul airports and Rome Fiumicino showed the highest decrease in traffic between January and September 2017. <br>
+The highest growth was observed at Lisbon, Warsaw, Manchester and Milan Malpensa. <br>
 
-In the first half of 2017, average airport arrival ATFM delay at the top 30 airports was 0.18 min below average airport ATFM arrival delay in 2016. The improvement is mainly due to a reduction in capacity related airport arrival ATFM delays. Weather related delays in the first half of 2017 remained at a similar level as in 2016. <br>
-Similar to the trends observed for traffic growth at those airports, Amsterdam and Lisbon airport showed the highest increase and the two Istanbul airports showed the most notable reduction of average airport arrival ATFM delays in the first half of 2017.
+Average airport arrival ATFM delay at the top 30 airports between January and September 2017 was just below the level in 2016. In the first nine months of 2017 there was a notable increase in weather related airport arrival ATFM delay which offset the decrease in capacity related delay.<br>
+Amsterdam and London Gatwick airport showed the highest increase in airport arrival ATFM delay and the two Istanbul airports and Paris Orly showed the most notable reduction of average airport arrival ATFM delays in the first nine months of 2017.
 
-<a href='{{"/references/definition/additional_asma_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional ASMA time</a>, <a href='{{"/references/definition/additional_taxi-out_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional taxi-out time</a>, and <a href='{{"/references/definition/atc_pre-departure_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATC pre-departure delays</a> remained at similar levels as in the first half of 2016. 
+<a href='{{"/references/definition/additional_asma_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional ASMA time</a>, <a href='{{"/references/definition/additional_taxi-out_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional taxi-out time</a>, and <a href='{{"/references/definition/atc_pre-departure_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATC pre-departure delays</a> remained at similar levels as in the first nine months of 2016. 
 
 ### {% img prcq-economics.png magick:resize:50x50 alt:'Economics' class:'leadimg' %} [Economics][economics]
 
