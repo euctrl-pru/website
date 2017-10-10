@@ -16,9 +16,9 @@ title: "Overview - January-September 2017"
 
 ### {% img prcq-traffic.png magick:resize:50x50 alt:'Traffic' class:'leadimg' %} [Traffic][traffic]
 
-In the first six months of 2017, air traffic in the EUROCONTROL area [(ESRA08)][esra08] grew on average by 4.1% 
-which corresponds to 1069 additional flights per day. At the same time, average daily en-route service units (SU)
-grew by 6.5% between January and June 2017, compared to the same period in 2016.
+In the first nine months of 2017, air traffic in the EUROCONTROL area [(ESRA08)][esra08] grew on average by 4.3% 
+which corresponds to 1199 additional flights per day. At the same time, average daily en-route service units (SU)
+grew by 6.5% between January and September 2017, compared to the same period in 2016.
 
 Pan-European traffic and the traffic from and to Europe showed substantial growth in the first nine months of 2017. 
 The main driver of the observed traffic growth remained the low cost traffic segment, followed by traditional scheduled traffic. 
