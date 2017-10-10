@@ -38,7 +38,7 @@ For a more detailed review of ANS safety performance in the EUROCONTROL area ple
 
 ### {% img prcq-operations-enroute.png magick:resize:50x50 alt:'Operations En-route' class:'leadimg' %} [Operations En-route][ops_ert]
 
-n the first nine months of 2017, total en-route ATFM delays in the EUROCONTROL area decreased by 3.8% compared to the same period in 2016. At the same time, the number of flights increased by +4.1%, resulting in an average en-route ATFM delay of 1.0 minutes per flight which is the same level as in the first nine months of 2016.
+n the first nine months of 2017, total en-route ATFM delays in the EUROCONTROL area decreased by 3.8% compared to the same period in 2016. At the same time, the number of flights increased by +4.3%, resulting in an average en-route ATFM delay of 1.0 minutes per flight which is the same level as in the first nine months of 2016.
 
 Although average en-route ATFM delay stayed at a similar level, there was a notable change in the underlying delay reasons. Whereas capacity/staffing and weather related delays increased further in the first nine months of 2017, there was a notable reduction in ATC disruption/industrial actions and events (ATC system upgrades) linked to performance improvements in France. 
 
