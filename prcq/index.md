@@ -38,7 +38,7 @@ For a more detailed review of ANS safety performance in the EUROCONTROL area ple
 
 ### {% img prcq-operations-enroute.png magick:resize:50x50 alt:'Operations En-route' class:'leadimg' %} [Operations En-route][ops_ert]
 
-n the first nine months of 2017, total en-route ATFM delays in the EUROCONTROL area decreased by 3.8% compared to the same period in 2016. At the same time, the number of flights increased by +4.3%, resulting in an average en-route ATFM delay of 1.0 minutes per flight which is the same level as in the first nine months of 2016.
+In the first nine months of 2017, total en-route ATFM delays in the EUROCONTROL area decreased by 3.8% compared to the same period in 2016. At the same time, the number of flights increased by +4.3%, resulting in an average en-route ATFM delay of 1.0 minutes per flight which is the same level as in the first nine months of 2016.
 
 Although average en-route ATFM delay stayed at a similar level, there was a notable change in the underlying delay reasons. Whereas capacity/staffing and weather related delays increased further in the first nine months of 2017, there was a notable reduction in ATC disruption/industrial actions and events (ATC system upgrades) linked to performance improvements in France. 
 
@@ -55,7 +55,7 @@ Amsterdam airport remained the airport with the highest number of commercial mov
 The two Istanbul airports and Rome Fiumicino showed the highest decrease in traffic between January and September 2017. <br>
 The highest growth was observed at Lisbon, Warsaw, Manchester and Milan Malpensa. <br>
 
-Average airport arrival ATFM delay at the top 30 airports between January and September 2017 was just below the level in 2016. In the first nine months of 2017 there was a notable increase in weather related airport arrival ATFM delay which offset the decrease in capacity related delay.<br>
+Average airport arrival ATFM delay at the top 30 airports between January and September 2017 was just below the level in 2016. In the first nine months of 2017 there was a notable increase in weather related airport arrival ATFM delay which offset the decrease in capacity related ATFM delay.<br>
 Amsterdam and London Gatwick airport showed the highest increase in airport arrival ATFM delay and the two Istanbul airports and Paris Orly showed the most notable reduction of average airport arrival ATFM delays in the first nine months of 2017.
 
 <a href='{{"/references/definition/additional_asma_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional ASMA time</a>, <a href='{{"/references/definition/additional_taxi-out_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional taxi-out time</a>, and <a href='{{"/references/definition/atc_pre-departure_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATC pre-departure delays</a> remained at similar levels as in the first nine months of 2016. 
