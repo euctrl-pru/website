@@ -43,7 +43,7 @@ n the first nine months of 2017, total en-route ATFM delays in the EUROCONTROL a
 Although average en-route ATFM delay stayed at a similar level, there was a notable change in the underlying delay reasons. Whereas capacity/staffing and weather related delays increased further in the first nine months of 2017, there was a notable reduction in ATC disruption/industrial actions and events (ATC system upgrades) linked to performance improvements in France. 
 
 Overall, 90.8% of the controlled flights in the EUROCONTROL area were not affected by ATFM delays between January and September 2017.
-Compared to 2016, the share of flights affected by en-route ATFM delays increased by 0.6 percent points to 6.1%. At the same time, the share of flights affected by <a href='{{"/prcq/ops-airport.html"| prepend: site.baseurl | prepend: site.url }}'>airport ATFM delays</a> stayed at the same level as in 2016 (2.4%).
+Compared to 2016, the share of flights affected by en-route ATFM delays increased by 0.6 percent points to 6.1%. At the same time, the share of flights affected by <a href='{{"/prcq/ops-airport.html"| prepend: site.baseurl | prepend: site.url }}'>airport ATFM delays</a> stayed at the same level as in 2016 (3.2%).
 
 In the first nine months of 2017, average en-route delay per flight was highest in Cyprus (mainly staffing and capacity related), followed by DSNA/France (capacity, strike and weather related) and Maastricht Upper Area Control Centre/MUAC (capacity and weather related).
 
