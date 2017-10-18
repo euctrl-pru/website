@@ -98,7 +98,7 @@ TIL=2017-10-01
     Rscript R/export_hfe.R;
 
     Rscript R/generate_ert_flt_percent_chage.R ${TIL};
-    Rscript R/ R/generate_monthly_ert_dly_fab_fir.R;
+    Rscript R/generate_monthly_ert_dly_fab_fir.R;
 
     Rscript R/export_ansp_composition.R ${TIL};
 )
