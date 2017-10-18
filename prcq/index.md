@@ -18,7 +18,7 @@ title: "Overview - January-September 2017"
 
 In the first nine months of 2017, air traffic in the EUROCONTROL area [(ESRA08)][esra08] grew on average by 4.3% 
 which corresponds to 1199 additional flights per day. At the same time, average daily en-route service units (SU)
-grew by 6.5% between January and September 2017, compared to the same period in 2016.
+grew by 6.6% between January and September 2017, compared to the same period in 2016.
 
 Pan-European traffic and the traffic from and to Europe showed substantial growth in the first nine months of 2017. 
 The main driver of the observed traffic growth remained the low cost traffic segment, followed by traditional scheduled traffic. 
@@ -57,8 +57,6 @@ The highest growth was observed at Lisbon, Warsaw, Manchester and Milan Malpensa
 
 Average airport arrival ATFM delay at the top 30 airports between January and September 2017 was just below the level in 2016. In the first nine months of 2017 there was a notable increase in weather related airport arrival ATFM delay which offset the decrease in capacity related ATFM delay.<br>
 Amsterdam and London Gatwick airport showed the highest increase in airport arrival ATFM delay and the two Istanbul airports and Paris Orly showed the most notable reduction of average airport arrival ATFM delays in the first nine months of 2017.
-
-<a href='{{"/references/definition/additional_asma_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional ASMA time</a>, <a href='{{"/references/definition/additional_taxi-out_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional taxi-out time</a>, and <a href='{{"/references/definition/atc_pre-departure_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATC pre-departure delays</a> remained at similar levels as in the first nine months of 2016. 
 
 ### {% img prcq-economics.png magick:resize:50x50 alt:'Economics' class:'leadimg' %} [Economics][economics]
 
