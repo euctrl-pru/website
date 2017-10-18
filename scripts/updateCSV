@@ -88,7 +88,7 @@ fi
 
 APT_DLY_WEF=2014-01-01
 ERT_DLY_WEF=2017-01-01
-TIL=2017-09-01
+TIL=2017-10-01
 
 (
     cd "${SCRIPT_DIR}/../" || exit;
@@ -98,7 +98,7 @@ TIL=2017-09-01
     Rscript R/export_hfe.R;
 
     Rscript R/generate_ert_flt_percent_chage.R ${TIL};
-    Rscript R/ R/generate_monthly_ert_dly_fab_fir.R;
+    Rscript R/generate_monthly_ert_dly_fab_fir.R;
 
     Rscript R/export_ansp_composition.R ${TIL};
 )
