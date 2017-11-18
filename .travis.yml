@@ -2,9 +2,13 @@ language: ruby
 cache: bundler
 rvm:
 - 2.2
+# limit clone depth
+git:
+  depth: 3
 before_script:
 - export GIT_TAG=build-$TRAVIS_BRANCH-$(date -u "+%Y-%m-%d-%H-%M-%S")-$TRAVIS_BUILD_NUMBER
 script: bundle exec rake prod:build
+# build only release branches and master
 branches:
   only:
   - master
@@ -18,4 +22,5 @@ env:
   - secure: bji65jhjWNr9ntLu5VaZuz0qWWvaLXcKl2I7i7hIL2EaP8WpFIU0+X9423O7mjlIxSFNO24qFmpird+OlAiHO1ZAYJW+HEPWOfJ0eyPR/QDlA+4pN4nM6rl4Wtg1QXb6RytGLBPqsNkWxOB8LXNCvm4rdhmEy/Jma6CR8tGJ65NbtNpPIVY6cB8F0Ir831xbiPRiegHXjbZd7UEXRLhYVySmcsKZZC/FEBAa8r3F0sj4n0H42pmHk3dBLtovvCH7arEGzWG3MPc6RD/x3yO/fIBjpmAQiFTTRP12uIi+YaJvIHeiuczreepVCgbxtZr8+Szu2eS92RHXS0yQo+6v7WcDmOGun/tsabbDGcfykTpkOjFFgOuE2FRvPqUx1CBG4TUVPGm+h2XrfT3jPSbyBk6Lwzlhl2i1UWW81skSF0v5yaTBRzn77sFQkRFOt8zfXLCm6WGaB4sMfDU/UKuSxjo7B0Nz9QZwgnd6t21Fm4x14fDO+TDPhs2nAN74mG5KYDyp89Jg/AwuqkIZvMy2qeODuyyON2aoKtNnvxnBSfsjEN6FC18vEPac9a2ar/xIVoeOcZ8YTqK85oLCqv5NlUgx2ew9UvyQh6YwMlrNkoE3SmLxu56XCoIoKBO9Ywy5aqNdZ3I0Pw9FWpMNN6v8wFGkwykyA5x/2cQIUUenCDU=
   - secure: elwYAJuacTpGhHPMu7sr4xTz3S4VqG1ULXhJppxmB3IKh7vLgW1hacFClJqY+0Q8GQ2nH0iSRU9Vm+/5JOOP/EZyvur6vh54Os1T+DdGKkbTrrjV7GMuPH497HWxYXZ2FJ4ZNXvNJePEDx6u1Hq1a6WFNpkNqTvUu5lHjylUCVH2jZm8XxZ20yUIYdt1WNUhCoVz2iG2Kehgg/hf2LBy0yCZCVCc4W47+pxBGDs0KBFBLG4+o/r4zLV50ZSx/PtvUWac4N4cAfg3n5sd+o2GTgk/DJJXwusLHm5UYtWHzBi5fE8fqwo7E4h1O412BU3M/MKbj2M41/1j9kDkXXPdSVfYwYpPWUS3susQv1W4CnRYkt30vaJxVbDxI8v/WZxchsIGFaEJhPczyrI/Ls4LZAGH+c/S2ijTMUuVeaBo7SjLpSLYECrinrpREy9wdEPwHCWdDADYOgg7Ai4PDlm9/Tnc+s54V4Zb60V+GR9P/NShVX8KoqjFOhid1cl99fhFmQvYS81g7Qx10caBgs6brJDUr6biACbD0lgMC5Ude85nWl+qh+4fFeVwVvlHEjRWJIwe9pP2WS+3t5zVE9V0/85MnqetoueYEHoIru8ok1ZHocHqRRNqeSkP3cQARyw2gCQ8KgKxUlqpXrL4Gqic6Fhd4k3hCE5DN3jLL6erVcI=
 sudo: false
+# master with tag will be published too, see Rakefile.
 after_success: bundle exec rake prod:deploy
