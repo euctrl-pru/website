@@ -17,7 +17,7 @@ and how it plans to arrive at its destination.
 
 ## See Also
 
-* [CNS][cnsECTRL]{:target="_blank"} page at [EUROCONTROL][]{:target="_blank"}.
+* [CNS][cnsECTRL]{:target="_blank"} page at [EUROCONTROL][ectrl]{:target="_blank"}.
 
 [cnsECTRL]: <> "Communications, Navigation, Surveillance - EUROCONTROL"
 [ectrl]: <https://www.eurocontrol.int/> "EUROCONTROL"

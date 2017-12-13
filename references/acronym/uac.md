@@ -22,3 +22,5 @@ An [ACC][acc] centre providing seamless air navigation services to the upper air
 [acc]: <{{ "/references/acronym/acc.html" | prepend: site.baseurl | prepend: site.url }}> "ACC"
 [ua]: <https://ext.eurocontrol.int/lexicon/index.php/Upper_airspace> "UA - ATM Lexicon"
 [muac]: <http://www.eurocontrol.int/articles/about-muac> "MUAC - EUROCONTROL"
+[lexi]: <https://ext.eurocontrol.int/lexicon/index.php/Main_Page> "ATM Lexicon"
+[ectrl]: <https://www.eurocontrol.int/> "EUROCONTROL"

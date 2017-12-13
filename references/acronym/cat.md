@@ -24,8 +24,8 @@ mail for remuneration or hire.
 * [CAT][catlawEASA]{:target="_blank"} page at [EASA][easa]{:target="_blank"}.
 
 
-[catLEXI]: <> "Commercial Air Transport - ATM Lexicon"
+[catLEXI]: <https://ext.eurocontrol.int/lexicon/index.php/Commercial_air_transport_operation> "Commercial Air Transport - ATM Lexicon"
 [catfaqEASA]: <https://www.easa.europa.eu/faq/19131> "What is the difference between 'commercial operation' and 'commercial air transport (CAT) operation'?"
-[catlaw]: <https://www.easa.europa.eu/easa-and-you/air-operations/commercial-air-transport-operations> "Commercial Air Transport operations (CAT)"
+[catlawEASA]: <https://www.easa.europa.eu/easa-and-you/air-operations/commercial-air-transport-operations> "Commercial Air Transport operations (CAT)"
 [easa]: <https://www.easa.europa.eu> "EASA - European Aviation Safety Agency"
 [lexi]: <https://ext.eurocontrol.int/lexicon/index.php/Main_Page> "ATM Lexicon"

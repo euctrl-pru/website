@@ -15,7 +15,7 @@ A non-permanent ATS route or portion thereof which is only available for flight 
 ## See Also
 
 * [CDR][cdrLEXI]{:target="_blank"} page at [ATM Lexicon][lexi]{:target="_blank"}.
-* [CDR][cdrSB]{:target="_blank"} page at [SKYbrary]{:target="_blank"}.
+* [CDR][cdrSB]{:target="_blank"} page at [SKYbrary][sb]{:target="_blank"}.
 
 [cdrLEXI]: <https://ext.eurocontrol.int/lexicon/index.php/Conditional_Route> "Conditional Route - ATM Lexicon"
 [cdrSB]: <http://www.skybrary.aero/index.php/Conditional_Route> "Conditional Route - SKYbrary"

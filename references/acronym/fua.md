@@ -20,3 +20,4 @@ user requirements.
 
 
 [fuaSB]: <http://www.skybrary.aero/index.php/Flexible_Use_of_Airspace> "FUA - SKYbrary"
+[sb]: <http://www.skybrary.aero> "SKYbrary"

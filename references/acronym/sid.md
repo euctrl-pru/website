@@ -15,7 +15,7 @@ take-off phase to the en-route phase.
 
 ## See Also
 
-* [SID and STAR][]{:target="_blank"} page at [SKYbrary][sb]{:target="_blank"}.
+* [SID and STAR][sidstarSB]{:target="_blank"} page at [SKYbrary][sb]{:target="_blank"}.
 * [STAR][star]
 
 [star]: <{{ "/references/acronym/star.html" | prepend: site.baseurl | prepend: site.url }}> "STAR"

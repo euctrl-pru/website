@@ -24,3 +24,4 @@ service providers.
 
 [atfmLEXI]: <https://ext.eurocontrol.int/lexicon/index.php/Air_Traffic_Flow_Management> "Air Traffic Flow Management - ATM Lexicon"
 [atfcmLEXI]: <https://ext.eurocontrol.int/lexicon/index.php/Air_Traffic_Flow_and_Capacity_Management> "Air Traffic Flow and Capacity Management - ATM Lexicon"
+[lexi]: <https://ext.eurocontrol.int/lexicon/index.php/Main_Page> "ATM Lexicon"

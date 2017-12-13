@@ -9,7 +9,7 @@ keywords: metadata, performance, data, statistics, air transport, flights, europ
 # {{ page.title }}
 
 The plan, including its supporting tools, developed by the
-[Network Manager][nm]
+[Network Manager][nm-cfmu]
 in coordination with the operational stakeholders to organise its operational
 activities in the short and medium term in accordance with the guiding
 principles of the Network Strategic Plan.
@@ -23,3 +23,5 @@ principles of the Network Strategic Plan.
 [nm-cfmu]: <{{ "/references/acronym/nm-cfmu.html" | prepend: site.baseurl | prepend: site.url }}> "NM"
 [nopLEXI]: <https://ext.eurocontrol.int/lexicon/index.php/Network_Operations_Plan> "NOP - ATM Lexicon"
 [nopECTRL]: <http://www.eurocontrol.int/operations-planning> "NOP - EUROCONTROL"
+[lexi]: <https://ext.eurocontrol.int/lexicon/index.php/Main_Page> "ATM Lexicon"
+[ectrl]: <https://www.eurocontrol.int/> "EUROCONTROL"

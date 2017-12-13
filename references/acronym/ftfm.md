@@ -14,6 +14,6 @@ are received from Network Operations.
 
 ## See Also
 
-* [ETFMS][etfms]{:target="_blank"} page at [][]{:target="_blank"}.
+* [ETFMS][etfms]{:target="_blank"}.
 
 [eftms]: <{{ "/references/acronym/etfms.html" | prepend: site.baseurl | prepend: site.url }}> "ETFMS"

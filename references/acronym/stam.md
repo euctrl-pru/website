@@ -19,5 +19,6 @@ capping and exiguous rerouting to a limited number of flights.
 
 
 
-
+[stamLEXI]: <https://ext.eurocontrol.int/lexicon/index.php/Short_Term_ATFCM_Measures> "STAM - ATM Lexicon"
+[lexi]: <https://ext.eurocontrol.int/lexicon/index.php/Main_Page> "ATM Lexicon"
 [stam]: <{{ "/references/definition/short_term_atfcm_measures.html" | prepend: site.baseurl | prepend: site.url }}> "STAM"

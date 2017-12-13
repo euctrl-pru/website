@@ -15,4 +15,5 @@ forecasts, briefs and observations.
 
 * [MET][metLEXI]{:target="_blank"} page at [ATM Lexicon][lexi]{:target="_blank"}.
 
+[metMEXI]: <https://ext.eurocontrol.int/lexicon/index.php/Meteorological_services> "MET - Meteorological Services"
 [lexi]: <https://ext.eurocontrol.int/lexicon/index.php/Main_Page> "ATM Lexicon"

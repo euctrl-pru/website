@@ -13,7 +13,7 @@ and procedures of [ICAO][icao].
 
 ## See Also
 
-* [GAT][gat].
+* [GA][ga].
 * [OAT][oat].
 * [GAT and OAT][gatoatIVAO]{:target="_blank"} page at [IVAO][ivao]{:target="_blank"}.
 

@@ -20,3 +20,4 @@ between two or more community members.
 
 [cdmLEXI]: <https://ext.eurocontrol.int/lexicon/index.php/Collaborative_Decision_Making> "CDM - ATM Lexicon"
 [lexi]: <https://ext.eurocontrol.int/lexicon/index.php/Main_Page> "ATM Lexicon"
+[acdm]: {{ "/references/acronym/a_cdm.html" | prepend: site.baseurl | prepend: site.url }}> "A-CDM"

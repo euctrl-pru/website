@@ -20,7 +20,7 @@ and navigation is accomplished by reference to electronic signals.
 
 ## See Also
 
-* [IFR][ifrWP]{:target="_blank"} page at [Wikipedia][wp]{:target="_blank"
+* [IFR][ifrWP]{:target="_blank"} page at [Wikipedia][wp]{:target="_blank"}.
 * [IFR][ifrSB]{:target="_blank"} page at [SKYbrary][sb]{:target="_blank"}.
 
 

@@ -18,7 +18,6 @@ of Slot Allocation Messages and other [ATFCM][atfcm] messages.
 
 * [ETFMS][etfms].
 * [ATFCM Users Manaual][atfcmumECTRL]{:target="_blank"} document (PDF) at [EUROCONTROL][ectrl]{:target="_blank"}.
-* [ATFCM Users Manaua]
 
 [atfcm]: <{{ "/references/acronym/atfcm.html" | prepend: site.baseurl | prepend: site.url }}> "ATFCM"
 [etfms]: <{{ "/references/acronym/etfms.html" | prepend: site.baseurl | prepend: site.url }}> "ETFMS"

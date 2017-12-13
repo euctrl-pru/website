@@ -20,5 +20,6 @@ other traffic may be allowed to transit, under ATC clearance.
 
 
 [traLEXI]: <https://ext.eurocontrol.int/lexicon/index.php/Temporary_Reserved_Area> "TRA - ATM Lexicon"
+[traSB]: <https://www.skybrary.aero/index.php/Temporary_Reserved_Area_(TRA)> "TRA - SkyBrary"
 [lexi]: <https://ext.eurocontrol.int/lexicon/index.php/Main_Page> "ATM Lexicon"
 [sb]: <http://www.skybrary.aero> "SKYbrary"

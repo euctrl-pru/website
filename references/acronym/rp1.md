@@ -15,3 +15,6 @@ associated States covers the years 2012-2014.
 
 
 * [SES][ses].
+
+
+[ses]: <{{ "/references/acronym/ses.html" | prepend: site.baseurl | prepend: site.url }}> "SES"

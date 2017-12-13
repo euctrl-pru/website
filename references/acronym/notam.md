@@ -17,3 +17,4 @@ or at a location that could affect the safety of the flight.
 * [NOTAM][notamWP]{:target="_blank"} page at [Wikipedia][wp]{:target="_blank"}.
 
 [wp]: <https://en.wikipedia.org> "Wikipedia"
+[notamWP]: <https://en.wikipedia.org/wiki/NOTAM> "NOTAM - Wikipedia"

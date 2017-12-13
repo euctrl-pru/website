@@ -24,7 +24,6 @@ charges to the States concerned.
 
 
 * [CRCO][crcoECTRL]{:target="_blank"} page at [EUROCONTROL][ectrl]{:target="_blank"}.
-
 * [Airspace User][auLEXI]{:target="_blank"} page at [ATM Lexicon][lexi]{:target="_blank"}.
 
 [crcoECTRL]: <https://www.eurocontrol.int/crco> "CRCO - EUROCONTROL"

@@ -25,3 +25,4 @@ for the communities living beneath the stacks.
 * [XMAN][xmanECTRL]{:target="_blank"} page at [EUROCONTROL][ectrl]{:target="_blank"}.
 
 [xmanECTRL]: <http://www.eurocontrol.int/articles/xman> "XMAN - EUROCONTROL"
+[ectrl]: <https://www.eurocontrol.int/> "EUROCONTROL"
