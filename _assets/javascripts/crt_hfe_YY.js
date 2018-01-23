@@ -30,11 +30,11 @@
                         }
                      },
                vAxis: {
-                  title: 'Inefficiency (%)',
+                  title: 'Efficiency (%)',
                   titleTextStyle: { color: 'grey', fontSize: 10 },
                   minValue: 0.0,
-                  maxValue: 0.06,
-                  viewWindow: { min: 0.02, max: 0.05 },
+                  maxValue: 0.1,
+                  viewWindow: { min: 0.95, max: 0.1 },
                   format: '0.0%'
                },
                hAxis: {
