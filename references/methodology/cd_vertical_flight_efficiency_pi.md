@@ -270,6 +270,12 @@ With:
 [cpf]: <{{ "/references/acronym/cpf.html" | prepend: site.baseurl | prepend: site.url }}> "CPF"
 [prisme]: <{{ "/references/acronym/prisme.html" | prepend: site.baseurl | prepend: site.url }}> "PRISME"
 
+## Further Information
+
+For further information please refer also to {% cite cco-cdo-leaflet --file aviation %},
+{% cite icns-vfe --file aviation %},
+{% cite vertical-flight-efficiency-during-climb-and-descent_consultation --file aviation %}.
+
 
 ## References
 

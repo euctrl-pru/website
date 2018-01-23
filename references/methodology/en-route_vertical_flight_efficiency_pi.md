@@ -182,3 +182,15 @@ With:
 [prisme]: <{{ "/references/acronym/prisme.html" | prepend: site.baseurl | prepend: site.url }}> "PRISME"
 [gcd]: <{{ "/references/acronym/gcd.html" | prepend: site.baseurl | prepend: site.url }}> "GCD"
 [ftfm]: <{{ "/references/acronym/ftfm.html" | prepend: site.baseurl | prepend: site.url }}> "FTFM"
+
+
+## Further Information
+
+For further information please refer also to
+{% cite icns-vfe --file aviation %},
+{% cite en-route-vertical-flight-efficiency_consultation --file aviation %}.
+
+
+## References
+
+{% bibliography --cited_in_order --file aviation %}
