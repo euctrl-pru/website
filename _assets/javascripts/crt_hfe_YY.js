@@ -33,8 +33,8 @@
                   title: 'Efficiency (%)',
                   titleTextStyle: { color: 'grey', fontSize: 10 },
                   minValue: 0.0,
-                  maxValue: 0.1,
-                  viewWindow: { min: 0.95, max: 0.1 },
+                  maxValue: 1.0,
+                  viewWindow: { min: 0.95, max: 1.0 },
                   format: '0.0%'
                },
                hAxis: {
