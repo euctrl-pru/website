@@ -8,6 +8,8 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$",
   "src$"
 ]
 
+# customCSS = ["css/pru.css"]
+
 # Do not build RSS files
 #disableRSS =                  true
 # Do not build Sitemap file
