@@ -1,5 +1,7 @@
       <footer class="footer">
         <ul class="footer-links">
+          <li><small style=" font-variant: small-caps;">&copy; {{ now.Format "2006"}} {{ .Site.Params.owner.shortname }}</small>
+		      </li>
           <li>
             <a href="{{ .Site.RSSLink | relURL }}" type="application/rss+xml" target="_blank">RSS feed</a>
           </li>

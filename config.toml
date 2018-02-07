@@ -45,6 +45,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     
     [params.owner]
     name = "European Organisation for the Safety of Air Navigation (EUROCONTROL)"
+    shortname = "EUROCONTROL"
     location = "Brussels, Belgium"
     twitter = "eurocontrol"
     github =  "euctrl-pru"
