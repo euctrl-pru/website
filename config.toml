@@ -1,0 +1,53 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "PRU Portal"
+theme = "hugo-lithium-theme"
+googleAnalytics = "UA-62697169-2"
+disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+# Do not build RSS files
+#disableRSS =                  true
+# Do not build Sitemap file
+#disableSitemap =              true
+#disableKinds = ["RSS", "sitemap"]
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+[[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/rstudio/blogdown"
+[[menu.main]]
+    name = "Twitter"
+    url = "https://twitter.com/rstudio"
+
+[params]
+    description = "A website built through Hugo and blogdown."
+
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.11.0"
+    highlightjsCDN = "//cdn.bootcss.com"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
+    MathJaxCDN = "//cdn.bootcss.com"
+    MathJaxVersion = "2.7.1"
+
+    [params.logo]
+    url = "pru-logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"
+    
+    [params.owner]
+    name = "European Organisation for the Safety of Air Navigation (EUROCONTROL)"
+    location = "Brussels, Belgium"
+    twitter = "eurocontrol"
+    github =  "euctrl-pru"
+    email = "PRU-Support@eurocontrol.int"
+
+
