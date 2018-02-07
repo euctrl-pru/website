@@ -4,7 +4,9 @@ title = "PRU Portal"
 theme = "hugo-lithium-theme"
 googleAnalytics = "UA-62697169-2"
 disqusShortname = ""
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$",
+  "src$"
+]
 
 # Do not build RSS files
 #disableRSS =                  true
@@ -17,7 +19,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [[menu.main]]
     name = "About"
-    url = "/about/"
+    url = "/about/us/"
 [[menu.main]]
     name = "GitHub"
     url = "https://github.com/euctrl-pru/website"
