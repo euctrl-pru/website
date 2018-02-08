@@ -287,8 +287,8 @@ code {
 
   .archive-item-date {
     font-size: 19px;
-    text-align: right;
-    float: right;
+    text-align: left;
+    float: left;
   }
 
   .archive-item-link {

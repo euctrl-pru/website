@@ -1,9 +1,8 @@
 ---
-layout: post
-title:  "Release Notes"
-categories:
-- news
-- rn
+title: "Release Notes"
+author: "Frida Gomam"
+date: 2018-01-19T15:15:15-01:00
+categories: ["news", "rn"]
 ---
 
 Data updates up to Dec 2017.
