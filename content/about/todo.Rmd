@@ -1,0 +1,13 @@
+---
+title: To Do's
+layout: default
+---
+
+This is what needs to be checked for full migration to Hugo:
+
+* pagination of posts. Keep only the last 5 or so
+* D3 logo: include the fancy logo in the template.
+* Improve `howbuilt`
+* style header, fonts,...
+* custom 404 page
+

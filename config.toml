@@ -51,6 +51,7 @@ customCSS = ["css/pru.css"]
     name = "About"
     url = "/about/us/"
     identifier= "about"
+    weight = 100
 [[menu.main]]
     name = "Disclamer"
     url = "/about/disclamer/"
@@ -60,6 +61,11 @@ customCSS = ["css/pru.css"]
     name = "How built"
     url = "/about/howbuilt/"
     identifier = "disclaimer"
+    parent = "about"
+[[menu.main]]
+    name = "To Do's"
+    url = "/about/todo/"
+    identifier = "todo"
     parent = "about"
 
 
