@@ -8,7 +8,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$",
   "src$"
 ]
 
-# customCSS = ["css/pru.css"]
+searchsites = "ansperformance.eu"
+
+customCSS = ["css/pru.css"]
 
 # Do not build RSS files
 #disableRSS =                  true
@@ -19,6 +21,32 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$",
 [permalinks]
     post = "/:year/:month/:day/:slug/"
 
+
+[[menu.main]]
+    name = "News"
+    url = "/post/"
+    identifier= "post"
+    weight = 50
+[[menu.main]]
+    name = "Graphs"
+    url = "/graph/"
+    identifier= "graph"
+    weight = 60
+[[menu.main]]
+    name = "Data"
+    url = "/data/"
+    identifier= "data"
+    weight = 70
+[[menu.main]]
+    name = "Studies"
+    url = "/study/"
+    identifier= "study"
+    weight = 80
+[[menu.main]]
+    name = "References"
+    url = "/reference/"
+    identifier= "reference"
+    weight = 90
 [[menu.main]]
     name = "About"
     url = "/about/us/"

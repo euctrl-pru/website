@@ -10,5 +10,24 @@
     {{ range .Site.Menus.main }}
     <li><a href="{{ .URL }}">{{ .Name }}</a></li>
     {{ end }}
+    <li>
+      <!-- a search box for the content of this site -->
+      <!-- inspired by http://hardik.org/2013/06/01/stylising-duckduckgo-site-search/ -->
+<!--       <form class="navbar-form" method="get" action="https://duckduckgo.com/">
+          <input type="hidden" name="sites" value="ansperformance.eu"/>
+        <input type="hidden" name="ka" value="h"/>
+        <input type="hidden" name="k7" value="#fafafa"/>
+        <input type="hidden" name="kj" value="#2e86c6"/>
+        <input type="hidden" name="ky" value="#fafafa"/>
+        <input type="hidden" name="kx" value="b"/>
+        <input type="hidden" name="kt" value="Helvetica"/>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search this site" name="q" id="srch-term">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+      </form>
+ -->    </li>
   </ul>
-</nav>
+ </nav>
