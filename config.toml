@@ -22,12 +22,18 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$",
 [[menu.main]]
     name = "About"
     url = "/about/us/"
+    identifier= "about"
 [[menu.main]]
-    name = "GitHub"
-    url = "https://github.com/euctrl-pru/website"
+    name = "Disclamer"
+    url = "/about/disclamer/"
+    identifier = "disclaimer"
+    parent = "about"
 [[menu.main]]
-    name = "Twitter"
-    url = "https://twitter.com/eurocontrol"
+    name = "How built"
+    url = "/about/howbuilt/"
+    identifier = "disclaimer"
+    parent = "about"
+
 
 [params]
     description = "A website built through Hugo and blogdown."
@@ -45,8 +51,8 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$",
     url = "pru-logo.png"
     width = 50
     height = 50
-    alt = "Logo"
-    
+    alt = "PRU"
+
     [params.owner]
     name = "European Organisation for the Safety of Air Navigation (EUROCONTROL)"
     shortname = "EUROCONTROL"
