@@ -1,5 +1,5 @@
 ---
-title: ACE Benchmarking Report
+title: ACE - Benchmarking Report
 categories:
   - metadata
   - acronym
