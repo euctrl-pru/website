@@ -4,7 +4,7 @@ date: '2015-10-28'
 categories:
   - news
   - safety
-slug: content/post/2015-10-28-pru-safety-in-aerosafety-world
+slug: content/post/2015-10-28-pru-safety-in-aerosafety-world.Rmd
 ---
 
 PRU safety performance analysis in July/August 2015 issue of AeroSafety World.
