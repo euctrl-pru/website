@@ -18,7 +18,7 @@ In the context of ATFM (**A**ir **T**raffic **F**low **M**anagement) a *measure*
 
 ## See Also
 
-* [Regulation](/references/definition/regulation/)
+* [Regulation](/reference/definition/regulation/)
 
 
 ## References

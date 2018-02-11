@@ -15,4 +15,4 @@ Minutes per IFR departure [min/dep].
 
 ## See also
 
-[Additional taxi-out time methodology]({{< relref "/references/methodology/unimpeded_taxi-out_time.md" >}})
+[Additional taxi-out time methodology]({{< relref "/reference/methodology/unimpeded_taxi-out_time.md" >}})

@@ -8,11 +8,11 @@ slug: atfm-delay-codes
 ---
 # {{ page.title }}
 
-The reason for the regulation is indicated by the responsible Flow Management Position [FMP](/references/acronym/fmp/).
+The reason for the regulation is indicated by the responsible Flow Management Position [FMP](/reference/acronym/fmp/).
 
 For post-ops analysis individual delay codes can be included in a ATFM delay group. 
 
-See also [ATFM delay](/references/definition/atfm-delay).
+See also [ATFM delay](/reference/definition/atfm-delay).
 
 
 
