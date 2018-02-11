@@ -1,0 +1,13 @@
+---
+title: EUROCONTROL Area
+categories:
+  - metadata
+  - definition
+type: definition
+slug: eurocontrol-area
+---
+# {{ page.title }}
+
+[The EUROCONTROL area consists of the 41 EUROCONTROL Member States (2016)][ectl_ms]
+
+[ectl_ms]: <https://www.eurocontrol.int/about/member-states> "EUROCONTROL Member States"
