@@ -327,6 +327,7 @@ code {
   padding: 0;
   font-size: 12px;
   list-style: none;
+  display: inline;
 }
 
 .index-links li {
@@ -334,10 +335,17 @@ code {
   margin: 0 0 0 5px;
 }
 
+.index-links li:after {
+  content: ", ";
+}
+
 .index-links li:first-child {
   margin-left: 0;
 }
 
+.index-links li:last-child:after {
+    content: "";
+}
 .index-links a {
   text-decoration: none;
   font-size: 21px;
