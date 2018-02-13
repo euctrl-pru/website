@@ -6,7 +6,6 @@ categories:
 type: acronym
 slug: rad
 ---
-# {{ page.title }}
 
 The Route Availability Document is a flight-planning document, which integrates
 both structural and [ATFCM][atfcm] requirements, geographically and vertically,
@@ -27,16 +26,12 @@ requirements.
 
 ## See Also
 
-* [Route availability coordination and implementation][radECTRL]{:target="_blank"}
-  page at [EUROCONTROL][ectrl]{:target="_blank"}.
-* [RAD implementation][radimpECTRL]{:target="_blank"} page at [EUROCONTROL][ectrl]{:target="_blank"}.
+* {{% a_blank_ectrl "Route availability coordination and implementation" "http://www.eurocontrol.int/service/route-availability-coordination-and-implementation" %}}
+* {{% a_blank_ectrl "RAD implementation" "http://www.eurocontrol.int/services/rad-implementation" %}}
 * [ATFCM][atfcm].
 
 
 
-[atfcm]: <{{ "/references/acronym/atfcm.html" | prepend: site.baseurl | prepend: site.url }}> "ATFCM"
-[cdm]: <{{ "/references/acronym/cdm.html" | prepend: site.baseurl | prepend: site.url }}> "CDM"
-[nm-cfmu]: <{{ "/references/acronym/nm-cfmu.html" | prepend: site.baseurl | prepend: site.url }}> "NM"
-[ectrl]: <https://www.eurocontrol.int/> "EUROCONTROL"
-[radECTRL]: <http://www.eurocontrol.int/service/route-availability-coordination-and-implementation> "RAD - EUROCONTROL"
-[radimpECTRL]: <http://www.eurocontrol.int/services/rad-implementation> "RAD Implementation - EUROCONTROL"
+[atfcm]: {{< relref "reference/acronym/atfcm.md" >}} "ATFCM"
+[cdm]: {{< relref "reference/acronym/cdm.md" >}} "CDM"
+[nm-cfmu]: {{< relref "reference/acronym/nm-cfmu.md" >}} "NM"

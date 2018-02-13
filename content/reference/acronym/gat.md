@@ -6,7 +6,6 @@ categories:
 type: acronym
 slug: gat
 ---
-# {{ page.title }}
 
 GAT encompasses all flights conducted in accordance with the rules
 and procedures of [ICAO][icao].
@@ -15,10 +14,7 @@ and procedures of [ICAO][icao].
 
 * [GA][ga].
 * [OAT][oat].
-* [GAT and OAT][gatoatIVAO]{:target="_blank"} page at [IVAO][ivao]{:target="_blank"}.
+* {{% a_blank_ivao "GAT and OAT" "https://www.ivao.aero/specops/gat-oat.asp" %}}.
 
-[ga]: <{{ "/references/acronym/ga.html" | prepend: site.baseurl | prepend: site.url }}> "GAT"
-[oat]: <{{ "/references/acronym/oat.html" | prepend: site.baseurl | prepend: site.url }}> "GAT"
-[gatoatIVAO]: <https://www.ivao.aero/specops/gat-oat.asp> "GAT and OAT - IVAO"
-[ivao]: <https://www.ivao.aero/> "IVAO"
-[icao]: <http://www.icao.int> "ICAO"
+[ga]: /reference/acronym/ga/ "GAT"
+[oat]: /reference/acronym/oat/ "GAT"

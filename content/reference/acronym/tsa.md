@@ -6,7 +6,6 @@ categories:
 type: acronym
 slug: tsa
 ---
-# {{ page.title }}
 
 A defined volume of airspace normally under the jurisdiction of one aviation
 authority and temporarily segregated, by common agreement, for the exclusive
@@ -16,11 +15,5 @@ allowed to transit.
 
 ## See Also
 
-* [TSA][tsaLEXI]{:target="_blank"} page at [ATM Lexicon][lexi]{:target="_blank"}.
-* [TSA][tsaSB]{:target="_blank"} page at [SKYbrary][sb]{:target="_blank"}.
-
-
-[tsaLEXI]: <https://ext.eurocontrol.int/lexicon/index.php/Temporary_Segregated_Area> "TSA - ATM Lexicon"
-[tsaSB]: <http://www.skybrary.aero/index.php/Temporary_Segregated_Area> "TSA - SKYbrary"
-[sb]: <http://www.skybrary.aero> "SKYbrary"
-[lexi]: <https://ext.eurocontrol.int/lexicon/index.php/Main_Page> "ATM Lexicon"
+* {{% a_blank_lexicon "TSA" "https://ext.eurocontrol.int/lexicon/index.php/Temporary_Segregated_Area" %}}
+* {{% a_blank_skybrary "TSA" "http://www.skybrary.aero/index.php/Temporary_Segregated_Area" %}}

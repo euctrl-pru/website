@@ -7,8 +7,6 @@ type: acronym
 slug: ecac
 ---
 
-# {{ page.title }}
-
 ECAC is Europe's largest and longest-standing aviation organisation and
 is part of the ICAO air transport global community.
 
@@ -19,4 +17,4 @@ efficient and sustainable European air transport system.
 
 * [ECAC-CEAC][ecac] website.
 
-[ecac]: <https://www.ecac-ceac.org/> "ECAC - European Civil Aviation Conference"
+[ecac]: https://www.ecac-ceac.org/ "ECAC - European Civil Aviation Conference"

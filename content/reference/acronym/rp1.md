@@ -6,7 +6,6 @@ categories:
 type: acronym
 slug: rp1
 ---
-# {{ page.title }}
 
 The Reporting Period 1 of the [SES][ses] Performance Scheme for EU and
 associated States covers the years 2012-2014.
@@ -17,4 +16,4 @@ associated States covers the years 2012-2014.
 * [SES][ses].
 
 
-[ses]: <{{ "/references/acronym/ses.html" | prepend: site.baseurl | prepend: site.url }}> "SES"
+[ses]: {{< relref "reference/acronym/ses.md" >}} "SES"

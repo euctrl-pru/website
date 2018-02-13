@@ -6,9 +6,6 @@ categories:
 type: acronym
 slug: etfms
 ---
-# {{ page.title }}
-
-
 
 The Enhanced Tactical Flow Management System is used to compare traffic demand
 with the available capacity of a certain air traffic control ([ATC][atc])
@@ -29,16 +26,11 @@ The ETFMS system has two main functions:
 
 ## See Also
 
-* [ETFMS][etfmsECTRL]{:target="_blank"} page at [EUROCONTROL][ectrl]{:target="_blank"}.
-* [ETFMS][etfmsLEXI]{:target="_blank"} page at [ATM Lexicon][lexi]{:target="_blank"}.
-* [IFPS][ifps].
+* {{% a_blank_ectrl "ETFMS" "http://www.eurocontrol.int/articles/enhanced-tactical-flow-management-system-etfms" %}}
+* {{% a_blank_lexicon "ETFMS" "https://ext.eurocontrol.int/lexicon/index.php/Enhanced_Tactical_Flow_Management_System" %}}
+* [IFPS](/reference/acronym/ifps/).
 
-[ifps]: <{{ "/references/acronym/ifps.html" | prepend: site.baseurl | prepend: site.url }}> "Air Traffic Control"
-[etfmsECTRL]: <http://www.eurocontrol.int/articles/enhanced-tactical-flow-management-system-etfms> "ETFMS - EUROCONTROL"
-[ectrl]: <https://www.eurocontrol.int/> "EUROCONTROL"
-[etfmsLEXI]: <https://ext.eurocontrol.int/lexicon/index.php/Enhanced_Tactical_Flow_Management_System> "ETFMS - ATM Lexicon"
-[lexi]: <https://ext.eurocontrol.int/lexicon/index.php/Main_Page> "ATM Lexicon"
 
-[atc]: <{{ "/references/acronym/atc.html" | prepend: site.baseurl | prepend: site.url }}> "ATC"
-[atm]: <{{ "/references/acronym/atm.html" | prepend: site.baseurl | prepend: site.url }}> "ATM"
-[atfcm]: <{{ "/references/acronym/atfcm.html" | prepend: site.baseurl | prepend: site.url }}> "ATFMC"
+[atc]: /reference/acronym/atc/ "ATC"
+[atm]: /reference/acronym/atm/ "ATM"
+[atfcm]: /reference/acronym/atfcm/ "ATFMC"

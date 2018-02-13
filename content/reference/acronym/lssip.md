@@ -6,6 +6,5 @@ categories:
 type: acronym
 slug: lssip
 ---
-# {{ page.title }}
 
 Formerly Local Convergence and Implementation Plans

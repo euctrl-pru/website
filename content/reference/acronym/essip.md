@@ -6,7 +6,6 @@ categories:
 type: acronym
 slug: essip
 ---
-# {{ page.title }}
 
 The European ATM Master Plan has three levels, with Level 3 being
 the implementation level.
@@ -14,11 +13,6 @@ The ESSIP Plan is the Level 3 Implementation Plan.
 
 ## See Also
 
-* [ESSIP Objectives][essipLEXI]{:target="_blank"} page at [ATM Lexicon][lexi]{:target="_blank"}.
-* [EATM Master Plan Portal][eatmSESAR]{:target="_blank"} page at [SESAR][sesar]{:target="_blank"}.
-
-[essipLEXI]: <https://ext.eurocontrol.int/lexicon/index.php/ESSIP_Objective> "ESSIP - ATM Lexicon"
-[lexi]: <https://ext.eurocontrol.int/lexicon/index.php/Main_Page> "ATM Lexicon"
-[eatmSESAR]: <https://www.atmmasterplan.eu/> "eATM Portal - SESAR"
-[essipECTRL]: <http://www.eurocontrol.int/articles/european-atm-master-plan-level-3-implementation-report> "ESSIP Plan - EUROCONTROL"
-[sesar]: <http://www.sesarju.eu/> "SESAR"
+* {{% a_blank_lexicon "ESSIP Objectives" "https://ext.eurocontrol.int/lexicon/index.php/ESSIP_Objective" %}}
+* {{% a_blank_sesar "EATM Master Plan Portal" "https://www.atmmasterplan.eu/" %}}
+* {{% a_blank_ectrl "European ATM Master Plan Level 3 Implementation Report" "http://www.eurocontrol.int/articles/european-atm-master-plan-level-3-implementation-report" %}}

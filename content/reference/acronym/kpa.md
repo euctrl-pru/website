@@ -6,14 +6,10 @@ categories:
 type: acronym
 slug: kpa
 ---
-# {{ page.title }}
 
 KPAs are a way of categorizing performance subjects related to high-level
 ambitions and expectations.
 
 ## See Also
 
-* [KPA][kpaLEXI]{:target="_blank"} page at [ATM Lexicon][lexi]{:target="_blank"}.
-
-[kpaLEXI]: <https://ext.eurocontrol.int/lexicon/index.php/Key_Performance_Area> "KPA - ATM Lexicon"
-[lexi]: <https://ext.eurocontrol.int/lexicon/index.php/Main_Page> "ATM Lexicon"
+* {{% a_blank_lexicon "KPA" "https://ext.eurocontrol.int/lexicon/index.php/Key_Performance_Area" %}}

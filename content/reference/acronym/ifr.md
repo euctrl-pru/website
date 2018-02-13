@@ -6,7 +6,6 @@ categories:
 type: acronym
 slug: ifr
 ---
-# {{ page.title }}
 
 Instrument flight rules (IFR) is one of two sets of regulations governing all
 aspects of civil aviation aircraft operations; the other is visual flight
@@ -20,11 +19,5 @@ and navigation is accomplished by reference to electronic signals.
 
 ## See Also
 
-* [IFR][ifrWP]{:target="_blank"} page at [Wikipedia][wp]{:target="_blank"}.
-* [IFR][ifrSB]{:target="_blank"} page at [SKYbrary][sb]{:target="_blank"}.
-
-
-[ifrWP]: <https://en.wikipedia.org/wiki/Instrument_flight_rules> "IFR - Wikipedia"
-[ifrSB]: <http://www.skybrary.aero/index.php/Instrument_Flight_Rules_(IFR)> "IFR - SKYbrary"
-[wp]: <https://en.wikipedia.org> "Wikipedia"
-[sb]: <http://www.skybrary.aero> "SKYbrary"
+* {{% a_blank_wiki "IFR" "https://en.wikipedia.org/wiki/Instrument_flight_rules" %}}
+* {{% a_blank_skybrary "IFR" "http://www.skybrary.aero/index.php/Instrument_Flight_Rules_(IFR)" %}}

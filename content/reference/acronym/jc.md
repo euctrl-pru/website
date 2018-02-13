@@ -6,7 +6,6 @@ categories:
 type: acronym
 slug: jc
 ---
-# {{ page.title }}
 
 The EUROCONTROL definition of “just culture”, also adopted by other European
 aviation stakeholders, is a culture in which “front line operators or others

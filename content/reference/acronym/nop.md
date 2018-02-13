@@ -6,7 +6,6 @@ categories:
 type: acronym
 slug: nop
 ---
-# {{ page.title }}
 
 The plan, including its supporting tools, developed by the
 [Network Manager][nm-cfmu]
@@ -17,11 +16,5 @@ principles of the Network Strategic Plan.
 
 ## See Also
 
-* [NOP][nopLEXI]{:target="_blank"} page at [ATM Lexicon][lexi]{:target="_blank"}.
-* [NOP][nopECTRL]{:target="_blank"} page at [EUROCONTROL][ectrl]{:target="_blank"}.
-
-[nm-cfmu]: <{{ "/references/acronym/nm-cfmu.html" | prepend: site.baseurl | prepend: site.url }}> "NM"
-[nopLEXI]: <https://ext.eurocontrol.int/lexicon/index.php/Network_Operations_Plan> "NOP - ATM Lexicon"
-[nopECTRL]: <http://www.eurocontrol.int/operations-planning> "NOP - EUROCONTROL"
-[lexi]: <https://ext.eurocontrol.int/lexicon/index.php/Main_Page> "ATM Lexicon"
-[ectrl]: <https://www.eurocontrol.int/> "EUROCONTROL"
+* {{% a_blank_lexicon "NOP" "https://ext.eurocontrol.int/lexicon/index.php/Network_Operations_Plan" %}}
+* {{% a_blank_ectrl "NOP" "http://www.eurocontrol.int/operations-planning" %}}

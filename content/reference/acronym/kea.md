@@ -6,13 +6,12 @@ categories:
 type: acronym
 slug: kea
 ---
-# {{ page.title }}
 
 KEA is the horizontal flight efficiency indicator calculated using
 the trajectories generated via radar data.
 
 ## See Also
 
-* [HFE][hfe] in the [Methodology]({{ "/references/methodology/" | prepend: site.baseurl | prepend: site.url }}) section.
+* [HFE][hfe] in the [Methodology](/reference/methodology/) section.
 
-[hfe]: <{{ "references/methodology/horizontal_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }}> "HFE methodology"
+[hfe]: /reference/methodology/horizontal_flight_efficiency_pi/ "HFE methodology"

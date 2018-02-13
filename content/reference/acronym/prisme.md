@@ -7,7 +7,6 @@ categories:
 type: acronym
 slug: prisme
 ---
-# {{ page.title }}
 
 A comprehensive repository of European aviation data including but
 not limited to flight plans, flight trajectories, airspace structures,

@@ -6,7 +6,6 @@ categories:
 type: acronym
 slug: uac
 ---
-# {{ page.title }}
 
 An [ACC][acc] centre providing seamless air navigation services to the upper airspace.
 
@@ -14,13 +13,7 @@ An [ACC][acc] centre providing seamless air navigation services to the upper air
 ## See Also
 
 * [ACC][acc].
-* [Upper Airspace][ua]{:target="_blank"} page at [ATM Lexicon][lexi]{:target="_blank"}.
-* [MUAC][muac]{:target="_blank"} page at [EUROCONTROL][ectrl]{:target="_blank"}.
+* {{% a_blank_lexicon "Upper Airspace" "https://ext.eurocontrol.int/lexicon/index.php/Upper_airspace" %}}
+* {{% a_blank_ectrl "MUAC" "http://www.eurocontrol.int/articles/about-muac" %}}
 
-
-
-[acc]: <{{ "/references/acronym/acc.html" | prepend: site.baseurl | prepend: site.url }}> "ACC"
-[ua]: <https://ext.eurocontrol.int/lexicon/index.php/Upper_airspace> "UA - ATM Lexicon"
-[muac]: <http://www.eurocontrol.int/articles/about-muac> "MUAC - EUROCONTROL"
-[lexi]: <https://ext.eurocontrol.int/lexicon/index.php/Main_Page> "ATM Lexicon"
-[ectrl]: <https://www.eurocontrol.int/> "EUROCONTROL"
+[acc]: {{< relref "reference/acronym/acc.md" >}} "ACC"

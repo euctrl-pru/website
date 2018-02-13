@@ -6,7 +6,6 @@ categories:
 type: acronym
 slug: nm-cfmu
 ---
-# {{ page.title }}
 
 The Network Manager addresses performance issues strategically,
 operationally and technically.
@@ -17,7 +16,4 @@ cost-effectiveness.
 
 ## See Also
 
-* [NM][nmECTRL]{:target="_blank"} page at [EUROCONTROL][ectrl]{:target="_blank"}.
-
-[nmECTRL]: <http://www.eurocontrol.int/network-manager> "NM - EUROCONTROL"
-[ectrl]: <https://www.eurocontrol.int/> "EUROCONTROL"
+* {{% a_blank_ectrl "NM" "http://www.eurocontrol.int/network-manager" %}}

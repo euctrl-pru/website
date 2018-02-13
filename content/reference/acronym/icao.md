@@ -6,7 +6,6 @@ categories:
 type: acronym
 slug: icao
 ---
-# {{ page.title }}
 
 The International Civil Aviation Organization is an agency of the
 United Nations.
@@ -16,6 +15,4 @@ international air transport to ensure safe and orderly growth.
 
 ## See Also
 
-* [ICAO][icao]{:target="_blank"} website.
-
-[icao]: <http://www.icao.int> "ICAO"
+* {{% a_blank "ICAO" "http://www.icao.int" %}}

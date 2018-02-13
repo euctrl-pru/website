@@ -6,7 +6,6 @@ categories:
 type: acronym
 slug: df
 ---
-# {{ page.title }}
 
 The distance in km (divided by 100) between the aerodrome of
 departure within, or the point of entry into, the airspace

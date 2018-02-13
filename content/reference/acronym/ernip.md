@@ -7,8 +7,6 @@ type: acronym
 slug: ernip
 ---
 
-# {{ page.title }}
-
 The European Route Network Improvement Plan is a plan developed
 by the Network Manager in coordination with the operational
 stakeholders.
@@ -20,7 +18,4 @@ the Network Strategy Plan.
 
 ## See Also
 
-* [ERNIP][ernipECTRL]{:target="_blank"} page at [EUROCONTROL][ectrl]{:target="_blank"}.
-
-[ernipECTRL]: <http://www.eurocontrol.int/ernip> "ERNIP - EUROCONTROL"
-[ectrl]: <https://www.eurocontrol.int/> "EUROCONTROL"
+* {{% a_blank_ectrl "ERNIP" "http://www.eurocontrol.int/ernip" %}}

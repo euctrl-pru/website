@@ -6,7 +6,6 @@ categories:
 type: acronym
 slug: notam
 ---
-# {{ page.title }}
 
 A Notice to Airmen is a notice filed with an aviation authority
 to alert aircraft pilots of potential hazards along a flight route
@@ -14,7 +13,4 @@ or at a location that could affect the safety of the flight.
 
 ## See Also
 
-* [NOTAM][notamWP]{:target="_blank"} page at [Wikipedia][wp]{:target="_blank"}.
-
-[wp]: <https://en.wikipedia.org> "Wikipedia"
-[notamWP]: <https://en.wikipedia.org/wiki/NOTAM> "NOTAM - Wikipedia"
+* {{% a_blank_wiki "NOTAM" "https://en.wikipedia.org/wiki/NOTAM" %}}

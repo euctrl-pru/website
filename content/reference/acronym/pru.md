@@ -6,7 +6,6 @@ categories:
 type: acronym
 slug: pru
 ---
-# {{ page.title }}
 
 The PRU is responsible for monitoring and reviewing the performance of the
 European [ANS][ans] System.
@@ -18,10 +17,8 @@ Organisationally, PRU is part of the EUROCONTROL Single Sky Directorate.
 ## See Also
 
 * [About PRU][pru].
-* [PRU][pruECTRL]{:target="_blank"} page at [EUROCONTROL][ectrl]{:target="_blank"}.
+* {{% a_blank_ectrl "PRU" "http://www.eurocontrol.int/articles/about-european-ans-performance-review" %}}
 
-[pruECTRL]: <http://www.eurocontrol.int/articles/about-european-ans-performance-review> "PRU - EUROCONTROL"
-[ectrl]: <https://www.eurocontrol.int/> "EUROCONTROL"
-[pru]: <{{ "/about/" | prepend: site.baseurl | prepend: site.url }}> "Air Traffic Control"
-[prc]: <{{ "/references/acronym/prc.html" | prepend: site.baseurl | prepend: site.url }}> "PRC"
-[ans]: <{{ "/references/acronym/ans.html" | prepend: site.baseurl | prepend: site.url }}> "PRC"
+[pru]: {{< relref "about/us.html" >}} "PRU"
+[prc]: {{< relref "reference/acronym/prc.md" >}} "PRC"
+[ans]: {{< relref "reference/acronym/ans.md" >}} "ANS"

@@ -6,7 +6,6 @@ categories:
 type: acronym
 slug: iata
 ---
-# {{ page.title }}
 
 The International Air Transport Association is a trade association
 of the world’s airlines. It supports airline activity and helps
@@ -15,6 +14,4 @@ of the world’s airlines. It supports airline activity and helps
 
 ## See Also
 
-* [IATA][iata]{:target="_blank"} website.
-
-[iata]: <http://www.iata.org> "IATA"
+* {{% a_blank "IATA" "http://www.iata.org" %}}

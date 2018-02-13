@@ -6,7 +6,6 @@ categories:
 type: acronym
 slug: wf
 ---
-# {{ page.title }}
 
 The square root of the result obtained by dividing the
 [maximum take-off weight][mtow] (in metric tons) of the
@@ -17,4 +16,4 @@ aircraft by 50.
 * [MTOW][mtow].
 
 
-[mtow]: <{{ "/references/acronym/mtow.html" | prepend: site.baseurl | prepend: site.url }}> "MTOW"
+[mtow]: {{< relref "reference/acronym/mtow.md" >}} "MTOW"

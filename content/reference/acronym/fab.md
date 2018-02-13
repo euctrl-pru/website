@@ -7,8 +7,6 @@ type: acronym
 slug: fab
 ---
 
-# {{ page.title }}
-
 An airspace block based on operational requirements and established
 regardless of State boundaries, where the provision of air navigation
 services and related functions are performance-driven and optimised
@@ -19,8 +17,6 @@ service providers or, where appropriate, an integrated provider.
 ## See Also
 
 * [FAB definition][fab].
-* [FAB][fabLEXI]{:target="_blank"} page at [ATM Lexicon][lexi]{:target="_blank"}.
+* {{% a_blank_lexicon "FAB" "https://ext.eurocontrol.int/lexicon/index.php/Functional_Airspace_Block" %}}
 
-[fab]: <{{ "/references/definition/fab.html" | prepend: site.baseurl | prepend: site.url }}> "FAB definition"
-[fabLEXI]: <https://ext.eurocontrol.int/lexicon/index.php/Functional_Airspace_Block> "FAB - ATM Lexicon"
-[lexi]: <https://ext.eurocontrol.int/lexicon/index.php/Main_Page> "ATM Lexicon"
+[fab]: /reference/definition/fab/ "FAB definition"

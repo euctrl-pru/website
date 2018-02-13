@@ -6,7 +6,6 @@ categories:
 type: acronym
 slug: xman
 ---
-# {{ page.title }}
 
 Cross-Border Arrival Management, also referred to as Extended Arrival Management,
 is an operational procedure which aims to improve and optimise arrival management
@@ -22,7 +21,4 @@ for the communities living beneath the stacks.
 
 ## See Also
 
-* [XMAN][xmanECTRL]{:target="_blank"} page at [EUROCONTROL][ectrl]{:target="_blank"}.
-
-[xmanECTRL]: <http://www.eurocontrol.int/articles/xman> "XMAN - EUROCONTROL"
-[ectrl]: <https://www.eurocontrol.int/> "EUROCONTROL"
+* {{% a_blank_ectrl "XMAN" "http://www.eurocontrol.int/articles/xman" %}}

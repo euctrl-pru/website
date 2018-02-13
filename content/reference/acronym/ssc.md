@@ -6,7 +6,6 @@ categories:
 type: acronym
 slug: ssc
 ---
-# {{ page.title }}
 
 The Single Sky Committee has been established to support the
 European Commission in the implementation of the
@@ -31,9 +30,6 @@ of all categories of users.
 ## See Also
 
 * [SES][ses].
-* [SSC][sscSB]{:target="_blank"} page at [SKYbrary][sb]{:target="_blank"}.
+* {{% a_blank_skybrary "SSC" "http://www.skybrary.aero/index.php/Single_Sky_Committee" %}}
 
-
-[ses]: <{{ "/references/acronym/ses.html" | prepend: site.baseurl | prepend: site.url }}> "Air Traffic Control"
-[sscSB]: <http://www.skybrary.aero/index.php/Single_Sky_Committee> "SSC - SKYbrary"
-[sb]: <http://www.skybrary.aero> "SKYbrary"
+[ses]: {{< relref "reference/acronym/ses.md" >}} "Single European Sky"

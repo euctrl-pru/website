@@ -6,7 +6,6 @@ categories:
 type: acronym
 slug: upa
 ---
-# {{ page.title }}
 
 Unauthorised penetration of airspace (also known as Airspace Infringement).
 The penetration by an aircraft into a portion of airspace without prior
@@ -15,7 +14,4 @@ permission of the appropriate authorities
 
 ## See Also
 
-* [UAP][upaSB]{:target="_blank"} page at [SKYbrary][sb]{:target="_blank"}.
-
-[upaSB]: <http://www.skybrary.aero/index.php/Unauthorised_Penetration_of_Airspace> "UAP - SKYbrary"
-[sb]: <http://www.skybrary.aero> "SKYbrary"
+* {{% a_blank_skybrary "UPA" "http://www.skybrary.aero/index.php/Unauthorised_Penetration_of_Airspace" %}}

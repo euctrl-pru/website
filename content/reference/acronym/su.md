@@ -6,17 +6,14 @@ categories:
 type: acronym
 slug: su
 ---
-# {{ page.title }}
 
 The multiplication of aircraft [weight factor][wf] by [distance factor][df].
 
 ## See Also
 
 
-* [CRCO][crcoECTRL]{:target="_blank"} page at [EUROCONTROL][ectrl]{:target="_blank"}.
+* {{% a_blank_ectrl "CRCO" "http://www.eurocontrol.int/crco" %}}
 
 
-[wf]: <{{ "/references/acronym/wf.html" | prepend: site.baseurl | prepend: site.url }}> "WF"
-[df]: <{{ "/references/acronym/df.html" | prepend: site.baseurl | prepend: site.url }}> "DF"
-[crcoECTRL]: <http://www.eurocontrol.int/crco> "CRCO - EUROCONTROL"
-[ectrl]: <https://www.eurocontrol.int/> "EUROCONTROL"
+[wf]: {{< relref "reference/acronym/wf.md" >}} "WF"
+[df]: {{< relref "reference/acronym/df.md" >}} "DF"
