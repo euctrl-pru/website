@@ -6,7 +6,6 @@ categories:
 type: definition
 slug: unimpeded-taxi-out-time
 ---
-# {{ page.title }}
 
 The unimpeded taxi-out time is the taxi-out time in non congested conditions at airports.
 
@@ -18,4 +17,4 @@ Minute.
 
 ## See also
 
-[Additional taxi-out time methodology]({{ "/references/methodology/unimpeded_taxi-out_time.html" | prepend: site.baseurl | prepend: site.url }})
+* [Additional taxi-out time methodology](/reference/methodology/unimpeded_taxi-out_time/)

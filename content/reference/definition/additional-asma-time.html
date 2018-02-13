@@ -9,28 +9,38 @@ slug: additional-asma-time
 
 
 
-<p>The Additional ASMA time is the difference between the actual ASMA transit time and the unimpeded ASMA time calculated for non-congested conditions.</p>
-<section id="unit-of-measurement" class="level2">
+<p>The Additional ASMA time is the difference between the actual ASMA transit time
+and the unimpeded ASMA time calculated for non-congested conditions.</p>
+<div id="unit-of-measurement" class="section level2">
 <h2>Unit of Measurement</h2>
 <p>Minute.</p>
-</section>
-<section id="calculation-of-the-indicator" class="level2">
+</div>
+<div id="calculation-of-the-indicator" class="section level2">
 <h2>Calculation of the indicator</h2>
 <p>Let</p>
 <ul>
-<li><span class="math display">\[c\]</span>, a combination of aircraft class, ASMA sectors and arrival runway, as described in the technical note for unimpeded ASMA time,</li>
-<li><span class="math display">\[f(c)\]</span>, a flight characterised by a combination <span class="math display">\[c\]</span>,</li>
-<li><span class="math display">\[AcASMA(f(c))\]</span>, the actual ASMA transit time for a flight <span class="math display">\[f(c)\]</span>, i.e. the elapsed time between the last entry of the flight <span class="math display">\[f(c)\]</span> in its ASMA sector and its actual landing time (ALDT),</li>
-<li><span class="math display">\[UASMA(c)\]</span>, the unimpeded ASMA time for a combination <span class="math display">\[c\]</span>.</li>
+<li><span class="math inline">\(c\)</span>, a combination of aircraft class, ASMA sectors and arrival runway, as
+described in the technical note for <a href="/reference/definition/unimpeded-asma-time/">unimpeded ASMA time</a>,</li>
+<li><span class="math inline">\(f(c)\)</span>, a flight characterised by a combination <span class="math inline">\(c\)</span>,</li>
+<li><span class="math inline">\(\textrm{AcASMA}(f(c))\)</span>, the actual <a href="/reference/definition/asma-transit-time/">ASMA transit time</a> for a flight <span class="math inline">\(f(c)\)</span>, i.e. the
+elapsed time between the last entry of the flight <span class="math inline">\(f(c)\)</span> in its ASMA sector and
+its actual landing time (<a href="/reference/acronym/aldt.html">ALDT</a>,</li>
+<li><span class="math inline">\(\textrm{UASMA}(c)\)</span>, the <a href="/reference/definition/unimpeded-asma-time/">unimpeded ASMA time</a> for a combination <span class="math inline">\(c\)</span>.</li>
 </ul>
-<p>The <em>additional ASMA time</em>, <span class="math display">\[AdASMA(f(c))\]</span>, is calculated for each flight f(c) as the difference between the actual ASMA transit time AcASMA(f(c)) of the flight and the unimpeded ASMA time UASMA(c):</p>
+<p>The <em>additional ASMA time</em>, <span class="math inline">\(\textrm{AdASMA}(f(c))\)</span>, is calculated for each flight <span class="math inline">\(f(c)\)</span>
+as the difference between the actual ASMA transit time <span class="math inline">\(\textrm{AcASMA}(f(c))\)</span> of the
+flight and the unimpeded ASMA time <span class="math inline">\(\textrm{UASMA}(c)\)</span>:</p>
 <p><span class="math display">\[
-AdASAM(f(c)) = AcASMA(f(c)) - UASMA(c)
+\textrm{AdASAM}(f(c)) = \textrm{AcASMA}(f(c)) - \textrm{UASMA}(c)
 \]</span></p>
-<p>The additional ASMA time, <span class="math display">\[AdASMA(c)\]</span>, for a given combination <span class="math display">\[c\]</span> is the average of the additional ASMA time, <span class="math display">\[AdASMA(f(c))\]</span> of all the flight <span class="math display">\[f(c)\]</span> characterised by that combination <span class="math display">\[c\]</span>.</p>
-<p>The additional ASMA time, <span class="math display">\[AdASMA\]</span>, for a given airport is the weighted average of the additional ASMA time, <span class="math display">\[AdASMA(c)\]</span>, for all the combinations <span class="math display">\[c\]</span> at that airport with their probability of occurrence.</p>
-</section>
-<section id="see-also" class="level2">
+<p>The additional ASMA time, <span class="math inline">\(\textrm{AdASMA}(c)\)</span>, for a given combination <span class="math inline">\(c\)</span> is the
+average of the additional ASMA time, <span class="math inline">\(\textrm{AdASMA}(f(c))\)</span> of all the flight <span class="math inline">\(f(c)\)</span>
+characterised by that combination <span class="math inline">\(c\)</span>.</p>
+<p>The additional ASMA time, <span class="math inline">\(\textrm{AdASMA}\)</span>, for a given airport is the weighted
+average of the additional ASMA time, <span class="math inline">\(\textrm{AdASMA}(c)\)</span>, for all the combinations
+<span class="math inline">\(c\)</span> at that airport with their probability of occurrence.</p>
+</div>
+<div id="see-also" class="section level2">
 <h2>See also</h2>
-<p>[Additional ASMA time methodology]({{&lt; relref “/references/methodology/additional_asma_time_pi.md” &gt;}})</p>
-</section>
+<p><a href="/reference/methodology/additional-asma-time-pi.html">Additional ASMA time methodology</a></p>
+</div>

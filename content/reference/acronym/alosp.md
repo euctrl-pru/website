@@ -7,7 +7,7 @@ type: acronym
 slug: alosp
 ---
 
-An Acceptable level of safety performance (ALoSP) is the combination of several performance targets, that are measured using safety indicators, and the action plans needed to achieve the set targets. An ALoSP is part of both an SSP and a service provider’s [Safety Management System (SMS)]{{< relref "references/acronym/sms.md" >}}.
+An Acceptable level of safety performance (ALoSP) is the combination of several performance targets, that are measured using safety indicators, and the action plans needed to achieve the set targets. An ALoSP is part of both an SSP and a service provider’s [Safety Management System (SMS)]{{< relref "/reference/acronym/sms.md" >}}.
 
 
 ## See also

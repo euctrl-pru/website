@@ -8,4 +8,4 @@ slug: asm
 ---
 
 The process by which airspace options are selected and applied to meet
-the needs of the [ATM]({{< relref "/references/acronym/atm.md" >}}) community.
+the needs of the [ATM]({{< relref "/reference/acronym/atm.md" >}}) community.

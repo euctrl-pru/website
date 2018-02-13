@@ -6,9 +6,8 @@ categories:
 type: definition
 slug: kea
 ---
-# {{ page.title }}
 
-**KEA** is a key performance indicator measuring the level of horizontal
+KEA is a key performance indicator measuring the level of horizontal
 en-route flight inefficiency in actually flown trajectories over a period of 12
 months.
 
@@ -22,4 +21,4 @@ The key performance indicator is used in the Single European Sky (SES)
 Performance Scheme.
 
 More information on the methodology used to compute
-[Horizontal en-route flight efficiency]({{ "/references/methodology/horizontal_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }}).
+[Horizontal en-route flight efficiency](/reference/methodology/horizontal_flight_efficiency_pi/).

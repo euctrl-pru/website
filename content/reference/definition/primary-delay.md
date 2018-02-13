@@ -6,6 +6,5 @@ categories:
 type: definition
 slug: primary-delay
 ---
-# {{ page.title }}
 
 A delay other than reactionary.

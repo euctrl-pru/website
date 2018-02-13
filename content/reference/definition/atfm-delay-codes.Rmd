@@ -6,14 +6,10 @@ categories:
 type: definition
 slug: atfm-delay-codes
 ---
-# {{ page.title }}
 
 The reason for the regulation is indicated by the responsible Flow Management Position [FMP](/reference/acronym/fmp/).
 
 For post-ops analysis individual delay codes can be included in a ATFM delay group. 
-
-See also [ATFM delay](/reference/definition/atfm-delay).
-
 
 
 
@@ -53,5 +49,8 @@ See also [ATFM delay](/reference/definition/atfm-delay).
 |En route|W|Weather|ER Weather|En route|
 |na|NA|Not regulated/Not specified|ER Disruptions|En route|
 
-The list of ATFM delay causes can be found out in the 
-`r blogdown::shortcode("a_blank", "ATFCM Users Manual", "https://www.eurocontrol.int/sites/default/files/content/documents/nm/network-operations/HANDBOOK/atfcm-users-manual-next.pdf")`.
+
+## See Also
+
+* [ATFM delay](/reference/definition/atfm-delay/).
+* `r blogdown::shortcode("a_blank_ectrl", "ATFCM Users Manual", "https://www.eurocontrol.int/sites/default/files/content/documents/nm/network-operations/HANDBOOK/atfcm-users-manual-next.pdf")`.

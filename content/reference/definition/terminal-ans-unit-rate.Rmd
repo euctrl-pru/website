@@ -5,17 +5,18 @@ categories:
   - definition
 type: definition
 slug: terminal-ans-unit-rate
+bibliography: [../../../static/bib/legislation.bib]
+link-citations: true
+biblio-style: apalike
 ---
-# {{ page.title }}
 
 Terminal unit rates represent the unit price paid by airspace users, mainly
 commercial airlines, for the air navigation services provided, mainly air
 traffic control.
 
 Terminal ANS unit rates are defined in the Annex V of the
-EC 1794/2006 Charging Scheme Regulation
-{% cite ec:1794/2006 --file legislation %} (all references below refer
-to articles of this regulation):
+EC 1794/2006 Charging Scheme Regulation [@ec:1794/2006]
+(all references below refer to articles of this regulation):
 
 
 ----------------------
@@ -39,4 +40,3 @@ to articles of this regulation):
 
 ## References
 
-{% bibliography --cited_in_order --file legislation %}

@@ -6,7 +6,6 @@ categories:
 type: definition
 slug: regulation
 ---
-# {{ page.title }}
 
 In the context of ATFM, a *regulation* is one of the possible
-[ATFM measure]({{ "/references/definition/aftm-measure.html" | prepend: site.baseurl | prepend: site.url }})s.
+[ATFM measure](/reference/definition/aftm-measure/)s.

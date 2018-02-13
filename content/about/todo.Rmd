@@ -6,7 +6,8 @@ layout: default
 This is what needs to be checked for full migration to Hugo:
 
 * finish to port acronyms: from "d"
-* bibliography via Rmd but also check [this](https://github.com/mtbhomer/web-portfolio/blob/master/themes/mtbhomer-portfolio/layouts/research/single.html) for publication list solution. It shows as in [here](https://www.mtbhomer.com/research/)
+* ~~port definitions~~
+* ~~bibliography via Rmd~~ but also check [this](https://github.com/mtbhomer/web-portfolio/blob/master/themes/mtbhomer-portfolio/layouts/research/single.html) for publication list solution. It shows as in [here](https://www.mtbhomer.com/research/)
 * pagination of posts. Keep only the last 5 or so
 * D3 logo: include the fancy logo in the template.
 * Improve `howbuilt`

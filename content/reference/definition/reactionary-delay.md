@@ -6,6 +6,5 @@ categories:
 type: definition
 slug: reactionary-delay
 ---
-# {{ page.title }}
 
 Delay caused by late arrival of aircraft, crew, passengers or baggage from previous journeys.

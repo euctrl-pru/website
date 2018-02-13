@@ -4,7 +4,7 @@ categories:
   - metadata
   - definition
 type: definition
-slug: ESRA-2008-Area
+slug: esra-2008-area
 ---
 
 European Statistical Reference Area (see STATFOR Reports)

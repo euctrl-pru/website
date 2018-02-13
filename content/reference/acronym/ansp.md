@@ -9,4 +9,4 @@ slug: ansp
 
 A body that manages flight traffic on behalf of a company, region or country.
 
-For the list of the ANSPs considered by PRU, please refer to the [ANSP's]({{< relref "references/ANSP/" >}}) page in the [Reference section]({{< relref "reference/" >}}).
+For the list of the ANSPs considered by PRU, please refer to the [ANSP's](/reference/ANSP/) page in the [Reference section](/reference/).

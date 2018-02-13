@@ -6,23 +6,8 @@ categories:
 type: definition
 slug: fab
 ---
-<style>
-td {
-  white-space: nowrap;
-}
-th:nth-child(1) {
-width: 16em;
-}
-th:nth-child(2) {
-width: 20em;
-}
-</style>
 
-
-
-# {{ page.title }}
-
-The <a href="http://www.eurocontrol.int/dossiers/fabs" target="_blank">FAB</a>
+The [FAB](http://www.eurocontrol.int/dossiers/fabs)
 concept was developed in the 1st legislative package of the Single European Sky
 (SES I) as one of the main means for reducing airspace fragmentation. The 2nd
 legislative package (SES II) tackled the creation of FABs in terms of service
@@ -47,10 +32,8 @@ have been taken:
 | UK-IRELAND FAB | UK-IRELAND FAB     | United Kingdom, Ireland                                                                      |
 | SW FAB         | South West FAB     | Portugal, Spain                                                                              |
 
-<br>
-<br>
+
 For the details about the computation of delay at FAB level (i.e. the FIRs
 used), please refer to the relevant section in the
-[En-route ATFM delays]({{ "/references/dataset/En-Route_ATFM_Delay_FIR.html#fab-definitions" | prepend: site.baseurl | prepend: site.url }})
-page part of the [Datasets Definition]({{ "/references/dataset/" | prepend: site.baseurl | prepend: site.url }})
-section.
+[En-route ATFM delays](/references/dataset/En-Route_ATFM_Delay_FIR/)
+page part of the [Datasets Definition](/references/dataset/) section.

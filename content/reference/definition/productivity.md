@@ -6,7 +6,6 @@ categories:
 type: definition
 slug: productivity
 ---
-# {{ page.title }}
 
 Productivity measures relate output to input and are used to reflect changes in technology, processes, training, staffing, and many other factors. 
 

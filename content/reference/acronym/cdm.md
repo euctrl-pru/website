@@ -11,5 +11,5 @@ A process focused on how to decide on a course of action articulated between two
 
 ## See Also
 
-* [A-CDM]({{< relref "reference/acronym/a_cdm.md" >}}).
+* [A-CDM]({{< relref "reference/acronym/a-cdm.md" >}}).
 * {{% a_blank_lexicon "CDM" "https://ext.eurocontrol.int/lexicon/index.php/Collaborative_Decision_Making" %}}

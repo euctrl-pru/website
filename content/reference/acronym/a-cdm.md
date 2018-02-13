@@ -4,7 +4,7 @@ categories:
   - metadata
   - acronym
 type: acronym
-slug: a_cdm
+slug: a-cdm
 ---
 
 A process in which decisions related to [ATFCM]({{< relref "reference/acronym/atfcm.md" >}})

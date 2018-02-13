@@ -6,11 +6,12 @@ categories:
 type: definition
 slug: asma-transit-time
 ---
-The actual time spent by a flight between its last entry in the ASMA cylinder (Entry-time at 40 NM upstream) and the actual landing time ([ALDT](/reference/acronym/aldt.html)).
+The actual time spent by a flight between its last entry in the ASMA cylinder (Entry-time at 40 NM upstream) and the actual landing time ([ALDT](/reference/acronym/aldt/).
 
 ## Unit of Measurement
 Minute.
 
 ## See also
 
-[Additional ASMA time methodology]({{< relref "/reference/methodology/unimpeded_asma_time.md" >}})
+[Additional ASMA time methodology](/reference/methodology/unimpeded-asma-time/)
+

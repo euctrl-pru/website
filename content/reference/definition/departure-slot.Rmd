@@ -6,16 +6,11 @@ categories:
 type: definition
 slug: departure-slot
 ---
-# {{ page.title }}
 
 A departure slot is a time when an aircraft can take off,
-the so called **C**alculated **T**ime of **T**ake **O**ff or [CTOT][ctot].
+the so called Calculated Time of Take-Off ([CTOT](/reference/acronym/ctot/)).
 
 
 ## See Also
 
-* [What is a slot][wiasECTRL] page at [EUROCONTROL][ectrl] website.
-
-[wiasECTRL]: <http://www.eurocontrol.int/news/what-slot> "What is a slot - EUROCONTROL"
-[ctot]: <{{ "/references/acronym/ctot.html" | prepend: site.baseurl | prepend: site.url }}> "Calculated Time of Take Off"
-[ectrl]: <https://www.eurocontrol.int/> "EUROCONTROL"
+* `r blogdown::shortcode("a_blank_ectrl", "What is a slot", "http://www.eurocontrol.int/news/what-slot")`

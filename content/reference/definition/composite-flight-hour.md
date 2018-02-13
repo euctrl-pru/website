@@ -6,7 +6,6 @@ categories:
 type: definition
 slug: composite-flight-hour
 ---
-# {{ page.title }}
 
 The output measures for ANS provision are, for en‐route, the en‐route flight‐hours controlled and, for terminal ANS, the number of IFR airport movements controlled. In addition to those output metrics, it is important to consider a "gate‐to‐gate" perspective, because the boundaries used to allocate costs between en‐route and terminal ANS vary between ANSPs and might introduce a bias in the cost‐effectiveness analysis.
  

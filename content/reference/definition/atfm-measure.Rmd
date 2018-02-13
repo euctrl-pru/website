@@ -4,16 +4,15 @@ categories:
   - metadata
   - definition
 type: definition
-slug: aftm-measure
+slug: atfm-measure
 bibliography: [../../../static/bib/legislation.bib]
 link-citations: true
 ---
 
-In the context of ATFM (**A**ir **T**raffic **F**low **M**anagement) a *measure* refers to
+In the context of Air Traffic Flow Management ([ATFM](/reference/acronym/atfm/)) a *measure* refers to [@eu:255/2010]
 
 > the actions taken to perform air traffic flow management and capacity management
 
-[@eu:255/2010]
 
 
 ## See Also
