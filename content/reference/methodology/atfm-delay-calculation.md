@@ -1,10 +1,10 @@
 ---
-layout: default
 title: Modification of the ATFM delay calculation (NM release 20.0)
-subtitle: Different versions of ATFM delay computation
-excerpt: Performance Review Unit Metadata Definitions.
-keywords: ATFM, metrics, metadata, performance, data, statistics, economics, air transport, flights, europe, 
-needsMath: true
+categories:
+  - metadata
+  - methodology
+type: methodology
+slug: atfm-delay-calculation
 ---
 <style>
 img + em {
@@ -16,8 +16,6 @@ content: ' ';
 display: block;
 }
 </style>
-
-# {{ page.title }}
 
 
 ## Background
@@ -45,7 +43,7 @@ in more detail in the relevant [NM Release presentation][NM20-rn].
 ## Impact on this webpage
 
 The ATFM delay related graphs shown on this web page and data in the 
-[download area]({{site.url}}/data/performancearea/) take the change in 
+[download area](/data/performancearea/) take the change in 
 methodology as of April 2016 into account.
 
 In the ATFM delay download files, the data computed in accordance with the old methodology 
@@ -53,4 +51,4 @@ In the ATFM delay download files, the data computed in accordance with the old m
 based on the revised methodology (as of 04 April 2016) are marked as **Version 2**.
 
 
-[NM20-rn]: <{{"/references/library/NM_20_FB750_Delay_Calculation_improvements.pdf" | prepend: site.baseurl | prepend: site.url }}> "NM 20 Release Notes: Delay calculation improvements"
+[NM20-rn]: /library/NM_20_FB750_Delay_Calculation_improvements.pdf "NM 20 Release Notes: Delay calculation improvements"

@@ -13,3 +13,4 @@ This is what needs to be checked for full migration to Hugo:
 * Improve `howbuilt`
 * style header, fonts,...
 * custom 404 page
+* anti-spammer subscriber

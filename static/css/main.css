@@ -385,3 +385,13 @@ code {
 #to-top-btn:hover {
   background-color: #555;
 }
+
+
+thead {
+  background-color: #eee;
+  border-bottom: 1pt solid #000;
+}
+
+td, th {
+  border-bottom: 1px solid #CCCCCC;
+}
