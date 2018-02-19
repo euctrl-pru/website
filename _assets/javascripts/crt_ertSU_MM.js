@@ -5,7 +5,7 @@
          {
             chartType: 'ComboChart',
             containerId: 'crt_ertSU_MM',
-            dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1txmPuoLLfCuuQdWSQfBZmQWPEHD__MVu-Y5xsvWCO3Y/edit?usp=sharing&sheet=ERT_SU_MM&range=A1:F49&headers=1&tq=where%20A%3D1',
+            dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1txmPuoLLfCuuQdWSQfBZmQWPEHD__MVu-Y5xsvWCO3Y/edit?usp=sharing&sheet=ERT_SU_MM&range=A1:F61&headers=1&tq=where%20A%3D1',
             options: {
                //width: 500, height: 300,
                //title: 'Average Daily Service Units (monthly)',
