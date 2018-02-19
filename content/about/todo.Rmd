@@ -14,3 +14,19 @@ This is what needs to be checked for full migration to Hugo:
 * style header, fonts,...
 * custom 404 page
 * anti-spammer subscriber
+* fix links to CSV download in dataset definitions
+* fix table extent in data download page
+* fixed nav bar
+* replace favicons with proper shortcodes
+* dataset HFE: fix Pym iframe height
+* fix "APT DLY filter and CSV download" link, http://localhost:8000/reference/dataset/airport-arrival-atfm-delay/
+  in http://localhost:8000/reference/dataset/airport-arrival-atfm-delay/
+
+
+
+## New stuff
+
+* generate yearly CSV for HFE, APT_DLY,... (see export<>.R scripts)
+* investigate use of http://tachyons.io/
+* use ggplotly for graphs
+* check htmlwidgets: http://gallery.htmlwidgets.org/ and blogdown
