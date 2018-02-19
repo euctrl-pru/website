@@ -96,6 +96,6 @@ Unit Airspace (AUA). A list for each ANSP will be provided in due course.
 
 ## ANSP Composition
 
-ANSP composition on {{% getdata "date_ansp_composition" "date" %}}.
+ANSP composition on {{% getdata "date-ansp-composition" "date" %}}.
 
-{{% csvtable "ansp_composition.csv" %}}
+{{% csvtable "ansp-composition.csv" %}}
