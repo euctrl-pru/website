@@ -19,5 +19,8 @@
     {{ partial "footer_mathjax" . }}
     {{ template "_internal/google_analytics.html" . }}
     {{ partial "foot_custom" . }}
+    {{- range .Params.js }}
+      <script src="{{ . }}" type="text/javascript"></script>
+    {{- end }}
   </body>
 </html>

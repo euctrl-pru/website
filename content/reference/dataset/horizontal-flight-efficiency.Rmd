@@ -1,40 +1,25 @@
 ---
-layout: default
-needsMath: true
 title: Horizontal Flight Efficiency Dataset
-permalink: /references/dataset/Horizontal_Flight_Efficiency.html
-excerpt: Performance Review Unit MetaData Definitions.
-keywords: metadata, dataset, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
-ndwk_i: <i class="fa pru fa-flask"></i>
-fltr_i: <i class="fa pru fa-filter"></i>
+categories:
+  - metadata
+  - dataset
+type: dataset
+bibliography: ["../../../static/bib/aviation.bib"]
+link-citations: true
+slug: horizontal-flight-efficiency
 ---
-<style>
-td {
-  white-space: normal;
-}
-th:nth-child(1) {
-width: 11em;
-}
 
-.metatable th:nth-child(2) {
-width: 11em;
-}
-.metatable th:nth-child(5) {
-width: 7em;
-}
-
-</style>
-
-# {{ page.title }}
-
-Please note that additional quality control measures detected a limited number of abnormal flight trajectories starting towards the end of 2015 which were removed by applying an additional filter as of 01 January 2015. Due to this quality improvement, the period January 2015 - May 2016 might differ slightly from older data releases.  
+Please note that additional quality control measures detected a limited number of abnormal flight
+trajectories starting towards the end of 2015 which were removed by applying an additional filter
+as of 01 January 2015. Due to this quality improvement, the period January 2015 - May 2016 might
+differ slightly from older data releases.
 
 ## Data description
 Horizontal en-route flight efficiency compares the length of actual or planned flight trajectories
 to the corresponding “achieved” distance.
 
 The achieved distance apportions the
-[Great Circle Distance](https://en.wikipedia.org/wiki/Great-circle_distance)
+[Great Circle Distance](/reference/acronym/gcd/)
 between two points within the European airspace (reference area).
 If the origin/destination airport is located outside of European airspace, the
 entry/exit point into the reference area is used for the calculation.
@@ -42,12 +27,12 @@ entry/exit point into the reference area is used for the calculation.
 The planned trajectory is derived from the flight plans submitted by airspace
 users to the Network Manager.
 The actual flown trajectory is based on processed radar track data (a.k.a. correlated
-position reports or [CPR]({{ "/references/acronym/cpr.html" | prepend: site.baseurl | prepend: site.url }})) submitted by ANSPs
+position reports or [CPR](/reference/acronym/cpr/)) submitted by ANSPs
 to the EUROCONTROL Enhanced Tactical Flow Management System
-([ETFMS]({{ "/references/acronym/etfms.html" | prepend: site.baseurl | prepend: site.url }})).
+([ETFMS](/reference/acronym/etfms/)).
 
-**[KEP]({{ "/references/acronym/kep.html" | prepend: site.baseurl | prepend: site.url }})** and
-**[KEA]({{ "/references/acronym/kea.html" | prepend: site.baseurl | prepend: site.url }})** are performance indicators measuring
+**[KEP](/reference/acronym/kep/)** and
+**[KEA](/reference/acronym/kea/)** are performance indicators measuring
 horizontal en-route flight inefficiency in flight plans (KEP) and in actual
 flown trajectories (KEA) over a period of 12 months.
 **Please note that the values are NOT monthly averages but the average over the
@@ -62,35 +47,35 @@ the ten worst days (for each measured area) are excluded from the computation.
 
 ## Methodology
 
-[Horizontal en-route flight efficiency methodology]({{ "/references/methodology/horizontal_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }})
+[Horizontal en-route flight efficiency methodology](/reference/methodology/horizontal-flight-efficiency-pi/)
 is fully consistent with the Single European Sky (SES) Performance Scheme
-[see {% cite pru-hfe-pi --file aviation %}].
+[see [@pru-hfe-pi] ].
 
 
 ## Column naming and types
 
 ### HFE data
 
-{:.metatable}
-| Column name      | Data source     | Label            | Column description                                                                                | Example   |
-|------------------|-----------------|------------------|---------------------------------------------------------------------------------------------------|-----------|
-| YEAR             | Network Manager | YEAR             | Reference year                                                                                    | 2014      |
-| MONTH_NUM        | Network Manager | MONTH_NUM        | Month (numeric)                                                                                   | 9         |
-| MONTH_MON        | Network Manager | MONTH_MON        | Month (3-letter code)                                                                             | SEP       |
-| ENTRY_DATE       | Network Manager | ENTRY_DATE       | The entry date considered                                                                         | 06-Sep-14 (*) |
-| ENTITY_NAME      | Network Manager | ENTITY_NAME      | Name of the entity to with the data refers                                                        | FABEC     |
-| ENTITY_TYPE      | Network Manager | ENTITY_TYPE      | Type of the entity                                                                                | FAB (FIR) |
-| MODEL_TYPE       | Network Manager | MODEL_TYPE       | The type of trajectory used for the calculation (CPF=actual, FTFM=flight plan)                    | FTFM      |
-| DIST_FLOWN_KM    | Network Manager | DIST_FLOWN_KM    | Sum of flown distances in kilometre                                                               | 8699586   |
-| DIST_DIRECT_KM   | Network Manager | DIST_DIRECT_KM   | Sum of direct flown distances in kilometre                                                        | 8405033   |
-| DIST_ACHIEVED_KM | Network Manager | DIST_ACHIEVED_KM | Sum of achieved distances in kilometre                                                            | 8255220   |
+| Column name      | Data source     | Label            | Column description                                                             | Example   |
+|------------------|-----------------|------------------|--------------------------------------------------------------------------------|-----------|
+| YEAR             | Network Manager | YEAR             | Reference year                                                                 | 2014      |
+| MONTH_NUM        | Network Manager | MONTH_NUM        | Month (numeric)                                                                | 9         |
+| MONTH_MON        | Network Manager | MONTH_MON        | Month (3-letter code)                                                          | SEP       |
+| ENTRY_DATE       | Network Manager | ENTRY_DATE       | The entry date considered                                                      | 06-Sep-14 (*) |
+| ENTITY_NAME      | Network Manager | ENTITY_NAME      | Name of the entity to with the data refers                                     | FABEC     |
+| ENTITY_TYPE      | Network Manager | ENTITY_TYPE      | Type of the entity                                                             | FAB (FIR) |
+| MODEL_TYPE       | Network Manager | MODEL_TYPE       | The type of trajectory used for the calculation (CPF=actual, FTFM=flight plan) | FTFM      |
+| DIST_FLOWN_KM    | Network Manager | DIST_FLOWN_KM    | Sum of flown distances in kilometre                                            | 8699586   |
+| DIST_DIRECT_KM   | Network Manager | DIST_DIRECT_KM   | Sum of direct flown distances in kilometre                                     | 8405033   |
+| DIST_ACHIEVED_KM | Network Manager | DIST_ACHIEVED_KM | Sum of achieved distances in kilometre                                         | 8255220   |
 
-(*) The experimental [CSV files]({{ "/data/csv/" | prepend: site.baseurl | prepend: site.url }}) and
-[HFE filter and csv download {{ page.fltr_i }} {{ page.ndwk_i }}][HFEcsv] use [ISO 8601][iso8601] date time format,
-i.e. `2017-01-02T00:00:00Z`
+(*) The experimental [CSV files](/data/csv/) and
+[HFE filter and csv download `r blogdown::shortcode("fltr_i")` `r blogdown::shortcode("ndwk_i")`][HFEcsv]
+use [ISO 8601][iso8601] date time format, i.e. `2017-01-02T00:00:00Z`
 
-[HFEcsv]: <{{ "/data/set/hfe/horizontal_flight_efficiency.html" | prepend: site.baseurl | prepend: site.url }}> "HFE (CSV)"
-[iso8601]: <https://en.wikipedia.org/wiki/ISO_8601> "Wikipedia: ISO 8601"
+
+[HFEcsv]: /data/set/hfe/horizontal_flight_efficiency/ "HFE (CSV)"
+[iso8601]: https://en.wikipedia.org/wiki/ISO_8601 "Wikipedia: ISO 8601"
 
 
 ### KEP/KEA KPI data
@@ -118,12 +103,12 @@ $$
 {HFE}_j = ( \frac{\sum_{f,p} L_{fjp}}{\sum_{f,p} H_{fjp}} - 1 ) %
 $$
 
-where $$L$$ is the length of the trajectory and $$H$$ is the achieved distance;
-the index $$f$$ is the flight, $$j$$ is the airspace and $$p$$ is the portion
+where $L$ is the length of the trajectory and $H$ is the achieved distance;
+the index $f$ is the flight, $j$ is the airspace and $p$ is the portion
 considered.
 
-From the table above $$L$$ is $$DIST\_FLOWN\_KM$$, while $$H$$ is
-$$DIST\_ACHIEVED\_KM$$.
+From the table above $L$ is $\text{DIST_FLOWN_KM}$, while $H$ is
+$\text{DIST_ACHIEVED_KM}$.
 
 ## FAB definitions
 
@@ -144,22 +129,23 @@ Regions (FIRs) (ENTITY_TYPE = FAB (FIR)).
 | SW FAB           | GCCCFIR, GCCCUIR, LECBFIR, LECBUIR, LECMFIR, LECMUIR, LPPCFIR                                                                                  |
 | UK-Ireland FAB   | EGPXFIR, EGPXUIR, EGTTFIR, EGTTUIR, EISNFIR, EISNUIR                                                                                           |
 
-<br>
 The map below shows all Eurocontrol Member States FIRs and the nine FABs
 relevant for **SES RP2**.
 
 Click to zoom in/out. Hoover with the mouse to get further information.
 
-{% javascript vendor/pym.min %}
+<div>
 <div id="fabs_firs_map"></div>
+</div>
+<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+
 <script>
  var pymParent = new pym.Parent(
    'fabs_firs_map',
-   '{{ "/graphics/fabs_firs_map/index.html" | prepend: site.baseurl | prepend: site.url }}',
+   '/graphic/fabs-firs-map/index.html',
    {});
 </script>
 
 
 ## References
 
-{% bibliography --file aviation --cited_in_order %}

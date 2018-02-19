@@ -1,13 +1,14 @@
 ---
-layout: default
 title: ACE Monthly Operational Data Dataset
-permalink: /references/dataset/ACE_Monthly_Operational_Data.html
-excerpt: Performance Review Unit MetaData Definitions.
-keywords: metadata, dataset, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
+categories:
+  - metadata
+  - dataset
+type: dataset
+slug: ace-monthly-operational-data
 ---
-# {{ page.title }}
 
 ## Data description
+
 The ATM Cost-Effectiveness (ACE) operational data is published each month as complementary data for
 the report which is published in May each year.
 

@@ -14,6 +14,6 @@ the last filed flight plans to describe the trajectories.
 
 * [HFE][hfe] in the [Methodology](/reference/methodology/) section.
 
-[hfe]: /reference/methodology/horizontal_flight_efficiency_pi/ "HFE methodology"
+[hfe]: /reference/methodology/horizontal-flight-efficiency-pi/ "HFE methodology"
 
 

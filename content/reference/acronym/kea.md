@@ -14,4 +14,4 @@ the trajectories generated via radar data.
 
 * [HFE][hfe] in the [Methodology](/reference/methodology/) section.
 
-[hfe]: /reference/methodology/horizontal_flight_efficiency_pi/ "HFE methodology"
+[hfe]: /reference/methodology/horizontal-flight-efficiency-pi/ "HFE methodology"

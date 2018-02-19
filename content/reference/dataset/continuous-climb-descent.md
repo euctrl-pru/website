@@ -1,12 +1,11 @@
 ---
-layout: default
-needsMath: false
 title: Continuous climb and descent Dataset
-permalink: /references/dataset/Continuous_Climb_Descent.html
-excerpt: Performance Review Unit MetaData Definitions.
-keywords: metadata, dataset, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
+categories:
+  - metadata
+  - dataset
+type: dataset
+slug: continuous-climb-descent
 ---
-# {{ page.title }}
 
 ## Data description
 This data provides the results of the analysis of vertical flight profiles
@@ -41,4 +40,4 @@ in the relevant [methodology page][cdo_cco_meth].
 | PERC_CCO_FLIGHTS       | PRU             | PERC_CCO_FLIGHTS       | Percentage of flights that are considered CCO (and don't have any considered level flight) | 75.6%    |
 
 
-[cdo_cco_meth]: <{{ "/references/methodology/cd_vertical_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }}> "Vertical flight efficiency during climb and descent methodology"
+[cdo_cco_meth]: </reference/methodology/cd-vertical-flight-efficiency-pi/ "Vertical flight efficiency during climb and descent methodology"

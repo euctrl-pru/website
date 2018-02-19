@@ -1,33 +1,33 @@
 ---
-layout: default
 title: Airport Arrival ATFM Delay Dataset
-permalink: /references/dataset/Airport_Arrival_ATFM_Delay.html
-excerpt: Performance Review Unit MetaData Definitions.
-keywords: metadata, dataset, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
+categories:
+  - metadata
+  - dataset
+type: dataset
+slug: airport-arrival-atfm-delay
 ---
-# {{ page.title }}
 
 Please note that software release 20.0 of the Network Manager on 04 April 2016
 introduced a change to improve the accuracy of the ATFM delay calculation for
 operational purposes.
 For more information on the change in methodology [click here][atfm_dly_rea].
 
-[atfm_dly_rea]: <{{ "/references/methodology/ATFM_delay_calculation.html" | prepend: site.baseurl | prepend: site.url}}> "ATFM Delay calculation changes due to REA"
+[atfm_dly_rea]: /reference/methodology/ATFM_delay_calculation/ "ATFM Delay calculation changes due to REA"
 
 
 ## Data description
 
 The *Airport Arrival ATFM Delay* provides an indication of
-[ATFM delays]({{ "/references/definition/atfm_delay.html" | prepend: site.baseurl | prepend: site.url }})
+[ATFM delays](/reference/definition/atfm_delay/)
 on the ground due to constraints at airports.
 
 In Europe, when traffic demand is anticipated to exceed the available capacity
 in en route centres or at airports, Air Traffic Control
-([ATC]({{ "/references/acronym/atc.html" | prepend: site.baseurl | prepend: site.url }})) units may request
-the local Flow Management Position ([FMP]({{ "/references/acronym/fmp.html"  | prepend: site.baseurl | prepend: site.url }})) to
+([ATC](/reference/acronym/atc/)) units may request
+the local Flow Management Position ([FMP](/reference/acronym/fmp/)) to
 instigate an Air Traffic Flow Management
-([ATFM]({{ "/references/acronym/atfm.html" | prepend: site.baseurl | prepend: site.url }})) measure, or
-[regulation]({{ "/references/definition/regulation.html"  | prepend: site.baseurl | prepend: site.url }}).
+([ATFM](/reference/acronym/atfm/)) measure, or
+[regulation](/reference/definition/regulation/).
 Aircraft expected to arrive during a period of congestion are given ATFM delay
 at their departure airport, under the authority of the
 Network Manager, in order to regulate the flow of traffic into the constrained
@@ -76,9 +76,9 @@ airport capacity shortfalls since 2009.
 | FLT_ARR_1_DLY_15 | Network Manager | FLT_ARR_1_DLY_15                     |                      | Number of airport ATFM arrival delayed arrivals (>15 min.)                            | 0           |
 
 
-(*) The experimental [CSV files]({{ "/data/csv/" | prepend: site.baseurl | prepend: site.url }}) and
-[APT DLY filter and csv download {{ page.fltr_i }} {{ page.ndwk_i }}][APTDLYcsv] use [ISO 8601][iso8601] date time format,
+(*) The experimental [CSV files](/data/csv/) and
+[APT DLY filter and csv download <i class="fa pru fa-filter"></i> <i class="fa pru fa-flask"></i>][APTDLYcsv] use [ISO 8601][iso8601] date time format,
 i.e. `2017-01-02T00:00:00Z`
 
-[APTDLYcsv]: <{{ "/data/set/apt_dly/airport_arrival_atfm_delay.html" | prepend: site.baseurl | prepend: site.url }}> "APT DLY (CSV)"
-[iso8601]: <https://en.wikipedia.org/wiki/ISO_8601> "Wikipedia: ISO 8601"
+[APTDLYcsv]: /data/set/apt_dly/airport_arrival_atfm_delay/ "APT DLY (CSV)"
+[iso8601]: https://en.wikipedia.org/wiki/ISO_8601 "Wikipedia: ISO 8601"

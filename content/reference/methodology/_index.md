@@ -23,10 +23,9 @@ in our website:
   * [Vertical Flight Efficiency during Climb and Descent][cdvfe]
   * [Airport Capacity Utilisation][acu]
 
-* Data Dimensions used in the processing of data. <i class="fa pru fa-exclamation-triangle" style="color: #337ab7;"></i>
+* Data Dimensions used in the processing of data. <i class="fa fa-exclamation-triangle" style="color: #337ab7;"></i>
 
-<br><br>
-<i class="fa pru fa-exclamation-triangle" style="color: #337ab7;"></i> = not (yet?) available.
+<i class="fa fa-exclamation-triangle" style="color: #337ab7;"></i> = not (yet?) available.
 
 
 [atfmdelay]: /reference/methodology/ATFM-delay-calculation/ "ATFM delay computation"

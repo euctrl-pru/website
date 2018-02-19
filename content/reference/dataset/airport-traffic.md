@@ -1,11 +1,11 @@
 ---
-layout: default
 title: Airport Traffic Dataset
-permalink: /references/dataset/Airport_Traffic.html
-excerpt: Performance Review Unit MetaData Definitions.
-keywords: metadata, dataset, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
+categories:
+  - metadata
+  - dataset
+type: dataset
+slug: airport-traffic
 ---
-# {{ page.title }}
 
 ## Data description
 The data provides the number of arrivals and departures from various data sources at the respective airports.

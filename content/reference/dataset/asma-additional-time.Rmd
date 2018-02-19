@@ -1,22 +1,21 @@
 ---
-layout: default
-needsMath: true
 title: ASMA Additional Time Dataset
-permalink: /references/dataset/ASMA_Additional_Time.html
-excerpt: Performance Review Unit MetaData Definitions.
-keywords: metadata, dataset, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
+categories:
+  - metadata
+  - dataset
+type: dataset
+slug: asma-additional-time
 ---
-# {{ page.title }}
 
 ## Data description
-The [additional ASMA time]({{ "/references/definition/additional_asma_time.html" | prepend: site.baseurl | prepend: site.url }})
+The [additional ASMA time](/reference/definition/additional-asma-time/)
 is a proxy for the average arrival runway queuing time on the inbound traffic flow,
 during congestion periods at airports.
 
 It is the difference between the actual
-[ASMA]({{ "/references/acronym/asma.html" | prepend: site.baseurl | prepend: site.url }})
+[ASMA](/reference/acronym/asma/)
 time of a flight and a statistically determined
-[unimpeded ASMA time]({{ "/references/definition/unimpeded_asma_time.html"  | prepend: site.baseurl | prepend: site.url }})
+[unimpeded ASMA time](/reference/definition/unimpeded-asma-time/)
 based on ASMA times in periods of low traffic demand.
 
 When monitoring ASMA performance at airports, it is important to note that the
@@ -44,12 +43,12 @@ time and associated fuel burnt to the necessary minimum.
 
 $$
 \begin{align*}
-\text{Average additional ASMA time} & = \frac{TIME\_ASMA\_ADD\_2}{FLT\_ASMA\_UNIMP\_2} 
+\text{Average additional ASMA time} & = \frac{\text{TIME_ASMA_ADD_2}}{\text{FLT_ASMA_UNIMP_2}} 
 \end{align*}
 $$
 
 $$
 \begin{align*}
-\text{Average unimpeded ASMA time} & = \frac{TIME\_ASMA\_UNIMP\_2}{FLT\_ASMA\_UNIMP\_2} 
+\text{Average unimpeded ASMA time} & = \frac{\text{TIME_ASMA_UNIMP_2}}{\text{FLT_ASMA_UNIMP_2}}
 \end{align*}
 $$

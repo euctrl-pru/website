@@ -1,31 +1,31 @@
 ---
-layout: default
 title: En-Route ATFM Delay Dataset (AUA)
-permalink: /references/dataset/En-Route_ATFM_Delay_AUA.html
-excerpt: Performance Review Unit MetaData Definitions.
-keywords: metadata, dataset, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
+categories:
+  - metadata
+  - dataset
+type: dataset
+slug: en-route-atfm-delay-aua
 ---
-# {{ page.title }}
 
 Please note that software release 20.0 of the Network Manager on 04 April 2016
 introduced a change to improve the accuracy of the ATFM delay calculation for
 operational purposes.
 For more information on the change in methodology [click here][atfm_dly_rea].
 
-[atfm_dly_rea]: <{{site.url}}/references/methodology/ATFM_delay_calculation.html> "ATFM Delay calculation changes due to REA"
+[atfm_dly_rea]: /reference/methodology/atfm-delay-calculation/ "ATFM Delay calculation changes due to REA"
 
 
 ## Data description
 
-The [en-route ATFM delay]({{ "/references/definition/en-route_atfm_delay.html" | prepend: site.baseurl | prepend: site.url }})
+The [en-route ATFM delay](/reference/definition/en-route-atfm-delay/)
 provides an indication of ATFM delays on the ground due to constraints en-route.
 
 In Europe, when traffic demand is anticipated to exceed the available capacity
 in en route centres or at airports, Air Traffic Control
-([ATC]({{ "/references/acronym/atc.html" | prepend: site.baseurl | prepend: site.url }})) units may request the local Flow
-Management Position ([FMP]({{ "/references/acronym/fmp.html" | prepend: site.baseurl | prepend: site.url }})) to instigate an Air
+([ATC](/reference/acronym/atc/)) units may request the local Flow
+Management Position ([FMP](/reference/acronym/fmp/)) to instigate an Air
 Traffic Flow Management (ATFM) measure, or
-[regulation]({{ "/references/definition/regulation.html" | prepend: site.baseurl | prepend: site.url }}).
+[regulation](/reference/definition/regulation/).
 Aircraft expected to arrive during a period of congestion are given ATFM delay
 at their departure airport, under the authority of the
 Network Manager, in order to regulate the flow of traffic into the constrained
@@ -46,10 +46,10 @@ Position (FMP).
 
 The delay is attributed to the most constraining ATC unit.
 
-*Please note that the delays caused by READY to Depart (REA) messages and ATFM slot 
-extensions were included in ATFM delays until NM release 20.0. 
-As of 4 April 2016, delays due to REA messages and slot extensions are not included 
-any longer which reduces the amount of computed ATFM delay.*  
+*Please note that the delays caused by READY to Depart (REA) messages and ATFM slot
+extensions were included in ATFM delays until NM release 20.0.
+As of 4 April 2016, delays due to REA messages and slot extensions are not included
+any longer which reduces the amount of computed ATFM delay.*
 
 
 ## Computation of traffic
@@ -96,26 +96,6 @@ Unit Airspace (AUA). A list for each ANSP will be provided in due course.
 
 ## ANSP Composition
 
-{% assign ansp_composition_query_date = site.data.date_ansp_composition["date"] %}
+ANSP composition on {{% getdata "date_ansp_composition" "date" %}}.
 
-ANSP composition on {{ ansp_composition_query_date }}.
-<table>
-<thead>
-<tr>
-<th>ANSP_NAME</th>
-<th>PRU_ATC_TYPE</th>
-<th>AUA_CODE</th>
-<th>AUA_NAME</th>
-</tr>
-</thead>
-<tbody>
-{% for item in site.data.ansp_composition %}
-<tr>
-<td>{{ item.ANSP_NAME }}</td>
-<td>{{ item.PRU_ATC_TYPE }}</td>
-<td>{{ item.AUA_CODE }}</td>
-<td>{{ item.AUA_NAME }}</td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
+{{% csvtable "ansp_composition.csv" %}}

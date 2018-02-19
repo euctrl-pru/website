@@ -1,22 +1,22 @@
 ---
-layout: default
 title: ATFM Slot Adherence Dataset
-permalink: /references/dataset/ATFM_Slot_Adherence.html
-excerpt: Performance Review Unit MetaData Definitions.
-keywords: metadata, dataset, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
+categories:
+  - metadata
+  - dataset
+type: dataset
+slug: atfm-slot-adherence
 ---
-# {{ page.title }}
 
 ## Data description
 
-[ATFM departure slots]({{ "/references/definition/departure_slot.html" | prepend: site.baseurl | prepend: site.url }})
+[ATFM departure slots](/reference/definition/departure-slot/)
 are allocated
 centrally by the European Network Manager upon the request of the local Flow
-Management Position ([FMP]({{ "/references/acronym/fmp.html" | prepend: site.baseurl | prepend: site.url }})), when an imbalance
+Management Position ([FMP](/reference/acronym/fmp/)), when an imbalance
 between demand and capacity is foreseen at airports and/or en-route. The purpose
 of such regulation is to hold aircraft on the ground.
 
-An [ATFM slot tolerance window]({{ "/references/definition/slot_tolerance_window.html" | prepend: site.baseurl | prepend: site.url }})
+An [ATFM slot tolerance window](/reference/definition/slot-tolerance-window/)
 is available to ATC to sequence departures.
 The standard slot tolerance window is [-5 minutes, +10 minutes].
 ATC at the departure airport has a joint responsibility with aircraft operators

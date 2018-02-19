@@ -1,31 +1,31 @@
 ---
-layout: default
 title: En-Route ATFM Delay Dataset (FIR)
-permalink: /references/dataset/En-Route_ATFM_Delay_FIR.html
-excerpt: Performance Review Unit MetaData Definitions.
-keywords: metadata, dataset, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
+categories:
+  - metadata
+  - dataset
+type: dataset
+slug: en-route-atfm-delay-fir
 ---
-# {{ page.title }}
 
 Please note that software release 20.0 of the Network Manager on 04 April 2016
 introduced a change to improve the accuracy of the ATFM delay calculation for
 operational purposes.
 For more information on the change in methodology [click here][atfm_dly_rea].
 
-[atfm_dly_rea]: <{{ "/references/methodology/ATFM_delay_calculation.html" | prepend: site.baseurl | prepend: site.url }}> "ATFM Delay calculation changes due to REA"
+[atfm_dly_rea]: /reference/methodology/atfm-delay-calculation/ "ATFM Delay calculation changes due to REA"
 
 
 ## Data description
 
-The [en-route ATFM delay]({{ "/references/definition/en-route_atfm_delay.html" | prepend: site.baseurl | prepend: site.url }})
+The [en-route ATFM delay](/reference/definition/en-route-atfm-delay/)
 provides an indication of ATFM delays on the ground due to constraints en-route.
 
 In Europe, when traffic demand is anticipated to exceed the available capacity
 in en route centres or at airports, Air Traffic Control
-([ATC]({{ "/references/acronym/atc.html" | prepend: site.baseurl | prepend: site.url }})) units may request the local Flow
-Management Position ([FMP]({{ "/references/acronym/fmp.html" | prepend: site.baseurl | prepend: site.url }})) to instigate an Air
+([ATC](/reference/acronym/atc/)) units may request the local Flow
+Management Position ([FMP](/reference/acronym/fmp/)) to instigate an Air
 Traffic Flow Management (ATFM) measure, or
-[regulation]({{ "/references/definition/regulation.html" | prepend: site.baseurl | prepend: site.url }}).
+[regulation](/reference/definition/regulation/).
 Aircraft expected to arrive during a period of congestion are given ATFM delay
 at their departure airport, under the authority of the
 Network Manager, in order to regulate the flow of traffic into the constrained

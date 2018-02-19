@@ -1,14 +1,27 @@
 ---
-layout: default
-needsMath: true
 title: Traffic Complexity Score Dataset
-permalink: /references/dataset/Traffic_Complexity_Score.html
-excerpt: Performance Review Unit MetaData Definitions.
-keywords: metadata, dataset, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
-published: true
+categories:
+  - metadata
+  - dataset
+type: dataset
+bibliography: ["../../../static/bib/aviation.bib"]
+link-citations: true
+slug: traffic-complexity-score
 ---
+```{r echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  fig.env = 'figure',
+  fig.align = 'center',
+  fig.width = 6,
+  fig.asp = 0.618,  # 1 / phi
+  fig.show = "hold",
+  out.width = "100%"
+)
+```
 
-# {{ page.title }}
 
 ## Data description
 
@@ -31,29 +44,55 @@ miles and 3,000 feet in height.
 The structural index originates from horizontal, vertical, and speed interactions and is computed
 as the sum of the three indicators.
 
+
 **Horizontal interactions index:** A measure of the complexity of the flow structure based on
 the potential interactions between aircraft on different headings.
 The indicator is defined as the ratio of the duration of horizontal interactions to the total
 duration of all interactions.
 
-{% img cplx_horizontal.png alt:"Horizontal interactions" title:"Horizontal interactions" magick:resize:150x150 %}
+
+(ref:cplx-horizontal) Horizontal interactions.
+
+
+```{r cplx-horizontal, out.width=c('300px', '300px'), fig.cap ='(ref:cplx-horizontal)'}
+knitr::include_graphics("/images/cplx-horizontal.png")
+```
+
+
 
 **Vertical interactions index:** A measure of the complexity arising from aircraft in vertical
 evolution based on the potential interactions between climbing, cruising and descending aircraft.
 The indicator is defined as the ratio of the duration of vertical interactions to the total
 duration of all interactions.
 
-{% img cplx_vertical.png alt:"Vertical interactions" title:"Vertical interactions" magick:resize:150x150 %}
+
+
+(ref:cplx-vertical) Vertical interactions.
+
+
+```{r cplx-vertical, out.width=c('300px', '3000px'), fig.cap ='(ref:cplx-vertical)'}
+knitr::include_graphics("/images/cplx-vertical.png")
+```
+
+
 
 **Speed interactions indicator:** A measure of the complexity arising from the aircraft mix
 based on the potential interactions between aircraft of different speeds.
 The indicator is defined as the ratio of the duration of speed interactions to the
 total duration of all interactions.
 
-{% img cplx_speed.png alt:"Speed interactions" title:"Speed interactions" magick:resize:150x150 %}
+
+
+(ref:cplx-speed) Speed interactions.
+
+
+```{r cplx-speed, out.width=c('300px', '300px'), fig.cap ='(ref:cplx-speed)'}
+knitr::include_graphics("/images/cplx-speed.png")
+```
+
 
 More information on the methodology used for the computation of the complexity score
-see {% cite complexitymetrics --file aviation %} in the References.
+see [@complexitymetrics].
 
 ## Column naming and types
 
@@ -76,20 +115,17 @@ see {% cite complexitymetrics --file aviation %} in the References.
 
 $$
 \begin{align*}
-
-\text{Adjusted Density}        & = \frac{CPLX\_INTER}{CPLX\_FLIGHT\_HRS} 60 \\
-\text{Vertical interactions}   & = \frac{VERTICAL\_INTER\_HRS}{CPLX\_FLIGHT\_HRS} 60 \\
-\text{Horizontal interactions} & = \frac{HORIZ\_INTER\_HRS}{CPLX\_FLIGHT\_HRS} 60 \\
-\text{Speed interactions}      & = \frac{SPEED\_INTER\_HRS}{CPLX\_FLIGHT\_HRS} 60 \\
-\text{Vertical Score}          & = \frac{VERTICAL\_INTER\_HRS}{CPLX\_INTER} \\
-\text{Horizontal Score}        & = \frac{HORIZ\_INTER\_HRS}{CPLX\_INTER} \\
-\text{Speed Score}             & = \frac{SPEED\_INTER\_HRS}{CPLX\_INTER} \\
-\text{Structural Index}        & = \frac{VERTICAL\_INTER\_HRS + HORIZ\_INTER\_HRS + SPEED\_INTER\_HRS}{CPLX\_INTER} \\
-\text{Complexity Score}        & = \frac{VERTICAL\_INTER\_HRS + HORIZ\_INTER\_HRS + SPEED\_INTER\_HRS}{CPLX\_FLIGHT\_HRS} 60
-
+\text{Adjusted Density}        & = \frac{\text{CPLX_INTER}}{\text{CPLX_FLIGHT_HRS}} 60 \\
+\text{Vertical interactions}   & = \frac{\text{VERTICAL_INTER_HRS}}{\text{CPLX_FLIGHT_HRS}} 60 \\
+\text{Horizontal interactions} & = \frac{\text{HORIZ_INTER_HRS}}{\text{CPLX_FLIGHT_HRS}} 60 \\
+\text{Speed interactions}      & = \frac{\text{SPEED_INTER_HRS}}{\text{CPLX_FLIGHT_HRS}} 60 \\
+\text{Vertical Score}          & = \frac{\text{VERTICAL_INTER_HRS}}{\text{CPLX_INTER}} \\
+\text{Horizontal Score}        & = \frac{\text{HORIZ_INTER_HRS}}{\text{CPLX_INTER}} \\
+\text{Speed Score}             & = \frac{\text{SPEED_INTER_HRS}}{\text{CPLX_INTER}} \\
+\text{Structural Index}        & = \frac{\text{VERTICAL_INTER_HRS} + \text{HORIZ_INTER_HRS} + \text{SPEED_INTER_HRS}}{\text{CPLX_INTER}} \\
+\text{Complexity Score}        & = \frac{\text{VERTICAL_INTER_HRS} + \text{HORIZ_INTER_HRS} + \text{SPEED_INTER_HRS}}{\text{CPLX_FLIGHT_HRS}} 60
 \end{align*}
 $$
 
 ## References
 
-{% bibliography --cited_in_order --file aviation %}
