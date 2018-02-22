@@ -1,5 +1,6 @@
 ---
 title:  "Borealis HFE Analysis"
+excerpt: "Preliminary analysis of Borealis FRA implementation"
 date: "2016-06-26"
 bibliography: ["../../static/bib/aviation.bib"]
 link-citations: true
