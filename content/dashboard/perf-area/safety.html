@@ -1,8 +1,11 @@
 ---
-layout: graph
 title: Safety
-excerpt: Performance Review Unit interactive dashboard on European Air Transport.
-keywords: performance, air transport, flights, europe, cost efficiency
+js: [
+   "/js/crt_saf_smi_YY.js",
+   "/js/crt_saf_upa_YY.js",
+   "/js/crt_saf_ri_YY.js",
+   "/js/crt_saf_aso_YY.js"
+]
 ---
 
 <table class = "table">
@@ -18,7 +21,7 @@ keywords: performance, air transport, flights, europe, cost efficiency
    <tbody>
       <tr class = "active">
          <td>Jan-Dec</td>
-         <td><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL Area</a></td>
+         <td><a href='{{"/reference/definition/eurocontrol-area'>EUROCONTROL Area</a></td>
          <td>Annually</td>
          <td>12-May-2017</td>
          <td><a href="http://www.eurocontrol.int" target="_blank">EUROCONTROL</a></td>
@@ -39,19 +42,19 @@ keywords: performance, air transport, flights, europe, cost efficiency
 <h3 class="sub-header">ATM related incidents</h3>
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
-<h4><a href='{{"/references/acronym/smi.html"| prepend: site.baseurl | prepend: site.url }}'>Separation Minima Infringements (SMI)</a></h4>
+<h4><a href='/reference/acronym/smi/'>Separation Minima Infringements (SMI)</a></h4>
 <div id="crt_saf_smi_YY"></div>
 
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
-<h4><a href='{{"/references/acronym/upa.html"| prepend: site.baseurl | prepend: site.url }}'>Unauthorised Penetration of Airspace (UPAs)</a></h4>
+<h4><a href='/reference/acronym/upa/'>Unauthorised Penetration of Airspace (UPAs)</a></h4>
 <div id="crt_saf_upa_YY"></div>
 </div>
 </div>
 
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
-<h4><a href='{{"/references/acronym/ri.html"| prepend: site.baseurl | prepend: site.url }}'>Runway Incursions (RIs)</a></h4>
+<h4><a href='/reference/acronym/ri/'>Runway Incursions (RIs)</a></h4>
 <div id="crt_saf_ri_YY"></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
@@ -61,7 +64,8 @@ keywords: performance, air transport, flights, europe, cost efficiency
 </div>
 </div>
 
-{% javascript crt_saf_smi_YY %}
-{% javascript crt_saf_upa_YY %}
-{% javascript crt_saf_ri_YY %}
-{% javascript crt_saf_aso_YY %}
+<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+ // load the visualisation API
+ google.load('visualization', '1', { packages: ['corechart', 'controls'] });
+</script>
