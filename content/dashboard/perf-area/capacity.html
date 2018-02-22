@@ -1,0 +1,117 @@
+---
+title: Capacity
+js: [
+  "/js/crt_cap_ert_YY.js",
+  "/js/crt_cap_ert_MM.js",
+  "/js/tbl_cap_ert_YY.js",
+  "/js/crt_cap_fir_ert_YY.js",
+  "/js/tbl_cap_fir_ert_YY.js",
+  "/js/crt_cap_apt_YY.js",
+  "/js/crt_cap_apt_MM.js",
+  "/js/tbl_cap_apt_YY.js"
+  ]
+---
+
+
+<table class = "table">
+   <thead>
+      <tr>
+         <th>Period</th>
+         <th>Area</th>
+         <th>Update rate</th>
+         <th>Last update</th>
+         <th>Source(s)</th>
+         <th>Data</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class = "active">
+         <td>Jan-Dec 2017</td>
+         <td><a href='/reference/definition/eurocontrol-area/'>EUROCONTROL area</a></td>
+         <td>Monthly</td>
+         <td>17-Jan-2018</td>
+          <td>
+          <a href='/reference/acronym/nm-cfmu/'>NM</a>,
+          <a href='/reference/acronym/pru/'>PRU</a></td>
+          <td><a href='/data/performancearea/'>{{% dwnld_i %}}</a></td>
+      </tr>
+   </tbody>
+</table>
+
+<table class = "table">
+   <tbody>
+      <tr class = "active">
+         <td><small><span style="color: rgb(192, 80, 77);">
+         Please note that software release 20.0 of the Network Manager on 04 April 2016 introduced a change to improve the accuracy of the ATFM delay calculation for operational purposes. For more information on the change in methodology <a href='/reference/methodology/ATFM_delay_calculation/'>click here</a>.<br>
+         Changes due to the Post Operations Performance Adjustment Process are not considered on this page. More information including the list of changes in 2016 is available from the respective <a href="http://www.eurocontrol.int/publications/post-operations-performance-adjustment-process" target="_blank">NM website</a>.
+         </span></small></td>
+      </tr>
+   </tbody>
+</table>
+
+<h4 class="page-header">En-route <a href='/reference/definition/atfm-delay/'>ATFM delays</a></h4>
+
+<div class="row">
+    <div class="col-sm-6">
+        <h5>Evolution over time and by <a href='/reference/definition/atfm-delay-codes/'>delay cause</a> (EUROCONTROL area)</h5>
+        <div id="crt_cap_ert_YY"></div><br>
+        <div id="crt_cap_ert_MM"></div>
+    </div>
+
+    <div class="col-sm-6 offset-10">
+        <h5>Results by <a href='/reference/acronym/ansp/'>ANSP</a> (Jan-Dec 2017)</h5>
+        <div id="tbl_cap_ert_YY"></div>
+    </div>
+</div><br>
+
+<div class="row">
+<h4>En-route <a href="/reference/dataset/En-Route_ATFM_Delay_FIR/">ATFM delays</a> by
+      <a href="/reference/definition/fab/">FAB (FIR)</a></h4>
+    <div class="col-sm-6"><br><br>
+        <div id="crt_cap_fir_ert_YY"></div>
+    </div>
+
+    <div class="col-sm-6 offset-10">
+        <h5>Results by <a href="/reference/definition/fab/">FAB (FIR)</a> (2015, 2016, Jan-Dec 2017)</h5>
+        <div id="tbl_cap_fir_ert_YY"></div>
+    </div>
+</div><br>
+
+<h4 id="apt_dly">Airport Arrival <a href='/reference/definition/atfm_delay/'>ATFM delays</a></h4>
+
+<div class="row">
+    <div class="col-sm-6">
+        <h5>Evolution over time and by <a href='/reference/definition/atfm_delay_codes/'>delay cause</a> (EUROCONTROL area)</h5>
+        <div id="crt_cap_apt_YY"></div><br>
+        <div id="crt_cap_apt_MM"></div>
+    </div>
+
+    <div class="col-sm-6 offset-10">
+        <h5>Results by airport (Jan-Dec 2017)</h5>
+        <div id="tbl_cap_apt_YY"></div>
+    </div>
+</div><br>
+<!-- 
+{% javascript crt_cap_ert_YY %}
+{% javascript crt_cap_ert_MM %}
+{% javascript tbl_cap_ert_YY %}
+{% javascript tbl_cap_fir_ert_YY %}
+{% javascript crt_cap_apt_YY %}
+{% javascript crt_cap_apt_MM %}
+{% javascript tbl_cap_apt_YY %}
+ -->
+
+<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+ // load the visualisation API
+ google.load('visualization', '1', { packages: ['corechart', 'controls'] });
+</script>
+
+
+<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+<script>
+ var pymParent = new pym.Parent(
+   'crt_cap_fir_ert_YY',
+   '/graphic/en-route-atfm-delay-fab/index.html',
+   {});
+</script>

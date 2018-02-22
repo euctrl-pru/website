@@ -97,4 +97,4 @@ all %>%
   select(-YEAR) %>%
   mutate(prc_change = round(100 *(flt - flt_prev) / flt_prev, digits = 2)) %>%
   set_names(c("entity", as.character(curr_year), as.character(prev_year), "prc_change")) %>%
-  write_tsv(str_c("graphics/percent_movement_change/ert_flt_ansp.tsv"))
+  write_tsv(str_c("graphic/percent-movement-change/ert-flt-ansp.tsv"))

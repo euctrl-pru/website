@@ -9,7 +9,7 @@ library(tidyr)
 ftype <- "ansp"
 # ftype <- "fir"
 csvs <- dir(
-  path = "data/csv", 
+  path = "static/download/csv", 
   pattern = str_c("ert_dly_",ftype,"_\\d{4}\\.csv\\.bz2"),
   full.names = TRUE)
 

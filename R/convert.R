@@ -172,3 +172,31 @@ for (f in files) {
   #   x
   # })
 }
+
+# references/dataset: fix yaml
+files = dir_ls("content/reference/dataset/", regexp = "[.]md$")
+
+for (f in files) {
+  blogdown:::modify_yaml(
+    f,
+    slug = function(old, yaml) {
+      # filename.md -> filename
+      f %>% path_file() %>% path_ext_remove() %>% str_replace_all("_", "-") %>% str_to_lower()
+    },
+    categories = function(old, yaml) {
+      c('metadata', 'dataset')
+    },
+    type = function(old, yaml) {
+      'dataset'
+    },
+    .keep_fields = c('title', 'categories', 'tags', 'type', 'slug'),
+    .keep_empty = FALSE
+  )
+  f %>% 
+  {fs::path(fs::path_dir(.), fs::path_file(.) %>% str_replace_all("_", "-") %>% str_to_lower())} %>% 
+    fs::file_move(f, .)
+  # blogdown:::process_file(f, function(x) {
+  #   # process x here and return the modified x
+  #   x
+  # })
+}

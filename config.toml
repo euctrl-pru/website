@@ -29,9 +29,9 @@ customCSS = ["css/pru.css"]
     identifier= "post"
     weight = 50
 [[menu.main]]
-    name = "Graphs"
-    url = "/graph/"
-    identifier= "graph"
+    name = "Dashboard"
+    url = "/dashboard/perf-area/"
+    identifier= "dashboard"
     weight = 60
 [[menu.main]]
     name = "Data"
