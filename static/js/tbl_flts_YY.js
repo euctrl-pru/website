@@ -7,7 +7,7 @@
          dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Ap6_pXhVLZcgfUcdbqsUBvZaI_AdVsT35XLY1oPKyJ4/edit?usp=sharing&alt=json&sheet=ERT_FLTS_ANSP&range=A1:D41&headers=1',
          options: {
             //allowHtml: true,
-            width: 550,
+            width: 600,
             height: 200,
          },
          view: { columns: [0, 1, 2, 3] }
