@@ -187,7 +187,7 @@ var d3, queue, vis, params, topojson;
 
     // update tooltip position
     svg.on("mousemove", function () {
-      tooltip.style("top", (event.pageY + 16) + "px").style("left", (event.pageX + 10) + "px");
+      tooltip.style("top", (d3.event.pageY + 16) + "px").style("left", (d3.event.pageX + 10) + "px");
       return true;
     });
 
