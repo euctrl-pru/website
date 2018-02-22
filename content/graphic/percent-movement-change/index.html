@@ -62,6 +62,8 @@ type: graphic
     <p id="info"></p>
   </div>
   <script src="//d3js.org/d3.v3.min.js"></script>
+  <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+
   <script>
 
    var margin = {top: 20, right: 10, bottom: 40, left: 40},
@@ -99,7 +101,7 @@ type: graphic
    var info = d3.select("#info");
    svg.on("mousemove", function () {
      // update tooltip position
-     tooltip.style("top", (event.pageY + 8) + "px").style("left", (event.pageX + 8) + "px");
+     tooltip.style("top", (d3.event.pageY + 8) + "px").style("left", (d3.event.pageX + 8) + "px");
      return true;
    });
 
@@ -171,4 +173,5 @@ type: graphic
    }
 
    var pymChild = new pym.Child();
+   pymChild.sendHeight();
   </script>
