@@ -44,10 +44,10 @@ type: graphic
 
      vis.init(params);
    }());
-   var pymChild = new pym.Child({ renderCallback: vis.draw });
-   pymChild.sendHeight();
   </script>
 
   <script>
+    var pymChild = new pym.Child({ renderCallback: vis.draw });
+    pymChild.sendHeight();
   </script>
 </body>

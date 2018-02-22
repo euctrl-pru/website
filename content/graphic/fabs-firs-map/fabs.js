@@ -16,7 +16,7 @@ var vis;
     // http://www.jeromecukier.net/blog/2013/11/20/getting-beyond-hello-world-with-d3/
     vis.init = function (params) {
         vis.params = params || {};
-        vis.firs = {};
+        vis.topo = {};
 
         chart = d3.select(vis.params.chart || "#chart"); // placeholder div for svg
         width = vis.params.width || 960;
@@ -92,7 +92,7 @@ var vis;
             console.error(error);
         }
 
-        vis.firs = firs;
+        vis.topo = firs;
         vis.world = world;
         if (running > 0) {
             vis.start();
@@ -197,18 +197,11 @@ var vis;
                 .rotate([0,-53])
                 .clipAngle(180 - 1e-3)
                 .precision(1),
-            // projection = d3.geo.albers()
-            //     .center([cLon, cLat])
-            //     .rotate([4.4, 0])
-            //     .parallels([34, 70])
-            //     .scale(scale)
-            //     .translate([width / 2, height / 2]),
-            firs = topojson.feature(vis.firs, vis.firs.objects.firs).features,
-
             tooltip = d3.select("#tooltip").classed("hidden", true),
             infotext = tooltip.select("#info"),
             graticule = d3.geo.graticule(),
 
+            firs = topojson.feature(vis.topo, vis.topo.objects.firs),
             land = topojson.feature(vis.world, vis.world.objects.land),
             countries = topojson.feature(vis.world, vis.world.objects.countries).features,
             borders = topojson.mesh(vis.world, vis.world.objects.countries, function (a, b) { return a.id !== b.id; }),
@@ -258,7 +251,7 @@ var vis;
 
         //  FIRs
         fir = g.selectAll(".fir")
-            .data(firs)
+            .data(firs.features)
             .enter().insert("path", ".graticule")
             .attr("class", function (d) { return "fir " + d.id; })
             .attr("d", path)
@@ -275,7 +268,7 @@ var vis;
 
         // intra FIR borders
         g.selectAll(".fir-boundary")
-            .data([topojson.mesh(vis.firs, vis.firs.objects.firs, function (a, b) {
+            .data([topojson.mesh(vis.topo, vis.topo.objects.firs, function (a, b) {
                 return a !== b;
             })])
             .enter().insert("path", ".graticule")
@@ -284,7 +277,7 @@ var vis;
 
         // external borders
         g.selectAll("fir-boundary ECTRL")
-            .data([topojson.mesh(vis.firs, vis.firs.objects.firs, function (a, b) {
+            .data([topojson.mesh(vis.topo, vis.topo.objects.firs, function (a, b) {
                 return a === b;
             })])
             .enter().insert("path", ".graticule")
@@ -296,8 +289,8 @@ var vis;
       	    // from http://stackoverflow.com/a/16093597/963575
             var fff = [];
       	    var mmm = topojson.merge(
-    			      vis.firs,
-    			      vis.firs.objects.firs.geometries.filter(function (d) {
+    			      vis.topo,
+    			      vis.topo.objects.firs.geometries.filter(function (d) {
                     if (d.properties.fab === f.id) {
                         fff.push(d.id);
                         return true;
