@@ -1,23 +1,20 @@
 ---
-layout: default
 title:  "Flights flows in/out of Europe"
-date: 2015-11-11 11:11:11 +0100
-last-modified-date: 2016-08-19 19:06:31 +0100
-tags: flows, ifr, flights, europe, eurocontrol
+date: "2015-11-11"
 excerpt: "IFR Movements flows from and to Eurocontrol member States (plus Kosovo) 2001-2015"
+css: [
+  "/css/vendor/normalize.css",
+  "/css/vendor/styles.css"
+]
+js: [
+  "/js/vendor/circular-flows.min.js"
+]
 ---
-
-
-<link href="{% asset_path vendor/normalize.css %}" rel="stylesheet" media="all" property="stylesheet">
-<link href="{% asset_path vendor/styles.css %}" rel="stylesheet" media="all" property="stylesheet">
-
-{% javascript vendor/circular-flows.min.js %}
 
 
 <div id=dia-container class="container">
 
   <header role="banner">
-  	<h1>{{ page.title }}</h1>
     <div class="lead-in">
       Explore IFR flights flows between
       <a href="http://www.eurocontrol.int/about/member-states">Eurocontrol Member States</a>
@@ -25,7 +22,7 @@ excerpt: "IFR Movements flows from and to Eurocontrol member States (plus Kosovo
       Click on a region to discover flows country-by-country.
       Hover on a region, country or flow in order to get the number of movements.
       <p><small>A circular plot of the flows internal to Eurocontrol Member States
-        is available as a <a href="/studies/flows-intra/">separate study</a>.</small></p>
+        is available as a <a href="/study/flows-intra/">separate study</a>.</small></p>
     </div>
     <div class="credits">
       by <a href="http://linkedin.com/in/espinielli">Enrico Spinielli</a> (data processing
@@ -158,16 +155,16 @@ excerpt: "IFR Movements flows from and to Eurocontrol member States (plus Kosovo
       <div class="column-2">
         <h3>Credits</h3>
         <p>Provided by
-          <a href="{{ site.baseurl | prepend: site.url }}">{% image pru-logo.png alt:"Performance Review Unit logo" title:"Performance Review Unit" %}</a>
-          <a href="http://www.eurocontrol.int">{% image ec-logo.png alt:"Eurocontrol logo" title:"Eurocontrol" magick:resize:32x32 %}</a>
+          <a href="/"><img src="/images/pru-logo.png" alt="Performance Review Unit logo" title="Performance Review Unit"></a>
+          <a href="http://www.eurocontrol.int"><img src="/images/ec-logo.png" width="32" height="32" alt="Eurocontrol logo" title="Eurocontrol"></a>
         </p>
         <p>Many thanks to all Eurocontrol collegues for the decades spent in setting up the institutional and operational links with so many countries in and out of Europe, for managing the flows and capacities (<a href="https://www.eurocontrol.int/network-manager">Network Manager</a>), controlling flights (<a href="https://www.eurocontrol.int/muac">MUAC</a>), and for all other pre- (i.e. <a href="https://www.eurocontrol.int/sesar-research">Research and SESAR</a>) and post-ops (i.e. <a href="https://www.eurocontrol.int/crco">CRCO</a>, <a href="https://www.eurocontrol.int/forecast-monitoring-analysis">STATFOR, CODA, ...</a>) activities so necessary to help European aviation aiming at performing better and better.</p>
         <p>
           Thanks to
-          <a href="http://www.wittgensteincentre.org"><img src="{% asset_path wittgenstein.png %}" alt="Wittgenstein Centre" title="Wittgenstein Centre"></a>
-          , <a href="http://www.oeaw.ac.at/vid/"><img src="{% asset_path vid.png %}" alt="Vienna Institute of Demography" title="Vienna Institute of Demography"></a>
+          <a href="http://www.wittgensteincentre.org"><img src="/images/wittgenstein.png" alt="Wittgenstein Centre" title="Wittgenstein Centre"></a>
+          , <a href="http://www.oeaw.ac.at/vid/"><img src="/images/vid.png" alt="Vienna Institute of Demography" title="Vienna Institute of Demography"></a>
           for having made their work publicly available (even in <a href="http://github.com/null2/globalmigration">source code</a>! Which allowed us to propose little contributions.)
-          <p>Circular plot library coded by <a href="http://null2.net"><img src="{% asset_path null2.png %}" alt="Null2"></a>
+          <p>Circular plot library coded by <a href="http://null2.net"><img src="/images/null2.png" alt="Null2"></a>
             and inspired by Martin Krzywinski's <a href="http://circos.ca/">Circos</a> and Mike Bostock’s <a href="http://d3js.org/">D3.js library</a>.</p>
 
           <h3>Special thanks</h3>
@@ -221,6 +218,8 @@ excerpt: "IFR Movements flows from and to Eurocontrol member States (plus Kosovo
   </div>
 </div>
 
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+
 <script>
  // help
  (function() {
@@ -251,7 +250,7 @@ excerpt: "IFR Movements flows from and to Eurocontrol member States (plus Kosovo
 <script>
  (function() {
 
-   var datafile = 'json/extra-flows.json';
+   var datafile = 'extra-flows.json';
    var aLittleBit = Math.PI / 100000;
    // var cols = 'd7191c fdae61 ffffbf abd9e9 2c7bb6'; // colorbrewer 5 classes/diverging/colorblind safe, print safe
    var cols = '683f92 cd3d08 b60275 6dae29 ec8f00 2058a5 00a592 009d3c 378974 ffca00'; // original set
