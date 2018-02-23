@@ -16,11 +16,15 @@ This is what needs to be checked for full migration to Hugo:
 * anti-spammer subscriber
 * fix links to CSV download in dataset definitions
 * fix table extent in data download page
+* clean dashboard layout, i.e. google charst, pym.js,...
 * fixed nav bar
 * replace favicons with proper shortcodes
 * dataset HFE: fix Pym iframe height
 * fix "APT DLY filter and CSV download" link, http://localhost:8000/reference/dataset/airport-arrival-atfm-delay/
   in http://localhost:8000/reference/dataset/airport-arrival-atfm-delay/
+* should 'crt_ertfltsMM_15.js' be deleted?
+* pages for filtered CSV download: do we move?
+* consider using excerpt in yaml for list of studies (it gives a sort of summary of the thing)
 
 
 
