@@ -1,9 +1,9 @@
 <!-- {{/*
-Usage: {{% csvtable "datafile" %}}
+Usage: {{% csvtable "data/datafile" %}}
 i.e. the data file is  'data/datafile'
 */}}-->
 
-{{ $datafile := (printf "data/%s" (.Get 0)) }}
+{{ $datafile := (printf "%s" (.Get 0)) }}
 {{ $sep := "," }}
 
 <table>
