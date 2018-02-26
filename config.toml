@@ -24,6 +24,11 @@ customCSS = ["css/pru.css"]
 
 
 [[menu.main]]
+    name = "PRC Quaterly"
+    url = "/prcq/"
+    identifier= "prcq"
+    weight = 40
+[[menu.main]]
     name = "News"
     url = "/post/"
     identifier= "post"

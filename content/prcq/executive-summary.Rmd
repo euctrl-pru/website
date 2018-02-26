@@ -1,6 +1,7 @@
 ---
-layout: prcq
 title: "Executive Summary - draft final Performance Review Report 2016"
+bibliography: ["../../static/bib/aviation.bib"]
+link-citations: true
 ---
 <style>
 .headimg {
@@ -12,15 +13,13 @@ title: "Executive Summary - draft final Performance Review Report 2016"
 }
 </style>
 
-## {{ page.title }}
-
-PRR 2016 presents an assessment of the performance of
+PRR 2016 [@pru:prr-2016] presents an assessment of the performance of
 [Air Navigation Services (ANS)][ans] in the [EUROCONTROL area][ectl_area] for
 the calendar year 2016.The actual financial data relate to 2015, which is the
 latest year for which actual financial data are available.
 
 
-### {% img prcq-traffic.png magick:resize:50x50 alt:'Traffic' class:'leadimg' %} [Traffic][traffic]
+## <img src="/images/prcq-traffic.png" width="40" height="40" alt="Traffic"> [Traffic][traffic]
 
 In 2016, air traffic in the EUROCONTROL area [(ESRA08)][esra08] continued to increase for the third year in a row.
 On average, the number of controlled flights increased by 2.4% compared to 2015. The main driver of the observed
@@ -36,15 +35,20 @@ decrease in 2016.
 The substantial traffic increase in some areas contributed to a decrease in overall service quality. The share of flights arriving
 within 15 minutes of their scheduled time decreased by 1.6 percent points to reach 81.5% in 2016.
 
-### {% img prcq-safety.png magick:resize:50x50 alt:'Safety' class:'leadimg' %} [Safety][safety]
+
+
+
+
+
+## <img src="/images/prcq-safety.png" width="40" height="40" alt="Safety"> [Safety][safety]
 
 Safety is the primary objective of ANS and overall safety levels in the [EUROCONTROL area][ectl_area] remain high. There was
 only one reported air traffic accident with direct ANS contribution in 2015, which is the latest year for which validated data are available.
 
-With the exception of [Unauthorised Penetrations of Airspace (UPAs)][upa], the number of all key risk occurrence types 
-[(Separation minima infringements (SMIs)][smi], [Runway incursions (RIs)][ri], and ATM Specific Occurrences) decreased in the 
-[EUROCONTROL area][ectl_area] in 2015, despite the increase in traffic. Overall, there were 15 [SMIs][smi] and 28 [UPAs][upa] 
-per hundred thousand controlled flight hours in the airspace and less than one reported [RI][ri] per ten thousand movements in 2015.    
+With the exception of [Unauthorised Penetrations of Airspace (UPAs)][upa], the number of all key risk occurrence types
+[(Separation minima infringements (SMIs)][smi], [Runway incursions (RIs)][ri], and ATM Specific Occurrences) decreased in the
+[EUROCONTROL area][ectl_area] in 2015, despite the increase in traffic. Overall, there were 15 [SMIs][smi] and 28 [UPAs][upa]
+per hundred thousand controlled flight hours in the airspace and less than one reported [RI][ri] per ten thousand movements in 2015.
 
 The quality and completeness of safety data reported to EUROCONTROL increased over the past years but with scope for further improvement,
 particularly in terms of severity classification. Although this has been pointed out by the PRC on several occasions, 16% of the reported
@@ -54,7 +58,11 @@ The PRC review of the implementation status of the [Acceptable Level of Safety P
 States clearly suggested that there is a need for common definitions and guidance material in order to ensure a harmonised approach in
 the [EUROCONTROL area][ectl_area].
 
-### {% img prcq-operations-enroute.png magick:resize:50x50 alt:'Operations En-route' class:'leadimg' %} [Operations En-route][ops_ert]
+
+
+
+
+## <img src="/images/prcq-operations-enroute.png" width="40" height="40" alt="Operations En-route"> [Operations En-route][ops_ert]
 
 The PRC’s concern about over conservative capacity planning and the risk of performance deterioration when traffic grows again has been
 voiced on several occasions. In 2016, total en-route [ATFM delays][ATFM_dly] increased by 21% compared to 2015 and the share of flights
@@ -89,7 +97,13 @@ Closer civil-military cooperation and coordination is an important enabler to im
 further improvement identified in a PRC survey relate to the lack of impact assessment in terms of capacity and route options for restricted/segregated
 airspace and the absence of clear strategic objectives.
 
-### {% img prcq-operations-airport.png magick:resize:50x50 alt:'Operations at Airports' class:'leadimg' %} [Operations at Airports][ops_apt]
+
+
+
+
+
+
+##  <img src="/images/prcq-operations-airport.png" width="40" height="40" alt="Operations at Airports"> [Operations at Airport][ops_apt]
 
 The analysis of the top 30 airports in terms of traffic showed that ten airports (Amsterdam, Istanbul Ataturk, London Gatwick, Stockholm Arlanda,
 Istanbul Sabiha Gökçen, Dublin, Berlin Tegel, Geneva, Lisbon and Warsaw) reported their highest traffic level on record, surpassing the levels
@@ -123,7 +137,14 @@ for the measurement of [ATC pre-departure delays][atc_pre].
 [Vertical flight efficiency in climbs and descents][vfe_cdo] in climbs and descents at the top 30 airports has been added as a new metric in this
 year’s report. On average, inefficiencies were more than 6 times higher in descent than in climb with notable differences by airport.
 
-### {% img prcq-economics.png magick:resize:50x50 alt:'Economics' class:'leadimg' %} [Economics][economics]
+
+
+
+
+
+
+
+## <img src="/images/prcq-economics.png" width="40" height="40" alt="Economics"> [Economics][economics]
 
 In 2015, which is the latest year for which actual financial data are available, the en-route ANS unit costs of the Pan-European system amounted
 to 49.2 €2009 per service unit (TSU). This is -2.4% lower than in 2014 since in 2015 the number of TSUs rose faster (+3.9%) than en-route ANS costs (+1.5%).
@@ -147,29 +168,32 @@ The analysis provided in the operational en-route ANS performance chapter of thi
 ATFM delays were +20.9% higher than in 2015. This implies that in 2016, the unit costs of delays will be significantly higher than in 2015 and will
 negatively affect ANSPs economic cost-effectiveness.
 
-[composite_hr]: <{{ "/references/definition/composite_flight_hour.html" | prepend: site.baseurl | prepend: site.url }}> "Composite Flight Hour definition"
-[esra08]: <{{ "/references/definition/ESRA_2008_Area.html" | prepend: site.baseurl | prepend: site.url }}> "ESRA 08 Area"
-[ectl_area]: <{{ "/references/definition/eurocontrol_area.html" | prepend: site.baseurl | prepend: site.url }}> "EUROCONTROL Area"
-[atfm_dly]: <{{ "/references/definition/atfm_delay.html" | prepend: site.baseurl | prepend: site.url }}> "ATFM Delay"
-[atc_pre]: <{{ "/references/definition/atc_pre-departure_delay.html" | prepend: site.baseurl | prepend: site.url }}> "ATC Pre-departure Delay"
-[a_cdm]: <{{ "/references/acronym/a_cdm.html" | prepend: site.baseurl | prepend: site.url }}> "A-CDM"
-[asma_add]: <{{ "/references/definition/additional_asma_time.html" | prepend: site.baseurl | prepend: site.url }}> "Additional ASMA time"
 
-[ansp]: <{{ "/references/acronym/ansp.html" | prepend: site.baseurl | prepend: site.url }}> "Air Navigation Service Provider"
-[ans]: <{{ "/references/acronym/ans.html" | prepend: site.baseurl | prepend: site.url }}> "Air Navigation Services"
-[upa]: <{{ "/references/acronym/upa.html" | prepend: site.baseurl | prepend: site.url }}> "Unauthorised Penetrations of Airspace"
-[smi]: <{{ "/references/acronym/smi.html" | prepend: site.baseurl | prepend: site.url }}> "Separation Minima Infringements (SMIs)"
-[ri]: <{{ "/references/acronym/ri.html" | prepend: site.baseurl | prepend: site.url }}> "Runway Incursions (RIs)"
-[alosp]: <{{ "/references/acronym/alosp.html" | prepend: site.baseurl | prepend: site.url }}> "Acceptable Level of Safety Performance (ALoSP)"
-[acc]: <{{ "/references/acronym/acc.html" | prepend: site.baseurl | prepend: site.url }}> "Area Control Center"
-[nm]: <{{ "/references/acronym/nm.html" | prepend: site.baseurl | prepend: site.url }}> "Network Manager"
-[fra]: <{{ "/references/acronym/fra.html" | prepend: site.baseurl | prepend: site.url }}> "Free Route Airspace (FRA)"
+## References
 
-[vfe_cdo]: <{{ "/references/methodology/cd_vertical_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }}> "Vertical En-route Flight Efficiency"
-[hfe]: <{{ "/references/methodology/horizontal_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }}> "Horizontal En-route Flight Efficiency"
+[composite_hr]: /reference/definition/composite-flight-hour/ "Composite Flight Hour definition"
+[esra08]: /reference/definition/esra-2008-area/ "ESRA 08 Area"
+[ectl_area]: /reference/definition/eurocontrol-area/ "EUROCONTROL Area"
+[atfm_dly]: /reference/definition/atfm-delay/ "ATFM Delay"
+[atc_pre]: /reference/definition/atc-pre-departure-delay/ "ATC Pre-departure Delay"
+[a_cdm]: /reference/acronym/a-cdm/ "A-CDM"
+[asma_add]: /reference/definition/additional-asma-time/ "Additional ASMA time"
 
-[traffic]: <{{ "/prcq/traffic.html" | prepend: site.baseurl | prepend: site.url }}> "Traffic"
-[safety]: <{{ "/prcq/safety.html" | prepend: site.baseurl | prepend: site.url }}> "Safety"
-[ops_ert]: <{{ "/prcq/ops-airport.html" | prepend: site.baseurl | prepend: site.url }}> "Operations En-route"
-[ops_apt]: <{{ "/prcq/ops-en-route.html" | prepend: site.baseurl | prepend: site.url }}> "Operations at Airports"
-[economics]: <{{ "/prcq/economics.html" | prepend: site.baseurl | prepend: site.url }}> "Economics"
+[ansp]: /reference/acronym/ansp/ "Air Navigation Service Provider"
+[ans]: /reference/acronym/ans/ "Air Navigation Services"
+[upa]: /reference/acronym/upa/ "Unauthorised Penetrations of Airspace"
+[smi]: /reference/acronym/smi/ "Separation Minima Infringements (SMIs)"
+[ri]: /reference/acronym/ri/ "Runway Incursions (RIs)"
+[alosp]: /reference/acronym/alosp/ "Acceptable Level of Safety Performance (ALoSP)"
+[acc]: /reference/acronym/acc/ "Area Control Center"
+[nm]: /reference/acronym/nm/ "Network Manager"
+[fra]: /reference/acronym/fra/ "Free Route Airspace (FRA)"
+
+[vfe_cdo]: /reference/methodology/cd-vertical-flight-efficiency-pi/ "Vertical En-route Flight Efficiency"
+[hfe]: /reference/methodology/horizontal-flight-efficiency-pi/ "Horizontal En-route Flight Efficiency"
+
+[traffic]: /prcq/traffic/ "Traffic"
+[safety]: /prcq/safety/ "Safety"
+[ops_ert]: /prcq/ops-airport/ "Operations En-route"
+[ops_apt]: /prcq/ops-en-route/ "Operations at Airports"
+[economics]: /prcq/economics/ "Economics"
