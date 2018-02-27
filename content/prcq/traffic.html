@@ -1,6 +1,6 @@
 ---
-layout: prcq
 title: "Air Traffic Evolution"
+icon: "/images/prcq-traffic.png"
 ---
 
 <html>
@@ -160,7 +160,6 @@ function drawVisualization()
 google.setOnLoadCallback(drawVisualization)
 </script>
 
-<h3 class="page-header">{% img prcq-traffic.png magick:resize:60x60 alt:'Traffic' style:'margin-right\:3px' %} {{ page.title }}</h3>
 
 <table class = "table">
    <thead>
@@ -176,26 +175,26 @@ google.setOnLoadCallback(drawVisualization)
    <tbody>
       <tr class = "active">
          <td>Jan-Sep</td>
-         <td><a href={{"/references/definition/ESRA_08_Area.html"| prepend: site.baseurl | prepend: site.url }}>ESRA08 area</a></td>
+         <td><a href="/reference/definition/esra-2008-area/">ESRA08 area</a></td>
          <td>Quarterly</td>
          <td>18-Oct-2017</td>
          <td>
-          <a href="{{ '/references/acronym/nm-cfmu.html' | prepend: site.baseurl | prepend: site.url }}">NM</a>,
-          <a href="{{ '/references/acronym/crco.html'    | prepend: site.baseurl | prepend: site.url }}">CRCO</a>,
-          <a href="{{ '/references/acronym/statfor.html' | prepend: site.baseurl | prepend: site.url }}">STATFOR</a></td>
-          <td><a href='{{"/data/performancearea/" | prepend: site.baseurl | prepend: site.url }}'><span class="glyphicon glyphicon-download" style="font-size:25px;"></span></a></td>
+          <a href="/reference/acronym/nm-cfmu/">NM</a>,
+          <a href="/reference/acronym/crco/">CRCO</a>,
+          <a href="/reference/acronym/statfor/">STATFOR</a></td>
+          <td><a href='/data/performancearea/'>{{% dwnld_i %}}</a></td>
       </tr>
    </tbody>
 </table>
 
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
-    <h4>Average daily controlled flights</h4>
-    <span class="text-muted"><a href={{"/references/definition/ESRA_2008_Area.html"| prepend: site.baseurl | prepend: site.url }}>ESRA08 area</a></span>
+    <h3>Average daily controlled flights</h3>
+    <span class="text-muted"><a href=/reference/definition/esra-2008-area/>ESRA08 area</a></span>
     <div id="crt_ertfltsYY"></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
-    <h4>Average daily en-route <a href={{"/references/acronym/su.html"| prepend: site.baseurl | prepend: site.url }}>Service Units (SU)</a></h4>
+    <h3>Average daily en-route <a href=/reference/acronym/su/>Service Units (SU)</a></h3>
     <span class="text-muted">CRCO area</span>
     <div id="crt_ertsuYY"></div>
 </div>
@@ -204,7 +203,7 @@ google.setOnLoadCallback(drawVisualization)
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
-At system level <a href={{"/references/definition/ESRA_2008_Area.html"| prepend: site.baseurl | prepend: site.url }}>(ESRA08)</a>, traffic increased by 4.3% in the first nine months in 2017 compared to the same period in 2016 which corresponds to 1199 additional flights per day, on average.
+At system level <a href=/reference/definition/esra-2008-area/>(ESRA08)</a>, traffic increased by 4.3% in the first nine months in 2017 compared to the same period in 2016 which corresponds to 1199 additional flights per day, on average.
 </div></div></div>
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
@@ -214,12 +213,12 @@ At the same time, average daily en-route service units (SU) grew at a higher rat
 
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
-    <h4>Change by flight type</h4>
+    <h3>Change by flight type</h3>
     <span class="text-muted">Jan-Sep 2017 vs. Jan-Sep 2016</span>
     <div id="crt_flttypeYY"></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
-    <h4>Change by traffic segment</h4>
+    <h3>Change by traffic segment</h3>
     <span class="text-muted">Jan-Sep 2017 vs. Jan-Sep 2016</span>
     <div id="crt_segYY"></div>
 </div>
@@ -232,7 +231,7 @@ At the same time, average daily en-route service units (SU) grew at a higher rat
 
 <div class="row placeholders">
 <div class="col-sm-12 placeholder">
-    <h4>Traffic variation by <a href={{"/references/acronym/ansp.html"| prepend: site.baseurl | prepend: site.url }}>ANSP</a></h4>
+    <h3>Traffic variation by <a href=/reference/acronym/ansp/>ANSP</a></h3>
     <span class="text-muted">Jan-Sep 2017 vs. Jan-Sep 2016</span>
     <div id="crt_anspfltsYY"></div>
 </div>
@@ -246,7 +245,7 @@ At the same time, average daily en-route service units (SU) grew at a higher rat
 
 <div class="row placeholders">
 <div class="col-sm-12 ">
-    <h4>Traffic variation at the top 30 airports in terms of traffic</h4>
+    <h3>Traffic variation at the top 30 airports in terms of traffic</h3>
     <span class="text-muted">Jan-Sep 2017 vs. Jan-Sep 2016</span>
     <div id="crt_apt3"></div>
 </div>

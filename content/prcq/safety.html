@@ -1,6 +1,12 @@
 ---
-layout: prcq
 title: "ANS Safety Performance"
+icon: "/images/prcq-safety.png"
+js: [
+   "/js/crt_saf_smi_YY.js",
+   "/js/crt_saf_upa_YY.js",
+   "/js/crt_saf_ri_YY.js",
+   "/js/crt_saf_aso_YY.js"
+]
 ---
 
 <script type="text/javascript" src="http://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
@@ -103,7 +109,7 @@ function drawVisualization()
 google.setOnLoadCallback(drawVisualization)
 </script>
 
-<h3 class="page-header">{% img prcq-safety.png magick:resize:60x60 alt:'Safety' style:'margin-right\:3px' %} {{ page.title }}</h3>
+<h2 class="page-header"><img src="" width="40" height="40" alt="Safety"> ANS Safety Performance</h2>
 
 <table class = "table">
    <thead>
@@ -118,7 +124,7 @@ google.setOnLoadCallback(drawVisualization)
    <tbody>
       <tr class = "active">
          <td>Jan-Dec</td>
-         <td><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL Area</a></td>
+         <td><a href='/reference/definition/eurocontrol-area/'>EUROCONTROL Area</a></td>
          <td>Annually</td>
          <td>28-April-2017</td>
          <td><a href="http://www.eurocontrol.int" target="_blank">EUROCONTROL</a></td>
@@ -136,7 +142,7 @@ google.setOnLoadCallback(drawVisualization)
    </tbody>
 </table>
 
-<h3 class="sub-header">Accidents (fixed wing, weight > 2250 kg MTOW)</h3>
+<h2 class="sub-header">Accidents (fixed wing, weight > 2250 kg MTOW)</h2>
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
   <div id="crt_saf_acc_YY"></div>
@@ -158,15 +164,15 @@ According to the preliminary data, there were 67 accidents in the EUROCONTROL ar
 </div></div></div>
 </div>
 
-<h3 class="sub-header">ATM related incidents</h3>
+<h2 class="sub-header">ATM related incidents</h2>
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
-<h4><a href='{{"/references/acronym/smi.html"| prepend: site.baseurl | prepend: site.url }}'>Separation Minima Infringements (SMI)</a></h4>
+<h3><a href='/reference/acronym/smi/'>Separation Minima Infringements (SMI)</a></h3>
 <div id="crt_saf_smi_YY"></div>
 
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
-<h4><a href='{{"/references/acronym/upa.html"| prepend: site.baseurl | prepend: site.url }}'>Unauthorised Penetration of Airspace (UPAs)</a></h4>
+<h3><a href='/reference/acronym/upa/'>Unauthorised Penetration of Airspace (UPAs)</a></h3>
 <div id="crt_saf_upa_YY"></div>
 </div>
 </div>
@@ -188,11 +194,11 @@ According to the preliminary data, there were 67 accidents in the EUROCONTROL ar
 
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
-<h4><a href='{{"/references/acronym/ri.html"| prepend: site.baseurl | prepend: site.url }}'>Runway Incursions (RIs)</a></h4>
+<h3><a href='/reference/acronym/ri/'>Runway Incursions (RIs)</a></h3>
 <div id="crt_saf_ri_YY"></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
-<h4>ATM Specific Occurrences (ATM-S)</h4>
+<h3>ATM Specific Occurrences (ATM-S)</h3>
 
 <div id="crt_saf_aso_YY"></div>
 </div>
@@ -211,9 +217,3 @@ The total number of risk bearing ATM-S decreased notably in 2016 (P).
 </div></div>
 </div>
 </div>
-
-
-{% javascript crt_saf_smi_YY %}
-{% javascript crt_saf_upa_YY %}
-{% javascript crt_saf_ri_YY %}
-{% javascript crt_saf_aso_YY %}

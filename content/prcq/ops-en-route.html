@@ -1,6 +1,6 @@
 ---
-layout: prcq
 title: "Operational En-route ANS Performance"
+icon: "/images/prcq-operations-enroute.png"
 ---
 
 <script type="text/javascript" src="http://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
@@ -198,8 +198,6 @@ function drawVisualization()
 google.setOnLoadCallback(drawVisualization)
 </script>
 
-<h3 class="page-header">{% img prcq-operations-enroute.png magick:resize:60x60 alt:'En-route' style:'margin-right\:3px' %} {{ page.title }}</h3>
-
 <table class = "table">
    <thead>
       <tr>
@@ -214,23 +212,23 @@ google.setOnLoadCallback(drawVisualization)
    <tbody>
       <tr class = "active">
          <td>Jan-Sep (YTD)</td>
-         <td><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL area</a></td>
+         <td><a href='/reference/definition/eurocontrol-area/'>EUROCONTROL area</a></td>
          <td>Quarterly</td>
          <td>18-Oct-2017</td>
           <td>
-          <a href='{{"/references/acronym/nm-cfmu.html"| prepend: site.baseurl | prepend: site.url }}'>NM</a></td>
-          <td><a href='{{"/data/performancearea/" | prepend: site.baseurl | prepend: site.url }}'><span class="glyphicon glyphicon-download" style="font-size:25px;"></span></a></td>
+          <a href='/reference/acronym/nm-cfmu/'>NM</a></td>
+          <td><a href='/data/performancearea/'>{{% dwnld_i %}}</a></td>
       </tr>
    </tbody>
 </table>
 
-<h3 class="page-header">En-route <a href='{{"/references/definition/atfm_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATFM delays</a></h3>
+<h2 class="page-header">En-route <a href='/reference/definition/atfm-delay/'>ATFM delays</a></h2>
 
 <table class = "table">
    <tbody>
       <tr class = "active">
          <td><span style="color: rgb(192, 80, 77);">
-         Please note that software release 20.0 of the Network Manager on 04 April 2016 introduced a change to improve the accuracy of the ATFM delay calculation for operational purposes. For more information on the change in methodology <a href='{{"/references/methodology/ATFM_delay_calculation.html"| prepend: site.baseurl | prepend: site.url }}'>click here</a>.
+         Please note that software release 20.0 of the Network Manager on 04 April 2016 introduced a change to improve the accuracy of the ATFM delay calculation for operational purposes. For more information on the change in methodology <a href='/reference/methodology/atfm-delay-calculation/'>click here</a>.
          </span> </td>
       </tr>
    </tbody>
@@ -238,13 +236,13 @@ google.setOnLoadCallback(drawVisualization)
 
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
-    <h4>En-route <a href='{{"/references/definition/atfm_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATFM delay</a> per flight</h4>
-    <span class="text-muted"><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL area</a></span>
+    <h3>En-route <a href='/reference/definition/atfm-delay/'>ATFM delay</a> per flight</h3>
+    <span class="text-muted"><a href='/reference/definition/eurocontrol-area/'>EUROCONTROL area</a></span>
     <div id="crt_ertdlyYY"></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
-    <h4>Total en-route delay by reported <a href='{{"/references/definition/atfm_delay_codes.html"| prepend: site.baseurl | prepend: site.url }}'>ATFM delay cause</a></h4>
-    <span class="text-muted"><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL area</a></span>
+    <h3>Total en-route delay by reported <a href='/reference/definition/atfm-delay-codes/'>ATFM delay cause</a></h3>
+    <span class="text-muted"><a href='/reference/definition/eurocontrol-area/'>EUROCONTROL area</a></span>
     <div id="crt_ertdlytot"></div>
 </div>
 </div>
@@ -253,15 +251,15 @@ google.setOnLoadCallback(drawVisualization)
 <div class="col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
 In the first nine months of 2017, total en-route ATFM delays in the EUROCONTROL area decreased by 3.8% compared to the same period in 2016. At the same time, the number of flights increased by +4.3%, resulting in an average en-route ATFM delay of 1.0 minutes per flight which is the same level as in the first nine months of 2016.<br><br>
+</div>
 
-</div></div></div>
 <div class="col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
  Although average en-route ATFM delay stayed at a similar level, there was a notable change in the underlying delay reasons. Whereas capacity/staffing and weather related delays increased further in the first nine months of 2017, there was a notable reduction in ATC disruption/industrial actions and events (ATC system upgrades) linked to performance improvements in France. 
-</div></div></div>
+</div>
 </div>
 
-<h4>Share of controlled flights delayed by en-route ATFM regulations (%)</h4>
+<h3>Share of controlled flights delayed by en-route ATFM regulations (%)</h3>
 <div class="row placeholders">
 <div class="col-sm-2">
     <div id="crt_ertdlypie"></div>
@@ -274,13 +272,13 @@ In the first nine months of 2017, total en-route ATFM delays in the EUROCONTROL 
 <div class="panel panel-info">
   <div class="panel-heading">
    Overall, 90.8% of the controlled flights in the EUROCONTROL area were not affected by ATFM delays between January and September 2017.
-   Compared to 2016, the share of flights affected by en-route ATFM delays increased by 0.6 percent points to 6.1%. <br>At the same time, the share of flights affected by <a href='{{"/prcq/ops-airport.html"| prepend: site.baseurl | prepend: site.url }}'>airport ATFM delays</a> stayed at the same level as in 2016 (3.2%).
+   Compared to 2016, the share of flights affected by en-route ATFM delays increased by 0.6 percent points to 6.1%. <br>At the same time, the share of flights affected by <a href='/prcq/ops-airport/'>airport ATFM delays</a> stayed at the same level as in 2016 (3.2%).
   </div>
 </div>
 
 <div class="row placeholders">
 <div class="col-sm-12 placeholder">
-    <h4>En-route ATFM delay by ANSP</h4>
+    <h3>En-route ATFM delay by ANSP</h3>
     <span class="text-muted">Jan-Sep 2017</span>
     <div id="crt_ertdly3"></div>
 </div>
@@ -292,7 +290,7 @@ In the first nine months of 2017, total en-route ATFM delays in the EUROCONTROL 
   </div>
 </div>
 
-<h3 class="page-header"><a href='{{"/references/methodology/horizontal_flight_efficiency_pi.html"| prepend: site.baseurl | prepend: site.url }}'>Horizontal en-route flight efficiency</a></h3>
+<h2 class="page-header"><a href='/reference/methodology/horizontal-flight-efficiency-pi/'>Horizontal en-route flight efficiency</a></h2>
 
 <div class="row placeholders">
 <div class="col-sm-2">

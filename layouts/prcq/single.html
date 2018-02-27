@@ -1,0 +1,19 @@
+{{ partial "header.html" . }}
+
+<main class="content" role="main">
+
+  <article class="article cf">
+
+    <h1 class="article-title"><img src="{{ .Params.icon }}" width="40" height="40" alt="{{ .Title }}"> {{ .Title }}</h1>
+
+
+    <div class="article-content perf-area">
+      {{ .Content }}
+    </div>
+  </article>
+
+  {{ partial "disqus.html" .}}
+
+</main>
+
+{{ partial "footer.html" . }}

@@ -1,5 +1,6 @@
 ---
-title: "ANS Performance @ Airports"
+title: "ANS Performance at Airports"
+icon: "/images/prcq-operations-airport.png"
 ---
 
 <script type="text/javascript" src="http://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
@@ -177,7 +178,6 @@ function drawVisualization()
 google.setOnLoadCallback(drawVisualization)
 </script>
 
-<h3 class="page-header"><img src="/images/prcq-operations-airport.png" width="40" height="40" alt="Operations at Airports">Operations at Airporta</h3>
 
 <table class = "table">
    <thead>
@@ -200,33 +200,33 @@ google.setOnLoadCallback(drawVisualization)
           <a href='/reference/acronym/nm-cfmu/'>NM</a>,
           <a href='/reference/acronym/pru/'>PRU</a>,
           <a href='/reference/acronym/coda/'>CODA</a></td>
-          <td><a href='{{"/data/performancearea/" | prepend: site.baseurl | prepend: site.url }}'><span class="glyphicon glyphicon-download" style="font-size:25px;"></span></a></td>
+          <td><a href='/data/performancearea/'>{{% dwnld_i %}}</a></td>
       </tr>
    </tbody>
 </table>
 
-<h3 class="sub-header">Arrival flow management</h3>
+<h2 class="sub-header">Arrival flow management</h2>
 <div>
-This section analyses ANS-related inefficiencies on the arrival flow at the top 30 European airports in terms of arrival <a href='/reference/definition/atfm_delay/'>ATFM delay</a> and <a href='/reference/definition/additional_asma_time/'>additional ASMA time</a>.
+This section analyses ANS-related inefficiencies on the arrival flow at the top 30 European airports in terms of arrival <a href='/reference/definition/atfm-delay/'>ATFM delay</a> and <a href='/reference/definition/additional-asma-time/'>additional ASMA time</a>.
 </div>
 
-<h4 class="page-header">Airport arrival <a href='/reference/definition/atfm_delay/'>ATFM delays</a> (min per arrival)</h4>
+<h3 class="page-header">Airport arrival <a href='/reference/definition/atfm-delay/'>ATFM delays</a> (min per arrival)</h3>
 <table class = "table">
    <tbody>
       <tr class = "active">
          <td><span style="color: rgb(192, 80, 77);">
-         Please note that software release 20.0 of the Network Manager on 04 April 2016 introduced a change to improve the accuracy of the ATFM delay calculation for operational purposes. For more information on the change in methodology <a href='/reference/methodology/ATFM_delay_calculation/'>click here</a>.
+         Please note that software release 20.0 of the Network Manager on 04 April 2016 introduced a change to improve the accuracy of the ATFM delay calculation for operational purposes. For more information on the change in methodology <a href='/reference/methodology/atfm-delay-calculation/'>click here</a>.
          </span> </td>
       </tr>
    </tbody>
 </table>
 <div class="row ">
 <div class="col-sm-2">
-    <h5>Top 30 airports</h5>
+    <h4>Top 30 airports</h4>
     <div id="crt_apt4"></div>
 </div>
 <div class="col-sm-10">
-    <h5>Airport arrival ATFM delay by airport (Jan-Sep 2017 vs. Jan-Sep 2016)</h5>
+    <h4>Airport arrival ATFM delay by airport (Jan-Sep 2017 vs. Jan-Sep 2016)</h4>
     <div id="crt_apt5"></div>
 </div>
   </div><br>
@@ -238,43 +238,43 @@ This section analyses ANS-related inefficiencies on the arrival flow at the top 
           </div>
     </div>
 
-<h4 class="page-header"><a href='/reference/definition/additional_asma_time/'>Additional ASMA time</a></h4>
+<h3 class="page-header"><a href='/reference/definition/additional-asma-time/'>Additional ASMA time</a></h3>
 <div class="row ">
 <div class="col-sm-2">
-    <h5>Top 30 airports</h5>
+    <h4>Top 30 airports</h4>
     <div id="crt_apt6"></div>
 </div>
 <div class="col-sm-10">
-    <h5><a href='/reference/definition/additional_asma_time/'>Additional ASMA time by airport</a> Jan-Aug 2017</h5>
+    <h4><a href='/reference/definition/additional-asma-time/'>Additional ASMA time by airport</a> Jan-Aug 2017</h4>
     <div id="crt_apt7"></div>
 </div>
   </div><br>
 
-<h3 class="sub-header">Departure flow management</h3>
+<h2 class="sub-header">Departure flow management</h2>
 <div>
-This section analyses ANS-related inefficiencies on the departure flow at the top 30 European airports in terms of <a href='/reference/definition/atc_pre-departure_delay/'>ATC pre-departure delays</a> at the gate and <a href='/reference/definition/additional_taxi-out_time/'>additional taxi-out time</a>.
+This section analyses ANS-related inefficiencies on the departure flow at the top 30 European airports in terms of <a href='/reference/definition/atc-pre-departure-delay/'>ATC pre-departure delays</a> at the gate and <a href='/reference/definition/additional-taxi-out-time/'>additional taxi-out time</a>.
 </div>
-<h4 class="page-header"><a href='/reference/definition/atc_pre-departure_delay/'>ATC pre-departure delays</a></h4>
+<h3 class="page-header"><a href='/reference/definition/atc-pre-departure-delay/'>ATC pre-departure delays</a></h3>
 <div class="row ">
 <div class="col-sm-2">
-    <h5>Top 30 airports</h5>
+    <h4>Top 30 airports</h4>
     <div id="crt_apt8"></div>
 </div>
 <div class="col-sm-10">
-    <h5><a href='/reference/definition/atc_pre-departure_delay/'>ATC pre-departure delays by airport</a> Jan-Aug 2017</h5>
+    <h4><a href='/reference/definition/atc-pre-departure-delay/'>ATC pre-departure delays by airport</a> Jan-Aug 2017</h4>
     <div id="crt_apt9"></div>
 </div>
   </div><br>
 
 
-<h4 class="page-header"><a href='/reference/definition/additional_taxi-out_time/'>Additional taxi-out time</a></h4>
+<h3 class="page-header"><a href='/reference/definition/additional-taxi-out-time/'>Additional taxi-out time</a></h3>
 <div class="row placeholders">
 <div class="col-sm-2">
-    <h5>Top 30 airports</h5>
+    <h4>Top 30 airports</h4>
     <div id="crt_apt10"></div>
 </div>
 <div class="col-sm-10">
-    <h5><a href='/reference/definition/additional_taxi-out_time/'>Additional taxi-out by airport</a> Jan-Aug 2017</h5>
+    <h4><a href='/reference/definition/additional-taxi-out-time/'>Additional taxi-out by airport</a> Jan-Aug 2017</h4>
     <div id="crt_apt11"></div>
 </div>
   </div><br>

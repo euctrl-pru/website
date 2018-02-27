@@ -1,5 +1,4 @@
 ---
-layout: prcq
 title: "Overview - January-September 2017"
 ---
 <style>
