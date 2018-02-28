@@ -1,8 +1,6 @@
 ---
-layout: default
 title: Datasets in CSV format
 ---
-# {{ page.title }}
 
 PRU provides some relevant datasets in CSV format (compressed using [bzip2][bzip2]):
 
@@ -11,6 +9,7 @@ The filename convention we adopted is as follows:
 > `<dataset group>_<YYYY>.csv.bz2`
 
 where
+
 > `<dataset group> = <dataset>_<group>`
 
 The datasets made available are:
@@ -23,10 +22,9 @@ For example `ert_dly_ansp_2012.csv.bz2` refers to en-rote delays dataset with AN
 
 ## Dataset files
 
-{% directory path: data/csv exclude: .md$ %}
-* [{{ file.name }}]({{ file.url }})
-{% enddirectory %}
+{{< directoryindex path="/static/download/csv" pathURL="/csv" >}}
 
-[bzip2]: <https://en.wikipedia.org/wiki/Bzip2> "Wikipedia: bzip2"
-[ansp]: <{{ "/references/acronym/ansp.html"| prepend: site.baseurl | prepend: site.url }}> "ANSP"
-[ansps]: <{{ "/references/ANSP/"| prepend: site.baseurl | prepend: site.url }}> "ANSP's"
+
+[bzip2]: https://en.wikipedia.org/wiki/Bzip2 "Wikipedia: bzip2"
+[ansp]: /reference/acronym/ansp/ "ANSP"
+[ansps]: /reference/ANSP/ "ANSP's"

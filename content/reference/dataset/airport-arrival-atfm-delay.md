@@ -76,7 +76,7 @@ airport capacity shortfalls since 2009.
 | FLT_ARR_1_DLY_15 | Network Manager | FLT_ARR_1_DLY_15                     |                      | Number of airport ATFM arrival delayed arrivals (>15 min.)                            | 0           |
 
 
-(*) The experimental [CSV files](/data/csv/) and
+(*) The experimental [CSV files](/download/) and
 [APT DLY filter and csv download <i class="fa pru fa-filter"></i> <i class="fa pru fa-flask"></i>][APTDLYcsv] use [ISO 8601][iso8601] date time format,
 i.e. `2017-01-02T00:00:00Z`
 
