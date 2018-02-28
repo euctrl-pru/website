@@ -395,3 +395,59 @@ thead {
 td, th {
   border-bottom: 1px solid #CCCCCC;
 }
+
+
+/* search box in nav */
+#search-nav .input-group {
+  width: 100%;
+  position: relative;
+  top: 6px;
+  display: table;
+  border-collapse: separate;
+}
+
+
+#search-nav .input-group .form-control {
+  position: relative;
+  z-index: 2;
+  float: left;
+  margin-bottom: 0;
+}
+
+#search-nav .input-group-btn {
+  width: auto;
+  position: relative;
+  font-size: 0;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+
+
+/* search box in 404.html */
+#search-box .input-group {
+  width: 50%;
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+
+#search-box .input-group > .form-control {
+  width: 100%;
+}
+
+#search-box .input-group .form-control {
+  position: relative;
+  z-index: 2;
+  float: left;
+  margin-bottom: 0;
+}
+
+/* for search box*/
+#search-box .input-group-btn {
+  width: auto;
+  position: relative;
+  font-size: 0;
+  white-space: nowrap;
+  vertical-align: middle;
+}

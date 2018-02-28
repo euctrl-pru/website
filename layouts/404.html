@@ -1,0 +1,20 @@
+{{ partial "header.html" . }}
+
+<main class="content" role="main">
+
+  <article class="article">
+    <h1 class="article-title">{{ .Title }}</h1>
+
+    <div class="article-content">
+        Sorry, but the page you were trying to view does not exist - try searching for it below.
+        <br><br>
+        <div id="search-box">
+            {{ partial "search-form.html" . }}
+        </div>
+        <br>
+        If this is due to an incorrect link in one of our site's pages, we would be grateful if you could notify the issue to us at:
+        <a href="mailto:PRU-Support@eurocontrol.int">Performance Review Unit (PRU-Support@eurocontrol.int)</a>
+    </div>
+  </article>
+</main>
+{{ partial "footer.html" . }}
