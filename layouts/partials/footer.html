@@ -18,7 +18,9 @@
     </div>
     {{ partial "footer_highlightjs" . }}
     {{ partial "footer_mathjax" . }}
-    {{ template "_internal/google_analytics.html" . }}
+    {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+      {{ template "_internal/google_analytics_async.html" . }}
+    {{ end }}
     {{ partial "foot_custom" . }}
     {{- range .Params.js }}
       <script src="{{ . }}" type="text/javascript"></script>
