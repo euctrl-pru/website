@@ -75,6 +75,34 @@ customCSS = ["css/pru.css"]
     parent = "about"
 
 
+[[menu.prcq_quaterly]]
+    name = "Traffic"
+    url = "/prcq/traffic/"
+    identifier= "traffic"
+    weight = 60
+[[menu.prcq_quaterly]]
+    name = "Operations En-route"
+    url = "/prcq/ops-en-route/"
+    identifier= "ops-en-route"
+    weight = 70
+[[menu.prcq_quaterly]]
+    name = "Operations Airport"
+    url = "/prcq/ops-airport/"
+    identifier= "ops-airport"
+    weight = 80
+
+[[menu.prcq_annual]]
+    name = "Safety"
+    url = "/prcq/safety/"
+    identifier= "safety"
+    weight = 60
+[[menu.prcq_annual]]
+    name = "Economics"
+    url = "/prcq/economics/"
+    identifier= "economics"
+    weight = 70
+
+
 [params]
     description = "A website built through Hugo and blogdown."
 
