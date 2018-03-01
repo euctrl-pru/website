@@ -117,8 +117,8 @@ customCSS = ["css/pru.css"]
 
     [params.logo]
     url = "pru-logo.png"
-    width = 50
-    height = 50
+    width = 54
+    height = 32
     alt = "PRU"
 
     [params.owner]

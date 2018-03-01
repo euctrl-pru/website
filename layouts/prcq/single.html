@@ -2,17 +2,22 @@
 
 <main class="content" role="main">
 
-  <article class="article cf">
+  <article class="article min-vh-100 pb7 pb0-ns">
 
     <h1 class="article-title"><img src="{{ .Params.icon }}" width="40" height="40" alt="{{ .Title }}"> {{ .Title }}</h1>
 
-
-    <div class="article-content perf-area">
-      {{ .Content }}
-    </div>
+	<div class="mw9 center ph3-ns">
+	  <div class="cf ph2-ns">
+	    <div class="article-content fl w-100 w-20-ns pa2">
+	        {{ partial "sidebar.html" .}}
+	    </div>
+	    <div class="fl w-100 w-80-ns pa2">
+	      {{ .Content }}
+	    </div>
+	  </div>
+	</div>
   </article>
 
-  {{ partial "sidebar.html" .}}
   {{ partial "disqus.html" .}}
 
 </main>
