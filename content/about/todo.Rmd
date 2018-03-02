@@ -5,26 +5,23 @@ layout: default
 
 This is what needs to be checked for full migration to Hugo:
 
-* ~~finish to port acronyms: from "n"~~
-* ~~port definitions~~
-* ~~bibliography via Rmd~~ but also check [this](https://github.com/mtbhomer/web-portfolio/blob/master/themes/mtbhomer-portfolio/layouts/research/single.html) for publication list solution. It shows as in [here](https://www.mtbhomer.com/research/)
-* pagination of posts. Keep only the last 5 or so
-* D3 logo: include the fancy logo in the template.
-* Improve `howbuilt`
+* re-add search box in nav
+* paginatilast 5 or so
+* sidebar menu navigation for PRU Quaterly, see Hugo dos in github
 * style header, fonts,...
-* custom 404 page
 * anti-spammer subscriber
-* fix links to CSV download in dataset definitions
 * fix table extent in data download page
+* fix links to XLS files in data download table
 * clean dashboard layout, i.e. google charst, pym.js,...
 * fixed nav bar
-* replace favicons with proper shortcodes
 * dataset HFE: fix Pym iframe height
 * fix "APT DLY filter and CSV download" link, http://localhost:8000/reference/dataset/airport-arrival-atfm-delay/
   in http://localhost:8000/reference/dataset/airport-arrival-atfm-delay/
 * should 'crt_ertfltsMM_15.js' be deleted?
 * pages for filtered CSV download: do we move?
 * consider using excerpt in yaml for list of studies (it gives a sort of summary of the thing)
+* D3 logo. Keep only the D3 fancy logo in the template.
+* Netlify HUGO_ENV for activating Google Analitics, see layouts/partials/footer.html
 
 
 
@@ -34,3 +31,5 @@ This is what needs to be checked for full migration to Hugo:
 * investigate use of http://tachyons.io/
 * use ggplotly for graphs
 * check htmlwidgets: http://gallery.htmlwidgets.org/ and blogdown
+* Improve `howbuilt`
+* check google tag manager, see Hugo's partial gtag.html
