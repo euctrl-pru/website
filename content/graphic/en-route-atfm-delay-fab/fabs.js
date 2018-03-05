@@ -93,7 +93,7 @@ var d3, queue, vis, params, topojson;
     var fabs = (params.fabs || "fabs.json") + (params.refresh ? ("#" + Math.random()) : "");
     var world = (params.world || "world-50m.json") + (params.refresh ? ("#" + Math.random()) : "");
     var names = (params.worldnames || "world-country-names.tsv") + (params.refresh ? ("#" + Math.random()) : "");
-    var trafficdelays = (params.trafficdelays || "monthly_ert_dly_fab_fir.csv") + (params.refresh ? ("#" + Math.random()) : "");
+    var trafficdelays = (params.trafficdelays || "monthly-ert-dly-fab-fir.csv") + (params.refresh ? ("#" + Math.random()) : "");
 
     queue()
       .defer(d3.json, fabs)
