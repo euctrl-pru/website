@@ -30,13 +30,13 @@ For more information on the the change in methodology
 
 [ATFMdelay]: /references/definition/atfm-delay/ "ATFM Delay definition"
 
-[ERT-DLY-AUAxlsx]: /data/set/ert_dly/En-Route_ATFM_Delay_AUA.xlsm "ERT-DLY (Excel)"
-[ERT-DLY-FIRxlsx]: /data/set/ert_dly/En-Route_ATFM_Delay_FIR.xlsm "ERT-DLY (Excel)"
+[ERT-DLY-AUAxlsx]: /download/xls/En-Route_ATFM_Delay_AUA.xlsm "ERT-DLY (Excel)"
+[ERT-DLY-FIRxlsx]: /download/xls/En-Route_ATFM_Delay_FIR.xlsm "ERT-DLY (Excel)"
 [ERT-DLYcsv]: /404/ "ERT-DLY (CSV)"
 [ERT-DLY-AUA-meta]: /reference/dataset/en-route-atfm-delay-aua/ "ERT-DLY (Meta)"
 [ERT-DLY-FIR-meta]: /reference/dataset/en-route-atfm-delay-fir/ "ERT-DLY (Meta)"
 
-[HFExlsx]: /data/set/hfe/Horizontal_Flight_Efficiency.xlsm "HFE (Excel)"
+[HFExlsx]: /download/xls/Horizontal_Flight_Efficiency.xlsm "HFE (Excel)"
 [HFEcsv]: /data/set/hfe/horizontal_flight_efficiency.html "HFE (CSV)"
 [HFEmeta]: /reference/dataset/horizontal-flight-efficiency/ "HFE (Meta)"
 
@@ -65,30 +65,30 @@ For more information on the the change in methodology
 [TX-OUTunimpeded]: /reference/definition/unimpeded-taxi-out-time/ "Taxi-out Unimpeded Time definition"
 [ATCpredepdelay]: /reference/definition/atc-pre-departure-delay/ "ATC Pre-departure Delay definition"
 
-[APT-FLTxlsx]: /data/set/apt_flt/Airport_Traffic.xlsm "APT-FLT (Excel)"
+[APT-FLTxlsx]: /download/xls/Airport_Traffic.xlsm "APT-FLT (Excel)"
 [APT-FLTcsv]: /404/ "APT-FLT (CSV)"
 [APT-FLTmeta]: /reference/dataset/airport-traffic/  "APT-FLT (Meta)"
 
-[APT-DLYxlsx]: /data/set/apt_dly/Airport_Arrival_ATFM_Delay.xlsm "APT-DLY (Excel)"
+[APT-DLYxlsx]: /download/xls/Airport_Arrival_ATFM_Delay.xlsm "APT-DLY (Excel)"
 [APT-DLYcsv]: /data/set/apt-dly/airport-arrival-atfm-delay/ "APT-DLY (CSV)"
 [APT-DLYmeta]: /reference/dataset/airport-arrival-atfm-delay/ "APT-DLY (Meta)"
 
-[ASMAxlsx]: /data/set/asma/ASMA_Additional_Time.xlsm "ASMA (Excel)"
+[ASMAxlsx]: /download/xls/ASMA_Additional_Time.xlsm "ASMA (Excel)"
 [ASMAcsv]: /404/ "ASMA (CSV)"
 [ASMAmeta]: /reference/dataset/asma-additional-time/ "ASMA (Meta)"
 
-[CDOxlsx]: /data/set/cdo_cco/Vertical_Flight_Efficiency_cdo_cco.xlsm "CDO/CCO (Excel)"
+[CDOxlsx]: /download/xls/Vertical_Flight_Efficiency_cdo_cco.xlsm "CDO/CCO (Excel)"
 [CDOcsv]: /404/ "CDO/CCO (CSV)"
 [CDOmeta]: /reference/dataset/continuous-climb-descent/ "CDO/CCO (Meta)"
 
-[TX-OUTxlsx]: /data/set/tx_out/Taxi-Out_Additional_Time.xlsm "TX-OUT (Excel)"
+[TX-OUTxlsx]: /download/xls/Taxi-Out_Additional_Time.xlsm "TX-OUT (Excel)"
 [TX-OUTcsv]: /404/ "TX-OUT (CSV)"
 [TX-OUTmeta]: /reference/dataset/taxi-out-additional-time/ "TX-OUT (Meta)"
 
-[ATC-PRExlsx]: /data/set/atc_pre/ATC_Pre-Departure_Delay.xlsm "ATC-PRE (Excel)"
+[ATC-PRExlsx]: /download/xls/ATC_Pre-Departure_Delay.xlsm "ATC-PRE (Excel)"
 [ATC-PREmeta]: /reference/dataset/atc-pre-departure-delay/  "ATC-PRE (Meta)"
 
-[SLT-ADHxlsx]: /data/set/slt_adh/ATFM_Slot_Adherence.xlsm "SLT-ADH (Excel)"
+[SLT-ADHxlsx]: /download/xls/ATFM_Slot_Adherence.xlsm "SLT-ADH (Excel)"
 [SLT-ADHmeta]: /reference/dataset/atfm-slot-adherence/ "SLT-ADH (Meta)"
 
 
@@ -101,8 +101,8 @@ For more information on the the change in methodology
 | Complexity (based on [BADA][CPLXbada] version 3.6) <br><small>Complexity by ANSP</small>    | {{% getdata "dwnld" "cplx_beg_3.6" %}} -  {{% getdata "dwnld" "cplx_end_3.6" %}}       | [xls {{% dwnld_i %}}][CPLXxlsx]  |     | [meta {{% info_i %}}][CPLXmeta] |
 | Complexity (based on [BADA][CPLXbada] version 3.13.1) <br><small>Complexity by ANSP</small> | {{% getdata "dwnld" "cplx_beg_3.13.1" %}} - {{% getdata "dwnld" "cplx1_end_3.13.1" %}} | [xls {{% dwnld_i %}}][CPLX1xlsx] |     | [meta {{% info_i %}}][CPLXmeta] |
 
-[CPLXxlsx]: /data/set/cplx/Traffic_Complexity_Scores_1.xlsm "CPLX (Excel)"
-[CPLX1xlsx]: /data/set/cplx/Traffic_Complexity_Scores_2.xlsm "CPLX (Excel)"
+[CPLXxlsx]: /download/xls/Traffic_Complexity_Scores_1.xlsm "CPLX (Excel)"
+[CPLX1xlsx]: /download/xls/Traffic_Complexity_Scores_2.xlsm "CPLX (Excel)"
 [CPLXcsv]: /404/ "CPLX (CSV)"
 [CPLXmeta]: /reference/dataset/traffic-complexity-score/ "CPLX (Meta)"
 [CPLXbada]: /reference/acronym/bada/ "Base of Aircraft Data"
@@ -116,7 +116,7 @@ For more information on the the change in methodology
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------|---------------------------------|-----|--------------------------------|
 | ACE operational data<br><small>Monthly ACE operational data</small>  | {{% getdata "dwnld" "ace_opt_beg" %}} - {{% getdata "dwnld" "ace_opt_end" %}}  | [xls {{% dwnld_i %}}][ACExlsx]  |     | [specs {{% info_i %}}][ACEurl] |
 
-[ACExlsx]: /data/set/ace_opt/ACE_Monthly_Operational_Data.xls "ACE (Excel)"
+[ACExlsx]: /download/xls/ACE_Monthly_Operational_Data.xls "ACE (Excel)"
 [ACEcsv]: /404/ "ACE (CSV)"
 [ACEmeta]: /reference/dataset/ace-monthly-operational-data/ "ACE (Meta)"
 [ACEurl]: http://www.eurocontrol.int/documents/economic-information-disclosure-specification "ACE specs"
