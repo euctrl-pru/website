@@ -15,7 +15,7 @@ function drawVisualization()
   var crt_apt4 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt4',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1QkDYp4HukjeemAEii5lDvil5m5aicCDLLvR35-3agpM/edit?usp=sharing&sheet=apt&range=A1:E4',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=apt&range=A1:E4',
     options:{
           height: 300,
           chartArea: {left: 40, top: 10, },
@@ -39,7 +39,7 @@ function drawVisualization()
   var crt_apt5 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt5',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1QkDYp4HukjeemAEii5lDvil5m5aicCDLLvR35-3agpM/edit?usp=sharing&sheet=apt&range=A10:F40',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=apt&range=A10:F40',
     options:{
         height: 300,
         chartArea: {left: 80, top: 10, width:'100%', height:'35%'},
@@ -62,7 +62,7 @@ function drawVisualization()
   var crt_apt6 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt6',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1QkDYp4HukjeemAEii5lDvil5m5aicCDLLvR35-3agpM/edit?usp=sharing&sheet=apt&range=H1:I4',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=apt&range=H1:I4',
     options:{
           height: 300, chartArea: {left: 40, top: 10,},
           legend: {position:'none'},
@@ -79,7 +79,7 @@ function drawVisualization()
   var crt_apt7 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt7',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1QkDYp4HukjeemAEii5lDvil5m5aicCDLLvR35-3agpM/edit?usp=sharing&sheet=apt&range=H10:J40',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=apt&range=H10:J40',
     options:{
         height: 300,
         chartArea: {left: 80, top: 10, width:'100%',height:'40%'},
@@ -97,27 +97,27 @@ function drawVisualization()
 
 
 // ATC-PRE DEPARTURE DELAYS (overview)
-  var crt_apt8 = new google.visualization.ChartWrapper({
-    chartType: 'ComboChart',
-    containerId: 'crt_apt8',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1QkDYp4HukjeemAEii5lDvil5m5aicCDLLvR35-3agpM/edit?usp=sharing&sheet=apt&range=L1:M4',
-    options:{
-          height: 300, chartArea: {left: 40, top: 10, width:'100%',height:'50%'},
-          legend: {position:'none'},
-          series: {
-                0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0}
-              },
-          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}},
-          vAxis: {title: 'minutes per departure', format: '0.0', minValue: 0.0, titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
-        },
-    view: {'columns': [0,1]}
-  }); crt_apt8.draw();
+//   var crt_apt8 = new google.visualization.ChartWrapper({
+//     chartType: 'ComboChart',
+//     containerId: 'crt_apt8',
+//     dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=apt&range=L1:M4',
+//     options:{
+//           height: 300, chartArea: {left: 40, top: 10, width:'100%',height:'50%'},
+ //          legend: {position:'none'},
+ //          series: {
+//                 0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0}
+   //            },
+  //         hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}},
+   //        vAxis: {title: 'minutes per departure', format: '0.0', minValue: 0.0, titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
+   //      },
+ //    view: {'columns': [0,1]}
+ //  }); crt_apt8.draw();
 
 // ATC-PRE DEPARTURE DELAYS (T30)
   var crt_apt9 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt9',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1QkDYp4HukjeemAEii5lDvil5m5aicCDLLvR35-3agpM/edit?usp=sharing&sheet=apt&range=L10:N40',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=apt&range=L10:N40',
     options:{
         height: 300,
         chartArea: {left: 80, top: 10, width:'100%',height:'40%'},
@@ -138,7 +138,7 @@ function drawVisualization()
   var crt_apt10 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt10',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1QkDYp4HukjeemAEii5lDvil5m5aicCDLLvR35-3agpM/edit?usp=sharing&sheet=apt&range=P1:Q4',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=apt&range=P1:Q4',
     options:{
           height: 300, chartArea: {left: 40, top: 10, width:'100%',height:'50%'},
           legend: {position:'none'},
@@ -156,7 +156,7 @@ function drawVisualization()
   var crt_apt11 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt11',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1QkDYp4HukjeemAEii5lDvil5m5aicCDLLvR35-3agpM/edit?usp=sharing&sheet=apt&range=P10:R40',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=apt&range=P10:R40',
     options:{
         height: 300,
         chartArea: {left: 80, top: 10, width:'100%',height:'40%'},
@@ -193,10 +193,10 @@ google.setOnLoadCallback(drawVisualization)
    </thead>
    <tbody>
       <tr class = "active">
-         <td>Jan-Sep (YTD)</td>
+         <td>Jan-Dec</td>
          <td><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL area</a></td>
          <td>Quarterly</td>
-         <td>18-Oct-2017</td>
+         <td>15-Mar-2018</td>
           <td>
           <a href='{{"/references/acronym/nm-cfmu.html"| prepend: site.baseurl | prepend: site.url }}'>NM</a>,
           <a href='{{"/references/acronym/pru.html"   | prepend: site.baseurl | prepend: site.url }}'>PRU</a>,
@@ -212,30 +212,24 @@ This section analyses ANS-related inefficiencies on the arrival flow at the top 
 </div>
 
 <h4 class="page-header">Airport arrival <a href='{{"/references/definition/atfm_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATFM delays</a> (min per arrival)</h4>
-<table class = "table">
-   <tbody>
-      <tr class = "active">
-         <td><span style="color: rgb(192, 80, 77);">
-         Please note that software release 20.0 of the Network Manager on 04 April 2016 introduced a change to improve the accuracy of the ATFM delay calculation for operational purposes. For more information on the change in methodology <a href='{{"/references/methodology/ATFM_delay_calculation.html"| prepend: site.baseurl | prepend: site.url }}'>click here</a>.
-         </span> </td>
-      </tr>
-   </tbody>
-</table>
+
 <div class="row ">
 <div class="col-sm-2">
     <h5>Top 30 airports</h5>
     <div id="crt_apt4"></div>
 </div>
 <div class="col-sm-10">
-    <h5>Airport arrival ATFM delay by airport (Jan-Sep 2017 vs. Jan-Sep 2016)</h5>
+    <h5>Airport arrival ATFM delay by airport (2017 vs. 2016)</h5>
     <div id="crt_apt5"></div>
 </div>
   </div><br>
 
     <div class="panel panel-info">
           <div class="panel-heading">
-            Average airport arrival ATFM delay at the top 30 airports between January and September 2017 was just below the level in 2016. In the first nine months of 2017 there was a notable increase in weather related airport arrival ATFM delay which offset the decrease in capacity related ATFM delay.<br>
-            Amsterdam and London Gatwick airport showed the highest increase in airport arrival ATFM delay and the two Istanbul airports and Paris Orly showed the most notable reduction of average airport arrival ATFM delays in the first nine months of 2017.
+            Average airport ATFM delays at the top 30 European airports decreased from 1.36 to 1.25 minutes per arrival in 2017. Although from a very high level 
+            (11 min per arrival in 2016), the most notable improvement in 2017 was observed for Istanbul Sabiha Gökçen Airport (SAW) where ATFM arrival delay 
+            reduced by 5.5 minutes on average. <br> 
+            Compared to 2016, the average delay per arrival increased notably at Amsterdam (AMS), London (LGW), and Lisbon (LIS). Due to its high traffic volume and the further increase in 2017, Amsterdam (AMS) had the highest impact on the network. Almost half of the total airport arrival ATFM delay in the EUROCONTROL area was generated by five airports: Amsterdam (13.8%), Istanbul Sabiha Gökçen (11.2%), Istanbul Atatürk (8.3%), London Heathrow (6.9%), and London Gatwick (5.3%).
           </div>
     </div>
 
@@ -246,10 +240,17 @@ This section analyses ANS-related inefficiencies on the arrival flow at the top 
     <div id="crt_apt6"></div>
 </div>
 <div class="col-sm-10">
-    <h5><a href='{{"/references/definition/additional_asma_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional ASMA time by airport</a> Jan-Aug 2017</h5>
+    <h5><a href='{{"/references/definition/additional_asma_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional ASMA time by airport</a> 2017</h5>
     <div id="crt_apt7"></div>
 </div>
   </div><br>
+   
+    <div class="panel panel-info">
+          <div class="panel-heading">
+            Overall, the average additional ASMA time increased slightly in 2017.<br> 
+            As was the case in previous years, London Heathrow (LHR) stands out with an average additional ASMA time of more than 8 minutes per arrival and accounted for one quarter of the total additional ASMA time at the top 30 airports in 2017. LHR’s performance results from decisions made during the airport slot allocation process, and agreed with airspace users, to ensure constant demand in order to maximise the use of scarce runway capacity.   
+          </div>
+    </div>
 
 <h3 class="sub-header">Departure flow management</h3>
 <div>
@@ -259,14 +260,18 @@ This section analyses ANS-related inefficiencies on the departure flow at the to
 <div class="row ">
 <div class="col-sm-2">
     <h5>Top 30 airports</h5>
-    <div id="crt_apt8"></div>
+    <div>no consistent time series available</div>
 </div>
 <div class="col-sm-10">
-    <h5><a href='{{"/references/definition/atc_pre-departure_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATC pre-departure delays by airport</a> Jan-Aug 2017</h5>
+    <h5><a href='{{"/references/definition/atc_pre-departure_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATC pre-departure delays by airport</a> 2017</h5>
     <div id="crt_apt9"></div>
 </div>
   </div><br>
-
+      <div class="panel panel-info">
+          <div class="panel-heading">
+           Different from previous years, the data analysed is based on data directly provided by airport operators. Unlike CODA  data, the Airport Operator Data Flow covers all departures from airports and is therefore also used for the analysis of additional taxi out and ASMA times. As highlighted in PRR 2016, while the data flow has a better coverage, some data quality issues do exist.
+      </div>
+    </div>
 
 <h4 class="page-header"><a href='{{"/references/definition/additional_taxi-out_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional taxi-out time</a></h4>
 <div class="row placeholders">
@@ -275,7 +280,12 @@ This section analyses ANS-related inefficiencies on the departure flow at the to
     <div id="crt_apt10"></div>
 </div>
 <div class="col-sm-10">
-    <h5><a href='{{"/references/definition/additional_taxi-out_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional taxi-out by airport</a> Jan-Aug 2017</h5>
+    <h5><a href='{{"/references/definition/additional_taxi-out_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional taxi-out by airport</a> 2017</h5>
     <div id="crt_apt11"></div>
 </div>
   </div><br>
+      <div class="panel panel-info">
+          <div class="panel-heading">
+          The average additional taxi-out time decreased slightly at the top 30 airports in 2017 from 3.9 minutes to 3.8 minutes per departure (excluding the two Istanbul airports for which no data was available). <br> 
+          In 2017, the highest levels of average additional taxi-out times were observed at London (LHR), London (LGW), Rome (FCO), Barcelona (BCN) and Dublin (DUB). At the same time, notable improvements were observed at Paris (CDG), Madrid (MAD), Copenhagen (CPH), Rome (FCO) and Lisbon (LIS). 
+    </div>

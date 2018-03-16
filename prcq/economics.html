@@ -11,12 +11,11 @@ google.load('visualization', '1', { packages: ['corechart', 'controls'] });
 function drawVisualization()
  {
 
-
 // ERT A
   var crt_eco1 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_eco1',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1QkDYp4HukjeemAEii5lDvil5m5aicCDLLvR35-3agpM/edit?usp=sharing&sheet=eco&range=I1:M7',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=eco&range=I1:M7',
     options:{
         chartArea: {left: 80, top: 10, width:'70%',height:'80%'},
           titleTextStyle : {color: 'grey', fontSize: 12},
@@ -43,7 +42,7 @@ function drawVisualization()
  var crt_eco2 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_eco2',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1QkDYp4HukjeemAEii5lDvil5m5aicCDLLvR35-3agpM/edit?usp=sharing&sheet=eco&range=A1:F6',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=eco&range=A1:F6',
     options: {
         chartArea: {left: 60, top: 10, width:'60%',height:'80%'},
         titleTextStyle : {color: '#1F1F2E', fontSize: 12},
@@ -66,7 +65,7 @@ function drawVisualization()
   var crt_eco3 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_eco3',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1QkDYp4HukjeemAEii5lDvil5m5aicCDLLvR35-3agpM/edit?usp=sharing&sheet=eco&range=A11:H49',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=eco&range=A11:H49',
     options:{
         height: 380,
         chartArea: {left: 80, top: 30, width:'80%',height:'50%'},
@@ -115,7 +114,7 @@ google.setOnLoadCallback(drawVisualization)
          <td>Jan-Dec</td>
          <td><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL area</a></td>
          <td>Annually</td>
-         <td>18-Oct-2017</td>
+         <td>15-Mar-2018</td>
           <td>
           <a href="http://www.eurocontrol.int/documents/economic-information-disclosure-specification" target="_blank">ANSPs submissions</a>
           </td>
@@ -136,25 +135,23 @@ google.setOnLoadCallback(drawVisualization)
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    Between 2010 and 2014, economic costs per composite flight-hour decreased by -5.4% p.a. in real terms, mainly due to substantial decreases in ATFM delays unit costs (-23.4% p.a.). Over this period, ATM/CNS provision costs remained close to their 2010 level (-0.1% p.a.) while the number of composite flight-hours slightly increased (+1.0% p.a.).
-    <br><br>
-    In 2015, composite flight-hours rose faster (+1.7%) than ATM/CNS provision costs (+0.5%) and as a result unit ATM/CNS provision costs reduced by -1.2%. However, since the unit costs of ATFM delays increased by +38.8%, unit economic costs rose by +3.2% compared to 2014. This is the first increase in unit economic costs since 2010.
-    <br><br>
-    In 2015, the economic cost-effectiveness indicator at Pan-European level in 2015 amounts to €501 per composite flight-hour, and, on average, ATFM delays represent 15% of the total economic costs.
+    The analysis shows the trend of the unit economic costs between 2011 and 2016 at Pan-European level  for a consistent sample of 37 ANSPs for which data for a time-series analysis was available. The left-hand side shows the changes in unit economic costs, while the right-hand side provides complementary information on the year-on-year changes in ATM/CNS provision costs, composite flight-hours and unit costs of ATFM delays.
+    The unit costs of gate-to-gate ATFM delays rose by +20.2% in 2016 (based on the old computation method) and unit economic costs were +0.8% higher than in 2015.<br>
+    At Pan-European level, the economic cost-effectiveness indicator amounted to €488 per composite flight-hour in 2016, and, on average, ATFM delays represent 16% of the total economic costs.  
   </div>
 </div>
 
 <div class="row placeholders">
 <div class="col-sm-12 placeholder">
-    <h4><a href='{{"/references/definition/eco_cost_eff.html"| prepend: site.baseurl | prepend: site.url }}'>Economic gate-to-gate cost effectiveness (2015)</a></h4>
+    <h4><a href='{{"/references/definition/eco_cost_eff.html"| prepend: site.baseurl | prepend: site.url }}'>Economic gate-to-gate cost effectiveness (2016)</a></h4>
     <div id="crt_eco3"></div>
 </div>
 </div>
 
 <div class="panel panel-info">
   <div class="panel-heading">
-In 2015 unit economic costs ranged from €870 for Skyguide to €191 for MATS; a factor of more than four.
-<br><br>
-It is important to note that, for ANSPs operating outside of the Euro zone (such as Skyguide), substantial changes of the national currency against the Euro may significantly affect the level of 2015 unit economic costs when expressed in Euro. More information on exchange rates variations and their impact on unit costs is provided in the  <a href='{{"/references/acronym/ace.html"| prepend: site.baseurl | prepend: site.url }}'>ACE Benchmarking Reports</a>.
+In 2016 unit economic costs ranged from €924 for Belgocontrol to €209 for MATS; a factor of more than four.
+<br>
+ More information on exchange rates variations and their impact on unit costs is provided in the  <a href='{{"/references/acronym/ace.html"| prepend: site.baseurl | prepend: site.url }}'>ACE Benchmarking Reports</a>.
   </div>
 </div>

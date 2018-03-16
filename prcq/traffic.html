@@ -12,11 +12,14 @@ google.load('visualization', '1', { packages: ['corechart', 'controls'] });
 function drawVisualization()
  {
 
+
+https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing
+
 // TRAFFIC - ERT FLTS - YY - CHART
  var crt_ertfltsYY = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_ertfltsYY',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1QkDYp4HukjeemAEii5lDvil5m5aicCDLLvR35-3agpM/edit?usp=sharing&sheet=flts&range=A1:E11',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=flts&range=A1:E11',
     options: {
         //width: 500, height: 200,
         //chartArea: {left: 80, top: 30, width:'60%',height:'65%'},
@@ -40,7 +43,7 @@ function drawVisualization()
  var crt_ertsuYY = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_ertsuYY',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1QkDYp4HukjeemAEii5lDvil5m5aicCDLLvR35-3agpM/edit?usp=sharing&sheet=flts&range=A1:E11',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=flts&range=A1:E11',
     options: {
         //width: 500, height: 200,
         //chartArea: {left: 80, top: 30, width:'60%',height:'65%'},
@@ -63,7 +66,7 @@ function drawVisualization()
   var crt_flttypeYY = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_flttypeYY',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1QkDYp4HukjeemAEii5lDvil5m5aicCDLLvR35-3agpM/edit?usp=sharing&sheet=flts&range=G1:J5&hl=en_GB',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=flts&range=G1:J5&hl=en_GB',
     options:{
           //width: 450, height: 150,
           chartArea: {left: 60, top: 10, width:'80%',height:'60%'},
@@ -74,7 +77,7 @@ function drawVisualization()
               titleTextStyle : {color: '#5D7CBA', fontSize: 12},
               textStyle:{color: '#5D7CBA'}}
         },
-    view: {'columns': [0,3], rows: [0,1,2]}
+    view: {'columns': [0,3], rows: [1,2,3]}
   }); crt_flttypeYY.draw();
 
 
@@ -82,7 +85,7 @@ function drawVisualization()
   var crt_segYY = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_segYY',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1QkDYp4HukjeemAEii5lDvil5m5aicCDLLvR35-3agpM/edit?usp=sharing&sheet=flts&range=L1:O7&hl=en_GB',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=flts&range=L1:O7&hl=en_GB',
     options:{
          // width: 450, height: 150,
           chartArea: {left: 60, top: 10, width:'80%',height:'60%'},
@@ -93,7 +96,7 @@ function drawVisualization()
               titleTextStyle : {color: '#5D7CBA', fontSize: 12},
               textStyle:{color: '#5D7CBA'}}
         },
-    view: {'columns': [0,3], rows: [0,1,2,3,4,5]}
+    view: {'columns': [0,3], rows: [1,2,3,4,5,6]}
   }); crt_segYY.draw();
 
 
@@ -101,7 +104,7 @@ function drawVisualization()
  var crt_anspfltsYY = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_anspfltsYY',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1QkDYp4HukjeemAEii5lDvil5m5aicCDLLvR35-3agpM/edit?usp=sharing&sheet=flts&range=Q1:T40',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=flts&range=Q1:T42',
     options: {
         height: 350,
         chartArea: {left: 70, top: 10, width:'85%',height:'45%'},
@@ -117,7 +120,7 @@ function drawVisualization()
                 titleTextStyle : {color: '#C0504D', fontSize: 11}, textStyle:{color:'#C0504D'}}
             },
         hAxis: {
-          title: 'ANSPs sorted by change in absolute flights (Jan-Sep-2017)',
+          title: 'ANSPs sorted by change in absolute flights (2017)',
           titleTextStyle: {color: 'grey', fontSize: 10},
           textStyle: {color: 'grey', fontSize: 11},
           slantedText: true,
@@ -132,7 +135,7 @@ function drawVisualization()
  var crt_apt3 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt3',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1QkDYp4HukjeemAEii5lDvil5m5aicCDLLvR35-3agpM/edit?usp=sharing&sheet=flts&range=V1:Y31',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=flts&range=V1:Y31',
     options: {
         height: 350,
         chartArea: {left: 70, top: 10, width:'85%',height:'45%'},
@@ -149,7 +152,7 @@ function drawVisualization()
             },
             hAxis: {
               slantedTextAngle: 90,
-              title: 'Airports sorted by movements (Jan-Sep-2017)',
+              title: 'Airports sorted by movements (2017)',
               titleTextStyle: {color: 'grey', fontSize: 10},
               textStyle: {color: 'grey', fontSize: 11}}
         },
@@ -175,10 +178,10 @@ google.setOnLoadCallback(drawVisualization)
    </thead>
    <tbody>
       <tr class = "active">
-         <td>Jan-Sep</td>
-         <td><a href={{"/references/definition/ESRA_08_Area.html"| prepend: site.baseurl | prepend: site.url }}>ESRA08 area</a></td>
+         <td>Jan-Dec</td>
+         <td><a href={{"/references/definition/ESRA_08_Area.html"| prepend: site.baseurl | prepend: site.url }}>ECAC area</a></td>
          <td>Quarterly</td>
-         <td>18-Oct-2017</td>
+         <td>15-Mar-2018</td>
          <td>
           <a href="{{ '/references/acronym/nm-cfmu.html' | prepend: site.baseurl | prepend: site.url }}">NM</a>,
           <a href="{{ '/references/acronym/crco.html'    | prepend: site.baseurl | prepend: site.url }}">CRCO</a>,
@@ -191,7 +194,7 @@ google.setOnLoadCallback(drawVisualization)
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
     <h4>Average daily controlled flights</h4>
-    <span class="text-muted"><a href={{"/references/definition/ESRA_2008_Area.html"| prepend: site.baseurl | prepend: site.url }}>ESRA08 area</a></span>
+    <span class="text-muted"><a href={{"/references/definition/ecac_area.html"| prepend: site.baseurl | prepend: site.url }}>ECAC area</a></span>
     <div id="crt_ertfltsYY"></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
@@ -204,58 +207,68 @@ google.setOnLoadCallback(drawVisualization)
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
-At system level <a href={{"/references/definition/ESRA_2008_Area.html"| prepend: site.baseurl | prepend: site.url }}>(ESRA08)</a>, traffic increased by 4.3% in the first nine months in 2017 compared to the same period in 2016 which corresponds to 1199 additional flights per day, on average.
+In 2017, the number of flights in the <a href={{"/references/definition/ecac_area.html"| prepend: site.baseurl | prepend: site.url }}>(ECAC)</a> area 
+increased by 4.3% (2.5% in 2016) which corresponds to an additional 1,191 flights per day on average. The observed traffic growth corresponds to the high 
+forecast scenario of +4.3% predicted by STATFOR for 2017 in the 7-year forecast (Feb. 2017). 
+
 </div></div></div>
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
-At the same time, average daily en-route service units (SU) grew at a higher rate than flights between January and September 2017 (+6.6%) compared to the same period in 2016.
+As in previous years, average daily en-route service units (+6.5% vs 2016) grew at a higher rate than flights in 2017.
 </div></div></div>
 </div>
 
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
     <h4>Change by flight type</h4>
-    <span class="text-muted">Jan-Sep 2017 vs. Jan-Sep 2016</span>
+    <span class="text-muted">2017 vs. 2016</span>
     <div id="crt_flttypeYY"></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
     <h4>Change by traffic segment</h4>
-    <span class="text-muted">Jan-Sep 2017 vs. Jan-Sep 2016</span>
+    <span class="text-muted">2017 vs. 2016</span>
     <div id="crt_segYY"></div>
 </div>
 </div>
 
 <div class="panel panel-info"><div class="panel-heading">
-        Pan-European traffic and the traffic from and to Europe showed substantial growth in the first nine months of 2017. The main driver of the observed traffic growth remained the low cost traffic segment, followed by traditional scheduled traffic.
+        Pan-European traffic and the traffic from and to Europe showed substantial growth in 2017. The main driver of the observed traffic growth remained the low cost traffic segment, followed by traditional scheduled traffic.
 </div></div>
 
 
 <div class="row placeholders">
 <div class="col-sm-12 placeholder">
     <h4>Traffic variation by <a href={{"/references/acronym/ansp.html"| prepend: site.baseurl | prepend: site.url }}>ANSP</a></h4>
-    <span class="text-muted">Jan-Sep 2017 vs. Jan-Sep 2016</span>
+    <span class="text-muted">2017 vs. 2016</span>
     <div id="crt_anspfltsYY"></div>
 </div>
 </div><br><br>
 
     <div class="panel panel-info">
       <div class="panel-heading">
-       All ANSPs but Avinor (Norway) showed a traffic increase in the first nine months of 2017, compared to the same period in 2016.
+       All ANSPs but Avinor (Norway) showed an increase in traffic compared to 2016.
+       In absolute terms, DSNA (France), ENAIRE (Spain), DFS (Germany) and NATS (UK) showed the highest year on year growth in 2017.
       </div>
     </div>
 
 <div class="row placeholders">
 <div class="col-sm-12 ">
     <h4>Traffic variation at the top 30 airports in terms of traffic</h4>
-    <span class="text-muted">Jan-Sep 2017 vs. Jan-Sep 2016</span>
+    <span class="text-muted">2017 vs. 2016</span>
     <div id="crt_apt3"></div>
 </div>
   </div>
 
     <div class="panel panel-info">
           <div class="panel-heading">
-      Amsterdam airport remained the airport with the highest number of commercial movements in the first nine months in 2017. <br>
-      The two Istanbul airports and Rome Fiumicino showed the highest decrease in traffic between January and September 2017. <br>
-      The highest growth was observed at Lisbon, Warsaw, Manchester and Milan Malpensa. 
+    Amsterdam continued its growth also in 2017 (+3.9% vs. 2016) and remained the airport with the highest number of commercial movements in the EUROCONTROL area.<br>
+
+    Seven of the top 30 airports showed a decrease in traffic in 2017: Berlin (TXL), Rome (FCO), Istanbul (SAW), Copenhagen (CPH), Paris (ORY), and Vienna (VIE). 
+    The collapse of Monarch Airlines and Air Berlin in October 2017 had an impact on a number of airports, most notably on the operations at Berlin Tegel (TXL) 
+    airport which reported a 6.3% reduction of traffic in 2017. As a result of the Alitalia crisis, traffic numbers at Rome (FCO) airport also dropped notably 
+    by 5.0% in 2017. <br>
+    The highest growth compared to 2016 was observed at Lisbon (LIS) and Warsaw (WAW) airports which both grew by more than 10% compared to 2016. Milan (MXP), 
+    Brussels (BRU), Stockholm (ARN), Palma (PMI), Barcelona (BCN), London (STN), and Helsinki (HEL) reported all a substantial traffic growth of more than 5% 
+    compared to 2016. 
           </div>
     </div>
