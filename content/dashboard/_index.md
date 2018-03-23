@@ -1,6 +1,9 @@
 ---
 title: Dashboard - Performance Areas
 ---
+aliases:
+    - /graphic/
+---
 
 * [Safety](/dashboard/perf-area/safety/)
 * [Traffic](/dashboard/perf-area/traffic/)

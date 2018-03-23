@@ -3,7 +3,7 @@ title: "Welcome to the European ANS Performance Data Portal"
 date: 2018-02-07T11:26:51+01:00
 ---
 
-The [Performance Review Unit (PRU)](/about/) has developed 
+The [Performance Review Unit (PRU)](/about/us/) has developed 
 an online ANS performance data portal covering all 41 EUROCONTROL Member States:
 
 * to ensure that interested stakeholders in all Member States have relevant high quality information
