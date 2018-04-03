@@ -1,5 +1,6 @@
 ---
-title: "Overview - January-September 2017"
+layout: prcq
+title: "Executive Summary - draft Performance Review Report 2017"
 ---
 <style>
 .headimg {
@@ -12,31 +13,53 @@ title: "Overview - January-September 2017"
 </style>
 
 
+PRR 2017 presents an assessment of the performance of
+[Air Navigation Services (ANS)][ans] in the [EUROCONTROL area][ectl_area] for
+the calendar year 2017.The actual financial data relate to 2016, which is the
+latest year for which actual financial data are available.
 
 
 ## <img src="/images/prcq-traffic.png" width="40" height="40" alt="Traffic"> [Traffic][traffic]
 
-In the first nine months of 2017, air traffic in the EUROCONTROL area [(ESRA08)][esra08] grew on average by 4.3%
-which corresponds to 1199 additional flights per day. At the same time, average daily en-route service units (SU)
-grew by 6.6% between January and September 2017, compared to the same period in 2016.
+In 2017, air traffic in the EUROCONTROL area continued to increase for the fourth year taking the number of flights 
+past the previously highest level in 2008. 
+On average, the number of controlled flights in 2017 increased by 4.3% compared to 2016 which corresponds to the 
+high forecast scenario predicted by STATFOR in the February 2017 forecast. As in previous years, controlled flight hours, 
+en-route service units and passenger numbers grew at a higher rate than flights.
 
-Pan-European traffic and the traffic from and to Europe showed substantial growth in the first nine months of 2017.
-The main driver of the observed traffic growth remained the low cost traffic segment, followed by traditional scheduled traffic.
+As a consequence, peak traffic load continued to rise in 2017 and reached the highest level of traffic on record on 
+June 30th when 35,251 flights were served in the EUROCONTROL area. The peak day was 23.8% higher than an average day. 
 
-With the exception of Avinor (Norway), all [Air Navigation Service Providers (ANSPs)][ansp]  reported a
-traffic increase in the first nine months of 2017. In absolute terms, DSNA (France), ENAIRE (Spain), DFS (Germany),
-NATS (UK), and Maastricht Upper Area Control Centre (MUAC) reported the highest traffic growth between January and September 2017.
+Of the 41 [Air Navigation Service Providers (ANSPs)][ansp] included in the analysis, all but Avinor (Norway) showed an 
+increase in traffic compared to 2016. In absolute terms, DSNA (France), ENAIRE (Spain), DFS (Germany) and NATS (UK) 
+showed the highest year on year growth in 2017. 
 
+For 2018, the latest STATFOR forecast (Feb. 2018) predicts a growth of 3.1% at system level and an average annual growth 
+rate of 2.3% between 2016 and 2024.
+
+The continued notable traffic growth contributed to a further decrease in overall service quality. The share of flights 
+arriving within 15 minutes of their scheduled time decreased by 0.9 percent points to 79.6% in 2017. At the same time, 
+the average departure delay increased by 1 minute from 11.2 minutes per departure in 2016 to 12.2 minutes in 2017.
 
 
 
 ## <img src="/images/prcq-safety.png" width="40" height="40" alt="Safety"> [Safety][safety]
 
-The safety data is only available in April/May each year.
+Safety is the primary objective of ANS and overall safety levels in the [EUROCONTROL area][ectl_area] remain high. There were
+two reported air traffic accident with direct ANS contribution in 2016 which is the latest year for which validated data are available.
 
-The latest overview on accidents and ATM-related incidents is available [online][safety].
+In 2016, [(Separation minima infringements (SMIs)][smi] and [Runway incursions (RIs)][ri] increased while at the same time
+[Unauthorised Penetrations of Airspace (UPAs)][upa] and ATM Specific Occurrences decreased. 
 
-For a more detailed review of ANS safety performance in the EUROCONTROL area please see also Chapter 2 of [Performance Review Report 2016] [prr2016].
+The quality and completeness of safety data reported to EUROCONTROL increased over the past years but with scope for further improvement,
+particularly in terms of severity classification.
+
+The PRC review of the implementation status of the [Acceptable Level of Safety Performance (ALoSP)][alosp] concept in EUROCONTROL Member
+States suggested that there is a need for common definitions and guidance material in order to ensure a harmonised approach in
+the [EUROCONTROL area][ectl_area].
+
+In 2017 the PRC met EASA representatives in order to present and discuss the findings of the PRC’s ALoSP survey and associated potential future actions. 
+The meeting identified potential actions and measures to be taken. EASA and the PRC agreed to further explore working concepts and how to implement further steps.
 
 
 
@@ -45,31 +68,76 @@ For a more detailed review of ANS safety performance in the EUROCONTROL area ple
 
 ## <img src="/images/prcq-operations-enroute.png" width="40" height="40" alt="Operations En-route"> [Operations En-route][ops_ert]
 
-In the first nine months of 2017, total en-route ATFM delays in the EUROCONTROL area decreased by 3.8% compared to the same period in 2016. At the same time, the number of flights increased by +4.3%, resulting in an average en-route ATFM delay of 1.0 minutes per flight which is the same level as in the first nine months of 2016.
+Following the trend over the past three years, total en-route [ATFM delays][ATFM_dly] in 2017 continued to increase at a higher rate 
+(+7.1% vs. 2016) than flights (+4.3% vs. 2016). At the same time, the share of flights delayed by en-route ATFM regulations in the 
+[EUROCONTROL area][ectl_area] increased from 4.8% to 5.3%. 
 
-Although average en-route ATFM delay stayed at a similar level, there was a notable change in the underlying delay reasons. Whereas capacity/staffing and weather related delays increased further in the first nine months of 2017, there was a notable reduction in ATC disruption/industrial actions and events (ATC system upgrades) linked to performance improvements in France.
+ATC Capacity/Staffing attributed issues remained by far the main portion of en-route [ATFM delays][ATFM_dly] (59.9%), followed by weather 
+attributed delays (23.2%) and ATC disruptions/ industrial actions (9.9%). The trend analysis shows a continuous increase in ATC Capacity/ Staffing 
+and Weather-attributed delays over the past four years which gives reason for concern. It confirms the PRC concerns, raised on several occasions 
+that ATFM delays could increase notably when traffic grows again if insufficient focus is put on capacity planning and deployment.
 
-Overall, 90.8% of the controlled flights in the EUROCONTROL area were not affected by ATFM delays between January and September 2017.
-Compared to 2016, the share of flights affected by en-route ATFM delays increased by 0.6 percent points to 6.1%. At the same time, the share of flights affected by <a href='{{"/prcq/ops-airport.html"| prepend: site.baseurl | prepend: site.url }}'>airport ATFM delays</a> stayed at the same level as in 2016 (3.2%).
+The analysis showed that the constraints were mainly concentrated in the European core area where traffic density is highest. In 2017, 82% of all 
+en-route [ATFM delay][ATFM_dly] in the EUROCONTROL area was generated by only five [ANSPs][ansp]: DSNA (33.4%), DFS (23.1%), Maastricht (13.3%), 
+ENAIRE (7.9%), and DCAC Cyprus (4.3%). 
 
-In the first nine months of 2017, average en-route delay per flight was highest in Cyprus (mainly staffing and capacity related), followed by DSNA/France (capacity, strike and weather related) and Maastricht Upper Area Control Centre/MUAC (capacity and weather related).
+The most constraining [Area Control Centres (ACCs)][acc] in 2017 were Karlsruhe UAC, Maastricht UAC, Marseille, Brest, Bordeaux, Nicosia and 
+Barcelon, which together accounted for almost 70% of all en-route ATFM delay in the [EUROCONTROL area][ectl_area].
 
-Despite the continued increase in traffic in 2017, horizontal flight efficiency improved compared to the same period last year. The efficiency of actual flight trajectories increased from 97.1% in 2016 to 97.3% in 2017.
+The most penalising ATFM en-route regulations were analysed further in terms of delay attributed to elementary sectors and delays attributed 
+to collapsed sectors which - by being collapsed - were already limiting the available capacity for airspace users. Irrespective of the delay 
+causes (capacity/staffing or weather), the results showed a surprisingly high share of ATFM delay (in some cases above 90%) originating from 
+collapsed sectors.
 
+Despite the further notable increase in traffic in 2017, [Horizontal en-route flight efficiency][hfe] in filed flight plans increased from 
+95.4% in 2016 to 95.6% in 2017 at EUROCONTROL level. At the same time, the efficiency of actual trajectories increased from 97.1% to 97.3% in 2017.
 
+PRR 2016 underlined the benefits of the implementation of [Free Route Airspace (FRA)][fra] which offers a more flexible environment and 
+more choices to airspace users whilst contributing to reduced fuel consumption and emissions and higher flight efficiency. FRA is now in place 
+in a large part of EUROCONTROL airspace. It is not yet implemented in the dense European core area where even small improvements are expected to 
+bring notable benefits. In addition to the implementation of FRA in a given airspace, ANSPs should also work actively with the [Network Manager][nm] 
+and the Deployment Manager to deliver FRA across the entire EUROCONTROL area, including necessary cross-border implementation. 
 
+Complementary to horizontal flight efficiency, the analysis of vertical en-route flight efficiency showed that the highest level of vertical 
+inefficiencies originated from flights on high-density airport pairs in the European core area which were unable to enter the two Upper Area 
+Control Centres Maastricht and Karlsruhe.
 
-
+The Flexible Use of Airspace concept and closer civil-military cooperation and coordination are an important enabler to improve capacity and 
+flight efficiency performance. Future technologies such as “Unmanned Aircraft System (UAS), are also expected to have an impact on airspace 
+management and would therefore also benefit from the further improvement of identified shortcomings in the application of the FUA concept 
+highlighted in the PRC survey conducted in 2016.
 
 
 ##  <img src="/images/prcq-operations-airport.png" width="40" height="40" alt="Operations at Airports"> [Operations Airport][ops_apt]
 
-Amsterdam airport remained the airport with the highest number of commercial movements in the first nine months in 2017. <br>
-The two Istanbul airports and Rome Fiumicino showed the highest decrease in traffic between January and September 2017. <br>
-The highest growth was observed at Lisbon, Warsaw, Manchester and Milan Malpensa. <br>
+The analysis of the top 30 European airports in terms of traffic showed an average increase in traffic of 2.2% in 2017. Amsterdam (AMS) remained 
+the airport with the most commercial movements in Europe with a reported 4.5% increase in traffic over 2016. Of the top 30 airports, Lisbon (LIS) 
+and Warsaw (WAW) reported the highest growth (> 11% vs 2016) while Berlin Tegel (-6.3%) and Rome Fiumicino (-5%) showed the most significant reduction in traffic. 
 
-Average airport arrival ATFM delay at the top 30 airports between January and September 2017 was just below the level in 2016. In the first nine months of 2017 there was a notable increase in weather related airport arrival ATFM delay which offset the decrease in capacity related ATFM delay.<br>
-Amsterdam and London Gatwick airport showed the highest increase in airport arrival ATFM delay and the two Istanbul airports and Paris Orly showed the most notable reduction of average airport arrival ATFM delays in the first nine months of 2017.
+The analysis of the hourly arrival throughputs showed again the high saturation level at London Heathrow but also that Istanbul Atatürk and 
+Istanbul Sabiha Gökçen consistently operate close to the peak declared arrival capacity during most of the day.  
+
+Notwithstanding the further increase in traffic, average airport [ATFM delay][ATFM_dly] at the top 30 European airports decreased from 1.36 to 1.25 minutes per arrival. 
+The increase in weather-attributed airport arrival ATFM delays in 2017 offset to some extent the decrease in capacity-attributed airport ATFM delays. 
+Overall, 52.2% of all airport arrival ATFM delay in 2017 was weather-attributed, followed by capacity/staffing attributed issues with 40%. 
+
+Despite a substantial improvement, the two Istanbul airports still accounted for 32% of all capacity attributed airport arrival ATFM delays in 2017, 
+following the high delays over the previous years. The new Istanbul airport which is presently being built will gradually replace Istanbul Atatürk airport 
+and is expected to ease the capacity situation in Istanbul once it is operational.  
+
+Although not among the top 30 airports, it is noteworthy that some regional Greek airports still have a significant impact on the network. Seven regional 
+Greek airports accounted for morethan 12% of the total airport arrival delays between June and August 2017. 
+
+[Additional holding (ASMA) time][asma_add] increased slightly in 2017 to 2.19 minutes per arrival at the top 30 airports and remained above 8 minutes per arrival 
+at London Heathrow airport which accounted for one quarter of the total ASMA additional time at the top 30 airports in 2017. 
+
+Additional taxi-out time, on the other hand, showed a modest reduction driven mainly by the improvements at Lisbon (LIS), Paris Charles de Gaulle (CDG), 
+Rome (FCO), Madrid (MAD) and Copenhagen (CPH).
+
+Building on the methodology for [Vertical flight efficiency in climbs and descents][vfe_cdo], this year’s report introduced an analysis measuring the share of 
+flights applying Continuous Descent Operations (CDOs) from higher than 7,000 feet above which the fuel saving effect is considered to be more relevant 
+than the noise effect. At 11 of the top 30 airports, less than 50% of the arrivals applied a CDO from higher than 7,000 feet which suggests scope for 
+further improvement.
 
 
 
@@ -79,12 +147,29 @@ Amsterdam and London Gatwick airport showed the highest increase in airport arri
 
 ## <img src="/images/prcq-economics.png" width="40" height="40" alt="Economics"> [Economics][economics]
 
-Due to data availability, this section is only updated on an annual basis.
+In 2016, the latest year for which actual financial data are available, the en-route ANS unit costs of the Pan-European system amounted to 52.9 €2016 per 
+service unit (TSU). This is -3.5% lower than in 2015 since in 2016 the number of TSUs rose faster (+4.1%) than en-route ANS costs (+0.4%). En-route unit costs 
+are expected to reduce by -1.5% annually over the 2016-2019 period and reach a value of 50.6 €2016. If these plans materialise, the en-route unit costs in 2019 
+will be some -24% lower than in 2009, implying a remarkable cost-efficiency improvement achieved by maintaining the cost-base close to 2009 levels in the context 
+of +2.8% annual increase in TSUs over the period.
 
-The latest overview on ANS economic cost-effectiveness is available [online][economics].
+In 2016, European terminal ANS unit costs amounted to 183.4 €2016 per terminal service unit (TNSU). This is -3.6% lower than in 2015 since TNSUs rose much faster 
+(+4.8%) than terminal ANS costs (+1.0%). Terminal ANS unit costs are expected to decrease by -1.7% annually over the 2016-2019 period and amount to 174.3 €2016 in 2019. 
+This performance improvement reflects the fact that total terminal ANS costs are planned to decrease by -1.3% p.a. while TNSUs are expected to increase at an average 
+rate of +1.4% per annum.
 
-For a more detailed review of ANS safety performance in the EUROCONTROL area please see also Chapter 5 of [Performance Review Report 2016] [prr2016].
+Detailed ANSPs benchmarking analysis indicates that in 2016 gate-to-gate ATM/CNS provision costs remained fairly constant compared to 2015 (-0.1%) and amounted 
+to some €8.0 Billion at Pan-European system level. At the same time traffic, expressed in terms of composite flight hours, increased by +2.5% over this period. 
+As a result, gate-to-gate unit ATM/CNS provision costs in 2016 decreased by -2.6% at Pan-European level.
 
+In order to also consider the service quality provided by ANSPs, the gate-to-gate economic performance combines ATM/CNS provision costs and the cost of [ATFM delays][ATFM_dly]. 
+Although unit ATM/CNS provision costs decreased in 2016, the unit economic costs increased by +0.8% to reach €488 per [composite flight hours][composite_hr] reflecting 
+a substantial increase in the unit costs of ATFM delays (+20.2% vs. 2015). In fact, the trend of decreasing ATFM delays observed in previous years stopped in 2013, 
+when a new cycle characterised by higher delays started. 
+
+Current analysis provided in the operational ANS performance chapter of this report indicates that the trend of increasing delays continued in 2017 albeit in a lower
+magnitude since en-route ATFM delays were +7.1% higher than in 2016. It is therefore important to monitor the impact of this increase on the Pan-European system 
+economic cost-effectiveness performance in 2017.
 
 [composite_hr]: /reference/definition/composite_flight_hour/ "Composite Flight Hour definition"
 [esra08]: /reference/definition/ESRA_2008_Area/ "ESRA 08 Area"

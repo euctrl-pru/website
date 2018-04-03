@@ -1,0 +1,53 @@
+---
+layout: graph
+title: Environment
+excerpt: Environment data visualizations.
+keywords: environment, performance, air transport, flights, europe
+---
+
+<h3 id="hfe"><a href='{{"/references/methodology/horizontal_flight_efficiency_pi.html"| prepend: site.baseurl | prepend: site.url }}'>Horizontal En-route Flight Efficiency (HFE)</a></h3>
+
+<table class = "table">
+   <thead>
+      <tr>
+         <th>Period</th>
+         <th>Area</th>
+         <th>Update rate</th>
+         <th>Last update</th>
+         <th>Source(s)</th>
+         <th>Methodology</th>
+         <th>Data</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class = "active">
+         <td>Jan-Feb 2018</td>
+         <td><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL area</a></td>
+         <td>Monthly</td>
+         <td>16-Mar-2018</td>
+          <td><a href='{{"/references/acronym/nm-cfmu.html"| prepend: site.baseurl | prepend: site.url }}'>NM</a>,
+              <a href='{{"/references/acronym/pru.html"   | prepend: site.baseurl | prepend: site.url }}'>PRU</a>
+          </td>
+		 <td><a href='{{"/references/methodology/horizontal_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }}'><span class="glyphicon glyphicon-info-sign" style="font-size:25px;"></span></a></td>
+         <td><a href='{{"/data/performancearea/" | prepend: site.baseurl | prepend: site.url }}'><span class="glyphicon glyphicon-download" style="font-size:25px;"></span></a></td>
+      </tr>
+   </tbody>
+</table>
+
+
+<div class="row">
+    <div class="col-sm-6">
+        <h4>Evolution over time (EUROCONTROL level)</h4>
+        <div id="crt_hfe_YY"></div><br>
+        <div id="crt_hfe_MM"></div>
+    </div>
+
+    <div class="col-sm-6 offset-10">
+        <h4>Results by entity (Jan-Feb 2018)</h4>
+        <div id="tbl_hfe_YY"></div>
+    </div>
+</div>
+
+{% javascript crt_hfe_YY %}
+{% javascript crt_hfe_MM %}
+{% javascript tbl_hfe_YY %}

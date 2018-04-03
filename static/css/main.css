@@ -451,3 +451,66 @@ td, th {
   white-space: nowrap;
   vertical-align: middle;
 }
+
+.panel-info > .panel-heading {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-bottom-color: transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+
+.article table {
+	  display: table;
+	  width: auto;
+	  border-collapse: collapse;
+	  border-spacing: 0;
+	  overflow: auto;
+
+	  margin: 0 auto;
+
+/*  border-spacing: 20px 0;
+  border-collapse: separate;
+  border: none;
+  margin: auto;
+*/}
+
+.article caption {
+	  display: table-caption;
+	  font-size: .833em !important;
+	  text-align: left;
+}
+
+.article table thead {
+	  border-top-width: 2px;
+}
+
+.article table thead tr th {
+    background-color: #eee;
+}
+
+.article table tr {
+	  background-color: #fff;
+	  border-top: 1px solid #ccc;
+}
+
+.article table tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, .03);
+}
+
+
+.article table tr:last-child td {
+	  border-bottom-width: 2px;
+}
+
+
+.article table > tbody > tr > td {
+	  vertical-align: top;
+}

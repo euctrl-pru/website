@@ -72,6 +72,12 @@ namespace :prod do
     jekyll('build --future')
   end
 
+  desc 'Build draft Jekyll site for Netlify'
+  task :buildnetlify => :clean do
+    puts 'Building Jekyll site for Netlify...'
+    jekyll('build --future  --config _config.yml,_config_netlify.yml')
+  end
+
   desc 'Generate the site and push changes to remote origin'
   task :deploy do
 
