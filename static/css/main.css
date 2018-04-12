@@ -124,15 +124,15 @@ code {
 .article-content p {
   margin: 10px 0 5px;
 }
-/*
+
 .article-content a {
-  text-decoration: none;
-  color: inherit;
-  border-bottom: 3px solid #CBF8DF;
-  box-shadow: inset 0 -4px 0 #CBF8DF;
+  text-decoration: underline;
+  color: #337ab7;
+/*  border-bottom: 3px solid #CBF8DF; */
+/*  box-shadow: inset 0 -4px 0 #CBF8DF; */
   background: transparent;
   transition: background 150ms ease;
-}*/
+}
 
 .article-content a:hover,
 .article-content a:focus {
@@ -220,8 +220,8 @@ code {
 }
 
 .footer-links a {
-/*  color: #888;*/
-/*  text-decoration: none;*/
+  color: #aaa;
+  text-decoration: underline;
   transition: color 150ms ease;
   margin: 0 15px;
 }
@@ -230,6 +230,11 @@ code {
 .footer-links a:focus {
   color: #222;
 }
+
+.footer-links a > .fa {
+  text-decoration: underline;
+}
+
 
 .footer-links li::before {
   content: '/';
