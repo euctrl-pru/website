@@ -26,9 +26,9 @@ For more information on the the change in methodology
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|----------------------------------------|---------------------------------------------|-----------------------------------------|
 | En-route IFR flights and ATFM delays [(AUA)][DefAUA]<br><small>Daily IFR traffic and en-route [ATFM delay][ATFMdelay] by entity and delay cause (AUA based)</small>                | {{% getdata "dwnld" "ert_dly_aua_beg" %}} - {{% getdata "dwnld" "ert_dly_aua_end" %}} | [xls {{% dwnld_i %}}][ERT-DLY-AUAxlsx] |                                             | [meta {{% info_i %}}][ERT-DLY-AUA-meta] |
 | En-route IFR flights and ATFM delays [(FIR)][DefFIR]<br><small>Daily IFR traffic and en-route [ATFM delay][ATFMdelay] by entity and delay cause (FIR based)</small>                | {{% getdata "dwnld" "ert_dly_fir_beg" %}} - {{% getdata "dwnld" "ert_dly_fir_end" %}} | [xls {{% dwnld_i %}}][ERT-DLY-FIRxlsx] |                                             | [meta {{% info_i %}}][ERT-DLY-FIR-meta] |
-| Horizontal en-route flight efficiency <br><small>Daily [en-route flight efficiency][DefFE] data by entity (HFE actual trajectory and flight plan, KEP and KEA indicators)</small>  | {{% getdata "dwnld" "hfe_beg" %}} - {{% getdata "dwnld" "hfe_end" %}}                 | [xls {{% dwnld_i %}}][HFExlsx]         | [csv {{% fltr_i %}} {{% ndwk_i %}}][HFEcsv] | [meta {{% info_i %}}][HFEmeta]          |
+| Horizontal en-route flight efficiency <br><small>Daily [en-route flight efficiency][DefFE] data by entity ([KEP][DefKEP] and [KEA][DefKEA])</small>  | {{% getdata "dwnld" "hfe_beg" %}} - {{% getdata "dwnld" "hfe_end" %}}                 | [xls {{% dwnld_i %}}][HFExlsx]         | [csv {{% fltr_i %}} {{% ndwk_i %}}][HFEcsv] | [meta {{% info_i %}}][HFEmeta]          |
 
-[ATFMdelay]: /references/definition/atfm-delay/ "ATFM Delay definition"
+[ATFMdelay]: /reference/definition/atfm-delay/ "ATFM Delay definition"
 
 [ERT-DLY-AUAxlsx]: /download/xls/En-Route_ATFM_Delay_AUA.xlsm "ERT-DLY (Excel)"
 [ERT-DLY-FIRxlsx]: /download/xls/En-Route_ATFM_Delay_FIR.xlsm "ERT-DLY (Excel)"
@@ -43,6 +43,8 @@ For more information on the the change in methodology
 [DefAUA]: /reference/acronym/aua/ "AUA definition"
 [DefFIR]: /reference/acronym/fir/ "FIR definition"
 [DefFE]: /reference/methodology/horizontal-flight-efficiency-pi/ "Flight Efficiency performance indicator"
+[DefKEP]: /reference/acronym/kep/ "Key performance Environment indicator based on last filed flight Plan"
+[DefKEA]: /reference/acronym/kea/ "Key performance Environment indicator based on Actual trajectory"
 
 
 
