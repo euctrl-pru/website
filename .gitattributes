@@ -2,6 +2,9 @@
 # and leave all files detected as binary untouched.
 * text=auto
 
+# Ignore all differences in line endings
+* -crlf
+
 #
 # The above will handle all files NOT found below
 #
