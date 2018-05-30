@@ -11,6 +11,9 @@ dates:
   ert_dly_fir_po:
     beg: Jan 2016
     end: Dec 2017
+  apt_dly_po:
+    beg: Jan 2016
+    end: Dec 2017
   ert_dly_aua:
     beg: Jan 2011
     end: Apr 2018
@@ -130,6 +133,7 @@ For more information on the the change in methodology
 | Data description                                                     | Period                                                       | Excel                              | CSV |  Metadata                         |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|-----------------------------------------|---------------------------------------------------|----------------------------------|
 | Airport arrival [ATFM delays][ATFMdelay] - without post ops adjustments<br><small>by airport and delay category</small> | {{ page.dates.apt_dly.beg }} - {{ page.dates.apt_dly.end }}  | [xls {{ page.dwnld_i }}][APT-DLYxlsx] | [csv {{ page.fltr_i }} {{ page.ndwk_i }}][APT-DLYcsv] | [meta {{ page.info_i }}][APT-DLYmeta] |
+| Airport arrival [ATFM delays][ATFMdelay] - [incl. post ops adjustments][PostOps]<br><small>by airport and delay category</small> | {{ page.dates.apt_dly_po.beg }} - {{ page.dates.apt_dly_po.end }}  | [xls {{ page.dwnld_i }}][APT-DLY-poxlsx]   |                                                   | [meta {{ page.info_i }}][APT-DLYmeta] |
 | Airport traffic<br><small>Daily IFR arrivals and departures by airport</small>                                                                                          | {{ page.dates.apt_flt.beg }} - {{ page.dates.apt_flt.end }}  | [xls {{ page.dwnld_i }}][APT-FLTxlsx]   |                                                   | [meta {{ page.info_i }}][APT-FLTmeta] |
 | Arrival Sequencing and Metering (ASMA) additional time<br><small>Monthly ASMA [additional][ASMAadditional] and [unimpeded][ASMAunimpeded] time</small>                  | {{ page.dates.asma.beg }} - {{ page.dates.asma.end }}        | [xls {{ page.dwnld_i }}][ASMAxlsx]    |                                                   | [meta {{ page.info_i }}][ASMAmeta]    |
 | Vertical flight efficiency - Continuous climb and descent operations<br><small>Monthly continuous climb and descent data</small>                  | {{ page.dates.cdo.beg }} - {{ page.dates.cdo.end }}        | [xls {{ page.dwnld_i }}][CDOxlsx]    |                                                   | [meta {{ page.info_i }}][CDOmeta]    |
@@ -149,6 +153,7 @@ For more information on the the change in methodology
 [APT-FLTmeta]: <{{ "/references/dataset/Airport_Traffic.html" | prepend: site.baseurl | prepend: site.url }}>  "APT-FLT (Meta)"
 
 [APT-DLYxlsx]: <{{ "/data/set/apt_dly/Airport_Arrival_ATFM_Delay.xlsm" | prepend: site.baseurl | prepend: site.url }}> "APT-DLY (Excel)"
+[APT-DLY-poxlsx]: <{{ "/data/set/apt_dly/Airport_Arrival_ATFM_Delay_post_ops.xlsm" | prepend: site.baseurl | prepend: site.url }}> "APT-DLY-PO (Excel)"
 [APT-DLYcsv]: <{{ "/data/set/apt_dly/airport_arrival_atfm_delay.html" | prepend: site.baseurl | prepend: site.url }}> "APT-DLY (CSV)"
 [APT-DLYmeta]: <{{ "/references/dataset/Airport_Arrival_ATFM_Delay.html" | prepend: site.baseurl | prepend: site.url }}> "APT-DLY (Meta)"
 
