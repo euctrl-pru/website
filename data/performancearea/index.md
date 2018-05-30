@@ -5,6 +5,12 @@ permalink: /data/performancearea/
 excerpt: Performance Review Unit Data Download (Excel and CSV).
 keywords: performance, data, statistics, economics, air transport, flights, europe, cost efficiency
 dates:
+  ert_dly_aua_po:
+    beg: Jan 2016
+    end: Dec 2017   
+  ert_dly_fir_po:
+    beg: Jan 2016
+    end: Dec 2017
   ert_dly_aua:
     beg: Jan 2011
     end: Apr 2018
@@ -87,17 +93,22 @@ a change to improve the accuracy of the ATFM delay calculation for operational p
 For more information on the the change in methodology
 <a href="{{ "/references/methodology/ATFM_delay_calculation.html" | prepend: site.baseurl | prepend: site.url }}">click here</a>.</span> <br>
 <br>
-<span style="color: rgb(192, 80, 77);">Different from the SES performance scheme, changes due to the Post Operations Performance Adjustment Process are not considered in the ATFM delay data on this page. More information is available from the respective <a href="http://www.eurocontrol.int/publications/post-operations-performance-adjustment-process" target="_blank">NM website</a></span> .
+<span style="color: rgb(192, 80, 77);">Unless indicated otherwise, changes due to the Post Operations Performance Adjustment Process are not considered in the ATFM delay data on this page. More information is available from the respective <a href="http://www.eurocontrol.int/publications/post-operations-performance-adjustment-process" target="_blank">NM website</a></span> .
 
 ### {% img prcq-operations-enroute.png magick:resize:50x50 alt:'Operations En-route' class:'leadimg' %} Operations En-route
 
 | Data description                                             | Period                                                 | Excel                              | CSV | Metadata                           |
 |-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|-----------------------------------|-----------------------------------------------|----------------------------------|
-| En-route IFR flights and ATFM delays [(AUA)][DefAUA]<br><small>Daily IFR traffic and en-route [ATFM delay][ATFMdelay] by entity and delay cause (AUA based)</small>  | {{ page.dates.ert_dly_aua.beg }} - {{ page.dates.ert_dly_aua.end }} | [xls {{ page.dwnld_i }}][ERT-DLY-AUAxlsx] |                                               | [meta {{ page.info_i }}][ERT-DLY-AUA-meta] |
-| En-route IFR flights and ATFM delays [(FIR)][DefFIR]<br><small>Daily IFR traffic and en-route [ATFM delay][ATFMdelay] by entity and delay cause (FIR based)</small>  | {{ page.dates.ert_dly_fir.beg }} - {{ page.dates.ert_dly_fir.end }} | [xls {{ page.dwnld_i }}][ERT-DLY-FIRxlsx] |                                               | [meta {{ page.info_i }}][ERT-DLY-FIR-meta] |
+| En-route IFR flights and [ATFM delays][ATFMdelay] [(AUA)][DefAUA] - without post ops adjustments<br><small>by entity and delay cause (AUA based)</small>  | {{ page.dates.ert_dly_aua_po.beg }} - {{ page.dates.ert_dly_aua_po.end }} | [xls {{ page.dwnld_i }}][ERT-DLY-AUAxlsx] |                                               | [meta {{ page.info_i }}][ERT-DLY-AUA-meta] |
+| En-route IFR flights and [ATFM delays][ATFMdelay] [(AUA)][DefAUA] - [incl. post ops adjustments][PostOps] <br><small>by entity and delay cause (AUA based)</small>  | {{ page.dates.ert_dly_aua.beg }} - {{ page.dates.ert_dly_aua.end }} | [xls {{ page.dwnld_i }}][ERT-DLY-AUA-poxlsx] |                                               | [meta {{ page.info_i }}][ERT-DLY-AUA-meta] |
+| En-route IFR flights and [ATFM delays][ATFMdelay] [(FIR)][DefFIR] - without post pos adjustments<br><small>by entity and delay cause (FIR based)</small>  | {{ page.dates.ert_dly_fir.beg }} - {{ page.dates.ert_dly_fir.end }} | [xls {{ page.dwnld_i }}][ERT-DLY-FIRxlsx] |                                               | [meta {{ page.info_i }}][ERT-DLY-FIR-meta] |
+| En-route IFR flights and [ATFM delays][ATFMdelay] [(FIR)][DefFIR] - [incl. post ops adjustments][PostOps]<br><small>by entity and delay cause (FIR based)</small>  | {{ page.dates.ert_dly_fir_po.beg }} - {{ page.dates.ert_dly_fir_po.end }} | [xls {{ page.dwnld_i }}][ERT-DLY-FIR-poxlsx] |                                               | [meta {{ page.info_i }}][ERT-DLY-FIR-meta] |
 | Horizontal en-route flight efficiency <br><small>Daily [en-route flight efficiency][DefFE] data by entity (HFE actual trajectory and flight plan, KEP and KEA indicators)</small>                                                           | {{ page.dates.hfe.beg }} - {{ page.dates.hfe.end }}         | [xls {{ page.dwnld_i }}][HFExlsx]     | [csv {{ page.fltr_i }} {{ page.ndwk_i }}][HFEcsv] | [meta {{ page.info_i }}][HFEmeta]     |
 
 [ATFMdelay]: <{{ "" | prepend: site.baseurl | prepend: site.url }}/references/definition/atfm_delay.html> "ATFM Delay definition"
+
+[ERT-DLY-AUA-poxlsx]: <{{ "/data/set/ert_dly/En-Route_ATFM_Delay_AUA_post_ops.xlsm" | prepend: site.baseurl | prepend: site.url }}> "ERT-DLY-PO (Excel)"
+[ERT-DLY-FIR-poxlsx]: <{{ "/data/set/ert_dly/En-Route_ATFM_Delay_FIR_post_ops.xlsm" | prepend: site.baseurl | prepend: site.url }}> "ERT-DLY-PO (Excel)"
 
 [ERT-DLY-AUAxlsx]: <{{ "/data/set/ert_dly/En-Route_ATFM_Delay_AUA.xlsm" | prepend: site.baseurl | prepend: site.url }}> "ERT-DLY (Excel)"
 [ERT-DLY-FIRxlsx]: <{{ "/data/set/ert_dly/En-Route_ATFM_Delay_FIR.xlsm" | prepend: site.baseurl | prepend: site.url }}> "ERT-DLY (Excel)"
@@ -112,13 +123,14 @@ For more information on the the change in methodology
 [DefAUA]: <{{ "/references/acronym/aua.html" | prepend: site.baseurl | prepend: site.url }}> "AUA definition"
 [DefFIR]: <{{ "/references/acronym/fir.html" | prepend: site.baseurl | prepend: site.url }}> "FIR definition"
 [DefFE]: <{{ "/references/methodology/horizontal_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }}> "Flight Efficiency performance indicator"
+[PostOps]: <a href="http://www.eurocontrol.int/publications/post-operations-performance-adjustment-process" target="_blank"></a>
 
 
 ### {% img prcq-operations-airport.png magick:resize:50x50 alt:'Operations at Airports' class:'leadimg' %} Operations at Airports
 
 | Data description                                                     | Period                                                       | Excel                              | CSV |  Metadata                         |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|-----------------------------------------|---------------------------------------------------|----------------------------------|
-| Airport arrival ATFM delays<br><small>Daily IFR arrivals and airport arrival [ATFM delay][ATFMdelay] by airport and delay category</small> | {{ page.dates.apt_dly.beg }} - {{ page.dates.apt_dly.end }}  | [xls {{ page.dwnld_i }}][APT-DLYxlsx] | [csv {{ page.fltr_i }} {{ page.ndwk_i }}][APT-DLYcsv] | [meta {{ page.info_i }}][APT-DLYmeta] |
+| Airport arrival [ATFM delays][ATFMdelay]<br><small>by airport and delay category</small> | {{ page.dates.apt_dly.beg }} - {{ page.dates.apt_dly.end }}  | [xls {{ page.dwnld_i }}][APT-DLYxlsx] | [csv {{ page.fltr_i }} {{ page.ndwk_i }}][APT-DLYcsv] | [meta {{ page.info_i }}][APT-DLYmeta] |
 | Airport traffic<br><small>Daily IFR arrivals and departures by airport</small>                                                                                          | {{ page.dates.apt_flt.beg }} - {{ page.dates.apt_flt.end }}  | [xls {{ page.dwnld_i }}][APT-FLTxlsx]   |                                                   | [meta {{ page.info_i }}][APT-FLTmeta] |
 | Arrival Sequencing and Metering (ASMA) additional time<br><small>Monthly ASMA [additional][ASMAadditional] and [unimpeded][ASMAunimpeded] time</small>                  | {{ page.dates.asma.beg }} - {{ page.dates.asma.end }}        | [xls {{ page.dwnld_i }}][ASMAxlsx]    |                                                   | [meta {{ page.info_i }}][ASMAmeta]    |
 | Vertical flight efficiency - Continuous climb and descent operations<br><small>Monthly continuous climb and descent data</small>                  | {{ page.dates.cdo.beg }} - {{ page.dates.cdo.end }}        | [xls {{ page.dwnld_i }}][CDOxlsx]    |                                                   | [meta {{ page.info_i }}][CDOmeta]    |
