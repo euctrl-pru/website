@@ -17,7 +17,7 @@ is a proxy for ATC induced delays at the departure stand to avoid queuing at the
 departure runway.
 
 The data is based on
-[IATA delay code 89](/reference/definition/IATA-code-89/)
+[IATA delay code 89](/reference/definition/iata-code-89/)
 [see [@iata:delaycodes] ] which, besides delays caused by
 local ATC constraints, also includes delays due to late push-back approval and some other
 reasons which may introduce a certain level of bias.

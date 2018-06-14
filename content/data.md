@@ -22,16 +22,23 @@ For more information on the the change in methodology
 
 ## <img src="/images/prcq-operations-enroute.png" width="40" height="40" alt="Operations En-route"> Operations En-route
 
-| Data description                                                                                                                                                                   | Period                                                                                | Excel                                  | CSV                                         | Metadata                                |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|----------------------------------------|---------------------------------------------|-----------------------------------------|
-| En-route IFR flights and ATFM delays [(AUA)][DefAUA]<br><small>Daily IFR traffic and en-route [ATFM delay][ATFMdelay] by entity and delay cause (AUA based)</small>                | {{% getdata "dwnld" "ert_dly_aua_beg" %}} - {{% getdata "dwnld" "ert_dly_aua_end" %}} | [xls {{% dwnld_i %}}][ERT-DLY-AUAxlsx] |                                             | [meta {{% info_i %}}][ERT-DLY-AUA-meta] |
-| En-route IFR flights and ATFM delays [(FIR)][DefFIR]<br><small>Daily IFR traffic and en-route [ATFM delay][ATFMdelay] by entity and delay cause (FIR based)</small>                | {{% getdata "dwnld" "ert_dly_fir_beg" %}} - {{% getdata "dwnld" "ert_dly_fir_end" %}} | [xls {{% dwnld_i %}}][ERT-DLY-FIRxlsx] |                                             | [meta {{% info_i %}}][ERT-DLY-FIR-meta] |
-| Horizontal en-route flight efficiency <br><small>Daily [en-route flight efficiency][DefFE] data by entity ([KEP][DefKEP] and [KEA][DefKEA])</small>  | {{% getdata "dwnld" "hfe_beg" %}} - {{% getdata "dwnld" "hfe_end" %}}                 | [xls {{% dwnld_i %}}][HFExlsx]         | [csv {{% fltr_i %}} {{% ndwk_i %}}][HFEcsv] | [meta {{% info_i %}}][HFEmeta]          |
+| Data description                                                                                                                                                                                                  | Period                                                                                           | Excel                                       | CSV                                         | Metadata                                |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|---------------------------------------------|---------------------------------------------|-----------------------------------------|
+| En-route IFR flights and ATFM delays [(AUA)][DefAUA] - without post ops adjustments<br><small>Daily IFR traffic and en-route [ATFM delay][ATFMdelay] by entity and delay cause (AUA based)</small>                | {{% getdata "dwnld" "ert_dly_aua_beg" %}} - {{% getdata "dwnld" "ert_dly_aua_end" %}}            | [xls {{% dwnld_i %}}][ERT-DLY-AUAxlsx]      |                                             | [meta {{% info_i %}}][ERT-DLY-AUA-meta] |
+| En-route IFR flights and ATFM delays [(AUA)][DefAUA] - [incl. post ops adjustments][PostOps]<br><small>Daily IFR traffic and en-route [ATFM delay][ATFMdelay] by entity and delay cause (AUA based)</small>       | {{% getdata "dwnld" "ert_dly_aua_post_beg" %}} - {{% getdata "dwnld" "ert_dly_aua_post_end" %}}  | [xls {{% dwnld_i %}}][ERT-DLY-AUA-postxlsx] |                                             | [meta {{% info_i %}}][ERT-DLY-AUA-meta] |
+| En-route IFR flights and ATFM delays [(FIR)][DefFIR] - without post ops adjustments<br><small>Daily IFR traffic and en-route [ATFM delay][ATFMdelay] by entity and delay cause (FIR based)</small>                | {{% getdata "dwnld" "ert_dly_fir_beg" %}} - {{% getdata "dwnld" "ert_dly_fir_end" %}}            | [xls {{% dwnld_i %}}][ERT-DLY-FIRxlsx]      |                                             | [meta {{% info_i %}}][ERT-DLY-FIR-meta] |
+| En-route IFR flights and ATFM delays [(FIR)][DefFIR] - [incl. post ops adjustments][PostOps]<br><small>Daily IFR traffic and en-route [ATFM delay][ATFMdelay] by entity and delay cause (FIR based)</small>       | {{% getdata "dwnld" "ert_dly_fir_post_beg" %}} - {{% getdata "dwnld" "ert_dly_fir_post_end" %}}  | [xls {{% dwnld_i %}}][ERT-DLY-FIR-postxlsx] |                                             | [meta {{% info_i %}}][ERT-DLY-FIR-meta] |
+| Horizontal en-route flight efficiency <br><small>Daily [en-route flight efficiency][DefFE] data by entity ([KEP][DefKEP] and [KEA][DefKEA])</small>                                                               | {{% getdata "dwnld" "hfe_beg" %}} - {{% getdata "dwnld" "hfe_end" %}}                            | [xls {{% dwnld_i %}}][HFExlsx]              | [csv {{% fltr_i %}} {{% ndwk_i %}}][HFEcsv] | [meta {{% info_i %}}][HFEmeta]          |
 
 [ATFMdelay]: /reference/definition/atfm-delay/ "ATFM Delay definition"
 
 [ERT-DLY-AUAxlsx]: /download/xls/En-Route_ATFM_Delay_AUA.xlsm "ERT-DLY (Excel)"
+[ERT-DLY-AUA-postxlsx]: /download/xls/En-Route_ATFM_Delay_AUA_post_ops.xlsm "ERT-DLY-PO (Excel)"
+
 [ERT-DLY-FIRxlsx]: /download/xls/En-Route_ATFM_Delay_FIR.xlsm "ERT-DLY (Excel)"
+[ERT-DLY-FIR-postxlsx]: /download/xls/En-Route_ATFM_Delay_FIR_post_ops.xlsm "ERT-DLY-PO (Excel)"
+
+
 [ERT-DLYcsv]: /404/ "ERT-DLY (CSV)"
 [ERT-DLY-AUA-meta]: /reference/dataset/en-route-atfm-delay-aua/ "ERT-DLY (Meta)"
 [ERT-DLY-FIR-meta]: /reference/dataset/en-route-atfm-delay-fir/ "ERT-DLY (Meta)"
@@ -46,19 +53,21 @@ For more information on the the change in methodology
 [DefKEP]: /reference/acronym/kep/ "Key performance Environment indicator based on last filed flight Plan"
 [DefKEA]: /reference/acronym/kea/ "Key performance Environment indicator based on Actual trajectory"
 
+[PostOps]: <http://www.eurocontrol.int/publications/post-operations-performance-adjustment-process> "Post ops adjustment process"
 
 
 ## <img src="/images/prcq-operations-airport.png" width="40" height="40" alt="Operations at Airports"> Operations at Airports
 
-| Data description                                                                                                                                        | Period                                                                        | Excel                              | CSV                                             |  Metadata                          |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|------------------------------------|-------------------------------------------------|------------------------------------|
-| Airport arrival ATFM delays<br><small>Daily IFR arrivals and airport arrival [ATFM delay][ATFMdelay] by airport and delay category</small>              | {{% getdata "dwnld" "apt_dly_beg" %}} - {{% getdata "dwnld" "apt_dly_end" %}} | [xls {{% dwnld_i %}}][APT-DLYxlsx] | [csv {{% fltr_i %}} {{% ndwk_i %}}][APT-DLYcsv] | [meta {{% info_i %}}][APT-DLYmeta] |
-| Airport traffic<br><small>Daily IFR arrivals and departures by airport</small>                                                                          | {{% getdata "dwnld" "apt_flt_beg" %}} - {{% getdata "dwnld" "apt_flt_end" %}}         | [xls {{% dwnld_i %}}][APT-FLTxlsx] |                                                 | [meta {{% info_i %}}][APT-FLTmeta] |
-| Arrival Sequencing and Metering (ASMA) additional time<br><small>Monthly ASMA [additional][ASMAadditional] and [unimpeded][ASMAunimpeded] time</small>  | {{% getdata "dwnld" "asma_beg" %}} - {{% getdata "dwnld" "asma_end" %}}               | [xls {{% dwnld_i %}}][ASMAxlsx]    |                                                 | [meta {{% info_i %}}][ASMAmeta]    |
-| Vertical flight efficiency - Continuous climb and descent operations<br><small>Monthly continuous climb and descent data</small>                        | {{% getdata "dwnld" "cdo_beg" %}} - {{% getdata "dwnld" "cdo_end" %}}                 | [xls {{% dwnld_i %}}][CDOxlsx]     |                                                 | [meta {{% info_i %}}][CDOmeta]     |
-| Taxi-out additional time<br><small>Monthly taxi out [additional][TX-OUTadditional] and [unimpeded][TX-OUTunimpeded] time</small>                        | {{% getdata "dwnld" "tx_out_beg" %}} - {{% getdata "dwnld" "tx_out_end" %}}           | [xls {{% dwnld_i %}}][TX-OUTxlsx]  |                                                 | [meta {{% info_i %}}][TX-OUTmeta]  |
-| ATC pre-departure delays<br><small>Daily [ATC pre-departure delay][ATCpredepdelay] by airport</small>                                                   | {{% getdata "dwnld" "atc_pre_beg" %}} - {{% getdata "dwnld" "atc_pre_end" %}}         | [xls {{% dwnld_i %}}][ATC-PRExlsx] |                                                 | [meta {{% info_i %}}][ATC-PREmeta] |
-| ATFM slot adherence<br><small>Daily ATFM slot adherence by airport</small>                                                                              | {{% getdata "dwnld" "slt_adh_beg" %}} - {{% getdata "dwnld" "slt_adh_end" %}}         | [xls {{% dwnld_i %}}][SLT-ADHxlsx] |                                                 | [meta {{% info_i %}}][SLT-ADHmeta] |
+| Data description                                                                                                                                                                       | Period                                                                                  | Excel                                   | CSV                                             |  Metadata                          |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|-----------------------------------------|-------------------------------------------------|------------------------------------|
+| Airport arrival ATFM delays - without post ops adjustments<br><small>Daily IFR arrivals and airport arrival [ATFM delay][ATFMdelay] by airport and delay category</small>              | {{% getdata "dwnld" "apt_dly_beg" %}} - {{% getdata "dwnld" "apt_dly_end" %}}           | [xls {{% dwnld_i %}}][APT-DLYxlsx]      | [csv {{% fltr_i %}} {{% ndwk_i %}}][APT-DLYcsv] | [meta {{% info_i %}}][APT-DLYmeta] |
+| Airport arrival ATFM delays - [incl. post ops adjustments][PostOps]<br><small>Daily IFR arrivals and airport arrival [ATFM delay][ATFMdelay] by airport and delay category</small>     | {{% getdata "dwnld" "apt_dly_post_beg" %}} - {{% getdata "dwnld" "apt_dly_post_end" %}} | [xls {{% dwnld_i %}}][APT-DLY-postxlsx] |                                                 | [meta {{% info_i %}}][APT-DLYmeta] |
+| Airport traffic<br><small>Daily IFR arrivals and departures by airport</small>                                                                                                         | {{% getdata "dwnld" "apt_flt_beg" %}} - {{% getdata "dwnld" "apt_flt_end" %}}           | [xls {{% dwnld_i %}}][APT-FLTxlsx]      |                                                 | [meta {{% info_i %}}][APT-FLTmeta] |
+| Arrival Sequencing and Metering (ASMA) additional time<br><small>Monthly ASMA [additional][ASMAadditional] and [unimpeded][ASMAunimpeded] time</small>                                 | {{% getdata "dwnld" "asma_beg" %}} - {{% getdata "dwnld" "asma_end" %}}                 | [xls {{% dwnld_i %}}][ASMAxlsx]         |                                                 | [meta {{% info_i %}}][ASMAmeta]    |
+| Vertical flight efficiency - Continuous climb and descent operations<br><small>Monthly continuous climb and descent data</small>                                                       | {{% getdata "dwnld" "cdo_beg" %}} - {{% getdata "dwnld" "cdo_end" %}}                   | [xls {{% dwnld_i %}}][CDOxlsx]          |                                                 | [meta {{% info_i %}}][CDOmeta]     |
+| Taxi-out additional time<br><small>Monthly taxi out [additional][TX-OUTadditional] and [unimpeded][TX-OUTunimpeded] time</small>                                                       | {{% getdata "dwnld" "tx_out_beg" %}} - {{% getdata "dwnld" "tx_out_end" %}}             | [xls {{% dwnld_i %}}][TX-OUTxlsx]       |                                                 | [meta {{% info_i %}}][TX-OUTmeta]  |
+| ATC pre-departure delays<br><small>Daily [ATC pre-departure delay][ATCpredepdelay] by airport</small>                                                                                  | {{% getdata "dwnld" "atc_pre_beg" %}} - {{% getdata "dwnld" "atc_pre_end" %}}           | [xls {{% dwnld_i %}}][ATC-PRExlsx]      |                                                 | [meta {{% info_i %}}][ATC-PREmeta] |
+| ATFM slot adherence<br><small>Daily ATFM slot adherence by airport</small>                                                                                                             | {{% getdata "dwnld" "slt_adh_beg" %}} - {{% getdata "dwnld" "slt_adh_end" %}}           | [xls {{% dwnld_i %}}][SLT-ADHxlsx]      |                                                 | [meta {{% info_i %}}][SLT-ADHmeta] |
 
 
 [ASMAadditional]: /reference/definition/additional-asma-time/ "ASMA Additional Time definition"
@@ -68,6 +77,7 @@ For more information on the the change in methodology
 [ATCpredepdelay]: /reference/definition/atc-pre-departure-delay/ "ATC Pre-departure Delay definition"
 
 [APT-FLTxlsx]: /download/xls/Airport_Traffic.xlsm "APT-FLT (Excel)"
+[APT-DLY-postxlsx]: /download/xls/Airport_Arrival_ATFM_Delay_post_ops.xlsm "APT-DLY-PO (Excel)"
 [APT-FLTcsv]: /404/ "APT-FLT (CSV)"
 [APT-FLTmeta]: /reference/dataset/airport-traffic/  "APT-FLT (Meta)"
 
@@ -141,9 +151,15 @@ For more information on the the change in methodology
 
 
 <style>
-  i.fa.pru {color: #337ab7;}
+i.fa.pru {color: #337ab7;}
+table {
+  width: 100% !important;
+}
+
 td {
   white-space: nowrap !important;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 th:nth-child(2) {
 width: 11em !important;

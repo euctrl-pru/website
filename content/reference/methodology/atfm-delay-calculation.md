@@ -39,16 +39,30 @@ The changes implemented with the release of NM software version 20.0 on 04 April
 2016 reduce the overall level of computed ATFM delay. The changes are described
 in more detail in the relevant [NM Release presentation][NM20-rn].
 
+## Post Operations Performance Adjustment Process
+
+The Post Ops Performance Adjustment Process allows operational stakeholders to notify
+national and European authorities of issues that relate to ATFM delay measurement,
+classification and assignment. It is a means of enhancing operational ATFM delay data
+used in the performance scheme (Regulation (EU) 390) – and thus a means of compliance
+with Article 21(3).
+
+More information is available from the [respective NM website][post-ops].
 
 ## Impact on this webpage
 
-The ATFM delay related graphs shown on this web page and data in the 
-[download area](/data/performancearea/) take the change in 
+The ATFM delay related graphs shown on this web page and data in the
+[download area](/data/performancearea/) take the change in
 methodology as of April 2016 into account.
 
-In the ATFM delay download files, the data computed in accordance with the old methodology 
-(i.e. REA message related ATFM delays are included) are marked as **Version 1** and the data 
-based on the revised methodology (as of 04 April 2016) are marked as **Version 2**.
+In the ATFM delay file downloads, the computation method is indicated in the column "ATFM version"
+
+| ATFM version 	| REA message adjustment    	| Post ops adjustment 	|
+|--------------	|---------------------------	|---------------------	|
+| Version 1    	| No                        	| No                  	|
+| Version 2    	| Yes                       	| No                  	|
+| Version 3    	| Yes (as of 04 April 2016) 	| Yes                 	|
 
 
 [NM20-rn]: /library/NM_20_FB750_Delay_Calculation_improvements.pdf "NM 20 Release Notes: Delay calculation improvements"
+[post-ops]: http://www.eurocontrol.int/publications/post-operations-performance-adjustment-process "Post Operations Performance Adjustment Process"
