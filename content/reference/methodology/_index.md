@@ -28,7 +28,7 @@ in our website:
 <i class="fa fa-exclamation-triangle" style="color: #337ab7;"></i> = not (yet?) available.
 
 
-[atfmdelay]: /reference/methodology/ATFM-delay-calculation/ "ATFM delay computation"
+[atfmdelay]: /reference/methodology/atfm-delay-calculation/ "ATFM delay computation"
 [hfe]: /reference/methodology/horizontal-flight-efficiency-pi/ "Horizontal Flight Efficiency performance indicators"
 [ervfe]: /reference/methodology/en-route-vertical-flight-efficiency-pi/ "En-route Vertical Flight Efficiency"
 
