@@ -11,4 +11,10 @@ The new [ACE interactive online dashboard][acedashboard] enables interested stak
 the latest available ACE data and analysis. Using the interactive functionalities of the dashboard,
 stakeholders can design and customise specific analyses and presentations covering the 2002-2015 period.
 
+<div class="row">
+	<a href="http://www.eurocontrol.int/ACE/ACE-Framework.html" target="_blank">
+	<img src="{% asset_path ace_dashboard.png %}" class="img-responsive" alt="ACE online dashboard"></a>
+</div>
+
+
 [acedashboard]: <http://www.eurocontrol.int/ACE/ACE-Home.html> "ACE online dashboard"
