@@ -53,7 +53,7 @@ For more information on the the change in methodology
 [DefKEP]: /reference/acronym/kep/ "Key performance Environment indicator based on last filed flight Plan"
 [DefKEA]: /reference/acronym/kea/ "Key performance Environment indicator based on Actual trajectory"
 
-[PostOps]: <http://www.eurocontrol.int/publications/post-operations-performance-adjustment-process> "Post ops adjustment process"
+[PostOps]: http://www.eurocontrol.int/publications/post-operations-performance-adjustment-process "Post ops adjustment process"
 
 
 ## <img src="/images/prcq-operations-airport.png" width="40" height="40" alt="Operations at Airports"> Operations at Airports
