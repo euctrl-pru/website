@@ -1,4 +1,18 @@
+#------- LOCAL DEVELOPMENT/TESTING -------
+# remember ending '/'
 baseurl = "/"
+publishDir = "../pru-portal-generated"
+#-----------------------------------------
+
+
+#--------------- PRODUCTION ---------------
+# remember ending '/'
+# baseurl = "http://ansperformance.eu/"
+# publishDir = "../pru-portal-generated"
+#-----------------------------------------
+
+
+
 languageCode = "en-us"
 title = "PRU Portal"
 theme = "hugo-lithium-theme"
