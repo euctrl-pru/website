@@ -1,14 +1,17 @@
 #!/usr/bin/env Rscript
 
-"Export APDS data to CSV files.
+"Export APT data to CSV files.
 
-Usage: export_apds [-h] WEF TIL
+The range [WEF, TIL)] is used to find the airports that exit within the full time interval.
+
+Usage: export-apt [-h] WEF TIL
 
 -h --help             show this help text
 
 Arguments:
-WEF  date from when to export data, format YYYY-MM-DD
-TIL  date till when to export data, format YYYY-MM-DD (non-inclusive)
+WEF  date from when the airport is valid, format YYYY-MM-DD
+TIL  date till when the airport is valid, format YYYY-MM-DD (non-inclusive)
+
 " -> doc
 
 suppressMessages(library(docopt))
@@ -60,13 +63,23 @@ drv <- dbDriver("Oracle")
 con <- dbConnect(drv, usr, pwd, dbname = dbn)
 
 sqlq <- "SELECT
-  *
+EC_AP_CODE,
+EC_AP_NAME,
+ICAO_AP_CODE,
+ICAO_AP_NAME,
+IATA_AP_CODE,
+IATA_AP_NAME,
+LONGITUDE,
+LATITUDE,
+ISO_CT_CODE,
+ISO_CT_NAME,
+VALID_FROM,
+VALID_TO
 FROM
-  SWH_FCT.FAC_APDS_FLIGHT_IR691
+SWH_FCT.DIM_AIRPORT
 WHERE
-      MVT_TIME_UTC >= TO_DATE(?WEF, 'YYYY-MM-DD')
-  AND MVT_TIME_UTC <  TO_DATE(?TIL, 'YYYY-MM-DD')
-  AND SRC_DATE_FROM = '01-AUG-2017'
+VALID_FROM <= TO_DATE(?WEF, 'YYYY-MM-DD')
+AND VALID_TO > TO_DATE(?TIL, 'YYYY-MM-DD')
 "
 
 query <- sqlInterpolate(con, sqlq, WEF = wef, TIL = til)
@@ -77,32 +90,11 @@ dbDisconnect(con)
 Sys.unsetenv("TZ")
 Sys.unsetenv("ORA_SDTZ")
 
-data <- data %>% as_tibble() %>% 
-  select(
-    APDS_ID, 
-    AP_C_FLTID,
-    AP_C_REG,
-    ends_with("ICAO"),
-    SRC_PHASE,
-    MVT_TIME_UTC,
-    BLOCK_TIME_UTC,
-    SCHED_TIME_UTC,
-    ARCTYP,
-    AP_C_RWY,
-    AP_C_STND,
-    starts_with("C40_"),
-    starts_with("C100_")
-  ) %>% 
-  select(
-    -ends_with("_MIN"),
-    -ends_with("_IN_FRONT"),
-    -ends_with("_CTFM"),
-    -ends_with("_CPF"),
-    -contains("TRANSIT"))
+data <- data %>% as_tibble()
 
 write_csv(
   data,
-  str_c("FAC_APDS_FLIGHT_IR691_",
+  str_c("SWH_FCT_DIM_AIRPORT_",
     wef,
     "_",
     til,

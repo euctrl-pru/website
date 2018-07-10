@@ -2,7 +2,7 @@
 
 "Export FR24 traffic to CSV files.
 
-Usage: export_fr24 [-h] [-t TYPE] WEF TIL
+Usage: export-fr24 [-h] [-t TYPE] WEF TIL
 
 -h --help             show this help text
 -t TYPE, --type=TYPE  the TYPE of entity; one of flight, point [default: flight]

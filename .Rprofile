@@ -6,7 +6,7 @@
 
 options(
   blogdown.ext = ".Rmd",
-  blogdown.publishDir = "../pru_website_hugo_public"
+  blogdown.publishDir = "../pru-portal-generated"
 )
 
 # in .Rprofile of the website project

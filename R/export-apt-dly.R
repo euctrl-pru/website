@@ -2,7 +2,7 @@
 
 "Export to CSV daily airport arrival ATFM delays.
 
-Usage: export_apt_dly [-h] WEF TIL
+Usage: export-apt-dly [-h] WEF TIL
 
   -h --help             show this help text
 

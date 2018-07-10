@@ -2,7 +2,7 @@
 
 "Export en-route daily delay and traffic to yearly CSV files.
 
-Usage: export_ert_dly [-h] [-t TYPE] WEF TIL
+Usage: export-ert-dly [-h] [-t TYPE] WEF TIL
 
   -h --help             show this help text
   -t TYPE, --type=TYPE  the TYPE of entity; one of ansp, fir [default: ansp]

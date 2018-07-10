@@ -2,7 +2,7 @@
 
 "Export to CSV daily HFE kpi's.
 
-Usage: export_hfe [-h]
+Usage: export-hfe [-h]
 
   -h --help             show this help text
 " -> doc

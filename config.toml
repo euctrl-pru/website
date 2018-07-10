@@ -1,7 +1,8 @@
 #------- LOCAL DEVELOPMENT/TESTING -------
 # remember ending '/'
 baseurl = "/"
-publishDir = "../pru-portal-generated"
+# see .Rprofile for publishDir, i.e. the place
+# where generated HTML is put (the "public" dir in hugo parlance)
 #-----------------------------------------
 
 

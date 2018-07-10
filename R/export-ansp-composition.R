@@ -2,7 +2,7 @@
 
 "Export to CSV the ANSP composition in terms of AUA's.
 
-Usage: export_ansp_composition [-h] DATE
+Usage: export-ansp-composition [-h] DATE
 
   -h --help             show this help text
 
