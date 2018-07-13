@@ -28,7 +28,7 @@ function drawVisualization()
                 titleTextStyle : {color: '#1F1F2E', fontSize: 11}, textStyle:{color: '#1F1F2E'}}
             }
         },
-    view: {columns: [0,1], rows: [0,1,2,3,4,5,6,7,8,9]}
+    view: {columns: [0,1], rows: [0,1,2,3,4,5,6,7,8,9,10]}
   }); crt_ertdlyYY.draw();
 
 // ERT - CHART - Total en-route delay by reported cause
@@ -99,7 +99,7 @@ function drawVisualization()
               },
         hAxis: {slantedTextAngle: 90, textStyle: {fontSize: 12}}
         },
-    view: {columns: [0,1,2,3,4,5], rows: [0,1,2,3,4,5,6,7]}
+    view: {columns: [0,1,2,3,4,5], rows: [0,1,2,3,4,5,6,7,8]}
   }); crt_ertdly1.draw();
 
 
@@ -161,7 +161,7 @@ function drawVisualization()
             vAxis: {minValue: 0.92, maxValue: 1.0, viewWindow: { min: 0.94, max: 1.0 }, format: 'percent',textStyle:{fontSize: 12}
                }
         },
-    view: {columns: [0,1,2], rows: [0,1,2,3]}
+    view: {columns: [0,1,2], rows: [0,1,2,3,4]}
   }); crt_hfe1.draw();
 
 
@@ -216,7 +216,7 @@ google.setOnLoadCallback(drawVisualization)
          <td>Jan-Jun</td>
          <td><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL area</a></td>
          <td>Quarterly</td>
-         <td>12-Jul-2018</td>
+         <td>13-Jul-2018</td>
           <td>
           <a href='{{"/references/acronym/nm-cfmu.html"| prepend: site.baseurl | prepend: site.url }}'>NM</a></td>
           <td><a href='{{"/data/performancearea/" | prepend: site.baseurl | prepend: site.url }}'><span class="glyphicon glyphicon-download" style="font-size:25px;"></span></a></td>
@@ -272,7 +272,7 @@ The main drivers of the substantial increase observed in the first two quarters 
 <div class="row placeholders">
 <div class="col-sm-12 placeholder">
     <h4>En-route ATFM delay by ANSP</h4>
-    <span class="text-muted">2017</span>
+    <span class="text-muted">2018 (Jan-Jun)</span>
     <div id="crt_ertdly3"></div>
 </div>
 </div>
