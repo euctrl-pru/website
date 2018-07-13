@@ -4,7 +4,7 @@
       var crt_saf_upa_YY = new google.visualization.ChartWrapper({
          chartType: 'ComboChart',
          containerId: 'crt_saf_upa_YY',
-         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1qChhA2bkwkIv5B70cFNOEs4ubuP1xE2gceWcfAJozcg/edit?usp=sharing&sheet=UPA&range=A5:F17',
+         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1qChhA2bkwkIv5B70cFNOEs4ubuP1xE2gceWcfAJozcg/edit?usp=sharing&sheet=UPA&range=A5:F18',
          options: {
             chartArea: { left: 50, top: 40, width: '75%', height: '60%' },
             legend: {
@@ -37,7 +37,7 @@
                textStyle: { fontSize: 11 }
             }
          },
-         view: { columns: [0, 1, 2, 4, 5], rows: [2,3,4,5,6,7,8,9,10,11]  }
+         view: { columns: [0, 1, 2, 4, 5], rows: [3,4,5,6,7,8,9,10,11,12]  }
       });
       crt_saf_upa_YY.draw();
    }
