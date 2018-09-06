@@ -16,7 +16,7 @@ cfmu_airac <- function(date) {
   extra_days <- ((cfmu_airac_epoch() %--% d) %/% days(1)) %% 28
   cy_beg <- (d - days(extra_days))
   num_cycles <- ((cfmu_airac_epoch() %--% cy_beg) %/% days(1)) %/% 28
-  num_cycles + cfmu_airac_epoch_number()
+  num_cycles
 }
 
 cfmu_airac_interval <- function(cfmu_airac) {
