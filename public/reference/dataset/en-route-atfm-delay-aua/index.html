@@ -1,0 +1,7343 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="generator" content="Hugo 0.37" />
+
+
+<title>En-Route ATFM Delay Dataset (AUA) - PRU Portal</title>
+<meta property="og:title" content="En-Route ATFM Delay Dataset (AUA) - PRU Portal">
+
+
+
+  
+
+
+
+
+
+   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+
+
+<link rel="manifest" href="manifest.json">
+
+
+
+<link rel="stylesheet" href="../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../css/main.css" media="all">
+
+ 
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all">
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
+
+
+
+
+
+  </head>
+  <body>
+  	
+    <button class="dn fixed white-70 bg-red outline-0 bottom-1 right-1 z-999 bn br1 pa1 glow pointer:hover" onclick="topFunction()" id="to-top-btn" title="Go to top">top <i class="fa fa-angle-double-up"></i></button>
+    <script>
+      
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("to-top-btn").style.display = "block";
+          } else {
+              document.getElementById("to-top-btn").style.display = "none";
+          }
+      }
+      
+      function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+      }
+      </script>
+
+    <main class="ph2 pb1">
+      <header class="tc bb b--black-10 bg-light-gray">
+        <nav class="db dt-l w-100 border-box mid-gray pa2 ph5-l">
+  <a class="db dtc-l v-mid mid-gray link dim w-100 w-20-l tc tl-l mb2 mb0-l" href="../../../">
+    <img src="../../../images/pru-logo.png"
+    width="54"
+    height="32"
+    alt="PRU"
+    class="dib br-100">
+  </a>
+
+  <div class="db dtc-l v-mid w-100 w-80-l tc tr-l">
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../../prcq/" title="PRC Quarterly">PRC Quarterly</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../../post/" title="News">News</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../../dashboard/perf-area/" title="Dashboard">Dashboard</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../../data/" title="Data">Data</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../../study/" title="Studies">Studies</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../../reference/" title="References">References</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../../about/us/" title="About">About</a>
+    
+  </div>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+
+    <h1 class="article-title">En-Route ATFM Delay Dataset (AUA)</h1>
+
+    
+
+    <div class="article-content">
+      
+
+<p>Please note that software release 20.0 of the Network Manager on 04 April 2016
+introduced a change to improve the accuracy of the ATFM delay calculation for
+operational purposes.
+For more information on the change in methodology <a href="../../../reference/methodology/atfm-delay-calculation/" title="ATFM Delay calculation changes due to REA">click here</a>.</p>
+
+<h2 id="data-description">Data description</h2>
+
+<p>The <a href="../../../reference/definition/en-route-atfm-delay/">en-route ATFM delay</a>
+provides an indication of ATFM delays on the ground due to constraints en-route.</p>
+
+<p>In Europe, when traffic demand is anticipated to exceed the available capacity
+in en route centres or at airports, Air Traffic Control
+(<a href="../../../reference/acronym/atc/">ATC</a>) units may request the local Flow
+Management Position (<a href="../../../reference/acronym/fmp/">FMP</a>) to instigate an Air
+Traffic Flow Management (ATFM) measure, or
+<a href="../../../reference/definition/regulation/">regulation</a>.
+Aircraft expected to arrive during a period of congestion are given ATFM delay
+at their departure airport, under the authority of the
+Network Manager, in order to regulate the flow of traffic into the constrained
+downstream en route sector or airport, thus ensuring safety.</p>
+
+<p>The calculation of En-route ATFM delay is based on a well established and
+commonly accepted algorithm and has been in use as a commonly agreed proxy for
+en-route capacity shortfalls since 1999.</p>
+
+<h2 id="atfm-delay-computation">ATFM delay computation</h2>
+
+<p>The ATFM delays are calculated as the difference between the estimated
+take-off time calculated from the filed flight plan including updates and the
+calculated take-off time allocated by the central unit of ATFM.</p>
+
+<p>The reason for the regulation is indicated by the responsible Flow Management
+Position (FMP).</p>
+
+<p>The delay is attributed to the most constraining ATC unit.</p>
+
+<p><em>Please note that the delays caused by READY to Depart (REA) messages and ATFM slot
+extensions were included in ATFM delays until NM release 20.0.
+As of 4 April 2016, delays due to REA messages and slot extensions are not included
+any longer which reduces the amount of computed ATFM delay.</em></p>
+
+<h2 id="computation-of-traffic">Computation of traffic</h2>
+
+<p>The number of flights is based on ANSP boundaries (which are not necessarily
+coincidental with the FIR or geographical boundaries of the State).</p>
+
+<h2 id="ansp-definitions">ANSP definitions</h2>
+
+<p>The ANSP level information is based on an aggregation of Air Traffic control
+Unit Airspace (AUA). A list for each ANSP will be provided in due course.</p>
+
+<h2 id="column-naming-and-types">Column naming and types</h2>
+
+<table>
+<thead>
+<tr>
+<th>Column name</th>
+<th>Data source</th>
+<th>Label</th>
+<th>Reason Group</th>
+<th>Column description</th>
+<th>Example</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>YEAR</td>
+<td>Network Manager</td>
+<td>YEAR</td>
+<td></td>
+<td>Reference year</td>
+<td>2015</td>
+</tr>
+
+<tr>
+<td>MONTH_NUM</td>
+<td>Network Manager</td>
+<td>MONTH</td>
+<td></td>
+<td>Month (numeric)</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>MONTH_MON</td>
+<td>Network Manager</td>
+<td>MONTH_MON</td>
+<td></td>
+<td>Month (3-letter code)</td>
+<td>MAR</td>
+</tr>
+
+<tr>
+<td>FLT_DATE</td>
+<td>Network Manager</td>
+<td>FLT_DATE</td>
+<td></td>
+<td>Date of flight</td>
+<td>17/03/2015</td>
+</tr>
+
+<tr>
+<td>ENTITY_NAME</td>
+<td>PRU</td>
+<td>ENTITY_NAME</td>
+<td></td>
+<td>Entity name</td>
+<td>FAB CE</td>
+</tr>
+
+<tr>
+<td>ENTITY_TYPE</td>
+<td>PRU</td>
+<td>ENTITY_TYPE</td>
+<td></td>
+<td>Type of the entity to which the data relates (ANSP, FAB, AREA)</td>
+<td>FAB (AUA)</td>
+</tr>
+
+<tr>
+<td>FLT_ERT_1</td>
+<td>Network Manager</td>
+<td>Flights</td>
+<td></td>
+<td>Total number of flights within the respective airspace</td>
+<td>3853</td>
+</tr>
+
+<tr>
+<td>DLY_ERT_1</td>
+<td>Network Manager</td>
+<td>En-route ATFM delay</td>
+<td></td>
+<td>Minutes of en-route ATFM delay</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>DLY_ERT_A_1</td>
+<td>Network Manager</td>
+<td>A - Accident/Incident</td>
+<td>ER Disruptions</td>
+<td>Minutes of en-route ATFM delay with delay code A - Accident/Incident</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>DLY_ERT_C_1</td>
+<td>Network Manager</td>
+<td>C - ATC Capacity</td>
+<td>ER Capacity (ATC)</td>
+<td>Minutes of en-route ATFM delay with delay code C - ATC Capacity</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>DLY_ERT_D_1</td>
+<td>Network Manager</td>
+<td>D - De-icing</td>
+<td>ER Weather</td>
+<td>Minutes of en-route ATFM delay with delay code D - De-icing</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>DLY_ERT_E_1</td>
+<td>Network Manager</td>
+<td>E - Equipment (non-ATC)</td>
+<td>ER Disruptions</td>
+<td>Minutes of en-route ATFM delay with delay code E - Equipment (non-ATC)</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>DLY_ERT_G_1</td>
+<td>Network Manager</td>
+<td>G - Aerodrome Capacity</td>
+<td>ER Capacity</td>
+<td>Minutes of en-route ATFM delay with delay code G - Aerodrome Capacity</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>DLY_ERT_I_1</td>
+<td>Network Manager</td>
+<td>I - Industrial Action (ATC)</td>
+<td>ER Disruptions (ATC)</td>
+<td>Minutes of en-route ATFM delay with delay code I - Industrial Action (ATC)</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>DLY_ERT_M_1</td>
+<td>Network Manager</td>
+<td>M - Airspace Management</td>
+<td>ER Capacity</td>
+<td>Minutes of en-route ATFM delay with delay code M - Airspace Management</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>DLY_ERT_N_1</td>
+<td>Network Manager</td>
+<td>N - Industrial Action (non-ATC)</td>
+<td>ER Disruptions</td>
+<td>Minutes of en-route ATFM delay with delay code N - Industrial Action (non-ATC)</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>DLY_ERT_O_1</td>
+<td>Network Manager</td>
+<td>O - Other</td>
+<td>ER Disruptions</td>
+<td>Minutes of en-route ATFM delay with delay code O - Other</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>DLY_ERT_P_1</td>
+<td>Network Manager</td>
+<td>P - Special Event</td>
+<td>ER Events</td>
+<td>Minutes of en-route ATFM delay with delay code P - Special Event</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>DLY_ERT_R_1</td>
+<td>Network Manager</td>
+<td>R - ATC Routeing</td>
+<td>ER Capacity</td>
+<td>Minutes of en-route ATFM delay with delay code R - ATC Routeing</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>DLY_ERT_S_1</td>
+<td>Network Manager</td>
+<td>S - ATC Staffing</td>
+<td>ER Staffing (ATC)</td>
+<td>Minutes of en-route ATFM delay with delay code S - ATC Staffing</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>DLY_ERT_T_1</td>
+<td>Network Manager</td>
+<td>T - Equipment (ATC)</td>
+<td>ER Disruptions (ATC)</td>
+<td>Minutes of en-route ATFM delay with delay code T - Equipment (ATC)</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>DLY_ERT_V_1</td>
+<td>Network Manager</td>
+<td>V - Environmental Issues</td>
+<td>ER Capacity</td>
+<td>Minutes of en-route ATFM delay with delay code V - Environmental Issues</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>DLY_ERT_W_1</td>
+<td>Network Manager</td>
+<td>W - Weather</td>
+<td>ER Weather</td>
+<td>Minutes of en-route ATFM delay with delay code W - Weather</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>DLY_ERT_NA_1</td>
+<td>Network Manager</td>
+<td>NA - Not specified</td>
+<td>ER Disruptions</td>
+<td>Minutes of en-route ATFM delay with delay code NA - Not specified</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>FLT_ERT_1_DLY</td>
+<td>Network Manager</td>
+<td>FLT_ERT_1_DLY</td>
+<td></td>
+<td>Number of en-route ATFM delayed flights</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>FLT_ERT_1_DLY_15</td>
+<td>Network Manager</td>
+<td>FLT_ERT_1_DLY_15</td>
+<td></td>
+<td>Number of en-route ATFM delayed flights (&gt;15 min.)</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="ansp-composition">ANSP Composition</h2>
+
+<p>ANSP composition on 
+2018-07-01
+.</p>
+
+
+
+
+
+
+<table>
+
+    <thead>
+    
+        
+        <th>ANSP_NAME</th>
+        
+        <th>PRU_ATC_TYPE</th>
+        
+        <th>AUA_CODE</th>
+        
+        <th>AUA_NAME</th>
+        
+    
+    </thead>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Belgocontrol</td>
+        
+        <td>APP</td>
+        
+        <td>EBAWCTR</td>
+        
+        <td>ANTWERPEN TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Belgocontrol</td>
+        
+        <td>APP</td>
+        
+        <td>EBBRCTR</td>
+        
+        <td>BRUSSELS TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Belgocontrol</td>
+        
+        <td>APP</td>
+        
+        <td>EBBRTMA</td>
+        
+        <td>BRUSSELS APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Belgocontrol</td>
+        
+        <td>ACC</td>
+        
+        <td>EBBUCTA</td>
+        
+        <td>BELGOCONTROL</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Belgocontrol</td>
+        
+        <td>FIS</td>
+        
+        <td>EBBUICTA</td>
+        
+        <td>BRUSSELS FLT INFO</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Belgocontrol</td>
+        
+        <td>APP</td>
+        
+        <td>EBCICTR</td>
+        
+        <td>CHARLEROI/BRUS SOUTH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Belgocontrol</td>
+        
+        <td>APP</td>
+        
+        <td>EBCITMA</td>
+        
+        <td>CHARLEROI APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Belgocontrol</td>
+        
+        <td>APP</td>
+        
+        <td>EBLGCTR</td>
+        
+        <td>LIEGE TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Belgocontrol</td>
+        
+        <td>APP</td>
+        
+        <td>EBLGTMA</td>
+        
+        <td>LIEGE APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Belgocontrol</td>
+        
+        <td>APP</td>
+        
+        <td>EBOSCTR</td>
+        
+        <td>OOSTENDE</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Belgocontrol</td>
+        
+        <td>APP</td>
+        
+        <td>EBOSTMA</td>
+        
+        <td>OOSTENDE APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DFS</td>
+        
+        <td>ACC</td>
+        
+        <td>EDGGNCTA</td>
+        
+        <td></td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DFS</td>
+        
+        <td>ACC</td>
+        
+        <td>EDGGSCTA</td>
+        
+        <td></td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DFS</td>
+        
+        <td>ACC</td>
+        
+        <td>EDMMCTA</td>
+        
+        <td>MUENCHEN ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DFS</td>
+        
+        <td>ACC</td>
+        
+        <td>EDUUUTA</td>
+        
+        <td>KARLSRUHE UAC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DFS</td>
+        
+        <td>ACC</td>
+        
+        <td>EDWWCTA</td>
+        
+        <td>BREMEN ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>MUAC</td>
+        
+        <td>ACC</td>
+        
+        <td>EDYYBUTA</td>
+        
+        <td>BELGIAN SECTORS</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>MUAC</td>
+        
+        <td>ACC</td>
+        
+        <td>EDYYDUTA</td>
+        
+        <td>DECO SECTORS</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>MUAC</td>
+        
+        <td>ACC</td>
+        
+        <td>EDYYHUTA</td>
+        
+        <td>HANNOVER SECTORS</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>EANS</td>
+        
+        <td>APP</td>
+        
+        <td>EEEICTR</td>
+        
+        <td>AMARI TWR</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>EANS</td>
+        
+        <td>APP</td>
+        
+        <td>EETNTMA</td>
+        
+        <td>TALLINN APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>EANS</td>
+        
+        <td>ACC</td>
+        
+        <td>EETTCTA</td>
+        
+        <td>TALLIN ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>EANS</td>
+        
+        <td>APP</td>
+        
+        <td>EETUCTR</td>
+        
+        <td>TARTU TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS Finland</td>
+        
+        <td>FIS</td>
+        
+        <td>EFETCTR</td>
+        
+        <td>ENONTEKIO AFIS</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS Finland</td>
+        
+        <td>APP</td>
+        
+        <td>EFHATMA</td>
+        
+        <td>HALLI APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS Finland</td>
+        
+        <td>APP</td>
+        
+        <td>EFHKTMA</td>
+        
+        <td>HELSINKI/VANTAA APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS Finland</td>
+        
+        <td>ACC</td>
+        
+        <td>EFINCTA</td>
+        
+        <td>EFIN ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS Finland</td>
+        
+        <td>APP</td>
+        
+        <td>EFIVTMA</td>
+        
+        <td>IVALO</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS Finland</td>
+        
+        <td>APP</td>
+        
+        <td>EFJOTMA</td>
+        
+        <td>JOENSUU</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS Finland</td>
+        
+        <td>APP</td>
+        
+        <td>EFJYTMA</td>
+        
+        <td>JYVASKYLA APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS Finland</td>
+        
+        <td>APP</td>
+        
+        <td>EFKETMA</td>
+        
+        <td>KEMI-TORNIO</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS Finland</td>
+        
+        <td>FIS</td>
+        
+        <td>EFKICTR</td>
+        
+        <td>KAJAANI AFIS</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS Finland</td>
+        
+        <td>APP</td>
+        
+        <td>EFKKCTR</td>
+        
+        <td>KOKKOLA-PIETARSAARI</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS Finland</td>
+        
+        <td>APP</td>
+        
+        <td>EFKSTMA</td>
+        
+        <td>KUUSAMO APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS Finland</td>
+        
+        <td>APP</td>
+        
+        <td>EFKTTMA</td>
+        
+        <td>KITTILA APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS Finland</td>
+        
+        <td>APP</td>
+        
+        <td>EFKUTMA</td>
+        
+        <td>KUOPIO APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS Finland</td>
+        
+        <td>APP</td>
+        
+        <td>EFLPTMA</td>
+        
+        <td>LAPPEENRANTA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS Finland</td>
+        
+        <td>APP</td>
+        
+        <td>EFMATMA</td>
+        
+        <td>MARIEHAMN</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS Finland</td>
+        
+        <td>APP</td>
+        
+        <td>EFOUTMA</td>
+        
+        <td>OULU</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS Finland</td>
+        
+        <td>APP</td>
+        
+        <td>EFPOCTR</td>
+        
+        <td>PORI</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS Finland</td>
+        
+        <td>APP</td>
+        
+        <td>EFROTMA</td>
+        
+        <td>ROVANIEMI APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS Finland</td>
+        
+        <td>FIS</td>
+        
+        <td>EFSACTR</td>
+        
+        <td>SAVONLINNA AFIS</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS Finland</td>
+        
+        <td>APP</td>
+        
+        <td>EFTPTMA</td>
+        
+        <td>PIRKKALA APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS Finland</td>
+        
+        <td>APP</td>
+        
+        <td>EFTUTMA</td>
+        
+        <td>TURKU</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS Finland</td>
+        
+        <td>APP</td>
+        
+        <td>EFUTTMA</td>
+        
+        <td>UTTI APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS Finland</td>
+        
+        <td>APP</td>
+        
+        <td>EFVATMA</td>
+        
+        <td>VAASA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS Finland</td>
+        
+        <td>FIS</td>
+        
+        <td>EFVRCTR</td>
+        
+        <td>VARKAUS AFIS</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NATS (Continental)</td>
+        
+        <td>APP</td>
+        
+        <td>EGAATMA</td>
+        
+        <td>BELFAST APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NATS (Continental)</td>
+        
+        <td>APP</td>
+        
+        <td>EGBBTMA</td>
+        
+        <td>BIRMINGHAM</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NATS (Continental)</td>
+        
+        <td>ACC</td>
+        
+        <td>EGCCCTA</td>
+        
+        <td>MANCHESTER ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NATS (Continental)</td>
+        
+        <td>APP</td>
+        
+        <td>EGCCTMA</td>
+        
+        <td>MANCHESTER APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NATS (Continental)</td>
+        
+        <td>APP</td>
+        
+        <td>EGFFTMA</td>
+        
+        <td>CARDIFF</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NATS (Continental)</td>
+        
+        <td>APP</td>
+        
+        <td>EGHITMA</td>
+        
+        <td>SOUTHAMPTON</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NATS (Continental)</td>
+        
+        <td>APP</td>
+        
+        <td>EGNHATZ</td>
+        
+        <td>BLACKPOOL</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NATS (Continental)</td>
+        
+        <td>APP</td>
+        
+        <td>EGPDTMA</td>
+        
+        <td>ABERDEEN/DYCE</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NATS (Continental)</td>
+        
+        <td>APP</td>
+        
+        <td>EGPFTMA</td>
+        
+        <td>GLASGOW</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NATS (Continental)</td>
+        
+        <td>APP</td>
+        
+        <td>EGPHTMA</td>
+        
+        <td>EDINBURGH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NATS (Continental)</td>
+        
+        <td>ACC</td>
+        
+        <td>EGPXCTA</td>
+        
+        <td>SCOTTISH ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NATS (Continental)</td>
+        
+        <td>FIS</td>
+        
+        <td>EGPXICTA</td>
+        
+        <td>LONDON FIR-FIC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NATS (Continental)</td>
+        
+        <td>APP</td>
+        
+        <td>EGSSTMA</td>
+        
+        <td>LONDON/STANSTED</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NATS (Continental)</td>
+        
+        <td>ACC</td>
+        
+        <td>EGTTCTA</td>
+        
+        <td>LONDON ATCC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NATS (Continental)</td>
+        
+        <td>FIS</td>
+        
+        <td>EGTTICTA</td>
+        
+        <td>LONDON FIR-FIC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NATS (Continental)</td>
+        
+        <td>ACC</td>
+        
+        <td>EGTTTCTA</td>
+        
+        <td>LONDON TMA TC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LVNL</td>
+        
+        <td>ACC</td>
+        
+        <td>EHAACTA</td>
+        
+        <td>AMSTERDAM CONTROL</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LVNL</td>
+        
+        <td>FIS</td>
+        
+        <td>EHAAICTA</td>
+        
+        <td>AMSTERDAM FIS</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LVNL</td>
+        
+        <td>APP</td>
+        
+        <td>EHAMCTR</td>
+        
+        <td>SCHIPHOL AMSTERDAM</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LVNL</td>
+        
+        <td>APP</td>
+        
+        <td>EHAMTMA</td>
+        
+        <td>SCHIPHOL APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LVNL</td>
+        
+        <td>APP</td>
+        
+        <td>EHBKCTR</td>
+        
+        <td>MAASTRICHT TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LVNL</td>
+        
+        <td>APP</td>
+        
+        <td>EHBKTMA</td>
+        
+        <td>BEEK APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LVNL</td>
+        
+        <td>APP</td>
+        
+        <td>EHGGCTR</td>
+        
+        <td>EELDE TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LVNL</td>
+        
+        <td>APP</td>
+        
+        <td>EHGGTMA</td>
+        
+        <td>GRONINGEN</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LVNL</td>
+        
+        <td>APP</td>
+        
+        <td>EHRDCTR</td>
+        
+        <td>ROTTERDAM TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LVNL</td>
+        
+        <td>APP</td>
+        
+        <td>EHRDTMA</td>
+        
+        <td>ROTTERDAM APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>IAA</td>
+        
+        <td>APP</td>
+        
+        <td>EICKCTR</td>
+        
+        <td>CORK TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>IAA</td>
+        
+        <td>ACC</td>
+        
+        <td>EIDWCTA</td>
+        
+        <td>DUBLIN ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>IAA</td>
+        
+        <td>APP</td>
+        
+        <td>EIDWCTR</td>
+        
+        <td>DUBLIN TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>IAA</td>
+        
+        <td>APP</td>
+        
+        <td>EINNCTR</td>
+        
+        <td>SHANNON TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>IAA</td>
+        
+        <td>ACC</td>
+        
+        <td>EISNCTA</td>
+        
+        <td>SHANNON ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NAVIAIR</td>
+        
+        <td>APP</td>
+        
+        <td>EKAHTMA</td>
+        
+        <td>AARHUS APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NAVIAIR</td>
+        
+        <td>APP</td>
+        
+        <td>EKBITMA</td>
+        
+        <td>BILLUND APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NAVIAIR</td>
+        
+        <td>APP</td>
+        
+        <td>EKCHCTR</td>
+        
+        <td>KOBENHAVN/KASTRUP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NAVIAIR</td>
+        
+        <td>APP</td>
+        
+        <td>EKCHTMA</td>
+        
+        <td>KOBENHAVN/KASTRUP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NAVIAIR</td>
+        
+        <td>ACC</td>
+        
+        <td>EKDKCTA</td>
+        
+        <td>COPENHAGEN ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NAVIAIR</td>
+        
+        <td>APP</td>
+        
+        <td>EKEBTMA</td>
+        
+        <td>ESBJERG APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NAVIAIR</td>
+        
+        <td>APP</td>
+        
+        <td>EKRKTMA</td>
+        
+        <td>KOBENHAVN/ROSKILDE</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NAVIAIR</td>
+        
+        <td>APP</td>
+        
+        <td>EKRNTMA</td>
+        
+        <td>RONNE APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NAVIAIR</td>
+        
+        <td>APP</td>
+        
+        <td>EKVJTMA</td>
+        
+        <td>EKVJ  APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NAVIAIR</td>
+        
+        <td>APP</td>
+        
+        <td>EKYTTMA</td>
+        
+        <td>AALBORG APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANA LUX</td>
+        
+        <td>APP</td>
+        
+        <td>ELLXCTR</td>
+        
+        <td>LUXEMBOURG TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Belgocontrol</td>
+        
+        <td>FIS</td>
+        
+        <td>ELLXICTA</td>
+        
+        <td>LUXEMBOURG FLT INFO</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANA LUX</td>
+        
+        <td>APP</td>
+        
+        <td>ELLXTMA</td>
+        
+        <td>LUXEMBOURG APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>APP</td>
+        
+        <td>ENANTMA</td>
+        
+        <td>ANDOYA TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>APP</td>
+        
+        <td>ENATTMA</td>
+        
+        <td>ALTA TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>ACC</td>
+        
+        <td>ENBDCTA</td>
+        
+        <td>BODO ATCC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>APP</td>
+        
+        <td>ENBOTMA</td>
+        
+        <td>BODO TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>APP</td>
+        
+        <td>ENBRTMA</td>
+        
+        <td>BERGEN APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>APP</td>
+        
+        <td>ENCNTMA</td>
+        
+        <td>KJEVIK TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>APP</td>
+        
+        <td>ENDUTMA</td>
+        
+        <td>BARDUFOSS TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>APP</td>
+        
+        <td>ENEVTMA</td>
+        
+        <td>EVENES TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>FIS</td>
+        
+        <td>ENFLCTR</td>
+        
+        <td>FLORO AFIS</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>APP</td>
+        
+        <td>ENGMCTR</td>
+        
+        <td>GARDERMOEN TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>APP</td>
+        
+        <td>ENHETMA</td>
+        
+        <td>HEIDRUN A</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>APP</td>
+        
+        <td>ENKR1CTA</td>
+        
+        <td>KIRKENES TMA CENTER AND WEST</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>APP</td>
+        
+        <td>ENKRCTR</td>
+        
+        <td>KIRKENES TMA WEST AND CENTER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>APP</td>
+        
+        <td>ENKRTMA</td>
+        
+        <td>KIRKENES TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>FIS</td>
+        
+        <td>ENLICTR</td>
+        
+        <td>LISTA AFIS</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>APP</td>
+        
+        <td>ENMLTMA</td>
+        
+        <td>MORE APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>APP</td>
+        
+        <td>ENNATMA</td>
+        
+        <td>BANAK TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>OAC</td>
+        
+        <td>ENOBOCA</td>
+        
+        <td>BODO OCEANIC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>APP</td>
+        
+        <td>ENOLTMA</td>
+        
+        <td>ORLAND TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>ACC</td>
+        
+        <td>ENOSCTA</td>
+        
+        <td>OSLO ATCC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>APP</td>
+        
+        <td>ENOSTMA</td>
+        
+        <td>OSLO APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>APP</td>
+        
+        <td>ENROTMA</td>
+        
+        <td>ROROS TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>FIS</td>
+        
+        <td>ENSBCTR</td>
+        
+        <td>SVALBARD/LONGYEAR AF</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>FIS</td>
+        
+        <td>ENSGCTR</td>
+        
+        <td>SOGNDAL AFIS</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>APP</td>
+        
+        <td>ENTCTMA</td>
+        
+        <td>TROMSO/LANGNES</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>APP</td>
+        
+        <td>ENVATMA</td>
+        
+        <td>TRONDHEIM/VAERNES</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Avinor</td>
+        
+        <td>APP</td>
+        
+        <td>ENZVTMA</td>
+        
+        <td>WEST COAST APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>PANSA</td>
+        
+        <td>APP</td>
+        
+        <td>EPBYCTR</td>
+        
+        <td></td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>PANSA</td>
+        
+        <td>APP</td>
+        
+        <td>EPGDTMA</td>
+        
+        <td>GDANSK APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>PANSA</td>
+        
+        <td>APP</td>
+        
+        <td>EPKKTMA</td>
+        
+        <td>KRAKOW TMA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>PANSA</td>
+        
+        <td>APP</td>
+        
+        <td>EPKTCTR</td>
+        
+        <td>KATOWICE TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>PANSA</td>
+        
+        <td>APP</td>
+        
+        <td>EPLBCTR</td>
+        
+        <td>LUBLIN TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>PANSA</td>
+        
+        <td>APP</td>
+        
+        <td>EPLBTMA</td>
+        
+        <td>LUBLIN APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>PANSA</td>
+        
+        <td>APP</td>
+        
+        <td>EPLLTMA</td>
+        
+        <td></td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>PANSA</td>
+        
+        <td>APP</td>
+        
+        <td>EPLRATZ</td>
+        
+        <td>LUBLIN/RADAWIEC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>PANSA</td>
+        
+        <td>APP</td>
+        
+        <td>EPPOTMA</td>
+        
+        <td>POZNAN APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>PANSA</td>
+        
+        <td>APP</td>
+        
+        <td>EPRZCTR</td>
+        
+        <td>RZESZOW TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>PANSA</td>
+        
+        <td>APP</td>
+        
+        <td>EPRZTMA</td>
+        
+        <td>RZESZOW APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>PANSA</td>
+        
+        <td>APP</td>
+        
+        <td>EPSCTMA</td>
+        
+        <td>SZCZECIN TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>PANSA</td>
+        
+        <td>APP</td>
+        
+        <td>EPSYTMA</td>
+        
+        <td>OLSZTYN/MAZURY APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>PANSA</td>
+        
+        <td>APP</td>
+        
+        <td>EPWATMA</td>
+        
+        <td>WARSZAWA APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>PANSA</td>
+        
+        <td>ACC</td>
+        
+        <td>EPWWCTA</td>
+        
+        <td>ACC WARSZAWA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>PANSA</td>
+        
+        <td>FIS</td>
+        
+        <td>EPWWICTA</td>
+        
+        <td>WARSZAWA FLT INFO</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>PANSA</td>
+        
+        <td>APP</td>
+        
+        <td>EPZGCTR</td>
+        
+        <td>ZIELONA GORA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LFV</td>
+        
+        <td>APP</td>
+        
+        <td>ESDFTMA</td>
+        
+        <td>RONNEBY APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LFV</td>
+        
+        <td>APP</td>
+        
+        <td>ESGGTMA</td>
+        
+        <td>GOTEBORG TMC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LFV</td>
+        
+        <td>APP</td>
+        
+        <td>ESGTTMA</td>
+        
+        <td>TROLLHATTEN TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LFV</td>
+        
+        <td>APP</td>
+        
+        <td>ESIATMA</td>
+        
+        <td>KARLSBORG APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LFV</td>
+        
+        <td>APP</td>
+        
+        <td>ESIBTMA</td>
+        
+        <td>SATENAS APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LFV</td>
+        
+        <td>APP</td>
+        
+        <td>ESMKTMA</td>
+        
+        <td>KRISTIANSTAD/EVEROD</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LFV</td>
+        
+        <td>ACC</td>
+        
+        <td>ESMMCTA</td>
+        
+        <td>MALMO ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LFV</td>
+        
+        <td>APP</td>
+        
+        <td>ESMTTMA</td>
+        
+        <td>HALMSTAD TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LFV</td>
+        
+        <td>APP</td>
+        
+        <td>ESNOTMA</td>
+        
+        <td>ORNSKOLDSVIK TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LFV</td>
+        
+        <td>APP</td>
+        
+        <td>ESNQCTR</td>
+        
+        <td>KIRUNA TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LFV</td>
+        
+        <td>APP</td>
+        
+        <td>ESNUCTR</td>
+        
+        <td>UMEA TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LFV</td>
+        
+        <td>APP</td>
+        
+        <td>ESNZTMA</td>
+        
+        <td>OSTERSUND TMC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LFV</td>
+        
+        <td>ACC</td>
+        
+        <td>ESOSCTA</td>
+        
+        <td>STOCKHOLM ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LFV</td>
+        
+        <td>APP</td>
+        
+        <td>ESPATMA</td>
+        
+        <td>KALLAX TMC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LFV</td>
+        
+        <td>APP</td>
+        
+        <td>ESPETMA</td>
+        
+        <td>VIDSEL APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LFV</td>
+        
+        <td>APP</td>
+        
+        <td>ESSACTR</td>
+        
+        <td>STOCKHOLM/ARLANDA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LFV</td>
+        
+        <td>APP</td>
+        
+        <td>ESSATMA</td>
+        
+        <td>STOCKHOLM APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LFV</td>
+        
+        <td>APP</td>
+        
+        <td>ESSPTMA</td>
+        
+        <td>NORRKOPING/KUNGSANGE</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LFV</td>
+        
+        <td>APP</td>
+        
+        <td>ESSVTMA</td>
+        
+        <td>VISBY TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LGS</td>
+        
+        <td>APP</td>
+        
+        <td>EVLATMA</td>
+        
+        <td>LIEPAJA APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LGS</td>
+        
+        <td>ACC</td>
+        
+        <td>EVRRCTA</td>
+        
+        <td>RIGA ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Oro Navigacija</td>
+        
+        <td>FIS</td>
+        
+        <td>EYKACTA</td>
+        
+        <td>KAUNAS FIC UNIT</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Oro Navigacija</td>
+        
+        <td>APP</td>
+        
+        <td>EYKATMA</td>
+        
+        <td>KAUNAS APPRAOCH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Oro Navigacija</td>
+        
+        <td>FIS</td>
+        
+        <td>EYPACTA</td>
+        
+        <td>PALANGA FIC UNIT</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Oro Navigacija</td>
+        
+        <td>APP</td>
+        
+        <td>EYPATMA</td>
+        
+        <td>PALANGA APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Oro Navigacija</td>
+        
+        <td>FIS</td>
+        
+        <td>EYSACTA</td>
+        
+        <td>SIAULIA FIC UNIT</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Oro Navigacija</td>
+        
+        <td>APP</td>
+        
+        <td>EYSATMA</td>
+        
+        <td>SIAULIAI APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Oro Navigacija</td>
+        
+        <td>ACC</td>
+        
+        <td>EYVCCTA</td>
+        
+        <td>VILNIUS ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Oro Navigacija</td>
+        
+        <td>FIS</td>
+        
+        <td>EYVICTA</td>
+        
+        <td>VILNIUS FIC UNIT</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Oro Navigacija</td>
+        
+        <td>APP</td>
+        
+        <td>EYVITMA</td>
+        
+        <td>VILNIUS APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>ACC</td>
+        
+        <td>GCCCCTA</td>
+        
+        <td>CANARIAS ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>APP</td>
+        
+        <td>GCTSTMA</td>
+        
+        <td>TENERIFE SOUTH  APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>APP</td>
+        
+        <td>GCXOTMA</td>
+        
+        <td>TENERIFE NORTH TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Albcontrol</td>
+        
+        <td>ACC</td>
+        
+        <td>LAAACTA</td>
+        
+        <td>TIRANA ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Albcontrol</td>
+        
+        <td>FIS</td>
+        
+        <td>LAAAICTA</td>
+        
+        <td>FLIGHT INFORMATION</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>BULATSA</td>
+        
+        <td>APP</td>
+        
+        <td>LBBGTMA</td>
+        
+        <td>BURGAS APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>BULATSA</td>
+        
+        <td>APP</td>
+        
+        <td>LBGOCTR</td>
+        
+        <td>GORNA DOMESTIC AD</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>BULATSA</td>
+        
+        <td>APP</td>
+        
+        <td>LBGOTMA</td>
+        
+        <td>GORNA APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>BULATSA</td>
+        
+        <td>APP</td>
+        
+        <td>LBPDCTR</td>
+        
+        <td>PLOVDIV TWR</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>BULATSA</td>
+        
+        <td>APP</td>
+        
+        <td>LBSFTMA</td>
+        
+        <td>SOFIA APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>BULATSA</td>
+        
+        <td>ACC</td>
+        
+        <td>LBSRCTA</td>
+        
+        <td>SOFIA CONTROL</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>BULATSA</td>
+        
+        <td>FIS</td>
+        
+        <td>LBSRICTA</td>
+        
+        <td>LBSR FLIGHT INFO</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>BULATSA</td>
+        
+        <td>APP</td>
+        
+        <td>LBWNTMA</td>
+        
+        <td>VARNA APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DCAC Cyprus</td>
+        
+        <td>ACC</td>
+        
+        <td>LCCCCTA</td>
+        
+        <td>NICOSIA ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DCAC Cyprus</td>
+        
+        <td>APP</td>
+        
+        <td>LCLKCTR</td>
+        
+        <td>LARNACA APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DCAC Cyprus</td>
+        
+        <td>APP</td>
+        
+        <td>LCPHCTR</td>
+        
+        <td>PAPHOS APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DCAC Cyprus</td>
+        
+        <td>APP</td>
+        
+        <td>LCRACTR</td>
+        
+        <td>AKROTIRI TWR</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Croatia Control</td>
+        
+        <td>APP</td>
+        
+        <td>LDDUTMA</td>
+        
+        <td>DUBROVNIK TMA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Croatia Control</td>
+        
+        <td>APP</td>
+        
+        <td>LDOSTMA</td>
+        
+        <td>OSIJEK APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Croatia Control</td>
+        
+        <td>APP</td>
+        
+        <td>LDPLTMA</td>
+        
+        <td>PULA APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Croatia Control</td>
+        
+        <td>APP</td>
+        
+        <td>LDRITMA</td>
+        
+        <td>RIJEKA TMA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Croatia Control</td>
+        
+        <td>APP</td>
+        
+        <td>LDSPTMA</td>
+        
+        <td>SPLIT APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Croatia Control</td>
+        
+        <td>APP</td>
+        
+        <td>LDZATMA</td>
+        
+        <td>ZAGREB APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Croatia Control</td>
+        
+        <td>APP</td>
+        
+        <td>LDZDTMA</td>
+        
+        <td>ZADAR TMA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Croatia Control</td>
+        
+        <td>ACC</td>
+        
+        <td>LDZOCTA</td>
+        
+        <td>ZAGREB ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>APP</td>
+        
+        <td>LEAMTMA</td>
+        
+        <td>ALMERIA APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>APP</td>
+        
+        <td>LEASTMA</td>
+        
+        <td>ASTURIAS</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>APP</td>
+        
+        <td>LEBBTMA</td>
+        
+        <td>BILBAO</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>APP</td>
+        
+        <td>LEBLTMA</td>
+        
+        <td>BARCELONA  APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>ACC</td>
+        
+        <td>LECBCTA</td>
+        
+        <td>BARCELONA ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>APP</td>
+        
+        <td>LECGTMA</td>
+        
+        <td>GALICIA APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>APP</td>
+        
+        <td>LECLTMA</td>
+        
+        <td>VALENCIA APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>ACC</td>
+        
+        <td>LECMCTA</td>
+        
+        <td>MADRID ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>ACC</td>
+        
+        <td>LECPCTA</td>
+        
+        <td>PALMA TCC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>ACC</td>
+        
+        <td>LECSCTA</td>
+        
+        <td>SEVILLA ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>APP</td>
+        
+        <td>LEGETMA</td>
+        
+        <td>GERONA APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>APP</td>
+        
+        <td>LEGRTMA</td>
+        
+        <td>GRANADA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>APP</td>
+        
+        <td>LEIBCTR</td>
+        
+        <td>IBIZA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>APP</td>
+        
+        <td>LELNTMA</td>
+        
+        <td>LEON</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>APP</td>
+        
+        <td>LEMDTMA</td>
+        
+        <td>MADRID APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>APP</td>
+        
+        <td>LEMGTMA</td>
+        
+        <td>MALAGA APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>APP</td>
+        
+        <td>LEMHTMA</td>
+        
+        <td>MENORCA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>APP</td>
+        
+        <td>LEPATMA</td>
+        
+        <td>PALMA APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>APP</td>
+        
+        <td>LEPPTMA</td>
+        
+        <td>PAMPLONA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>APP</td>
+        
+        <td>LERSTMA</td>
+        
+        <td>REUS APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>APP</td>
+        
+        <td>LESOTMA</td>
+        
+        <td>SAN SEBASTIAN</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>APP</td>
+        
+        <td>LEVTTMA</td>
+        
+        <td>VITORIA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAIRE</td>
+        
+        <td>APP</td>
+        
+        <td>LEXJTMA</td>
+        
+        <td>SANTANDER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>ACC</td>
+        
+        <td>LFBBCTA</td>
+        
+        <td>BORDEAUX ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFBDTMA</td>
+        
+        <td>BORDEAUX APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFBHTMA</td>
+        
+        <td>LA ROCHELLE APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFBITMA</td>
+        
+        <td>POITIER APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFBLTMA</td>
+        
+        <td>LIMOGES APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFBOTMA</td>
+        
+        <td>TOULOUSE APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFBPTMA</td>
+        
+        <td>PAU APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFBZTMA</td>
+        
+        <td>BIARRITZ BAYONNE</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>ACC</td>
+        
+        <td>LFEECTA</td>
+        
+        <td>REIMS ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>ACC</td>
+        
+        <td>LFFFCTA</td>
+        
+        <td>PARIS ACC WEST</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFJLTMA</td>
+        
+        <td>METZ APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFKBTMA</td>
+        
+        <td>BASTIA APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFKJTMA</td>
+        
+        <td>AJACCIO</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFLBTMA</td>
+        
+        <td>CHAMBERY</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFLCCTA</td>
+        
+        <td>CLERMONT-FERRAND</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFLLTMA</td>
+        
+        <td>LYON SAINT EXUPERY</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFMLTMA</td>
+        
+        <td>MARSEILLE MARIGNANE</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>ACC</td>
+        
+        <td>LFMMCTA</td>
+        
+        <td>MARSEILLE ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFMNFCTA</td>
+        
+        <td>NICE COTE D&#39;AZUR</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFMTTMA</td>
+        
+        <td>MONTPELLIER/FRESJORG</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFOBTMA</td>
+        
+        <td>BEAUVAIS APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFOPTMA</td>
+        
+        <td>ROUEN BOOS</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFPMTMA</td>
+        
+        <td>SEINE APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFQQTMA</td>
+        
+        <td>LILLE APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFRBTMA</td>
+        
+        <td>BREST/GUIPAVAS</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFRGTMA</td>
+        
+        <td>DEAUVILLE/ST GATIEN</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFRNTMA</td>
+        
+        <td>RENNES ST JAQUES</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>ACC</td>
+        
+        <td>LFRRCTA</td>
+        
+        <td>BREST ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFRSTMA</td>
+        
+        <td>NANTES/CHATEAU BOUGO</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFSBTMA</td>
+        
+        <td>BALE-MULHOUSE APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DSNA</td>
+        
+        <td>APP</td>
+        
+        <td>LFSTTMA</td>
+        
+        <td>STRASBOURG APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>HCAA</td>
+        
+        <td>APP</td>
+        
+        <td>LGAVTMA</td>
+        
+        <td>ATHINAI APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>HCAA</td>
+        
+        <td>ACC</td>
+        
+        <td>LGGGCTA</td>
+        
+        <td>ATHINAI ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>HCAA</td>
+        
+        <td>APP</td>
+        
+        <td>LGIRTMA</td>
+        
+        <td>N. KAZANTZAKIS APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>HCAA</td>
+        
+        <td>APP</td>
+        
+        <td>LGKRTMA</td>
+        
+        <td>I. KAPODISTRIAS APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>HCAA</td>
+        
+        <td>ACC</td>
+        
+        <td>LGMDCTA</td>
+        
+        <td>MAKEDONIA ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>HCAA</td>
+        
+        <td>APP</td>
+        
+        <td>LGTSTMA</td>
+        
+        <td>MAKEDONIA APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>HungaroControl (EC)</td>
+        
+        <td>APP</td>
+        
+        <td>LHBPTMA</td>
+        
+        <td>BUDAPEST APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>HungaroControl (EC)</td>
+        
+        <td>ACC</td>
+        
+        <td>LHCCCTA</td>
+        
+        <td>BUDAPEST ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAV</td>
+        
+        <td>ACC</td>
+        
+        <td>LIBBCTA</td>
+        
+        <td>BRINDISI  ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAV</td>
+        
+        <td>APP</td>
+        
+        <td>LIBDTMA</td>
+        
+        <td>APULIA APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAV</td>
+        
+        <td>APP</td>
+        
+        <td>LIBGCTR</td>
+        
+        <td>GROTTAGLIE</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAV</td>
+        
+        <td>APP</td>
+        
+        <td>LIBPCTR</td>
+        
+        <td>PESCARA APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAV</td>
+        
+        <td>APP</td>
+        
+        <td>LICACTR</td>
+        
+        <td>LAMEZIA APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAV</td>
+        
+        <td>FIS</td>
+        
+        <td>LICDCTR</td>
+        
+        <td>LAMPEDUSA AFIS</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAV</td>
+        
+        <td>APP</td>
+        
+        <td>LICGCTR</td>
+        
+        <td>PANTELLERIA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAV</td>
+        
+        <td>APP</td>
+        
+        <td>LICJCTR</td>
+        
+        <td>PALERMO APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAV</td>
+        
+        <td>APP</td>
+        
+        <td>LICRCTR</td>
+        
+        <td>REGGIO CALABRIA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAV</td>
+        
+        <td>APP</td>
+        
+        <td>LIEACTR</td>
+        
+        <td>ALGHERO APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAV</td>
+        
+        <td>APP</td>
+        
+        <td>LIEOCTR</td>
+        
+        <td>OLBIA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAV</td>
+        
+        <td>APP</td>
+        
+        <td>LIMFCTR</td>
+        
+        <td>TORINO</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAV</td>
+        
+        <td>APP</td>
+        
+        <td>LIMJCTR</td>
+        
+        <td>GENOVA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAV</td>
+        
+        <td>ACC</td>
+        
+        <td>LIMMCTA</td>
+        
+        <td>MILANO ACC SPVR</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAV</td>
+        
+        <td>APP</td>
+        
+        <td>LIPECTR</td>
+        
+        <td>BOLOGNA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAV</td>
+        
+        <td>ACC</td>
+        
+        <td>LIPPCTA</td>
+        
+        <td>PADOVA ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAV</td>
+        
+        <td>APP</td>
+        
+        <td>LIPQCTR</td>
+        
+        <td>RONCHI DEI LEGIONARI</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAV</td>
+        
+        <td>APP</td>
+        
+        <td>LIPXCTR</td>
+        
+        <td>VERONA APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAV</td>
+        
+        <td>APP</td>
+        
+        <td>LIPYCTR</td>
+        
+        <td>ANCONA APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAV</td>
+        
+        <td>APP</td>
+        
+        <td>LIPZCTR</td>
+        
+        <td>VENEZIA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAV</td>
+        
+        <td>APP</td>
+        
+        <td>LIRNCTR</td>
+        
+        <td>NAPOLI APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAV</td>
+        
+        <td>APP</td>
+        
+        <td>LIRQCTR</td>
+        
+        <td>PISA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAV</td>
+        
+        <td>ACC</td>
+        
+        <td>LIRRCTA</td>
+        
+        <td>LIRRCCTA&#43;LIRRSCTA&#43;LIRRNCTA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ENAV</td>
+        
+        <td>APP</td>
+        
+        <td>LIRZCTR</td>
+        
+        <td>PERUGIA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Slovenia Control</td>
+        
+        <td>ACC</td>
+        
+        <td>LJLABCTA</td>
+        
+        <td>LJUBLJANA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Slovenia Control</td>
+        
+        <td>ACC</td>
+        
+        <td>LJLACTA</td>
+        
+        <td>LJUBLJANA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Slovenia Control</td>
+        
+        <td>APP</td>
+        
+        <td>LJLJCTR</td>
+        
+        <td>LJUBLJANA TWR</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Slovenia Control</td>
+        
+        <td>APP</td>
+        
+        <td>LJMBATMA</td>
+        
+        <td>MARIBOR</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Slovenia Control</td>
+        
+        <td>APP</td>
+        
+        <td>LJMBBTMA</td>
+        
+        <td>MARIBOR</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Slovenia Control</td>
+        
+        <td>APP</td>
+        
+        <td>LJMBCTR</td>
+        
+        <td>MARIBOR</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Slovenia Control</td>
+        
+        <td>APP</td>
+        
+        <td>LJPZATMA</td>
+        
+        <td>PORTOROZ</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Slovenia Control</td>
+        
+        <td>APP</td>
+        
+        <td>LJPZBTMA</td>
+        
+        <td>PORTOROZ</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Slovenia Control</td>
+        
+        <td>APP</td>
+        
+        <td>LJPZCTMA</td>
+        
+        <td>PORTOROZ</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Slovenia Control</td>
+        
+        <td>APP</td>
+        
+        <td>LJPZCTR</td>
+        
+        <td>PORTOROZ</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS CR</td>
+        
+        <td>ACC</td>
+        
+        <td>LKAACTA</td>
+        
+        <td>PRAGUE ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS CR</td>
+        
+        <td>APP</td>
+        
+        <td>LKAAICTA</td>
+        
+        <td>LKAAARGA GND 095/125</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS CR</td>
+        
+        <td>ACC</td>
+        
+        <td>LKAAUTA</td>
+        
+        <td>PRAHA UAC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ANS CR</td>
+        
+        <td>APP</td>
+        
+        <td>LKPRTMA</td>
+        
+        <td>APPROACH PRAHA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>MATS</td>
+        
+        <td>APP</td>
+        
+        <td>LMMLTMA</td>
+        
+        <td>LUQA APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>MATS</td>
+        
+        <td>ACC</td>
+        
+        <td>LMMMCTA</td>
+        
+        <td>MALTA ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Austro Control</td>
+        
+        <td>ACC</td>
+        
+        <td>LOVVCTA</td>
+        
+        <td>WIEN ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Austro Control</td>
+        
+        <td>APP</td>
+        
+        <td>LOWGATMA</td>
+        
+        <td>APPROACH CONTROL</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Austro Control</td>
+        
+        <td>APP</td>
+        
+        <td>LOWGBTMA</td>
+        
+        <td>APPROACH CONTROL</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Austro Control</td>
+        
+        <td>APP</td>
+        
+        <td>LOWIATMA</td>
+        
+        <td>APPROACH CONTROL</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Austro Control</td>
+        
+        <td>APP</td>
+        
+        <td>LOWIBTMA</td>
+        
+        <td>APPROACH CONTROL</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Austro Control</td>
+        
+        <td>APP</td>
+        
+        <td>LOWICTMA</td>
+        
+        <td>APPROACH CONTROL</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Austro Control</td>
+        
+        <td>APP</td>
+        
+        <td>LOWKATMA</td>
+        
+        <td>APPROACH CONTROL</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Austro Control</td>
+        
+        <td>APP</td>
+        
+        <td>LOWKBTMA</td>
+        
+        <td>APPROACH CONTROL</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Austro Control</td>
+        
+        <td>APP</td>
+        
+        <td>LOWLATMA</td>
+        
+        <td>APPROACH CONTROL</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Austro Control</td>
+        
+        <td>APP</td>
+        
+        <td>LOWLBTMA</td>
+        
+        <td>APPROACH CONTROL</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Austro Control</td>
+        
+        <td>APP</td>
+        
+        <td>LOWSATMA</td>
+        
+        <td>APPROACH CONTROL</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Austro Control</td>
+        
+        <td>APP</td>
+        
+        <td>LOWSBTMA</td>
+        
+        <td>APPROACH CONTROL</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Austro Control</td>
+        
+        <td>APP</td>
+        
+        <td>LOWWATMA</td>
+        
+        <td>APPROACH CONTROL</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Austro Control</td>
+        
+        <td>APP</td>
+        
+        <td>LOWWBTMA</td>
+        
+        <td>APPROACH CONTROL</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NAV Portugal (Continental)</td>
+        
+        <td>APP</td>
+        
+        <td>LPFRTMA</td>
+        
+        <td>FARO APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NAV Portugal (Continental)</td>
+        
+        <td>APP</td>
+        
+        <td>LPMATMA</td>
+        
+        <td>MADEIRA APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NAV Portugal (Continental)</td>
+        
+        <td>ACC</td>
+        
+        <td>LPPCCTA</td>
+        
+        <td>LISBOA ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>NAV Portugal (Continental)</td>
+        
+        <td>APP</td>
+        
+        <td>LPPRTMA</td>
+        
+        <td>PORTO APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ROMATSA</td>
+        
+        <td>APP</td>
+        
+        <td>LRARTMA</td>
+        
+        <td>ARAD APPROCH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ROMATSA</td>
+        
+        <td>ACC</td>
+        
+        <td>LRBBCTA</td>
+        
+        <td>BUCURESTI ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ROMATSA</td>
+        
+        <td>APP</td>
+        
+        <td>LRCKTMA</td>
+        
+        <td>CONSTANTA APPROCH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ROMATSA</td>
+        
+        <td>APP</td>
+        
+        <td>LRCLTMA</td>
+        
+        <td>NAPOC APPROCH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ROMATSA</td>
+        
+        <td>APP</td>
+        
+        <td>LROPTMA</td>
+        
+        <td>BUCHAREST APPROCH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Skyguide</td>
+        
+        <td>ACC</td>
+        
+        <td>LSAGCTA</td>
+        
+        <td>GENEVA ACC LOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Skyguide</td>
+        
+        <td>FIS</td>
+        
+        <td>LSAGICTA</td>
+        
+        <td></td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Skyguide</td>
+        
+        <td>ACC</td>
+        
+        <td>LSAGUTA</td>
+        
+        <td>GENEVA ACC UPPER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Skyguide</td>
+        
+        <td>ACC</td>
+        
+        <td>LSAZCTA</td>
+        
+        <td>ZURICH ACC LOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Skyguide</td>
+        
+        <td>APP</td>
+        
+        <td>LSAZFTMA</td>
+        
+        <td>ARFA SECTOR</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Skyguide</td>
+        
+        <td>ACC</td>
+        
+        <td>LSAZUTA</td>
+        
+        <td>ZURICH ACC UPPER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Skyguide</td>
+        
+        <td>FIS</td>
+        
+        <td>LSESCTA</td>
+        
+        <td>CNX LSESLFIC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Skyguide</td>
+        
+        <td>APP</td>
+        
+        <td>LSGGTMA</td>
+        
+        <td>APPROACH GENEVE</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Skyguide</td>
+        
+        <td>APP</td>
+        
+        <td>LSGSCTR</td>
+        
+        <td>SION</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Skyguide</td>
+        
+        <td>APP</td>
+        
+        <td>LSGSTMA</td>
+        
+        <td>APPROACH SION</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Skyguide</td>
+        
+        <td>APP</td>
+        
+        <td>LSZATMA</td>
+        
+        <td>APPROACH LUGANO</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Skyguide</td>
+        
+        <td>APP</td>
+        
+        <td>LSZBTMA</td>
+        
+        <td>APPROACH BERN</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Skyguide</td>
+        
+        <td>APP</td>
+        
+        <td>LSZHTMA</td>
+        
+        <td>APPROACH ZURICH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Skyguide</td>
+        
+        <td>APP</td>
+        
+        <td>LSZLTMA</td>
+        
+        <td>APPROACH LOCARNO</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>ACC</td>
+        
+        <td>LTAAACTA</td>
+        
+        <td>ANKARA ACC ANKARA SECTORS TEST</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>ACC</td>
+        
+        <td>LTAAICTA</td>
+        
+        <td>ANKARA ACC ISTANBUL SECTORS TEST</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>ACC</td>
+        
+        <td>LTAAZCTA</td>
+        
+        <td>ANKARA ACC IZMIR SECTORS TEST</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTACTMA</td>
+        
+        <td>ANKARA ESENBOGA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTAITMA</td>
+        
+        <td>ANTALYA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTAJTMA</td>
+        
+        <td>GAZIANTEP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTALTMA</td>
+        
+        <td>KASTAMONU APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTAYTMA</td>
+        
+        <td>CARDAK/MIL*</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTAZTMA</td>
+        
+        <td>TUZKOY</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTBATMA</td>
+        
+        <td>YESILKOY APP/ISTANBU</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTBJTMA</td>
+        
+        <td>IZMIR ADNAN MENDERES</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTBOTMA</td>
+        
+        <td>USAK</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTBSTMA</td>
+        
+        <td>MUGLA DALAMAN</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTBZTMA</td>
+        
+        <td>ZAFER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTCATMA</td>
+        
+        <td>ELAZIG</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTCETMA</td>
+        
+        <td>ERZURUM</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTCFTMA</td>
+        
+        <td>KARS APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTCGTMA</td>
+        
+        <td>TRABZON</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTCITMA</td>
+        
+        <td>VAN</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTCKTMA</td>
+        
+        <td>MUS*</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTCMTMA</td>
+        
+        <td>SINOP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTCNTMA</td>
+        
+        <td>KAHRAMANMARAS APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTCSTMA</td>
+        
+        <td>GAP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTCTTMA</td>
+        
+        <td>IGDIR/MIL*</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTCUTMA</td>
+        
+        <td>BINGOL APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTCVTMA</td>
+        
+        <td>SIRNAK APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTFETMA</td>
+        
+        <td>MILAS</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTFGTMA</td>
+        
+        <td>ANTALYA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>DHMI</td>
+        
+        <td>APP</td>
+        
+        <td>LTFHTMA</td>
+        
+        <td>SAMSUN/CARSAMBA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>MoldATSA</td>
+        
+        <td>APP</td>
+        
+        <td>LUKKCTR</td>
+        
+        <td>CHISINAU TWR</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>MoldATSA</td>
+        
+        <td>APP</td>
+        
+        <td>LUKKTMA</td>
+        
+        <td>CHISINAU APPROACH</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>MoldATSA</td>
+        
+        <td>ACC</td>
+        
+        <td>LUUUCTA</td>
+        
+        <td>CHISINAU ACC LUUU</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>M-NAV</td>
+        
+        <td>APP</td>
+        
+        <td>LWSKTMA</td>
+        
+        <td>SKOPJE</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>M-NAV</td>
+        
+        <td>ACC</td>
+        
+        <td>LWSSCTA</td>
+        
+        <td>SKOPJE  ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>SMATSA</td>
+        
+        <td>ACC</td>
+        
+        <td>LYBACTA</td>
+        
+        <td>BEOGRAD ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>SMATSA</td>
+        
+        <td>APP</td>
+        
+        <td>LYBETMA</td>
+        
+        <td>APPROACH CONTROL</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>SMATSA</td>
+        
+        <td>APP</td>
+        
+        <td>LYBTTMA</td>
+        
+        <td>BATAJNICA APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>SMATSA</td>
+        
+        <td>APP</td>
+        
+        <td>LYKVTMA</td>
+        
+        <td>KRALJEVO TMA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>SMATSA</td>
+        
+        <td>APP</td>
+        
+        <td>LYNITMA</td>
+        
+        <td>NIS TMA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>SMATSA</td>
+        
+        <td>APP</td>
+        
+        <td>LYPGTMA</td>
+        
+        <td>PODGORCIA TMA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>PIA</td>
+        
+        <td>APP</td>
+        
+        <td>LYPRTMA</td>
+        
+        <td>PRISTINA APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>SMATSA</td>
+        
+        <td>APP</td>
+        
+        <td>LYTVTMA</td>
+        
+        <td>TIVAT</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>SMATSA</td>
+        
+        <td>APP</td>
+        
+        <td>LYUZTMA</td>
+        
+        <td>UZICE</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>SMATSA</td>
+        
+        <td>APP</td>
+        
+        <td>LYVRTMA</td>
+        
+        <td>VRSAC TMA</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LPS</td>
+        
+        <td>ACC</td>
+        
+        <td>LZBBCTA</td>
+        
+        <td>BRATISLAVA ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LPS</td>
+        
+        <td>APP</td>
+        
+        <td>LZIBTMA</td>
+        
+        <td>APPROACH CONTROL</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LPS</td>
+        
+        <td>APP</td>
+        
+        <td>LZKZTMA</td>
+        
+        <td>KOSICE APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LPS</td>
+        
+        <td>APP</td>
+        
+        <td>LZPPTMA</td>
+        
+        <td>PIESTANY APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LPS</td>
+        
+        <td>APP</td>
+        
+        <td>LZPWCTR</td>
+        
+        <td>PRESOV TOWER</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LPS</td>
+        
+        <td>APP</td>
+        
+        <td>LZSLTMA</td>
+        
+        <td>SLIAC APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LPS</td>
+        
+        <td>APP</td>
+        
+        <td>LZTTTMA</td>
+        
+        <td>TATRY APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>LPS</td>
+        
+        <td>APP</td>
+        
+        <td>LZZITMA</td>
+        
+        <td>ZILINA APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ARMATS</td>
+        
+        <td>ACC</td>
+        
+        <td>UDDDCTA</td>
+        
+        <td>EREVAN ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ARMATS</td>
+        
+        <td>APP</td>
+        
+        <td>UDSGTMA</td>
+        
+        <td>GYUMRI APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>ARMATS</td>
+        
+        <td>APP</td>
+        
+        <td>UDYZTMA</td>
+        
+        <td>YEREVAN APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Sakaeronavigatsia</td>
+        
+        <td>ACC</td>
+        
+        <td>UGGGCTA</td>
+        
+        <td>TBILISI ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Sakaeronavigatsia</td>
+        
+        <td>APP</td>
+        
+        <td>UGKOTMA</td>
+        
+        <td>KUTAISI APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Sakaeronavigatsia</td>
+        
+        <td>APP</td>
+        
+        <td>UGSBTMA</td>
+        
+        <td>BATUMI APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>Sakaeronavigatsia</td>
+        
+        <td>APP</td>
+        
+        <td>UGTBTMA</td>
+        
+        <td>TBILISI APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>UkSATSE</td>
+        
+        <td>ACC</td>
+        
+        <td>UKBVCTA</td>
+        
+        <td>KIEV ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>UkSATSE</td>
+        
+        <td>APP</td>
+        
+        <td>UKBVTMA</td>
+        
+        <td>KYIV APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>UkSATSE</td>
+        
+        <td>APP</td>
+        
+        <td>UKDDTMA</td>
+        
+        <td>DNIPROPETROVS&#39;K APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>UkSATSE</td>
+        
+        <td>APP</td>
+        
+        <td>UKDETMA</td>
+        
+        <td>ZAPORIZHZHIA APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>UkSATSE</td>
+        
+        <td>ACC</td>
+        
+        <td>UKDV2CTA</td>
+        
+        <td>DNIPROPETROVSK2 ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>UkSATSE</td>
+        
+        <td>ACC</td>
+        
+        <td>UKDV3CTA</td>
+        
+        <td>DNIPROPETROVSK3 ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>UkSATSE</td>
+        
+        <td>ACC</td>
+        
+        <td>UKDVCTA</td>
+        
+        <td>DNIPROPETROVSK ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>UkSATSE</td>
+        
+        <td>APP</td>
+        
+        <td>UKHHTMA</td>
+        
+        <td>KHARKOV APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>UkSATSE</td>
+        
+        <td>APP</td>
+        
+        <td>UKLITMA</td>
+        
+        <td>UKLI APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>UkSATSE</td>
+        
+        <td>APP</td>
+        
+        <td>UKLNTMA</td>
+        
+        <td>UKLN APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>UkSATSE</td>
+        
+        <td>APP</td>
+        
+        <td>UKLUTMA</td>
+        
+        <td>UKLU APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>UkSATSE</td>
+        
+        <td>ACC</td>
+        
+        <td>UKLVCTA</td>
+        
+        <td>UKLV ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>UkSATSE</td>
+        
+        <td>APP</td>
+        
+        <td>UKLVTMA</td>
+        
+        <td>UKLV APP</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>UkSATSE</td>
+        
+        <td>ACC</td>
+        
+        <td>UKOV2CTA</td>
+        
+        <td>ODESA2 ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>UkSATSE</td>
+        
+        <td>ACC</td>
+        
+        <td>UKOVCTA</td>
+        
+        <td>ODESA ACC</td>
+        
+    </tr>
+    
+
+    <thead>
+    
+    </thead>
+    
+    <tr>
+        
+        <td>UkSATSE</td>
+        
+        <td>APP</td>
+        
+        <td>UKOVTMA</td>
+        
+        <td>ODESA APP</td>
+        
+    </tr>
+    
+
+</table>
+
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>&copy; 2018&nbsp;EUROCONTROL &nbsp; &mdash; &nbsp;
+          <a href="../../../about/disclaimer/">Disclaimer</a>
+		      </li>
+          <li>Subscribe via
+            
+            <span><a href="mailto:PRU-Support@eurocontrol.int?subject=Subscribe:%20PRU%20information%20point&amp;body=Please%20add%20me%20to%20the%20mailing%20list%20to%20get%20informed%20about%20information%20updates.">email <i class="fa fa-envelope"></i></a>
+            or
+            <a href="../../../index.xml" type="application/rss+xml" target="_blank">RSS <i class="fa fa-rss"></i></a></span>
+          </li>
+          <li><a href="../../../about/help/"><i class="fa fa-question-circle"></i></a></li>
+          <li><a href="../../../about/howbuilt/"><i class="fa fa-wrench"></i></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

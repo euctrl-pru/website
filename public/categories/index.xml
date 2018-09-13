@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on PRU Portal</title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on PRU Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Acronym</title>
+      <link>/categories/acronym/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/acronym/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ansp</title>
+      <link>/categories/ansp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/ansp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data</title>
+      <link>/categories/data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dataset</title>
+      <link>/categories/dataset/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/dataset/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Definition</title>
+      <link>/categories/definition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/definition/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Download</title>
+      <link>/categories/download/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/download/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Metadata</title>
+      <link>/categories/metadata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/metadata/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Methodology</title>
+      <link>/categories/methodology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/methodology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>News</title>
+      <link>/categories/news/</link>
+      <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/news/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rn</title>
+      <link>/categories/rn/</link>
+      <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/rn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Safety</title>
+      <link>/categories/safety/</link>
+      <pubDate>Wed, 28 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/safety/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

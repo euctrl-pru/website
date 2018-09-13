@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="generator" content="Hugo 0.37" />
+
+
+<title>How this site is built - PRU Portal</title>
+<meta property="og:title" content="How this site is built - PRU Portal">
+
+
+
+  
+
+
+
+
+
+   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+
+
+<link rel="manifest" href="manifest.json">
+
+
+
+<link rel="stylesheet" href="../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../css/main.css" media="all">
+
+ 
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all">
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
+
+
+
+
+
+  </head>
+  <body>
+  	
+    <button class="dn fixed white-70 bg-red outline-0 bottom-1 right-1 z-999 bn br1 pa1 glow pointer:hover" onclick="topFunction()" id="to-top-btn" title="Go to top">top <i class="fa fa-angle-double-up"></i></button>
+    <script>
+      
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("to-top-btn").style.display = "block";
+          } else {
+              document.getElementById("to-top-btn").style.display = "none";
+          }
+      }
+      
+      function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+      }
+      </script>
+
+    <main class="ph2 pb1">
+      <header class="tc bb b--black-10 bg-light-gray">
+        <nav class="db dt-l w-100 border-box mid-gray pa2 ph5-l">
+  <a class="db dtc-l v-mid mid-gray link dim w-100 w-20-l tc tl-l mb2 mb0-l" href="../../">
+    <img src="../../images/pru-logo.png"
+    width="54"
+    height="32"
+    alt="PRU"
+    class="dib br-100">
+  </a>
+
+  <div class="db dtc-l v-mid w-100 w-80-l tc tr-l">
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../prcq/" title="PRC Quarterly">PRC Quarterly</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../post/" title="News">News</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../dashboard/perf-area/" title="Dashboard">Dashboard</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../data/" title="Data">Data</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../study/" title="Studies">Studies</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../reference/" title="References">References</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../about/us/" title="About">About</a>
+    
+  </div>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+
+    <h1 class="article-title">How this site is built</h1>
+
+    
+
+    <div class="article-content">
+      <p>This portal is designed and built using the following principles:</p>
+<ul>
+<li>everything has to be version controlled</li>
+<li>adopt KISS principle: Keep It Simple and Stupid.</li>
+<li>build a static website</li>
+<li>use open source tools whenever possible</li>
+</ul>
+<div id="open-sourcefree-tools-and-services-we-use" class="section level2">
+<h2>Open source/Free tools and services we use</h2>
+<ul>
+<li><a href="https://git-scm.com/" class="footer-links-kudos">git <img src="../../images/git-logo.png" width="22" height="22" alt="git"></a>:
+a distributed version control system.</li>
+<li><a href="https://gohugo.io/" class="footer-links-kudos">Hugo <img src="../../images/hugo-logo.png" width="22" height="22" alt="hugo"></a>:
+a static site generator.</li>
+<li><a href="https://d3js.org/" class="footer-links-kudos">D3 <img src="../../images/d3-logo.png" width="22" height="22" alt="D3"></a>:
+a JavaScript library for producing dynamic, interactive data visualizations in web browsers.</li>
+<li><a href="https://pages.github.com/" class="footer-links-kudos">GitHub Pages <img src="../../images/Octocat.png" width="22" height="22" alt="GitHub Pages"></a>:
+a service by GitHub whereby you can have a website served on the Internet for every user, organization or repository.</li>
+<li><a href="https://github.com/blog/674-introducing-organizations" class="footer-links-kudos">GitHub Organizations <img src="../../images/Octocat.png" width="22" height="22" alt="GitHub Organizations blog post"></a>:
+a service by GitHub for groups of people.</li>
+<li><a href="https://travis-ci.org/" class="footer-links-kudos">Travis CI <img src="../../images/travisci-logo.png" width="22" height="22" alt="Travis CI"></a>:
+a hosted, distributed continuous integration service used to build and test software projects.</li>
+<li><a href="https://www.r-project.org/" class="footer-links-kudos">R <img src="../../images/R-logo.png" width="22" height="22" alt="R Project for Statistical Computing"></a>:
+a free software environment for statistical computing and graphics.</li>
+<li><a href="https://www.tidyverse.org/" class="footer-links-kudos">Tidyverse <img src="../../images/tidyverse-logo.png" width="22" height="22" alt="Tidyverse"></a>:
+is an opinionated collection of R packages designed for data science. Among them:
+<ul>
+<li><a href="https://dplyr.tidyverse.org/" class="footer-links-kudos">dplyr <img src="../../images/dplyr-logo.png" width="22" height="22" alt="dplyr"></a>:
+a grammar of data manipulation, providing a consistent set of verbs that help you solve the most common data manipulation challenges.</li>
+<li><a href="https://readr.tidyverse.org/" class="footer-links-kudos">readr <img src="../../images/readr-logo.png" width="22" height="22" alt="readr"></a>:
+a fast and friendly way to read rectangular data (like csv, tsv, and fwf).</li>
+<li><a href="https://ggplot2.tidyverse.org/" class="footer-links-kudos">ggplot2 <img src="../../images/ggplot2-logo.png" width="22" height="22" alt="ggplot2"></a>:
+a system for declaratively creating graphics, based on <a href="http://amzn.to/2ef1eWp">The Grammar of Graphics</a>.</li>
+</ul></li>
+<li><a href="https://developers.google.com/chart/" class="footer-links-kudos">Google Charts <img src="../../images/google-developers-charts-logo.png" width="22" height="22" alt="google charts"></a>:
+an interactive Web service that creates graphical charts from user-supplied information.</li>
+<li><a href="https://plot.ly/" class="footer-links-kudos">Plotly <img src="../../images/plotly-logo.png" width="22" height="22" alt="plotly"></a>:
+tools for composing, editing, and sharing interactive data visualization via the Web.</li>
+</ul>
+</div>
+<div id="scaffolding" class="section level2">
+<h2>Scaffolding</h2>
+<p>This website is a statically generated one: there is no CMS, no database, no
+authorization server behind it. It is just a bunch of HTML pages. These pages
+are generate by
+<a href="https://gohugo.io/" class="footer-links-kudos">Hugo <img src="../../images/hugo-logo.png" width="22" height="22" alt="hugo"></a>.</p>
+<p>Hugo is a static site generator, i.e. it takes a description, generally a
+template, of the pages you want to build and generates the relevant HTML.</p>
+<div id="repositories" class="section level3">
+<h3>Repositories</h3>
+<p>We use <a href="https://git-scm.com/" class="footer-links-kudos">git <img src="../../images/git-logo.png" width="22" height="22" alt="git"></a>
+as our (distributed) version control system.
+And we selected GitHub as the central server for our git repositories.</p>
+<p>In order to group all our repositories we created a
+<a href="https://github.com/blog/674-introducing-organizations" class="footer-links-kudos">GitHub Organizations <img src="../../images/Octocat.png" width="22" height="22" alt="GitHub Organizations blog post"></a>
+called <code>euctrl-pru</code>. It is a sort of company/team account.</p>
+<p>For the website we have two repositories one for the <em>source</em> pages and one for
+the <em>compiled</em> ones.
+The source repository is called <code>website</code> the <code>compiled</code> repository is named
+<code>euctrl-pru.github.io</code>.</p>
+<p>The reason we have these two repositories is related to the fact we use plug-ins
+that would not be allowed to run in the <a href="https://help.github.com/enterprise/2.6/user/articles/adding-jekyll-plugins-to-a-github-pages-site/" title="Adding GitHub Pages plugins">automatic setup</a>
+GitHub provides out-of-the-box.</p>
+</div>
+<div id="web-hosting" class="section level3">
+<h3>Web hosting</h3>
+<p>The name <code>euctrl-pru.github.io</code> for the repository of the compiled website is
+due to a fantastic service GitHub provides:
+<a href="https://pages.github.com/" class="footer-links-kudos">GitHub Pages <img src="../../images/Octocat.png" width="22" height="22" alt="GitHub Pages"></a>.
+When using GitHub Pages any repository named <code>&lt;username or organization name&gt;.github.io</code> will be served on the web by GitHub web servers.
+And if you want your site to be visible under your own domain name you just need
+to specify it in a file called <code>CNAME</code> and the magic will happen.
+(Ok, there are <a href="https://help.github.com/articles/quick-start-setting-up-a-custom-domain/" title="Custom domain setup for GitHub Pages">few other things to setup</a> but it is soooo simple.)</p>
+<p>And our <code>CNAME</code> points to <code>ansperformance.eu</code>.</p>
+</div>
+<div id="continuous-integration-and-deployment" class="section level3">
+<h3>Continuous Integration and Deployment</h3>
+<p>We use
+<a href="https://travis-ci.org/" class="footer-links-kudos">Travis CI<img src="../../images/travisci-logo.png" width="22" height="22" alt="Travis CI"></a>
+to automatically</p>
+<ul>
+<li><p>build every commit in our release branch (any branch name starting with
+<code>2016&lt;2 digit month number&gt;-release</code>). These build can include tests to be
+executed in order to garantee a certain level of quality…</p></li>
+<li><p>build every <code>master</code> branch commit <strong>and if successful</strong> (and the commit is
+properly tagged) deploy the generated site.
+This is a way to publish our releases and make them available on the Internet.
+(<em>Less work for the Humans more boring work for the Machines</em>)</p></li>
+</ul>
+</div>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>&copy; 2018&nbsp;EUROCONTROL &nbsp; &mdash; &nbsp;
+          <a href="../../about/disclaimer/">Disclaimer</a>
+		      </li>
+          <li>Subscribe via
+            
+            <span><a href="mailto:PRU-Support@eurocontrol.int?subject=Subscribe:%20PRU%20information%20point&amp;body=Please%20add%20me%20to%20the%20mailing%20list%20to%20get%20informed%20about%20information%20updates.">email <i class="fa fa-envelope"></i></a>
+            or
+            <a href="../../index.xml" type="application/rss+xml" target="_blank">RSS <i class="fa fa-rss"></i></a></span>
+          </li>
+          <li><a href="../../about/help/"><i class="fa fa-question-circle"></i></a></li>
+          <li><a href="../../about/howbuilt/"><i class="fa fa-wrench"></i></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

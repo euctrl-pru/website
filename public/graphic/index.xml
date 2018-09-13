@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graphics on PRU Portal</title>
+    <link>/graphic/</link>
+    <description>Recent content in Graphics on PRU Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/graphic/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>FAB FIR&#39;s Map</title>
+      <link>/graphic/en-route-atfm-delay-ectrl-yy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/graphic/en-route-atfm-delay-ectrl-yy/</guid>
+      <description>      </description>
+    </item>
+    
+    <item>
+      <title>FAB FIR&#39;s Map</title>
+      <link>/graphic/en-route-atfm-delay-fab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/graphic/en-route-atfm-delay-fab/</guid>
+      <description>2015 2016 2017 2018 (partial)   (function () { // general design from // http://www.jeromecukier.net/blog/2013/11/20/getting-beyond-hello-world-with-d3/ var params = { fabs: &#34;fabs.json&#34;, world: &#34;world-50m.json&#34;, worldnames: &#34;world-country-names.tsv&#34;, trafficdelays: &#34;monthly-ert-dly-fab-fir.csv&#34; }; // you can use query params such as // ?width=600&amp;height=300 var query = window.location.search.substring(1); var vars = query.split(&#34;&amp;&#34;); vars.forEach(function(v) { var p = v.split(&#34;=&#34;); params[p[0]] = p[1]; }) vis.init(params); }());   var pymChild = new pym.</description>
+    </item>
+    
+    <item>
+      <title>FAB FIR&#39;s Map</title>
+      <link>/graphic/fabs-firs-map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/graphic/fabs-firs-map/</guid>
+      <description>(function () { // general design from // http://www.jeromecukier.net/blog/2013/11/20/getting-beyond-hello-world-with-d3/ var params = { refresh: false, // REMOVE, i.e. `false`, for production width: 800, height:580, scale: 530, rotateLat:-53, rotateLon: 0, topo: &#34;euctrl-firs.json&#34;, world: &#34;world-50m.json&#34; }; var query = window.location.search.substring(1); var vars = query.split(&#34;&amp;&#34;); vars.forEach(function(v) { var p = v.split(&#34;=&#34;); params[p[0]] = p[1]; }) vis.init(params); }());   var pymChild = new pym.</description>
+    </item>
+    
+    <item>
+      <title>FAB FIR&#39;s Map</title>
+      <link>/graphic/percent-movement-change/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/graphic/percent-movement-change/</guid>
+      <description>.bar--positive { fill: steelblue; } .bar--negative { fill: darkorange; } .xlabel, .axis text { font: 8px sans-serif; } .axis path, .axis line { fill: none; stroke: #000; shape-rendering: crispEdges; } .tick line{ opacity: 0.15; } #tooltip { position: absolute; width: auto; height: auto; padding: 2px 2px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.</description>
+    </item>
+    
+  </channel>
+</rss>

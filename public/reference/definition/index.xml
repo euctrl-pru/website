@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Definitions on PRU Portal</title>
+    <link>/reference/definition/</link>
+    <description>Recent content in Definitions on PRU Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/reference/definition/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ASMA Transit Time</title>
+      <link>/reference/definition/asma-transit-time/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/asma-transit-time/</guid>
+      <description>The actual time spent by a flight between its last entry in the ASMA cylinder (Entry-time at 40 NM upstream) and the actual landing time (ALDT.
+Unit of Measurement Minute.
+See also Additional ASMA time methodology</description>
+    </item>
+    
+    <item>
+      <title>ATC Pre-departure Delay</title>
+      <link>/reference/definition/atc-pre-departure-delay/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/atc-pre-departure-delay/</guid>
+      <description>ATC pre-departure delay is the additional time that the aircraft is held at the stand to avoid queuing at the departure runway.
+ Figure 1: ATC pre-departure delay  </description>
+    </item>
+    
+    <item>
+      <title>ATFM Delay</title>
+      <link>/reference/definition/atfm-delay/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/atfm-delay/</guid>
+      <description>The duration between the last take-off time requested by the aircraft operator and the take-off slot allocated by the Network Manager following a regulation communicated by the FMP, in relation to an airport (airport delay) or sector (en-route delay) location.
+See also ATFM delay causes and codes.
+Unit of Measurement Minute.
+ Modification of the ATFM delay calculation (NM release 20.0) Please note that software release 20.0 of the Network Manager on 04 April 2016 introduced a change to improve the accuracy of the ATFM delay calculation for operational purposes.</description>
+    </item>
+    
+    <item>
+      <title>ATFM Delay Codes</title>
+      <link>/reference/definition/atfm-delay-codes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/atfm-delay-codes/</guid>
+      <description>The reason for the regulation is indicated by the responsible Flow Management Position FMP.
+For post-ops analysis individual delay codes can be included in a ATFM delay group.
+  REF LOC REGU REASON CODE REGU REASON NAME REASON GROUP ATTRIBUTE    Airport C ATC Capacity AD Capacity (ATC) Airport / TMA  Airport S ATC Staffing AD Staffing (ATC) Airport / TMA  Airport I Industrial Action (ATC) AD Disruptions (ATC) Airport / TMA  Airport T Equipment (ATC) AD Disruptions (ATC) Airport / TMA  Airport G Aerodrome Capacity AD Capacity Airport / TMA  Airport M Military Activity AD Capacity Airport / TMA  Airport R ATC Routeing AD Capacity Airport / TMA  Airport V Environmental Issues AD Capacity Airport / TMA  Airport A Accident/Incident AD Disruptions Airport / TMA  Airport E Aerodrome Services AD Disruptions Airport / TMA  Airport N Industrial Action (non-ATC) AD Disruptions Airport / TMA  Airport NA Not regulated/Not specified AD Disruptions Airport / TMA  Airport O Other AD Disruptions Airport / TMA  Airport P Special Event AD Events Airport / TMA  Airport D De-icing AD Weather Airport / TMA  Airport W Weather AD Weather Airport / TMA  En route C ATC Capacity ER Capacity (ATC) En route  En route S ATC Staffing ER Staffing (ATC) En route  En route I Industrial Action (ATC) ER Disruptions (ATC) En route  En route T Equipment (ATC) ER Disruptions (ATC) En route  En route G Aerodrome Capacity ER Capacity En route  En route M Military Activity ER Capacity En route  En route R ATC Routeing ER Capacity En route  En route V Environmental Issues ER Capacity En route  En route A Accident/Incident ER Disruptions En route  En route E Aerodrome Services ER Disruptions En route  En route N Industrial Action (non-ATC) ER Disruptions En route  En route NA Not regulated/Not specified ER Disruptions En route  En route O Other ER Disruptions En route  En route P Special Event ER Events En route  En route D De-icing ER Weather En route  En route W Weather ER Weather En route  na NA Not regulated/Not specified ER Disruptions En route    See Also  ATFM delay.</description>
+    </item>
+    
+    <item>
+      <title>ATFM Measure</title>
+      <link>/reference/definition/atfm-measure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/atfm-measure/</guid>
+      <description>In the context of Air Traffic Flow Management (ATFM) a measure refers to (European Commission 2010)
+ the actions taken to perform air traffic flow management and capacity management
+ See Also  Regulation   References European Commission. 2010. “Commission Regulation (EU) No 255/2010 of 25 March 2010 Laying down Common Rules on Air Traffic Flow Management (Text with Eea Relevance).” http://goo.gl/cPbYDQ.
+   </description>
+    </item>
+    
+    <item>
+      <title>ATFM slot adherence</title>
+      <link>/reference/definition/atfm-slot-adherence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/atfm-slot-adherence/</guid>
+      <description>ATFM departure slots are allocated centrally by the Network Manager to hold aircraft on the ground when there is an envisaged imbalance between demand and capacity at airports or en-route.
+ATFM slot adherence measures the share of take-offs outside the allocated ATFM window. Within the EU, the monitoring of ATFM slot adherence is required by Regulation (European Commission 2010). ATS units are required to provide information on non-compliance for airports where non-adherence equals or exceeds 20% of regulated departures.</description>
+    </item>
+    
+    <item>
+      <title>Additional ASMA Time</title>
+      <link>/reference/definition/additional-asma-time/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/additional-asma-time/</guid>
+      <description>The Additional ASMA time is the difference between the actual ASMA transit time and the unimpeded ASMA time calculated for non-congested conditions.
+Unit of Measurement Minute.
+ Calculation of the indicator Let
+ \(c\), a combination of aircraft class, ASMA sectors and arrival runway, as described in the technical note for unimpeded ASMA time, \(f(c)\), a flight characterised by a combination \(c\), \(\textrm{AcASMA}(f(c))\), the actual ASMA transit time for a flight \(f(c)\), i.</description>
+    </item>
+    
+    <item>
+      <title>Additional Taxi-out Time</title>
+      <link>/reference/definition/additional-taxi-out-time/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/additional-taxi-out-time/</guid>
+      <description>The additional taxi-out time is a proxy for the average departure runway queuing time on the outbound traffic flow, during congestion periods at airports.
+Unit of Measurement Minutes per IFR departure [min/dep].
+See also Additional taxi-out time methodology</description>
+    </item>
+    
+    <item>
+      <title>Airspace Infringement</title>
+      <link>/reference/definition/airspace-infringement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/airspace-infringement/</guid>
+      <description>(also known as unauthorised penetration of airspace).
+The penetration by an aircraft into a portion of airspace without prior permission of the appropriate authorities (when such prior permission is required). EUROCONTROL HEIDI – ESARR 2 taxonomy</description>
+    </item>
+    
+    <item>
+      <title>Composite flight-hour</title>
+      <link>/reference/definition/composite-flight-hour/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/composite-flight-hour/</guid>
+      <description>The output measures for ANS provision are, for en‐route, the en‐route flight‐hours controlled and, for terminal ANS, the number of IFR airport movements controlled. In addition to those output metrics, it is important to consider a &amp;ldquo;gate‐to‐gate&amp;rdquo; perspective, because the boundaries used to allocate costs between en‐route and terminal ANS vary between ANSPs and might introduce a bias in the cost‐effectiveness analysis.
+For this reason, an indicator combining the two separate output measures for en‐route and terminal ANS provision has been calculated.</description>
+    </item>
+    
+    <item>
+      <title>Departure Slot</title>
+      <link>/reference/definition/departure-slot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/departure-slot/</guid>
+      <description>A departure slot is a time when an aircraft can take off, the so called Calculated Time of Take-Off (CTOT).
+See Also   What is a slot  page at EUROCONTROL  website.   </description>
+    </item>
+    
+    <item>
+      <title>ECAC Area</title>
+      <link>/reference/definition/ecac-area/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/ecac-area/</guid>
+      <description>European Civil Aviation Conference (ECAC) area
+ECAC Member States are: Albania, Armenia, Austria, Azerbaijan, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Georgia, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Moldova, Monaco, Montenegro, Netherlands, Norway, Poland, Portugal, Romania, San Marino, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, the Republic of Macedonia, Turkey, Ukraine and United Kingdom.</description>
+    </item>
+    
+    <item>
+      <title>ESRA 2008 Area</title>
+      <link>/reference/definition/esra-2008-area/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/esra-2008-area/</guid>
+      <description>European Statistical Reference Area (see STATFOR Reports)
+Albania, Austria, Belgium, Bosnia and Herzegovina, Bulgaria, Canary Islands, Croatia, Cyprus, Czech Republic, Denmark, Finland, France, FYROM, Germany, Greece, Hungary, Ireland, Italy, Lisbon FIR, Luxembourg, Malta, Moldova, Montenegro, Netherlands, Norway, Poland, Romania, Santa Maria FIR, Serbia, Slovak Republic , Slovenia, Spain, Sweden, Switzerland, Turkey, Ukraine, United Kingdom</description>
+    </item>
+    
+    <item>
+      <title>EUROCONTROL Area</title>
+      <link>/reference/definition/eurocontrol-area/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/eurocontrol-area/</guid>
+      <description>The EUROCONTROL area consists of the 41 EUROCONTROL Member States (2016).
+Israel (June 2, 2016) and Morocco (May 1, 2016) have signed a Comprehensive Agreement. They will be fully integrated into EUROCONTROL’s working structures and will be able to benefit from all services the Agency provides.
+For the data and analysis provided in this site, they are not yet included in any analysis.</description>
+    </item>
+    
+    <item>
+      <title>Economic Cost Effectiveness</title>
+      <link>/reference/definition/eco-cost-eff/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/eco-cost-eff/</guid>
+      <description>The quality of service provided by ANSPs has an impact on the efficiency of aircraft operations. The service quality related costs need to be taken into consideration for a full economic assessment of ANSP performance.
+The quality of service associated with ATM/CNS provision by ANSPs is, for the time being, assessed only in terms of ATFM delays, which can be measured consistently across ANSPs, can be attributed to ANSPs, and can be expressed in monetary terms.</description>
+    </item>
+    
+    <item>
+      <title>En-route ATFM Delay</title>
+      <link>/reference/definition/en-route-atfm-delay/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/en-route-atfm-delay/</guid>
+      <description> ATFM delay caused by regulations applied by NM at the request of the FMP to protect en-route ATC sectors from overload.
+See Also   ATFM en-route Delay  page at ATM Lexicon  website.  </description>
+    </item>
+    
+    <item>
+      <title>FAB - Functional Airspace Blocks</title>
+      <link>/reference/definition/fab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/fab/</guid>
+      <description>The FAB concept was developed in the 1st legislative package of the Single European Sky (SES I) as one of the main means for reducing airspace fragmentation. The 2nd legislative package (SES II) tackled the creation of FABs in terms of service provision, in addition to the airspace organisation issues.
+The twofold objective of the legislative packagers is to optimise air traffic flows and increase the efficiency of air traffic services in Europe.</description>
+    </item>
+    
+    <item>
+      <title>IATA code 89</title>
+      <link>/reference/definition/iata-code-89/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/iata-code-89/</guid>
+      <description>Code 89 (alpha AM) is one of IATA’s delay codes (Wikipedia 2015; IATA 2012). It is specified as follows:
+    Code Alpha Short description Further info    89 AM Restrictions at airport of departure with or without ATFM restrictions including Air Traffic Services, start-up and pushback, airport and/or runway closed due to obstruction or weather, industrial action, staff shortage, political unrest, noise abatement, night curfew, special flights.</description>
+    </item>
+    
+    <item>
+      <title>KEA</title>
+      <link>/reference/definition/kea/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/kea/</guid>
+      <description>KEA is a key performance indicator measuring the level of horizontal en-route flight inefficiency in actually flown trajectories over a period of 12 months.
+Please note that the values are NOT monthly averages but the average over the entire 12 months period preceding the last day of the month
+In order to smooth out the influence of unusual events, the ten best days and the ten worst days (for each measured area) are excluded from the computation.</description>
+    </item>
+    
+    <item>
+      <title>KEP</title>
+      <link>/reference/definition/kep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/kep/</guid>
+      <description>KEP is a key performance indicator measuring the level of horizontal en-route flight inefficiency in filed flight plans over a period of 12 months.
+Please note that the values are NOT monthly averages but the average over the entire 12 months period preceding the last day of the month
+In order to smooth out the influence of unusual events, the ten best days and the ten worst days (for each measured area) are excluded from the computation.</description>
+    </item>
+    
+    <item>
+      <title>Primary delay</title>
+      <link>/reference/definition/primary-delay/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/primary-delay/</guid>
+      <description>A delay other than reactionary.</description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>/reference/definition/productivity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/productivity/</guid>
+      <description>Productivity measures relate output to input and are used to reflect changes in technology, processes, training, staffing, and many other factors.
+At present, the (economic) productivity measure used in the ACE report relates controlled flight hours to ATCO working hours in operation.</description>
+    </item>
+    
+    <item>
+      <title>Punctuality</title>
+      <link>/reference/definition/punctuality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/punctuality/</guid>
+      <description>The share of flights arriving/departing within 15 minutes after the scheduled arrival/departure time (airline schedules).</description>
+    </item>
+    
+    <item>
+      <title>Reactionary delay</title>
+      <link>/reference/definition/reactionary-delay/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/reactionary-delay/</guid>
+      <description>Delay caused by late arrival of aircraft, crew, passengers or baggage from previous journeys.</description>
+    </item>
+    
+    <item>
+      <title>Regulation</title>
+      <link>/reference/definition/regulation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/regulation/</guid>
+      <description>In the context of ATFM, a regulation is one of the possible ATFM measures.</description>
+    </item>
+    
+    <item>
+      <title>Serious incident</title>
+      <link>/reference/definition/serious-incident/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/serious-incident/</guid>
+      <description>An incident involving circumstances indicating that an accident nearly occurred. (ICAO Annex 13).</description>
+    </item>
+    
+    <item>
+      <title>Short term ATFCM measures</title>
+      <link>/reference/definition/short-term-atfcm-measures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/short-term-atfcm-measures/</guid>
+      <description>An approach to smooth sector workloads by reducing traffic peaks through short-term application of minor ground delays, appropriate flight level capping and exiguous rerouting to a limited number of flights. Short-term ATFCM measures (STAMs) can reduce the complexity of anticipated traffic peaks. FMPs analyse the associated lists of flights to anticipate ATC workload and identify actions to be taken in order to reduce the traffic complexity generated by those flights.</description>
+    </item>
+    
+    <item>
+      <title>Slot Tolerance Window</title>
+      <link>/reference/definition/slot-tolerance-window/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/slot-tolerance-window/</guid>
+      <description> Time window (5 minutes before and 10 minutes after) around the CTOT in which a flight should be taking off.
+See Also   Slot tolerance window  page at ATM Lexicon  website.  </description>
+    </item>
+    
+    <item>
+      <title>Terminal ANS Unit Rate</title>
+      <link>/reference/definition/terminal-ans-unit-rate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/terminal-ans-unit-rate/</guid>
+      <description>Terminal unit rates represent the unit price paid by airspace users, mainly commercial airlines, for the air navigation services provided, mainly air traffic control.
+Terminal ANS unit rates are defined in the Annex V of the EC 1794/2006 Charging Scheme Regulation (European Commission 2006) (all references below refer to articles of this regulation):
+2. Calculation of terminal unit rates 2.1. The terminal unit rate shall be calculated before the beginning of each year of the reference period.</description>
+    </item>
+    
+    <item>
+      <title>Unimpeded ASMA Time</title>
+      <link>/reference/definition/unimpeded-asma-time/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/unimpeded-asma-time/</guid>
+      <description> A Unimpeded ASMA time is determined for each group of flights with the same parameters (i.e. aircraft class, ASMA entry sector, arrival runway) and represents the transit time in non congested conditions.
+Unit of Measurement Minute.
+See also  Additional ASMA time methodology  </description>
+    </item>
+    
+    <item>
+      <title>Unimpeded Taxi-out Time</title>
+      <link>/reference/definition/unimpeded-taxi-out-time/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/definition/unimpeded-taxi-out-time/</guid>
+      <description> The unimpeded taxi-out time is the taxi-out time in non congested conditions at airports.
+Unit of Measurement Minute.
+See also  Additional taxi-out time methodology  </description>
+    </item>
+    
+  </channel>
+</rss>

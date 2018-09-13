@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="generator" content="Hugo 0.37" />
+
+
+<title>ANS Safety Performance - PRU Portal</title>
+<meta property="og:title" content="ANS Safety Performance - PRU Portal">
+
+
+
+  
+
+
+
+
+
+   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+
+
+<link rel="manifest" href="manifest.json">
+
+
+
+<link rel="stylesheet" href="../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../css/main.css" media="all">
+
+ 
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all">
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
+
+
+
+
+
+  </head>
+  <body>
+  	
+    <button class="dn fixed white-70 bg-red outline-0 bottom-1 right-1 z-999 bn br1 pa1 glow pointer:hover" onclick="topFunction()" id="to-top-btn" title="Go to top">top <i class="fa fa-angle-double-up"></i></button>
+    <script>
+      
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("to-top-btn").style.display = "block";
+          } else {
+              document.getElementById("to-top-btn").style.display = "none";
+          }
+      }
+      
+      function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+      }
+      </script>
+
+    <main class="ph2 pb1">
+      <header class="tc bb b--black-10 bg-light-gray">
+        <nav class="db dt-l w-100 border-box mid-gray pa2 ph5-l">
+  <a class="db dtc-l v-mid mid-gray link dim w-100 w-20-l tc tl-l mb2 mb0-l" href="../../">
+    <img src="../../images/pru-logo.png"
+    width="54"
+    height="32"
+    alt="PRU"
+    class="dib br-100">
+  </a>
+
+  <div class="db dtc-l v-mid w-100 w-80-l tc tr-l">
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../prcq/" title="PRC Quarterly">PRC Quarterly</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../post/" title="News">News</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../dashboard/perf-area/" title="Dashboard">Dashboard</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../data/" title="Data">Data</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../study/" title="Studies">Studies</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../reference/" title="References">References</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../about/us/" title="About">About</a>
+    
+  </div>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article min-vh-100 pb7 pb0-ns">
+
+    <h1 class="article-title"><img src="../../images/prcq-safety.png" width="40" height="40" alt="ANS Safety Performance"> ANS Safety Performance</h1>
+
+	<div class="mw9 center ph3-ns">
+	  <div class="cf ph2-ns">
+	    <div class="article-content fl f5 w-100 w-20-ns pa2">
+	        
+<nav class="sidebar-nav">
+  <h4><a href="../../prcq/">Overview</a></h4>
+  <ul>
+    
+    
+      
+        <li>
+          <a href="../../prcq/traffic/">
+            
+            <span>Traffic</span>
+          </a>
+      
+    
+      
+        <li>
+          <a href="../../prcq/ops-en-route/">
+            
+            <span>Operations En-route</span>
+          </a>
+      
+    
+      
+        <li>
+          <a href="../../prcq/ops-airport/">
+            
+            <span>Operations Airport</span>
+          </a>
+      
+    
+  </ul>
+
+  <h4>Annual results</h4>
+  <ul>
+    
+    
+      
+        <li>
+          <a href="../../prcq/safety/">
+            
+            <span>Safety</span>
+          </a>
+      
+    
+      
+        <li>
+          <a href="../../prcq/economics/">
+            
+            <span>Economics</span>
+          </a>
+      
+    
+  </ul>
+</nav>
+
+	    </div>
+	    <div class="fl w-100 w-80-ns pa2">
+	      <script type="text/javascript" src="http://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
+google.load('visualization', '1', { packages: ['corechart', 'controls'] });
+</script>
+<script type="text/javascript">
+
+function drawVisualization()
+ {
+
+// SAFETY - total accidents - YY - CHART
+      var crt_saf_acc_YY = new google.visualization.ChartWrapper({
+         chartType: 'ComboChart',
+         containerId: 'crt_saf_acc_YY',
+         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/gviz/tq?sheet=saf&range=A5:D16&headers=1&tq=',
+         options: {
+            title: 'Accidents',
+            titlePosition: 'out',
+            titleTextStyle: { color: 'grey', fontSize: 16,},
+            chartArea: { left: 40, top: 60, width: '80%', height: '55%' },
+            legend: {
+               position: 'top',
+               maxLines: 2,
+               textStyle: {color: 'grey', fontSize: 10 }
+            },
+            isStacked : 'true',
+            series: {
+               0: { type: 'bars', color: '4F81BD', targetAxisIndex: 0 },
+               1: { type: 'bars', color: 'DCE6F2', targetAxisIndex: 0 },
+               2: { type: 'lines', color: 'C0504D', lineWidth: 0, pointSize: 12, targetAxisIndex: 1 }
+            },
+            vAxes:{
+               0: {
+                  title:'count',
+                  titleTextStyle: { color: 'grey', fontSize: 11 },
+                  textStyle: { color: 'grey' }
+               },
+               1: {
+                  title: '% of fatal accidents',
+                  titleTextStyle: { color: 'C0504D', fontSize: 11 },
+                  textStyle: { color:'C0504D' }
+               }
+            },
+            hAxis: {
+               titleTextStyle: { color: 'grey', fontSize: 11 },
+               type: 'string',
+               slantedTextAngle: 40,
+               textStyle: { fontSize: 11 }
+            }
+         },
+         view: {columns: [0, 2, 1, 3] }
+      });
+      crt_saf_acc_YY.draw();
+
+// SAFETY - accidents with ATM contribution- YY - CHART [EU_YY]
+      var crt_saf_accatm_YY = new google.visualization.ChartWrapper({
+         chartType: 'ComboChart',
+         containerId: 'crt_saf_accatm_YY',
+         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/gviz/tq?sheet=saf&range=A23:D34&headers=1&tq=',
+         options: {
+            title: 'Accidents with ATM contribution',
+            titlePosition: 'out',
+            titleTextStyle: { color: 'grey', fontSize: 16 },
+            chartArea: { left: 40, top: 60, width: '80%', height: '55%' },
+            legend: {
+               position: 'top',
+               maxLines: 2,
+               textStyle: { color: 'grey', fontSize: 10 }
+            },
+            isStacked : 'true',
+            series: {
+               0: { type: 'bars', color: '4F81BD', targetAxisIndex: 0 },
+               1: { type: 'bars', color: 'DCE6F2', targetAxisIndex: 0 },
+               2: { type: 'lines', color: 'C0504D', lineWidth: 0, pointSize: 12, targetAxisIndex: 1 }
+            },
+            vAxes: {
+               0: {
+                  title: 'count',
+                  titleTextStyle: { color: 'grey', fontSize: 11 },
+                  textStyle: { color: 'grey' }
+               },
+               1: {
+                  title: '% of accidents with ATM contribution',
+                  titleTextStyle: { color: 'C0504D', fontSize: 11 },
+                  textStyle: { color:'C0504D' }
+               }
+            },
+            hAxis: {
+               titleTextStyle: { color: 'grey', fontSize: 11 },
+               type: 'string',
+               slantedTextAngle: 40,
+               textStyle: { fontSize: 11 }
+            }
+         },
+         view: { columns: [0, 1, 2, 3] }
+      });
+      crt_saf_accatm_YY.draw(); 
+
+}
+google.setOnLoadCallback(drawVisualization)
+</script>
+
+<h2 class="page-header"><img src="" width="40" height="40" alt="Safety"> ANS Safety Performance</h2>
+
+<table class = "table">
+   <thead>
+      <tr>
+         <th>Period</th>
+         <th>Area</th>
+         <th>Update rate</th>
+         <th>Last update</th>
+         <th>Source</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class = "active">
+         <td>Jan-Dec</td>
+         <td><a href='../../reference/definition/eurocontrol-area/'>EUROCONTROL Area</a></td>
+         <td>Annually</td>
+         <td>12-Jul-2018</td>
+         <td><a href="http://www.eurocontrol.int" target="_blank">EUROCONTROL</a></td>
+      </tr>
+   </tbody>
+</table>
+
+<h3 class="sub-header">Accidents (fixed wing, weight > 2250 kg MTOW)</h3>
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+  <div id="crt_saf_acc_YY"></div>
+</div>
+<div class="col-xs-6 col-sm-6 placeholder">
+  <div id="crt_saf_accatm_YY"></div>
+</div>
+</div>
+
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+<div class="panel panel-info"><div class="panel-heading">
+There were 71 accidents in the EUROCONTROL area in 2017(P) of which 8 were fatal.<br>
+</div></div></div>
+<div class="col-xs-6 col-sm-6 placeholder">
+<div class="panel panel-info"><div class="panel-heading">
+ There was 1 reported accident with direct ATM contribution in 2017(P), compared to two reported accident with direct ATM 
+ contribution in 2016.
+</div></div></div>
+</div>
+
+<h2 class="sub-header">ATM related incidents</h2>
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+<h3><a href='../../reference/acronym/smi/'>Separation Minima Infringements (SMI)</a></h3>
+<div id="crt_saf_smi_YY"></div>
+
+</div>
+<div class="col-xs-6 col-sm-6 placeholder">
+<h3><a href='../../reference/acronym/upa/'>Unauthorised Penetration of Airspace (UPAs)</a></h3>
+<div id="crt_saf_upa_YY"></div>
+</div>
+</div>
+
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+<div class="panel panel-info"><div class="panel-heading">
+ The preliminary 2017 data indicates that the number of reported risk bearing SMIs (Severity A+B) decreased in 2017.
+</div></div>
+</div>
+<div class="col-xs-6 col-sm-6 placeholder">
+<div class="panel panel-info"><div class="panel-heading">
+ Following the slight reduction in 2016, the number of reported risk bearing UPAs (Severity A+B) increased again in 2017(P).
+</div></div>
+</div>
+</div>
+
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+<h3><a href='../../reference/acronym/ri/'>Runway Incursions (RIs)</a></h3>
+<div id="crt_saf_ri_YY"></div>
+</div>
+<div class="col-xs-6 col-sm-6 placeholder">
+<h3>ATM Specific Occurrences (ATM-S)</h3>
+
+<div id="crt_saf_aso_YY"></div>
+</div>
+</div>
+
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+<div class="panel panel-info"><div class="panel-heading">
+The reported risk bearing RIs (Severity A+B) decreased in 2017(P).
+</div></div>
+</div>
+<div class="col-xs-6 col-sm-6 placeholder">
+<div class="panel panel-info"><div class="panel-heading">
+The total number of risk bearing ATM-S increased again slightly in 2017(P).
+</div></div>
+</div>
+</div>
+
+	    </div>
+	  </div>
+	</div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>&copy; 2018&nbsp;EUROCONTROL &nbsp; &mdash; &nbsp;
+          <a href="../../about/disclaimer/">Disclaimer</a>
+		      </li>
+          <li>Subscribe via
+            
+            <span><a href="mailto:PRU-Support@eurocontrol.int?subject=Subscribe:%20PRU%20information%20point&amp;body=Please%20add%20me%20to%20the%20mailing%20list%20to%20get%20informed%20about%20information%20updates.">email <i class="fa fa-envelope"></i></a>
+            or
+            <a href="../../index.xml" type="application/rss+xml" target="_blank">RSS <i class="fa fa-rss"></i></a></span>
+          </li>
+          <li><a href="../../about/help/"><i class="fa fa-question-circle"></i></a></li>
+          <li><a href="../../about/howbuilt/"><i class="fa fa-wrench"></i></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+      <script src="../../js/crt_saf_smi_YY.js" type="text/javascript"></script>
+      <script src="../../js/crt_saf_upa_YY.js" type="text/javascript"></script>
+      <script src="../../js/crt_saf_ri_YY.js" type="text/javascript"></script>
+      <script src="../../js/crt_saf_aso_YY.js" type="text/javascript"></script>
+  </body>
+</html>
+

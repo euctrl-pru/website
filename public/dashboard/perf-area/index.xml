@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dashboard - Performance Areas on PRU Portal</title>
+    <link>/dashboard/perf-area/</link>
+    <description>Recent content in Dashboard - Performance Areas on PRU Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/dashboard/perf-area/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Capacity</title>
+      <link>/dashboard/perf-area/capacity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dashboard/perf-area/capacity/</guid>
+      <description>Period Area Update rate Last update Source(s) Data    Jan 2018 EUROCONTROL area Monthly 18-May-2018  NM, PRU       Please note that software release 20.0 of the Network Manager on 04 April 2016 introduced a change to improve the accuracy of the ATFM delay calculation for operational purposes. For more information on the change in methodology click here.
+Changes due to the Post Operations Performance Adjustment Process are not considered on this page.</description>
+    </item>
+    
+    <item>
+      <title>Cost Efficiency</title>
+      <link>/dashboard/perf-area/cost-efficiency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dashboard/perf-area/cost-efficiency/</guid>
+      <description>The new ACE interactive online dashboard enables interested stakeholders to access the latest available ACE data and analysis. Using the interactive functionalities of the dashboard, stakeholders can design and customise specific analyses and presentations covering the 2002-2015 period.</description>
+    </item>
+    
+    <item>
+      <title>Environment</title>
+      <link>/dashboard/perf-area/environment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dashboard/perf-area/environment/</guid>
+      <description>Horizontal En-route Flight Efficiency (HFE)   Period Area Update rate Last update Source(s) Methodology Data    Jan-Apr 2018 EUROCONTROL area Monthly 18-May-2018 NM, PRU         Evolution over time (EUROCONTROL level) 
+  Results by entity (Jan-Apr 2018)     // load the visualisation API google.load(&#39;visualization&#39;, &#39;1&#39;, { packages: [&#39;corechart&#39;, &#39;controls&#39;] });  </description>
+    </item>
+    
+    <item>
+      <title>Safety</title>
+      <link>/dashboard/perf-area/safety/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dashboard/perf-area/safety/</guid>
+      <description>Period Area Update rate Last update Source    Jan-Dec EUROCONTROL Area Annually 12-Jul-2018 EUROCONTROL     Please note that the 2017 data is still preliminary (P).      ATM related incidents Separation Minima Infringements (SMI)   Unauthorised Penetration of Airspace (UPAs)    Runway Incursions (RIs)   ATM Specific Occurrences (ATM-S)     // load the visualisation API google.</description>
+    </item>
+    
+    <item>
+      <title>Traffic</title>
+      <link>/dashboard/perf-area/traffic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dashboard/perf-area/traffic/</guid>
+      <description>Flights   Period Area Update rate Last update Source(s) Data    Jan-Jun 2018 EUROCONTROL area Monthly 13-Jul-2018  NM, PRU       Evolution over time
+
+  Flights by ANSP (Jan-Jun 2018)     En-route service units (SU)   Period Area Update rate Last update Source(s) CRCO dashboard    Jan-Jun 2018 CRCO area Monthly 13-Jul-2018  CRCO       Evolution over time</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="generator" content="Hugo 0.37" />
+
+
+<title>ANS Performance at Airports - PRU Portal</title>
+<meta property="og:title" content="ANS Performance at Airports - PRU Portal">
+
+
+
+  
+
+
+
+
+
+   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+
+
+<link rel="manifest" href="manifest.json">
+
+
+
+<link rel="stylesheet" href="../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../css/main.css" media="all">
+
+ 
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all">
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
+
+
+
+
+
+  </head>
+  <body>
+  	
+    <button class="dn fixed white-70 bg-red outline-0 bottom-1 right-1 z-999 bn br1 pa1 glow pointer:hover" onclick="topFunction()" id="to-top-btn" title="Go to top">top <i class="fa fa-angle-double-up"></i></button>
+    <script>
+      
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("to-top-btn").style.display = "block";
+          } else {
+              document.getElementById("to-top-btn").style.display = "none";
+          }
+      }
+      
+      function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+      }
+      </script>
+
+    <main class="ph2 pb1">
+      <header class="tc bb b--black-10 bg-light-gray">
+        <nav class="db dt-l w-100 border-box mid-gray pa2 ph5-l">
+  <a class="db dtc-l v-mid mid-gray link dim w-100 w-20-l tc tl-l mb2 mb0-l" href="../../">
+    <img src="../../images/pru-logo.png"
+    width="54"
+    height="32"
+    alt="PRU"
+    class="dib br-100">
+  </a>
+
+  <div class="db dtc-l v-mid w-100 w-80-l tc tr-l">
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../prcq/" title="PRC Quarterly">PRC Quarterly</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../post/" title="News">News</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../dashboard/perf-area/" title="Dashboard">Dashboard</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../data/" title="Data">Data</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../study/" title="Studies">Studies</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../reference/" title="References">References</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../about/us/" title="About">About</a>
+    
+  </div>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article min-vh-100 pb7 pb0-ns">
+
+    <h1 class="article-title"><img src="../../images/prcq-operations-airport.png" width="40" height="40" alt="ANS Performance at Airports"> ANS Performance at Airports</h1>
+
+	<div class="mw9 center ph3-ns">
+	  <div class="cf ph2-ns">
+	    <div class="article-content fl f5 w-100 w-20-ns pa2">
+	        
+<nav class="sidebar-nav">
+  <h4><a href="../../prcq/">Overview</a></h4>
+  <ul>
+    
+    
+      
+        <li>
+          <a href="../../prcq/traffic/">
+            
+            <span>Traffic</span>
+          </a>
+      
+    
+      
+        <li>
+          <a href="../../prcq/ops-en-route/">
+            
+            <span>Operations En-route</span>
+          </a>
+      
+    
+      
+        <li>
+          <a href="../../prcq/ops-airport/">
+            
+            <span>Operations Airport</span>
+          </a>
+      
+    
+  </ul>
+
+  <h4>Annual results</h4>
+  <ul>
+    
+    
+      
+        <li>
+          <a href="../../prcq/safety/">
+            
+            <span>Safety</span>
+          </a>
+      
+    
+      
+        <li>
+          <a href="../../prcq/economics/">
+            
+            <span>Economics</span>
+          </a>
+      
+    
+  </ul>
+</nav>
+
+	    </div>
+	    <div class="fl w-100 w-80-ns pa2">
+	      <script type="text/javascript" src="http://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
+google.load('visualization', '1', { packages: ['corechart', 'controls'] });
+</script>
+<script type="text/javascript">
+
+function drawVisualization()
+ {
+
+// ARRIVAL ATFM DELAY (overview)
+  var crt_apt4 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt4',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=apt&range=A1:E5',
+    options:{
+          height: 300,
+          chartArea: {left: 40, top: 10, },
+          legend: {position:'none'},
+          isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#D99694', targetAxisIndex: 0},
+                1: {type:'bars',color:'#FAC090', targetAxisIndex: 0},
+                2: {type:'bars',color:'#92D050', targetAxisIndex: 0},
+                3: {type:'bars',color:'#B9CDE5', targetAxisIndex: 0},
+                4: {type:'bars',color:'92D050', targetAxisIndex: 0}
+              },
+          hAxis: {slantedText: true,
+            slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}},
+          vAxis: {title: 'minutes per arrival', format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
+        },
+    view: {'columns': [0,1,2,3,4]}
+  }); crt_apt4.draw();
+
+// ARRIVAL ATFM DELAY (T30)
+  var crt_apt5 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt5',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=apt&range=A10:F40',
+    options:{
+        height: 300,
+        chartArea: {left: 80, top: 10, width:'100%', height:'35%'},
+          legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 12} ,maxLines: 2},
+          isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#D99694', targetAxisIndex: 0},
+                1: {type:'bars',color:'#FAC090', targetAxisIndex: 0},
+                2: {type:'bars',color:'#92D050', targetAxisIndex: 0},
+                3: {type:'bars',color:'#B9CDE5', targetAxisIndex: 0},
+                4: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 0}
+              },
+          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 10},},
+          vAxis: {format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
+        },
+    view: {'columns': [0,1,2,3,4,5]}
+  }); crt_apt5.draw();
+
+// ASMA ADDITIONAL TIME (overview)
+  var crt_apt6 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt6',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=apt&range=H1:I5',
+    options:{
+          height: 300, chartArea: {left: 40, top: 10,width:'100%',height:'50%'},
+          legend: {position:'none'},
+          series: {
+                0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0}
+              },
+          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}},
+          vAxis: {title: 'minutes per arrival', format: '0.0', minValue: 0.0, titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
+        },
+    view: {'columns': [0,1]}
+  }); crt_apt6.draw();
+
+// ASMA ADDITIONAL TIME (T30)
+  var crt_apt7 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt7',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=apt&range=H10:J40',
+    options:{
+        height: 300,
+        chartArea: {left: 80, top: 10, width:'100%',height:'40%'},
+          legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 11}},
+      //    isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0},
+                1: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 0}
+              },
+          hAxis: {slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}, },
+          vAxis: {format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
+        },
+    view: {'columns': [0,2,1]}
+  }); crt_apt7.draw();
+
+
+// ATC-PRE DEPARTURE DELAYS (overview)
+//   var crt_apt8 = new google.visualization.ChartWrapper({
+//     chartType: 'ComboChart',
+//     containerId: 'crt_apt8',
+//     dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=apt&range=L1:M4',
+//     options:{
+//           height: 300, chartArea: {left: 40, top: 10, width:'100%',height:'50%'},
+ //          legend: {position:'none'},
+ //          series: {
+//                 0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0}
+   //            },
+  //         hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}},
+   //        vAxis: {title: 'minutes per departure', format: '0.0', minValue: 0.0, titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
+   //      },
+ //    view: {'columns': [0,1]}
+ //  }); crt_apt8.draw();
+
+// ATC-PRE DEPARTURE DELAYS (T30)
+  var crt_apt9 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt9',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=apt&range=L10:N40',
+    options:{
+        height: 300,
+        chartArea: {left: 80, top: 10, width:'100%',height:'40%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 11}},
+          isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0},
+                1: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 0}
+              },
+          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11},},
+          vAxis: {format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
+        },
+    view: {'columns': [0,2,1]}
+  }); crt_apt9.draw();
+
+// TAXI OUT (overview)
+  var crt_apt10 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt10',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=apt&range=P1:Q5',
+    options:{
+          height: 300, chartArea: {left: 40, top: 10, width:'100%',height:'50%'},
+          legend: {position:'none'},
+          series: {
+                0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0}
+              },
+          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}},
+          vAxis: {title: 'minutes per departure', format: '0.0', minValue: 0.0, titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
+        },
+    view: {'columns': [0,1]}
+  }); crt_apt10.draw();
+
+
+// TAXI OUT (T30)
+  var crt_apt11 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt11',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=apt&range=P10:R40',
+    options:{
+        height: 300,
+        chartArea: {left: 80, top: 10, width:'100%',height:'40%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 11}},
+          isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0},
+                1: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 0}
+              },
+          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11},},
+          vAxis: {format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
+        },
+    view: {'columns': [0,2,1]}
+  }); crt_apt11.draw();
+
+
+}
+google.setOnLoadCallback(drawVisualization)
+</script>
+
+
+<table class = "table">
+   <thead>
+      <tr>
+         <th>Period</th>
+         <th>Area</th>
+         <th>Update rate</th>
+         <th>Last update</th>
+         <th>Source(s)</th>
+         <th>Data</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class = "active">
+         <td>Jan-Jun (YTD)</td>
+         <td><a href='../../reference/definition/eurocontrol-area/'>EUROCONTROL area</a></td>
+         <td>Quarterly</td>
+         <td>13-Jul-2018</td>
+          <td>
+          <a href='../../reference/acronym/nm-cfmu/'>NM</a>,
+          <a href='../../reference/acronym/pru/'>PRU</a>,
+          <a href='../../reference/acronym/coda/'>CODA</a></td>
+          <td><a href='../../data/performancearea/'>
+<i class="fa pru fa-download"></i>
+</a></td>
+      </tr>
+   </tbody>
+</table>
+
+<h2 class="sub-header">Arrival flow management</h2>
+<div>
+This section analyses ANS-related inefficiencies on the arrival flow at the top 30 European airports in terms of arrival <a href='../../reference/definition/atfm-delay/'>ATFM delay</a> and <a href='../../reference/definition/additional-asma-time/'>additional ASMA time</a>.
+</div>
+
+<h3 class="page-header">Airport arrival <a href='../../reference/definition/atfm-delay/'>ATFM delays</a> (min per arrival)</h3>
+<div class="row ">
+<div class="col-sm-2">
+    <h4>Top 30 airports</h4>
+    <div id="crt_apt4"></div>
+</div>
+<div class="col-sm-10">
+    <h4>Airport arrival ATFM delay by airport - 2018 (Jan-Jun) vs. 2017 (Jan-Jun)</h4>
+    <div id="crt_apt5"></div>
+</div>
+  </div><br>
+
+    <div class="panel panel-info">
+          <div class="panel-heading">
+            Average airport ATFM delays at the top 30 European airports decreased from 1.12 to 1.06 minutes per arrival in the first two quarters of 2018. The most notable improvement in Q1-2 2018 was observed for Istanbul Sabiha Gökçen Airport (SAW) where ATFM arrival delay reduced by 5.3 minutes on average.
+          </div>
+    </div>
+
+<h3 class="page-header"><a href='../../reference/definition/additional-asma-time/'>Additional ASMA time</a></h3>
+<div class="row ">
+<div class="col-sm-2">
+    <h4>Top 30 airports</h4>
+    <div id="crt_apt6"></div>
+</div>
+<div class="col-sm-10">
+    <h4><a href='../../reference/definition/additional-asma-time/'>Additional ASMA time by airport</a> 2018 (Jan-May)</h4>
+    <div id="crt_apt7"></div>
+</div>
+  </div><br>
+    <div class="panel panel-info">
+          <div class="panel-heading">
+            Overall, the average additional ASMA time decreased in the first six months of 2018.<br>
+          </div>
+    </div>
+
+<h2 class="sub-header">Departure flow management</h2>
+<div>
+This section analyses ANS-related inefficiencies on the departure flow at the top 30 European airports in terms of <a href='../../reference/definition/atc-pre-departure-delay/'>ATC pre-departure delays</a> at the gate and <a href='../../reference/definition/additional-taxi-out-time/'>additional taxi-out time</a>.
+</div>
+<h3 class="page-header"><a href='../../reference/definition/atc-pre-departure-delay/'>ATC pre-departure delays</a></h3>
+<div class="row ">
+<div class="col-sm-2">
+    <h4>Top 30 airports</h4>
+    <div>no consistent time series available</div>
+</div>
+<div class="col-sm-10">
+    <h4><a href='../../reference/definition/atc-pre-departure-delay/'>ATC pre-departure delays by airport</a> 2018 (Jan-May)</h4>
+    <div id="crt_apt9"></div>
+</div>
+  </div><br>
+      <div class="panel panel-info">
+          <div class="panel-heading">
+           The data analysed in this section is based on data directly provided by airport operators. Unlike CODA  data, the Airport Operator Data Flow covers all departures from airports and is therefore also used for the analysis of additional taxi out and ASMA times. As highlighted in PRR, while the data flow has a better coverage, some data quality issues do exist.
+      </div>
+    </div>
+
+<h3 class="page-header"><a href='../../reference/definition/additional-taxi-out-time/'>Additional taxi-out time</a></h3>
+<div class="row placeholders">
+<div class="col-sm-2">
+    <h4>Top 30 airports</h4>
+    <div id="crt_apt10"></div>
+</div>
+<div class="col-sm-10">
+    <h5><a href='../../reference/definition/additional-taxi-out-time/'>Additional taxi-out by airport</a> 2018 (Jan-May)</h5>
+    <div id="crt_apt11"></div>
+</div>
+  </div><br>
+      <div class="panel panel-info">
+          <div class="panel-heading">
+          The average additional taxi-out time increased at the top 30 airports in the first six months of 2018 from 3.7 minutes to 3.91 minutes per departure (excluding the two Istanbul airports for which no data was available).
+    </div>
+
+	    </div>
+	  </div>
+	</div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>&copy; 2018&nbsp;EUROCONTROL &nbsp; &mdash; &nbsp;
+          <a href="../../about/disclaimer/">Disclaimer</a>
+		      </li>
+          <li>Subscribe via
+            
+            <span><a href="mailto:PRU-Support@eurocontrol.int?subject=Subscribe:%20PRU%20information%20point&amp;body=Please%20add%20me%20to%20the%20mailing%20list%20to%20get%20informed%20about%20information%20updates.">email <i class="fa fa-envelope"></i></a>
+            or
+            <a href="../../index.xml" type="application/rss+xml" target="_blank">RSS <i class="fa fa-rss"></i></a></span>
+          </li>
+          <li><a href="../../about/help/"><i class="fa fa-question-circle"></i></a></li>
+          <li><a href="../../about/howbuilt/"><i class="fa fa-wrench"></i></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

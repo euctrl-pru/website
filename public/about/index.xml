@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on PRU Portal</title>
+    <link>/about/</link>
+    <description>Recent content in About on PRU Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 May 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About us</title>
+      <link>/about/us/</link>
+      <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/about/us/</guid>
+      <description>The PRU is responsible for monitoring and reviewing the performance of the Pan-European ANS system across a number of key performance areas.
+As part of the EUROCONTROL Agency, the PRU supports the independent Performance Review Commission (PRC) in running the EUROCONTROL Performance Review System and executing the associated PRC work programme with the appropriate level of independence.
+The PRU also provides support to the European Commission (EC) on the SES Performance and Charging Schemes.</description>
+    </item>
+    
+    <item>
+      <title>Copyright notice and Disclaimer</title>
+      <link>/about/disclaimer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/disclaimer/</guid>
+      <description>This data is published by the EUROCONTROL Performance Review Unit in the interest of the exchange of information. It may be copied in whole or in part providing that this copyright notice &amp;copy; and disclaimer are included. The information may not be modified without prior written permission from the EUROCONTROL Performance Review Unit.
+The information does not necessarily reflect the official views or policy of EUROCONTROL, which makes no warranty, either implied or expressed, for the information contained in this document, including its accuracy, completeness or usefulness.</description>
+    </item>
+    
+    <item>
+      <title>Help us</title>
+      <link>/about/help/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/help/</guid>
+      <description>We are looking forward to hearing from you. Should you find any errors, inconsistencies or would you like to feed us back on data, methodology or web aspects of our portal, please contact us at: Performance Review Unit (PRU-Support@eurocontrol.int).</description>
+    </item>
+    
+    <item>
+      <title>How this site is built</title>
+      <link>/about/howbuilt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/howbuilt/</guid>
+      <description>This portal is designed and built using the following principles:
+ everything has to be version controlled adopt KISS principle: Keep It Simple and Stupid. build a static website use open source tools whenever possible  Open source/Free tools and services we use  git : a distributed version control system. Hugo : a static site generator. D3 : a JavaScript library for producing dynamic, interactive data visualizations in web browsers.</description>
+    </item>
+    
+    <item>
+      <title>To Do&#39;s</title>
+      <link>/about/todo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/todo/</guid>
+      <description>This is what needs to be checked for full migration to Hugo:
+ re-add search box in nav paginatilast 5 or so sidebar menu navigation for PRU Quaterly, see Hugo dos in github style header, fonts,… anti-spammer subscriber fix table extent in data download page fix links to XLS files in data download table clean dashboard layout, i.e. google charst, pym.js,… fixed nav bar dataset HFE: fix Pym iframe height fix “APT DLY filter and CSV download” link, http://localhost:8000/reference/dataset/airport-arrival-atfm-delay/ in http://localhost:8000/reference/dataset/airport-arrival-atfm-delay/ should ‘crt_ertfltsMM_15.</description>
+    </item>
+    
+  </channel>
+</rss>

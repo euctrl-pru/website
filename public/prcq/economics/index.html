@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="generator" content="Hugo 0.37" />
+
+
+<title>ANS Cost-efficiency - PRU Portal</title>
+<meta property="og:title" content="ANS Cost-efficiency - PRU Portal">
+
+
+
+  
+
+
+
+
+
+   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+
+
+<link rel="manifest" href="manifest.json">
+
+
+
+<link rel="stylesheet" href="../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../css/main.css" media="all">
+
+ 
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all">
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
+
+
+
+
+
+  </head>
+  <body>
+  	
+    <button class="dn fixed white-70 bg-red outline-0 bottom-1 right-1 z-999 bn br1 pa1 glow pointer:hover" onclick="topFunction()" id="to-top-btn" title="Go to top">top <i class="fa fa-angle-double-up"></i></button>
+    <script>
+      
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("to-top-btn").style.display = "block";
+          } else {
+              document.getElementById("to-top-btn").style.display = "none";
+          }
+      }
+      
+      function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+      }
+      </script>
+
+    <main class="ph2 pb1">
+      <header class="tc bb b--black-10 bg-light-gray">
+        <nav class="db dt-l w-100 border-box mid-gray pa2 ph5-l">
+  <a class="db dtc-l v-mid mid-gray link dim w-100 w-20-l tc tl-l mb2 mb0-l" href="../../">
+    <img src="../../images/pru-logo.png"
+    width="54"
+    height="32"
+    alt="PRU"
+    class="dib br-100">
+  </a>
+
+  <div class="db dtc-l v-mid w-100 w-80-l tc tr-l">
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../prcq/" title="PRC Quarterly">PRC Quarterly</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../post/" title="News">News</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../dashboard/perf-area/" title="Dashboard">Dashboard</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../data/" title="Data">Data</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../study/" title="Studies">Studies</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../reference/" title="References">References</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../about/us/" title="About">About</a>
+    
+  </div>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article min-vh-100 pb7 pb0-ns">
+
+    <h1 class="article-title"><img src="../../images/prcq-economics.png" width="40" height="40" alt="ANS Cost-efficiency"> ANS Cost-efficiency</h1>
+
+	<div class="mw9 center ph3-ns">
+	  <div class="cf ph2-ns">
+	    <div class="article-content fl f5 w-100 w-20-ns pa2">
+	        
+<nav class="sidebar-nav">
+  <h4><a href="../../prcq/">Overview</a></h4>
+  <ul>
+    
+    
+      
+        <li>
+          <a href="../../prcq/traffic/">
+            
+            <span>Traffic</span>
+          </a>
+      
+    
+      
+        <li>
+          <a href="../../prcq/ops-en-route/">
+            
+            <span>Operations En-route</span>
+          </a>
+      
+    
+      
+        <li>
+          <a href="../../prcq/ops-airport/">
+            
+            <span>Operations Airport</span>
+          </a>
+      
+    
+  </ul>
+
+  <h4>Annual results</h4>
+  <ul>
+    
+    
+      
+        <li>
+          <a href="../../prcq/safety/">
+            
+            <span>Safety</span>
+          </a>
+      
+    
+      
+        <li>
+          <a href="../../prcq/economics/">
+            
+            <span>Economics</span>
+          </a>
+      
+    
+  </ul>
+</nav>
+
+	    </div>
+	    <div class="fl w-100 w-80-ns pa2">
+	      <script type="text/javascript" src="http://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
+google.load('visualization', '1', { packages: ['corechart', 'controls'] });
+</script>
+<script type="text/javascript">
+
+function drawVisualization()
+ {
+
+// ERT A
+  var crt_eco1 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_eco1',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=eco&range=I1:M7',
+    options:{
+        chartArea: {left: 80, top: 10, width:'70%',height:'80%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: {position:'right',textStyle:{color: 'grey', fontSize: 11}},
+          isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#9999FF', targetAxisIndex: 0},
+                1: {type:'bars',color:'#FF0000', targetAxisIndex: 0},
+                2: {type:'bars',color:'#EEE800', targetAxisIndex: 0},
+                3: {type:'lines', color:'#B89470', lineWidth: 0, pointSize: 10, targetAxisIndex: 1}
+              },
+          hAxis: {slantedTextAngle: 90,
+              textStyle: {fontSize: 12}},
+          vAxes:{
+              0:{ title:'Euro(2015) per composite flight hour'},
+              1:{ title:'year on year (%)', titleTextStyle : {color: '#B89470', fontSize: 11}, textStyle:{color:'#B89470'}}
+            }
+        },
+    view: {'columns': [0,1,2,3,4]}
+  }); crt_eco1.draw();
+
+
+// ERT - CHART -
+ var crt_eco2 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_eco2',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=eco&range=A1:F6',
+    options: {
+        chartArea: {left: 60, top: 10, width:'60%',height:'80%'},
+        titleTextStyle : {color: '#1F1F2E', fontSize: 12},
+        legend: 'right',
+        //seriesType: 'bars',
+        series: {
+                0: {type:'bars',color:'#003366', targetAxisIndex: 0},
+                1: {type:'bars',color:'#FFC000', targetAxisIndex: 0},
+                2: {type:'bars',color:'#993366', targetAxisIndex: 0},
+              },
+        vAxes:{
+              0:{ title:'% change', format: '0%', titleTextStyle : {color: '#1F1F2E', fontSize: 12}, textStyle:{color: '#1F1F2E'}}
+            },
+        hAxis: {slantedTextAngle: 45,}
+        },
+    view: {columns: [0,3,4,5], rows: [0,1,2,3,4]}
+  }); crt_eco2.draw();
+
+// ANALYSIS BY ANSP
+  var crt_eco3 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_eco3',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=eco&range=A11:H49',
+    options:{
+        height: 380,
+        chartArea: {left: 80, top: 30, width:'80%',height:'50%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: {
+               position: 'top',
+               maxLines: 2,
+               textStyle: {color: 'grey', fontSize: 11 }
+            },
+          isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#9999FF', targetAxisIndex: 0},
+                1: {type:'bars',color:'#FF0000', targetAxisIndex: 0},
+                2: {type:'bars',color:'#EEE800', targetAxisIndex: 0},
+                3: {type:'lines', color:'#B89470', lineWidth: 0, pointSize: 10, targetAxisIndex: 1}
+              },
+          hAxis: {slantedTextAngle: 45,
+              textStyle: {fontSize: 12}},
+          vAxes:{
+              0:{ title:'EUR(2015) per composite flight hour',titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}},
+              1:{ title:'share of delay costs (%)', titleTextStyle : {color: '#B89470', fontSize: 12}, textStyle:{color:'#B89470', fontSize: 12}}
+            }
+        },
+    view: {'columns': [0,1,2,3,7]}
+  }); crt_eco3.draw();
+
+}
+google.setOnLoadCallback(drawVisualization)
+</script>
+
+
+<table class = "table">
+   <thead>
+      <tr>
+         <th>Period</th>
+         <th>Area</th>
+         <th>Update rate</th>
+         <th>Last update</th>
+         <th>Source(s)</th>
+         <th>ACE dashboard</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class = "active">
+         <td>Jan-Dec</td>
+         <td><a href='../../reference/definition/eurocontrol-area'>EUROCONTROL area</a></td>
+         <td>Annually</td>
+         <td>15-Mar-2018</td>
+          <td>
+          <a href="http://www.eurocontrol.int/documents/economic-information-disclosure-specification" target="_blank">ANSPs submissions</a>
+          </td>
+         <td><a href="http://www.eurocontrol.int/ACE/ACE-Home.html" target="_blank" class="btn btn-primary">ACE Dashboard</button></td>
+      </tr>
+   </tbody>
+</table>
+
+<h3 class="sub-header">Changes in <a href='../../reference/definition/eco-cost-eff'>economic cost-effectiveness</a> (37 <a href='../../reference/acronym/ansp/'>ANSPs</a>)</h3>
+<div class="row">
+<div class="col-sm-6 ">
+    <div id="crt_eco1"></div>
+</div>
+<div class="col-sm-6">
+    <div id="crt_eco2"></div>
+</div>
+</div>
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    The analysis shows the trend of the unit economic costs between 2011 and 2016 at Pan-European level  for a consistent sample of 37 ANSPs for which data for a time-series analysis was available. The left-hand side shows the changes in unit economic costs, while the right-hand side provides complementary information on the year-on-year changes in ATM/CNS provision costs, composite flight-hours and unit costs of ATFM delays.
+    The unit costs of gate-to-gate ATFM delays rose by +20.2% in 2016 (based on the old computation method) and unit economic costs were +0.8% higher than in 2015.<br>
+    At Pan-European level, the economic cost-effectiveness indicator amounted to €488 per composite flight-hour in 2016, and, on average, ATFM delays represent 16% of the total economic costs.
+  </div>
+</div>
+
+<div class="row placeholders">
+<div class="col-sm-12 placeholder">
+    <h3><a href='../../reference/definition/eco-cost-eff'>Economic gate-to-gate cost effectiveness (2016)</a></h3>
+    <div id="crt_eco3"></div>
+</div>
+</div>
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+In 2016 unit economic costs ranged from €924 for Belgocontrol to €209 for MATS; a factor of more than four.
+<br>
+ More information on exchange rates variations and their impact on unit costs is provided in the  <a href='../../references/acronym/ace/'>ACE Benchmarking Reports</a>.
+  </div>
+</div>
+
+	    </div>
+	  </div>
+	</div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>&copy; 2018&nbsp;EUROCONTROL &nbsp; &mdash; &nbsp;
+          <a href="../../about/disclaimer/">Disclaimer</a>
+		      </li>
+          <li>Subscribe via
+            
+            <span><a href="mailto:PRU-Support@eurocontrol.int?subject=Subscribe:%20PRU%20information%20point&amp;body=Please%20add%20me%20to%20the%20mailing%20list%20to%20get%20informed%20about%20information%20updates.">email <i class="fa fa-envelope"></i></a>
+            or
+            <a href="../../index.xml" type="application/rss+xml" target="_blank">RSS <i class="fa fa-rss"></i></a></span>
+          </li>
+          <li><a href="../../about/help/"><i class="fa fa-question-circle"></i></a></li>
+          <li><a href="../../about/howbuilt/"><i class="fa fa-wrench"></i></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

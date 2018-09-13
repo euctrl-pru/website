@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="generator" content="Hugo 0.37" />
+
+
+<title>Operational En-route ANS Performance - PRU Portal</title>
+<meta property="og:title" content="Operational En-route ANS Performance - PRU Portal">
+
+
+
+  
+
+
+
+
+
+   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+
+
+<link rel="manifest" href="manifest.json">
+
+
+
+<link rel="stylesheet" href="../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../css/main.css" media="all">
+
+ 
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all">
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
+
+
+
+
+
+  </head>
+  <body>
+  	
+    <button class="dn fixed white-70 bg-red outline-0 bottom-1 right-1 z-999 bn br1 pa1 glow pointer:hover" onclick="topFunction()" id="to-top-btn" title="Go to top">top <i class="fa fa-angle-double-up"></i></button>
+    <script>
+      
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("to-top-btn").style.display = "block";
+          } else {
+              document.getElementById("to-top-btn").style.display = "none";
+          }
+      }
+      
+      function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+      }
+      </script>
+
+    <main class="ph2 pb1">
+      <header class="tc bb b--black-10 bg-light-gray">
+        <nav class="db dt-l w-100 border-box mid-gray pa2 ph5-l">
+  <a class="db dtc-l v-mid mid-gray link dim w-100 w-20-l tc tl-l mb2 mb0-l" href="../../">
+    <img src="../../images/pru-logo.png"
+    width="54"
+    height="32"
+    alt="PRU"
+    class="dib br-100">
+  </a>
+
+  <div class="db dtc-l v-mid w-100 w-80-l tc tr-l">
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../prcq/" title="PRC Quarterly">PRC Quarterly</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../post/" title="News">News</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../dashboard/perf-area/" title="Dashboard">Dashboard</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../data/" title="Data">Data</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../study/" title="Studies">Studies</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../reference/" title="References">References</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../../about/us/" title="About">About</a>
+    
+  </div>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article min-vh-100 pb7 pb0-ns">
+
+    <h1 class="article-title"><img src="../../images/prcq-operations-enroute.png" width="40" height="40" alt="Operational En-route ANS Performance"> Operational En-route ANS Performance</h1>
+
+	<div class="mw9 center ph3-ns">
+	  <div class="cf ph2-ns">
+	    <div class="article-content fl f5 w-100 w-20-ns pa2">
+	        
+<nav class="sidebar-nav">
+  <h4><a href="../../prcq/">Overview</a></h4>
+  <ul>
+    
+    
+      
+        <li>
+          <a href="../../prcq/traffic/">
+            
+            <span>Traffic</span>
+          </a>
+      
+    
+      
+        <li>
+          <a href="../../prcq/ops-en-route/">
+            
+            <span>Operations En-route</span>
+          </a>
+      
+    
+      
+        <li>
+          <a href="../../prcq/ops-airport/">
+            
+            <span>Operations Airport</span>
+          </a>
+      
+    
+  </ul>
+
+  <h4>Annual results</h4>
+  <ul>
+    
+    
+      
+        <li>
+          <a href="../../prcq/safety/">
+            
+            <span>Safety</span>
+          </a>
+      
+    
+      
+        <li>
+          <a href="../../prcq/economics/">
+            
+            <span>Economics</span>
+          </a>
+      
+    
+  </ul>
+</nav>
+
+	    </div>
+	    <div class="fl w-100 w-80-ns pa2">
+	      <script type="text/javascript" src="http://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
+google.load('visualization', '1', { packages: ['corechart', 'controls'] });
+</script>
+<script type="text/javascript">
+
+function drawVisualization()
+ {
+
+// ERT - CHART - En-route ATFM delay per flight
+ var crt_ertdlyYY = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_ertdlyYY',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=ert&range=A1:B12',
+    options: {
+        //width: 500, height: 200,
+        //chartArea: {left: 80, top: 30, width:'60%',height:'65%'},
+        legend: 'none',
+        series: {
+              0: {type: 'lines', color:'4F81BD', lineWidth: 3, pointSize: 12, targetAxisIndex: 0}
+            },
+        vAxes:{
+              0:{ title:'minutes per flight',
+                titleTextStyle : {color: '#1F1F2E', fontSize: 11}, textStyle:{color: '#1F1F2E'}}
+            }
+        },
+    view: {columns: [0,1], rows: [1,2,3,4,5,6,7,8,9,10]}
+  }); crt_ertdlyYY.draw();
+
+// ERT - CHART - Total en-route delay by reported cause
+  var crt_ertdlytot = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_ertdlytot',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=ert&range=G1:I8',
+    options:{
+          chartArea: {left: 50, top: 30, width:'100%',height:'55%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: 'top',
+           series: {
+              0: {type: 'bars', color:'#4F81BD', targetAxisIndex: 0},
+              1: {type: 'bars', color:'DCE6F2', targetAxisIndex: 0}
+            },
+        vAxes:{
+              0:{ title:'minutes',
+                titleTextStyle : {color: '#1F1F2E', fontSize: 11}, format: 'short', textStyle:{color: '#1F1F2E'}}
+            }
+        },
+    view: {'columns': [0,2,1], rows: [0,1,2,3,4,5,6]}
+  }); crt_ertdlytot.draw();
+
+
+// ERT - CHART - En-route ATFM delayed flights
+  var crt_ertdlypie = new google.visualization.ChartWrapper({
+    chartType: 'PieChart',
+    containerId: 'crt_ertdlypie',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=ert&range=A15:C18&hl=en_GB',
+    options: {
+            title: '2016',
+            titlePosition: 'out',
+            titleTextStyle: { color: 'grey', fontSize: 16 },
+                       // width: 300,
+                       // height: 300,
+                        legend: 'none',
+                        chartArea: {'left': 0, 'right': 0, 'top': 10, 'bottom': 2}, //width:'70%',height:'80%'
+                        //pieSliceText: 'label',
+                        pieHole: 0.2, pieStartAngle: 80,
+                        slices: {  0: {color: '4F81BD', offset: 0.1, textStyle:{color: '#FFFFFF', fontSize: 8}},
+                                   1: {color: 'DDD9C3', offset: 0.0},
+                                   2: {color: 'DCDCDC', offset: 0.0, textStyle:{color: '#1F1F2E', fontSize: 12}}
+                                 },
+                    },
+    view: {'columns': [0,1]}
+  }); crt_ertdlypie.draw();
+
+
+// ERT - CHART - % of delayed flights
+ var crt_ertdly1 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_ertdly1',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=ert&range=A22:G30',
+    options: {
+        chartArea: {left: 50, top: 40, width:'95%',height:'60%'},
+        titleTextStyle : {color: '#1F1F2E', fontSize: 12},
+        legend: 'top',
+        series: {
+                0: {type:'bars',color:'#edf2f8', targetAxisIndex: 0},
+                1: {type:'bars',color:'#c8d7ea', targetAxisIndex: 0},
+                2: {type:'bars',color:'#a3bcdc', targetAxisIndex: 0},
+                3: {type:'bars',color:'#7ea2ce', targetAxisIndex: 0},
+                4: {type:'bars',color:'#4f81bd', targetAxisIndex: 0}
+                },
+        vAxes:{
+              0:{
+              title:'% of flights',titleTextStyle : {color: '#1F1F2E', fontSize: 12}, textStyle:{color: '#1F1F2E'}}
+              },
+        hAxis: {slantedTextAngle: 90, textStyle: {fontSize: 12}}
+        },
+    view: {columns: [0,2,3,4,5,6], rows: [0,1,2,3,4,5,6,7]}
+  }); crt_ertdly1.draw();
+
+
+// ERT ATFM DLY - YY - CHART - [EU_YY]
+  var crt_ertdly3 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_ertdly3',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=ert&range=A32:I72',
+    options:{
+        height: 370,
+        chartArea: {left: 50, top: 30, width:'100%',height:'50%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+         legend: {
+               position: 'top',
+               maxLines: 2,
+               textStyle: {color: 'grey', fontSize: 11 }
+            },
+          isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#C0504D', targetAxisIndex: 0},
+                1: {type:'bars',color:'#D99694', targetAxisIndex: 0},
+                2: {type:'bars',color:'#FAC090', targetAxisIndex: 0},
+                3: {type:'bars', color:'#B9CDE5', targetAxisIndex: 0},
+                4: {type:'bars',color:'92D050', targetAxisIndex: 0},
+                5: {type:'bars',color:'grey', targetAxisIndex: 0},
+                6: {type:'bars',color:'C4BD97', targetAxisIndex: 0},
+                7: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 6, pointShape: 'diamond', targetAxisIndex: 0}
+              },
+          hAxis: {
+            slantedTextAngle: 90,
+            textStyle: {color: 'grey', fontSize: 12}
+          },
+          vAxes:{
+              0:{ format: '0.0', title:'minutes per flight',titleTextStyle: { fontSize: 12}, textStyle : {fontSize: 12}},
+             // 1:{ format: '0.0%', title:'en-route ATFM delayed flights (%)', titleTextStyle : {fontSize: 12}, textStyle:{fontSize: 12}}
+                }
+              },
+    view: {'columns': [0,1,2,3,4,5,6,7,8]}
+  }); crt_ertdly3.draw();
+
+
+// ERT - CHART - HFE1
+ var crt_hfe1 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_hfe1',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=ert&range=A76:c81',
+    options: {
+        height: 300, chartArea: {left: 50, top: 25, width:'100%',height:'45%'},
+        legend: 'none',
+        series: {
+              0: {type: 'lines', color:'4F81BD', lineWidth: 4, pointSize: 0, targetAxisIndex: 0},
+              1: {type: 'lines', color:'C0504D', lineWidth: 4, pointSize: 0, targetAxisIndex: 0}
+            },
+            hAxis: {
+              slantedText: true,
+              slantedTextAngle: 90,
+              textStyle: {color: 'grey', fontSize: 12}
+            },
+            vAxis: {minValue: 0.92, maxValue: 1.0, viewWindow: { min: 0.94, max: 1.0 }, format: 'percent',textStyle:{fontSize: 12}
+               }
+        },
+    view: {columns: [0,1,2], rows: [0,1,2,3,4]}
+  }); crt_hfe1.draw();
+
+
+// HFE - State
+ var crt_hfe2 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_hfe2',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=ert&range=E75:G114',
+    options: {
+        height: 300,
+        chartArea: {left: 65, top: 20, width:'95%',height:'45%'},
+        titleTextStyle : {color: '#1F1F2E', fontSize: 12},
+        legend: {
+               position: 'top',
+               maxLines: 2,
+               textStyle: {color: 'grey', fontSize: 11 }
+                },
+        series: {
+              0: {type: 'bars', color:'#D99694', pointSize: 6, targetAxisIndex: 0},
+              1: {type: 'bars', color:'#C0504D', targetAxisIndex: 0}
+            },
+        vAxes:{
+              0:{ title:'efficiency (%)', format: 'percent', titleTextStyle : {color: '#1F1F2E', fontSize: 11}, textStyle:{color: '#1F1F2E'}}
+              },
+            hAxis: {
+              slantedTextAngle: 90,
+              textStyle: {color: 'grey', fontSize: 11}}
+        },
+    view: {columns: [0,1,2] }
+  }); crt_hfe2.draw();
+
+
+}
+google.setOnLoadCallback(drawVisualization)
+</script>
+
+<table class = "table">
+   <thead>
+      <tr>
+         <th>Period</th>
+         <th>Area</th>
+         <th>Update rate</th>
+         <th>Last update</th>
+         <th>Source(s)</th>
+         <th>Data</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class = "active">
+         <td>Jan-Jun</td>
+         <td><a href='../../reference/definition/eurocontrol-area/'>EUROCONTROL area</a></td>
+         <td>Quarterly</td>
+         <td>13-Jul-2018</td>
+          <td>
+          <a href='../../reference/acronym/nm-cfmu/'>NM</a></td>
+          <td><a href='../../data/performancearea/'>
+<i class="fa pru fa-download"></i>
+</a></td>
+      </tr>
+   </tbody>
+</table>
+
+<h2 class="page-header">En-route <a href='../../reference/definition/atfm-delay/'>ATFM delays</a></h2>
+
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+    <h3>En-route <a href='../../reference/definition/atfm-delay/'>ATFM delay</a> per flight</h3>
+    <span class="text-muted"><a href='../../reference/definition/eurocontrol-area/'>EUROCONTROL area</a></span>
+    <div id="crt_ertdlyYY"></div>
+</div>
+<div class="col-xs-6 col-sm-6 placeholder">
+    <h3>Total en-route delay by reported <a href='../../reference/definition/atfm-delay-codes/'>ATFM delay cause</a></h3>
+    <span class="text-muted"><a href='../../reference/definition/eurocontrol-area/'>EUROCONTROL area</a></span>
+    <div id="crt_ertdlytot"></div>
+</div>
+</div>
+
+<div class="row placeholders">
+<div class="col-sm-6 placeholder">
+<div class="panel panel-info"><div class="panel-heading">
+Total en-route ATFM delays increased substantially in the first six months of 2018
+ (+141% vs. Jan-Jun 2017) leading to a notable increase in the average en-route ATFM delay per flight.
+<br><br>
+
+<div class="col-sm-6 placeholder">
+<div class="panel panel-info"><div class="panel-heading">
+  The main drivers of the substantial increase observed in the first two quarters of 2018 were
+  en route ATFM regulations attributed to capacity, staffing and adverse weather.
+  Compared to Q1-2 in 2017 there was also a significant increase in ATFM delays due to
+  ATC industrial action in France.
+</div></div></div>
+</div>
+
+<h3>Share of controlled flights delayed by en-route ATFM regulations (%)</h3>
+<div class="row placeholders">
+<div class="col-sm-2">
+    <div id="crt_ertdlypie"></div>
+</div>
+<div class="col-sm-10 placeholder">
+    <div id="crt_ertdly1"></div>
+</div>
+  </div><br>
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+   Overall, 10.5% of the controlled flights in the EUROCONTROL area were affected by ATFM delays in the first two quarters of 2018.
+   Compared to 2017 (Jan-Jun), the share of flights affected by en-route ATFM delays increased by 4.0 percent points to 7.9%. <br>At the same time, the share of flights affected by <a href='{{"/prcq/ops-airport.html"| prepend: site.baseurl | prepend: site.url }}'>airport ATFM delays</a> decreased slightly from 2.7% in 2017 to 2.6% in 2018 (Jan-Jun).
+  </div>
+</div>
+
+<div class="row placeholders">
+<div class="col-sm-12 placeholder">
+    <h3>En-route ATFM delay by ANSP</h3>
+    <span class="text-muted">2018 (Jan-Jun)</span>
+    <div id="crt_ertdly3"></div>
+</div>
+</div>
+<br>
+<div class="panel panel-info">
+  <div class="panel-heading">
+  Average en-route delay per flight was highest in France (1.75 min), followed by DFS/Germany (1.5 min)
+  and  Maastricht Upper Area Control Centre/MUAC (0.88 min).
+  </div>
+</div>
+
+<h2 class="page-header"><a href='../../reference/methodology/horizontal-flight-efficiency-pi/'>Horizontal en-route flight efficiency</a></h2>
+
+<div class="row placeholders">
+<div class="col-sm-2">
+
+    <div id="crt_hfe1"></div>
+</div>
+<div class="col-sm-10 placeholder">
+    <div id="crt_hfe2"></div>
+</div>
+</div><br>
+<div class="panel panel-info">
+  <div class="panel-heading">
+   Horizontal en route flight efficiency in the first two quarters of 2018 remained at the level observed in 2017.
+  </div>
+</div>
+
+	    </div>
+	  </div>
+	</div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>&copy; 2018&nbsp;EUROCONTROL &nbsp; &mdash; &nbsp;
+          <a href="../../about/disclaimer/">Disclaimer</a>
+		      </li>
+          <li>Subscribe via
+            
+            <span><a href="mailto:PRU-Support@eurocontrol.int?subject=Subscribe:%20PRU%20information%20point&amp;body=Please%20add%20me%20to%20the%20mailing%20list%20to%20get%20informed%20about%20information%20updates.">email <i class="fa fa-envelope"></i></a>
+            or
+            <a href="../../index.xml" type="application/rss+xml" target="_blank">RSS <i class="fa fa-rss"></i></a></span>
+          </li>
+          <li><a href="../../about/help/"><i class="fa fa-question-circle"></i></a></li>
+          <li><a href="../../about/howbuilt/"><i class="fa fa-wrench"></i></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

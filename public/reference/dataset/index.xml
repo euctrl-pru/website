@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Datasets Definition on PRU Portal</title>
+    <link>/reference/dataset/</link>
+    <description>Recent content in Datasets Definition on PRU Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/reference/dataset/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ACE Monthly Operational Data Dataset</title>
+      <link>/reference/dataset/ace-monthly-operational-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/dataset/ace-monthly-operational-data/</guid>
+      <description>Data description The ATM Cost-Effectiveness (ACE) operational data is published each month as complementary data for the report which is published in May each year.
+ANSP Column naming and types    Column name Data Source Label Description Example     YEAR Network Manager YEAR Reference year 2014   MONTH_NUM Network Manager MONTH Month (numeric) 1   ANSP_NAME Network Manager ANSP_NAME Name of the Air Navigation Service Provider (ANSP) DSNA   FLT_1 Network Manager IFR flights Number of IFR flights 189824   DIST_KM_1 Network Manager  Distance in kilometer 61   DUR_MIN_1 Network Manager  Duration in minutes 8511400   FLT_DLY_1 Network Manager  IFR flights with ATFM delay 4360   FLT_DLY_15_1 Network Manager  IFR flights with ATFM delay &amp;gt;15 min.</description>
+    </item>
+    
+    <item>
+      <title>ASMA Additional Time Dataset</title>
+      <link>/reference/dataset/asma-additional-time/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/dataset/asma-additional-time/</guid>
+      <description>Data description The additional ASMA time is a proxy for the average arrival runway queuing time on the inbound traffic flow, during congestion periods at airports.
+It is the difference between the actual ASMA time of a flight and a statistically determined unimpeded ASMA time based on ASMA times in periods of low traffic demand.
+When monitoring ASMA performance at airports, it is important to note that the goal is not to reduce ASMA time to the unimpeded reference time - as this could negatively impact on runway throughput - but rather to reduce additional ASMA time and associated fuel burnt to the necessary minimum.</description>
+    </item>
+    
+    <item>
+      <title>ATC Pre-Departure Delay (IATA code 89) Dataset</title>
+      <link>/reference/dataset/atc-pre-departure-delay/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/dataset/atc-pre-departure-delay/</guid>
+      <description>Data description The ATC pre-departure delay is a proxy for ATC induced delays at the departure stand to avoid queuing at the departure runway.
+The data is based on IATA delay code 89 [see (IATA 2012) ] which, besides delays caused by local ATC constraints, also includes delays due to late push-back approval and some other reasons which may introduce a certain level of bias. Work is in progress to allow for a better identification of the different causal factors.</description>
+    </item>
+    
+    <item>
+      <title>ATFM Slot Adherence Dataset</title>
+      <link>/reference/dataset/atfm-slot-adherence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/dataset/atfm-slot-adherence/</guid>
+      <description>Data description ATFM departure slots are allocated centrally by the European Network Manager upon the request of the local Flow Management Position (FMP), when an imbalance between demand and capacity is foreseen at airports and/or en-route. The purpose of such regulation is to hold aircraft on the ground.
+An ATFM slot tolerance window is available to ATC to sequence departures. The standard slot tolerance window is [-5 minutes, +10 minutes].</description>
+    </item>
+    
+    <item>
+      <title>Airport Arrival ATFM Delay Dataset</title>
+      <link>/reference/dataset/airport-arrival-atfm-delay/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/dataset/airport-arrival-atfm-delay/</guid>
+      <description>Please note that software release 20.0 of the Network Manager on 04 April 2016 introduced a change to improve the accuracy of the ATFM delay calculation for operational purposes. For more information on the change in methodology click here.
+Data description The Airport Arrival ATFM Delay provides an indication of ATFM delays on the ground due to constraints at airports.
+In Europe, when traffic demand is anticipated to exceed the available capacity in en route centres or at airports, Air Traffic Control (ATC) units may request the local Flow Management Position (FMP) to instigate an Air Traffic Flow Management (ATFM) measure, or regulation.</description>
+    </item>
+    
+    <item>
+      <title>Airport Traffic Dataset</title>
+      <link>/reference/dataset/airport-traffic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/dataset/airport-traffic/</guid>
+      <description> Data description The data provides the number of arrivals and departures from various data sources at the respective airports.
+Column naming and types    Column name Data Source Label Description Example     YEAR Network Manager YEAR Reference year 2014   MONTH_NUM Network Manager MONTH Month (numeric) 1   MONTH_MON Network Manager MONTH_MON Month (3-letter code) JAN   FLT_DATE Network Manager DATE_FLT Date of flight 01-Jan-2014   APT_ICAO Network Manager APT_ICAO ICAO 4-letter airport designator EDDM   APT_NAME PRU APT_NAME Airport name Munich   STATE_NAME PRU STATE_NAME Name of the country in which the airport is located Germany   FLT_DEP_1 Network Manager Departures - (NM) Number of IFR departures 278   FLT_ARR_1 Network Manager IFR arrivals - (NM) Number of IFR arrivals 241   FLT_TOT_1 Network Manager IFR flights (arr + dep) - (NM) Number total IFR movements 519   FLT_DEP_IFR_2 Airport Operator IFR departures - (APT) Number of IFR departures 278   FLT_ARR_IFR_2 Airport Operator IFR arrivals - (APT) Number of IFR arrivals 241   FLT_TOT_IFR_2 Airport Operator IFR flights (arr + dep) - (APT) Number total IFR movements 519    </description>
+    </item>
+    
+    <item>
+      <title>Continuous climb and descent Dataset</title>
+      <link>/reference/dataset/continuous-climb-descent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/dataset/continuous-climb-descent/</guid>
+      <description>Data description This data provides the results of the analysis of vertical flight profiles during climb and descent at airports. The methodology is desto measure and observe vertical flight efficiency without highlighting specific reasons for the observed behaviour. More detailed case studies are needed to find out reasons for particular observations.
+Methodology The methodology being applied for the characterisation of CCO/CDO is described in the relevant methodology page.
+Column naming and types    Column name Data source Label Column description Example     YEAR Network Manager YEAR Reference year 2014   MONTH_NUM Network Manager MONTH Month (numeric) 1   MONTH_MON Network Manager MONTH_MON Month (3-letter code) JAN   Airport Network Manager Airport ICAO 4-letter airport designator EBBR   APT_NAME PRU APT_NAME Airport name Brussels   STATE_NAME PRU STATE_NAME Name of the country in which the airport is located Belgium   NBR_FLIGHTS PRU NBR_FLIGHTS Number of flights 4523   AVG_DIST_LEVEL_NM PRU AVG_DIST_LEVEL_NM Average distance flown level per flight in Nautical miles 2.</description>
+    </item>
+    
+    <item>
+      <title>En-Route ATFM Delay Dataset (AUA)</title>
+      <link>/reference/dataset/en-route-atfm-delay-aua/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/dataset/en-route-atfm-delay-aua/</guid>
+      <description>Please note that software release 20.0 of the Network Manager on 04 April 2016 introduced a change to improve the accuracy of the ATFM delay calculation for operational purposes. For more information on the change in methodology click here.
+Data description The en-route ATFM delay provides an indication of ATFM delays on the ground due to constraints en-route.
+In Europe, when traffic demand is anticipated to exceed the available capacity in en route centres or at airports, Air Traffic Control (ATC) units may request the local Flow Management Position (FMP) to instigate an Air Traffic Flow Management (ATFM) measure, or regulation.</description>
+    </item>
+    
+    <item>
+      <title>En-Route ATFM Delay Dataset (FIR)</title>
+      <link>/reference/dataset/en-route-atfm-delay-fir/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/dataset/en-route-atfm-delay-fir/</guid>
+      <description>Please note that software release 20.0 of the Network Manager on 04 April 2016 introduced a change to improve the accuracy of the ATFM delay calculation for operational purposes. For more information on the change in methodology click here.
+Data description The en-route ATFM delay provides an indication of ATFM delays on the ground due to constraints en-route.
+In Europe, when traffic demand is anticipated to exceed the available capacity in en route centres or at airports, Air Traffic Control (ATC) units may request the local Flow Management Position (FMP) to instigate an Air Traffic Flow Management (ATFM) measure, or regulation.</description>
+    </item>
+    
+    <item>
+      <title>En-Route IFR Flights Dataset</title>
+      <link>/reference/dataset/en-route-traffic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/dataset/en-route-traffic/</guid>
+      <description> Data description The data provides the number of IFR flights within the respective airspace.
+Column naming and types    Column name Data source Label Column description Example     YEAR Network Manager YEAR Reference year 2015   MONTH_NUM Network Manager MONTH Month (numeric) 3   MONTH_MON Network Manager MONTH_MON Month (3-letter code) MAR   FLT_DATE Network Manager FLT_DATE Date of flight 17-Mar-2015   ENTITY_NAME PRU ENTITY_NAME Entity name FAB CE   ENTITY_TYPE PRU ENTITY_TYPE Type of the entity to which the data relates (ANSP, FAB, AREA) FAB (AUA)   FLT_ERT_1 Network Manager Flights Total number of flights within the respective airspace 3853    </description>
+    </item>
+    
+    <item>
+      <title>Horizontal Flight Efficiency Dataset</title>
+      <link>/reference/dataset/horizontal-flight-efficiency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/dataset/horizontal-flight-efficiency/</guid>
+      <description>Please note that additional quality control measures detected a limited number of abnormal flight trajectories starting towards the end of 2015 which were removed by applying an additional filter as of 01 January 2015. Due to this quality improvement, the period January 2015 - May 2016 might differ slightly from older data releases.
+Data description Horizontal en-route flight efficiency compares the length of actual or planned flight trajectories to the corresponding “achieved” distance.</description>
+    </item>
+    
+    <item>
+      <title>Taxi-Out Additional Time Dataset</title>
+      <link>/reference/dataset/taxi-out-additional-time/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/dataset/taxi-out-additional-time/</guid>
+      <description>Data description The additional taxi-out time is a proxy for the average departure runway queuing time on the outbound traffic flow during congestion periods at airports.
+It is the difference between the actual taxi-out time of a flight and a statistically determined unimpeded taxi-out time based on taxi-out times in periods of low traffic demand.
+When monitoring taxi-out performance at airports, it is important to note that the goal is not to reduce taxi time to the unimpeded reference time - as this could negatively impact on runway throughput - but rather to reduce additional taxi-out time and associated fuel burn to the necessary minimum.</description>
+    </item>
+    
+    <item>
+      <title>Traffic Complexity Score Dataset</title>
+      <link>/reference/dataset/traffic-complexity-score/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/dataset/traffic-complexity-score/</guid>
+      <description>Data description The PRU, in close collaboration with ANSPs, has defined a set of complexity indicators that can be applied in ANSP benchmarking. The complexity indicators are computed on a systematic basis for each day of the year. The complexity indicators are based on the concept of “interactions” arising when there are two aircraft in the same “place” at the same time. Hence, the Complexity Score is a measure of the potential number of interactions between aircraft defined as the total duration of all interactions (in minutes) per flight-hour controlled in a given volume of airspace.</description>
+    </item>
+    
+  </channel>
+</rss>

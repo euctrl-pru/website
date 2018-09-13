@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview - January-June 2018 on PRU Portal</title>
+    <link>/prcq/</link>
+    <description>Recent content in Overview - January-June 2018 on PRU Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/prcq/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ANS Cost-efficiency</title>
+      <link>/prcq/economics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/prcq/economics/</guid>
+      <description>// load the visualisation API google.load(&#39;visualization&#39;, &#39;1&#39;, { packages: [&#39;corechart&#39;, &#39;controls&#39;] });  function drawVisualization() { // ERT A var crt_eco1 = new google.visualization.ChartWrapper({ chartType: &#39;ComboChart&#39;, containerId: &#39;crt_eco1&#39;, dataSourceUrl: &#39;https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&amp;sheet=eco&amp;range=I1:M7&#39;, options:{ chartArea: {left: 80, top: 10, width:&#39;70%&#39;,height:&#39;80%&#39;}, titleTextStyle : {color: &#39;grey&#39;, fontSize: 12}, legend: {position:&#39;right&#39;,textStyle:{color: &#39;grey&#39;, fontSize: 11}}, isStacked : &#39;true&#39;, series: { 0: {type:&#39;bars&#39;,color:&#39;#9999FF&#39;, targetAxisIndex: 0}, 1: {type:&#39;bars&#39;,color:&#39;#FF0000&#39;, targetAxisIndex: 0}, 2: {type:&#39;bars&#39;,color:&#39;#EEE800&#39;, targetAxisIndex: 0}, 3: {type:&#39;lines&#39;, color:&#39;#B89470&#39;, lineWidth: 0, pointSize: 10, targetAxisIndex: 1} }, hAxis: {slantedTextAngle: 90, textStyle: {fontSize: 12}}, vAxes:{ 0:{ title:&#39;Euro(2015) per composite flight hour&#39;}, 1:{ title:&#39;year on year (%)&#39;, titleTextStyle : {color: &#39;#B89470&#39;, fontSize: 11}, textStyle:{color:&#39;#B89470&#39;}} } }, view: {&#39;columns&#39;: [0,1,2,3,4]} }); crt_eco1.</description>
+    </item>
+    
+    <item>
+      <title>ANS Performance at Airports</title>
+      <link>/prcq/ops-airport/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/prcq/ops-airport/</guid>
+      <description>// load the visualisation API google.load(&#39;visualization&#39;, &#39;1&#39;, { packages: [&#39;corechart&#39;, &#39;controls&#39;] });  function drawVisualization() { // ARRIVAL ATFM DELAY (overview) var crt_apt4 = new google.visualization.ChartWrapper({ chartType: &#39;ComboChart&#39;, containerId: &#39;crt_apt4&#39;, dataSourceUrl: &#39;https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&amp;sheet=apt&amp;range=A1:E5&#39;, options:{ height: 300, chartArea: {left: 40, top: 10, }, legend: {position:&#39;none&#39;}, isStacked : &#39;true&#39;, series: { 0: {type:&#39;bars&#39;,color:&#39;#D99694&#39;, targetAxisIndex: 0}, 1: {type:&#39;bars&#39;,color:&#39;#FAC090&#39;, targetAxisIndex: 0}, 2: {type:&#39;bars&#39;,color:&#39;#92D050&#39;, targetAxisIndex: 0}, 3: {type:&#39;bars&#39;,color:&#39;#B9CDE5&#39;, targetAxisIndex: 0}, 4: {type:&#39;bars&#39;,color:&#39;92D050&#39;, targetAxisIndex: 0} }, hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: &#39;grey&#39;, fontSize: 11}}, vAxis: {title: &#39;minutes per arrival&#39;, format: &#39;0.</description>
+    </item>
+    
+    <item>
+      <title>ANS Safety Performance</title>
+      <link>/prcq/safety/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/prcq/safety/</guid>
+      <description>// load the visualisation API google.load(&#39;visualization&#39;, &#39;1&#39;, { packages: [&#39;corechart&#39;, &#39;controls&#39;] });  function drawVisualization() { // SAFETY - total accidents - YY - CHART var crt_saf_acc_YY = new google.visualization.ChartWrapper({ chartType: &#39;ComboChart&#39;, containerId: &#39;crt_saf_acc_YY&#39;, dataSourceUrl: &#39;https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/gviz/tq?sheet=saf&amp;range=A5:D16&amp;headers=1&amp;tq=&#39;, options: { title: &#39;Accidents&#39;, titlePosition: &#39;out&#39;, titleTextStyle: { color: &#39;grey&#39;, fontSize: 16,}, chartArea: { left: 40, top: 60, width: &#39;80%&#39;, height: &#39;55%&#39; }, legend: { position: &#39;top&#39;, maxLines: 2, textStyle: {color: &#39;grey&#39;, fontSize: 10 } }, isStacked : &#39;true&#39;, series: { 0: { type: &#39;bars&#39;, color: &#39;4F81BD&#39;, targetAxisIndex: 0 }, 1: { type: &#39;bars&#39;, color: &#39;DCE6F2&#39;, targetAxisIndex: 0 }, 2: { type: &#39;lines&#39;, color: &#39;C0504D&#39;, lineWidth: 0, pointSize: 12, targetAxisIndex: 1 } }, vAxes:{ 0: { title:&#39;count&#39;, titleTextStyle: { color: &#39;grey&#39;, fontSize: 11 }, textStyle: { color: &#39;grey&#39; } }, 1: { title: &#39;% of fatal accidents&#39;, titleTextStyle: { color: &#39;C0504D&#39;, fontSize: 11 }, textStyle: { color:&#39;C0504D&#39; } } }, hAxis: { titleTextStyle: { color: &#39;grey&#39;, fontSize: 11 }, type: &#39;string&#39;, slantedTextAngle: 40, textStyle: { fontSize: 11 } } }, view: {columns: [0, 2, 1, 3] } }); crt_saf_acc_YY.</description>
+    </item>
+    
+    <item>
+      <title>Air Traffic Evolution</title>
+      <link>/prcq/traffic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/prcq/traffic/</guid>
+      <description>// load the visualisation API google.load(&#39;visualization&#39;, &#39;1&#39;, { packages: [&#39;corechart&#39;, &#39;controls&#39;] });  function drawVisualization() { // TRAFFIC - ERT FLTS - YY - CHART var crt_ertfltsYY = new google.visualization.ChartWrapper({ chartType: &#39;ComboChart&#39;, containerId: &#39;crt_ertfltsYY&#39;, dataSourceUrl: &#39;https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&amp;sheet=flts&amp;range=A1:E12&#39;, options: { //width: 500, height: 200, //chartArea: {left: 80, top: 30, width:&#39;60%&#39;,height:&#39;65%&#39;}, legend: &#39;none&#39;, series: { 0: {type: &#39;bars&#39;, color:&#39;#4F81BD&#39;, targetAxisIndex: 0}, 1: {type: &#39;lines&#39;, color:&#39;#C0504D&#39;, lineWidth: 0, pointSize: 7, targetAxisIndex: 1} }, vAxes:{ 0:{format:&#39;short&#39;, title:&#39;Avg.</description>
+    </item>
+    
+    <item>
+      <title>Operational En-route ANS Performance</title>
+      <link>/prcq/ops-en-route/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/prcq/ops-en-route/</guid>
+      <description>// load the visualisation API google.load(&#39;visualization&#39;, &#39;1&#39;, { packages: [&#39;corechart&#39;, &#39;controls&#39;] });  function drawVisualization() { // ERT - CHART - En-route ATFM delay per flight var crt_ertdlyYY = new google.visualization.ChartWrapper({ chartType: &#39;ComboChart&#39;, containerId: &#39;crt_ertdlyYY&#39;, dataSourceUrl: &#39;https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&amp;sheet=ert&amp;range=A1:B12&#39;, options: { //width: 500, height: 200, //chartArea: {left: 80, top: 30, width:&#39;60%&#39;,height:&#39;65%&#39;}, legend: &#39;none&#39;, series: { 0: {type: &#39;lines&#39;, color:&#39;4F81BD&#39;, lineWidth: 3, pointSize: 12, targetAxisIndex: 0} }, vAxes:{ 0:{ title:&#39;minutes per flight&#39;, titleTextStyle : {color: &#39;#1F1F2E&#39;, fontSize: 11}, textStyle:{color: &#39;#1F1F2E&#39;}} } }, view: {columns: [0,1], rows: [1,2,3,4,5,6,7,8,9,10]} }); crt_ertdlyYY.</description>
+    </item>
+    
+  </channel>
+</rss>

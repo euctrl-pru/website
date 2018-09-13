@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="generator" content="Hugo 0.37" />
+
+
+<title>Datasets in CSV format - PRU Portal</title>
+<meta property="og:title" content="Datasets in CSV format - PRU Portal">
+
+
+
+  
+
+
+
+
+
+   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+
+
+<link rel="manifest" href="manifest.json">
+
+
+
+<link rel="stylesheet" href="../css/fonts.css" media="all">
+<link rel="stylesheet" href="../css/main.css" media="all">
+
+ 
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all">
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
+
+
+
+
+
+  </head>
+  <body>
+  	
+    <button class="dn fixed white-70 bg-red outline-0 bottom-1 right-1 z-999 bn br1 pa1 glow pointer:hover" onclick="topFunction()" id="to-top-btn" title="Go to top">top <i class="fa fa-angle-double-up"></i></button>
+    <script>
+      
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("to-top-btn").style.display = "block";
+          } else {
+              document.getElementById("to-top-btn").style.display = "none";
+          }
+      }
+      
+      function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+      }
+      </script>
+
+    <main class="ph2 pb1">
+      <header class="tc bb b--black-10 bg-light-gray">
+        <nav class="db dt-l w-100 border-box mid-gray pa2 ph5-l">
+  <a class="db dtc-l v-mid mid-gray link dim w-100 w-20-l tc tl-l mb2 mb0-l" href="../">
+    <img src="../images/pru-logo.png"
+    width="54"
+    height="32"
+    alt="PRU"
+    class="dib br-100">
+  </a>
+
+  <div class="db dtc-l v-mid w-100 w-80-l tc tr-l">
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../prcq/" title="PRC Quarterly">PRC Quarterly</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../post/" title="News">News</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../dashboard/perf-area/" title="Dashboard">Dashboard</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../data/" title="Data">Data</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../study/" title="Studies">Studies</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../reference/" title="References">References</a>
+    
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="../about/us/" title="About">About</a>
+    
+  </div>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+
+    <h1 class="article-title">Datasets in CSV format</h1>
+
+    
+
+    <div class="article-content">
+      
+
+<p>PRU provides some relevant datasets in CSV format (compressed using <a href="https://en.wikipedia.org/wiki/Bzip2" title="Wikipedia: bzip2">bzip2</a>):</p>
+
+<p>The filename convention we adopted is as follows:</p>
+
+<blockquote>
+<p><code>&lt;dataset group&gt;_&lt;YYYY&gt;.csv.bz2</code></p>
+</blockquote>
+
+<p>where</p>
+
+<blockquote>
+<p><code>&lt;dataset group&gt; = &lt;dataset&gt;_&lt;group&gt;</code></p>
+</blockquote>
+
+<p>The datasets made available are:</p>
+
+<ul>
+<li>Daily en-route delays: <code>ert_dly</code>
+
+<ul>
+<li><a href="../reference/acronym/ansp/" title="ANSP">ANSP</a> group (see <a href="../reference/ANSP/" title="ANSP's">list of ANSP&rsquo;s considered by PRU</a>): <code>ansp</code></li>
+<li>Country FIR group: <code>fir</code></li>
+</ul></li>
+</ul>
+
+<p>For example <code>ert_dly_ansp_2012.csv.bz2</code> refers to en-rote delays dataset with ANSP breakdown for year 2012.</p>
+
+<h2 id="dataset-files">Dataset files</h2>
+
+<table>
+    <th>Size in bytes</th>
+    <th>Name</th>
+    <tr>
+        <td>104254</td>
+        <td><a href="../csv/ert_dly_ansp_2008.csv.bz2" target="_blank"> ert_dly_ansp_2008.csv.bz2</a></td>
+    </tr>
+    <tr>
+        <td>93369</td>
+        <td><a href="../csv/ert_dly_ansp_2009.csv.bz2" target="_blank"> ert_dly_ansp_2009.csv.bz2</a></td>
+    </tr>
+    <tr>
+        <td>100251</td>
+        <td><a href="../csv/ert_dly_ansp_2010.csv.bz2" target="_blank"> ert_dly_ansp_2010.csv.bz2</a></td>
+    </tr>
+    <tr>
+        <td>94000</td>
+        <td><a href="../csv/ert_dly_ansp_2011.csv.bz2" target="_blank"> ert_dly_ansp_2011.csv.bz2</a></td>
+    </tr>
+    <tr>
+        <td>96965</td>
+        <td><a href="../csv/ert_dly_ansp_2012.csv.bz2" target="_blank"> ert_dly_ansp_2012.csv.bz2</a></td>
+    </tr>
+    <tr>
+        <td>95408</td>
+        <td><a href="../csv/ert_dly_ansp_2013.csv.bz2" target="_blank"> ert_dly_ansp_2013.csv.bz2</a></td>
+    </tr>
+    <tr>
+        <td>96072</td>
+        <td><a href="../csv/ert_dly_ansp_2014.csv.bz2" target="_blank"> ert_dly_ansp_2014.csv.bz2</a></td>
+    </tr>
+    <tr>
+        <td>96292</td>
+        <td><a href="../csv/ert_dly_ansp_2015.csv.bz2" target="_blank"> ert_dly_ansp_2015.csv.bz2</a></td>
+    </tr>
+    <tr>
+        <td>99255</td>
+        <td><a href="../csv/ert_dly_ansp_2016.csv.bz2" target="_blank"> ert_dly_ansp_2016.csv.bz2</a></td>
+    </tr>
+    <tr>
+        <td>102618</td>
+        <td><a href="../csv/ert_dly_ansp_2017.csv.bz2" target="_blank"> ert_dly_ansp_2017.csv.bz2</a></td>
+    </tr>
+    <tr>
+        <td>53190</td>
+        <td><a href="../csv/ert_dly_ansp_2018.csv.bz2" target="_blank"> ert_dly_ansp_2018.csv.bz2</a></td>
+    </tr>
+    <tr>
+        <td>92201</td>
+        <td><a href="../csv/ert_dly_fir_2013.csv.bz2" target="_blank"> ert_dly_fir_2013.csv.bz2</a></td>
+    </tr>
+    <tr>
+        <td>91828</td>
+        <td><a href="../csv/ert_dly_fir_2014.csv.bz2" target="_blank"> ert_dly_fir_2014.csv.bz2</a></td>
+    </tr>
+    <tr>
+        <td>130716</td>
+        <td><a href="../csv/ert_dly_fir_2015.csv.bz2" target="_blank"> ert_dly_fir_2015.csv.bz2</a></td>
+    </tr>
+    <tr>
+        <td>135887</td>
+        <td><a href="../csv/ert_dly_fir_2016.csv.bz2" target="_blank"> ert_dly_fir_2016.csv.bz2</a></td>
+    </tr>
+    <tr>
+        <td>140537</td>
+        <td><a href="../csv/ert_dly_fir_2017.csv.bz2" target="_blank"> ert_dly_fir_2017.csv.bz2</a></td>
+    </tr>
+    <tr>
+        <td>73663</td>
+        <td><a href="../csv/ert_dly_fir_2018.csv.bz2" target="_blank"> ert_dly_fir_2018.csv.bz2</a></td>
+    </tr>
+</table>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>&copy; 2018&nbsp;EUROCONTROL &nbsp; &mdash; &nbsp;
+          <a href="../about/disclaimer/">Disclaimer</a>
+		      </li>
+          <li>Subscribe via
+            
+            <span><a href="mailto:PRU-Support@eurocontrol.int?subject=Subscribe:%20PRU%20information%20point&amp;body=Please%20add%20me%20to%20the%20mailing%20list%20to%20get%20informed%20about%20information%20updates.">email <i class="fa fa-envelope"></i></a>
+            or
+            <a href="../index.xml" type="application/rss+xml" target="_blank">RSS <i class="fa fa-rss"></i></a></span>
+          </li>
+          <li><a href="../about/help/"><i class="fa fa-question-circle"></i></a></li>
+          <li><a href="../about/howbuilt/"><i class="fa fa-wrench"></i></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

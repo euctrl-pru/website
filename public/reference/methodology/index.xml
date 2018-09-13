@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Methodology on PRU Portal</title>
+    <link>/reference/methodology/</link>
+    <description>Recent content in Methodology on PRU Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/reference/methodology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Airport Capacity Utilisation Methodology</title>
+      <link>/reference/methodology/airport-capacity-utilisation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/methodology/airport-capacity-utilisation/</guid>
+      <description>Overview Various methods exist to address the determination of the airport capacity. However, there are only a limited number of empirical approaches addressing the capacity utilisation at airports.
+A convenient way to summarise the range of operational capacities (i.e. runway system throughputs) are Capacity Coverage Charts (CCC) (De Neufville and Odoni 2003). While an airport has a theoretical maximum capacity, the practical capacity is considered to be established in order to limit the average delay to a reasonable level.</description>
+    </item>
+    
+    <item>
+      <title>En-route Vertical Flight Efficiency</title>
+      <link>/reference/methodology/en-route-vertical-flight-efficiency-pi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/methodology/en-route-vertical-flight-efficiency-pi/</guid>
+      <description>This document provides a technical description on the methodology used in the analysis of the vertical profile of the aircraft’s trajectory during the en-route phase of flight. The objective of the methodology is to measure and observe vertical flight efficiency without highlighting specific reasons for the observed behaviour. More detailed case studies are needed to find out reasons for particular observations.
+Acronyms and terminology  Table 1:  Acronyms and terminology    Term Definition    FTFM Trajectory information based on the last filed flight plan  GCD Great Circle Distance  PRISME Pan-European Repository of Information Supporting the Management of EATM  RAD Route Availability Document  VFI Vertical Flight Inefficiency     Methodology Approach and assumptions The general approach of the analysis is to compare the maximum altitudes in the flight plans of flights between a specific airport pair with the maximum altitudes of flights between similar airport pairs, hereafter called reference flights.</description>
+    </item>
+    
+    <item>
+      <title>Modification of the ATFM delay calculation (NM release 20.0)</title>
+      <link>/reference/methodology/atfm-delay-calculation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/methodology/atfm-delay-calculation/</guid>
+      <description>img + em { text-align: center; } img + em:before { content: &#39; &#39;; display: block; }  Background Air Navigation Service Providers (ANSPs) noticed that the use of the Ready Message (REA) - whilst attempting to improve punctuality for aircraft – could result in artificial changes to the computed ATFM delay for individual flights and for the ANSP that has requested the regulation.
+The ANSPs brought this to the attention of the Network Management Board (NMB).</description>
+    </item>
+    
+    <item>
+      <title>Modification of the ATFM delay calculation (NM release 20.0)</title>
+      <link>/reference/methodology/atfm-delay-calculation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/methodology/atfm-delay-calculation/</guid>
+      <description>img + em { text-align: center; } img + em:before { content: &#39; &#39;; display: block; }  Background Air Navigation Service Providers (ANSPs) noticed that the use of the Ready Message (REA) - whilst attempting to improve punctuality for aircraft – could result in artificial changes to the computed ATFM delay for individual flights and for the ANSP that has requested the regulation.
+The ANSPs brought this to the attention of the Network Management Board (NMB).</description>
+    </item>
+    
+    <item>
+      <title>Performance Indicator -- Additional ASMA Time</title>
+      <link>/reference/methodology/additional-asma-time-pi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/methodology/additional-asma-time-pi/</guid>
+      <description>Introduction General This document describes the conceptual, informational, and implementation independent model of the additional ASMA time performance indicator.
+The indicator is used as part of the performance monitoring and reporting under:
+ SES: IR691/2010 (European Commission 2010) and IR390/2013 (European Commission 2013) and EUROCONTROL: performance review reporting (Performance Review Unit 2009).  This web page is generated from (Cappelleras 2015).
+ Purpose of the document The purpose of this document is twofold:</description>
+    </item>
+    
+    <item>
+      <title>Performance Indicator -- Horizontal Flight Efficiency</title>
+      <link>/reference/methodology/horizontal-flight-efficiency-pi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/methodology/horizontal-flight-efficiency-pi/</guid>
+      <description>Introduction General This document describes the conceptual, informational, and implementation independent model of the Horizontal Flight Efficiency Indicators – KEP and KEA.
+The indicator is used as part of the performance monitoring and reporting under:
+ SES: IR691/2010 (European Commission 2010) and IR390/2013 (European Commission 2013); and EUROCONTROL: performance review reporting.   Purpose of the document The purpose of this document is to provide a description of the horizontal flight efficiency indicator and its two versions used in the Performance Scheme Regulation – KEP and KEA.</description>
+    </item>
+    
+    <item>
+      <title>Unimpeded ASMA Time - Technical Note</title>
+      <link>/reference/methodology/unimpeded-asma-time/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/methodology/unimpeded-asma-time/</guid>
+      <description>Introduction The actual time spent by a flight between its last entry in the ASMA (Entry-time at 40 NM upstream - \(A_\text{LET}\)) and the actual landing time (\(A_\text{ALDT}\)) is denoted ASMA transit time (\(A_\text{TT}\)).
+\[ A_\text{TT} = A_\text{LET} - A_\text{ALDT} \]
+The unimpeded ASMA time is the ASMA transit time in non congested conditions at arrival airports. The unimpeded ASMA time is used in the calculation of the Arrival sequencing and metering area (ASMA) additional time.</description>
+    </item>
+    
+    <item>
+      <title>Unimpeded Taxi-out Time - Technical Note</title>
+      <link>/reference/methodology/unimpeded-taxi-out-time/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/methodology/unimpeded-taxi-out-time/</guid>
+      <description>Introduction The actual taxi-out time of a flight is the time elapsed between the off-block time of this flight and its take-off time.
+The unimpeded taxi-out time is the taxi-out time in non congested conditions at airports. The unimpeded taxi-out time is used in the calculation of the additional taxi-out time.
+This technical note describes the methodology used in order to calculate the unimpeded taxi-out time.
+ General approach The computation of the unimpeded taxi-out time is based on the statistical analysis of flights in non congested conditions.</description>
+    </item>
+    
+    <item>
+      <title>Vertical Flight Efficiency during Climb and Descent</title>
+      <link>/reference/methodology/cd-vertical-flight-efficiency-pi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/methodology/cd-vertical-flight-efficiency-pi/</guid>
+      <description>This document provides a technical description on the methodology used in the analysis of the vertical profile of the aircraft’s trajectory during climb and descent phases of flights. The objective of the methodology is to measure and observe vertical flight efficiency without highlighting specific reasons for the observed behaviour. More detailed case studies are needed to find out reasons for particular observations.
+Acronyms and terminology  Table 1:  Acronyms and terminology    Term Definition    CPF Correlated Position reports for a Flight  PRISME Pan-European Repository of Information Supporting the Management of EATM     Methodology The main assumption for the analysis of vertical flight efficiency during climb and descent is that, all other factors being equal, level flight is considered as inefficient.</description>
+    </item>
+    
+  </channel>
+</rss>
