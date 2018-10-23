@@ -1,0 +1,275 @@
+---
+title: "Air Traffic Evolution"
+icon: "/images/prcq-traffic.png"
+---
+
+<html>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
+google.load('visualization', '1', { packages: ['corechart', 'controls'] });
+</script>
+<script type="text/javascript">
+
+function drawVisualization()
+ {
+
+
+// TRAFFIC - ERT FLTS - YY - CHART
+ var crt_ertfltsYY = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_ertfltsYY',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=flts&range=A1:E12',
+    options: {
+        //width: 500, height: 200,
+        //chartArea: {left: 80, top: 30, width:'60%',height:'65%'},
+        legend: 'none',
+        series: {
+              0: {type: 'bars', color:'#4F81BD', targetAxisIndex: 0},
+              1: {type: 'lines', color:'#C0504D', lineWidth: 0, pointSize: 7, targetAxisIndex: 1}
+            },
+        vAxes:{
+              0:{format:'short', title:'Avg. daily flights (000)',
+                titleTextStyle : {color: '#4F81BD', fontSize: 12}, textStyle:{color: '#4F81BD'}},
+              1:{ title:'year on year (%)',
+                titleTextStyle : {color: '#C0504D', fontSize: 12}, textStyle:{color:'#C0504D'}}
+            }
+        },
+    view: {columns: [0,1,2], rows: [3,4,5,6,7,8,9,10]}
+  }); crt_ertfltsYY.draw();
+
+
+// TRAFFIC - ERT SU - YY - CHART
+ var crt_ertsuYY = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_ertsuYY',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=flts&range=A1:E12',
+    options: {
+        //width: 500, height: 200,
+        //chartArea: {left: 80, top: 30, width:'60%',height:'65%'},
+        legend: 'none',
+        series: {
+              0: {type: 'bars', color:'#4F81BD', targetAxisIndex: 0},
+              1: {type: 'lines', color:'#C0504D', lineWidth: 0, pointSize: 7, targetAxisIndex: 1}
+            },
+        vAxes:{
+              0:{format:'short',  title:'Avg. daily en-route SU',
+                titleTextStyle : {color: '#4F81BD', fontSize: 12}, textStyle:{color: '#4F81BD'}},
+              1:{ title:'year on year (%)',
+                titleTextStyle : {color: '#C0504D', fontSize: 12}, textStyle:{color:'#C0504D'}}
+            }
+        },
+    view: {columns: [0,3,4], rows: [3,4,5,6,7,8,9]}
+  }); crt_ertsuYY.draw();
+
+// Flight type - YY - CHART -
+  var crt_flttypeYY = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_flttypeYY',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=flts&range=G1:J5&hl=en_GB',
+    options:{
+          //width: 450, height: 150,
+          chartArea: {left: 60, top: 10, width:'80%',height:'60%'},
+          legend: 'none',
+            seriesType: 'bars',
+          colors: ['#4F81BD'],
+          vAxis:{title:'Change avg. daily flights',
+              titleTextStyle : {color: '#5D7CBA', fontSize: 12},
+              textStyle:{color: '#5D7CBA'}}
+        },
+    view: {'columns': [0,3], rows: [0,1,2,3]}
+  }); crt_flttypeYY.draw();
+
+
+// Traffic segment - YY - CHART -
+  var crt_segYY = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_segYY',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=flts&range=L1:O7&hl=en_GB',
+    options:{
+         // width: 450, height: 150,
+          chartArea: {left: 60, top: 10, width:'80%',height:'60%'},
+          legend: 'none',
+            seriesType: 'bars',
+          colors: ['#4F81BD'],
+          vAxis:{title:'Change avg. daily flights',
+              titleTextStyle : {color: '#5D7CBA', fontSize: 12},
+              textStyle:{color: '#5D7CBA'}}
+        },
+    view: {'columns': [0,3], rows: [1,2,3,4,5]}
+  }); crt_segYY.draw();
+
+
+// TRAFFIC - ANSP - YY - CHART
+ var crt_anspfltsYY = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_anspfltsYY',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=flts&range=Q1:T42',
+    options: {
+        height: 350,
+        chartArea: {left: 70, top: 10, width:'85%',height:'45%'},
+        legend: 'none',
+        series: {
+              0: {type: 'bars', color:'#4F81BD', targetAxisIndex: 0},
+              1: {type: 'lines', color:'#C0504D', lineWidth: 0, pointSize: 7, targetAxisIndex: 1}
+            },
+        vAxes:{
+              0:{ title:'change avg. daily flights',
+                titleTextStyle : {color: '#4F81BD', fontSize: 11}, textStyle:{color: '#4F81BD'}},
+              1:{ title:'year on year (%)',
+                titleTextStyle : {color: '#C0504D', fontSize: 11}, textStyle:{color:'#C0504D'}}
+            },
+        hAxis: {
+          title: 'ANSPs sorted by change in absolute flights (Jan-Jun 2018)',
+          titleTextStyle: {color: 'grey', fontSize: 10},
+          textStyle: {color: 'grey', fontSize: 11},
+          slantedText: true,
+          slantedTextAngle: 90
+        }
+    },
+    view: {columns: [0,2,3] }
+  }); crt_anspfltsYY.draw();
+
+
+// TRAFFIC - T30 airports - YY - CHART
+ var crt_apt3 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt3',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=flts&range=V1:Y31',
+    options: {
+        height: 350,
+        chartArea: {left: 70, top: 10, width:'85%',height:'45%'},
+        legend: 'none',
+        series: {
+              0: {type: 'bars', color:'#4F81BD', targetAxisIndex: 0},
+              1: {type: 'lines', color:'#C0504D', lineWidth: 0, pointSize: 7, targetAxisIndex: 1}
+            },
+        vAxes:{
+              0:{ title:'Avg. daily movements',
+                titleTextStyle : {color: '#4F81BD', fontSize: 11}, textStyle:{color: '#4F81BD'}},
+              1:{ title:'year on year (%)',
+                titleTextStyle : {color: '#C0504D', fontSize: 11}, textStyle:{color:'#C0504D'}}
+            },
+            hAxis: {
+              slantedTextAngle: 90,
+              title: 'Airports sorted by movements (Jan-Jun 2018)',
+              titleTextStyle: {color: 'grey', fontSize: 10},
+              textStyle: {color: 'grey', fontSize: 11}}
+        },
+    view: {columns: [0,2,3] }
+  }); crt_apt3.draw();
+
+}
+google.setOnLoadCallback(drawVisualization)
+</script>
+
+
+<table class = "table">
+   <thead>
+      <tr>
+         <th>Period</th>
+         <th>Area</th>
+         <th>Update rate</th>
+         <th>Last update</th>
+         <th>Source(s)</th>
+         <th>Data</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class = "active">
+         <td>Jan-Jun</td>
+         <td><a href="/reference/definition/esra-2008-area/">ESRA08 area</a></td>
+         <td>Quarterly</td>
+         <td>13-Jul-2018</td>
+         <td>
+          <a href="/reference/acronym/nm-cfmu/">NM</a>,
+          <a href="/reference/acronym/crco/">CRCO</a>,
+          <a href="/reference/acronym/statfor/">STATFOR</a></td>
+          <td><a href='/data/performancearea/'>{{% dwnld_i %}}</a></td>
+      </tr>
+   </tbody>
+</table>
+
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+    <h3>Average daily controlled flights</h3>
+    <span class="text-muted"><a href="/reference/definition/esra-2008-area/">ESRA08 area</a></span>
+    <div id="crt_ertfltsYY"></div>
+</div>
+<div class="col-xs-6 col-sm-6 placeholder">
+    <h3>Average daily en-route <a href=/reference/acronym/su/>Service Units (SU)</a></h3>
+    <span class="text-muted">CRCO area</span>
+    <div id="crt_ertsuYY"></div>
+</div>
+</div><br>
+
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+<div class="panel panel-info"><div class="panel-heading">
+In Q1-2 of 2018, the number of flights in the <a href="/reference/definition/esra-2008-area/">ESRA 2008 area</a>
+increased by 3.2% (4.1% in Q1-2 2017) which corresponds to an additional 862 flights per day on average.
+
+</div></div></div>
+<div class="col-xs-6 col-sm-6 placeholder">
+<div class="panel panel-info"><div class="panel-heading">
+As in previous years, average daily en-route service units grew at a higher rate (+6.0%)
+than flights in Q1-2 2018.
+</div></div></div>
+</div>
+
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+    <h3>Change by flight type</h3>
+    <span class="text-muted">2018 (Jan-Jun) vs. 2017 (Jan-Jun)</span>
+    <div id="crt_flttypeYY"></div>
+</div>
+<div class="col-xs-6 col-sm-6 placeholder">
+    <h3>Change by traffic segment</h3>
+    <span class="text-muted">2018 (Jan-Jun) vs. 2017 (Jan-Jun)</span>
+    <div id="crt_segYY"></div>
+</div>
+</div>
+
+<div class="panel panel-info"><div class="panel-heading">
+       Pan-European traffic and flights to and from Europe continued to grow in the
+       first six months of 2018. The main drivers of the observed traffic growth in
+       2018 (Jan-Jun) were charter flights and the continued growth in the low cost
+       traffic segment.
+</div></div>
+
+
+<div class="row placeholders">
+<div class="col-sm-12 placeholder">
+    <h3>Traffic variation by <a href=/reference/acronym/ansp/>ANSP</a></h3>
+    <span class="text-muted">2018 (Jan-Jun) vs. 2017 (Jan-Jun)</span>
+    <div id="crt_anspfltsYY"></div>
+</div>
+</div><br><br>
+
+    <div class="panel panel-info">
+      <div class="panel-heading">
+       All ANSPs but Avinor (Norway) showed an increase in traffic compared to 2017 (Jan-Jun).
+       In absolute terms, DHMI (Turkey), ENAIRE (Spain), Bulatsa (Bulgaria), and DFS (Germany)
+       showed the highest growth in 2018 compared to the same period in 2017.
+      </div>
+    </div>
+
+<div class="row placeholders">
+<div class="col-sm-12 ">
+    <h3>Traffic variation at the top 30 airports in terms of traffic</h3>
+    <span class="text-muted">2018 (Jan-Jun) vs. 2017 (Jan-Jun)</span>
+    <div id="crt_apt3"></div>
+</div>
+  </div>
+
+    <div class="panel panel-info">
+          <div class="panel-heading">
+    Amsterdam remained the airport with the highest number of commercial movements in the
+    EUROCONTROL area in 2018 (Jan-Jun).<br>
+
+    Ten of the top 30 airports showed a decrease in traffic in the first two quarters of 2018
+    with Dusseldorf (DUS) and Berlin/Tegel (TXL) reporting the most notable traffic reduction
+    compared to the same period in 2017.
+    <br>
+    The highest growth compared to Jan-Jun 2017 was observed at Warsaw (WAW), Lisbon (LIS),
+    Athens (ATH), Helsinki (HEL) and Frankfurt (FRA).
+          </div>
+    </div>

@@ -1,0 +1,29 @@
+---
+title: FRA - Free Route Airspace
+categories:
+  - metadata
+  - acronym
+type: acronym
+slug: fra
+---
+
+FRA refers to a  specified airspace within which users may freely plan
+a route between a defined entry point and a defined exit point,
+with the possibility to route via intermediate (published or unpublished)
+way points, without reference to the ATS route network,
+subject to airspace availability.
+Within this airspace, flights remain subject to air traffic control.
+
+
+## Free route airspace implementation status December 2016
+
+```{r fra, fig.lab="FRA implementation status 2016", echo=FALSE, out.height="700px"}
+library(png)
+knitr::include_graphics("/images/fra_dec_2016.png")
+```
+
+
+## See Also
+
+* `r blogdown::shortcode("a_blank_ectrl", "FRA", "http://www.eurocontrol.int/articles/free-route-airspace")`
+* `r blogdown::shortcode("a_blank_lexicon", "FRA", "https://ext.eurocontrol.int/lexicon/index.php/Free_Route_Airspace")`

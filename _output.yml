@@ -1,0 +1,3 @@
+blogdown::html_page:
+  fig_width: 6
+  echo: FALSE

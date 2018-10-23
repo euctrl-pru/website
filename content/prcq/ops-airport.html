@@ -1,0 +1,283 @@
+---
+title: "ANS Performance at Airports"
+icon: "/images/prcq-operations-airport.png"
+---
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
+google.load('visualization', '1', { packages: ['corechart', 'controls'] });
+</script>
+<script type="text/javascript">
+
+function drawVisualization()
+ {
+
+// ARRIVAL ATFM DELAY (overview)
+  var crt_apt4 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt4',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=apt&range=A1:E5',
+    options:{
+          height: 300,
+          chartArea: {left: 40, top: 10, },
+          legend: {position:'none'},
+          isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#D99694', targetAxisIndex: 0},
+                1: {type:'bars',color:'#FAC090', targetAxisIndex: 0},
+                2: {type:'bars',color:'#92D050', targetAxisIndex: 0},
+                3: {type:'bars',color:'#B9CDE5', targetAxisIndex: 0},
+                4: {type:'bars',color:'92D050', targetAxisIndex: 0}
+              },
+          hAxis: {slantedText: true,
+            slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}},
+          vAxis: {title: 'minutes per arrival', format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
+        },
+    view: {'columns': [0,1,2,3,4]}
+  }); crt_apt4.draw();
+
+// ARRIVAL ATFM DELAY (T30)
+  var crt_apt5 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt5',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=apt&range=A10:F40',
+    options:{
+        height: 300,
+        chartArea: {left: 80, top: 10, width:'100%', height:'35%'},
+          legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 12} ,maxLines: 2},
+          isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#D99694', targetAxisIndex: 0},
+                1: {type:'bars',color:'#FAC090', targetAxisIndex: 0},
+                2: {type:'bars',color:'#92D050', targetAxisIndex: 0},
+                3: {type:'bars',color:'#B9CDE5', targetAxisIndex: 0},
+                4: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 0}
+              },
+          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 10},},
+          vAxis: {format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
+        },
+    view: {'columns': [0,1,2,3,4,5]}
+  }); crt_apt5.draw();
+
+// ASMA ADDITIONAL TIME (overview)
+  var crt_apt6 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt6',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=apt&range=H1:I5',
+    options:{
+          height: 300, chartArea: {left: 40, top: 10,width:'100%',height:'50%'},
+          legend: {position:'none'},
+          series: {
+                0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0}
+              },
+          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}},
+          vAxis: {title: 'minutes per arrival', format: '0.0', minValue: 0.0, titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
+        },
+    view: {'columns': [0,1]}
+  }); crt_apt6.draw();
+
+// ASMA ADDITIONAL TIME (T30)
+  var crt_apt7 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt7',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=apt&range=H10:J40',
+    options:{
+        height: 300,
+        chartArea: {left: 80, top: 10, width:'100%',height:'40%'},
+          legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 11}},
+      //    isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0},
+                1: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 0}
+              },
+          hAxis: {slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}, },
+          vAxis: {format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
+        },
+    view: {'columns': [0,2,1]}
+  }); crt_apt7.draw();
+
+
+// ATC-PRE DEPARTURE DELAYS (overview)
+//   var crt_apt8 = new google.visualization.ChartWrapper({
+//     chartType: 'ComboChart',
+//     containerId: 'crt_apt8',
+//     dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=apt&range=L1:M4',
+//     options:{
+//           height: 300, chartArea: {left: 40, top: 10, width:'100%',height:'50%'},
+ //          legend: {position:'none'},
+ //          series: {
+//                 0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0}
+   //            },
+  //         hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}},
+   //        vAxis: {title: 'minutes per departure', format: '0.0', minValue: 0.0, titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
+   //      },
+ //    view: {'columns': [0,1]}
+ //  }); crt_apt8.draw();
+
+// ATC-PRE DEPARTURE DELAYS (T30)
+  var crt_apt9 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt9',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=apt&range=L10:N40',
+    options:{
+        height: 300,
+        chartArea: {left: 80, top: 10, width:'100%',height:'40%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 11}},
+          isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0},
+                1: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 0}
+              },
+          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11},},
+          vAxis: {format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
+        },
+    view: {'columns': [0,2,1]}
+  }); crt_apt9.draw();
+
+// TAXI OUT (overview)
+  var crt_apt10 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt10',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=apt&range=P1:Q5',
+    options:{
+          height: 300, chartArea: {left: 40, top: 10, width:'100%',height:'50%'},
+          legend: {position:'none'},
+          series: {
+                0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0}
+              },
+          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}},
+          vAxis: {title: 'minutes per departure', format: '0.0', minValue: 0.0, titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
+        },
+    view: {'columns': [0,1]}
+  }); crt_apt10.draw();
+
+
+// TAXI OUT (T30)
+  var crt_apt11 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_apt11',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=apt&range=P10:R40',
+    options:{
+        height: 300,
+        chartArea: {left: 80, top: 10, width:'100%',height:'40%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 11}},
+          isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0},
+                1: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 0}
+              },
+          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11},},
+          vAxis: {format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
+        },
+    view: {'columns': [0,2,1]}
+  }); crt_apt11.draw();
+
+
+}
+google.setOnLoadCallback(drawVisualization)
+</script>
+
+
+<table class = "table">
+   <thead>
+      <tr>
+         <th>Period</th>
+         <th>Area</th>
+         <th>Update rate</th>
+         <th>Last update</th>
+         <th>Source(s)</th>
+         <th>Data</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class = "active">
+         <td>Jan-Jun (YTD)</td>
+         <td><a href='/reference/definition/eurocontrol-area/'>EUROCONTROL area</a></td>
+         <td>Quarterly</td>
+         <td>13-Jul-2018</td>
+          <td>
+          <a href='/reference/acronym/nm-cfmu/'>NM</a>,
+          <a href='/reference/acronym/pru/'>PRU</a>,
+          <a href='/reference/acronym/coda/'>CODA</a></td>
+          <td><a href='/data/performancearea/'>{{% dwnld_i %}}</a></td>
+      </tr>
+   </tbody>
+</table>
+
+<h2 class="sub-header">Arrival flow management</h2>
+<div>
+This section analyses ANS-related inefficiencies on the arrival flow at the top 30 European airports in terms of arrival <a href='/reference/definition/atfm-delay/'>ATFM delay</a> and <a href='/reference/definition/additional-asma-time/'>additional ASMA time</a>.
+</div>
+
+<h3 class="page-header">Airport arrival <a href='/reference/definition/atfm-delay/'>ATFM delays</a> (min per arrival)</h3>
+<div class="row ">
+<div class="col-sm-2">
+    <h4>Top 30 airports</h4>
+    <div id="crt_apt4"></div>
+</div>
+<div class="col-sm-10">
+    <h4>Airport arrival ATFM delay by airport - 2018 (Jan-Jun) vs. 2017 (Jan-Jun)</h4>
+    <div id="crt_apt5"></div>
+</div>
+  </div><br>
+
+    <div class="panel panel-info">
+          <div class="panel-heading">
+            Average airport ATFM delays at the top 30 European airports decreased from 1.12 to 1.06 minutes per arrival in the first two quarters of 2018. The most notable improvement in Q1-2 2018 was observed for Istanbul Sabiha Gökçen Airport (SAW) where ATFM arrival delay reduced by 5.3 minutes on average.
+          </div>
+    </div>
+
+<h3 class="page-header"><a href='/reference/definition/additional-asma-time/'>Additional ASMA time</a></h3>
+<div class="row ">
+<div class="col-sm-2">
+    <h4>Top 30 airports</h4>
+    <div id="crt_apt6"></div>
+</div>
+<div class="col-sm-10">
+    <h4><a href='/reference/definition/additional-asma-time/'>Additional ASMA time by airport</a> 2018 (Jan-May)</h4>
+    <div id="crt_apt7"></div>
+</div>
+  </div><br>
+    <div class="panel panel-info">
+          <div class="panel-heading">
+            Overall, the average additional ASMA time decreased in the first six months of 2018.<br>
+          </div>
+    </div>
+
+<h2 class="sub-header">Departure flow management</h2>
+<div>
+This section analyses ANS-related inefficiencies on the departure flow at the top 30 European airports in terms of <a href='/reference/definition/atc-pre-departure-delay/'>ATC pre-departure delays</a> at the gate and <a href='/reference/definition/additional-taxi-out-time/'>additional taxi-out time</a>.
+</div>
+<h3 class="page-header"><a href='/reference/definition/atc-pre-departure-delay/'>ATC pre-departure delays</a></h3>
+<div class="row ">
+<div class="col-sm-2">
+    <h4>Top 30 airports</h4>
+    <div>no consistent time series available</div>
+</div>
+<div class="col-sm-10">
+    <h4><a href='/reference/definition/atc-pre-departure-delay/'>ATC pre-departure delays by airport</a> 2018 (Jan-May)</h4>
+    <div id="crt_apt9"></div>
+</div>
+  </div><br>
+      <div class="panel panel-info">
+          <div class="panel-heading">
+           The data analysed in this section is based on data directly provided by airport operators. Unlike CODA  data, the Airport Operator Data Flow covers all departures from airports and is therefore also used for the analysis of additional taxi out and ASMA times. As highlighted in PRR, while the data flow has a better coverage, some data quality issues do exist.
+      </div>
+    </div>
+
+<h3 class="page-header"><a href='/reference/definition/additional-taxi-out-time/'>Additional taxi-out time</a></h3>
+<div class="row placeholders">
+<div class="col-sm-2">
+    <h4>Top 30 airports</h4>
+    <div id="crt_apt10"></div>
+</div>
+<div class="col-sm-10">
+    <h5><a href='/reference/definition/additional-taxi-out-time/'>Additional taxi-out by airport</a> 2018 (Jan-May)</h5>
+    <div id="crt_apt11"></div>
+</div>
+  </div><br>
+      <div class="panel panel-info">
+          <div class="panel-heading">
+          The average additional taxi-out time increased at the top 30 airports in the first six months of 2018 from 3.7 minutes to 3.91 minutes per departure (excluding the two Istanbul airports for which no data was available).
+    </div>

@@ -1,0 +1,206 @@
+---
+title: "ANS Safety Performance"
+icon: "/images/prcq-safety.png"
+js: [
+   "/js/crt_saf_smi_YY.js",
+   "/js/crt_saf_upa_YY.js",
+   "/js/crt_saf_ri_YY.js",
+   "/js/crt_saf_aso_YY.js"
+]
+---
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
+google.load('visualization', '1', { packages: ['corechart', 'controls'] });
+</script>
+<script type="text/javascript">
+
+function drawVisualization()
+ {
+
+// SAFETY - total accidents - YY - CHART
+      var crt_saf_acc_YY = new google.visualization.ChartWrapper({
+         chartType: 'ComboChart',
+         containerId: 'crt_saf_acc_YY',
+         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/gviz/tq?sheet=saf&range=A5:D16&headers=1&tq=',
+         options: {
+            title: 'Accidents',
+            titlePosition: 'out',
+            titleTextStyle: { color: 'grey', fontSize: 16,},
+            chartArea: { left: 40, top: 60, width: '80%', height: '55%' },
+            legend: {
+               position: 'top',
+               maxLines: 2,
+               textStyle: {color: 'grey', fontSize: 10 }
+            },
+            isStacked : 'true',
+            series: {
+               0: { type: 'bars', color: '4F81BD', targetAxisIndex: 0 },
+               1: { type: 'bars', color: 'DCE6F2', targetAxisIndex: 0 },
+               2: { type: 'lines', color: 'C0504D', lineWidth: 0, pointSize: 12, targetAxisIndex: 1 }
+            },
+            vAxes:{
+               0: {
+                  title:'count',
+                  titleTextStyle: { color: 'grey', fontSize: 11 },
+                  textStyle: { color: 'grey' }
+               },
+               1: {
+                  title: '% of fatal accidents',
+                  titleTextStyle: { color: 'C0504D', fontSize: 11 },
+                  textStyle: { color:'C0504D' }
+               }
+            },
+            hAxis: {
+               titleTextStyle: { color: 'grey', fontSize: 11 },
+               type: 'string',
+               slantedTextAngle: 40,
+               textStyle: { fontSize: 11 }
+            }
+         },
+         view: {columns: [0, 2, 1, 3] }
+      });
+      crt_saf_acc_YY.draw();
+
+// SAFETY - accidents with ATM contribution- YY - CHART [EU_YY]
+      var crt_saf_accatm_YY = new google.visualization.ChartWrapper({
+         chartType: 'ComboChart',
+         containerId: 'crt_saf_accatm_YY',
+         dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/gviz/tq?sheet=saf&range=A23:D34&headers=1&tq=',
+         options: {
+            title: 'Accidents with ATM contribution',
+            titlePosition: 'out',
+            titleTextStyle: { color: 'grey', fontSize: 16 },
+            chartArea: { left: 40, top: 60, width: '80%', height: '55%' },
+            legend: {
+               position: 'top',
+               maxLines: 2,
+               textStyle: { color: 'grey', fontSize: 10 }
+            },
+            isStacked : 'true',
+            series: {
+               0: { type: 'bars', color: '4F81BD', targetAxisIndex: 0 },
+               1: { type: 'bars', color: 'DCE6F2', targetAxisIndex: 0 },
+               2: { type: 'lines', color: 'C0504D', lineWidth: 0, pointSize: 12, targetAxisIndex: 1 }
+            },
+            vAxes: {
+               0: {
+                  title: 'count',
+                  titleTextStyle: { color: 'grey', fontSize: 11 },
+                  textStyle: { color: 'grey' }
+               },
+               1: {
+                  title: '% of accidents with ATM contribution',
+                  titleTextStyle: { color: 'C0504D', fontSize: 11 },
+                  textStyle: { color:'C0504D' }
+               }
+            },
+            hAxis: {
+               titleTextStyle: { color: 'grey', fontSize: 11 },
+               type: 'string',
+               slantedTextAngle: 40,
+               textStyle: { fontSize: 11 }
+            }
+         },
+         view: { columns: [0, 1, 2, 3] }
+      });
+      crt_saf_accatm_YY.draw(); 
+
+}
+google.setOnLoadCallback(drawVisualization)
+</script>
+
+<h2 class="page-header"><img src="" width="40" height="40" alt="Safety"> ANS Safety Performance</h2>
+
+<table class = "table">
+   <thead>
+      <tr>
+         <th>Period</th>
+         <th>Area</th>
+         <th>Update rate</th>
+         <th>Last update</th>
+         <th>Source</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class = "active">
+         <td>Jan-Dec</td>
+         <td><a href='/reference/definition/eurocontrol-area/'>EUROCONTROL Area</a></td>
+         <td>Annually</td>
+         <td>12-Jul-2018</td>
+         <td><a href="http://www.eurocontrol.int" target="_blank">EUROCONTROL</a></td>
+      </tr>
+   </tbody>
+</table>
+
+<h3 class="sub-header">Accidents (fixed wing, weight > 2250 kg MTOW)</h3>
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+  <div id="crt_saf_acc_YY"></div>
+</div>
+<div class="col-xs-6 col-sm-6 placeholder">
+  <div id="crt_saf_accatm_YY"></div>
+</div>
+</div>
+
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+<div class="panel panel-info"><div class="panel-heading">
+There were 71 accidents in the EUROCONTROL area in 2017(P) of which 8 were fatal.<br>
+</div></div></div>
+<div class="col-xs-6 col-sm-6 placeholder">
+<div class="panel panel-info"><div class="panel-heading">
+ There was 1 reported accident with direct ATM contribution in 2017(P), compared to two reported accident with direct ATM 
+ contribution in 2016.
+</div></div></div>
+</div>
+
+<h2 class="sub-header">ATM related incidents</h2>
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+<h3><a href='/reference/acronym/smi/'>Separation Minima Infringements (SMI)</a></h3>
+<div id="crt_saf_smi_YY"></div>
+
+</div>
+<div class="col-xs-6 col-sm-6 placeholder">
+<h3><a href='/reference/acronym/upa/'>Unauthorised Penetration of Airspace (UPAs)</a></h3>
+<div id="crt_saf_upa_YY"></div>
+</div>
+</div>
+
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+<div class="panel panel-info"><div class="panel-heading">
+ The preliminary 2017 data indicates that the number of reported risk bearing SMIs (Severity A+B) decreased in 2017.
+</div></div>
+</div>
+<div class="col-xs-6 col-sm-6 placeholder">
+<div class="panel panel-info"><div class="panel-heading">
+ Following the slight reduction in 2016, the number of reported risk bearing UPAs (Severity A+B) increased again in 2017(P).
+</div></div>
+</div>
+</div>
+
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+<h3><a href='/reference/acronym/ri/'>Runway Incursions (RIs)</a></h3>
+<div id="crt_saf_ri_YY"></div>
+</div>
+<div class="col-xs-6 col-sm-6 placeholder">
+<h3>ATM Specific Occurrences (ATM-S)</h3>
+
+<div id="crt_saf_aso_YY"></div>
+</div>
+</div>
+
+<div class="row placeholders">
+<div class="col-xs-6 col-sm-6 placeholder">
+<div class="panel panel-info"><div class="panel-heading">
+The reported risk bearing RIs (Severity A+B) decreased in 2017(P).
+</div></div>
+</div>
+<div class="col-xs-6 col-sm-6 placeholder">
+<div class="panel panel-info"><div class="panel-heading">
+The total number of risk bearing ATM-S increased again slightly in 2017(P).
+</div></div>
+</div>
+</div>

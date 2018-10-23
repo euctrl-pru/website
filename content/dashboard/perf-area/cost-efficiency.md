@@ -1,0 +1,12 @@
+---
+title: Cost Efficiency
+---
+
+
+The new [ACE interactive online dashboard][acedashboard] enables interested stakeholders to access
+the latest available ACE data and analysis. Using the interactive functionalities of the dashboard,
+stakeholders can design and customise specific analyses and presentations covering the 2002-2015 period.
+
+[![ACE interactive online dashboard](/images/ace_dashboard.png)][acedashboard]
+
+[acedashboard]: http://www.eurocontrol.int/ACE/ACE-Home.html "ACE online dashboard"

@@ -1,0 +1,114 @@
+---
+title: '`r ansp_admin$ANSP_short`'
+categories:
+  - metadata
+  - ansp
+type: ansp
+slug: '`r ansp_admin$ANSP_short %>% str_to_lower() %>% str_replace_all(" ", "-")`'
+---
+
+```{r global-options, include=FALSE}
+knitr::opts_chunk$set(
+  fig.width=12,
+  fig.height=8,
+  echo=FALSE,
+  warning=FALSE,
+  message=FALSE,
+  NULL)
+options(encoding = 'UTF-8')
+
+```
+
+ANS Provider - `r ansp_admin$Country_Name`.
+
+
+## Institutional Arrangements
+
+
+## Status
+
+`r ansp_main$Organisation`
+
+* National Supervisory Authority (NSA): `r ansp_admin$NSA`
+
+* Body responsible for:
+  - Safety Regulation: `r ansp_admin$Saftey`
+  - Airspace Regulation: `r ansp_admin$Airspace`
+  - Economic Regulation: `r ansp_admin$Economic`
+  
+
+
+## Corporate Governance Structure (`r year_now`)
+
+
+
+
+## `r ansp_admin$ANSP_short` (`r year_now`)
+  
+
+
+
+## Scope of Services (`r year_report`)
+
+```{r services}
+
+services_tbl <- tibble::tribble(
+  ~Service, ~Provision,
+  "GAT", service_gat,
+  "OAT", service_oat,
+  "Upper Airspace", service_uas,
+  "Lower Airspace", service_las,
+  "Oceanic, ANS", service_oce,
+  "MET", service_met
+)
+
+x <- kable(services_tbl, format = "html", align = c("l", "r")) %>%
+  kable_styling(full_width = FALSE, bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>% 
+  column_spec(1, bold = FALSE, border_right = TRUE)
+
+# HACK: remove table heading, from https://stackoverflow.com/a/44716658/963575
+gsub("<thead>.*</thead>", "", x)
+```
+
+
+
+## Operational ATS Units (`r year_report`)
+
+`r ansp_main$OPS_notes %>% str_replace_all("\r\n", "\r\n- ")`
+
+
+## Key Financial and Operational Figures (ACE `r year_report`)
+
+```{r key-figures}
+key_figures_tbl <- tribble(
+  ~what, ~amount,
+  "Gate-to-gate total revenues (M EUR)"         , total_revenue,
+  "Gate-to-gate total costs (M EUR)"            , total_cost,
+  "Gate-to-gate ATM/CNS provision costs (M EUR)", provision_cost,
+  "Gate-to-gate total ATM/CNS assets (M EUR)"   , total_assets,
+  "Gate-to-gate ANS total capex (M EUR)"        , total_capex,
+  "ATCO in OPS"                                 , staff_atco,
+  "Gate-to-gate total staff (including MET staff^[if applicable])", staff_all,
+  "Total IFR flight-hours controlled by ANSP ('000)", ifr_hours_controlled,
+  "IFR airport movements controlled by ANSP ('000)" , apt_movements_controlled,
+  "En-route sectors open at maximum configuration"  , ert_max_sectors,
+  "Minutes of ATFM delays ('000)"                   , atfm_delays
+)
+
+x <- kable(key_figures_tbl, format = "html", align = c("l", "r")) %>% 
+  kable_styling(full_width = FALSE,bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  column_spec(1, bold = FALSE, border_right = TRUE)
+
+# HACK: remove table heading, from https://stackoverflow.com/a/44716658/963575
+gsub("<thead>.*</thead>", "", x)
+```
+
+
+## Size (`r year_report`)
+
+Size of controlled airspace: `r ansp_main$Total_airspace` $km^2$
+
+```{r ansp-map}
+knitr::include_graphics(str_c("../static/images/ansp/", generate_ansp_base_filename(ansp_shortname), ".png", collapse = ""))
+```
+

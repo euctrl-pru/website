@@ -1,0 +1,108 @@
+---
+title: Traffic
+js: [
+  "/js/crt_flts_YY.js",
+  "/js/crt_flts_MM.js",
+  "/js/tbl_flts_YY.js",
+  "/js/crt_ertSU_YY.js",
+  "/js/crt_ertSU_MM.js",
+  "/js/tbl_ertSU_YY.js"
+]
+---
+
+<h3 id="ert_flt">Flights</h3>
+
+<table class = "table">
+   <thead>
+      <tr>
+         <th>Period</th>
+         <th>Area</th>
+         <th>Update rate</th>
+         <th>Last update</th>
+         <th>Source(s)</th>
+         <th>Data</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class = "active">
+         <td>Jan-Aug 2018</td>
+         <td><a href={{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}>EUROCONTROL area</a></td>
+         <td>Monthly</td>
+         <td>12-Sep-2018</td>
+         <td>
+          <a href="/reference/acronym/nm-cfmu/">NM</a>,
+          <a href='/reference/acronym/pru/'>PRU</a>
+          </td>
+          <td><a href='/data/'>{{% dwnld_i %}}</a></td>
+      </tr>
+   </tbody>
+</table>
+
+<div class="row">
+    <div class="col-sm-6">
+        <h5>Evolution over time</h5><br>
+        <div id="crt_flts_YY"></div><br>
+        <div id="crt_flts_MM"></div>
+    </div>
+    <div class="col-sm-6 offset-10 text-justified"  style="border-style: solid; border-width:thin; border-color: #bfbfbf;">
+        <h5>Flights by <a href='{{"/references/acronym/ansp.html"| prepend: site.baseurl | prepend: site.url }}'>ANSP</a> (Jan-Aug 2018)</h5>
+        <div id="tbl_flts_YY"></div>
+        <div id="crt_prc_change"></div>
+    </div>
+</div>
+
+<h3 id="ert_sun">En-route service units (SU)</h3>
+
+<table class = "table">
+   <thead>
+      <tr>
+         <th>Period</th>
+         <th>Area</th>
+         <th>Update rate</th>
+         <th>Last update</th>
+         <th>Source(s)</th>
+         <th>CRCO dashboard</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class = "active">
+         <td>Jan-Aug 2018</td>
+         <td>CRCO area</td>
+         <td>Monthly</td>
+         <td>12-Sep-2018</td>
+         <td>
+          <a href="/reference/acronym/crco/">CRCO</a>
+          </td>
+          <td><a href="http://www.eurocontrol.int/ServiceUnits/Dashboard/" target="_blank">{{% tacho_i %}}{{% url_i %}}</a></td>
+      </tr>
+   </tbody>
+</table>
+
+<div class="row">
+    <div class="col-sm-6">
+        <h5>Evolution over time</h5>
+        <div id="crt_ertSU_YY"></div><br>
+        <div id="crt_ertSU_MM"></div>
+    </div>
+    <div class="col-sm-6 offset-10 text-justified">
+        <h5>En-route SU by charging zone (Jan-Aug 2018)</h5>
+        <div id="tbl_ertSU_YY"></div>
+    </div>
+</div>
+
+<script src="//d3js.org/d3.v3.min.js" type="text/javascript"></script>
+
+<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+ // load the visualisation API
+ google.load('visualization', '1', { packages: ['corechart', 'controls'] });
+</script>
+
+
+<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+<script>
+ var pymParent = new pym.Parent(
+   'crt_prc_change',
+   '/graphic/percent-movement-change/index.html',
+   {});
+</script>

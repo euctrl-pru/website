@@ -1,0 +1,24 @@
+---
+title: ATFM Measure
+categories:
+  - metadata
+  - definition
+type: definition
+slug: atfm-measure
+bibliography: [../../../static/bib/legislation.bib]
+link-citations: true
+---
+
+In the context of Air Traffic Flow Management ([ATFM](/reference/acronym/atfm/)) a *measure* refers to [@eu:255/2010]
+
+> the actions taken to perform air traffic flow management and capacity management
+
+
+
+## See Also
+
+* [Regulation](/reference/definition/regulation/)
+
+
+## References
+

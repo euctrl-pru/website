@@ -1,0 +1,15 @@
+<nav class="db dt-l w-100 border-box mid-gray pa2 ph5-l">
+  <a class="db dtc-l v-mid mid-gray link dim w-100 w-20-l tc tl-l mb2 mb0-l" href="{{ "/" | relURL }}">
+    <img src="{{ print "images/" .Site.Params.logo.url | relURL }}"
+    width="{{ .Site.Params.logo.width }}"
+    height="{{ .Site.Params.logo.height }}"
+    alt="{{ .Site.Params.logo.alt }}"
+    class="dib br-100">
+  </a>
+
+  <div class="db dtc-l v-mid w-100 w-80-l tc tr-l">
+    {{ range .Site.Menus.main }}
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a>
+    {{ end }}
+  </div>
+</nav>
