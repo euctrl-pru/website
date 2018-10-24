@@ -3,7 +3,7 @@ layout: prcq
 title: "Operational En-route ANS Performance"
 ---
 
-<script type="text/javascript" src="http://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
+<script type="text/javascript" src="https://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
 google.load('visualization', '1', { packages: ['corechart', 'controls'] });
 </script>
 <script type="text/javascript">
@@ -15,7 +15,7 @@ function drawVisualization()
  var crt_ertdlyYY = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_ertdlyYY',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=ert&range=A1:B12',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1zGEdW0bFSe2isnVKJYFnzyUHisRV46Wi5H498MTClxg/edit?usp=sharing&sheet=ert&range=A1:B12',
     options: {
         //width: 500, height: 200,
         //chartArea: {left: 80, top: 30, width:'60%',height:'65%'},
@@ -35,7 +35,7 @@ function drawVisualization()
   var crt_ertdlytot = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_ertdlytot',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=ert&range=G1:I8',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1zGEdW0bFSe2isnVKJYFnzyUHisRV46Wi5H498MTClxg/edit?usp=sharing&sheet=ert&range=G1:I6',
     options:{
           chartArea: {left: 50, top: 30, width:'100%',height:'55%'},
           titleTextStyle : {color: 'grey', fontSize: 12},
@@ -49,7 +49,7 @@ function drawVisualization()
                 titleTextStyle : {color: '#1F1F2E', fontSize: 11}, format: 'short', textStyle:{color: '#1F1F2E'}}
             }
         },
-    view: {'columns': [0,2,1], rows: [0,1,2,3,4,5,6]}
+    view: {'columns': [0,2,1], rows: [0,1,2,3,4]}
   }); crt_ertdlytot.draw();
 
 
@@ -57,7 +57,7 @@ function drawVisualization()
   var crt_ertdlypie = new google.visualization.ChartWrapper({
     chartType: 'PieChart',
     containerId: 'crt_ertdlypie',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=ert&range=A15:C18&hl=en_GB',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1zGEdW0bFSe2isnVKJYFnzyUHisRV46Wi5H498MTClxg/edit?usp=sharing&sheet=ert&range=A15:C18&hl=en_GB',
     options: {
             title: '2016',
             titlePosition: 'out',
@@ -81,7 +81,7 @@ function drawVisualization()
  var crt_ertdly1 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_ertdly1',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=ert&range=A22:G30',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1zGEdW0bFSe2isnVKJYFnzyUHisRV46Wi5H498MTClxg/edit?usp=sharing&sheet=ert&range=A22:G28',
     options: {
         chartArea: {left: 50, top: 40, width:'95%',height:'60%'},
         titleTextStyle : {color: '#1F1F2E', fontSize: 12},
@@ -99,7 +99,7 @@ function drawVisualization()
               },
         hAxis: {slantedTextAngle: 90, textStyle: {fontSize: 12}}
         },
-    view: {columns: [0,2,3,4,5,6], rows: [0,1,2,3,4,5,6,7]}
+    view: {columns: [0,2,3,4,5,6], rows: [0,1,2,3,4,5]}
   }); crt_ertdly1.draw();
 
 
@@ -107,7 +107,7 @@ function drawVisualization()
   var crt_ertdly3 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_ertdly3',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=ert&range=A32:I72',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1zGEdW0bFSe2isnVKJYFnzyUHisRV46Wi5H498MTClxg/edit?usp=sharing&sheet=ert&range=A32:G72',
     options:{
         height: 370,
         chartArea: {left: 50, top: 30, width:'100%',height:'50%'},
@@ -122,11 +122,9 @@ function drawVisualization()
                 0: {type:'bars',color:'#C0504D', targetAxisIndex: 0},
                 1: {type:'bars',color:'#D99694', targetAxisIndex: 0},
                 2: {type:'bars',color:'#FAC090', targetAxisIndex: 0},
-                3: {type:'bars', color:'#B9CDE5', targetAxisIndex: 0},
-                4: {type:'bars',color:'92D050', targetAxisIndex: 0},
-                5: {type:'bars',color:'grey', targetAxisIndex: 0},
-                6: {type:'bars',color:'C4BD97', targetAxisIndex: 0},
-                7: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 6, pointShape: 'diamond', targetAxisIndex: 0}
+                3: {type:'bars', color:'#92D050', targetAxisIndex: 0},
+                4: {type:'bars',color:'grey', targetAxisIndex: 0},
+                5: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 6, pointShape: 'diamond', targetAxisIndex: 0}
               },
           hAxis: {
             slantedTextAngle: 90,
@@ -137,7 +135,7 @@ function drawVisualization()
              // 1:{ format: '0.0%', title:'en-route ATFM delayed flights (%)', titleTextStyle : {fontSize: 12}, textStyle:{fontSize: 12}}
                 }
               },
-    view: {'columns': [0,1,2,3,4,5,6,7,8]}
+    view: {'columns': [0,1,2,3,4,5,6]}
   }); crt_ertdly3.draw();
 
 
@@ -145,7 +143,7 @@ function drawVisualization()
  var crt_hfe1 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_hfe1',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=ert&range=A76:c81',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1zGEdW0bFSe2isnVKJYFnzyUHisRV46Wi5H498MTClxg/edit?usp=sharing&sheet=ert&range=A76:c81',
     options: {
         height: 300, chartArea: {left: 50, top: 25, width:'100%',height:'45%'},
         legend: 'none',
@@ -169,7 +167,7 @@ function drawVisualization()
  var crt_hfe2 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_hfe2',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=ert&range=E75:G114',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1zGEdW0bFSe2isnVKJYFnzyUHisRV46Wi5H498MTClxg/edit?usp=sharing&sheet=ert&range=E75:G114',
     options: {
         height: 300,
         chartArea: {left: 65, top: 20, width:'95%',height:'45%'},
@@ -213,10 +211,10 @@ google.setOnLoadCallback(drawVisualization)
    </thead>
    <tbody>
       <tr class = "active">
-         <td>Jan-Jun</td>
+         <td>Jan-Sep</td>
          <td><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL area</a></td>
          <td>Quarterly</td>
-         <td>13-Jul-2018</td>
+         <td>22-Oct-2018</td>
           <td>
           <a href='{{"/references/acronym/nm-cfmu.html"| prepend: site.baseurl | prepend: site.url }}'>NM</a></td>
           <td><a href='{{"/data/performancearea/" | prepend: site.baseurl | prepend: site.url }}'><span class="glyphicon glyphicon-download" style="font-size:25px;"></span></a></td>
@@ -242,13 +240,13 @@ google.setOnLoadCallback(drawVisualization)
 <div class="row placeholders">
 <div class="col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
-Total en-route ATFM delays increased substantially in the first six months of 2018 (+141% vs. Jan-Jun 2017) leading to a notable increase in the average en-route ATFM delay per flight. 
+Average en-route ATFM delays doubled in 2018 compared to the first nine months in 2017 which gives reason for concern and immediate action.  
 <br><br>
 
 </div></div></div>
 <div class="col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
-The main drivers of the substantial increase observed in the first two quarters of 2018 were en route ATFM regulations attributed to capacity, staffing and adverse weather. Compared to Q1-2 in 2017 there was also a significant increase in ATFM delays due to ATC industrial action in France. 
+The main drivers of the substantial increase in 2018 were en route ATFM regulations attributed to ATC Staffing [S], adverse weather [codes W,D], and ATC Capacity [C]. Compared to 2017 there was also a significant increase in ATFM delays (ATC disruptions) due to ATC industrial action in France. 
 </div></div></div>
 </div>
 
@@ -264,22 +262,21 @@ The main drivers of the substantial increase observed in the first two quarters 
 
 <div class="panel panel-info">
   <div class="panel-heading">
-   Overall, 10.5% of the controlled flights in the EUROCONTROL area were affected by ATFM delays in the first two quarters of 2018.
-   Compared to 2017 (Jan-Jun), the share of flights affected by en-route ATFM delays increased by 4.0 percent points to 7.9%. <br>At the same time, the share of flights affected by <a href='{{"/prcq/ops-airport.html"| prepend: site.baseurl | prepend: site.url }}'>airport ATFM delays</a> decreased slightly from 2.7% in 2017 to 2.6% in 2018 (Jan-Jun).
+   Overall, 13.7% of the controlled flights in the EUROCONTROL area were affected by ATFM delays in the first three quarters of 2018. By far the main share (78.2%) were delayed by en-route ATFM regulations. Compared to 2017 (Jan-Sep), the share of flights affected by en-route ATFM delays increased by 4.6 percent points to 10.7%. <br>At the same time, the share of flights affected by <a href='{{"/prcq/ops-airport.html"| prepend: site.baseurl | prepend: site.url }}'>airport ATFM delays</a> decreased slightly from 3.2% in 2017 to 3.0% in 2018 (Jan-Sep).
   </div>
 </div>
 
 <div class="row placeholders">
 <div class="col-sm-12 placeholder">
     <h4>En-route ATFM delay by ANSP</h4>
-    <span class="text-muted">2018 (Jan-Jun)</span>
+    <span class="text-muted">2018 (Jan-Sep)</span>
     <div id="crt_ertdly3"></div>
 </div>
 </div>
 <br>
 <div class="panel panel-info">
   <div class="panel-heading">
-   Average en-route delay per flight was highest in France (1.75 min), followed by DFS/Germany (1.5 min) and  Maastricht Upper Area Control Centre/MUAC (0.88 min). 
+   Average en-route delay per flight was highest in France (2.13 min), followed by DFS/Germany (1.87 min), Cyprus (1.29 min) and Maastricht Upper Area Control Centre/MUAC (0.95 min). 
   </div>
 </div>
 
@@ -296,6 +293,6 @@ The main drivers of the substantial increase observed in the first two quarters 
 </div><br>
 <div class="panel panel-info">
   <div class="panel-heading">
-   Horizontal en route flight efficiency in the first two quarters of 2018 remained at the level observed in 2017. 
+  Horizontal en route flight efficiency in the first three quarters of 2018 remained at the level observed in 2017. 
   </div>
 </div>

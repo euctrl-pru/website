@@ -4,7 +4,7 @@ title: "Air Traffic Evolution"
 ---
 
 <html>
-<script type="text/javascript" src="http://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
+<script type="text/javascript" src="https://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
 google.load('visualization', '1', { packages: ['corechart', 'controls'] });
 </script>
 <script type="text/javascript">
@@ -12,12 +12,11 @@ google.load('visualization', '1', { packages: ['corechart', 'controls'] });
 function drawVisualization()
  {
 
-
 // TRAFFIC - ERT FLTS - YY - CHART
  var crt_ertfltsYY = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_ertfltsYY',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=flts&range=A1:E12',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1zGEdW0bFSe2isnVKJYFnzyUHisRV46Wi5H498MTClxg/edit?usp=sharing&sheet=flts&range=A1:E12',
     options: {
         //width: 500, height: 200,
         //chartArea: {left: 80, top: 30, width:'60%',height:'65%'},
@@ -41,7 +40,7 @@ function drawVisualization()
  var crt_ertsuYY = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_ertsuYY',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=flts&range=A1:E12',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1zGEdW0bFSe2isnVKJYFnzyUHisRV46Wi5H498MTClxg/edit?usp=sharing&sheet=flts&range=A1:E12',
     options: {
         //width: 500, height: 200,
         //chartArea: {left: 80, top: 30, width:'60%',height:'65%'},
@@ -64,7 +63,7 @@ function drawVisualization()
   var crt_flttypeYY = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_flttypeYY',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=flts&range=G1:J5&hl=en_GB',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1zGEdW0bFSe2isnVKJYFnzyUHisRV46Wi5H498MTClxg/edit?usp=sharing&sheet=flts&range=G1:J5&hl=en_GB',
     options:{
           //width: 450, height: 150,
           chartArea: {left: 60, top: 10, width:'80%',height:'60%'},
@@ -83,7 +82,7 @@ function drawVisualization()
   var crt_segYY = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_segYY',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=flts&range=L1:O7&hl=en_GB',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1zGEdW0bFSe2isnVKJYFnzyUHisRV46Wi5H498MTClxg/edit?usp=sharing&sheet=flts&range=L1:O7&hl=en_GB',
     options:{
          // width: 450, height: 150,
           chartArea: {left: 60, top: 10, width:'80%',height:'60%'},
@@ -102,7 +101,7 @@ function drawVisualization()
  var crt_anspfltsYY = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_anspfltsYY',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=flts&range=Q1:T42',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1zGEdW0bFSe2isnVKJYFnzyUHisRV46Wi5H498MTClxg/edit?usp=sharing&sheet=flts&range=Q1:T42',
     options: {
         height: 350,
         chartArea: {left: 70, top: 10, width:'85%',height:'45%'},
@@ -118,7 +117,7 @@ function drawVisualization()
                 titleTextStyle : {color: '#C0504D', fontSize: 11}, textStyle:{color:'#C0504D'}}
             },
         hAxis: {
-          title: 'ANSPs sorted by change in absolute flights (Jan-Jun 2018)',
+          title: 'ANSPs sorted by change in absolute flights (Jan-Sep 2018)',
           titleTextStyle: {color: 'grey', fontSize: 10},
           textStyle: {color: 'grey', fontSize: 11},
           slantedText: true,
@@ -133,7 +132,7 @@ function drawVisualization()
  var crt_apt3 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt3',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1sgpCoVc8LF2GPzz8WpmCNwCnpWbk5IlX8cmIX_Agz3o/edit?usp=sharing&sheet=flts&range=V1:Y31',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1zGEdW0bFSe2isnVKJYFnzyUHisRV46Wi5H498MTClxg/edit?usp=sharing&sheet=flts&range=V1:Y31',
     options: {
         height: 350,
         chartArea: {left: 70, top: 10, width:'85%',height:'45%'},
@@ -150,7 +149,7 @@ function drawVisualization()
             },
             hAxis: {
               slantedTextAngle: 90,
-              title: 'Airports sorted by movements (Jan-Jun 2018)',
+              title: 'Airports sorted by movements (Jan-Sep 2018)',
               titleTextStyle: {color: 'grey', fontSize: 10},
               textStyle: {color: 'grey', fontSize: 11}}
         },
@@ -176,10 +175,10 @@ google.setOnLoadCallback(drawVisualization)
    </thead>
    <tbody>
       <tr class = "active">
-         <td>Jan-Jun</td>
+         <td>Jan-Sep</td>
          <td><a href={{"/references/definition/ESRA_08_Area.html"| prepend: site.baseurl | prepend: site.url }}>ECAC area</a></td>
          <td>Quarterly</td>
-         <td>13-Jul-2018</td>
+         <td>22-Oct-2018</td>
          <td>
           <a href="{{ '/references/acronym/nm-cfmu.html' | prepend: site.baseurl | prepend: site.url }}">NM</a>,
           <a href="{{ '/references/acronym/crco.html'    | prepend: site.baseurl | prepend: site.url }}">CRCO</a>,
@@ -205,61 +204,61 @@ google.setOnLoadCallback(drawVisualization)
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
-In Q1-2 of 2018, the number of flights in the <a href={{"/references/definition/ecac_area.html"| prepend: site.baseurl | prepend: site.url }}>(ECAC)</a> area increased by 3.2% (4.1% in Q1-2 2017) which corresponds to an additional 862 flights per day on average.  
+Between January and September, the number of flights in the <a href={{"/references/definition/ecac_area.html"| prepend: site.baseurl | prepend: site.url }}>(ECAC)</a> area increased by 3.4% which corresponds to an additional 986 flights per day on average.  
 
 </div></div></div>
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="panel panel-info"><div class="panel-heading">
-As in previous years, average daily en-route service units grew at a higher rate (+6.0%) than flights in Q1-2 2018.
+Average daily en-route service units continued to grow at a higher rate (+6.6%) than flights in Q1-3 2018.
 </div></div></div>
 </div>
 
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
     <h4>Change by flight type</h4>
-    <span class="text-muted">2018 (Jan-Jun) vs. 2017 (Jan-Jun)</span>
+    <span class="text-muted">2018 (Jan-Sep) vs. 2017 (Jan-Sep)</span>
     <div id="crt_flttypeYY"></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
     <h4>Change by traffic segment</h4>
-    <span class="text-muted">2018 (Jan-Jun) vs. 2017 (Jan-Jun)</span>
+    <span class="text-muted">2018 (Jan-Sep) vs. 2017 (Jan-Sep)</span>
     <div id="crt_segYY"></div>
 </div>
 </div>
 
 <div class="panel panel-info"><div class="panel-heading">
-       Pan-European traffic and flights to and from Europe continued to grow in the first six months of 2018. The main drivers of the observed traffic growth in 2018 (Jan-Jun) were charter flights and the continued growth in the low cost traffic segment.
+       Pan-European traffic and flights to and from Europe continued to grow in the first nine months of 2018. 
 </div></div>
 
 
 <div class="row placeholders">
 <div class="col-sm-12 placeholder">
     <h4>Traffic variation by <a href={{"/references/acronym/ansp.html"| prepend: site.baseurl | prepend: site.url }}>ANSP</a></h4>
-    <span class="text-muted">2018 (Jan-Jun) vs. 2017 (Jan-Jun)</span>
+    <span class="text-muted">2018 (Jan-Sep) vs. 2017 (Jan-Sep)</span>
     <div id="crt_anspfltsYY"></div>
 </div>
 </div><br><br>
 
     <div class="panel panel-info">
       <div class="panel-heading">
-       All ANSPs but Avinor (Norway) showed an increase in traffic compared to 2017 (Jan-Jun). In absolute terms, DHMI (Turkey), ENAIRE (Spain), Bulatsa (Bulgaria), and DFS (Germany) showed the highest growth in 2018 compared to the same period in 2017.
+       All ANSPs showed an increase in traffic compared to 2017 (Jan-Sep). In absolute terms, DHMI (Turkey), ENAIRE (Spain), ENAV (Italy), DFS (Germany), and Bulatsa (Bulgaria) showed the highest growth in 2018 compared to the same period in 2017.
       </div>
     </div>
 
 <div class="row placeholders">
 <div class="col-sm-12 ">
     <h4>Traffic variation at the top 30 airports in terms of traffic</h4>
-    <span class="text-muted">2018 (Jan-Jun) vs. 2017 (Jan-Jun)</span>
+    <span class="text-muted">2018 (Jan-Sep) vs. 2017 (Jan-Sep)</span>
     <div id="crt_apt3"></div>
 </div>
   </div>
 
     <div class="panel panel-info">
           <div class="panel-heading">
-    Amsterdam remained the airport with the highest number of commercial movements in the EUROCONTROL area in 2018 (Jan-Jun).<br>
+    Amsterdam remained the airport with the highest number of commercial movements in the EUROCONTROL area in 2018 (Jan-Sep).<br>
 
-    Ten of the top 30 airports showed a decrease in traffic in the first two quarters of 2018 with Dusseldorf (DUS) and Berlin/Tegel (TXL) reporting the most notable traffic reduction compared to the same period in 2017. 
+    With an increase of more than 100 additional daily flights, Frankfurt (FRA) showed the highest growth in absolute terms, followed by Antalya, Athens and Madrid. 
     <br>
-    The highest growth compared to Jan-Jun 2017 was observed at Warsaw (WAW), Lisbon (LIS), Athens (ATH), Helsinki (HEL) and Frankfurt (FRA). 
+    Seven of the top 30 airports showed a decrease in traffic between January and September 2018 with Dusseldorf, Manchester and Stockholm reporting the most notable traffic reductions compared to the same period in 2017.  
           </div>
     </div>
