@@ -113,7 +113,7 @@ namespace :prod do
 
           # cloning destination repo
           puts "Cloning repo #{CONFIG['dest_user']}/#{CONFIG['source_repo']} ..."
-          sh "git clone https://#{ENV['GIT_NAME']}:#{ENV['GH_TOKEN']}@github.com/#{CONFIG['dest_user']}/#{CONFIG['dest_repo']}.git > /dev/null"
+          sh "git clone --depth=1 https://#{ENV['GIT_NAME']}:#{ENV['GH_TOKEN']}@github.com/#{CONFIG['dest_user']}/#{CONFIG['dest_repo']}.git > /dev/null"
 
           # Commit and push to github
           # - match the commit SHA
