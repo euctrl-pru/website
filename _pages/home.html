@@ -7,7 +7,23 @@ keywords: metadata, performance, data, statistics, economics, air transport, fli
 ---
 <style type="text/css">
 .img-responsive {
-    margin: 0 auto; width: 75%;
+    margin: 0 auto;
+    max-width: 75%
+}
+
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 25.0%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    border: 0;
 }
 
 #main-text.row:after {
@@ -25,21 +41,28 @@ keywords: metadata, performance, data, statistics, economics, air transport, fli
 	opacity: 0.2;
 }
 </style>
-
-<div class="row">
-	<img src="{% asset_path european-ans-performance-review.jpg %}" class="img-responsive" alt="European ANS Performance">
-</div>
 <br>
 <div class="row" id="main-text">
-	<h4>Welcome to the European ANS Performance Data Portal</h4>
 
-	{% include pru.html %}
+<h3>Pan-European ANS Performance Data Portal</h3>
 
-	<p>
-		For feedback or questions please contact us at:
-		<a href="mailto:{{ site.owner.email }}">Performance Review Unit</a>
-		({{ site.owner.email }}).
-	</p>
+<p>
+Welcome to the <a href="{{ "" | prepend: site.baseurl | prepend: site.url }}/about/pru">Performance Review Unit (PRU)</a> ANS performance data portal. <br>
+The web page is updated monthly and aims to:<br>
+ <ul>
+  <li>to ensure that interested stakeholders in all EUROCONTROL Member States have relevant high quality information on Pan-European ANS performance readily available in a transparent, accurate, clear, complete and unbiased manner;</li>
+  <li>to stimulate an informed dialogue between all stakeholders for the benefit of the entire aviation network; and,</li>
+  <li>to further develop the ANS performance analysis framework and the understanding of key ANS performance issues.</li>
+</ul> 
+To get informed about our monthly updates please subscribe to our mailing list by clicking on the blue button below.
+</p>
+
+</div>
+<div class="resp-container">
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/1UKhnPVrpoCufnrVbrRRN8fCue6DY-8W1/page/xHPY" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<div class="row">
+	<img src="{% asset_path european-ans-performance-review.jpg %}" class="img-responsive" alt="European ANS Performance">
 </div>
 <br>
 <div class="row text-center">
