@@ -183,7 +183,7 @@ width: 8em;
     <tr>
       <th scope="row">Airport arrival <a href="{{ "/references/methodology/ATFM_delay_calculation.html" | prepend: site.baseurl | prepend: site.url }}">ATFM delays</a> - without post ops adjustments<br><small>by airport and delay cause</small></th>
       <td>Jan 2014 - Oct 2018</td>
-      <td><a href="{{ "/data/set/apt_flt/Airport_Traffic.xlsm" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-download"></span></a> </td>
+      <td><a href="{{ "/data/set/apt_dly/Airport_Arrival_ATFM_Delay.xlsm" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-download"></span></a> </td>
       <td><a href="{{ "/data/set/apt_dly/airport_arrival_atfm_delay.html" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-download"></span></a> </td>
       <td><a href="{{ "/references/dataset/Airport_Arrival_ATFM_Delay.html" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-info-sign"></span></a> </td>
       <td><a href="https://www4.icao.int/ganpportal/ASBU/KPI?IDs=12" target="_blank">KPI 12</a></td>
