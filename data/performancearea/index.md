@@ -114,7 +114,7 @@ width: 8em;
     <tr>
       <th scope="row">En-route IFR flights and <a href="{{ "/references/methodology/ATFM_delay_calculation.html" | prepend: site.baseurl | prepend: site.url }}">ATFM delays</a> 
       <a href="{{ "/references/acronym/aua.html" | prepend: site.baseurl | prepend: site.url }}">(AUA)</a> - without post ops adjustments<br><small>by entity and delay cause (AUA based)</small></th>
-      <td>Jan 2011 - Oct 2018</td>
+      <td>Jan 2011 - Nov 2018</td>
       <td><a href="{{ "/data/set/ert_dly/En-Route_ATFM_Delay_AUA.xlsm" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-download"></span></a> </td>
       <td></td>
       <td><a href="{{ "/references/dataset/En-Route_ATFM_Delay_FIR.html" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-info-sign"></span></a> </td>
@@ -134,7 +134,7 @@ width: 8em;
     <tr>
       <th scope="row">En-route IFR flights and <a href="{{ "/references/methodology/ATFM_delay_calculation.html" | prepend: site.baseurl | prepend: site.url }}">ATFM delays</a> 
       <a href="{{ "/references/acronym/fir.html" | prepend: site.baseurl | prepend: site.url }}">(FIR)</a> - without post ops adjustments<br><small>by entity and delay cause (FIR based)</small></th>
-      <td>Jan 2016 - Oct 2018</td>
+      <td>Jan 2016 - Nov 2018</td>
       <td><a href="{{ "/data/set/ert_dly/En-Route_ATFM_Delay_FIR.xlsm" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-download"></span></a> </td>
       <td></td>
       <td><a href="{{ "/references/dataset/En-Route_ATFM_Delay_FIR.html" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-info-sign"></span></a> </td>
@@ -154,7 +154,7 @@ width: 8em;
     <tr>
       <th scope="row"><a href="{{ "/references/methodology/horizontal_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }}">Horizontal en-route flight efficiency</a> 
       <br><small>by entity (HFE actual trajectory and flight plan, KEP and KEA indicators)</small></th>
-      <td>Jan 2014 - Oct 2018</td>
+      <td>Jan 2014 - Nov 2018</td>
       <td><a href="{{ "/data/set/hfe/Horizontal_Flight_Efficiency.xlsm" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-download"></span></a> </td>
       <td><a href="{{ "/data/set/hfe/horizontal_flight_efficiency.html" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-download"></span></a></td>
       <td><a href="{{ "/references/dataset/Horizontal_Flight_Efficiency.html" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-info-sign"></span></a> </td>
@@ -182,8 +182,8 @@ width: 8em;
   <tbody>
     <tr>
       <th scope="row">Airport arrival <a href="{{ "/references/methodology/ATFM_delay_calculation.html" | prepend: site.baseurl | prepend: site.url }}">ATFM delays</a> - without post ops adjustments<br><small>by airport and delay cause</small></th>
-      <td>Jan 2014 - Oct 2018</td>
-      <td><a href="{{ "/data/set/apt_flt/Airport_Traffic.xlsm" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-download"></span></a> </td>
+      <td>Jan 2014 - Nov 2018</td>
+      <td><a href="{{ "/data/set/apt_dly/Airport_Arrival_ATFM_Delay.xlsm" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-download"></span></a> </td>
       <td><a href="{{ "/data/set/apt_dly/airport_arrival_atfm_delay.html" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-download"></span></a> </td>
       <td><a href="{{ "/references/dataset/Airport_Arrival_ATFM_Delay.html" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-info-sign"></span></a> </td>
       <td><a href="https://www4.icao.int/ganpportal/ASBU/KPI?IDs=12" target="_blank">KPI 12</a></td>
@@ -198,7 +198,7 @@ width: 8em;
     </tr>
     <tr>
       <th scope="row">Airport traffic<br><small>daily IFR arrivals and departures by airport</small></th>
-      <td>Jan 2014 - Oct 2018</td>
+      <td>Jan 2014 - Nov 2018</td>
       <td><a href="{{ "/data/set/apt_flt/Airport_Traffic.xlsm" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-download"></span></a> </td>
       <td></td>
       <td><a href="{{ "/references/dataset/Airport_Traffic.html" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-info-sign"></span></a></td>
@@ -206,7 +206,7 @@ width: 8em;
     </tr>
     <tr>
       <th scope="row">Arrival Sequencing and Metering (ASMA) additional time<br><small>Monthly ASMA <a href="{{ "/references/definition/additional_asma_time.html" | prepend: site.baseurl | prepend: site.url }}">additional</a> and <a href="{{ "/references/definition/unimpeded_asma_time.html" | prepend: site.baseurl | prepend: site.url }}">unimpeded</a> time</small></th>
-      <td>Jan 2014- Sep 2018</td>
+      <td>Jan 2014- Oct 2018</td>
       <td><a href="{{ "/data/set/asma/ASMA_Additional_Time.xlsm" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-download"></span></a></td>
       <td></td>
       <td><a href="{{ "/references/dataset/ASMA_Additional_Time.html" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-info-sign"></span></a></td>
@@ -214,7 +214,7 @@ width: 8em;
     </tr>
     <tr>
       <th scope="row">Vertical flight efficiency - Continuous climb and descent operations<br><small>Monthly continuous climb and descent data</small></th>
-      <td>Jan 2015 - Oct 2018</td>
+      <td>Jan 2015 - Nov 2018</td>
       <td><a href="{{ "/data/set/cdo_cco/Vertical_Flight_Efficiency_cdo_cco.xlsm" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-download"></span></a> </td>
       <td></td>
       <td><a href="{{ "/references/dataset/Continuous_Climb_Descent.html" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-info-sign"></span></a> </td>
@@ -224,7 +224,7 @@ width: 8em;
     </tr>
     <tr>
       <th scope="row">Taxi-out additional time<br><small>Monthly taxi-out <a href="{{ "/references/definition/additional_taxi-out_time.html" | prepend: site.baseurl | prepend: site.url }}">additional</a> and <a href="{{ "/references/definition/unimpeded_taxi-out_time.html" | prepend: site.baseurl | prepend: site.url }}">unimpeded</a> time</small></th>
-      <td>Jan 2014- Sep 2018</td>
+      <td>Jan 2014- Oct 2018</td>
       <td><a href="{{ "/data/set/tx_out/Taxi-Out_Additional_Time.xlsm" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-download"></span></a> </td>
       <td></td>
       <td><a href="{{ "/references/dataset/Taxi-Out_Additional_Time.html" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-info-sign"></span></a> </td>
@@ -232,7 +232,7 @@ width: 8em;
     </tr>
     <tr>
       <th scope="row"> ATC pre-departure delays<br><small>daily <a href="{{ "/references/definition/atc_pre-departure_delay.html" | prepend: site.baseurl | prepend: site.url }}">ATC pre-departure delay</a> by airport</small></th>
-      <td>Jan 2014- Sep 2018</td>
+      <td>Jan 2014- Oct 2018</td>
       <td><a href="{{ "/data/set/atc_pre/ATC_Pre-Departure_Delay.xlsm" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-download"></span></a> </td>
       <td></td>
       <td><a href="{{ "/references/dataset/ATC_Pre-Departure_Delay.html" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-info-sign"></span></a> </td>
@@ -240,7 +240,7 @@ width: 8em;
     </tr>
     <tr>
       <th scope="row">ATFM slot adherence<br><small>daily ATFM slot adherence by airport</small></th>
-      <td>Jan 2014 - Oct 2018</td>
+      <td>Jan 2014 - Nov 2018</td>
       <td><a href="{{ "/data/set/slt_adh/ATFM_Slot_Adherence.xlsm" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-download"></span></a> </td>
       <td></td>
       <td><a href="{{ "/references/dataset/ATFM_Slot_Adherence.html" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-info-sign"></span></a> </td>
@@ -275,7 +275,7 @@ width: 8em;
     </tr>
     <tr>
       <th scope="row">Complexity (based on <a href="{{ "/references/acronym/bada.html" | prepend: site.baseurl | prepend: site.url }}">BADA</a> version 3.13.1)<br><small>Complexity by ANSP</small></th>
-      <td>Jan 2017 - Oct 2018</td>
+      <td>Jan 2017 - Nov 2018</td>
       <td><a href="{{ "/data/set/cplx/Traffic_Complexity_Scores_2.xlsm" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-download"></span></a> </td>
       <td></td>
       <td><a href="{{ "/references/dataset/Traffic_Complexity_Score.html" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-info-sign"></span></a> </td>
@@ -303,7 +303,7 @@ width: 8em;
   <tbody>
     <tr>
       <th scope="row">ACE operational data<br><small>Monthly ACE operational data</small></th>
-      <td>Jan 2017 - Oct 2018</td>
+      <td>Jan 2017 - Nov 2018</td>
       <td><a href="{{ "/data/set/ace_opt/ACE_Monthly_Operational_Data.xls" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-download"></span></a> </td>
       <td></td>
       <td><a href="{{ "/references/dataset/ACE_Monthly_Operational_Data.html" | prepend: site.baseurl | prepend: site.url }}">specs</a> </td>
