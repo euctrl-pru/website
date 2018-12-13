@@ -304,7 +304,7 @@ width: 8em;
     <tr>
       <th scope="row">ACE operational data<br><small>Monthly ACE operational data</small></th>
       <td>Jan 2017 - Nov 2018</td>
-      <td><a href="{{ "/data/set/ace_opt/ACE_Monthly_Operational_Data.xls" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-download"></span></a> </td>
+      <td><a href="{{ "/data/set/ace_opt/ACE_Monthly_Operational_Data.xlsm" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-download"></span></a> </td>
       <td></td>
       <td><a href="{{ "/references/dataset/ACE_Monthly_Operational_Data.html" | prepend: site.baseurl | prepend: site.url }}">specs</a> </td>
       <td></td>
