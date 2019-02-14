@@ -5,7 +5,7 @@
          {
             chartType: 'ComboChart',
             containerId: 'crt_ertSU_YY',
-            dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1txmPuoLLfCuuQdWSQfBZmQWPEHD__MVu-Y5xsvWCO3Y/edit?usp=sharing&sheet=ERT_SU_YY&range=A1:D12&headers=1&hl=en_GB',
+            dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1txmPuoLLfCuuQdWSQfBZmQWPEHD__MVu-Y5xsvWCO3Y/edit?usp=sharing&sheet=ERT_SU_YY&range=A1:D13&headers=1&hl=en_GB',
             options: {
                //width: 500, height: 300,
                chartArea: { left: 50, top: 20, width: '70%', height: '70%' },

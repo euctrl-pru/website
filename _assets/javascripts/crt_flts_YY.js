@@ -5,7 +5,7 @@
          {
             chartType: 'ComboChart',
             containerId: 'crt_flts_YY',
-            dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Ap6_pXhVLZcgfUcdbqsUBvZaI_AdVsT35XLY1oPKyJ4/edit?usp=sharing&sheet=ERT_FLTS_YY&range=A1:D12&headers=1&hl=en_GB',
+            dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Ap6_pXhVLZcgfUcdbqsUBvZaI_AdVsT35XLY1oPKyJ4/edit?usp=sharing&sheet=ERT_FLTS_YY&range=A1:D13&headers=1&hl=en_GB',
             options: {
                //width: 500, 
                height: 250,

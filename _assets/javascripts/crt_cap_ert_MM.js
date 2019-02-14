@@ -5,7 +5,7 @@
          {
             chartType: 'ComboChart',
             containerId: 'crt_cap_ert_MM',
-            dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1g_EclskD6qP8b_aYYhW3xrng616ZysYW5WVtGD9pOXk/edit?usp=sharing&alt=json&sheet=ERT_ATFM_MM&range=A1:M61&tq=where%20A%3D1&headers=1',
+            dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1g_EclskD6qP8b_aYYhW3xrng616ZysYW5WVtGD9pOXk/edit?usp=sharing&alt=json&sheet=ERT_ATFM_MM&range=A1:M73&tq=where%20A%3D1&headers=1',
             options: {
                //width: 500, height: 300,
                //chartArea: { left: 65, top: 20},
