@@ -2,8 +2,8 @@
 title: PRU
 description: > # this means to ignore newlines until "url:"
   Performance monitoring data, analyses and visualizations for Eurocontrol's 41 Member States.
-url: "https://ansperformance.eu" # the base hostname & protocol for your site; NO https if served by github pages!!!
-canonical: "https://ansperformance.eu"  # NO https if served by github pages!!!
+url: "http://ansperformance.eu" # the base hostname & protocol for your site; NO https if served by github pages!!!
+canonical: "http://ansperformance.eu"  # NO https if served by github pages!!!
 baseurl: "" # see https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/
 searchsites: "ansperformance.eu"
 
