@@ -18,7 +18,7 @@ gives an overview of safety performance analysis performed by <small style="font
 published in the [2014 Performance Review Report][prr2014].
 
 
-[trends]: <http://viewer.epageview.com/Viewer.aspx?docid=408be1c3-7491-4430-9a96-a4d700ad376b#?page=48> "Positive Trends"
-[issue]: <http://viewer.epageview.com/Viewer.aspx?docid=408be1c3-7491-4430-9a96-a4d700ad376b> "AeroSafety World July/August 2015 issue"
-[world]: <http://flightsafety.org/aerosafety-world-magazine> "AeroSafety World magazine"
-[prr2014]: <http://www.eurocontrol.int/publications/performance-review-report-prr-2014> "Performance Review Report 2014"
+[trends]: <https://viewer.epageview.com/Viewer.aspx?docid=408be1c3-7491-4430-9a96-a4d700ad376b#?page=48> "Positive Trends"
+[issue]: <https://viewer.epageview.com/Viewer.aspx?docid=408be1c3-7491-4430-9a96-a4d700ad376b> "AeroSafety World July/August 2015 issue"
+[world]: <https://flightsafety.org/aerosafety-world-magazine> "AeroSafety World magazine"
+[prr2014]: <https://www.eurocontrol.int/publications/performance-review-report-prr-2014> "Performance Review Report 2014"

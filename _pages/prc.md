@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Performance Review Commission
-permalink: /about/prc
+permalink: /about/prc/
 ---
 
 

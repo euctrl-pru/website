@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="https://www.w3.org/2005/Atom">
 
 {% if site.url %}
   {% assign base =  site.baseurl | prepend: site.url %}
@@ -7,7 +7,7 @@
   {% assign base = site.github.url %}
 {% endif %}
 
-  <generator uri="http://jekyllrb.com" version="{{ jekyll.version }}">Jekyll</generator>
+  <generator uri="https://jekyllrb.com" version="{{ jekyll.version }}">Jekyll</generator>
   <link href="{{ base }}{{ page.url }}" rel="self" type="application/atom+xml" />
   <link href="{{ base }}/" rel="alternate" type="text/html" />
   <updated>{{ site.time | date_to_xmlschema }}</updated>

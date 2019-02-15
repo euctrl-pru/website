@@ -1,13 +1,13 @@
- 
- <style type="text/css">
-  .navbar-nav {
-    width: 80%;
-    text-align: center;
-    > li {
-      float: none;
-      display: inline-block;
-    }
+
+<style type="text/css">
+.navbar-nav {
+  width: 80%;
+  text-align: center;
+  > li {
+    float: none;
+    display: inline-block;
   }
+}
 </style>
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
@@ -20,7 +20,7 @@
         <span class="icon-bar"></span>
       </button>
       <div class="navbar-brand">
-          <a href="{{ "/" | prepend: site.baseurl  | prepend: site.url }}">
+        <a href="{{ "/" | prepend: site.baseurl  | prepend: site.url }}">
           {% image ec-logo-brand.png alt="PRU" %}
           <div id="logo"></div>
         </a>
@@ -31,81 +31,61 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-      
-      <li class="dropdown">
+
+        <li class="dropdown">
           <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="{{ '/about/pru' | prepend: site.baseurl | prepend: site.url }}">Performance Review Unit</a></li>
             <li><a href="{{ '/about/prc' | prepend: site.baseurl | prepend: site.url }}">Performance Review Commission</a></li>
             <li><a href="{{ '/about/disclaimer/' | prepend: site.baseurl | prepend: site.url }}">Disclaimer</a></li>
           </ul>
-       </li>
-
-        <li class="dropdown">
-              <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
-                 aria-haspopup="true" aria-expanded="false">Analysis<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                  <li><a href="{{ '/prcq/' | prepend: site.baseurl | prepend: site.url }}" style="background-color: #4F81BD; color: #fff;">PRC Quarterly Review</a></li>  
-                  <li role="separator" class="divider"></li>   
-                  <li><a href="{{ '/graphs/safety/' | prepend: site.baseurl | prepend: site.url }}">Safety</a></li>
-                   <li role="separator" class="divider"></li>
-                  <li><a href="{{ '/graphs/traffic/' | prepend: site.baseurl | prepend: site.url }}">Traffic</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="{{ '/graphs/capacity/' | prepend: site.baseurl | prepend: site.url }}">Capacity</a></li>               
-                  <li role="separator" class="divider"></li>
-                  <li><a href="{{ '/graphs/environment/' | prepend: site.baseurl | prepend: site.url }}">Environment</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="https://www.eurocontrol.int/ACE/ACE-Home.html" target="_blank">Cost-Effectiveness dashboard (ACE)</a></li>   
-                  <li role="separator" class="divider"></li>                  
-                  <li><a href="https://www.eurocontrol.int/ServiceUnits/Dashboard/" target="_blank">Service Unit dashboard</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="https://www.eurocontrol.int/prudata/dashboard/vis/2018/" target="_blank" style="background-color: #2DACE3; color: #fff;">Single European Sky Data Portal (external)</a></li>  
-              </ul>
-         </li>
-
-         <!-- <li class="">
-            <a href="{{ '/prcq/' | prepend: site.baseurl | prepend: site.url }}"
-            style="background-color: #4F81BD; color: #fff;">PRC Quarterly</a></li>
-          </li>
-          <li class=""><a href="{{ '/posts/' | prepend: site.baseurl | prepend: site.url }}">News</a></li>
-          <li class="dropdown">
-              <a href="{{ '/graphs/' | prepend: site.baseurl | prepend: site.url }}" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
-                 aria-haspopup="true" aria-expanded="false">Graphs <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                  <li><a href="{{ '/graphs/safety/' | prepend: site.baseurl | prepend: site.url }}">Safety</a></li>
-                  <li><a href="{{ '/graphs/traffic/' | prepend: site.baseurl | prepend: site.url }}">Traffic</a></li>
-                  <li><a href="{{ '/graphs/capacity/' | prepend: site.baseurl | prepend: site.url }}">Capacity</a></li>
-                  <li><a href="{{ '/graphs/environment/' | prepend: site.baseurl | prepend: site.url }}">Environment</a></li>
-                  <li><a href="{{ '/graphs/cost-efficiency/' | prepend: site.baseurl | prepend: site.url }}">Cost Efficiency</a></li>
-              </ul>
-          </li> -->
-
-      <li class="navbar"><a href="{{ '/data/otools' | prepend: site.baseurl | prepend: site.url }}">Online reporting</a></li>
-
-      <li class="navbar"><a href="{{ '/data/performancearea/' | prepend: site.baseurl | prepend: site.url }}">Download area</a></li>
-
-        <li class="dropdown">
-              <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
-                 aria-haspopup="true" aria-expanded="false">Reference<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                  <li><a href="https://www.eurocontrol.int/prc/publications#field-tabs-tab-0" target="_blank">Annual Performance Review Reports (PRR)</a></li>
-                  <li><a href="https://www.eurocontrol.int/prc/publications#field-tabs-tab-1" target="_blank">ATM Cost-Effectiveness (ACE) reports</a></li>
-                  <li class=""><a href="{{ '/studies/' | prepend: site.baseurl | prepend: site.url }}">Ad-hoc studies</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="{{ '/references/methodology/' | prepend: site.baseurl | prepend: site.url }}">Methodologies</a></li>
-                  <li><a href="{{ '/references/acronym/' | prepend: site.baseurl | prepend: site.url }}">Acronyms</a></li>
-                  <li><a href="{{ '/references/definition/' | prepend: site.baseurl | prepend: site.url }}">Definitions</a></li>
-                  <li><a href="{{ '/references/bibliography.html' | prepend: site.baseurl | prepend: site.url }}">Bibliography</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="https://www4.icao.int/ganpportal/" target="_blank">ICAO Global Air Navigation Plan (GANP) Portal (external)</a></li>
-              </ul>
         </li>
-         
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
+          aria-haspopup="true" aria-expanded="false">Analysis<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ '/prcq/' | prepend: site.baseurl | prepend: site.url }}" style="background-color: #4F81BD; color: #fff;">PRC Quarterly Review</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="{{ '/graphs/safety/' | prepend: site.baseurl | prepend: site.url }}">Safety</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="{{ '/graphs/traffic/' | prepend: site.baseurl | prepend: site.url }}">Traffic</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="{{ '/graphs/capacity/' | prepend: site.baseurl | prepend: site.url }}">Capacity</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="{{ '/graphs/environment/' | prepend: site.baseurl | prepend: site.url }}">Environment</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="https://www.eurocontrol.int/ACE/ACE-Home.html" target="_blank">Cost-Effectiveness dashboard (ACE)</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="https://www.eurocontrol.int/ServiceUnits/Dashboard/" target="_blank">Service Unit dashboard</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="https://www.eurocontrol.int/prudata/dashboard/vis/2018/" target="_blank" style="background-color: #2DACE3; color: #fff;">Single European Sky Data Portal (external)</a></li>
+          </ul>
+        </li>
+        <li class="navbar"><a href="{{ '/data/otools/' | prepend: site.baseurl | prepend: site.url }}">Online reporting</a></li>
+        <li class="navbar"><a href="{{ '/data/performancearea/' | prepend: site.baseurl | prepend: site.url }}">Download area</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
+          aria-haspopup="true" aria-expanded="false">Reference<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://www.eurocontrol.int/prc/publications#field-tabs-tab-0" target="_blank">Annual Performance Review Reports (PRR)</a></li>
+            <li><a href="https://www.eurocontrol.int/prc/publications#field-tabs-tab-1" target="_blank">ATM Cost-Effectiveness (ACE) reports</a></li>
+            <li><a href="{{ '/studies/' | prepend: site.baseurl | prepend: site.url }}">Ad-hoc studies</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="{{ '/references/methodology/' | prepend: site.baseurl | prepend: site.url }}">Methodologies</a></li>
+            <li><a href="{{ '/references/acronym/' | prepend: site.baseurl | prepend: site.url }}">Acronyms</a></li>
+            <li><a href="{{ '/references/definition/' | prepend: site.baseurl | prepend: site.url }}">Definitions</a></li>
+            <li><a href="{{ '/references/bibliography.html' | prepend: site.baseurl | prepend: site.url }}">Bibliography</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="https://www4.icao.int/ganpportal/" target="_blank">ICAO Global Air Navigation Plan (GANP) Portal (external)</a></li>
+          </ul>
+        </li>
+
         <li class="notes pull-right"><a href="{{ '/posts/' | prepend: site.baseurl | prepend: site.url }}">Release Notes</a></li>
-  
+
         <li class="form pull-right">
           <form class="navbar-form" method="get" action="https://duckduckgo.com/">
-              <input type="hidden" name="sites" value="{{ site.searchsites }}"/>
+            <input type="hidden" name="sites" value="{{ site.searchsites }}"/>
             <input type="hidden" name="ka" value="h"/>
             <input type="hidden" name="k7" value="#fafafa"/>
             <input type="hidden" name="kj" value="#2e86c6"/>
@@ -120,7 +100,7 @@
             </div>
           </form>
         </li>
-      
+
       </ul>
 
     </div><!-- /.navbar-collapse -->
