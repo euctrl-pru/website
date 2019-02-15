@@ -8,7 +8,7 @@ permalink: /about/pru/
 
 The PRU is responsible for monitoring and reviewing the performance of the Pan-European ANS system across a number of key performance areas.
 
-As part of the EUROCONTROL Agency, the PRU supports the independent <a href="https://www.eurocontrol.int/ansperformance/">Performance Review Commission (PRC)</a> in running the EUROCONTROL Performance Review System and executing the associated PRC work programme with the appropriate level of independence.
+As part of the EUROCONTROL Agency, the PRU supports the independent [Performance Review Commission (PRC)][prc] in running the EUROCONTROL Performance Review System and executing the associated PRC work programme with the appropriate level of independence.
 
 The PRU also provides support to the European Commission (EC) on the SES Performance and Charging Schemes.
 
@@ -18,3 +18,7 @@ Although the PRU is independent, it is administratively reporting to the Directo
 
 For feedback or questions please contact us at:
 [Performance Review Unit](mailto:{{ site.owner.email }}) ({{ site.owner.email }}).
+
+
+
+[prc]: <{{ "/about/prc.html"| prepend: site.baseurl | prepend: site.url }}> "Performance Review Commission"
