@@ -8,7 +8,7 @@ keywords: metadata, performance, data, statistics, economics, air transport, fli
 ---
 # {{ page.title }}
 
-Air Navigation Services Provider of the former Yugoslav Republic of Macedonia
+Air Navigation Services Provider of the Republic of North Macedonia
 
 See the relevant [leaflet][leaf] from [ACE2015].
 
