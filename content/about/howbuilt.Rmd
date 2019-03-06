@@ -1,0 +1,118 @@
+---
+layout: default
+title: How this site is built
+---
+
+
+This portal is designed and built using the following principles:
+
+* everything has to be version controlled
+* adopt KISS principle: Keep It Simple and Stupid.
+* build a static website
+* use open source tools whenever possible
+
+## Open source/Free tools and services we use
+
+* <a href="https://git-scm.com/" class="footer-links-kudos">git <img src="/images/git-logo.png" width="22" height="22" alt="git"></a>:
+	a distributed version control system.
+* <a href="https://gohugo.io/" class="footer-links-kudos">Hugo <img src="/images/hugo-logo.png" width="22" height="22" alt="hugo"></a>:
+	a static site generator.
+* <a href="https://d3js.org/" class="footer-links-kudos">D3 <img src="/images/d3-logo.png" width="22" height="22" alt="D3"></a>:
+	a JavaScript library for producing dynamic, interactive data visualizations in web browsers.
+* <a href="https://pages.github.com/" class="footer-links-kudos">GitHub Pages <img src="/images/Octocat.png" width="22" height="22" alt="GitHub Pages"></a>:
+	a service by GitHub whereby you can have a website served on the Internet for every user, organization or repository.
+* <a href="https://github.com/blog/674-introducing-organizations" class="footer-links-kudos">GitHub Organizations <img src="/images/Octocat.png" width="22" height="22" alt="GitHub Organizations blog post"></a>:
+	a service by GitHub for groups of people.
+* <a href="https://travis-ci.org/" class="footer-links-kudos">Travis CI <img src="/images/travisci-logo.png" width="22" height="22" alt="Travis CI"></a>:
+	a hosted, distributed continuous integration service used to build and test software projects.
+* <a href="https://www.r-project.org/" class="footer-links-kudos">R <img src="/images/R-logo.png" width="22" height="22" alt="R Project for Statistical Computing"></a>:
+	a free software environment for statistical computing and graphics.
+* <a href="https://www.tidyverse.org/" class="footer-links-kudos">Tidyverse <img src="/images/tidyverse-logo.png" width="22" height="22" alt="Tidyverse"></a>:
+	is an opinionated collection of R packages designed for data science. Among them:
+	* <a href="https://dplyr.tidyverse.org/" class="footer-links-kudos">dplyr <img src="/images/dplyr-logo.png" width="22" height="22" alt="dplyr"></a>:
+		 a grammar of data manipulation, providing a consistent set of verbs that help you solve the most common data manipulation challenges.
+	* <a href="https://readr.tidyverse.org/" class="footer-links-kudos">readr <img src="/images/readr-logo.png" width="22" height="22" alt="readr"></a>:
+		 a fast and friendly way to read rectangular data (like csv, tsv, and fwf).
+	* <a href="https://ggplot2.tidyverse.org/" class="footer-links-kudos">ggplot2 <img src="/images/ggplot2-logo.png" width="22" height="22" alt="ggplot2"></a>:
+		 a system for declaratively creating graphics, based on [The Grammar of Graphics](http://amzn.to/2ef1eWp).
+* <a href="https://developers.google.com/chart/" class="footer-links-kudos">Google Charts <img src="/images/google-developers-charts-logo.png" width="22" height="22" alt="google charts"></a>:
+	an interactive Web service that creates graphical charts from user-supplied information.
+* <a href="https://plot.ly/" class="footer-links-kudos">Plotly <img src="/images/plotly-logo.png" width="22" height="22" alt="plotly"></a>:
+	tools for composing, editing, and sharing interactive data visualization via the Web.
+
+
+
+
+## Scaffolding
+
+This website is a statically generated one: there is no CMS, no database, no
+authorization server behind it. It is just a bunch of HTML pages. These pages
+are generate by
+<a href="https://gohugo.io/" class="footer-links-kudos">Hugo <img src="/images/hugo-logo.png" width="22" height="22" alt="hugo"></a>.
+
+Hugo is a static site generator, i.e. it takes a description, generally a
+template, of the pages you want to build and generates the relevant HTML.
+
+
+### Repositories
+
+We use <a href="https://git-scm.com/" class="footer-links-kudos">git <img src="/images/git-logo.png" width="22" height="22" alt="git"></a>
+as our (distributed) version control system.
+And we selected GitHub as the central server for our git repositories.
+
+In order to group all our repositories we created a
+<a href="https://github.com/blog/674-introducing-organizations" class="footer-links-kudos">GitHub Organizations <img src="/images/Octocat.png" width="22" height="22" alt="GitHub Organizations blog post"></a>
+called `euctrl-pru`. It is a sort of company/team account.
+
+For the website we have two repositories one for the *source* pages and one for
+the *compiled* ones.
+The source repository is called `website` the `compiled` repository is named
+`euctrl-pru.github.io`.
+
+The reason we have these two repositories is related to the fact we use plug-ins
+that would not be allowed to run in the [automatic setup][ghpages-plugins]
+GitHub provides out-of-the-box.
+
+
+
+### Web hosting
+
+The name `euctrl-pru.github.io` for the repository of the compiled website is
+due to a fantastic service GitHub provides:
+<a href="https://pages.github.com/" class="footer-links-kudos">GitHub Pages <img src="/images/Octocat.png" width="22" height="22" alt="GitHub Pages"></a>.
+When using GitHub Pages any repository named `<username or
+organization name>.github.io` will be served on the web by GitHub web servers.
+And if you want your site to be visible under your own domain name you just need
+to specify it in a file called `CNAME` and the magic will happen.
+(Ok, there are [few other things to setup][cname] but it is soooo simple.)
+
+And our `CNAME` points to `ansperformance.eu`.
+
+
+### Continuous Integration and Deployment
+
+We use
+<a href="https://travis-ci.org/" class="footer-links-kudos">Travis CI<img src="/images/travisci-logo.png" width="22" height="22" alt="Travis CI"></a>
+to automatically
+
+* build every commit in our release branch (any branch name starting with
+  `2016<2 digit month number>-release`). These build can include tests to be
+  executed in order to garantee a certain level of quality...
+
+* build every `master` branch commit **and if successful** (and the commit is
+  properly tagged) deploy the generated site.
+  This is a way to publish our releases and make them available on the Internet.
+  (*Less work for the Humans more boring work for the Machines*)
+
+
+
+[git]: <https://git-scm.com/> "git"
+[jk]: <https://jekyllrb.com/> "Jekyll"
+[hugo]: <https://gohugo.io/> "Hugo"
+[jkplugs]: <https://jekyllrb.com/docs/plugins/> "Jekyll plugins"
+[ghpages]: <https://pages.github.com/> "GitHub Pages"
+[ghorg]: <https://github.com/blog/674-introducing-organizations> "GitHub Organizations blog post"
+[cfg]: <https://github.com/euctrl-pru/website/blob/master/_config.yml> "Our config.yml file"
+[gems]: <https://github.com/euctrl-pru/website/blob/master/Gemfile> "Our Gemfile file"
+[cname]: <https://help.github.com/articles/quick-start-setting-up-a-custom-domain/> "Custom domain setup for GitHub Pages"
+[ghpages-plugins]: <https://help.github.com/enterprise/2.6/user/articles/adding-jekyll-plugins-to-a-github-pages-site/> "Adding GitHub Pages plugins"

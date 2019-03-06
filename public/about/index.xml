@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>About on PRU Portal</title>
+    <title>About on A Hugo website</title>
     <link>/about/</link>
-    <description>Recent content in About on PRU Portal</description>
+    <description>Recent content in About on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 05 May 2016 00:00:00 +0000</lastBuildDate>
@@ -48,7 +48,7 @@ The information does not necessarily reflect the official views or policy of EUR
       
       <guid>/about/howbuilt/</guid>
       <description>This portal is designed and built using the following principles:
- everything has to be version controlled adopt KISS principle: Keep It Simple and Stupid. build a static website use open source tools whenever possible  Open source/Free tools and services we use  git : a distributed version control system. Hugo : a static site generator. D3 : a JavaScript library for producing dynamic, interactive data visualizations in web browsers.</description>
+everything has to be version controlledadopt KISS principle: Keep It Simple and Stupid.build a static websiteuse open source tools whenever possibleOpen source/Free tools and services we usegit : a distributed version control system.Hugo : a static site generator.D3 : a JavaScript library for producing dynamic, interactive data visualizations in web browsers.</description>
     </item>
     
     <item>
@@ -58,7 +58,7 @@ The information does not necessarily reflect the official views or policy of EUR
       
       <guid>/about/todo/</guid>
       <description>This is what needs to be checked for full migration to Hugo:
- re-add search box in nav paginatilast 5 or so sidebar menu navigation for PRU Quaterly, see Hugo dos in github style header, fonts,… anti-spammer subscriber fix table extent in data download page fix links to XLS files in data download table clean dashboard layout, i.e. google charst, pym.js,… fixed nav bar dataset HFE: fix Pym iframe height fix “APT DLY filter and CSV download” link, http://localhost:8000/reference/dataset/airport-arrival-atfm-delay/ in http://localhost:8000/reference/dataset/airport-arrival-atfm-delay/ should ‘crt_ertfltsMM_15.</description>
+re-add search box in navpaginatilast 5 or sosidebar menu navigation for PRU Quaterly, see Hugo dos in githubstyle header, fonts,…anti-spammer subscriberfix table extent in data download pagefix links to XLS files in data download tableclean dashboard layout, i.e. google charst, pym.js,…fixed nav bardataset HFE: fix Pym iframe heightfix “APT DLY filter and CSV download” link, http://localhost:8000/reference/dataset/airport-arrival-atfm-delay/ in http://localhost:8000/reference/dataset/airport-arrival-atfm-delay/should ‘crt_ertfltsMM_15.</description>
     </item>
     
   </channel>
