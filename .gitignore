@@ -15,4 +15,6 @@ vendor
 .bundle
 .Rproj.user
 .Rhistory
-public/
+blogdown
+public
+Thumbs.db

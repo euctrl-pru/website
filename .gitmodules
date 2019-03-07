@@ -1,0 +1,3 @@
+[submodule "themes/pru-theme"]
+	path = themes/pru-theme
+	url = https://github.com/espinielli/pru-theme
