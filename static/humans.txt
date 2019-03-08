@@ -1,6 +1,3 @@
----
----
-
 /* TEAM */
 Creator: Enrico Spinielli
 Contact: enrico.spinielli [at] eurocontrol.int
@@ -17,8 +14,3 @@ Location: Brussels, Belgium
 
 /* THANKS */
 To the Internet and the Long Tail.
-
-/* SITE */
-Last Update: {{ site.time | date: '%F' }}
-Standards: {{ site.tools.standards }}
-Software: {{ site.tools.software }}

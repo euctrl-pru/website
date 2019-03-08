@@ -19,7 +19,11 @@ title = "PRU Portal"
 theme = "pru-theme"
 googleAnalytics = ""
 
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$",
+ignoreFiles = [
+  "\\.Rmd$",
+  "\\.Rmarkdown$",
+  "_files$",
+  "_cache$",
   "src$"
 ]
 
@@ -40,29 +44,23 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$",
 [menu]
   [[menu.nav]]
     name = "Home"
-    pre = "home"
+    pre = "<i data-feather='home'></i>"
     url = "/"
     weight = 1
   [[menu.nav]]
-    name = "Blog"
-    pre = "edit"
+    name = "News"
+    pre = "<i data-feather='edit'></i>"
     url = "/post/"
     weight = 2
   [[menu.nav]]
     name = "Tags"
-    pre = "tag"
+    pre = "<i data-feather='tag'></i>"
     url = "/tags/"
     weight = 3
   [[menu.nav]]
     name = "About"
-    pre = "smile"
     url = "/about/"
     weight = 4
-  [[menu.nav]]
-    name = "RSS"
-    pre = "rss"
-    url = "/index.xml"
-    weight = 5
 
 [params]
   includeBootstrapJs = false
@@ -70,5 +68,19 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$",
   containerMaxWidth = "700px"
   dateFormat = "Jan 2, 2006"
   homeText = "Welcome to the Vanilla theme demo. Have a look around. Maybe even eat some ice cream."
-  footerText = "Made with [Hugo](https://gohugo.io/) & [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)"
+  footerText = "Made with [Hugo](https://gohugo.io/) & [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme) | [<i data-feather='rss'></i>RSS](/index.xml)"
   hideFooter = false
+  [params.logo]
+    url = "images/euctrl-logo-noname.png"
+    height = 30
+    alt = "PRU"
+
+
+# see https://matjaz.it/hugo-power-user-make-it-web-friendly-1/
+enableRobotsTXT = true
+
+# see https://matjaz.it/hugo-power-user-make-it-web-friendly-1/
+# TODO: set Google Webmaster tools
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
