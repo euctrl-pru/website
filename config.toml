@@ -65,7 +65,7 @@ ignoreFiles = [
 [params]
   includeBootstrapJs = false
   showActiveNav = true
-  containerMaxWidth = "700px"
+  containerMaxWidth = "960px"
   dateFormat = "Jan 2, 2006"
   homeText = "Welcome to the Vanilla theme demo. Have a look around. Maybe even eat some ice cream."
   footerText = "Made with [Hugo](https://gohugo.io/) & [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme) | [<i data-feather='rss'></i>RSS](/index.xml)"
