@@ -19,6 +19,9 @@ title = "PRU Portal"
 theme = "pru-theme"
 googleAnalytics = ""
 
+customCSS = ["css/supplement.css"]
+
+
 ignoreFiles = [
   "\\.Rmd$",
   "\\.Rmarkdown$",
@@ -67,8 +70,6 @@ ignoreFiles = [
   showActiveNav = true
   containerMaxWidth = "960px"
   dateFormat = "Jan 2, 2006"
-  homeText = "Welcome to the Vanilla theme demo. Have a look around. Maybe even eat some ice cream."
-  footerText = "Made with [Hugo](https://gohugo.io/) & [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme) | [<i data-feather='rss'></i>RSS](/index.xml)"
   hideFooter = false
   [params.logo]
     url = "images/euctrl-logo-noname.png"

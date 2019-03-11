@@ -52,6 +52,6 @@ The PRU updates this data on behalf of the European Commission on a quarterly ba
 <img src="/images/european-ans-performance-review.jpg" class="img-responsive" alt="European ANS Performance">
 </div>
 <br>
-<div class="row">
+<div class="row" style="display: inherit">
 {{% subscribe-button %}}
 </div>
