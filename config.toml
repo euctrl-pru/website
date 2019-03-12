@@ -9,7 +9,7 @@ baseurl = "/"
 #--------------- PRODUCTION ---------------
 # remember ending '/'
 # baseurl = "http://ansperformance.eu/"
-# publishDir = "../pru-portal-generated"
+publishDir = "public/"
 #-----------------------------------------
 
 
