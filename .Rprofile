@@ -8,6 +8,5 @@ options(
   blogdown.ext = ".Rmd",
   blogdown.yaml.empty = TRUE,
   blogdown.new_bundle = TRUE,
-  blogdown.title_case = TRUE,
-  blogdown.publishDir = '../pru-portal-generated'
+  blogdown.title_case = TRUE
 )
