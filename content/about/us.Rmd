@@ -2,6 +2,9 @@
 title: "About us"
 date: "2016-05-05"
 layout: default
+menu:
+  main:
+    parent: 'about'
 ---
 
 The PRU is responsible for monitoring and reviewing the performance of the Pan-European ANS system

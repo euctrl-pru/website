@@ -47,13 +47,13 @@ ignoreFiles = [
 [menu]
   [[menu.nav]]
     name = "Home"
-    pre = "<i data-feather='home'></i>"
+    pre = '<i class="fas fa-home fa-lg"></i>'
     url = "/"
     weight = 1
   [[menu.nav]]
     name = "Data"
-    pre = "<i data-feather='database'></i>"
-    url = "/post/"
+    pre = "<i class='fas fa-database fa-lg'></i>"
+    url = "/data/"
     weight = 2
   [[menu.nav]]
     name = "References"
