@@ -51,14 +51,14 @@ ignoreFiles = [
     url = "/"
     weight = 1
   [[menu.nav]]
-    name = "News"
-    pre = "<i data-feather='edit'></i>"
+    name = "Data"
+    pre = "<i data-feather='database'></i>"
     url = "/post/"
     weight = 2
   [[menu.nav]]
-    name = "Tags"
-    pre = "<i data-feather='tag'></i>"
-    url = "/tags/"
+    name = "References"
+    pre = "<i data-feather='book'></i>"
+    url = "/reference/"
     weight = 3
   [[menu.nav]]
     name = "About"
