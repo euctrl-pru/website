@@ -1,0 +1,6 @@
+---
+title: "European Legislation for ANS Performance"
+layout: default
+nocite: '@*'
+bibliography: ../../static/bib/legislation.bib
+---

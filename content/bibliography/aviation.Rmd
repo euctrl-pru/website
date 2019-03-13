@@ -1,0 +1,6 @@
+---
+layout: default
+title: (Little) Bibliography for Aviation 
+bibliography: [../../static/bib/aviation.bib]
+nocite: '@*'
+---

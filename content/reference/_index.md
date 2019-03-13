@@ -7,5 +7,6 @@ categories:
 * [Acronyms](/acronym/)
 * [ANSP's](/ansp/)
 * [Datasets](/reference/dataset/)
-* [Definitions](/reference/definition/)
+* [Definitions](/definition/)
 * [Methodology](/reference/methodology/)
+* [Bibliography](/bibliography/)
