@@ -4,8 +4,8 @@ categories:
   - metadata
 ---
 
-* [Acronyms](/reference/acronym/)
-* [ANSP's](/reference/ansp/)
+* [Acronyms](/acronym/)
+* [ANSP's](/ansp/)
 * [Datasets](/reference/dataset/)
 * [Definitions](/reference/definition/)
 * [Methodology](/reference/methodology/)
