@@ -1,10 +1,10 @@
 ---
-layout: default
 title: Modification of the ATFM delay calculation (NM release 20.0)
-subtitle: Different versions of ATFM delay computation
-excerpt: Performance Review Unit Metadata Definitions.
-keywords: ATFM, metrics, metadata, performance, data, statistics, economics, air transport, flights, europe, 
-needsMath: true
+categories:
+  - metadata
+  - methodology
+type: methodology
+slug: atfm-delay-calculation
 ---
 <style>
 img + em {
@@ -16,8 +16,6 @@ content: ' ';
 display: block;
 }
 </style>
-
-# {{ page.title }}
 
 
 ## Background
@@ -43,18 +41,18 @@ in more detail in the relevant [NM Release presentation][NM20-rn].
 
 ## Post Operations Performance Adjustment Process
 
-The Post Ops Performance Adjustment Process allows operational stakeholders to notify 
-national and European authorities of issues that relate to ATFM delay measurement, 
-classification and assignment. It is a means of enhancing operational ATFM delay data 
-used in the performance scheme (Regulation (EU) 390) – and thus a means of compliance 
-with Article 21(3). 
+The Post Ops Performance Adjustment Process allows operational stakeholders to notify
+national and European authorities of issues that relate to ATFM delay measurement,
+classification and assignment. It is a means of enhancing operational ATFM delay data
+used in the performance scheme (Regulation (EU) 390) – and thus a means of compliance
+with Article 21(3).
 
 More information is available from the [respective NM website][post-ops].
 
 ## Impact on this webpage
 
-The ATFM delay related graphs shown on this web page and data in the 
-[download area]({{site.url}}/data/performancearea/) take the change in 
+The ATFM delay related graphs shown on this web page and data in the
+[download area](/data/performancearea/) take the change in
 methodology as of April 2016 into account.
 
 In the ATFM delay file downloads, the computation method is indicated in the column "ATFM version"
@@ -66,5 +64,5 @@ In the ATFM delay file downloads, the computation method is indicated in the col
 | Version 3    	| Yes (as of 04 April 2016) 	| Yes                 	|
 
 
-[NM20-rn]: <{{"/references/library/NM_20_FB750_Delay_Calculation_improvements.pdf" | prepend: site.baseurl | prepend: site.url }}> "NM 20 Release Notes: Delay calculation improvements"
-[post-ops]: <http://www.eurocontrol.int/publications/post-operations-performance-adjustment-process> "Post Operations Performance Adjustment Process"
+[NM20-rn]: /library/NM_20_FB750_Delay_Calculation_improvements.pdf "NM 20 Release Notes: Delay calculation improvements"
+[post-ops]: http://www.eurocontrol.int/publications/post-operations-performance-adjustment-process "Post Operations Performance Adjustment Process"

@@ -16,8 +16,8 @@ The PLI is a measure for the time the airport operates traffic peaks. The [BLI][
 ## See Also
 
 * [Basic Load Index (BLI)][bli].
-* [Airport Capacity Utilisation][acu] page in the [Methodology](/reference/methodology/) section.
+* [Airport Capacity Utilisation][acu] page in the [Methodology](/methodology/) section.
 * Schinwald, and Hornung (2014) "_Methodical Approach to determine the capacity utilisation of airports: the development of the European Air Traffic System between 2008 and 2012_", Deutscher Luft- und Raumfahrtkongress 2014, DocumentID: 340138, {{% a_blank "PDF" "http://www.dglr.de/publikationen/2014/340138.pdf" %}}
 
-[acu]: /reference/methodology/airport_capacity_utilisation/ "Airport Capacity Utilisation"
+[acu]: {{< relref "/methodology/airport-capacity-utilisation.html" >}} "Airport Capacity Utilisation"
 [bli]: {{< relref "bli.md" >}} "Basic Load Index"

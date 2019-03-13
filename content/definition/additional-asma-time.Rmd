@@ -17,12 +17,17 @@ Minute.
 Let
 
 * $c$, a combination of aircraft class, ASMA sectors and arrival runway, as
-  described in the technical note for [unimpeded ASMA time](/reference/definition/unimpeded-asma-time/),
+  described in the technical note for
+  [unimpeded ASMA time](`r htmltools::HTML("{{< relref \"/definition/unimpeded-asma-time.md\" >}}")`),
 * $f(c)$, a flight characterised by a combination $c$,
-* $\textrm{AcASMA}(f(c))$, the actual [ASMA transit time](/reference/definition/asma-transit-time/) for a flight $f(c)$, i.e. the
+* $\textrm{AcASMA}(f(c))$, the actual
+  [ASMA transit time](`r htmltools::HTML("{{< relref \"/definition/asma-transit-time.md\" >}}")`)
+  for a flight $f(c)$, i.e. the
   elapsed time between the last entry of the flight $f(c)$ in its ASMA sector and
-  its actual landing time ([ALDT](/reference/acronym/aldt.html),
-* $\textrm{UASMA}(c)$, the [unimpeded ASMA time](/reference/definition/unimpeded-asma-time/) for a combination $c$.
+  its actual landing time ([ALDT](`r htmltools::HTML("{{< relref \"/acronym/aldt.md\" >}}")`)),
+* $\textrm{UASMA}(c)$, the
+  [unimpeded ASMA time](`r htmltools::HTML("{{< relref \"/definition/unimpeded-asma-time.md\" >}}")`)
+  for a combination $c$.
 
 The *additional ASMA time*, $\textrm{AdASMA}(f(c))$, is calculated for each flight $f(c)$
 as the difference between the actual ASMA transit time $\textrm{AcASMA}(f(c))$ of the
@@ -42,4 +47,4 @@ $c$ at that airport with their probability of occurrence.
 
 ## See also
 
-[Additional ASMA time methodology](/reference/methodology/additional-asma-time-pi.html)
+[Additional ASMA time methodology](`r htmltools::HTML("{{< relref \"/methodology/additional-asma-time-pi\" >}}")`)

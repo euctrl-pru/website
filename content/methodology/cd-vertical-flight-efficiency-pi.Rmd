@@ -1,12 +1,28 @@
 ---
-layout: default
 title: Vertical Flight Efficiency during Climb and Descent
-subtitle: Methodology
-excerpt: Performance Review Unit Metadata Definitions.
-keywords: vfe, vertical flight efficiency, airport, metrics, metadata, performance, data, statistics, economics, air transport, flights, europe, cost efficiency
-needsMath: true
+categories:
+  - metadata
+  - methodology
+type: methodology
+bibliography: ["../../static/bib/aviation.bib"]
+link-citations: true
+slug: cd-vertical-flight-efficiency-pi
 ---
-# {{ page.title }}
+
+```{r echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  fig.env = 'figure',
+  fig.align = 'center',
+  fig.width = 6,
+  fig.asp = 0.618,  # 1 / phi
+  fig.show = "hold",
+  out.width = "100%"
+)
+```
+
 
 This document provides a technical description on the methodology used in the analysis of the
 vertical profile of the aircraft’s trajectory during climb and descent phases of flights.
@@ -17,13 +33,12 @@ to find out reasons for particular observations.
 
 ## Acronyms and terminology
 
+Table: (\#tab:acronyms) Acronyms and terminology
+
 | Term  | Definition |
 |-------|------------|
 | [CPF][cpf]   | Correlated Position reports for a Flight |
 | [PRISME][prisme] | Pan-European Repository of Information Supporting the Management of EATM |
-
-{:.table-caption}
-Table 1: Acronyms and terminology
 
 
 ## Methodology
@@ -48,10 +63,12 @@ Finally, the results are calculated and processed for presentation.
 This process is visualised in Figure 1.
 
 
-{% figure caption:"Figure 1: Different steps of the analysis" class:"img-responsive center-block" %}
-{% img vfe-cd-figure-001.png magick:resize:800x400 alt:'Different stesp of the analysis' %}
-{% endfigure %}
+(ref:vfe-cd-figure-001) Different steps of the analysis.
 
+
+```{r pli-bli, out.width=c('800px', '400px'), fig.cap='(ref:vfe-cd-figure-001)'}
+knitr::include_graphics("/images/vfe-cd-figure-001.png")
+```
 
 
 ### Loading of the trajectories information
@@ -72,8 +89,7 @@ the Top of Descent (ToD).
 Optimal climb and descent parts until/from the cruising altitude generally
 require less than 200NM of track distance from/until the airport, especially
 when the cost index is low or high for respectively the climb and
-descent {% cite airbus-cost-index --file aviation %},
-{% cite sam-thesis --file aviation %}.
+descent [@airbus-cost-index; @sam-thesis].
 With this in mind, the analysis is limited to the parts of the trajectories
 within a 200NM radius around the departure/arrival airport.
 This is to avoid including into the analysis climbs during the cruise phase
@@ -117,7 +133,7 @@ ToC-D200 are the same.
 
 The climb phase is considered to start at 3000 feet AGL since the Noise
 Abatement Departure Procedures (NADP) defined by ICAO end at this altitude
-{% cite icao:8168 --file aviation %}.
+[@icao:8168].
 
 Overall, the part of the trajectory considered for the analysis goes from 3000
 feet AGL (included) until ToC-D200.
@@ -151,11 +167,14 @@ ToD-A200 until 1800 feet AGL (included).
 In the climb or descent parts of the trajectories the level segments should be
 determined. The trajectory part between two points on that trajectory is
 considered as level when the trajectory stays within a fictional window as can
-be seen in Figure 2.
+be seen in Figure \@ref(fig:vfe-cd-figure-002).
 
-{% figure caption:"Figure 2: Rolling window for level segment detection." class:"img-responsive center-block" %}
-{% img vfe-cd-figure-002.png magick:resize:800x400 alt:'Rolling window for level segment detection.' %}
-{% endfigure %}
+(ref:vfe-cd-figure-002) Rolling window for level segment detection.
+
+
+```{r vfe-cd-figure-002, out.width=c('500px', '300px'), fig.cap ='(ref:vfe-cd-figure-002)'}
+knitr::include_graphics("/images/vfe-cd-figure-002.png")
+```
 
 
 This window has temporal and altitude dimensions related to a specific vertical
@@ -165,7 +184,9 @@ After consultation in the CCO/CDO Task Force, this vertical velocity is chosen
 to be 300 feet per minute. Consequently, the dimensions of the window have to
 adhere to the following relationship:
 
-\\[\frac{Y}{X} = 300 \  \textrm{feet per minute} \\]
+$$
+\frac{Y}{X} = 300 \  \textrm{feet per minute}
+$$
 
 E.g. when a temporal size of 10 seconds is used, the window is 50 feet high.
 In this case the altitude information of the climb or descent trajectory is
@@ -225,58 +246,80 @@ Operations) or CDO (Continuous Descent Operations). The fact whether a
 flight is considered as being CCO or CDO depends on the allowed amount of
 level segments and their allowed lengths or durations.
 
-The formulas used for the calculation of all these results are shown in Table 3.
+The formulas used for the calculation of all these results are shown in Table \@ref(tab:formulas).
+
+Table: (\#tab:formulas) Formulas used for the calculation of the results
 
 
-| Result |  Formula                                             |
-|--------|------------------------------------------------------|
-| Total distance flown by flight $f$ during the climb/descent | \\[ D_f^+ = \begin{cases} D_{3000, f} - D_{\textrm{TOC} - \textrm{CCO}, f}, & \text{climbs} \\\\\\ D_{\textrm{TOD} - \textrm{CDO}, f} - D_{1800, f}, & \text{descents} \end{cases} \\] |
-| Percentage of distance flown level during the climb/descent | \\[ D_{\textrm{perc}} = \frac{ \sum_{f} D_f}{\sum_{f} D_f^+} \cdot 100 \\] |
-| Average value of the distance flown level per flight | \\[ D_{\textrm{avg}} = \frac{ \sum_{f} D_f}{n} \\] |
-| Median value of the level distance | \\[  D_{med} = \begin{cases} D_m & \text{$n$ is odd, $m = (n+1)/2$} \\\\\\ \frac{D_m + D_{m+1}}{2}, & \text{$n$ is even, $m = n/2$} \end{cases} \\] |
-| Total time flown by flight $f$ during the climb/descent | \\[ T_f^+ = \begin{cases} T_{3000, f} - T_{\textrm{TOC} - \textrm{CCO}, f}, & \text{climbs} \\\\\\ T_{\textrm{TOD} - \textrm{CDO}, f} - T_{1800, f}, & \text{descents} \end{cases} \\] |
-| Percentage of time flown level during the climb/descent | \\[ T_{\textrm{perc}} = \frac{\sum_f T_f}{\sum_f T_f^+} \\] |
-| Average time flown level per flight | \\[ T_{\textrm{avg}} = \frac{\sum_f T_f}{n} \\]|
-| Median value of the level time | \\[  T_{med} = \begin{cases} T_m & \text{$n$ is odd, $m = (n+1)/2$} \\\\\\ \frac{T_m + T_{m+1}}{2}, & \text{$n$ is even, $m = n/2$} \end{cases} \\] |
-| Average number of level segments per flight | \\[  L_{\textrm{avg}} = \frac{\sum_f L_f}{n} \\] |
-| Median value of the number of level segments | \\[  L_{med} = \begin{cases} \displaystyle L_m & \text{$n$ is odd, $m = (n+1)/2$} \\\\\\ \frac{L_m + L_{m+1}}{2}, & \text{$n$ is even, $m = n/2$} \end{cases} \\] |
-| Percentage of flights considered as CCO or CDO | \\[  P = \frac{n_0}{n} \cdot 100 \\] |
+|   Result                                                     |    Formula                      |
+|--------------------------------------------------------------|:--------------------------------|
+| Total distance flown by flight $f$ during the climb/descent  | (ref:total-flown-cd)            |
+| Percentage of distance flown level during the climb/descent  | (ref:perc-flown-level-cd)       |
+| Average value of the distance flown level per flight         | (ref:avg-flown-flight-level)    |
+| Median value of the level distance                           | (ref:median-level-dist)         |
+| Total time flown by flight $f$ during the climb/descent      | (ref:total-flown-flight-cd)     |
+| Percentage of time flown level during the climb/descent      | (ref:perc-flown-flight-level)   |
+| Average time flown level per flight                          | (ref:avg-time-flight-level)     |
+| Median value of the level time                               | (ref:median-time)               |
+| Average number of level segments per flight                  | (ref:avg-level-segs)            |
+| Median value of the number of level segments                 | (ref:median-level-segs)         |
+| Percentage of flights considered as CCO or CDO               | $$P = \frac{n_0}{n} \cdot 100$$ |
 
-{:.table-caption}
-Table 3: Formulas used for the calculation of the results
+
+(ref:total-flown-cd) $$D_f^+ = \begin{cases} D_{3000, f} - D_{\textrm{TOC} - \textrm{CCO}, f}, & \text{climbs} \\ D_{\textrm{TOD} - \textrm{CDO}, f} - D_{1800, f}, & \text{descents} \end{cases}$$
+
+(ref:perc-flown-level-cd) $$D_{\textrm{perc}} = \frac{ \sum_{f} D_f}{\sum_{f} D_f^+} \cdot 100$$
+
+(ref:avg-flown-flight-level) $$D_{\textrm{avg}} = \frac{ \sum_{f} D_f}{n}$$
+
+(ref:median-level-dist) $$D_{med} = \begin{cases} D_m & \text{$n$ is odd, $m = (n+1)/2$} \\ \frac{D_m + D_{m+1}}{2}, & \text{$n$ is even, $m = n/2$} \end{cases}$$
+
+
+(ref:total-flown-flight-cd) $$T_f^+ = \begin{cases} T_{3000, f} - T_{\textrm{TOC} - \textrm{CCO}, f}, & \text{climbs} \\ T_{\textrm{TOD} - \textrm{CDO}, f} - T_{1800, f}, & \text{descents} \end{cases}$$
+
+(ref:perc-flown-flight-level) $$T_{\textrm{perc}} = \frac{\sum_f T_f}{\sum_f T_f^+}$$
+
+(ref:avg-time-flight-level) $$T_{\textrm{avg}} = \frac{\sum_f T_f}{n}$$
+
+(ref:median-time) $$T_{med} = \begin{cases} T_m & \text{$n$ is odd, $m = (n+1)/2$} \\ \frac{T_m + T_{m+1}}{2}, & \text{$n$ is even, $m = n/2$} \end{cases}$$
+
+(ref:avg-level-segs) $$_{\textrm{avg}} = \frac{\sum_f L_f}{n}$$
+
+(ref:median-level-segs) $$L_{med} = \begin{cases} \displaystyle L_m & \text{$n$ is odd, $m = (n+1)/2$} \\ \frac{L_m + L_{m+1}}{2}, & \text{$n$ is even, $m = n/2$} \end{cases}$$
+
 
 With:
 
-| $n$                                  | Total number of flights considered in the analysis |
-| $n_0$                                | Number of flights considered as CCO or CDO |
-| $L_f$                                | Number of level segments for flight $f$ |
-| $D_f^{+}$                            | Total distance flown by flight $f$ during the climb/descent |
+| Symbol                               | Description                                                       |
+|--------------------------------------|-------------------------------------------------------------------|
+| $n$                                  | Total number of flights considered in the analysis                |
+| $n_0$                                | Number of flights considered as CCO or CDO                        |
+| $L_f$                                | Number of level segments for flight $f$                           |
+| $D_f^{+}$                            | Total distance flown by flight $f$ during the climb/descent       |
 | $D_f$                                | Total distance flown level by flight $f$ during the climb/descent |
-| $D_{3000, f}$                        | Track distance flown by flight $f$ when passing $3000$ feet AGL |
-| $D_{\textrm{TOC} - \textrm{CCO}, f}$ | Track distance flown by flight $f$ when passing TOC-CCO |
-| $D_{\textrm{TOD} - \textrm{CDO}, f}$ | Track distance flown by flight $f$ when passing TOD-CDO |
-| $D_{1800, f}$                        | Track distance flown by flight $f$ when passing 1800 feet AGL |
-| $T_f^{+}$                            | Total time flown by flight $f$ during the climb/descent |
-| $T_f$                                | Total time flown level by flight $f$ during the climb/descent |
-| $T_{3000, f}$                        | Time at which flight $f$ passes $3000$ feet AGL |
-| $T_{\textrm{TOC} - \textrm{CCO}, f}$ | Time at which flight $f$ passes TOC-CCO |
-| $T_{\textrm{TOD} - \textrm{CDO}, f}$ | Time at which flight $f$ passes TOD-CDO |
-| $T_{1800, f}$                        | Time at which flight $f$ passes $1800$ feet AGL |
+| $D_{3000, f}$                        | Track distance flown by flight $f$ when passing $3000$ feet AGL   |
+| $D_{\textrm{TOC} - \textrm{CCO}, f}$ | Track distance flown by flight $f$ when passing TOC-CCO           |
+| $D_{\textrm{TOD} - \textrm{CDO}, f}$ | Track distance flown by flight $f$ when passing TOD-CDO           |
+| $D_{1800, f}$                        | Track distance flown by flight $f$ when passing 1800 feet AGL     |
+| $T_f^{+}$                            | Total time flown by flight $f$ during the climb/descent           |
+| $T_f$                                | Total time flown level by flight $f$ during the climb/descent     |
+| $T_{3000, f}$                        | Time at which flight $f$ passes $3000$ feet AGL                   |
+| $T_{\textrm{TOC} - \textrm{CCO}, f}$ | Time at which flight $f$ passes TOC-CCO                           |
+| $T_{\textrm{TOD} - \textrm{CDO}, f}$ | Time at which flight $f$ passes TOD-CDO                           |
+| $T_{1800, f}$                        | Time at which flight $f$ passes $1800$ feet AGL                   |
 
 
 
 
 
-[cpf]: <{{ "/references/acronym/cpf.html" | prepend: site.baseurl | prepend: site.url }}> "CPF"
-[prisme]: <{{ "/references/acronym/prisme.html" | prepend: site.baseurl | prepend: site.url }}> "PRISME"
+[cpf]: /reference/acronym/cpf/ "CPF"
+[prisme]: /reference/acronym/prisme/ "PRISME"
 
 ## Further Information
 
-For further information please refer also to {% cite cco-cdo-leaflet --file aviation %},
-{% cite icns-vfe --file aviation %},
-{% cite vertical-flight-efficiency-during-climb-and-descent_consultation --file aviation %}.
+For further information please refer also to
+[@cco-cdo-leaflet; @icns-vfe; @vertical-flight-efficiency-during-climb-and-descent_consultation].
+
 
 
 ## References
-
-{% bibliography --cited_in_order --file aviation %}

@@ -8,5 +8,5 @@ categories:
 * [ANSP's](/ansp/)
 * [Datasets](/reference/dataset/)
 * [Definitions](/definition/)
-* [Methodology](/reference/methodology/)
+* [Methodology](/methodology/)
 * [Bibliography](/bibliography/)
