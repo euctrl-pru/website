@@ -1,6 +1,5 @@
 ---
 title: To Do's
-layout: default
 ---
 
 This is what needs to be checked for full migration to Hugo:
