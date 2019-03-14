@@ -1,8 +1,6 @@
 ---
-layout: default
 title: Datasets in CSV format
 ---
-# {{ page.title }}
 
 PRU provides some relevant datasets in CSV format (compressed using [bzip2][bzip2]):
 
@@ -23,10 +21,9 @@ For example `ert_dly_ansp_2012.csv.bz2` refers to en-rote delays dataset with AN
 
 ## Dataset files
 
-{% directory path: data/csv exclude: .md$ %}
-* [{{ file.name }}]({{ file.url }})
-{% enddirectory %}
+{{< directoryindex path="/static/download/csv" pathURL="/download/csv" >}}
+
 
 [bzip2]: <https://en.wikipedia.org/wiki/Bzip2> "Wikipedia: bzip2"
-[ansp]: <{{ "/references/acronym/ansp.html"| prepend: site.baseurl | prepend: site.url }}> "ANSP"
-[ansps]: <{{ "/references/ANSP/"| prepend: site.baseurl | prepend: site.url }}> "ANSP's"
+[ansp]: {{< ref "/acronym/ansp.md" >}} "ANSP"
+[ansps]: {{< ref "../ansp/" >}} "ANSP's"
