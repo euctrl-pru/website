@@ -46,18 +46,13 @@ ignoreFiles = [
 # The value of pre is the icon name
 [menu]
   [[menu.nav]]
-    name = "Home"
-    pre = '<i class="fas fa-home fa-lg"></i>'
-    url = "/"
-    weight = 10
-  [[menu.nav]]
-    name = "Online Reporting Tools"
-    pre = "<i class='fas fa-book'></i>"
+    name = "Online Reporting"
+    pre = ""
     url = "/otools/"
     weight = 20
   [[menu.nav]]
     name = "Data"
-    pre = "<i class='fas fa-database fa-lg'></i>"
+    pre = ""
     url = "/data/"
     weight = 30
   [[menu.nav]]
@@ -72,7 +67,7 @@ ignoreFiles = [
 
 [params]
   includeBootstrapJs = false
-  showActiveNav = true
+  showActiveNav = false
   containerMaxWidth = "960px"
   dateFormat = "Jan 2, 2006"
   hideFooter = false
