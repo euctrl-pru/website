@@ -45,25 +45,44 @@ ignoreFiles = [
 # See https://feathericons.com/
 # The value of pre is the icon name
 [menu]
-  [[menu.nav]]
+  [[menu.main]]
     name = "Online Reporting"
     pre = ""
     url = "/otools/"
     weight = 20
-  [[menu.nav]]
+  [[menu.main]]
     name = "Data"
     pre = ""
     url = "/data/"
     weight = 30
-  [[menu.nav]]
+  [[menu.main]]
     name = "References"
     pre = "<i data-feather='book'></i>"
     url = "/reference/"
     weight = 40
-  [[menu.nav]]
+  [[menu.main]]
     name = "About"
+    identifier= "about"
     url = "/about/"
     weight = 50
+  [[menu.main]]
+    name = "About us"
+    url = "/about/us/"
+    identifier = "us"
+    parent = "about"
+    weight = 51
+  [[menu.main]]
+    name = "To Do's"
+    url = "/about/todo/"
+    identifier = "todo"
+    parent = "about"
+    weight = 54
+  [[menu.main]]
+    name = "How built"
+    url = "/about/howbuilt/"
+    identifier = "howbuilt"
+    parent = "about"
+    weight = 55
 
 [params]
   includeBootstrapJs = false
