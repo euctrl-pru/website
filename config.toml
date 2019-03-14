@@ -76,6 +76,14 @@ ignoreFiles = [
     height = 30
     alt = "PRU"
 
+  [params.owner]
+    name = "European Organisation for the Safety of Air Navigation (EUROCONTROL)"
+    shortname = "EUROCONTROL"
+    location = "Brussels, Belgium"
+    twitter = "eurocontrol"
+    github =  "euctrl-pru"
+    email = "PRU-Support@eurocontrol.int"
+
 
 # see https://matjaz.it/hugo-power-user-make-it-web-friendly-1/
 enableRobotsTXT = true
