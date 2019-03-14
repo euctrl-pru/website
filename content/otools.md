@@ -1,5 +1,5 @@
 ---
-title: Online reporting tools
+title: PRU Online reporting tools
 aliases:
     - /data/otools/
 ---
@@ -30,7 +30,6 @@ th, td {
 }
 </style>
 
-## PRU online reporting tools
 
 Following the successful [vertical flight efficiency workshop in November 2018][vfews],
 the PRU has developed online tools enabling interested stakeholders to get tailored
