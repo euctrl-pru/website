@@ -55,38 +55,93 @@ ignoreFiles = [
     pre = ""
     url = "/data/"
     weight = 30
+
   [[menu.main]]
     name = "References"
-    pre = "<i data-feather='book'></i>"
+    pre = ""
     url = "/reference/"
+    identifier = "references"
     weight = 40
+  [[menu.main]]
+    name = "PRR"
+    url = "https://www.eurocontrol.int/prc/publications#field-tabs-tab-0"
+    identifier = "prr"
+    parent = "references"
+    weight = 1
+  [[menu.main]]
+    name = "ACE"
+    url = "https://www.eurocontrol.int/prc/publications#field-tabs-tab-1"
+    identifier = "ace"
+    parent = "references"
+    weight = 2
+  [[menu.main]]
+    name = "Studies"
+    url = "/study/"
+    identifier = "study"
+    parent = "references"
+    weight = 3
+  [[menu.main]]
+    name = "divider1"
+    parent = "references"
+    weight = 4
+  [[menu.main]]
+    name = "Methodology"
+    url = "/methodology/"
+    identifier = "methodology"
+    parent = "references"
+    weight = 5
+  [[menu.main]]
+    name = "Acronyms"
+    url = "/acronym/"
+    parent = "references"
+    weight = 7
+  [[menu.main]]
+    name = "Definitions"
+    url = "/definition/"
+    parent = "references"
+    weight = 9
+  [[menu.main]]
+    name = "Bibliography"
+    url = "/bibliography/"
+    parent = "references"
+    weight = 11
+  [[menu.main]]
+    name = "divider2"
+    parent = "references"
+    weight = 15
+  [[menu.main]]
+    name = "ICAO GANP"
+    url = "https://www4.icao.int/ganpportal/"
+    parent = "references"
+    weight = 17
+
   [[menu.main]]
     name = "About"
     identifier= "about"
     url = "/about/"
     weight = 50
   [[menu.main]]
-    name = "About us"
+    name = "About PRU"
     url = "/about/us/"
-    identifier = "us"
+    identifier = "pru"
     parent = "about"
-    weight = 51
+    weight = 1
   [[menu.main]]
-    name = "To Do's"
-    url = "/about/todo/"
-    identifier = "todo"
+    name = "About PRC"
+    url = "/about/prc/"
+    identifier = "prc"
     parent = "about"
-    weight = 54
+    weight = 4
   [[menu.main]]
-    name = "How built"
-    url = "/about/howbuilt/"
-    identifier = "howbuilt"
+    name = "Disclaimer"
+    url = "/about/disclaimer/"
+    identifier = "disclaimer"
     parent = "about"
-    weight = 55
+    weight = 10
 
 [params]
   includeBootstrapJs = false
-  showActiveNav = false
+  showActiveNav = true
   containerMaxWidth = "960px"
   dateFormat = "Jan 2, 2006"
   hideFooter = false

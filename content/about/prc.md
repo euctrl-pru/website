@@ -5,13 +5,13 @@ permalink: /about/prc/
 ---
 
 
-# {{ page.title }}
-
 The Performance Review Commission (PRC) was established in 1998 by EUROCONTROL’s Permanent Commission. It provides objective information and independent advice to EUROCONTROL’s governing bodies on European air traffic management (ATM) performance, based on extensive research, data analysis and consultation with stakeholders. Its purpose is "to ensure the effective management of the European air traffic management System through a strong, transparent and independent performance review," as stated in Article 1 of the PRC Terms of Reference and Rules of Procedure.
+
 
 ## Members
 
 The PRC consists of up to seven members, who are appointed on the basis of independence, ability, competence, experience and professional reputation in the fields of air traffic management, safety or economic regulation.
+
 
 ## Deliverables
 

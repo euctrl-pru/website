@@ -1,8 +1,5 @@
 ---
 title: "About us"
-menu:
-  main:
-    parent: 'about'
 ---
 
 The PRU is responsible for monitoring and reviewing the performance of the Pan-European ANS system
