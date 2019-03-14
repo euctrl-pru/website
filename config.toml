@@ -46,6 +46,62 @@ ignoreFiles = [
 # The value of pre is the icon name
 [menu]
   [[menu.main]]
+    name = "Analysis"
+    identifier = "dashboard"
+    pre = ""
+    url = "/dashboard/"
+    weight = 10
+  [[menu.main]]
+    name = "PRC Quaterly"
+    url = ""
+    identifier = "prcq"
+    parent = "dashboard"
+    weight = 1
+  [[menu.main]]
+    name = "Safety"
+    url = ""
+    identifier = "safety"
+    parent = "dashboard"
+    weight = 5
+  [[menu.main]]
+    name = "Traffic"
+    url = ""
+    identifier = "traffic"
+    parent = "dashboard"
+    weight = 10
+  [[menu.main]]
+    name = "Capacity"
+    url = ""
+    identifier = "capacity"
+    parent = "dashboard"
+    weight = 15
+  [[menu.main]]
+    name = "Environment"
+    url = ""
+    identifier = "environment"
+    parent = "dashboard"
+    weight = 20
+  [[menu.main]]
+    name = "ACE dashboard"
+    url = "https://www.eurocontrol.int/ACE/ACE-Home.html"
+    identifier = "ace-dashboard"
+    parent = "dashboard"
+    weight = 25
+  [[menu.main]]
+    name = "SU dashboard"
+    url = "https://www.eurocontrol.int/ServiceUnits/Dashboard/"
+    identifier = "su-dashboard"
+    parent = "dashboard"
+    weight = 30
+  [[menu.main]]
+    name = "SES Portal"
+    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
+    url = "https://www.eurocontrol.int/prudata/dashboard/vis/2018/"
+    identifier = "ses-portal"
+    parent = "dashboard"
+    weight = 35
+
+  [[menu.main]]
     name = "Online Reporting"
     pre = ""
     url = "/otools/"
@@ -111,6 +167,7 @@ ignoreFiles = [
     weight = 15
   [[menu.main]]
     name = "ICAO GANP"
+    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
     url = "https://www4.icao.int/ganpportal/"
     parent = "references"
     weight = 17
