@@ -52,7 +52,7 @@ function drawVisualization()
                 3: {type:'bars',color:'#B9CDE5', targetAxisIndex: 0},
                 4: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 0}
               },
-          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 10},},
+          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 10}, title: 'Airports sorted by movements (* A-CDM airport)'},
           vAxis: {format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
         },
     view: {'columns': [0,1,2,3,4,5]}
@@ -69,7 +69,7 @@ function drawVisualization()
           series: {
                 0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0}
               },
-          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}},
+          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}, title: 'Airports sorted by movements (* A-CDM airport)'},
           vAxis: {title: 'minutes per arrival', format: '0.0', minValue: 0.0, titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
         },
     view: {'columns': [0,1]}
@@ -89,7 +89,7 @@ function drawVisualization()
                 0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0},
                 1: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 0}
               },
-          hAxis: {slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}, },
+          hAxis: {slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}, title: 'Airports sorted by movements (* A-CDM airport)' },
           vAxis: {format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
         },
     view: {'columns': [0,2,1]}
@@ -193,10 +193,10 @@ google.setOnLoadCallback(drawVisualization)
    </thead>
    <tbody>
       <tr class = "active">
-         <td>Jan-Sep</td>
+         <td>Jan-Dec</td>
          <td><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL area</a></td>
          <td>Quarterly</td>
-         <td>22-Oct-2018</td>
+         <td>22-Mar-2019</td>
           <td>
           <a href='{{"/references/acronym/nm-cfmu.html"| prepend: site.baseurl | prepend: site.url }}'>NM</a>,
           <a href='{{"/references/acronym/pru.html"   | prepend: site.baseurl | prepend: site.url }}'>PRU</a>,
@@ -219,7 +219,7 @@ This section analyses ANS-related inefficiencies on the arrival flow at the top 
     <div id="crt_apt4"></div>
 </div>
 <div class="col-sm-10">
-    <h5>Airport arrival ATFM delay by airport - 2018 (Jan-Sep) vs. 2017 (Jan-Sep)</h5>
+    <h5>Airport arrival ATFM delay by airport - 2018 vs. 2017</h5>
     <div id="crt_apt5"></div>
 </div>
   </div><br>
@@ -238,7 +238,7 @@ This section analyses ANS-related inefficiencies on the arrival flow at the top 
     <div id="crt_apt6"></div>
 </div>
 <div class="col-sm-10">
-    <h5><a href='{{"/references/definition/additional_asma_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional ASMA time by airport</a> 2018 (Jan-Aug)</h5>
+    <h5><a href='{{"/references/definition/additional_asma_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional ASMA time by airport</a> 2018</h5>
     <div id="crt_apt7"></div>
 </div>
   </div><br>
@@ -260,7 +260,7 @@ This section analyses ANS-related inefficiencies on the departure flow at the to
     <div>no consistent time series available</div>
 </div>
 <div class="col-sm-10">
-    <h5><a href='{{"/references/definition/atc_pre-departure_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATC pre-departure delays by airport</a> 2018 (Jan-Aug)</h5>
+    <h5><a href='{{"/references/definition/atc_pre-departure_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATC pre-departure delays by airport</a> 2018</h5>
     <div id="crt_apt9"></div>
 </div>
   </div><br>
@@ -277,7 +277,7 @@ This section analyses ANS-related inefficiencies on the departure flow at the to
     <div id="crt_apt10"></div>
 </div>
 <div class="col-sm-10">
-    <h5><a href='{{"/references/definition/additional_taxi-out_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional taxi-out by airport</a> 2018 (Jan-Aug)</h5>
+    <h5><a href='{{"/references/definition/additional_taxi-out_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional taxi-out by airport</a> 2018</h5>
     <div id="crt_apt11"></div>
 </div>
   </div><br>
