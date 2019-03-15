@@ -15,7 +15,7 @@ function drawVisualization()
   var crt_eco1 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_eco1',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Tba2bYjXvy09-nvxM2BR7r2BYhSWR63F6NJroFmE8G4/edit?usp=sharing&sheet=eco&range=I1:M7',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Tba2bYjXvy09-nvxM2BR7r2BYhSWR63F6NJroFmE8G4/edit?usp=sharing&sheet=eco&range=I1:M8',
     options:{
         chartArea: {left: 80, top: 10, width:'70%',height:'80%'},
           titleTextStyle : {color: 'grey', fontSize: 12},
@@ -30,7 +30,7 @@ function drawVisualization()
           hAxis: {slantedTextAngle: 90,
               textStyle: {fontSize: 12}},
           vAxes:{
-              0:{ title:'Euro(2015) per composite flight hour'},
+              0:{ title:'Euro(2017) per composite flight hour'},
               1:{ title:'year on year (%)', titleTextStyle : {color: '#B89470', fontSize: 11}, textStyle:{color:'#B89470'}}
             }
         },
@@ -42,7 +42,7 @@ function drawVisualization()
  var crt_eco2 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_eco2',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Tba2bYjXvy09-nvxM2BR7r2BYhSWR63F6NJroFmE8G4/edit?usp=sharing&sheet=eco&range=A1:F6',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Tba2bYjXvy09-nvxM2BR7r2BYhSWR63F6NJroFmE8G4/edit?usp=sharing&sheet=eco&range=A1:F7',
     options: {
         chartArea: {left: 60, top: 10, width:'60%',height:'80%'},
         titleTextStyle : {color: '#1F1F2E', fontSize: 12},
@@ -85,7 +85,7 @@ function drawVisualization()
           hAxis: {slantedTextAngle: 45,
               textStyle: {fontSize: 12}},
           vAxes:{
-              0:{ title:'EUR(2015) per composite flight hour',titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}},
+              0:{ title:'EUR(2017) per composite flight hour',titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}},
               1:{ title:'share of delay costs (%)', titleTextStyle : {color: '#B89470', fontSize: 12}, textStyle:{color:'#B89470', fontSize: 12}}
             }
         },
