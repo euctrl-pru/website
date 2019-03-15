@@ -46,15 +46,14 @@
                      },
                      4: {
                         type: 'lines',
-                        color:'grey',
+                        color:'green',
                         lineWidth: 2,
                         pointSize: 4,
-                        lineDashStyle: [6, 3],
-                        pointShape:'diamond'
+                        
                      },
                      5: {
                         type: 'lines',
-                        color:'grey',
+                        color:'green',
                         lineWidth: 2,
                         pointSize: 4,
                         lineDashStyle: [6, 3],
@@ -75,7 +74,7 @@
                   textStyle: { fontSize: 11 }
                }
             },
-            view: { 'columns': [1, 2, 3, 6, 7, 8,9] }
+            view: { 'columns': [1, 2, 3, 6, 7, 8, 9] }
          }
       );
       crt_hfe_MM.draw();
