@@ -5,7 +5,7 @@
          {
             chartType: 'LineChart',
             containerId: 'crt_hfe_MM',
-            dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1KgOIBF93axvXD6ENQYvEsWHqnA8eW_RvGV4EQlGava4/edit?usp=sharing&sheet=HFE_MM&range=A1:H73&tq=where%20A%3D1',
+            dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1KgOIBF93axvXD6ENQYvEsWHqnA8eW_RvGV4EQlGava4/edit?usp=sharing&sheet=HFE_MM&range=A1:J73&tq=where%20A%3D1',
             options: {
                //'width': 500, 'height': 300,
                chartArea: { left: 85, top: 30, width: '55%' },
@@ -43,7 +43,24 @@
                         pointSize: 4,
                         lineDashStyle: [6, 3],
                         pointShape:'diamond'
+                     },
+                     4: {
+                        type: 'lines',
+                        color:'grey',
+                        lineWidth: 2,
+                        pointSize: 4,
+                        lineDashStyle: [6, 3],
+                        pointShape:'diamond'
+                     },
+                     5: {
+                        type: 'lines',
+                        color:'grey',
+                        lineWidth: 2,
+                        pointSize: 4,
+                        lineDashStyle: [6, 3],
+                        pointShape:'diamond'
                      }
+
                   },
                vAxis: {
                   title: 'Efficiency (%)',
@@ -58,7 +75,7 @@
                   textStyle: { fontSize: 11 }
                }
             },
-            view: { 'columns': [1, 2, 3, 6, 7] }
+            view: { 'columns': [1, 2, 3, 6, 7, 8,9] }
          }
       );
       crt_hfe_MM.draw();
