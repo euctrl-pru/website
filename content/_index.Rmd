@@ -1,6 +1,6 @@
 ---
 title: "Pan-European ANS Performance Data Portal"
-date: 2018-02-07T11:26:51+01:00
+date: "2018-02-07T11:26:51+01:00"
 ---
 <style type="text/css">
 .img-responsive {
@@ -48,10 +48,12 @@ The PRU updates this data on behalf of the European Commission on a quarterly ba
 <div class="resp-container">
 <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/1UKhnPVrpoCufnrVbrRRN8fCue6DY-8W1/page/xHPY" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
-<div class="row">
-<img src="/images/european-ans-performance-review.jpg" class="img-responsive" alt="European ANS Performance">
+<div class="container text-center">
+<img src="/images/european-ans-performance-review.jpg" class="img-fluid" alt="European ANS Performance" style="max-width: 100%;">
 </div>
 <br>
-<div class="row" style="display: inherit">
+
+<div class="container text-center">
 {{% subscribe-button %}}
 </div>
+
