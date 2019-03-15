@@ -153,8 +153,7 @@ width: 8em;
 
     <tr>
       <th scope="row"><a href="{{ "/references/methodology/horizontal_flight_efficiency_pi.html" | prepend: site.baseurl | prepend: site.url }}">Horizontal en-route flight efficiency</a> 
-      <br><small>by entity (HFE actual trajectory and flight plan, KEP and KEA indicators)</small>
-      <br><small><span style="color:darkred">Please note that the data for January 2019 is not yet available</span></small></th>
+      <br><small>by entity (HFE actual trajectory and flight plan, KEP and KEA indicators)</small></th>
       <td>Jan 2014 - Feb 2019</td>
       <td><a href="{{ "/data/set/hfe/Horizontal_Flight_Efficiency.xlsm" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-download"></span></a> </td>
       <td><a href="{{ "/data/set/hfe/horizontal_flight_efficiency.html" | prepend: site.baseurl | prepend: site.url }}"><span class="glyphicon glyphicon-download"></span></a></td>
