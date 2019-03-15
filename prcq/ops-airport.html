@@ -69,7 +69,7 @@ function drawVisualization()
           series: {
                 0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0}
               },
-          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}, title: 'Airports sorted by movements (* A-CDM airport)'},
+          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}},
           vAxis: {title: 'minutes per arrival', format: '0.0', minValue: 0.0, titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
         },
     view: {'columns': [0,1]}
@@ -167,7 +167,7 @@ function drawVisualization()
                 0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0},
                 1: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 0}
               },
-          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11},},
+          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}, title: 'Airports sorted by movements (* A-CDM airport)'},
           vAxis: {format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
         },
     view: {'columns': [0,2,1]}
