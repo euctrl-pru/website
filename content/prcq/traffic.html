@@ -1,9 +1,9 @@
 ---
 layout: prcq
 title: "Air Traffic Evolution"
+icon: "/images/prcq-traffic.png"
 ---
 
-<html>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
 google.load('visualization', '1', { packages: ['corechart', 'controls'] });
 </script>
@@ -160,7 +160,6 @@ function drawVisualization()
 google.setOnLoadCallback(drawVisualization)
 </script>
 
-<h3 class="page-header">{% img prcq-traffic.png magick:resize:60x60 alt:'Traffic' style:'margin-right\:3px' %} {{ page.title }}</h3>
 
 <table class = "table">
    <thead>
@@ -176,14 +175,14 @@ google.setOnLoadCallback(drawVisualization)
    <tbody>
       <tr class = "active">
          <td>Jan-Sep</td>
-         <td><a href={{"/references/definition/ESRA_08_Area.html"| prepend: site.baseurl | prepend: site.url }}>ECAC area</a></td>
+         <td><a href='{{< relref "/definition/esra-2008-area.md" >}}'>ECAC area</a></td>
          <td>Quarterly</td>
          <td>22-Oct-2018</td>
          <td>
-          <a href="{{ '/references/acronym/nm-cfmu.html' | prepend: site.baseurl | prepend: site.url }}">NM</a>,
-          <a href="{{ '/references/acronym/crco.html'    | prepend: site.baseurl | prepend: site.url }}">CRCO</a>,
-          <a href="{{ '/references/acronym/statfor.html' | prepend: site.baseurl | prepend: site.url }}">STATFOR</a></td>
-          <td><a href='{{"/data/performancearea/" | prepend: site.baseurl | prepend: site.url }}'><span class="glyphicon glyphicon-download" style="font-size:25px;"></span></a></td>
+          <a href='{{< relref "/acronym/nm-cfmu.md" >}}'>NM</a>,
+          <a href='{{< relref "/acronym/crco.md" >}}'>CRCO</a>,
+          <a href='{{< relref "/acronym/statfor.md" >}}'>STATFOR</a></td>
+          <td><a href="/data/performancearea/"><i class="fas fa-download"></i></a></td>
       </tr>
    </tbody>
 </table>
@@ -191,11 +190,11 @@ google.setOnLoadCallback(drawVisualization)
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
     <h4>Average daily controlled flights</h4>
-    <span class="text-muted"><a href={{"/references/definition/ecac_area.html"| prepend: site.baseurl | prepend: site.url }}>ECAC area</a></span>
+    <span class="text-muted"><a href={{< relref "/definition/ecac-area.md" >}}>ECAC area</a></span>
     <div id="crt_ertfltsYY"></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
-    <h4>Average daily en-route <a href={{"/references/acronym/su.html"| prepend: site.baseurl | prepend: site.url }}>Service Units (SU)</a></h4>
+    <h4>Average daily en-route <a href={{< relref "/acronym/su.md" >}}>Service Units (SU)</a></h4>
     <span class="text-muted">CRCO area</span>
     <div id="crt_ertsuYY"></div>
 </div>
@@ -203,12 +202,12 @@ google.setOnLoadCallback(drawVisualization)
 
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
-<div class="panel panel-info"><div class="panel-heading">
-Between January and September, the number of flights in the <a href={{"/references/definition/ecac_area.html"| prepend: site.baseurl | prepend: site.url }}>(ECAC)</a> area increased by 3.4% which corresponds to an additional 986 flights per day on average.  
+<div class="card bg-light "><div class="card-body">
+Between January and September, the number of flights in the <a href={{< relref "/definition/ecac-area.md" >}}>(ECAC)</a> area increased by 3.4% which corresponds to an additional 986 flights per day on average.  
 
 </div></div></div>
 <div class="col-xs-6 col-sm-6 placeholder">
-<div class="panel panel-info"><div class="panel-heading">
+<div class="card bg-light"><div class="card-body">
 Average daily en-route service units continued to grow at a higher rate (+6.6%) than flights in Q1-3 2018.
 </div></div></div>
 </div>
@@ -226,21 +225,21 @@ Average daily en-route service units continued to grow at a higher rate (+6.6%) 
 </div>
 </div>
 
-<div class="panel panel-info"><div class="panel-heading">
+<div class="card bg-light"><div class="card-body">
        Pan-European traffic and flights to and from Europe continued to grow in the first nine months of 2018. 
 </div></div>
 
 
 <div class="row placeholders">
 <div class="col-sm-12 placeholder">
-    <h4>Traffic variation by <a href={{"/references/acronym/ansp.html"| prepend: site.baseurl | prepend: site.url }}>ANSP</a></h4>
+    <h4>Traffic variation by <a href={{< relref "/acronym/ansp.md" >}}>ANSP</a></h4>
     <span class="text-muted">2018 (Jan-Sep) vs. 2017 (Jan-Sep)</span>
     <div id="crt_anspfltsYY"></div>
 </div>
 </div><br><br>
 
-    <div class="panel panel-info">
-      <div class="panel-heading">
+    <div class="card bg-light">
+      <div class="card-body">
        All ANSPs showed an increase in traffic compared to 2017 (Jan-Sep). In absolute terms, DHMI (Turkey), ENAIRE (Spain), ENAV (Italy), DFS (Germany), and Bulatsa (Bulgaria) showed the highest growth in 2018 compared to the same period in 2017.
       </div>
     </div>
@@ -253,8 +252,8 @@ Average daily en-route service units continued to grow at a higher rate (+6.6%) 
 </div>
   </div>
 
-    <div class="panel panel-info">
-          <div class="panel-heading">
+    <div class="card bg-light">
+          <div class="card-body">
     Amsterdam remained the airport with the highest number of commercial movements in the EUROCONTROL area in 2018 (Jan-Sep).<br>
 
     With an increase of more than 100 additional daily flights, Frankfurt (FRA) showed the highest growth in absolute terms, followed by Antalya, Athens and Madrid. 

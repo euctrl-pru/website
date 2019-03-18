@@ -1,10 +1,5 @@
 ---
 title: ESRA 2008 Area
-categories:
-  - metadata
-  - definition
-type: definition
-slug: esra-2008-area
 ---
 
 European Statistical Reference Area (see STATFOR Reports)

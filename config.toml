@@ -53,7 +53,7 @@ ignoreFiles = [
     weight = 10
   [[menu.main]]
     name = "PRC Quaterly"
-    url = ""
+    url = "/prcq/"
     identifier = "prcq"
     parent = "dashboard"
     weight = 1

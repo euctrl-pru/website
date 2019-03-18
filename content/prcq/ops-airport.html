@@ -1,6 +1,6 @@
 ---
-layout: prcq
 title: "ANS Performance @ Airports"
+icon: "/images/prcq-operations-airport.png"
 ---
 
 <script type="text/javascript" src="https://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
@@ -178,8 +178,6 @@ function drawVisualization()
 google.setOnLoadCallback(drawVisualization)
 </script>
 
-<h3 class="page-header">{% img prcq-operations-airport.png magick:resize:60x60 alt:'Airports' style:'margin-right\:3px' %} {{ page.title }}</h3>
-
 <table class = "table">
    <thead>
       <tr>
@@ -194,24 +192,24 @@ google.setOnLoadCallback(drawVisualization)
    <tbody>
       <tr class = "active">
          <td>Jan-Sep</td>
-         <td><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL area</a></td>
+         <td><a href='{{< relref "/definition/eurocontrol-area.md" >}}'>EUROCONTROL area</a></td>
          <td>Quarterly</td>
          <td>22-Oct-2018</td>
           <td>
-          <a href='{{"/references/acronym/nm-cfmu.html"| prepend: site.baseurl | prepend: site.url }}'>NM</a>,
-          <a href='{{"/references/acronym/pru.html"   | prepend: site.baseurl | prepend: site.url }}'>PRU</a>,
-          <a href='{{"/references/acronym/coda.html"   | prepend: site.baseurl | prepend: site.url }}'>CODA</a></td>
-          <td><a href='{{"/data/performancearea/" | prepend: site.baseurl | prepend: site.url }}'><span class="glyphicon glyphicon-download" style="font-size:25px;"></span></a></td>
+          <a href='{{< relref "/acronym/nm-cfmu.md" >}}'>NM</a>,
+          <a href='{{< relref "/acronym/pru.md"   >}}'>PRU</a>,
+          <a href='{{< relref "/acronym/coda.md"   >}}'>CODA</a></td>
+          <td><a href="/data/performancearea/"><i class="fas fa-download"></i></a></td>
       </tr>
    </tbody>
 </table>
 
 <h3 class="sub-header">Arrival flow management</h3>
 <div>
-This section analyses ANS-related inefficiencies on the arrival flow at the top 30 European airports in terms of arrival <a href='{{"/references/definition/atfm_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATFM delay</a> and <a href='{{"/references/definition/additional_asma_time.html"| prepend: site.baseurl | prepend: site.url }}'>additional ASMA time</a>.
+This section analyses ANS-related inefficiencies on the arrival flow at the top 30 European airports in terms of arrival <a href='{{< relref "/definition/atfm-delay.html" >}}'>ATFM delay</a> and <a href='{{< relref "/definition/additional-asma-time.html" >}}'>additional ASMA time</a>.
 </div>
 
-<h4 class="page-header">Airport arrival <a href='{{"/references/definition/atfm_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATFM delays</a> (min per arrival)</h4>
+<h4 class="page-header">Airport arrival <a href='{{< relref "/definition/atfm-delay.html" >}}'>ATFM delays</a> (min per arrival)</h4>
 
 <div class="row ">
 <div class="col-sm-2">
@@ -224,64 +222,64 @@ This section analyses ANS-related inefficiencies on the arrival flow at the top 
 </div>
   </div><br>
 
-    <div class="panel panel-info">
-          <div class="panel-heading">
+    <div class="card bg-light">
+          <div class="card-body">
             Average airport ATFM delays at the top 30 European airports decreased from 1.28 to 1.13 minutes per arrival between January and September 2018. The most notable improvement was observed for Istanbul Sabiha Gökçen Airport (SAW) where ATFM arrival delay reduced by 5.5 minutes on average. Amsterdam and London Gatwick airport also showed a notable improvement compared to the same period in 2017. <br>
             At the same time, average arrival ATFM delays per arrival increased by more than 1 minute at Lisbon (LIS) and Barcelona (BCN). 
           </div>
     </div>
 
-<h4 class="page-header"><a href='{{"/references/definition/additional_asma_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional ASMA time</a></h4>
+<h4 class="page-header"><a href='{{< relref "/definition/additional-asma-time.html" >}}'>Additional ASMA time</a></h4>
 <div class="row ">
 <div class="col-sm-2">
     <h5>Top 30 airports</h5>
     <div id="crt_apt6"></div>
 </div>
 <div class="col-sm-10">
-    <h5><a href='{{"/references/definition/additional_asma_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional ASMA time by airport</a> 2018 (Jan-Aug)</h5>
+    <h5><a href='{{< relref "/definition/additional-asma-time.html" >}}'>Additional ASMA time by airport</a> 2018 (Jan-Aug)</h5>
     <div id="crt_apt7"></div>
 </div>
   </div><br>
    
-    <div class="panel panel-info">
-          <div class="panel-heading">
+    <div class="card bg-light">
+          <div class="card-body">
             Overall, the average additional ASMA time decreased between January and August 2018 (excluding the two Istanbul airports and Antalya for which no data was available).<br>
           </div>
     </div>
 
 <h3 class="sub-header">Departure flow management</h3>
 <div>
-This section analyses ANS-related inefficiencies on the departure flow at the top 30 European airports in terms of <a href='{{"/references/definition/atc_pre-departure_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATC pre-departure delays</a> at the gate and <a href='{{"/references/definition/additional_taxi-out_time.html"| prepend: site.baseurl | prepend: site.url }}'>additional taxi-out time</a>.
+This section analyses ANS-related inefficiencies on the departure flow at the top 30 European airports in terms of <a href='{{< relref "/definition/atc-pre-departure-delay.html" >}}'>ATC pre-departure delays</a> at the gate and <a href='{{< relref "/definition/additional-taxi-out-time.md" >}}'>additional taxi-out time</a>.
 </div>
-<h4 class="page-header"><a href='{{"/references/definition/atc_pre-departure_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATC pre-departure delays</a></h4>
+<h4 class="page-header"><a href='{{< relref "/definition/atc-pre-departure-delay.html" >}}'>ATC pre-departure delays</a></h4>
 <div class="row ">
 <div class="col-sm-2">
     <h5>Top 30 airports</h5>
     <div>no consistent time series available</div>
 </div>
 <div class="col-sm-10">
-    <h5><a href='{{"/references/definition/atc_pre-departure_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATC pre-departure delays by airport</a> 2018 (Jan-Aug)</h5>
+    <h5><a href='{{< relref "/definition/atc-pre-departure-delay.html" >}}'>ATC pre-departure delays by airport</a> 2018 (Jan-Aug)</h5>
     <div id="crt_apt9"></div>
 </div>
   </div><br>
-      <div class="panel panel-info">
-          <div class="panel-heading">
+      <div class="card bg-light">
+          <div class="card-body">
            The data analysed in this section is based on data directly provided by airport operators. Unlike CODA  data, the Airport Operator Data Flow covers all departures from airports and is therefore also used for the analysis of additional taxi out and ASMA times. As highlighted in PRR, while the data flow has a better coverage, some data quality issues do exist.
       </div>
     </div>
 
-<h4 class="page-header"><a href='{{"/references/definition/additional_taxi-out_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional taxi-out time</a></h4>
+<h4 class="page-header"><a href='{{< relref "/definition/additional-taxi-out-time.md" >}}'>Additional taxi-out time</a></h4>
 <div class="row placeholders">
 <div class="col-sm-2">
     <h5>Top 30 airports</h5>
     <div id="crt_apt10"></div>
 </div>
 <div class="col-sm-10">
-    <h5><a href='{{"/references/definition/additional_taxi-out_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional taxi-out by airport</a> 2018 (Jan-Aug)</h5>
+    <h5><a href='{{< relref "/definition/additional-taxi-out-time.md" >}}'>Additional taxi-out by airport</a> 2018 (Jan-Aug)</h5>
     <div id="crt_apt11"></div>
 </div>
   </div><br>
-      <div class="panel panel-info">
-          <div class="panel-heading">
+      <div class="card bg-light">
+          <div class="card-body">
           Contrary to the positive trend observed for the additional ASMA time, the average additional taxi-out time increased at the top 30 airports in the first nine months of 2018 from 3.7 minutes to 4.1 minutes per departure (excluding the two Istanbul airports and Antalya for which no data was available). 
     </div>

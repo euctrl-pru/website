@@ -1,6 +1,6 @@
 ---
-layout: prcq
 title: "ANS Cost-efficiency"
+icon: "/images/prcq-economics.png"
 ---
 
 <script type="text/javascript" src="http://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
@@ -96,7 +96,6 @@ function drawVisualization()
 google.setOnLoadCallback(drawVisualization)
 </script>
 
-<h3 class="page-header">{% img prcq-economics.png magick:resize:60x60 alt:'Economics' style:'margin-right\:3px' %} {{ page.title }}</h3>
 
 <table class = "table">
    <thead>
@@ -112,7 +111,7 @@ google.setOnLoadCallback(drawVisualization)
    <tbody>
       <tr class = "active">
          <td>Jan-Dec</td>
-         <td><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL area</a></td>
+         <td><a href='{{< relref "/definition/eurocontrol-area.md" >}}'>EUROCONTROL area</a></td>
          <td>Annually</td>
          <td>15-Mar-2018</td>
           <td>
@@ -123,7 +122,7 @@ google.setOnLoadCallback(drawVisualization)
    </tbody>
 </table>
 
-<h4 class="sub-header">Changes in <a href='{{"/references/definition/eco_cost_eff.html"| prepend: site.baseurl | prepend: site.url }}'>economic cost-effectiveness</a> (37 <a href='{{"/references/acronym/ansp.html"| prepend: site.baseurl | prepend: site.url }}'>ANSPs</a>)</h4>
+<h4 class="sub-header">Changes in economic <a href='{{< relref "/definition/eco-cost-eff.md" >}}'>cost-effectiveness</a> (37 <a href='{{< relref "/acronym/ansp.md" >}}'>ANSPs</a>)</h4>
 <div class="row">
 <div class="col-sm-6 ">
     <div id="crt_eco1"></div>
@@ -133,8 +132,8 @@ google.setOnLoadCallback(drawVisualization)
 </div>
 </div>
 
-<div class="panel panel-info">
-  <div class="panel-heading">
+<div class="card bg-light">
+  <div class="card-body">
     The analysis shows the trend of the unit economic costs between 2011 and 2016 at Pan-European level  for a consistent sample of 37 ANSPs for which data for a time-series analysis was available. The left-hand side shows the changes in unit economic costs, while the right-hand side provides complementary information on the year-on-year changes in ATM/CNS provision costs, composite flight-hours and unit costs of ATFM delays.
     The unit costs of gate-to-gate ATFM delays rose by +20.2% in 2016 (based on the old computation method) and unit economic costs were +0.8% higher than in 2015.<br>
     At Pan-European level, the economic cost-effectiveness indicator amounted to €488 per composite flight-hour in 2016, and, on average, ATFM delays represent 16% of the total economic costs.  
@@ -143,15 +142,15 @@ google.setOnLoadCallback(drawVisualization)
 
 <div class="row placeholders">
 <div class="col-sm-12 placeholder">
-    <h4><a href='{{"/references/definition/eco_cost_eff.html"| prepend: site.baseurl | prepend: site.url }}'>Economic gate-to-gate cost effectiveness (2016)</a></h4>
+    <h4>Economic gate-to-gate <a href='{{< relref "/definition/eco-cost-eff.md" >}}'>cost effectiveness</a> (2016)</h4>
     <div id="crt_eco3"></div>
 </div>
 </div>
 
-<div class="panel panel-info">
-  <div class="panel-heading">
+<div class="card bg-light">
+  <div class="card-body">
 In 2016 unit economic costs ranged from €924 for Belgocontrol to €209 for MATS; a factor of more than four.
 <br>
- More information on exchange rates variations and their impact on unit costs is provided in the  <a href='{{"/references/acronym/ace.html"| prepend: site.baseurl | prepend: site.url }}'>ACE Benchmarking Reports</a>.
+ More information on exchange rates variations and their impact on unit costs is provided in the  <a href='{{< relref "/acronym/ace.md" >}}'>ACE Benchmarking Reports</a>.
   </div>
 </div>

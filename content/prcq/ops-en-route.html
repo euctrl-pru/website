@@ -1,6 +1,6 @@
 ---
-layout: prcq
 title: "Operational En-route ANS Performance"
+icon: "/images/prcq-operations-enroute.png"
 ---
 
 <script type="text/javascript" src="https://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
@@ -196,7 +196,7 @@ function drawVisualization()
 google.setOnLoadCallback(drawVisualization)
 </script>
 
-<h3 class="page-header">{% img prcq-operations-enroute.png magick:resize:60x60 alt:'En-route' style:'margin-right\:3px' %} {{ page.title }}</h3>
+<h2 class="page-header">En-route <a href='{{< relref "/definition/atfm-delay.html" >}}'>ATFM delays</a></h2>
 
 <table class = "table">
    <thead>
@@ -212,40 +212,39 @@ google.setOnLoadCallback(drawVisualization)
    <tbody>
       <tr class = "active">
          <td>Jan-Sep</td>
-         <td><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL area</a></td>
+         <td><a href='{{< relref "/definition/eurocontrol-area.md" >}}'>EUROCONTROL area</a></td>
          <td>Quarterly</td>
          <td>22-Oct-2018</td>
           <td>
-          <a href='{{"/references/acronym/nm-cfmu.html"| prepend: site.baseurl | prepend: site.url }}'>NM</a></td>
-          <td><a href='{{"/data/performancearea/" | prepend: site.baseurl | prepend: site.url }}'><span class="glyphicon glyphicon-download" style="font-size:25px;"></span></a></td>
+          <a href='{{< relref "/acronym/nm-cfmu.md" >}}'>NM</a></td>
+          <td><a href="/data/performancearea/"><i class="fas fa-download"></i></a></td>
       </tr>
    </tbody>
 </table>
 
-<h3 class="page-header">En-route <a href='{{"/references/definition/atfm_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATFM delays</a></h3>
 
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
-    <h4>En-route <a href='{{"/references/definition/atfm_delay.html"| prepend: site.baseurl | prepend: site.url }}'>ATFM delay</a> per flight</h4>
-    <span class="text-muted"><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL area</a></span>
+    <h5>En-route <a href='{{< relref "/definition/atfm-delay.html" >}}'>ATFM delay</a> per flight</h5>
+    <span class="text-muted"><a href='{{< relref "/definition/eurocontrol-area.md" >}}'>EUROCONTROL area</a></span>
     <div id="crt_ertdlyYY"></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
-    <h4>Total en-route delay by reported <a href='{{"/references/definition/atfm_delay_codes.html"| prepend: site.baseurl | prepend: site.url }}'>ATFM delay cause</a></h4>
-    <span class="text-muted"><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL area</a></span>
+    <h5>Total en-route delay by reported <a href='{{< relref "/definition/atfm-delay-codes.html" >}}'>ATFM delay cause</a></h5>
+    <span class="text-muted"><a href='{{< relref "/definition/eurocontrol-area.md" >}}'>EUROCONTROL area</a></span>
     <div id="crt_ertdlytot"></div>
 </div>
 </div>
 
 <div class="row placeholders">
 <div class="col-sm-6 placeholder">
-<div class="panel panel-info"><div class="panel-heading">
+<div class="card bg-light"><div class="card-body">
 Average en-route ATFM delays doubled in 2018 compared to the first nine months in 2017 which gives reason for concern and immediate action.  
 <br><br>
 
 </div></div></div>
 <div class="col-sm-6 placeholder">
-<div class="panel panel-info"><div class="panel-heading">
+<div class="card bg-light"><div class="card-body">
 The main drivers of the substantial increase in 2018 were en route ATFM regulations attributed to ATC Staffing [S], adverse weather [codes W,D], and ATC Capacity [C]. Compared to 2017 there was also a significant increase in ATFM delays (ATC disruptions) due to ATC industrial action in France. 
 </div></div></div>
 </div>
@@ -260,9 +259,13 @@ The main drivers of the substantial increase in 2018 were en route ATFM regulati
 </div>
   </div><br>
 
-<div class="panel panel-info">
-  <div class="panel-heading">
-   Overall, 13.7% of the controlled flights in the EUROCONTROL area were affected by ATFM delays in the first three quarters of 2018. By far the main share (78.2%) were delayed by en-route ATFM regulations. Compared to 2017 (Jan-Sep), the share of flights affected by en-route ATFM delays increased by 4.6 percent points to 10.7%. <br>At the same time, the share of flights affected by <a href='{{"/prcq/ops-airport.html"| prepend: site.baseurl | prepend: site.url }}'>airport ATFM delays</a> decreased slightly from 3.2% in 2017 to 3.0% in 2018 (Jan-Sep).
+<div class="card bg-light">
+  <div class="card-body">
+   Overall, 13.7% of the controlled flights in the EUROCONTROL area were affected by ATFM delays in the first three quarters of 2018.
+   By far the main share (78.2%) were delayed by en-route ATFM regulations.
+   Compared to 2017 (Jan-Sep), the share of flights affected by en-route ATFM delays increased by 4.6 percent points to 10.7%.
+   <br>
+   At the same time, the share of flights affected by <a href="/prcq/ops-airport/">airport ATFM delays</a> decreased slightly from 3.2% in 2017 to 3.0% in 2018 (Jan-Sep).
   </div>
 </div>
 
@@ -274,13 +277,13 @@ The main drivers of the substantial increase in 2018 were en route ATFM regulati
 </div>
 </div>
 <br>
-<div class="panel panel-info">
-  <div class="panel-heading">
+<div class="card bg-light">
+  <div class="card-body">
    Average en-route delay per flight was highest in France (2.13 min), followed by DFS/Germany (1.87 min), Cyprus (1.29 min) and Maastricht Upper Area Control Centre/MUAC (0.95 min). 
   </div>
 </div>
 
-<h3 class="page-header"><a href='{{"/references/methodology/horizontal_flight_efficiency_pi.html"| prepend: site.baseurl | prepend: site.url }}'>Horizontal en-route flight efficiency</a></h3>
+<h3 class="page-header"><a href='{{< relref "/methodology/horizontal-flight-efficiency-pi.html" >}}'>Horizontal en-route flight efficiency</a></h3>
 
 <div class="row placeholders">
 <div class="col-sm-2">
@@ -291,8 +294,8 @@ The main drivers of the substantial increase in 2018 were en route ATFM regulati
     <div id="crt_hfe2"></div>
 </div>
 </div><br>
-<div class="panel panel-info">
-  <div class="panel-heading">
+<div class="card bg-light">
+  <div class="card-body">
   Horizontal en route flight efficiency in the first three quarters of 2018 remained at the level observed in 2017. 
   </div>
 </div>

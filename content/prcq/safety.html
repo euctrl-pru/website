@@ -1,6 +1,12 @@
 ---
-layout: prcq
 title: "ANS Safety Performance"
+icon: "/images/prcq-safety.png"
+extrajs: [
+  "/javascript/crt_saf_smi_YY.js",
+  "/javascript/crt_saf_upa_YY.js",
+  "/javascript/crt_saf_ri_YY.js",
+  "/javascript/crt_saf_aso_YY.js"
+]
 ---
 
 <script type="text/javascript" src="https://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
@@ -8,8 +14,7 @@ google.load('visualization', '1', { packages: ['corechart', 'controls'] });
 </script>
 <script type="text/javascript">
 
-function drawVisualization()
- {
+function drawVisualization() {
 
 // SAFETY - total accidents - YY - CHART
       var crt_saf_acc_YY = new google.visualization.ChartWrapper({
@@ -103,8 +108,6 @@ function drawVisualization()
 google.setOnLoadCallback(drawVisualization)
 </script>
 
-<h3 class="page-header">{% img prcq-safety.png magick:resize:60x60 alt:'Safety' style:'margin-right\:3px' %} {{ page.title }}</h3>
-
 <table class = "table">
    <thead>
       <tr>
@@ -118,7 +121,7 @@ google.setOnLoadCallback(drawVisualization)
    <tbody>
       <tr class = "active">
          <td>Jan-Dec</td>
-         <td><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL Area</a></td>
+         <td><a href='{{< relref "/definition/eurocontrol-area.md" >}}'>EUROCONTROL Area</a></td>
          <td>Annually</td>
          <td>12-Jul-2018</td>
          <td><a href="http://www.eurocontrol.int" target="_blank">EUROCONTROL</a></td>
@@ -126,7 +129,7 @@ google.setOnLoadCallback(drawVisualization)
    </tbody>
 </table>
 
-<h3 class="sub-header">Accidents (fixed wing, weight > 2250 kg MTOW)</h3>
+<h3 class="sub-header">Accidents (fixed wing, weight > 2250 kg <a href='{{< relref "/acronym/mtow.md" >}}'>MTOW</a>)</h3>
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
   <div id="crt_saf_acc_YY"></div>
@@ -138,11 +141,11 @@ google.setOnLoadCallback(drawVisualization)
 
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
-<div class="panel panel-info"><div class="panel-heading">
+<div class="card bg-light "><div class="card-body">
 There were 71 accidents in the EUROCONTROL area in 2017(P) of which 8 were fatal.<br>
 </div></div></div>
 <div class="col-xs-6 col-sm-6 placeholder">
-<div class="panel panel-info"><div class="panel-heading">
+<div class="card bg-light "><div class="card-body">
  There was 1 reported accident with direct ATM contribution in 2017(P), compared to two reported accident with direct ATM 
  contribution in 2016.
 </div></div></div>
@@ -151,24 +154,24 @@ There were 71 accidents in the EUROCONTROL area in 2017(P) of which 8 were fatal
 <h3 class="sub-header">ATM related incidents</h3>
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
-<h4><a href='{{"/references/acronym/smi.html"| prepend: site.baseurl | prepend: site.url }}'>Separation Minima Infringements (SMI)</a></h4>
+<h4>Separation Minima Infringements (<a href='{{< relref "/acronym/smi.md" >}}'>SMI</a>)</h4>
 <div id="crt_saf_smi_YY"></div>
 
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
-<h4><a href='{{"/references/acronym/upa.html"| prepend: site.baseurl | prepend: site.url }}'>Unauthorised Penetration of Airspace (UPAs)</a></h4>
+<h4>Unauthorised Penetration of Airspace (<a href='{{< relref "/acronym/upa.md" >}}'>UPAs</a>)</h4>
 <div id="crt_saf_upa_YY"></div>
 </div>
 </div>
 
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
-<div class="panel panel-info"><div class="panel-heading">
+<div class="card bg-light "><div class="card-body">
  The preliminary 2017 data indicates that the number of reported risk bearing SMIs (Severity A+B) decreased in 2017.
 </div></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
-<div class="panel panel-info"><div class="panel-heading">
+<div class="card bg-light "><div class="card-body">
  Following the slight reduction in 2016, the number of reported risk bearing UPAs (Severity A+B) increased again in 2017(P).
 </div></div>
 </div>
@@ -176,7 +179,7 @@ There were 71 accidents in the EUROCONTROL area in 2017(P) of which 8 were fatal
 
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
-<h4><a href='{{"/references/acronym/ri.html"| prepend: site.baseurl | prepend: site.url }}'>Runway Incursions (RIs)</a></h4>
+<h4>Runway Incursions (<a href='{{ relref "/acronym/ri.md" >}}'>RI</a>s)</h4>
 <div id="crt_saf_ri_YY"></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
@@ -188,19 +191,13 @@ There were 71 accidents in the EUROCONTROL area in 2017(P) of which 8 were fatal
 
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
-<div class="panel panel-info"><div class="panel-heading">
+<div class="card bg-light "><div class="card-body">
 The reported risk bearing RIs (Severity A+B) decreased in 2017(P).
 </div></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
-<div class="panel panel-info"><div class="panel-heading">
+<div class="card bg-light "><div class="card-body">
 The total number of risk bearing ATM-S increased again slightly in 2017(P).
 </div></div>
 </div>
 </div>
-
-
-{% javascript crt_saf_smi_YY %}
-{% javascript crt_saf_upa_YY %}
-{% javascript crt_saf_ri_YY %}
-{% javascript crt_saf_aso_YY %}
