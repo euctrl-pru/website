@@ -1,0 +1,94 @@
+---
+title: Capacity
+extrajs: [
+  "/javascript/crt_cap_ert_YY.js",
+  "/javascript/crt_cap_ert_MM.js",
+  "/javascript/tbl_cap_ert_YY.js",
+  "/javascript/tbl_cap_fir_ert_YY.js",
+  "/javascript/crt_cap_apt_YY.js",
+  "/javascript/crt_cap_apt_MM.js",
+  "/javascript/tbl_cap_apt_YY.js",
+  "/javascript/tbl_cap_fir_ert_YY_trigger.js"
+  ]
+---
+
+
+<table class = "table">
+  <thead>
+    <tr>
+      <th>Period</th>
+      <th>Area</th>
+      <th>Update rate</th>
+      <th>Last update</th>
+      <th>Source(s)</th>
+      <th>Data</th>
+    </tr>
+  </thead>
+    <tbody>
+      <tr class = "active">
+        <td>Jan 2019</td>
+        <td><a href='{{< relref "/definition/eurocontrol-area.md" >}}'>EUROCONTROL area</a></td>
+        <td>Monthly</td>
+        <td>18-Feb-2019</td>
+        <td>
+        <a href='{{< relref "/acronym/nm-cfmu.md" >}}'>NM</a>,
+        <a href='{{< relref "/acronym/pru.md" >}}'>PRU</a></td>
+        <td><a href="/data/"><i class="fas fa-download"></i></a></td>
+      </tr>
+    </tbody>
+</table>
+
+<h4 class="page-header">En-route <a href='{{< relref "/definition/atfm-delay.html" >}}'>ATFM delays</a></h4>
+<div class="row">
+    <div class="col-sm-6">
+        <h5>Evolution over time and by <a href='{{< relref "/definition/atfm-delay-codes.html" >}}'>delay cause</a> (EUROCONTROL area)</h5>
+        <div id="crt_cap_ert_YY"></div><br>
+        <div id="crt_cap_ert_MM"></div>
+    </div>
+
+    <div class="col-sm-6">
+        <h5>Results by <a href='{{< relref "/acronym/ansp.md" >}}'>ANSP</a> (January 2019)</h5>
+        <div id="tbl_cap_ert_YY"></div>
+    </div>
+</div>
+<br>
+
+<h4 class="page-header">En-route <a href='{{< relref "/reference/dataset/en-route-atfm-delay-fir.md" >}}'>ATFM delays</a> by
+      <a href='{{< relref "/definition/fab.md" >}}'>FAB (FIR)</a></h4>
+<div class="row">
+    <div class="col-sm-6"><br><br>
+        <div id="crt_cap_fir_ert_YY"></div>
+    </div>
+
+    <div class="col-sm-6">
+        <h5>Results by <a href='{{< relref "/definition/fab.md" >}}'>FAB (FIR)</a> (2015, 2016, 2017, 2018, 2019)</h5>
+        <div id="tbl_cap_fir_ert_YY"></div>
+    </div>
+</div>
+<br>
+
+<h4 id="apt_dly" class="page-header">Airport Arrival <a href='{{< relref "/definition/atfm-delay.html" >}}'>ATFM delays</a></h4>
+<div class="row">
+    <div class="col-sm-6">
+        <h5>Evolution over time and by <a href='{{< relref "/definition/atfm-delay-codes.html" >}}'>delay cause</a> (EUROCONTROL area)</h5>
+        <div id="crt_cap_apt_YY"></div><br>
+        <div id="crt_cap_apt_MM"></div>
+    </div>
+
+    <div class="col-sm-6">
+        <h5>Results by airport (January 2019)</h5>
+        <div id="tbl_cap_apt_YY"></div>
+    </div>
+</div>
+<br>
+
+
+<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+ // load the visualisation API
+ google.load('visualization', '1', { packages: ['corechart', 'controls'] });
+</script>
+
+
+<script src="//d3js.org/d3.v3.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>

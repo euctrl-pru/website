@@ -58,29 +58,37 @@ ignoreFiles = [
     parent = "dashboard"
     weight = 1
   [[menu.main]]
+    name = "divider-prcq"
+    parent = "dashboard"
+    weight = 4
+  [[menu.main]]
     name = "Safety"
-    url = ""
+    url = "/dashboard/performance-area/safety/"
     identifier = "safety"
     parent = "dashboard"
     weight = 5
   [[menu.main]]
     name = "Traffic"
-    url = ""
+    url = "/dashboard/performance-area/traffic/"
     identifier = "traffic"
     parent = "dashboard"
     weight = 10
   [[menu.main]]
     name = "Capacity"
-    url = ""
+    url = "/dashboard/performance-area/capacity/"
     identifier = "capacity"
     parent = "dashboard"
     weight = 15
   [[menu.main]]
     name = "Environment"
-    url = ""
+    url = "/dashboard/performance-area/environment/"
     identifier = "environment"
     parent = "dashboard"
     weight = 20
+  [[menu.main]]
+    name = "divider-eco"
+    parent = "dashboard"
+    weight = 21
   [[menu.main]]
     name = "ACE dashboard"
     url = "https://www.eurocontrol.int/ACE/ACE-Home.html"

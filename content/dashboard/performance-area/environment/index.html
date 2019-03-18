@@ -1,0 +1,62 @@
+---
+title: Environment
+extrajs: [
+  "/javascript/crt_hfe_YY.js",
+  "/javascript/crt_hfe_MM.js",
+  "/javascript/tbl_hfe_YY.js"
+]
+---
+
+<h3 id="hfe"><a href='{{< relref "/methodology/horizontal-flight-efficiency-pi.html" >}}'>Horizontal En-route Flight Efficiency (HFE)</a></h3>
+
+<div class="alert alert-danger">
+    Please note that the horizontal flight efficiency data for January is not yet available due to data processing issues. We apologise for any inconvenience caused and will supply the data as soon as it becomes available.
+</div>  
+
+<table class = "table">
+   <thead>
+      <tr>
+         <th>Period</th>
+         <th>Area</th>
+         <th>Update rate</th>
+         <th>Last update</th>
+         <th>Source(s)</th>
+         <th>Methodology</th>
+         <th>Data</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class = "active">
+         <td>Jan-Dec 2018</td>
+         <td><a href='{{< relref "/definition/eurocontrol-area.md" >}}'>EUROCONTROL area</a></td>
+         <td>Monthly</td>
+         <td>15-Jan-2019</td>
+          <td><a href='{{< relref "/acronym/nm-cfmu.md" >}}'>NM</a>,
+              <a href='{{< relref "/acronym/pru.md" >}}'>PRU</a>
+          </td>
+		 <td><a href='{{< relref "/methodology/horizontal-flight-efficiency-pi.html" >}}'><i class="fas fa-info-circle"></i></a></td>
+         <td><a href="/data/"><i class="fas fa-download"></i></a></td>
+      </tr>
+   </tbody>
+</table>
+
+
+<div class="row">
+    <div class="col-sm-6">
+        <h4>Evolution over time (EUROCONTROL level)</h4>
+        <div id="crt_hfe_YY"></div><br>
+        <div id="crt_hfe_MM"></div>
+    </div>
+
+    <div class="col-sm-6">
+        <h4>Results by entity (January 2019)</h4>
+        <div id="tbl_hfe_YY"></div>
+    </div>
+</div>
+
+
+<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+ // load the visualisation API
+ google.load('visualization', '1', { packages: ['corechart', 'controls'] });
+</script>
