@@ -4,7 +4,7 @@ title: "ANS Cost-efficiency"
 ---
 
 <script type="text/javascript" src="http://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
-google.load('visualization', '1', { packages: ['corechart', 'controls'] });
+google.load('current', { packages: ['corechart', 'controls'] });
 </script>
 
 <script type="text/javascript">
@@ -35,7 +35,6 @@ function drawVisualization()
         },
     view: {'columns': [0,1,2,3,4]}
   }); crt_eco1.draw();
-
 
 }
 google.setOnLoadCallback(drawVisualization)
