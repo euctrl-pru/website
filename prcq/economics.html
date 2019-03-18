@@ -4,9 +4,8 @@ title: "ANS Cost-efficiency"
 ---
 
 <script type="text/javascript" src="http://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
-google.load('current', { packages: ['corechart', 'controls'] });
+google.load('visualization', '1', { packages: ['corechart', 'controls'] });
 </script>
-
 <script type="text/javascript">
 function drawVisualization()
  {
@@ -14,7 +13,7 @@ function drawVisualization()
   var crt_eco1 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_eco1',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Tba2bYjXvy09-nvxM2BR7r2BYhSWR63F6NJroFmE8G4/edit?usp=sharing&sheet=eco&range=I1:M8',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=eco&range=I1:M7',
     options:{
         chartArea: {left: 80, top: 10, width:'70%',height:'80%'},
           titleTextStyle : {color: 'grey', fontSize: 12},
@@ -35,7 +34,58 @@ function drawVisualization()
         },
     view: {'columns': [0,1,2,3,4]}
   }); crt_eco1.draw();
-
+// ERT - CHART -
+ var crt_eco2 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_eco2',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=eco&range=A1:F6',
+    options: {
+        chartArea: {left: 60, top: 10, width:'60%',height:'80%'},
+        titleTextStyle : {color: '#1F1F2E', fontSize: 12},
+        legend: 'right',
+        //seriesType: 'bars',
+        series: {
+                0: {type:'bars',color:'#003366', targetAxisIndex: 0},
+                1: {type:'bars',color:'#FFC000', targetAxisIndex: 0},
+                2: {type:'bars',color:'#993366', targetAxisIndex: 0},
+              },
+        vAxes:{
+              0:{ title:'% change', format: '0%', titleTextStyle : {color: '#1F1F2E', fontSize: 12}, textStyle:{color: '#1F1F2E'}}
+            },
+        hAxis: {slantedTextAngle: 45,}
+        },
+    view: {columns: [0,3,4,5], rows: [0,1,2,3,4]}
+  }); crt_eco2.draw();
+// ANALYSIS BY ANSP
+  var crt_eco3 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_eco3',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=eco&range=A11:H49',
+    options:{
+        height: 380,
+        chartArea: {left: 80, top: 30, width:'80%',height:'50%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: {
+               position: 'top',
+               maxLines: 2,
+               textStyle: {color: 'grey', fontSize: 11 }
+            },
+          isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#9999FF', targetAxisIndex: 0},
+                1: {type:'bars',color:'#FF0000', targetAxisIndex: 0},
+                2: {type:'bars',color:'#EEE800', targetAxisIndex: 0},
+                3: {type:'lines', color:'#B89470', lineWidth: 0, pointSize: 10, targetAxisIndex: 1}
+              },
+          hAxis: {slantedTextAngle: 45,
+              textStyle: {fontSize: 12}},
+          vAxes:{
+              0:{ title:'EUR(2015) per composite flight hour',titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}},
+              1:{ title:'share of delay costs (%)', titleTextStyle : {color: '#B89470', fontSize: 12}, textStyle:{color:'#B89470', fontSize: 12}}
+            }
+        },
+    view: {'columns': [0,1,2,3,7]}
+  }); crt_eco3.draw();
 }
 google.setOnLoadCallback(drawVisualization)
 </script>
@@ -58,7 +108,7 @@ google.setOnLoadCallback(drawVisualization)
          <td>Jan-Dec</td>
          <td><a href='{{"/references/definition/eurocontrol_area.html"| prepend: site.baseurl | prepend: site.url }}'>EUROCONTROL area</a></td>
          <td>Annually</td>
-         <td>22-Mar-2019</td>
+         <td>15-Mar-2018</td>
           <td>
           <a href="http://www.eurocontrol.int/documents/economic-information-disclosure-specification" target="_blank">ANSPs submissions</a>
           </td>
@@ -67,19 +117,13 @@ google.setOnLoadCallback(drawVisualization)
    </tbody>
 </table>
 
-<div class="alert alert-danger">
-Note that the ACE data included in this section is still provisional at the time when the draft report is made available for consultation. The data will be updated in May 2019 prior to the publication of the final PRR 2018 to ensure consistency with the data that will be presented in the final ACE 2017 Benchmarking Report.
-</div> 
-
 <h4 class="sub-header">Changes in <a href='{{"/references/definition/eco_cost_eff.html"| prepend: site.baseurl | prepend: site.url }}'>economic cost-effectiveness</a> (37 <a href='{{"/references/acronym/ansp.html"| prepend: site.baseurl | prepend: site.url }}'>ANSPs</a>)</h4>
 <div class="row">
 <div class="col-sm-6 ">
     <div id="crt_eco1"></div>
 </div>
 <div class="col-sm-6">
-
-
-
+    <div id="crt_eco2"></div>
 </div>
 </div>
 
@@ -94,8 +138,7 @@ Note that the ACE data included in this section is still provisional at the time
 <div class="row placeholders">
 <div class="col-sm-12 placeholder">
     <h4><a href='{{"/references/definition/eco_cost_eff.html"| prepend: site.baseurl | prepend: site.url }}'>Economic gate-to-gate cost effectiveness (2016)</a></h4>
-   
-
+    <div id="crt_eco3"></div>
 </div>
 </div>
 
