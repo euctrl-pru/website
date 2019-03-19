@@ -65,5 +65,13 @@ dbDisconnect(con)
 Sys.unsetenv("TZ")
 Sys.unsetenv("ORA_SDTZ")
 
-data %>% write_csv("data/set/hfe/hfe.json")
+s <- function(df, ftype) {
+  y <- unique(df$YEAR)
+  write_csv(df, here::here("static", "download", "csv", stringr::str_c("hfe_", y, ".csv.bz2")), na = "")
+  df
+}
 
+
+data %>%
+  group_by(YEAR) %>% 
+  do(s(.))

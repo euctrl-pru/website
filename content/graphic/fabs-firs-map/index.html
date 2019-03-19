@@ -1,5 +1,7 @@
 ---
 layout: graphic
+title: "FABs and FIRs"
+date: "2016-01-01"
 ---
 
 <script src="//d3js.org/d3.v3.min.js"></script>
@@ -7,6 +9,7 @@ layout: graphic
 <script src="//cdnjs.cloudflare.com/ajax/libs/d3-legend/1.10.0/d3-legend.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
 <link href="fabs.css" rel="stylesheet">
+<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
 <script src="fabs.js"></script>
 
 
@@ -28,8 +31,8 @@ layout: graphic
   	   scale: 530,
        rotateLat:-53,
        rotateLon: 0,
-       topo: "{% asset_path euctrl-firs.json %}",
-  	   world: "{% asset_path world-50m.json %}"
+       topo: "/json/euctrl-firs.json",
+  	   world: "/json/world-50m.json"
      };
 
      var query = window.location.search.substring(1);

@@ -72,4 +72,4 @@ all <- csvs %>%
   replace_na(replace = list(FLT_ERT_1= 0, DLY_ERT_1 = 0)) %>%
   group_by(YEAR, ENTITY_NAME) %>%
   summarise(flt = sum(FLT_ERT_1), dly = sum(DLY_ERT_1), avg = ifelse(flt == 0, 0, dly / flt)) %>%
-  write_csv(str_c("graphic/en-route-atfm-delay-fab/monthly-ert-dly-fab-fir.csv"))
+  write_csv(here::here("content", "graphic", "en-route-atfm-delay-fab","monthly-ert-dly-fab-fir.csv"))

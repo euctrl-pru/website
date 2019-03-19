@@ -17,6 +17,10 @@ The datasets made available are:
     * [ANSP][ansp] group (see [list of ANSP's considered by PRU][ansps]): `ansp`
     * Country FIR group: `fir`
 
+* Horizontal Flight Efficiency: `hfe`
+    * Entity type can be `State (FIR)` or `FAB (FIR)	`
+
+
 For example `ert_dly_ansp_2012.csv.bz2` refers to en-rote delays dataset with ANSP breakdown for year 2012.
 
 ## Dataset files

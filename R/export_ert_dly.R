@@ -311,7 +311,7 @@ data <- data %>%
 
 mySave <- function(df, ftype) {
   y <- unique(df$YEAR)
-  write_csv(df, str_c("data/csv/ert_dly_", ftype, "_", y, ".csv.bz2"), na = "")
+  write_csv(df, here::here("static", "download", "csv", str_c("ert_dly_", ftype, "_", y, ".csv.bz2")), na = "")
   df
 }
 

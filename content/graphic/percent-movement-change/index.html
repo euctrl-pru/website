@@ -1,7 +1,9 @@
 ---
 title: Traffic Percentage Change Y-to-Y
 layout: graphic
+date: "2016-02-01"
 ---
+
 <style>
  .bar--positive {
    fill: steelblue;
@@ -104,7 +106,7 @@ layout: graphic
      return true;
    });
 
-   d3.tsv("ert_flt_ansp.tsv", type, function(error, data) {
+   d3.tsv("ert-flt-ansp.tsv", type, function(error, data) {
      x.domain(d3.extent(data, function(d) { return d.value; })).nice();
      y.domain(data.map(function(d) { return d.name; }));
 
