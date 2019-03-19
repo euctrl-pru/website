@@ -18,6 +18,7 @@ languageCode = "en-us"
 title = "PRU Portal"
 theme = "pru-theme"
 googleAnalytics = ""
+summaryLength = 10
 
 customCSS = ["css/supplement.css"]
 
