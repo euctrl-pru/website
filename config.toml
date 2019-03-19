@@ -204,6 +204,43 @@ ignoreFiles = [
     parent = "about"
     weight = 10
 
+
+[[menu.sidenav]]
+    name = "Overview"
+    url = "/prcq/"
+    identifier= "overview"
+    weight = 10
+[[menu.sidenav]]
+    name = "Traffic"
+    url = "/prcq/traffic/"
+    identifier= "traffic"
+    weight = 20
+[[menu.sidenav]]
+    name = "Safety"
+    url = "/prcq/safety/"
+    identifier= "safety"
+    weight = 30
+[[menu.sidenav]]
+    name = "Ops En-route"
+    url = "/prcq/ops-en-route/"
+    identifier= "ops-en-route"
+    weight = 40
+[[menu.sidenav]]
+    name = "Ops Airport"
+    url = "/prcq/ops-airport/"
+    identifier= "ops-airport"
+    weight = 50
+[[menu.sidenav]]
+    name = "Economics"
+    url = "/prcq/economics/"
+    identifier= "economics"
+    weight = 60
+
+
+
+
+
+
 [params]
   includeBootstrapJs = false
   showActiveNav = true
