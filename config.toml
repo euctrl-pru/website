@@ -46,6 +46,12 @@ ignoreFiles = [
 # The value of pre is the icon name
 [menu]
   [[menu.main]]
+    name = "News"
+    identifier = "news"
+    pre = ""
+    url = "/post/"
+    weight = 5
+  [[menu.main]]
     name = "Analysis"
     identifier = "dashboard"
     pre = ""
@@ -91,12 +97,14 @@ ignoreFiles = [
     weight = 21
   [[menu.main]]
     name = "ACE dashboard"
+    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
     url = "https://www.eurocontrol.int/ACE/ACE-Home.html"
     identifier = "ace-dashboard"
     parent = "dashboard"
     weight = 25
   [[menu.main]]
     name = "SU dashboard"
+    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
     url = "https://www.eurocontrol.int/ServiceUnits/Dashboard/"
     identifier = "su-dashboard"
     parent = "dashboard"
@@ -128,12 +136,14 @@ ignoreFiles = [
     weight = 40
   [[menu.main]]
     name = "PRR"
+    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
     url = "https://www.eurocontrol.int/prc/publications#field-tabs-tab-0"
     identifier = "prr"
     parent = "references"
     weight = 1
   [[menu.main]]
     name = "ACE"
+    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
     url = "https://www.eurocontrol.int/prc/publications#field-tabs-tab-1"
     identifier = "ace"
     parent = "references"
@@ -247,6 +257,8 @@ ignoreFiles = [
   containerMaxWidth = "960px"
   dateFormat = "Jan 2, 2006"
   hideFooter = false
+  sitetosearch = "ansperformance.eu"
+
   [params.logo]
     url = "images/euctrl-logo-noname.png"
     height = 30
