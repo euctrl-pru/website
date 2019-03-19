@@ -10,31 +10,83 @@ google.load('visualization', '1', { packages: ['corechart', 'controls'] });
 function drawVisualization()
  {
 
-
-
-// ARRIVAL ATFM DELAY (T30)
-  var crt_apt5 = new google.visualization.ChartWrapper({
+// ERT A
+  var crt_eco1 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
-    containerId: 'crt_apt5',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Tba2bYjXvy09-nvxM2BR7r2BYhSWR63F6NJroFmE8G4/edit?usp=sharing&sheet=apt&range=A10:F40',
+    containerId: 'crt_eco1',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Tba2bYjXvy09-nvxM2BR7r2BYhSWR63F6NJroFmE8G4/edit?usp=sharing&sheet=eco&range=I1:M7',
     options:{
-        height: 300,
-        chartArea: {left: 80, top: 10, width:'100%', height:'35%'},
-          legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 12} ,maxLines: 2},
+        chartArea: {left: 80, top: 10, width:'70%',height:'80%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: {position:'right',textStyle:{color: 'grey', fontSize: 11}},
           isStacked : 'true',
           series: {
-                0: {type:'bars',color:'#c0504d', targetAxisIndex: 0},
-                1: {type:'bars',color:'#e6b9b8', targetAxisIndex: 0},
-                2: {type:'bars',color:'#92d050', targetAxisIndex: 0},
-                3: {type:'bars',color:'#a6a6a6', targetAxisIndex: 0},
-                4: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 0}
+                0: {type:'bars',color:'#9999FF', targetAxisIndex: 0},
+                1: {type:'bars',color:'#FF0000', targetAxisIndex: 0},
+                2: {type:'bars',color:'#EEE800', targetAxisIndex: 0},
+                3: {type:'lines', color:'#B89470', lineWidth: 0, pointSize: 10, targetAxisIndex: 1}
               },
-          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 10}, title: 'Airports sorted by movements (* A-CDM airport)'},
-          vAxis: {format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
+          hAxis: {slantedTextAngle: 90,
+              textStyle: {fontSize: 12}},
+          vAxes:{
+              0:{ title:'Euro(2015) per composite flight hour'},
+              1:{ title:'year on year (%)', titleTextStyle : {color: '#B89470', fontSize: 11}, textStyle:{color:'#B89470'}}
+            }
         },
-    view: {'columns': [0,1,2,3,4,5]}
-  }); crt_apt5.draw();
-
+    view: {'columns': [0,1,2,3,4]}
+  }); crt_eco1.draw();
+// ERT - CHART -
+ var crt_eco2 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_eco2',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Tba2bYjXvy09-nvxM2BR7r2BYhSWR63F6NJroFmE8G4/edit?usp=sharing&sheet=eco&range=A1:F6',
+    options: {
+        chartArea: {left: 60, top: 10, width:'60%',height:'80%'},
+        titleTextStyle : {color: '#1F1F2E', fontSize: 12},
+        legend: 'right',
+        //seriesType: 'bars',
+        series: {
+                0: {type:'bars',color:'#003366', targetAxisIndex: 0},
+                1: {type:'bars',color:'#FFC000', targetAxisIndex: 0},
+                2: {type:'bars',color:'#993366', targetAxisIndex: 0},
+              },
+        vAxes:{
+              0:{ title:'% change', format: '0%', titleTextStyle : {color: '#1F1F2E', fontSize: 12}, textStyle:{color: '#1F1F2E'}}
+            },
+        hAxis: {slantedTextAngle: 45,}
+        },
+    view: {columns: [0,3,4,5], rows: [0,1,2,3,4]}
+  }); crt_eco2.draw();
+// ANALYSIS BY ANSP
+  var crt_eco3 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_eco3',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Tba2bYjXvy09-nvxM2BR7r2BYhSWR63F6NJroFmE8G4/edit?usp=sharing&sheet=eco&range=A11:H49',
+    options:{
+        height: 380,
+        chartArea: {left: 80, top: 30, width:'80%',height:'50%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: {
+               position: 'top',
+               maxLines: 2,
+               textStyle: {color: 'grey', fontSize: 11 }
+            },
+          isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#9999FF', targetAxisIndex: 0},
+                1: {type:'bars',color:'#FF0000', targetAxisIndex: 0},
+                2: {type:'bars',color:'#EEE800', targetAxisIndex: 0},
+                3: {type:'lines', color:'#B89470', lineWidth: 0, pointSize: 10, targetAxisIndex: 1}
+              },
+          hAxis: {slantedTextAngle: 45,
+              textStyle: {fontSize: 12}},
+          vAxes:{
+              0:{ title:'EUR(2015) per composite flight hour',titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}},
+              1:{ title:'share of delay costs (%)', titleTextStyle : {color: '#B89470', fontSize: 12}, textStyle:{color:'#B89470', fontSize: 12}}
+            }
+        },
+    view: {'columns': [0,1,2,3,7]}
+  }); crt_eco3.draw();
 
 }
 google.setOnLoadCallback(drawVisualization)
@@ -67,34 +119,37 @@ google.setOnLoadCallback(drawVisualization)
    </tbody>
 </table>
 
+<div class="alert alert-danger">
+    Note that the ACE data included in this section is still provisional. The data will be updated in May 2019 prior to the publication of the final PRR 2018 to ensure consistency with the data that will be presented in the final ACE 2017 Benchmarking Report.
+</div>
+
 <h4 class="sub-header">Changes in <a href='{{"/references/definition/eco_cost_eff.html"| prepend: site.baseurl | prepend: site.url }}'>economic cost-effectiveness</a> (37 <a href='{{"/references/acronym/ansp.html"| prepend: site.baseurl | prepend: site.url }}'>ANSPs</a>)</h4>
 <div class="row">
 <div class="col-sm-6 ">
-    <div id="crt_apt5"></div>
+ <div id="crt_eco1"></div>
 </div>
 <div class="col-sm-6">
-    
+ <div id="crt_eco2"></div>  
 </div>
 </div>
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    The analysis shows the trend of the unit economic costs between 2011 and 2016 at Pan-European level  for a consistent sample of 37 ANSPs for which data for a time-series analysis was available. The left-hand side shows the changes in unit economic costs, while the right-hand side provides complementary information on the year-on-year changes in ATM/CNS provision costs, composite flight-hours and unit costs of ATFM delays.
-    The unit costs of gate-to-gate ATFM delays rose by +20.2% in 2016 (based on the old computation method) and unit economic costs were +0.8% higher than in 2015.<br>
-    At Pan-European level, the economic cost-effectiveness indicator amounted to €488 per composite flight-hour in 2016, and, on average, ATFM delays represent 16% of the total economic costs.  
+    The analysis shows the trend of the unit economic costs between 2012 and 2017 at Pan-European level for a consistent sample of 37 ANSPs for which data for a time-series analysis was available. The left-hand side shows the changes in unit economic costs, while the right-hand side provides complementary information on the year-on-year changes in ATM/CNS provision costs, composite flight-hours and unit costs of ATFM delays.<br>
+    The economic cost-effectiveness indicator at Pan-European level amounts to €480 per composite flight-hour in 2017, and, on average, ATFM delays represent 16% of the total economic costs..  
   </div>
 </div>
 
 <div class="row placeholders">
 <div class="col-sm-12 placeholder">
     <h4><a href='{{"/references/definition/eco_cost_eff.html"| prepend: site.baseurl | prepend: site.url }}'>Economic gate-to-gate cost effectiveness (2016)</a></h4>
-    
+ <div id="crt_eco3"></div>
 </div>
 </div>
 
 <div class="panel panel-info">
   <div class="panel-heading">
-In 2016 unit economic costs ranged from €924 for Belgocontrol to €209 for MATS; a factor of more than four.
+In 2017 unit economic costs ranged from €904 for LVNL to €221 for MATS, a factor of more than four
 <br>
  More information on exchange rates variations and their impact on unit costs is provided in the  <a href='{{"/references/acronym/ace.html"| prepend: site.baseurl | prepend: site.url }}'>ACE Benchmarking Reports</a>.
   </div>
