@@ -100,5 +100,13 @@ dbDisconnect(con)
 Sys.unsetenv("TZ")
 Sys.unsetenv("ORA_SDTZ")
 
-data %>% write_csv("data/set/apt_dly/apt_dly.json")
+s <- function(df) {
+  y <- unique(df$YEAR)
+  write_csv(df, here::here("static", "download", "csv", stringr::str_c("apt_dly_", y, ".csv.bz2")), na = "")
+  df
+}
 
+
+data %>% 
+  group_by(YEAR) %>% 
+  do(s(.))

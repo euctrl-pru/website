@@ -20,6 +20,7 @@ The datasets made available are:
 * Horizontal Flight Efficiency: `hfe`
     * Entity type can be `State (FIR)` or `FAB (FIR)	`
 
+* Airport Arrival ATFM Delays: `apt_dly`
 
 For example `ert_dly_ansp_2012.csv.bz2` refers to en-rote delays dataset with ANSP breakdown for year 2012.
 
