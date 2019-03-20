@@ -12,4 +12,4 @@ Typically it is a cylinder of 40 NM radius.
 
 ## See Also
 
-* [Additional ASMA time methodology](/reference/methodology/unimpeded_asma_time/) in the [Methodology](/reference/methodology/) section.
+* [Additional ASMA time methodology](/methodology/unimpeded-asma-time/) in the [Methodology](/methodology/) section.

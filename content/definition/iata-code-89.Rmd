@@ -9,6 +9,11 @@ bibliography: [../../static/bib/aviation.bib]
 link-citations: true
 biblio-style: apalike
 ---
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
+```
+
 Code 89 (alpha AM) is one of IATA's delay codes [@wiki:iatadelaycodes; @iata:delaycodes].
 It is specified as follows:
 

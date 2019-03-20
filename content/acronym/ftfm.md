@@ -15,4 +15,4 @@ are received from Network Operations.
 
 * [ETFMS][etfms].
 
-[etfms]: /reference/acronym/etfms/ "ETFMS"
+[etfms]: /acronym/etfms/ "ETFMS"

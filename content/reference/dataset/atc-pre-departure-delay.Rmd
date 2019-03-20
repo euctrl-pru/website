@@ -8,6 +8,10 @@ bibliography: ["../../../static/bib/aviation.bib"]
 link-citations: true
 slug: atc-pre-departure-delay
 ---
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
+```
 
 ## Data description
 

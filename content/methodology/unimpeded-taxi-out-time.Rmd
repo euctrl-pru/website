@@ -6,18 +6,9 @@ categories:
 type: methodology
 slug: unimpeded-taxi-out-time
 ---
-```{r echo = FALSE, message = FALSE}
-knitr::opts_chunk$set(
-  echo = FALSE,
-  message = FALSE,
-  warning = FALSE,
-  fig.env = 'figure',
-  fig.align = 'center',
-  fig.width = 6,
-  fig.asp = 0.618,  # 1 / phi
-  fig.show = "hold",
-  out.width = "100%"
-)
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
 ```
 
 ## Introduction
@@ -129,7 +120,6 @@ combinations, stands are grouped at some airports.
 Unimpeded taxi-out time is calculated in five steps:
 
 1. *Input data quality check*
-
     * Off-block and take-off times received from airports are cross-checked for
       consistency and completeness, as described in the
       [Quality assessment] section here below.
@@ -140,7 +130,6 @@ Unimpeded taxi-out time is calculated in five steps:
         from the traffic sample.
 
 1. *For each departing flight of the traffic sample*
-
     * Computation of the actual taxi-out time, that is the difference between
       the actual off-block time (AOBT) and the actual take-off time (ATOT).
     * Determination of the congestion level by counting the number of other
@@ -153,7 +142,6 @@ Unimpeded taxi-out time is calculated in five steps:
       respective flight belongs to.
 
 1. *Determination of the saturation level*
-
     * Estimation of the peak airport throughput ($R$) of the airport using the 
       90th percentile of the airport throughput within the preceding hour of
       all flights in the reference sample.
@@ -168,9 +156,8 @@ Unimpeded taxi-out time is calculated in five steps:
         $$
 
 1. *Identification of the unimpeded flights*
-   
-   For each group (departure stand(s); departure runway):
 
+    For each group (departure stand(s); departure runway):
      * Selection of flights with a
        
        $$
@@ -179,8 +166,7 @@ Unimpeded taxi-out time is calculated in five steps:
 
 1. *Computation of the unimpeded taxi-out time*
    
-   For each group (departure stand(s); departure runway):
-
+    For each group (departure stand(s); departure runway):
     * If the number of unimpeded flights in the group is less than 10,
       no unimpeded taxi-out time time is computed for that couple;
     * If the number of unimpeded flights is greater or equal to 10,
@@ -282,4 +268,4 @@ Every month the following checks are carried out for each of the airports:
 
 If one of these conditions is not met, new unimpeded taxi-out times are calculated.
 
-[atxot]: </reference/definition/additional_taxi-out_time/ "Additional Taxi-out Time definition"
+[atxot]: /definition/additional-taxi-out-time/ "Additional Taxi-out Time definition"

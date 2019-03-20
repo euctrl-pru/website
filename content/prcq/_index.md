@@ -44,7 +44,7 @@ Average en-route ATFM delays doubled in 2018 compared to the first nine months i
 
 The main drivers of the substantial increase in 2018 were en route ATFM regulations attributed to ATC Staffing [S], adverse weather [codes W,D], and ATC Capacity [C]. Compared to 2017 there was also a significant increase in ATFM delays (ATC disruptions) due to ATC industrial action in France. 
 
-Overall, 13.7% of the controlled flights in the EUROCONTROL area were affected by ATFM delays in the first three quarters of 2018. By far the main share (78.2%) were delayed by en-route ATFM regulations. Compared to 2017 (Jan-Sep), the share of flights affected by en-route ATFM delays increased by 4.6 percent points to 10.7%. <br>At the same time, the share of flights affected by <a href='{{"/prcq/ops-airport.html"| prepend: site.baseurl | prepend: site.url }}'>airport ATFM delays</a> decrease1d slightly from 3.2% in 2017 to 3.0% in 2018 (Jan-Sep).
+Overall, 13.7% of the controlled flights in the EUROCONTROL area were affected by ATFM delays in the first three quarters of 2018. By far the main share (78.2%) were delayed by en-route ATFM regulations. Compared to 2017 (Jan-Sep), the share of flights affected by en-route ATFM delays increased by 4.6 percent points to 10.7%. <br>At the same time, the share of flights affected by [airport ATFM delays][ops_apt] decrease1d slightly from 3.2% in 2017 to 3.0% in 2018 (Jan-Sep).
 
 Average en-route delay per flight was highest in France (2.13 min), followed by DFS/Germany (1.87 min), Cyprus (1.29 min) and Maastricht Upper Area Control Centre/MUAC (0.95 min). 
 
@@ -105,7 +105,7 @@ For a more detailed review of ANS safety performance in the EUROCONTROL area ple
 [alosp]: {{< relref "/acronym/alosp.md" >}} "Acceptable Level of Safety Performance (ALoSP)"
 [acc]: {{< relref "/acronym/acc.md" >}} "Area Control Center"
 [nm]: {{< relref "/acronym/nm.md" >}} "Network Manager"
-[fra]: {{< relref "/acronym/fra.md" >}} "Free Route Airspace (FRA)"
+[fra]: {{< relref "/acronym/fra.html" >}} "Free Route Airspace (FRA)"
 
 [vfe_cdo]: {{< relref "/methodology/cd-vertical-flight-efficiency-pi.html" >}} "Vertical En-route Flight Efficiency"
 [hfe]: {{< relref "/methodology/horizontal-flight-efficiency-pi.html" >}} "Horizontal En-route Flight Efficiency"

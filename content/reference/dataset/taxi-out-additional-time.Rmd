@@ -6,6 +6,10 @@ categories:
 type: dataset
 slug: taxi-out-additional-time
 ---
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
+```
 
 ## Data description
 

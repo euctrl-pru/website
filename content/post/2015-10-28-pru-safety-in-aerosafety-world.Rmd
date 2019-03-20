@@ -6,6 +6,10 @@ categories:
   - safety
 slug: 2015-10-28-pru-safety-in-aerosafety-world
 ---
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
+```
 
 PRU safety performance analysis in July/August 2015 issue of AeroSafety World.
 

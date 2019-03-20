@@ -16,4 +16,4 @@ and a single unit rate are established.
 * {{% a_blank_ectrl "CRCO - What are route charges" "http://www.eurocontrol.int/articles/what-are-route-charges" %}}
 * {{% a_blank_lexicon "TCZ" "https://ext.eurocontrol.int/lexicon/index.php/Terminal_charging_zone" %}}
 
-[tur]: /reference/definition/terminal-ans-unit-rate/ "Terminal ANS Unit Rate definition"
+[tur]: /definition/terminal-ans-unit-rate/ "Terminal ANS Unit Rate definition"

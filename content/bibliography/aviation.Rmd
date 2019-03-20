@@ -4,3 +4,7 @@ title: (Little) Bibliography for Aviation
 bibliography: [../../static/bib/aviation.bib]
 nocite: '@*'
 ---
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
+```

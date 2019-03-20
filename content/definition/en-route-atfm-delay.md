@@ -10,9 +10,9 @@ slug: en-route-atfm-delay
 ATFM delay caused by [regulations][regu] applied by [NM][nm] at the request
 of the [FMP][fmp] to protect en-route ATC sectors from overload.
 
-[nm]: /reference/acronym/nm-cfmu/ "Network Manager"
-[fmp]: /reference/acronym/fmp/ "Flow Management Position"
-[regu]: /reference/definition/regulation/ "Regulation"
+[nm]: /acronym/nm-cfmu/ "Network Manager"
+[fmp]: /acronym/fmp/ "Flow Management Position"
+[regu]: /definition/regulation/ "Regulation"
 
 
 ## See Also

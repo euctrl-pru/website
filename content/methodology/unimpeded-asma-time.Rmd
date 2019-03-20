@@ -6,38 +6,29 @@ categories:
 type: methodology
 slug: unimpeded-asma-time
 ---
-```{r echo = FALSE, message = FALSE}
-knitr::opts_chunk$set(
-  echo = FALSE,
-  message = FALSE,
-  warning = FALSE,
-  fig.env = 'figure',
-  fig.align = 'center',
-  fig.width = 6,
-  fig.asp = 0.618,  # 1 / phi
-  fig.show = "hold",
-  out.width = "100%"
-)
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
 ```
 
 
 ## Introduction
 
 The actual time spent by a flight between its last entry in the
-[ASMA](/reference/acronym/asma/) (Entry-time at 40 NM upstream -
-$A_\text{LET}$) and the actual landing time
-([$A_\text{ALDT}$](/reference/acronym/aldt/)) is denoted
-[*ASMA transit time*](/references/definition/asma_transit_time/)
+[ASMA](/acronym/asma/) (Entry-time at 40 NM upstream -
+$A_\text{LET}$) and the [actual landing time](/acronym/aldt/)
+($A_\text{ALDT}$) is denoted
+[*ASMA transit time*](/definition/asma-transit-time/)
 ($A_\text{TT}$).
 
 $$
 A_\text{TT} = A_\text{LET} - A_\text{ALDT}
 $$
 
-The [*unimpeded ASMA time*](/reference/definition/unimpeded_asma_time/) is the
+The [*unimpeded ASMA time*](/definition/unimpeded-asma-time/) is the
 ASMA transit time in non congested conditions at arrival airports.
 The unimpeded ASMA time is used in the calculation of the
-[Arrival sequencing and metering area (ASMA) additional time](/reference/definition/additional_asma_time/).
+[Arrival sequencing and metering area (ASMA) additional time](/definition/additional-asma-time/).
 
 This technical note describes the methodology used in order to calculate the
 unimpeded ASMA time.
@@ -120,7 +111,7 @@ The following input data are required in order to calculate the actual ASMA tran
 
 | Acronym | Description | Source |
 |---------|-------------|--------|
-| ASMA entry-point	| Date-time + bearing from airport reference point (long. & lat.) | Actual trajectory from [Correlated Position Report (CPR)](/reference/acronym/cpr/) provided by NM |
+| ASMA entry-point	| Date-time + bearing from airport reference point (long. & lat.) | Actual trajectory from [Correlated Position Report (CPR)](/acronym/cpr/) provided by NM |
 | Aircraft type	| Aircraft ICAO designator | Network Manager |
 | ALDT 	| ‘Actual landing time’ (ALDT) means the actual date and time when the aircraft has landed (touch down). | Airport  data |
 | Arrival runway designator | ICAO designator of the runway used for landing (e.g. 10L). | Airport  data |
@@ -211,7 +202,7 @@ Unimpeded ASMA times are calculated in five steps:
 
 * Consistency analysis between the landing times received from airports and the
   landing times computed by
-  [ETFMS](/reference/acronym/etfms/)
+  [ETFMS](/acronym/etfms/)
   system;
 * Completeness analysis of the *Correlated Positions reports for a Flight (CPF)* trajectory;
 * Existence of the aircraft type ICAO Code to be matched with *aircraft class*.

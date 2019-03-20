@@ -16,5 +16,5 @@ environmental footprint, and reducing costs related to service provision.
 
 ## See Also
 
-* {{% a_blank_ec "SES" "https://ec.europa.eu/transport/modes/air/single_european_sky_en" %}}
+* {{% a_blank_ec "SES" "https://ec.europa.eu/transport/modes/air/ses_en" %}}
 * {{% a_blank_ec "SES 2+" "https://ec.europa.eu/transport/modes/air/single_european_sky/ses2plus_en" %}}

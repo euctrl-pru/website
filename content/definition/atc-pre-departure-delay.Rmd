@@ -6,6 +6,11 @@ categories:
 type: definition
 slug: atc-pre-departure-delay
 ---
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
+```
+
 ATC pre-departure delay is the additional time that the aircraft is held at the
 stand to avoid queuing at the departure runway.
 

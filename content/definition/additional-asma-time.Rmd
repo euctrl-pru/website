@@ -6,6 +6,10 @@ categories:
 type: definition
 slug: additional-asma-time
 ---
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
+```
 
 The Additional ASMA time is the difference between the actual ASMA transit time
 and the unimpeded ASMA time calculated for non-congested conditions.

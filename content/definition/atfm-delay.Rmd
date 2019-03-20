@@ -6,12 +6,18 @@ categories:
 type: definition
 slug: atfm-delay
 ---
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
+```
+
+
 The duration between the last take-off time requested by the aircraft operator
 and the take-off slot allocated by the Network Manager following a regulation
-communicated by the [FMP](/reference/acronym/fmp/), in relation to an
+communicated by the [FMP](/acronym/fmp/), in relation to an
 airport (airport delay) or sector (en-route delay) location.
 
-See also [ATFM delay causes and codes](/reference/definition/atfm-delay-codes/).
+See also [ATFM delay causes and codes](/definition/atfm-delay-codes/).
 
 ## Unit of Measurement
 
@@ -26,4 +32,4 @@ operational purposes.
 ATFM delays data and graphs in this website take this change into account as of
 April 2016.
 
-For more information on the the change in methodology [click here](/references/methodology/ATFM-delay-calculation).
+For more information on the the change in methodology [click here](/methodology/ATFM-delay-calculation).

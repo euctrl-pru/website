@@ -1,6 +1,10 @@
 ---
 title: To Do's
 ---
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
+```
 
 This is what needs to be checked for full migration to Hugo:
 

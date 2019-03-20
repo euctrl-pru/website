@@ -16,4 +16,4 @@ by reference to instruments, and therefore under [IFR][ifr].
 * {{% a_blank_wiki "IMC" "https://en.wikipedia.org/wiki/Instrument_meteorological_conditions" %}}
 * [IFR][ifr].
 
-[ifr]: /reference/acronym/ifr/ "IFR"
+[ifr]: /acronym/ifr/ "IFR"

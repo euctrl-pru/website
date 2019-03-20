@@ -1,5 +1,5 @@
 ---
-title: Performance Indicator -- Horizontal Flight Efficiency
+title: Performance Indicator - Horizontal Flight Efficiency
 subtitle: Level 1 and 2 documentation of the Horizontal Flight Efficiency key performance indicators
 categories:
   - metadata
@@ -34,44 +34,45 @@ slug: horizontal-flight-efficiency-pi
 <p>The calculation of this performance indicator is performed according to the Horizontal Flight Efficiency Data Flow standard for data collection and processing, under the responsibility of the operations unit in the QoS department of the PRU, which is compliant with IR691/2010 and IR390/2013. The Horizontal Flight Efficiency Data Flow associated processes and procedures are documented as part of the PRU Quality Management System.</p>
 <p>These key performance indicators are also defined in the Implementing Regulation (390/2013), Annex I:</p>
 <ul>
-<li><p>Section 1, Environment 2.1, (a) (KEA, Union-wide level);</p></li>
-<li><p>Section 1, Environment 2.1 (b) (KEP, Union-wide level);</p></li>
-<li><p>Section 2, Environment 2.1 (KEA, Functional Airspace Block level);</p></li>
+<li>Section 1, Environment 2.1, (a) (KEA, Union-wide level);</li>
+<li>Section 1, Environment 2.1 (b) (KEP, Union-wide level);</li>
+<li>Section 2, Environment 2.1 (KEA, Functional Airspace Block level);</li>
 </ul>
 </div>
 <div id="summary-of-the-performance-indicator-information" class="section level2">
 <h2>Summary of the performance indicator information</h2>
 <ul>
 <li><p>Current version status: Target Setting.</p></li>
-<li>Version status and evolution:</li>
+<li>Version status and evolution:
+<ul>
 <li>Conceptual Phase: phase completed.</li>
 <li>Technical Development: phase completed.</li>
 <li>Prototyping / Validation: phase completed.</li>
 <li>Monitoring: RP1 and RP2, active.</li>
 <li>Target Setting: RP1 and RP2, active.</li>
-<li><p>Phase Out: n/a.</p></li>
-<li>Context</li>
+<li>Phase Out: n/a.</li>
+</ul></li>
+<li>Context
+<ul>
 <li>KPA: Environment.</li>
 <li>Focus Area: Horizontal Flight Efficiency.</li>
 <li>Trade Offs: local and network performance.</li>
-<li><p>Supports the SES II Performance Scheme.</p></li>
-<li><p>Description: The indicators provide a measure of the average en route additional distance with respect to the great circle distance.</p></li>
-<li><p>Formula and Metrics</p></li>
-</ul>
+<li>Supports the SES II Performance Scheme.</li>
+</ul></li>
+<li>Description: The indicators provide a measure of the average en route additional distance with respect to the great circle distance.</li>
+<li><p>Formula and Metrics</p>
 <p>The indicator considers all portions of flights traversing an airspace and compares the flown and the achieved distance:</p>
 <p><span class="math display">\[
-  \textrm{HFE}_j = \frac{\sum L_{fjp} - \sum H_{fjp}}{\sum H_{fjp}} \% = \Big( \frac{\sum L_{fjp}}{\sum H_{fjp}} - 1  \Big) \%
-  \]</span></p>
-<p>Where <span class="math inline">\(L\)</span> is the length of the trajectory and <span class="math inline">\(H\)</span> is the achieved distance; <span class="math inline">\(f\)</span> is the flight, <span class="math inline">\(j\)</span> is the airspace and <span class="math inline">\(p\)</span> is the portion considered.</p>
+\textrm{HFE}_j = \frac{\sum L_{fjp} - \sum H_{fjp}}{\sum H_{fjp}} \% = \Big( \frac{\sum L_{fjp}}{\sum H_{fjp}} - 1  \Big) \%
+\]</span></p>
+Where <span class="math inline">\(L\)</span> is the length of the trajectory and <span class="math inline">\(H\)</span> is the achieved distance; <span class="math inline">\(f\)</span> is the flight, <span class="math inline">\(j\)</span> is the airspace and <span class="math inline">\(p\)</span> is the portion considered.</li>
+<li>Units Percentage (additional distance per achieved distance).</li>
+<li>Used in
 <ul>
-<li>Units</li>
-</ul>
-<p>Percentage (additional distance per achieved distance).</p>
-<ul>
-<li>Used in</li>
 <li>SES (IR691/2010 &amp; IR390/2013): Annual Performance Report.</li>
 <li>SES eDashboard [ RP1 <span class="citation">(Performance Review Body <a href="#ref-prb:dashboardRP1">2015</a>)</span> and RP2 <span class="citation">(Performance Review Body <a href="#ref-prb:dashboardRP2">2016</a>)</span> ]</li>
 <li>EUROCONTROL: Performance Review Report</li>
+</ul></li>
 </ul>
 </div>
 <div id="acronyms-and-terminology" class="section level2">
@@ -360,9 +361,9 @@ Figure 6: Independence of local performance from performance outside the local a
 <h2>Aggregation of results to produce the indicator</h2>
 <p>Once the origin and destination of a flight have been set, via the use of achieved distances it is possible to compute in a consistent way the value of the indicator between any two points of the trajectory of a flight. It is important to note that the flight efficiency is an average measurement where <strong>the average is taken over distances and not over flights</strong>. This is particularly useful when dealing with three specific aspects:</p>
 <ul>
-<li><p>The measurement of the en-route flight inefficiency. The indicator is concerned with the enroute flight inefficiency defined as the measurement which excludes 40 nautical miles around airports. The measurement does not start until the trajectory has crossed (for the first time) the cylinder with a 40 nautical miles radius around the airport of departure and ends when the trajectory crosses (for the last time) the cylinder with a 40 nautical miles radius around the airport of arrival.</p></li>
-<li><p>The measurement of local inefficiencies. The indicator based on achieved distances is well defined even when the direct route between origin and destination does not cross the local area. It is also well defined when a trajectory exits and re-enters a local area (the two measurements are independent).</p></li>
-<li><p>The measurement of inefficiency when the trajectory is not complete (which might be the case for CPF trajectories). The measurement is well defined for every portion of the trajectory, and does not require a complete trajectory.</p></li>
+<li>The measurement of the en-route flight inefficiency. The indicator is concerned with the enroute flight inefficiency defined as the measurement which excludes 40 nautical miles around airports. The measurement does not start until the trajectory has crossed (for the first time) the cylinder with a 40 nautical miles radius around the airport of departure and ends when the trajectory crosses (for the last time) the cylinder with a 40 nautical miles radius around the airport of arrival.</li>
+<li>The measurement of local inefficiencies. The indicator based on achieved distances is well defined even when the direct route between origin and destination does not cross the local area. It is also well defined when a trajectory exits and re-enters a local area (the two measurements are independent).</li>
+<li>The measurement of inefficiency when the trajectory is not complete (which might be the case for CPF trajectories). The measurement is well defined for every portion of the trajectory, and does not require a complete trajectory.</li>
 </ul>
 <p>When looking at a specific flight, it is always possible to decompose the flight in different portions, of which some will not be taken into consideration for the calculation of the indicator (as an example, the first part of the trajectory will never be included because it will either be inside the 40 nautical miles or outside of the reference area). Every portion can be attributed to a specific measured area (e.g., a State, a FAB, the SES area).</p>
 <p>Flight efficiency compares the length of a trajectory with the great circle distance. The indicator is expressed as a ratio of the length of trajectories and achieved distances:</p>
@@ -423,18 +424,12 @@ Figure 6: Independence of local performance from performance outside the local a
 </tbody>
 </table>
 <ol style="list-style-type: decimal">
-<li><strong>What is the difference between reference area and measured area?</strong></li>
-</ol>
-<p>The reference area is the one used to identify the origin and the destination of a flight. A measured area is an area for which HFE values are reported. Any measured area (e.g., State, FAB, SES area) must be contained in the reference area.</p>
-<ol style="list-style-type: decimal">
-<li><strong>What is the definition of origin and destination?</strong></li>
-</ol>
-<p>The origin and destination correspond to the first and last point of the trajectory within the reference area, where the trajectory considered is the entire trajectory from airport to airport. Any portion of the trajectory before the origin and after the destination is ignored when calculating the flight efficiency. There is one origin and one destination for each trajectory. Origin and destination are defined at trajectory level – O and D in the notation used in previous section are the same for all entries and exits of a trajectory.</p>
-<ol style="list-style-type: decimal">
-<li><strong>What happens when the trajectory crosses the 40 nautical miles cylinder several times?</strong></li>
-</ol>
-<p>Only one point is taken into consideration for each airport. For the departure airport it corresponds to the first crossing, while for the arrival airport it corresponds to the last crossing. The en route part of the flight is the one between those two points. Any portion before or after the en route part is ignored when calculating the en route flight efficiency. The start and the end en route phase are defined at trajectory level.</p>
-<ol style="list-style-type: decimal">
+<li><p><strong>What is the difference between reference area and measured area?</strong></p>
+<p>The reference area is the one used to identify the origin and the destination of a flight. A measured area is an area for which HFE values are reported. Any measured area (e.g., State, FAB, SES area) must be contained in the reference area.</p></li>
+<li><p><strong>What is the definition of origin and destination?</strong></p>
+<p>The origin and destination correspond to the first and last point of the trajectory within the reference area, where the trajectory considered is the entire trajectory from airport to airport. Any portion of the trajectory before the origin and after the destination is ignored when calculating the flight efficiency. There is one origin and one destination for each trajectory. Origin and destination are defined at trajectory level – O and D in the notation used in previous section are the same for all entries and exits of a trajectory.</p></li>
+<li><p><strong>What happens when the trajectory crosses the 40 nautical miles cylinder several times?</strong></p>
+<p>Only one point is taken into consideration for each airport. For the departure airport it corresponds to the first crossing, while for the arrival airport it corresponds to the last crossing. The en route part of the flight is the one between those two points. Any portion before or after the en route part is ignored when calculating the en route flight efficiency. The start and the end en route phase are defined at trajectory level.</p></li>
 <li><p><strong>What happens when the circle around the airport is not fully inside/outside the reference area?</strong><br> <strong>What happens when the en route portion begins/ends inside a measured area?</strong><br> <strong>What happens when part of the trajectory is not available?</strong></p>
 All the above questions relate to the definition of the portions of trajectory used for the calculation of the en route indicator for a measured area. Four separate and independent aspects have to be considered:
 <ul>
@@ -448,30 +443,18 @@ All the above questions relate to the definition of the portions of trajectory u
 <p>Consider the case of a flight departing from a measured area A, with the circle/cylinder entirely contained in the measurement area A. The origin (<span class="math inline">\(O_f\)</span>) will be the airport because it will be the first point into the reference area (a measured area is always part of the reference area). As the part within the cylinder has to be excluded when measuring the en route flight efficiency, the entry into the measured area (<span class="math inline">\(N_A\)</span>) will correspond to the first crossing of the (departure airport) cylinder. It is neither the airport (airports can never be the entry or exit point for en route flight efficiency because of the exclusion of the circle around them) nor the border of the measured area A. The situation corresponds to the standard “departing” or “internal” row in the table above.</p>
 <p>Consider the same case above, except that the circle extends into another measured area B and the first crossing is happening there. The origin will still be located at the airport in measured area A, but there will be no portion of trajectory considered for measured area A because the en route part will not have started. The entry into measured area B (NB) will again correspond to the first crossing of the (departure airport) cylinder and not the airport or the border of measured area B.</p>
 <p>As a third alternative, consider the case where the circle around area A extends outside the reference area, the first crossing happens there and the flight then re-enter measured area A. The origin will again be located at the airport; the en route portion will start outside the reference area; the first entry into area A (NA) will be the one from outside the reference area.</p>
-<p>Last, consider the case where a flight traverses a measured area, with entry and exit on the borders but with a part of the trajectory for which the information is missing. In that case there will be two portions of the trajectory considered: the first one from the border (<span class="math inline">\(N_1\)</span>) until the information is lost (<span class="math inline">\(X_1\)</span>) and a second one from when the information is again available (<span class="math inline">\(N_2\)</span>) until the exit from the measured area (<span class="math inline">\(X_2\)</span>).</p></li>
-<li><p><strong>What happens when the trajectory enters an area several times?</strong></p></li>
-</ol>
-<p>Every couple of entry and exit points (see the previous answer for why the entry and exit points might not correspond to points on the border of the measured area considered) defines a portion of the flight for which the length of the trajectory and the achieved distance can be calculated. All portions within a measured area are considered in the calculation of the indicator for that area.</p>
-<p>It is important to note that multiple entries are considered separately and it is not the first point of entry and the last point of exit of a measured area which are considered (see last example in the previous question).</p>
-<ol style="list-style-type: decimal">
-<li><strong>Can the achieved distance be negative?</strong></li>
-</ol>
-<p>The achieved distance relies on the order of the points considered; it is therefore possible (although uncommon) for the local achieved distance to be negative. This ensures that the calculation of the local additional distances is consistent (any partition of the trajectory gives the same result).</p>
-<ol style="list-style-type: decimal">
-<li><strong>What is the impact of short flights (for which the great circle distance is small)?</strong></li>
-</ol>
-<p>The horizontal flight efficiency (HFE) is not an average per flight, but a weighted average which takes into consideration the great circle distance (<span class="math inline">\(K\)</span> is the additional distance, <span class="math inline">\(G\)</span> is the great circle distance, <span class="math inline">\(H\)</span> is the achieved distance; <span class="math inline">\(f\)</span> indicates a flight, <span class="math inline">\(j\)</span> indicates an area, <span class="math inline">\(p\)</span> indicates a portion of the flight):</p>
-<pre><code>$$
+Last, consider the case where a flight traverses a measured area, with entry and exit on the borders but with a part of the trajectory for which the information is missing. In that case there will be two portions of the trajectory considered: the first one from the border (<span class="math inline">\(N_1\)</span>) until the information is lost (<span class="math inline">\(X_1\)</span>) and a second one from when the information is again available (<span class="math inline">\(N_2\)</span>) until the exit from the measured area (<span class="math inline">\(X_2\)</span>).</li>
+<li><p><strong>What happens when the trajectory enters an area several times?</strong> Every couple of entry and exit points (see the previous answer for why the entry and exit points might not correspond to points on the border of the measured area considered) defines a portion of the flight for which the length of the trajectory and the achieved distance can be calculated. All portions within a measured area are considered in the calculation of the indicator for that area.</p>
+It is important to note that multiple entries are considered separately and it is not the first point of entry and the last point of exit of a measured area which are considered (see last example in the previous question).</li>
+<li><strong>Can the achieved distance be negative?</strong> The achieved distance relies on the order of the points considered; it is therefore possible (although uncommon) for the local achieved distance to be negative. This ensures that the calculation of the local additional distances is consistent (any partition of the trajectory gives the same result).</li>
+<li><p><strong>What is the impact of short flights (for which the great circle distance is small)?</strong> The horizontal flight efficiency (HFE) is not an average per flight, but a weighted average which takes into consideration the great circle distance (<span class="math inline">\(K\)</span> is the additional distance, <span class="math inline">\(G\)</span> is the great circle distance, <span class="math inline">\(H\)</span> is the achieved distance; <span class="math inline">\(f\)</span> indicates a flight, <span class="math inline">\(j\)</span> indicates an area, <span class="math inline">\(p\)</span> indicates a portion of the flight):</p>
+<p><span class="math display">\[
 \text{HFE} = \sum w_f \cdot \frac{K_f}{G_f} = \sum \frac{G_f}{\sum G_f} \cdot \frac{K_f}{G_f}
 = \frac{\sum K_f}{\sum G_f} = \frac{K_f}{H_f} \cong \frac{\sum K_{fjp}}{\sum
 H_{fjp}}
-$$
-
-The contribution to the additional distance of each portion of the flight is
-proportional to the achieved distance of the same portion. The impact of
-short flights is therefore proportional to their lengths.</code></pre>
-<ol style="list-style-type: decimal">
-<li><strong>What is the impact of unusual circumstances on the annual indicator?</strong></li>
+\]</span></p>
+The contribution to the additional distance of each portion of the flight is proportional to the achieved distance of the same portion. The impact of short flights is therefore proportional to their lengths.</li>
+<li><p><strong>What is the impact of unusual circumstances on the annual indicator?</strong></p></li>
 </ol>
 <p>When calculating the annual indicator the values for the ten best days and the ten worst days are excluded from the computation.</p>
 </div>

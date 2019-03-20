@@ -8,4 +8,4 @@ slug: regulation
 ---
 
 In the context of ATFM, a *regulation* is one of the possible
-[ATFM measure](/reference/definition/atfm-measure/)s.
+[ATFM measure](/definition/atfm-measure/)s.

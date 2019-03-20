@@ -16,6 +16,6 @@ to ANSPs, and can be expressed in monetary terms. The indicator of â€œeconomicâ€
 the ATM/CNS provision costs plus the costs of ATFM delay, all expressed per [composite flight-hour][comp_hr].
 
 
-[comp_hr]: /reference/definition/composite-flight-hour/ "Composite flight hour"
-[atfm_delay]: /reference/definition/atfm-delay/ "ATFM delay"
-[ansp]: /reference/acronym/ansp/ "ANSP"
+[comp_hr]: /definition/composite-flight-hour/ "Composite flight hour"
+[atfm_delay]: /definition/atfm-delay/ "ATFM delay"
+[ansp]: /acronym/ansp/ "ANSP"

@@ -6,6 +6,10 @@ categories:
 type: acronym
 slug: fra
 ---
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
+```
 
 FRA refers to a  specified airspace within which users may freely plan
 a route between a defined entry point and a defined exit point,

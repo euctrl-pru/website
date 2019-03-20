@@ -8,8 +8,13 @@ slug: atfm-measure
 bibliography: [../../static/bib/legislation.bib]
 link-citations: true
 ---
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
+```
 
-In the context of Air Traffic Flow Management ([ATFM](/reference/acronym/atfm/)) a *measure* refers to [@eu:255/2010]
+
+In the context of Air Traffic Flow Management ([ATFM](/acronym/atfm/)) a *measure* refers to [@eu:255/2010]
 
 > the actions taken to perform air traffic flow management and capacity management
 
@@ -17,7 +22,7 @@ In the context of Air Traffic Flow Management ([ATFM](/reference/acronym/atfm/))
 
 ## See Also
 
-* [Regulation](/reference/definition/regulation/)
+* [Regulation](/definition/regulation/)
 
 
 ## References

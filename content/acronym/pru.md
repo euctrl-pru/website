@@ -17,7 +17,7 @@ Organisationally, PRU is part of the EUROCONTROL Single Sky Directorate.
 ## See Also
 
 * [About PRU][pru].
-* {{% a_blank_ectrl "PRU" "http://www.eurocontrol.int/articles/about-european-ans-performance-review" %}}
+* {{% a_blank_ectrl "PRU" "https://www.eurocontrol.int/ansperformance" %}}
 
 [pru]: /about/us/ "PRU"
 [prc]: {{< relref "prc.md" >}} "PRC"

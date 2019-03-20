@@ -5,18 +5,9 @@ excerpt: "Vertical flight efficiency during the climb and descent phases of flig
 bibliography: ["../../static/bib/aviation.bib"]
 link-citations: true
 ---
-```{r echo = FALSE, message = FALSE}
-knitr::opts_chunk$set(
-  echo = FALSE,
-  message = FALSE,
-  warning = FALSE,
-  fig.env = 'figure',
-  fig.align = 'center',
-  fig.width = 6,
-  fig.asp = 0.618,  # 1 / phi
-  fig.show = "hold",
-  out.width = "100%"
-)
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
 ```
 
 In addition to horizontal flight efficiency, various stakeholders have indicated

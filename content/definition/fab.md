@@ -7,7 +7,7 @@ type: definition
 slug: fab
 ---
 
-The [FAB](http://www.eurocontrol.int/dossiers/fabs)
+The [FAB](https://www.eurocontrol.int/faq/what-are-fab-functional-airspace-blocks)
 concept was developed in the 1st legislative package of the Single European Sky
 (SES I) as one of the main means for reducing airspace fragmentation. The 2nd
 legislative package (SES II) tackled the creation of FABs in terms of service
@@ -35,5 +35,5 @@ have been taken:
 
 For the details about the computation of delay at FAB level (i.e. the FIRs
 used), please refer to the relevant section in the
-[En-route ATFM delays](/references/dataset/En-Route_ATFM_Delay_FIR/)
-page part of the [Datasets Definition](/references/dataset/) section.
+[En-route ATFM delays](/reference/dataset/en-route-atfm-delay-fir/)
+page part of the [Datasets Definition](/reference/dataset/) section.

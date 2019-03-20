@@ -13,5 +13,5 @@ Minute.
 
 ## See also
 
-* [Additional ASMA time methodology]({{< relref "/methodology/unimpeded-asma-time.html" >}}))
+* [Additional ASMA time methodology]({{< relref "/methodology/unimpeded-asma-time.html" >}})
 

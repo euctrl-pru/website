@@ -7,7 +7,7 @@ type: acronym
 slug: a-cdm
 ---
 
-A process in which decisions related to [ATFCM]({{ relref . "atfcm.md" }})
+A process in which decisions related to [ATFCM]({{< relref "atfcm.md" >}})
 at airports are made based on interaction between operational stakeholders and
 other actors involved in ATFCM and which aims at reducing delays, improving the
 predictability of events and optimising the utilisation of resources.

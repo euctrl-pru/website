@@ -3,7 +3,7 @@ title: Data
 categories:
   - download
   - data
-
+aliases: ["/data/performancearea/"]
 ndwk_i: <i class="fa pru fa-flask"></i>
 fltr_i: <i class="fa pru fa-filter"></i>
 attn_i: <i class="fa pru fa-exclamation-triangle"></i>
@@ -46,12 +46,12 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 
 
 [ERT-DLYcsv]: /404/ "ERT-DLY (CSV)"
-[ERT-DLY-AUA-meta]: /dataset/en-route-atfm-delay-aua/ "ERT-DLY (Meta)"
-[ERT-DLY-FIR-meta]: /dataset/en-route-atfm-delay-fir/ "ERT-DLY (Meta)"
+[ERT-DLY-AUA-meta]: /reference/dataset/en-route-atfm-delay-aua/ "ERT-DLY (Meta)"
+[ERT-DLY-FIR-meta]: /reference/dataset/en-route-atfm-delay-fir/ "ERT-DLY (Meta)"
 
 [HFExlsx]: /download/xls/Horizontal_Flight_Efficiency.xlsm "HFE (Excel)"
 [HFEcsv]: {{< relref "csv.md" >}} "HFE (CSV)"
-[HFEmeta]: /dataset/horizontal-flight-efficiency/ "HFE (Meta)"
+[HFEmeta]: /reference/dataset/horizontal-flight-efficiency/ "HFE (Meta)"
 
 [DefAUA]: /acronym/aua/ "AUA definition"
 [DefFIR]: /acronym/fir/ "FIR definition"
@@ -85,11 +85,11 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 [APT-FLTxlsx]:      /download/xls/Airport_Traffic.xlsm "APT-FLT (Excel)"
 [APT-DLY-postxlsx]: /download/xls/Airport_Arrival_ATFM_Delay_post_ops.xlsm "APT-DLY-PO (Excel)"
 [APT-FLTcsv]:       /404/ "APT-FLT (CSV)"
-[APT-FLTmeta]:      /dataset/airport-traffic/  "APT-FLT (Meta)"
+[APT-FLTmeta]:      /reference/dataset/airport-traffic/  "APT-FLT (Meta)"
 
 [APT-DLYxlsx]: /download/xls/Airport_Arrival_ATFM_Delay.xlsm "APT-DLY (Excel)"
 [APT-DLYcsv]:  {{< relref "csv.md" >}} "APT-DLY (CSV)"
-[APT-DLYmeta]: /dataset/airport-arrival-atfm-delay/ "APT-DLY (Meta)"
+[APT-DLYmeta]: /reference/dataset/airport-arrival-atfm-delay/ "APT-DLY (Meta)"
 
 [ASMAxlsx]: /download/xls/ASMA_Additional_Time.xlsm "ASMA (Excel)"
 [ASMAcsv]: /404/ "ASMA (CSV)"
@@ -97,17 +97,17 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 
 [CDOxlsx]: /download/xls/Vertical_Flight_Efficiency_cdo_cco.xlsm "CDO/CCO (Excel)"
 [CDOcsv]:  /404/ "CDO/CCO (CSV)"
-[CDOmeta]: /dataset/continuous-climb-descent/ "CDO/CCO (Meta)"
+[CDOmeta]: /reference/dataset/continuous-climb-descent/ "CDO/CCO (Meta)"
 
 [TX-OUTxlsx]: /download/xls/Taxi-Out_Additional_Time.xlsm "TX-OUT (Excel)"
 [TX-OUTcsv]:  /404/ "TX-OUT (CSV)"
-[TX-OUTmeta]: /dataset/taxi-out-additional-time/ "TX-OUT (Meta)"
+[TX-OUTmeta]: /reference/dataset/taxi-out-additional-time/ "TX-OUT (Meta)"
 
 [ATC-PRExlsx]: /download/xls/ATC_Pre-Departure_Delay.xlsm "ATC-PRE (Excel)"
-[ATC-PREmeta]: /dataset/atc-pre-departure-delay/  "ATC-PRE (Meta)"
+[ATC-PREmeta]: /reference/dataset/atc-pre-departure-delay/  "ATC-PRE (Meta)"
 
 [SLT-ADHxlsx]: /download/xls/ATFM_Slot_Adherence.xlsm "SLT-ADH (Excel)"
-[SLT-ADHmeta]: /dataset/atfm-slot-adherence/ "SLT-ADH (Meta)"
+[SLT-ADHmeta]: /reference/dataset/atfm-slot-adherence/ "SLT-ADH (Meta)"
 
 
 
@@ -122,7 +122,7 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 [CPLXxlsx]:  /download/xls/Traffic_Complexity_Scores_1.xlsm "CPLX (Excel)"
 [CPLX1xlsx]: /download/xls/Traffic_Complexity_Scores_2.xlsm "CPLX (Excel)"
 [CPLXcsv]:   /404/ "CPLX (CSV)"
-[CPLXmeta]:  /dataset/traffic-complexity-score/ "CPLX (Meta)"
+[CPLXmeta]:  /reference/dataset/traffic-complexity-score/ "CPLX (Meta)"
 [CPLXbada]:  /acronym/bada/ "Base of Aircraft Data"
 
 
@@ -132,19 +132,17 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 
 | Data description                                                     | Period                                                                         | <i class="fas fa-file-excel"></i> | CSV |  Info                          | [ICAO GANP][icaoganp]              |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------------------------------|-----|--------------------------------|------------------------------------|
-| ACE operational data<br><small>Monthly ACE operational data</small>  | {{% getdata "dwnld" "ace_opt_beg" %}} - {{% getdata "dwnld" "ace_opt_end" %}}  | [{{% dwnld_i %}}][ACExlsx]        |     | [specs {{% info_i %}}][ACEurl] |                                    |
+| ACE operational data<br><small>Monthly ACE operational data</small>  | {{% getdata "dwnld" "ace_opt_beg" %}} - {{% getdata "dwnld" "ace_opt_end" %}}  | [{{% dwnld_i %}}][ACExlsx]        |     | [{{% info_i %}}][ACEurl] |                                    |
 
-[ACExlsx]: /download/xls/ACE_Monthly_Operational_Data.xls "ACE (Excel)"
+[ACExlsx]: /download/xls/ACE_Monthly_Operational_Data.xlsm "ACE (Excel)"
 [ACEcsv]:  /404/ "ACE (CSV)"
-[ACEmeta]: /dataset/ace-monthly-operational-data/ "ACE (Meta)"
+[ACEmeta]: /reference/dataset/ace-monthly-operational-data/ "ACE (Meta)"
 [ACEurl]:  http://www.eurocontrol.int/documents/economic-information-disclosure-specification "ACE specs"
 
 <br>
 
 {{% dwnld_i %}} = dataset download.<br>
 {{% info_i %}}  = info on dataset.<br>
-{{% fltr_i %}}  = filter for dataset and download.<br>
-{{% ndwk_i %}}  = experimental, [feedback](mailto:{{ site.owner.email }}) is more than welcome.<br>
 {{% attn_i %}}  = not (yet?) available.<br>
 
 

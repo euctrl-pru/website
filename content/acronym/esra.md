@@ -18,7 +18,7 @@ _total Europe_.
 
 * {{% a_blank_ectrl "ESRA" "http://www.eurocontrol.int/faq/what-esra-eurocontrol-statistical-reference-area" %}}
 
-[crco]: /reference/acronym/crco/ "CRCO"
-[nm]: /reference/acronym/nm/ "NM"
-[statfor]: /reference/acronym/statfor/ "STATFOR"
+[crco]: /acronym/crco/ "CRCO"
+[nm]: /acronym/nm/ "NM"
+[statfor]: /acronym/statfor/ "STATFOR"
 

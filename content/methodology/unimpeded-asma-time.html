@@ -11,11 +11,11 @@ slug: unimpeded-asma-time
 
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
-<p>The actual time spent by a flight between its last entry in the <a href="/reference/acronym/asma/">ASMA</a> (Entry-time at 40 NM upstream - <span class="math inline">\(A_\text{LET}\)</span>) and the actual landing time (<a href="/reference/acronym/aldt/"><span class="math inline">\(A_\text{ALDT}\)</span></a>) is denoted <a href="/references/definition/asma_transit_time/"><em>ASMA transit time</em></a> (<span class="math inline">\(A_\text{TT}\)</span>).</p>
+<p>The actual time spent by a flight between its last entry in the <a href="/acronym/asma/">ASMA</a> (Entry-time at 40 NM upstream - <span class="math inline">\(A_\text{LET}\)</span>) and the <a href="/acronym/aldt/">actual landing time</a> (<span class="math inline">\(A_\text{ALDT}\)</span>) is denoted <a href="/definition/asma-transit-time/"><em>ASMA transit time</em></a> (<span class="math inline">\(A_\text{TT}\)</span>).</p>
 <p><span class="math display">\[
 A_\text{TT} = A_\text{LET} - A_\text{ALDT}
 \]</span></p>
-<p>The <a href="/reference/definition/unimpeded_asma_time/"><em>unimpeded ASMA time</em></a> is the ASMA transit time in non congested conditions at arrival airports. The unimpeded ASMA time is used in the calculation of the <a href="/reference/definition/additional_asma_time/">Arrival sequencing and metering area (ASMA) additional time</a>.</p>
+<p>The <a href="/definition/unimpeded-asma-time/"><em>unimpeded ASMA time</em></a> is the ASMA transit time in non congested conditions at arrival airports. The unimpeded ASMA time is used in the calculation of the <a href="/definition/additional-asma-time/">Arrival sequencing and metering area (ASMA) additional time</a>.</p>
 <p>This technical note describes the methodology used in order to calculate the unimpeded ASMA time.</p>
 </div>
 <div id="general-approach" class="section level2">
@@ -70,7 +70,7 @@ Figure 1: Congestion level vs. saturation level.
 <tr class="odd">
 <td>ASMA entry-point</td>
 <td>Date-time + bearing from airport reference point (long. &amp; lat.)</td>
-<td>Actual trajectory from <a href="/reference/acronym/cpr/">Correlated Position Report (CPR)</a> provided by NM</td>
+<td>Actual trajectory from <a href="/acronym/cpr/">Correlated Position Report (CPR)</a> provided by NM</td>
 </tr>
 <tr class="even">
 <td>Aircraft type</td>
@@ -164,7 +164,7 @@ Figure 2: Determination on the ASMA sectors.
 <div id="input-data-validation" class="section level3">
 <h3>Input data validation</h3>
 <ul>
-<li>Consistency analysis between the landing times received from airports and the landing times computed by <a href="/reference/acronym/etfms/">ETFMS</a> system;</li>
+<li>Consistency analysis between the landing times received from airports and the landing times computed by <a href="/acronym/etfms/">ETFMS</a> system;</li>
 <li>Completeness analysis of the <em>Correlated Positions reports for a Flight (CPF)</em> trajectory;</li>
 <li>Existence of the aircraft type ICAO Code to be matched with <em>aircraft class</em>.</li>
 </ul>

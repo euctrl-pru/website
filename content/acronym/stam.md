@@ -18,4 +18,4 @@ capping and exiguous rerouting to a limited number of flights.
 
 
 
-[stam]: {{ relref . "reference/definition/short-term-atfcm-measures.md" }} "STAM"
+[stam]: {{< relref "/definition/short-term-atfcm-measures.md" >}} "STAM"

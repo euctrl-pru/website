@@ -6,8 +6,12 @@ categories:
 type: definition
 slug: atfm-delay-codes
 ---
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
+```
 
-The reason for the regulation is indicated by the responsible Flow Management Position [FMP](/reference/acronym/fmp/).
+The reason for the regulation is indicated by the responsible Flow Management Position [FMP](/acronym/fmp/).
 
 For post-ops analysis individual delay codes can be included in a ATFM delay group. 
 
@@ -52,5 +56,5 @@ For post-ops analysis individual delay codes can be included in a ATFM delay gro
 
 ## See Also
 
-* [ATFM delay](/reference/definition/atfm-delay/).
+* [ATFM delay](/definition/atfm-delay/).
 * `r blogdown::shortcode("a_blank_ectrl", "ATFCM Users Manual", "https://www.eurocontrol.int/sites/default/files/content/documents/nm/network-operations/HANDBOOK/atfcm-users-manual-next.pdf")`.

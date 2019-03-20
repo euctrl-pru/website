@@ -1,3 +1,7 @@
 ---
 site: blogdown:::blogdown_site
 ---
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
+```

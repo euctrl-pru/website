@@ -6,6 +6,11 @@ categories:
 type: dataset
 slug: asma-additional-time
 ---
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
+```
+
 
 ## Data description
 The [additional ASMA time](/reference/definition/additional-asma-time/)

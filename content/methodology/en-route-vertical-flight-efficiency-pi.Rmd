@@ -8,19 +8,9 @@ bibliography: ["../../static/bib/aviation.bib"]
 link-citations: true
 slug: en-route-vertical-flight-efficiency-pi
 ---
-
-```{r echo = FALSE, message = FALSE}
-knitr::opts_chunk$set(
-  echo = FALSE,
-  message = FALSE,
-  warning = FALSE,
-  fig.env = 'figure',
-  fig.align = 'center',
-  fig.width = 6,
-  fig.asp = 0.618,  # 1 / phi
-  fig.show = "hold",
-  out.width = "100%"
-)
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
 ```
 
 
@@ -205,10 +195,10 @@ With:
 | $n_{ {act}, i}$ | Number of flights on the considered airport pair in the percentile range. |
 
 
-[rad]: /reference/acronym/rad/ "RAD"
-[prisme]: /reference/acronym/prisme/ "PRISME"
-[gcd]: /reference/acronym/gcd/ "GCD"
-[ftfm]: /references/acronym/ftfm/ "FTFM"
+[rad]: `r htmltools::HTML('{{< relref "/acronym/rad.md" >}}')` "RAD"
+[prisme]: `r htmltools::HTML('{{< relref "/acronym/prisme.md" >}}')` "PRISME"
+[gcd]: `r htmltools::HTML('{{< relref "/acronym/gcd.md" >}}')` "GCD"
+[ftfm]: `r htmltools::HTML('{{< relref "/acronym/ftfm.md" >}}')` "FTFM"
 
 
 ## Further Information

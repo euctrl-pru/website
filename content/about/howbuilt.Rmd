@@ -1,6 +1,10 @@
 ---
 title: How this site is built
 ---
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
+```
 
 
 This portal is designed and built using the following principles:

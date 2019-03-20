@@ -4,3 +4,7 @@ layout: default
 nocite: '@*'
 bibliography: ../../static/bib/legislation.bib
 ---
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
+```

@@ -14,5 +14,5 @@ European Air Traffic Management System.
 
 * {{% a_blank_ectrl "PRC Publications" "http://www.eurocontrol.int/prc/publications" %}}
 
-[prc]: /reference/acronym/prc/ "Air Traffic Control"
+[prc]: /acronym/prc/ "Air Traffic Control"
 

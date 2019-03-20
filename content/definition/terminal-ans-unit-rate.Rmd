@@ -9,6 +9,10 @@ bibliography: [../../static/bib/legislation.bib]
 link-citations: true
 biblio-style: apalike
 ---
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
+```
 
 Terminal unit rates represent the unit price paid by airspace users, mainly
 commercial airlines, for the air navigation services provided, mainly air

@@ -15,5 +15,5 @@ and non-scheduled air transport operations for remuneration or hire.
 * [OAT][oat].
 * [GAT][gat].
 
-[oat]: /reference/acronym/oat/ "OAT"
-[gat]: /reference/acronym/gat/ "OAT"
+[oat]: /acronym/oat/ "OAT"
+[gat]: /acronym/gat/ "OAT"

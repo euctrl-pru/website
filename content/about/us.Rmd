@@ -1,6 +1,11 @@
 ---
 title: "About us"
 ---
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
+```
+
 
 The PRU is responsible for monitoring and reviewing the performance of the Pan-European ANS system
 across a number of key performance areas.

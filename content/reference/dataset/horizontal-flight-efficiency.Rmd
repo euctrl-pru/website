@@ -8,6 +8,12 @@ bibliography: ["../../../static/bib/aviation.bib"]
 link-citations: true
 slug: horizontal-flight-efficiency
 ---
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
+```
+
+
 
 Please note that additional quality control measures detected a limited number of abnormal flight
 trajectories starting towards the end of 2015 which were removed by applying an additional filter
