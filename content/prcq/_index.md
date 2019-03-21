@@ -37,7 +37,7 @@ reported a traffic increase compared to 2017.
 In absolute terms, DFS (Germany), DHMI (Turkey), ENAIRE (Spain), HungaroControl (Hungary),
 ENAV (Italy) and BULATSA (Bulgaria) showed the highest year on year growth in 2018. 
 For 2019, the latest STATFOR forecast (Feb. 2019) predicts a baseline growth of 2.8% at system level
-(Low:  1.2%; High 4.1%) and an average annual growth rate of 2.0% between 2019 and 2025.
+(Low:  1.2%; High: 4.1%) and an average annual growth rate of 2.0% between 2019 and 2025.
 
 The continued traffic growth contributed to a further decrease in overall service quality in 2018.
 Following the trend observed over the past five years, the share of flights arriving within 15 minutes
