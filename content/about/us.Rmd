@@ -21,8 +21,7 @@ and Charging Schemes.
 In performing its tasks, the PRU maintains transparent working arrangements with service providers,
 airspace user organisations and the industry.
 
-Although the PRU is independent, it is administratively reporting to the Director Pan-European
-Single Sky.
+Although the PRU is independent, it is administratively reporting to the Directorate European Civil-Military Aviation (DECMA).
 
 For feedback or questions please contact us at:
 [Performance Review Unit](mailto:PRU-Support@eurocontrol.int)

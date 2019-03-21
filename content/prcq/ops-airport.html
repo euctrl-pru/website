@@ -6,6 +6,7 @@ icon: "/images/prcq-operations-airport.png"
 <script type="text/javascript" src="https://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
 google.load('visualization', '1', { packages: ['corechart', 'controls'] });
 </script>
+
 <script type="text/javascript">
 
 function drawVisualization()
@@ -15,18 +16,17 @@ function drawVisualization()
   var crt_apt4 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt4',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1zGEdW0bFSe2isnVKJYFnzyUHisRV46Wi5H498MTClxg/edit?usp=sharing&sheet=apt&range=A1:E5',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Tba2bYjXvy09-nvxM2BR7r2BYhSWR63F6NJroFmE8G4/edit?usp=sharing&sheet=apt&range=A1:E5',
     options:{
           height: 300,
           chartArea: {left: 40, top: 10, },
           legend: {position:'none'},
           isStacked : 'true',
           series: {
-                0: {type:'bars',color:'#D99694', targetAxisIndex: 0},
-                1: {type:'bars',color:'#FAC090', targetAxisIndex: 0},
-                2: {type:'bars',color:'#92D050', targetAxisIndex: 0},
-                3: {type:'bars',color:'#B9CDE5', targetAxisIndex: 0},
-                4: {type:'bars',color:'92D050', targetAxisIndex: 0}
+                0: {type:'bars',color:'#c0504d', targetAxisIndex: 0},
+                1: {type:'bars',color:'#e6b9b8', targetAxisIndex: 0},
+                2: {type:'bars',color:'#92d050', targetAxisIndex: 0},
+                3: {type:'bars',color:'#a6a6a6', targetAxisIndex: 0}
               },
           hAxis: {slantedText: true,
             slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}},
@@ -39,20 +39,20 @@ function drawVisualization()
   var crt_apt5 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt5',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1zGEdW0bFSe2isnVKJYFnzyUHisRV46Wi5H498MTClxg/edit?usp=sharing&sheet=apt&range=A10:F40',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Tba2bYjXvy09-nvxM2BR7r2BYhSWR63F6NJroFmE8G4/edit?usp=sharing&sheet=apt&range=A10:F40',
     options:{
         height: 300,
         chartArea: {left: 80, top: 10, width:'100%', height:'35%'},
           legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 12} ,maxLines: 2},
           isStacked : 'true',
           series: {
-                0: {type:'bars',color:'#D99694', targetAxisIndex: 0},
-                1: {type:'bars',color:'#FAC090', targetAxisIndex: 0},
-                2: {type:'bars',color:'#92D050', targetAxisIndex: 0},
-                3: {type:'bars',color:'#B9CDE5', targetAxisIndex: 0},
+                0: {type:'bars',color:'#c0504d', targetAxisIndex: 0},
+                1: {type:'bars',color:'#e6b9b8', targetAxisIndex: 0},
+                2: {type:'bars',color:'#92d050', targetAxisIndex: 0},
+                3: {type:'bars',color:'#a6a6a6', targetAxisIndex: 0},
                 4: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 0}
               },
-          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 10},},
+          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 10}, title: 'Airports sorted by movements (* A-CDM airport)'},
           vAxis: {format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
         },
     view: {'columns': [0,1,2,3,4,5]}
@@ -62,7 +62,7 @@ function drawVisualization()
   var crt_apt6 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt6',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1zGEdW0bFSe2isnVKJYFnzyUHisRV46Wi5H498MTClxg/edit?usp=sharing&sheet=apt&range=H1:I5',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Tba2bYjXvy09-nvxM2BR7r2BYhSWR63F6NJroFmE8G4/edit?usp=sharing&sheet=apt&range=H1:I5',
     options:{
           height: 300, chartArea: {left: 40, top: 10,width:'100%',height:'50%'},
           legend: {position:'none'},
@@ -79,7 +79,7 @@ function drawVisualization()
   var crt_apt7 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt7',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1zGEdW0bFSe2isnVKJYFnzyUHisRV46Wi5H498MTClxg/edit?usp=sharing&sheet=apt&range=H10:J40',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Tba2bYjXvy09-nvxM2BR7r2BYhSWR63F6NJroFmE8G4/edit?usp=sharing&sheet=apt&range=H10:J40',
     options:{
         height: 300,
         chartArea: {left: 80, top: 10, width:'100%',height:'40%'},
@@ -89,7 +89,7 @@ function drawVisualization()
                 0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0},
                 1: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 0}
               },
-          hAxis: {slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}, },
+          hAxis: {slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}, title: 'Airports sorted by movements (* A-CDM airport)' },
           vAxis: {format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
         },
     view: {'columns': [0,2,1]}
@@ -117,7 +117,7 @@ function drawVisualization()
   var crt_apt9 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt9',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1zGEdW0bFSe2isnVKJYFnzyUHisRV46Wi5H498MTClxg/edit?usp=sharing&sheet=apt&range=L10:N40',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Tba2bYjXvy09-nvxM2BR7r2BYhSWR63F6NJroFmE8G4/edit?usp=sharing&sheet=apt&range=L10:N40',
     options:{
         height: 300,
         chartArea: {left: 80, top: 10, width:'100%',height:'40%'},
@@ -138,7 +138,7 @@ function drawVisualization()
   var crt_apt10 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt10',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1zGEdW0bFSe2isnVKJYFnzyUHisRV46Wi5H498MTClxg/edit?usp=sharing&sheet=apt&range=P1:Q5',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Tba2bYjXvy09-nvxM2BR7r2BYhSWR63F6NJroFmE8G4/edit?usp=sharing&sheet=apt&range=P1:Q5',
     options:{
           height: 300, chartArea: {left: 40, top: 10, width:'100%',height:'50%'},
           legend: {position:'none'},
@@ -156,7 +156,7 @@ function drawVisualization()
   var crt_apt11 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt11',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1zGEdW0bFSe2isnVKJYFnzyUHisRV46Wi5H498MTClxg/edit?usp=sharing&sheet=apt&range=P10:R40',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Tba2bYjXvy09-nvxM2BR7r2BYhSWR63F6NJroFmE8G4/edit?usp=sharing&sheet=apt&range=P10:R40',
     options:{
         height: 300,
         chartArea: {left: 80, top: 10, width:'100%',height:'40%'},
@@ -167,7 +167,7 @@ function drawVisualization()
                 0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0},
                 1: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 0}
               },
-          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11},},
+          hAxis: {slantedText: true, slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}, title: 'Airports sorted by movements (* A-CDM airport)'},
           vAxis: {format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
         },
     view: {'columns': [0,2,1]}
@@ -191,10 +191,10 @@ google.setOnLoadCallback(drawVisualization)
    </thead>
    <tbody>
       <tr class = "active">
-         <td>Jan-Sep</td>
+         <td>Jan-Dec</td>
          <td><a href='{{< relref "/definition/eurocontrol-area.md" >}}'>EUROCONTROL area</a></td>
          <td>Quarterly</td>
-         <td>22-Oct-2018</td>
+         <td>22-Mar-2019</td>
           <td>
           <a href='{{< relref "/acronym/nm-cfmu.md" >}}'>NM</a>,
           <a href='{{< relref "/acronym/pru.md"   >}}'>PRU</a>,
@@ -206,80 +206,124 @@ google.setOnLoadCallback(drawVisualization)
 
 <h3 class="sub-header">Arrival flow management</h3>
 <div>
-This section analyses ANS-related inefficiencies on the arrival flow at the top 30 European airports in terms of arrival <a href='{{< relref "/definition/atfm-delay.html" >}}'>ATFM delay</a> and <a href='{{< relref "/definition/additional-asma-time.html" >}}'>additional ASMA time</a>.
+  This section analyses ANS-related inefficiencies on the arrival flow at the top 30
+  European airports in terms of arrival
+  <a href='{{< relref "/definition/atfm-delay.html" >}}'>ATFM delay</a> and
+  <a href='{{< relref "/definition/additional-asma-time.html" >}}'>additional ASMA time</a>.
 </div>
 
 <h4 class="page-header">Airport arrival <a href='{{< relref "/definition/atfm-delay.html" >}}'>ATFM delays</a> (min per arrival)</h4>
 
 <div class="row ">
-<div class="col-sm-2">
+  <div class="col-sm-2">
     <h5>Top 30 airports</h5>
     <div id="crt_apt4"></div>
-</div>
-<div class="col-sm-10">
-    <h5>Airport arrival ATFM delay by airport - 2018 (Jan-Sep) vs. 2017 (Jan-Sep)</h5>
+  </div>
+  <div class="col-sm-10">
+    <h5>Airport arrival ATFM delay by airport - 2018 vs. 2017</h5>
     <div id="crt_apt5"></div>
+  </div>
 </div>
-  </div><br>
+<br>
 
-    <div class="card bg-light">
-          <div class="card-body">
-            Average airport ATFM delays at the top 30 European airports decreased from 1.28 to 1.13 minutes per arrival between January and September 2018. The most notable improvement was observed for Istanbul Sabiha Gökçen Airport (SAW) where ATFM arrival delay reduced by 5.5 minutes on average. Amsterdam and London Gatwick airport also showed a notable improvement compared to the same period in 2017. <br>
-            At the same time, average arrival ATFM delays per arrival increased by more than 1 minute at Lisbon (LIS) and Barcelona (BCN). 
-          </div>
-    </div>
+<div class="card bg-light">
+  <div class="card-body">
+    Different from the negative trend observed en-route, average airport ATFM delays
+    at the top 30 European airports decreased from 1.24 to 1.13 minutes per arrival in 2018.
+    <br>
+    The main reason for airport ATFM regulations in 2018 was adverse weather (54.9%)
+    which increased by 2.9 percent points (pp) compared to 2017.
+    The second largest category was airport capacity (29.8%) which decreased by 7.8 pp,
+    mainly due to the continued substantial improvement at Sabiha (SAW) airport.
+    Amsterdam Schiphol (AMS) airport also showed a significant year on year improvement
+    in airport ATFM arrival delays with a reduction of 1.1 minutes per arrival in 2018. 
+    <br> 
+    On the other side, the already comparatively high airport arrival ATFM delays
+    at Lisbon and Barcelona airports further increased in 2018 which was partly linked
+    to substantial traffic growth in 2018. 
+  </div>
+</div>
 
 <h4 class="page-header"><a href='{{< relref "/definition/additional-asma-time.html" >}}'>Additional ASMA time</a></h4>
 <div class="row ">
-<div class="col-sm-2">
+  <div class="col-sm-2">
     <h5>Top 30 airports</h5>
     <div id="crt_apt6"></div>
-</div>
-<div class="col-sm-10">
-    <h5><a href='{{< relref "/definition/additional-asma-time.html" >}}'>Additional ASMA time by airport</a> 2018 (Jan-Aug)</h5>
+  </div>
+  <div class="col-sm-10">
+    <h5><a href='{{< relref "/definition/additional-asma-time.html" >}}'>Additional ASMA time by airport</a> 2018</h5>
     <div id="crt_apt7"></div>
+  </div>
 </div>
-  </div><br>
+<br>
    
-    <div class="card bg-light">
-          <div class="card-body">
-            Overall, the average additional ASMA time decreased between January and August 2018 (excluding the two Istanbul airports and Antalya for which no data was available).<br>
-          </div>
-    </div>
+<div class="card bg-light">
+  <div class="card-body">
+    Average additional ASMA time (airborne holdings) at the top 30 airports in 2018
+    also decreased from 2.18 to 2.07 minutes per arrival.
+    Copenhagen (CPH) showed the most notable improvement (-1.1 min vs 2017) in 2018.
+    Despite a notable reduction of almost 1 minute in 2018, London Heathrow remained
+    the airport with the highest average additional ASMA time in Europe (7.7 min per arrival),
+    followed by London Gatwick (3.9 min) and Dublin (3.1 min).
+    <br>
+  </div>
+</div>
 
 <h3 class="sub-header">Departure flow management</h3>
 <div>
-This section analyses ANS-related inefficiencies on the departure flow at the top 30 European airports in terms of <a href='{{< relref "/definition/atc-pre-departure-delay.html" >}}'>ATC pre-departure delays</a> at the gate and <a href='{{< relref "/definition/additional-taxi-out-time.md" >}}'>additional taxi-out time</a>.
+  This section analyses ANS-related inefficiencies on the departure flow at the top
+  30 European airports in terms of
+  <a href='{{< relref "/definition/atc-pre-departure-delay.html" >}}'>ATC pre-departure delays</a>
+  at the gate and
+  <a href='{{< relref "/definition/additional-taxi-out-time.md" >}}'>additional taxi-out time</a>.
 </div>
 <h4 class="page-header"><a href='{{< relref "/definition/atc-pre-departure-delay.html" >}}'>ATC pre-departure delays</a></h4>
 <div class="row ">
-<div class="col-sm-2">
-    <h5>Top 30 airports</h5>
-    <div>no consistent time series available</div>
-</div>
-<div class="col-sm-10">
-    <h5><a href='{{< relref "/definition/atc-pre-departure-delay.html" >}}'>ATC pre-departure delays by airport</a> 2018 (Jan-Aug)</h5>
+  <div class="col-sm-2">
+      <h5>Top 30 airports</h5>
+      <div>no consistent time series available</div>
+  </div>
+  <div class="col-sm-10">
+    <h5><a href='{{< relref "/definition/atc-pre-departure-delay.html" >}}'>ATC pre-departure delays by airport</a> 2018</h5>
     <div id="crt_apt9"></div>
+  </div>
 </div>
-  </div><br>
-      <div class="card bg-light">
-          <div class="card-body">
-           The data analysed in this section is based on data directly provided by airport operators. Unlike CODA  data, the Airport Operator Data Flow covers all departures from airports and is therefore also used for the analysis of additional taxi out and ASMA times. As highlighted in PRR, while the data flow has a better coverage, some data quality issues do exist.
-      </div>
-    </div>
+<br>
+<div class="card bg-light">
+  <div class="card-body">
+    The data analysed in this section is based on data directly provided by airport operators.
+    Unlike CODA  data, the Airport Operator Data Flow covers all departures from airports
+    and is therefore also used for the analysis of additional taxi out and ASMA times.
+    As highlighted in PRR, while the data flow has a better coverage,
+    some data quality issues do exist.
+    <br>
+    Similar to the efficiency changes on the arrival flow, Lisbon (LIS) and
+    Barcelona (BCN) showed also a significant increase in local ATC departure delay in 2018.
+  </div>
+</div>
 
 <h4 class="page-header"><a href='{{< relref "/definition/additional-taxi-out-time.md" >}}'>Additional taxi-out time</a></h4>
 <div class="row placeholders">
-<div class="col-sm-2">
+  <div class="col-sm-2">
     <h5>Top 30 airports</h5>
     <div id="crt_apt10"></div>
-</div>
-<div class="col-sm-10">
-    <h5><a href='{{< relref "/definition/additional-taxi-out-time.md" >}}'>Additional taxi-out by airport</a> 2018 (Jan-Aug)</h5>
+  </div>
+  <div class="col-sm-10">
+    <h5><a href='{{< relref "/definition/additional-taxi-out-time.md" >}}'>Additional taxi-out by airport</a> 2018</h5>
     <div id="crt_apt11"></div>
+  </div>
 </div>
-  </div><br>
-      <div class="card bg-light">
-          <div class="card-body">
-          Contrary to the positive trend observed for the additional ASMA time, the average additional taxi-out time increased at the top 30 airports in the first nine months of 2018 from 3.7 minutes to 4.1 minutes per departure (excluding the two Istanbul airports and Antalya for which no data was available). 
-    </div>
+<br>
+<div class="card bg-light">
+  <div class="card-body">
+    Different from the additional ASMA time, the average additional taxi-out time
+    increased from 3.9 minutes in 2017 to 4.2 minutes per departure in 2018
+    (excluding the Turkish airports for which no data was available).
+    <br>
+    Overall, 21 of the 27 airports reported an increase in additional taxi out time in 2018.
+    The highest levels of average additional taxi-out times were observed at
+    London (LHR), London (LGW), Rome (FCO), Dublin (DUB) and Barcelona (BCN)
+    with the most notable year on year increase observed at Dublin (+1.7 min vs. 2017).
+    Notable year on year improvements were observed at Manchester (MAN) and Amsterdam (AMS).   
+  </div>
+</div>

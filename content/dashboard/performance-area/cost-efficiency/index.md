@@ -9,7 +9,7 @@ keywords: performance, air transport, flights, europe, cost efficiency
 
 The new [ACE interactive online dashboard][acedashboard] enables interested stakeholders to access
 the latest available ACE data and analysis. Using the interactive functionalities of the dashboard,
-stakeholders can design and customise specific analyses and presentations covering the 2002-2015 period.
+stakeholders can design and customise specific analyses and presentations covering the 2002-2016 period.
 
 <div class="row">
 	<a href="http://www.eurocontrol.int/ACE/ACE-Framework.html" target="_blank">

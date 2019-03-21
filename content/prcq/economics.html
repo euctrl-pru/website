@@ -3,11 +3,10 @@ title: "ANS Cost-efficiency"
 icon: "/images/prcq-economics.png"
 ---
 
-<script type="text/javascript" src="http://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
+<script type="text/javascript" src="https://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
 google.load('visualization', '1', { packages: ['corechart', 'controls'] });
 </script>
 <script type="text/javascript">
-
 function drawVisualization()
  {
 
@@ -15,7 +14,7 @@ function drawVisualization()
   var crt_eco1 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_eco1',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=eco&range=I1:M7',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Tba2bYjXvy09-nvxM2BR7r2BYhSWR63F6NJroFmE8G4/edit?usp=sharing&sheet=eco&range=I1:M7',
     options:{
         chartArea: {left: 80, top: 10, width:'70%',height:'80%'},
           titleTextStyle : {color: 'grey', fontSize: 12},
@@ -36,13 +35,11 @@ function drawVisualization()
         },
     view: {'columns': [0,1,2,3,4]}
   }); crt_eco1.draw();
-
-
 // ERT - CHART -
  var crt_eco2 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_eco2',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=eco&range=A1:F6',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Tba2bYjXvy09-nvxM2BR7r2BYhSWR63F6NJroFmE8G4/edit?usp=sharing&sheet=eco&range=A1:F6',
     options: {
         chartArea: {left: 60, top: 10, width:'60%',height:'80%'},
         titleTextStyle : {color: '#1F1F2E', fontSize: 12},
@@ -60,12 +57,11 @@ function drawVisualization()
         },
     view: {columns: [0,3,4,5], rows: [0,1,2,3,4]}
   }); crt_eco2.draw();
-
 // ANALYSIS BY ANSP
   var crt_eco3 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_eco3',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1_CwiA6G7v5IZG2yA5aVcRiS982WD3hMf97F3kx4CDyc/edit?usp=sharing&sheet=eco&range=A11:H49',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Tba2bYjXvy09-nvxM2BR7r2BYhSWR63F6NJroFmE8G4/edit?usp=sharing&sheet=eco&range=A11:H49',
     options:{
         height: 380,
         chartArea: {left: 80, top: 30, width:'80%',height:'50%'},
@@ -113,7 +109,7 @@ google.setOnLoadCallback(drawVisualization)
          <td>Jan-Dec</td>
          <td><a href='{{< relref "/definition/eurocontrol-area.md" >}}'>EUROCONTROL area</a></td>
          <td>Annually</td>
-         <td>15-Mar-2018</td>
+         <td>22-Mar-2019</td>
           <td>
           <a href="http://www.eurocontrol.int/documents/economic-information-disclosure-specification" target="_blank">ANSPs submissions</a>
           </td>
@@ -122,35 +118,49 @@ google.setOnLoadCallback(drawVisualization)
    </tbody>
 </table>
 
+<div class="alert alert-danger">
+  Note that the ACE data included in this section is still provisional.
+  The data will be updated in May 2019 prior to the publication of the final PRR 2018
+  to ensure consistency with the data that will be presented in the final
+  ACE 2017 Benchmarking Report.
+</div>
 <h4 class="sub-header">Changes in economic <a href='{{< relref "/definition/eco-cost-eff.md" >}}'>cost-effectiveness</a> (37 <a href='{{< relref "/acronym/ansp.md" >}}'>ANSPs</a>)</h4>
 <div class="row">
 <div class="col-sm-6 ">
-    <div id="crt_eco1"></div>
+ <div id="crt_eco1"></div>
 </div>
 <div class="col-sm-6">
-    <div id="crt_eco2"></div>
+ <div id="crt_eco2"></div>  
 </div>
 </div>
 
 <div class="card bg-light">
   <div class="card-body">
-    The analysis shows the trend of the unit economic costs between 2011 and 2016 at Pan-European level  for a consistent sample of 37 ANSPs for which data for a time-series analysis was available. The left-hand side shows the changes in unit economic costs, while the right-hand side provides complementary information on the year-on-year changes in ATM/CNS provision costs, composite flight-hours and unit costs of ATFM delays.
-    The unit costs of gate-to-gate ATFM delays rose by +20.2% in 2016 (based on the old computation method) and unit economic costs were +0.8% higher than in 2015.<br>
-    At Pan-European level, the economic cost-effectiveness indicator amounted to €488 per composite flight-hour in 2016, and, on average, ATFM delays represent 16% of the total economic costs.  
+    The analysis shows the trend of the unit economic costs between 2012 and 2017
+    at Pan-European level for a consistent sample of 37 ANSPs for which data
+    for a time-series analysis was available.
+    The left-hand side shows the changes in unit economic costs, while the right-hand side
+    provides complementary information on the year-on-year changes in ATM/CNS provision costs,
+    composite flight-hours and unit costs of ATFM delays.
+    <br>
+    The economic cost-effectiveness indicator at Pan-European level amounts to
+    €480 per composite flight-hour in 2017, and, on average, ATFM delays represent
+    16% of the total economic costs.  
   </div>
 </div>
 
 <div class="row placeholders">
-<div class="col-sm-12 placeholder">
+  <div class="col-sm-12 placeholder">
     <h4>Economic gate-to-gate <a href='{{< relref "/definition/eco-cost-eff.md" >}}'>cost effectiveness</a> (2016)</h4>
     <div id="crt_eco3"></div>
-</div>
+  </div>
 </div>
 
 <div class="card bg-light">
   <div class="card-body">
-In 2016 unit economic costs ranged from €924 for Belgocontrol to €209 for MATS; a factor of more than four.
-<br>
- More information on exchange rates variations and their impact on unit costs is provided in the  <a href='{{< relref "/acronym/ace.md" >}}'>ACE Benchmarking Reports</a>.
+    In 2017 unit economic costs ranged from €904 for LVNL to €221 for MATS, a factor of more than four.
+    <br>
+    More information on exchange rates variations and their impact on unit costs is
+    provided in the  <a href='{{< relref "/acronym/ace.md" >}}'>ACE Benchmarking Reports</a>.
   </div>
 </div>
