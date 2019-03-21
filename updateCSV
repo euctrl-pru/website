@@ -88,10 +88,10 @@ fi
 
 APT_DLY_WEF=2014-01-01
 ERT_DLY_WEF=2018-01-01
-TIL=2019-02-01
+TIL=2019-03-01
 
 (
-    cd "${SCRIPT_DIR}/../" || exit;
+    cd "${SCRIPT_DIR}/" || exit;
     Rscript R/export_ert_dly.R -t ansp ${ERT_DLY_WEF} ${TIL};
     Rscript R/export_ert_dly.R -t fir ${ERT_DLY_WEF} ${TIL};
     Rscript R/export_apt_dly.R ${APT_DLY_WEF} ${TIL};

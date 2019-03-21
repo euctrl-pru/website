@@ -39,8 +39,11 @@ suppressMessages(library(stringr))
 suppressMessages(library(tidyr))
 
 
-ftype <- "dly_ansp"
-csvs <- list.files("data/csv", pattern = str_c("ert_", ftype,"_\\d{4}\\.csv\\.bz2"), full.names = TRUE)
+ftype <- "ansp"
+csvs <- list.files(
+  here::here("static", "download", "csv"),
+  pattern = stringr::str_c("ert_dly_", ftype,"_\\d{4}\\.csv\\.bz2"),
+  full.names = TRUE)
 
 
 get_ert_flt <- function(path) {
